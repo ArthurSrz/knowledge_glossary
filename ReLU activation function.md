@@ -1,0 +1,3 @@
+---
+TypeOf: "[[Activation functions]]"
+---

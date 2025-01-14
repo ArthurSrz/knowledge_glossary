@@ -1,0 +1,1 @@
+Clear responsibility for outcomes. Users have recourse. 

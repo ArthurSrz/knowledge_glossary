@@ -1,0 +1,1 @@
+Technique qui permet d'appliquer un [[Large Language Model]] sur un corpus spécifique. 

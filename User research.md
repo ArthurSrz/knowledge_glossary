@@ -1,0 +1,1 @@
+Phase of the [[Design thinking]] approach where we practice [[Empathy]]. 

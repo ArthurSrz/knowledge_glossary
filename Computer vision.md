@@ -1,0 +1,1 @@
+Tasks implying image and video : image classification, object detection, semantic segmentation, image generation 

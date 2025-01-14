@@ -1,0 +1,1 @@
+[[Neural network models]] which utilize two additional types of layers : [[Convolutional layers]] and Pooling layers 

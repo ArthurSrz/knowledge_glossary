@@ -1,0 +1,1 @@
+A machine learning algorithm that ask a series of question to narrow in on the label

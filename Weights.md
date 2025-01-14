@@ -1,0 +1,3 @@
+---
+partOf: "[[Neural network models]]"
+---

@@ -1,0 +1,1 @@
+The most widely used data science project methodology. It was developed as a flexible, industry-agnostic approach to data mining projects. 

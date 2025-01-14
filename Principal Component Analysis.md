@@ -1,0 +1,1 @@
+Analysis to reduce the dimension of some data in order to visualize it. 

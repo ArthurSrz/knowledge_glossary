@@ -1,0 +1,1 @@
+Mesure qui permet d'établir le nombre de noeuds très connectés avec lequel un noeud est connecté. Les noeuds en questions peuvent être considérés comme *hype*. 

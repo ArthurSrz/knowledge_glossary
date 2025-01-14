@@ -1,0 +1,1 @@
+Method to translate words into numerical value, trying to capture its meaning. Can be done using pre-trained models
