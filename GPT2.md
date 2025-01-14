@@ -1,3 +1,3 @@
 ---
-exampleOf:
+exampleOf: "[[Decoders model]]"
 ---
