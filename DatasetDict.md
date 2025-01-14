@@ -1,3 +1,2 @@
 ---
-partOf: "[[Hugging Face]]"
----
+partOf: "[[H
