@@ -1,3 +1,0 @@
----
-TypeOf: "[[ML models]]"
----
