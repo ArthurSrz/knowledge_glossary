@@ -1,1 +1,1 @@
-An efficient way to guide language model toward specific tasks 
+Class to format data points into structured prompts 
