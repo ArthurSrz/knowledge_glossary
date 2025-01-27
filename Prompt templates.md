@@ -1,0 +1,1 @@
+A structured way to generate standar
