@@ -1,5 +1,6 @@
 ---
 partOf: "[[CRISP-DM Process]]"
+sameAs: "[[Modélisation]]"
 ---
 We collect past [[Observations]], and associate [[Features]], and define a [[Target]]. The model relate the 3. When we train, we identify the optimal parameters in the equation or set of equations. 
 
