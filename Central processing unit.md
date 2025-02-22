@@ -1,3 +1,11 @@
+---
+differentFrom: "[[Graphics processing unit]]"
+usedBy:
+  - "[[Artificial Intelligence (AI)]]"
+powers:
+  - "[[Embeddings models]]"
+  - "[[Neural network models]]"
+---
 ![Central processing unit Thumbnail](https://upload.wikimedia.org/wikipedia/commons/0/0a/Intel_i9-14900KF_CPU.jpg)
 [Central processing unit](https://en.wikipedia.org/wiki/Central_processing_unit)
 
