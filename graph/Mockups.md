@@ -1,0 +1,3 @@
+---
+toolFor: "[[Design thinking]]"
+---
