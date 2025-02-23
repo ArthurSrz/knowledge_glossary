@@ -1,5 +1,5 @@
 ---
-souldTakeIntoAccount: "[[Bayes' theorem]]"
+shouldTakeIntoAccount: "[[Bayes' theorem]]"
 ---
 
 
