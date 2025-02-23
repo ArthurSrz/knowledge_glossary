@@ -2,4 +2,5 @@
 definedBy:
   - "[[Accuracy]]"
   - "[[Precision]]"
+  - "[[Recall]]"
 ---
