@@ -6,7 +6,7 @@ subclass of:
 studied in:
   - "[[ontology engineering]]"
   - "[[computer science]]"
-different from: "[[Knowledge graph]]"
+different from: "[[knowledge graph 1]]"
 described at URL:
   - https://www.ibm.com/de-de/topics/knowledge-graph
   - https://www.fiz-karlsruhe.de/de/nachricht/wissensgraphen-ihre-bedeutung-der-digitalen-welt-von-heute

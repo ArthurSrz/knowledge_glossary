@@ -1,1 +1,1 @@
-Derivative of the [[Loss function]]
+Derivative of the [[loss function]]
