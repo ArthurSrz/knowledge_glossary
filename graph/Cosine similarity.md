@@ -1,3 +1,7 @@
+---
+calculationUnder: "[[Retrieval Augmented Generation]]"
+---
+
 In the context of vector space representations, cosine similarity is a measure of the similarity between two vectors. It is calculated by taking the dot product of the two vectors and dividing it by the product of their magnitudes (lengths). 
 
 The resulting value is a number between -1 and 1, where a value of 1 indicates that the two vectors are exactly the same (they point in the same direction and have the same length), a value of -1 indicates that the two vectors are exactly opposite (they point in opposite directions and have the same length), and a value of 0 indicates that the two vectors are orthogonal (they point in different directions and have no component in common). 
