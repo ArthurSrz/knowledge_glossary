@@ -1,6 +1,6 @@
 Aside from [[Don Norman's principles of Interaction Design]], this is a specific consideration to take into account when designing [[ML system]]. 
 
-Wether you display a deterministic or probabilistic [[Output]] depends on the value of the probabilistic information for the decision-making or the user. 
+Whether you display a deterministic or probabilistic [[Output]] depends on the value of the probabilistic information for the decision-making or the user. 
 
 ## Uncertainty in [[Classification]]
 
