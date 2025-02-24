@@ -1,6 +1,7 @@
 ---
 same:
   - "[[Variance]]"
+meanTo: "[[Communicate uncertainty]]"
 ---
 Of **all** the predicted positives, how many were actually positives. Ratio of [[True Positive (TP)]] divided by the sum of [[True Positive (TP)]] and [[False positives]]. 
 
