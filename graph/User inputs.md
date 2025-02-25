@@ -1,3 +1,7 @@
+---
+influence: "[[User outputs]]"
+---
+
 Aside from [[Don Norman's principles of Interaction Design]], 
 
 User input is a specific consideration to take into account when designing [[ML system]], because we need data from our users for out model to function. 
