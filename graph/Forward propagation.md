@@ -1,0 +1,3 @@
+---
+trainingTechnique: "[[Deep learning]]"
+---
