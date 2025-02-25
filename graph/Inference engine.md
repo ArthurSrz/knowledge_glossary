@@ -1,3 +1,7 @@
+---
+inspiredBy: "[[Bayesian inference]]"
+---
+
 In the field of artificial intelligence, an inference engine is a software component of an intelligent system that applies logical rules to the knowledge base to deduce new information.
 
 [Inference engine](https://en.wikipedia.org/wiki/Inference_engine)
