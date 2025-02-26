@@ -1,4 +1,6 @@
 ---
+leadsTo:
+  - "[[Ground truth]]"
 same:
   - "[[Variance]]"
 meanTo: "[[Communicate uncertainty]]"
