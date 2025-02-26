@@ -1,94 +1,15 @@
-In this notebook, we'll compare three different LLM Path Extractors from llama_index:
+---
+incorporatedInto: "[[Llama index]]"
+---
+There are three different LLM Path Extractors incorporated inside llama_index:
 
 1. SimpleLLMPathExtractor
 2. SchemaLLMPathExtractor
 3. DynamicLLMPathExtractor (New)
 
-We'll use a Wikipedia page as our test data and visualize the resulting knowledge graphs using Pyvis.
+###  SimpleLLMPathExtractor
 
-## Setup and Imports[¶](https://docs.llamaindex.ai/en/stable/examples/property_graph/Dynamic_KG_Extraction/#setup-and-imports)
-
-In [ ]:
-
-!pip install llama_index pyvis wikipedia
-
-!pip install llama_index pyvis wikipedia
-
-In [ ]:
-
-from llama_index.core import Document, PropertyGraphIndex
-from llama_index.core.indices.property_graph import (
-    SimpleLLMPathExtractor,
-    SchemaLLMPathExtractor,
-    DynamicLLMPathExtractor,
-)
-from llama_index.llms.openai import OpenAI
-from llama_index.core import Settings
-
-import wikipedia
-
-import os
-
-from llama_index.core import Document, PropertyGraphIndex from llama_index.core.indices.property_graph import ( SimpleLLMPathExtractor, SchemaLLMPathExtractor, DynamicLLMPathExtractor, ) from llama_index.llms.openai import OpenAI from llama_index.core import Settings import wikipedia import os
-
-In [ ]:
-
-import nest_asyncio
-
-nest_asyncio.apply()
-
-import nest_asyncio nest_asyncio.apply()
-
-## Set up LLM Backend[¶](https://docs.llamaindex.ai/en/stable/examples/property_graph/Dynamic_KG_Extraction/#set-up-llm-backend)
-
-In [ ]:
-
-os.environ["OPENAI_API_KEY"] = "sk-proj-..."
-
-# Set up global configurations
-llm = OpenAI(temperature=0.0, model="gpt-3.5-turbo")
-
-Settings.llm = llm
-Settings.chunk_size = 2048
-Settings.chunk_overlap = 20
-
-os.environ["OPENAI_API_KEY"] = "sk-proj-..." # Set up global configurations llm = OpenAI(temperature=0.0, model="gpt-3.5-turbo") Settings.llm = llm Settings.chunk_size = 2048 Settings.chunk_overlap = 20
-
-## Fetch Some Raw Text from Wikipedia[¶](https://docs.llamaindex.ai/en/stable/examples/property_graph/Dynamic_KG_Extraction/#fetch-some-raw-text-from-wikipedia)
-
-In [ ]:
-
-def get_wikipedia_content(title):
-    try:
-        page = wikipedia.page(title)
-        return page.content
-    except wikipedia.exceptions.DisambiguationError as e:
-        print(f"Disambiguation page. Options: {e.options}")
-    except wikipedia.exceptions.PageError:
-        print(f"Page '{title}' does not exist.")
-    return None
-
-def get_wikipedia_content(title): try: page = wikipedia.page(title) return page.content except wikipedia.exceptions.DisambiguationError as e: print(f"Disambiguation page. Options: {e.options}") except wikipedia.exceptions.PageError: print(f"Page '{title}' does not exist.") return None
-
-In [ ]:
-
-wiki_title = "Barack Obama"
-content = get_wikipedia_content(wiki_title)
-
-if content:
-    document = Document(text=content, metadata={"title": wiki_title})
-    print(
-        f"Fetched content for '{wiki_title}' (length: {len(content)} characters)"
-    )
-else:
-    print("Failed to fetch Wikipedia content.")
-
-wiki_title = "Barack Obama" content = get_wikipedia_content(wiki_title) if content: document = Document(text=content, metadata={"title": wiki_title}) print( f"Fetched content for '{wiki_title}' (length: {len(content)} characters)" ) else: print("Failed to fetch Wikipedia content.")
-
-Fetched content for 'Barack Obama' (length: 83977 characters)
-
-In [ ]:
-
+```python
 kg_extractor = SimpleLLMPathExtractor(
     llm=llm, max_paths_per_chunk=20, num_workers=4
 )
@@ -98,46 +19,24 @@ simple_index = PropertyGraphIndex.from_documents(
     llm=llm,
     embed_kg_nodes=False,
     kg_extractors=[kg_extractor],
-    show_progress=True,
-)
+   
 
-simple_index.property_graph_store.save_networkx_graph(
-    name="./SimpleGraph.html"
-)
-simple_index.property_graph_store.get_triplets(
-    entity_names=["Barack Obama", "Obama"]
-)[:5]
+kg_extractor = SimpleLLMPathExtractor( llm=llm, max_paths_per_chunk=20, num_workers=4 ) 
 
-kg_extractor = SimpleLLMPathExtractor( llm=llm, max_paths_per_chunk=20, num_workers=4 ) simple_index = PropertyGraphIndex.from_documents( [document], llm=llm, embed_kg_nodes=False, kg_extractors=[kg_extractor], show_progress=True, ) simple_index.property_graph_store.save_networkx_graph( name="./SimpleGraph.html" ) simple_index.property_graph_store.get_triplets( entity_names=["Barack Obama", "Obama"] )[:5]
+simple_index = PropertyGraphIndex.from_documents( [document], llm=llm, embed_kg_nodes=False, kg_extractors=[kg_extractor], show_progress=True, ) 
 
-Parsing nodes:   0%|          | 0/1 [00:00<?, ?it/s]
+simple_index.property_graph_store.save_networkx_graph( name="./SimpleGraph.html" ) 
 
-Extracting paths from text: 100%|██████████| 11/11 [00:09<00:00,  1.19it/s]
+simple_index.property_graph_store.get_triplets( entity_names=["Barack Obama", "Obama"] )
+```
 
-Out[ ]:
 
-[(EntityNode(label='entity', embedding=None, properties={'title': 'Barack Obama', 'triplet_source_id': 'c4bbe9b8-ccd0-464c-b34c-37ede77f2717'}, name='Obama'),
-  Relation(label='Has', source_id='Obama', target_id='Half-sister', properties={'title': 'Barack Obama', 'triplet_source_id': 'bd93d2e0-ab20-4f4c-a412-bb42f93ae56f'}),
-  EntityNode(label='entity', embedding=None, properties={'title': 'Barack Obama', 'triplet_source_id': 'bd93d2e0-ab20-4f4c-a412-bb42f93ae56f'}, name='Half-sister')),
- (EntityNode(label='entity', embedding=None, properties={'title': 'Barack Obama', 'triplet_source_id': 'c4bbe9b8-ccd0-464c-b34c-37ede77f2717'}, name='Obama'),
-  Relation(label='Selected', source_id='Obama', target_id='Joe biden as his vice presidential running mate', properties={'title': 'Barack Obama', 'triplet_source_id': 'bc18ad10-3040-41a8-b595-4dd8ddb31a0b'}),
-  EntityNode(label='entity', embedding=None, properties={'title': 'Barack Obama', 'triplet_source_id': 'bc18ad10-3040-41a8-b595-4dd8ddb31a0b'}, name='Joe biden as his vice presidential running mate')),
- (EntityNode(label='entity', embedding=None, properties={'title': 'Barack Obama', 'triplet_source_id': 'c4bbe9b8-ccd0-464c-b34c-37ede77f2717'}, name='Obama'),
-  Relation(label='Made', source_id='Obama', target_id='First public speech', properties={'title': 'Barack Obama', 'triplet_source_id': '6c89e860-215d-4f5b-8b1c-3183fe71bb6c'}),
-  EntityNode(label='entity', embedding=None, properties={'title': 'Barack Obama', 'triplet_source_id': '6c89e860-215d-4f5b-8b1c-3183fe71bb6c'}, name='First public speech')),
- (EntityNode(label='entity', embedding=None, properties={'title': 'Barack Obama', 'triplet_source_id': 'c4bbe9b8-ccd0-464c-b34c-37ede77f2717'}, name='Obama'),
-  Relation(label='Banned', source_id='Obama', target_id='New offshore oil and gas drilling', properties={'title': 'Barack Obama', 'triplet_source_id': '62942a1e-18ae-4f45-9c73-ea39934f5519'}),
-  EntityNode(label='entity', embedding=None, properties={'title': 'Barack Obama', 'triplet_source_id': '62942a1e-18ae-4f45-9c73-ea39934f5519'}, name='New offshore oil and gas drilling')),
- (EntityNode(label='entity', embedding=None, properties={'title': 'Barack Obama', 'triplet_source_id': 'c4bbe9b8-ccd0-464c-b34c-37ede77f2717'}, name='Obama'),
-  Relation(label='Met with', source_id='Obama', target_id='Australian prime minister', properties={'title': 'Barack Obama', 'triplet_source_id': 'c4bbe9b8-ccd0-464c-b34c-37ede77f2717'}),
-  EntityNode(label='entity', embedding=None, properties={'title': 'Barack Obama', 'triplet_source_id': 'c4bbe9b8-ccd0-464c-b34c-37ede77f2717'}, name='Australian prime minister'))]
-
-### Without intial ontology :[¶](https://docs.llamaindex.ai/en/stable/examples/property_graph/Dynamic_KG_Extraction/#without-intial-ontology)
+### DynamicLLMPathExtractor without intial ontology 
 
 Here, we let the LLM define the ontology on the fly, giving it full freedom to label the nodes as it best sees fit.
 
-In [ ]:
 
+```python
 kg_extractor = DynamicLLMPathExtractor(
     llm=llm,
     max_triplets_per_chunk=20,
@@ -166,31 +65,12 @@ dynamic_index.property_graph_store.save_networkx_graph(
 
 dynamic_index.property_graph_store.get_triplets(
     entity_names=["Barack Obama", "Obama"]
-)[:5]
+)
+```
 
-kg_extractor = DynamicLLMPathExtractor( llm=llm, max_triplets_per_chunk=20, num_workers=4, # Let the LLM infer entities and their labels (types) on the fly allowed_entity_types=None, # Let the LLM infer relationships on the fly allowed_relation_types=None, # LLM will generate any entity properties, set `None` to skip property generation (will be faster without) allowed_relation_props=[], # LLM will generate any relation properties, set `None` to skip property generation (will be faster without) allowed_entity_props=[], ) dynamic_index = PropertyGraphIndex.from_documents( [document], llm=llm, embed_kg_nodes=False, kg_extractors=[kg_extractor], show_progress=True, ) dynamic_index.property_graph_store.save_networkx_graph( name="./DynamicGraph.html" ) dynamic_index.property_graph_store.get_triplets( entity_names=["Barack Obama", "Obama"] )[:5]
 
-Parsing nodes:   0%|          | 0/1 [00:00<?, ?it/s]
+### ### With initial ontology for guided KG extraction :
 
-Extracting and inferring knowledge graph from text: 100%|██████████| 11/11 [00:50<00:00,  4.59s/it]
-
-Out[ ]:
-
-[(EntityNode(label='PERSON', embedding=None, properties={'approval_rating': '63 percent', 'title': 'Barack Obama', 'triplet_source_id': '425eced4-ff34-49c2-b4ce-64ac96bf8d43'}, name='Obama'),
-  Relation(label='MOVED_TO', source_id='Obama', target_id='Afghanistan', properties={'action': 'moved to bolster', 'quantity': 'U.S. troop strength in Afghanistan', 'title': 'Barack Obama', 'triplet_source_id': 'ff7b416e-2885-4296-b7e2-156cb3578bb1'}),
-  EntityNode(label='COUNTRY', embedding=None, properties={'title': 'Barack Obama', 'triplet_source_id': 'ff7b416e-2885-4296-b7e2-156cb3578bb1'}, name='Afghanistan')),
- (EntityNode(label='PERSON', embedding=None, properties={'title': 'Barack Obama', 'triplet_source_id': '5137cb5e-04a8-4a71-bc1d-200783ec4628'}, name='Barack Obama'),
-  Relation(label='RECEIVED', source_id='Barack Obama', target_id='Our Great National Parks', properties={'award': 'Primetime Emmy Award', 'category': 'Outstanding Narrator', 'title': 'Barack Obama', 'triplet_source_id': '5137cb5e-04a8-4a71-bc1d-200783ec4628'}),
-  EntityNode(label='TV SHOW', embedding=None, properties={'title': 'Barack Obama', 'triplet_source_id': '5137cb5e-04a8-4a71-bc1d-200783ec4628'}, name='Our Great National Parks')),
- (EntityNode(label='PERSON', embedding=None, properties={'title': 'Barack Obama', 'triplet_source_id': '5137cb5e-04a8-4a71-bc1d-200783ec4628'}, name='Barack Obama'),
-  Relation(label='PUBLISHED', source_id='Barack Obama', target_id='A Promised Land', properties={'title': 'Barack Obama', 'triplet_source_id': '43848a0a-858e-4552-b820-b8831931f63f'}),
-  EntityNode(label='BOOK', embedding=None, properties={'release_date': 'November 17', 'title': 'Barack Obama', 'triplet_source_id': 'caf64843-39ce-4992-9c40-e7b1166af804'}, name='A Promised Land')),
- (EntityNode(label='PERSON', embedding=None, properties={'title': 'Barack Obama', 'triplet_source_id': '5137cb5e-04a8-4a71-bc1d-200783ec4628'}, name='Barack Obama'),
-  Relation(label='RECEIVED', source_id='Barack Obama', target_id='Shoah Foundation Institute for Visual History and Education', properties={'award': 'Ambassador of Humanity Award', 'title': 'Barack Obama', 'triplet_source_id': '5137cb5e-04a8-4a71-bc1d-200783ec4628'}),
-  EntityNode(label='ORGANIZATION', embedding=None, properties={'title': 'Barack Obama', 'triplet_source_id': '5137cb5e-04a8-4a71-bc1d-200783ec4628'}, name='Shoah Foundation Institute for Visual History and Education')),
- (EntityNode(label='PERSON', embedding=None, properties={'title': 'Barack Obama', 'triplet_source_id': '5137cb5e-04a8-4a71-bc1d-200783ec4628'}, name='Barack Obama'),
-  Relation(label='SUPPORTED', source_id='Barack Obama', target_id='payday loan regulations', properties={'title': 'Barack Obama', 'triplet_source_id': '13073b9d-68e7-4973-9f70-bd65912d9604'}),
-  EntityNode(label='POLICY', embedding=None, properties={'target': 'low-income workers', 'title': 'Barack Obama', 'triplet_source_id': '13073b9d-68e7-4973-9f70-bd65912d9604'}, name='payday loan regulations'))]
 
 Here, we have partial knowledge of what we want to detect, we know the article is about Barack Obama, so we define some entities and relations that could help guide the LLM in the labeling process as it detects the entities and relations. This doesn't guarantee that the LLM will use them, it simply guides it and gives it some ideas. It will still be up to the LLM to decide whether it uses the entities and relations we provide or not.
 
