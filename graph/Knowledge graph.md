@@ -1,11 +1,13 @@
 ---
-uses: "[[ontology]]"
+uses:
+  - "[[ontology]]"
 subclass of:
   - "[[knowledge base]]"
   - "[[labeled directed graph]]"
 studied in:
   - "[[ontology engineering]]"
   - "[[computer science]]"
+CanBeConstructedWith: "[[LLM Path Extractors]]"
 ---
 
 ![Knowledge graph Thumbnail](https://upload.wikimedia.org/wikipedia/commons/5/52/Conceptual_Diagram_-_Example.svg)
