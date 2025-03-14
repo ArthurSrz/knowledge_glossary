@@ -1,0 +1,2 @@
+![Python (programming language) Thumbnail](https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg)
+[Python (programming language)](https://en.wikipedia.org/wiki/Python_(programming_language)): Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation.
