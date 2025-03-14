@@ -1,5 +1,5 @@
 - [[fiabilite_compilatio_ia.md]]
-- [[empty files.md]]
+- [[empty files]]
 - [[2025-02-24.md]]
 - [[Inference engine.md]]
 - [[Knowledge graph.md]]
