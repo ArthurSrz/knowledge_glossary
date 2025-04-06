@@ -34,3 +34,7 @@ DS_Store
 
 # to exclude rag settings
 rag/
+
+
+# to exclude daily
+daily/

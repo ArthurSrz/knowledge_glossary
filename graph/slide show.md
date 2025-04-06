@@ -1,12 +1,6 @@
 ---
 subclass of:
-  - "[[presentation]]"
-  - "[[presentation program]]"
   - "[[creative work]]"
-has part(s): "[[presentation slide]]"
-instance of: "[[software category]]"
-Commons category: Slide shows
-wikidata entity id: Q904997
 ---
 ![Slide show Thumbnail](https://upload.wikimedia.org/wikipedia/commons/1/15/Schulprojekt_Hilden-001.jpg)
 [Slide show](https://en.wikipedia.org/wiki/Slide_show)
