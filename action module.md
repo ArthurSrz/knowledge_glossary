@@ -1,0 +1,3 @@
+---
+partOf: "[[Automation framework]]"
+---
