@@ -1,6 +1,6 @@
 ---
 different from:
-  - "[[Design]]"
+  - "[[design]]"
   - "[[design]]"
 instance of:
   - "[[field of work]]"
