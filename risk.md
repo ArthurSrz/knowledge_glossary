@@ -14,7 +14,6 @@ has characteristic:
   - "[[probability measure]]"
   - "[[Knightian uncertainty]]"
   - "[[risk context]]"
-described by source: "[[Encyclopædia Britannica 11th edition]]"
 different from: "[[Alea]]"
 facet of:
   - "[[decision making]]"
@@ -26,8 +25,10 @@ said to be the same as: "[[dangerousness]]"
 has effect:
   - "[[liability]]"
   - "[[excitement]]"
-has part(s): "[[selection]]"
-subclass of: "[[possibility]]"
+has part(s):
+  - "[[selection]]"
+subclass of:
+  - "[[possibility]]"
 instance of:
   - "[[possibility]]"
   - "[[type of problem]]"
@@ -35,19 +36,12 @@ instance of:
 union of: "[[list of values as qualifiers]]"
 partially coincident with: "[[harmfulness]]"
 has cause: "[[risk source]]"
-pronunciation audio: http://commons.wikimedia.org/wiki/Special:FilePath/De-Risiko.ogg
-OmegaWiki Defined Meaning: "3246"
-image: http://commons.wikimedia.org/wiki/Special:FilePath/Walker%20cartoon%20about%20the%20risks%20of%20European%20nations%20fighting%20over%20Asian%20territory.jpg
-MeSH tree code:
-  - E05.318.740.600.800
-  - G17.680.750
-  - N05.715.360.750.625.700
-  - N06.850.520.830.600.800
-Commons category: Risk
-title:
-  - MeSH Linked Data
-  - Risk | economics
-  - Risk | probability
-  - Risk | Brilliant Math & Science Wiki
 wikidata entity id: Q104493
 ---
+In any data or ML projects, there is a risk that the project does not work as plan, because of the multi factor implied and that need to work together : 
+
+1. Right skills
+2. Right coordination of many expertise among the following : [[Data engineer]], [[Data scientist]], [[DevOps]], [[MLOps]]
+3. Right infrastructure (enough [[Graphics processing unit]] or [[Central processing unit]])
+
+Risk is rewarded by money (at organizational scale) and by [[excitement]]. 
