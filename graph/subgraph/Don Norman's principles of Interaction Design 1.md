@@ -1,6 +1,6 @@
 ---
-principleDesignFor: "[[ML system]]"
+principleDesignFor: "[[ML system 1]]"
 ---
 
-Ways to drive [[ML system]] design. 
+Ways to drive ML System design. 
 

@@ -1,3 +1,7 @@
+---
+partOf: "[[Don Norman's principles of Interaction Design 1]]"
+---
+
 Aside from [[Don Norman's principles of Interaction Design]], this is a specific consideration when designing [[ML system]]. Key considerations : 
 
 * where does AI exists ? 
@@ -13,4 +17,4 @@ Aside from [[Don Norman's principles of Interaction Design]], this is a specific
 	* why not something else ? 
 
 
-We can use [[Local Interpretable Model-Agnostic Explanations (LIME)]]  or [[Shapley Additive Explanations (SHAP)]], or just inform the user on the interface. 
+We can use [[Local Interpretable Model-Agnostic Explanations (LIME) 1]]  or [[Shapley Additive Explanations (SHAP) 1]], or just inform the user on the interface. 
