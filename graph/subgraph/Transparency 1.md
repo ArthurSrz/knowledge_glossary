@@ -1,8 +1,9 @@
 ---
 partOf: "[[Don Norman's principles of Interaction Design 1]]"
+safeGuardFor: "[[Concept drift 1]]"
 ---
 
-Aside from [[Don Norman's principles of Interaction Design]], this is a specific consideration when designing [[ML system]]. Key considerations : 
+Aside from [[Don Norman's principles of Interaction Design 1]], this is a specific consideration when designing [[ML system 1]]. Key considerations : 
 
 * where does AI exists ? 
 * what data it uses ? 
