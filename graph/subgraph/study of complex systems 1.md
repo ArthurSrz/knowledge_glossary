@@ -1,5 +1,6 @@
 ---
-subclass of: "[[systems theory]]"
+subclass of:
+  - "[[systems theory 1]]"
 is the study of: "[[complex system]]"
 topic's main template:
   - "[[Template_Complex systems topics]]"
