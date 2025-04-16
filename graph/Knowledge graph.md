@@ -1,6 +1,8 @@
 ---
 uses:
   - "[[ontology]]"
+  - "[[taxonomy]]"
+  - "[[label]]"
 subclass of:
   - "[[knowledge base]]"
   - "[[labeled directed graph]]"
