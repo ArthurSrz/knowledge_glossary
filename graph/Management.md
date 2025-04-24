@@ -39,15 +39,8 @@ said to be the same as:
 topic's main template: "[[Template_Management]]"
 instance of:
   - "[[type of process]]"
-Dewey Decimal Classification:
-  - "650"
-IAB code: "76"
 Commons category: Management
-OmegaWiki Defined Meaning: "472667"
 image: http://commons.wikimedia.org/wiki/Special:FilePath/New%20Board%20Room%20at%202%20Broadway%20%2816458634290%29.jpg
 WordLift URL: http://data.thenextweb.com/tnw/entity/management
-U.S. National Archives Identifier: "10638999"
-SOC Code (2010): 11-0000
-wikidata entity id: Q2920921
 involves: "[[Feedback]]"
 ---
