@@ -23,7 +23,7 @@ significant person:
 partially coincident with: "[[authority]]"
 opposite of: "[[impotence]]"
 subclass of:
-  - "[[power]]"
+  - "[[Power]]"
 union of: "[[list of values as qualifiers]]"
 instance of:
   - "[[political concept]]"

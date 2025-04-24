@@ -5,7 +5,7 @@ has cause:
   - "[[political apathy]]"
   - "[[Delegation]]"
   - "[[departmentalizacion]]"
-  - "[[power]]"
+  - "[[Power]]"
 facet of:
   - "[[oligarchy]]"
   - "[[organizational structure]]"
