@@ -13,7 +13,6 @@
 - [[Schema-field consumption statistics.md]]
 - [[High-intent data discovery.md]]
 - [[Transparency.md]]
-- [[Data catalog.md]]
 - [[Feedback loops.md]]
 - [[Cloud computing.md]]
 - [[Subdomain.md]]
