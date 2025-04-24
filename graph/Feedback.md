@@ -20,4 +20,7 @@ Ce qui suscite le feedback.
 #### Attention 
 Là où l'on veut fixer l'attention du récepteur. 
 #### Faits 
-Evènements passés cités pour s'appuyer sur du concret.  
+Evènements passés cités pour s'appuyer sur du concret. 
+#### Conséquence 
+La manière dont le feedback vient améliorer le système. 
+
