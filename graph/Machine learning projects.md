@@ -1,5 +1,5 @@
 ---
-NecessarilyImplies: "[[risk]]"
+NecessarilyImplies: "[[Risk]]"
 ---
 
 Require a broader set of skills and are harder to show progress than [[Software projects]]. 
