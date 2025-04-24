@@ -4,7 +4,7 @@ facet of:
   - "[[contract law]]"
   - "[[management]]"
 has effect:
-  - "[[iron law of oligarchy]]"
+  - "[[Iron law of oligarchy]]"
 subclass of:
   - "[[legal act]]"
 ---

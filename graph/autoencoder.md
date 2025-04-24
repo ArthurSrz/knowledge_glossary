@@ -1,6 +1,6 @@
 ---
 subclass of:
-  - "[[artificial neural network]]"
+  - "[[Artificial neural network]]"
 facet of:
   - "[[deep learning]]"
   - "[[unsupervised learning]]"

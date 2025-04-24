@@ -18,7 +18,6 @@ class of object(s) of occurrence:
   - "[[business]]"
   - "[[society]]"
   - "[[human]]"
-described by source: "[[Encyclopædia Britannica 11th edition]]"
 facet of:
   - "[[business administration]]"
   - "[[organization]]"
@@ -44,3 +43,4 @@ image: http://commons.wikimedia.org/wiki/Special:FilePath/New%20Board%20Room%20a
 WordLift URL: http://data.thenextweb.com/tnw/entity/management
 involves: "[[Feedback]]"
 ---
+![](https://upload.wikimedia.org/wikipedia/commons/9/98/New_Board_Room_at_2_Broadway_%2816458634290%29.jpg)

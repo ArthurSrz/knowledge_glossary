@@ -175,7 +175,7 @@
 - [[graph/Blueprint.md]]
 - [[graph/Beta testing.md]]
 - [[graph/autre concept.md]]
-- [[graph/artificial neuron.md]]
+- [[Artificial neuron]]
 - [[graph/Automation framework.md]]
 - [[graph/Attention weights.md]]
 - [[graph/Artifact Management.md]]

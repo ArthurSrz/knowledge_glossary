@@ -1,6 +1,6 @@
 ---
 has part(s):
-  - "[[artificial neuron]]"
+  - "[[Artificial neuron]]"
   - "[[loss function]]"
   - "[[neural processing unit]]"
   - "[[neuron layer]]"
