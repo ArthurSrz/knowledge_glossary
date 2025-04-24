@@ -16,6 +16,8 @@ One of [[Don Norman's principles of Interaction Design]] :
 #### Contexte 
 Situation dans laquelle le feedback est fait. 
 #### Motivation 
-Ce qui suscite le feedback
+Ce qui suscite le feedback.
 #### Attention 
-Là où l'on veut fixer 
+Là où l'on veut fixer l'attention du récepteur. 
+#### Faits 
+Evènements passés cités pour s'appuyer sur du concret.  
