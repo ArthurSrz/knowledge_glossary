@@ -18,3 +18,13 @@ Breaks down into 3 steps : [[Split data]], [[Determine feature set]], [[Prepare 
 - [[Tidy Data]] - Organized data format
 - [[Data silos]] - Isolated data sources
 - [[raw data]] - Unprocessed data
+
+
+
+## Related concepts (Adamic-Adar connections)
+
+- [[Data lineage]] - Tracking data origins (Adamic-Adar: 0.721)
+- [[Data catalog]] - Documenting data assets (Adamic-Adar: 0.721)
+- [[Data collection]] - Initial data gathering (Adamic-Adar: 0.721)
+- [[Data augmentation]] - Expanding dataset (Adamic-Adar: 0.721)
+- [[Data quality]] - Ensuring reliable data

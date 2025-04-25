@@ -8,3 +8,13 @@ To resolve fairness issues :
 * change the data
 * change the model
 * change the system (if users use it in a different way)
+
+
+
+## Related concepts (Adamic-Adar connections)
+
+- [[Bias]] - Source of unfairness (Adamic-Adar: 0.641)
+- [[Ethical risks]] - Results of unfairness (Adamic-Adar: 0.641)
+- [[Accountable AI]] - Framework for fairness (Adamic-Adar: 0.641)
+- [[Fair AI]] - Implementation of fairness
+- [[Individual fairness]] - Specific fairness approach

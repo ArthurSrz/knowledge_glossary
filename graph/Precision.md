@@ -11,4 +11,14 @@ Optimizing precision means making sure we get the right answers even if it invol
 
 During the [[Evaluation]] phase of the [[CRISP-DM Process]], there is a tradeoff between the precision and the [[Accuracy]]
 
-Statisticians prefer the term [[Variance]]. 
+Statisticians prefer the term [[Variance]].
+
+
+
+## Related concepts (Adamic-Adar connections)
+
+- [[Recall]] - Complementary metric (Adamic-Adar: 1.072)
+- [[F1 Score]] - Harmonic mean of precision and recall (Adamic-Adar: 1.072)
+- [[Confusion Matrix]] - Source of precision calculation
+- [[True Positive (TP)]] - Used in precision formula
+- [[False Positive (FP)]] - Used in precision formula

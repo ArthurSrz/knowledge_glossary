@@ -18,3 +18,11 @@ The intercept in a linear regression, the y when features are 0.
 - [[Fair AI]] - Ethical AI development
 - [[Class imbalance]] - Statistical bias issue
 - [[Individual fairness]] - Fair treatment of individuals
+
+
+
+## Related concepts (Adamic-Adar connections)
+
+- [[Fairness]] - Essential AI principle (Adamic-Adar: 0.641)
+- [[Ethical risks]] - Potential harms (Adamic-Adar: 0.641)
+- [[Accountable AI]] - Framework for responsibility (Adamic-Adar: 0.641)
