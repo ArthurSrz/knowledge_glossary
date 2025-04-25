@@ -1,3 +1,21 @@
+---
+typeOf: "[[Data protection]]"
+protectedBy: "[[Federated learning]]"
+enforcedBy:
+  - "[[Data privacy laws]]"
+  - "[[GDPR]]"
+  - "[[CCPA]]"
+appliesTo:
+  - "[[Personal data]]"
+  - "[[Sensitive Information]]"
+  - "[[Protected Health Information (PHI)]]"
+techniquesInclude:
+  - "[[Differential privacy]]"
+  - "[[Homomorphic encryption]]"
+  - "[[Secure multi-party computation]]"
+governedBy: "[[Data governance]]"
+---
+
 Right of users to have control over how their information is collected, used and shares. 
 
 There are several ways to ensure privacy in [[ML system]] : 
@@ -18,3 +36,5 @@ There are several ways to ensure privacy in [[ML system]] :
 - [[Rights of Individuals]] - Data subject rights
 - [[Management of PII]] - Handling personally identifiable information
 - [[Compliant privacy policy]] - Creating compliant policies
+
+

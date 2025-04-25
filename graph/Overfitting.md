@@ -1,3 +1,12 @@
+---
+typeOf: "[[Model]] problem"
+causedBy: "[[High variance]]"
+detectedBy: "[[Cross validation]]"
+preventedBy: "[[Regularization]]"
+oppositeOf: "[[Underfitting]]"
+resultsIn: "Poor [[Generalization]]"
+---
+
 Phenomen that happens when you rely too heavily on your training data. In [[K-Means Clustering]], it happens when you don't consider enough neighbors.
 
 
@@ -14,3 +23,5 @@ Phenomen that happens when you rely too heavily on your training data. In [[K-Me
 - [[Training data set]] - Data leading to overfitting
 - [[Validation data]] - Detecting overfitting
 - [[Pruning]] - Reducing overfitting in trees
+
+
