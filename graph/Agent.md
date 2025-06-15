@@ -1,8 +1,35 @@
-# Agent
+---
+related_to:
+  - "[[Agentic System]]"
+  - "[[AgentOps]]"
+  - "[[Agent Observability]]"
+dependencies:
+  - "[[Large Language Model]]"
+category: Concepts Fondamentaux
+tags:
+  - AI_Agents
+  - Autonomie
+  - LLM
+---
 
-## Definition
+## Definitions
 
+### Definition 1
 An agent is a computational entity that perceives its environment through sensors and acts upon that environment through effectors, as conceptualized by Marvin Minsky in "The Society of Mind" (1986) and formalized in artificial intelligence research.
+
+### Definition 2 
+Système IA basé sur LLM qui peut agir de manière autonome, prendre des décisions et effectuer des tâches complexes avec une intervention humaine minimale.
+
+## Caractéristiques principales :
+- Autonomie dans la prise de décision
+- Capacité d'interaction avec l'environnement
+- Basé sur des modèles de langage de grande taille (LLM)
+- Intervention humaine minimale requise
+
+## Liens avec la taxonomie :
+- Base des systèmes agentiques
+- Élément central de la plateforme AgentOps
+- Nécessite une observabilité complète pour la production
 
 ## Historical Development
 
