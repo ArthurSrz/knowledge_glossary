@@ -1,3 +1,3 @@
 ---
-TypeOf: "[[Data schema]]"
+TypeOf: "[[Schema design]]"
 ---
