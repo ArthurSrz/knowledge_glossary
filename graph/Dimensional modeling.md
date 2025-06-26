@@ -9,7 +9,7 @@ This process involves making tables that represent known business details and ac
 - Information like ‘who, what, when, and where’ is put into related **dimension tables**.
 
 
-# Cheatsheet
+## Cheatsheet
 
 1. A great fact table is aligned with business transaction that created them, at the lowest possible grain
-2. 
+2. A great fact table is also at a low enough grain so you can make use of as many common dimension tables as possibles
