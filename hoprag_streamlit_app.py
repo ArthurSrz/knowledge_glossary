@@ -510,140 +510,62 @@ class HopRAGEngine:
         return "\n".join(abstract_parts)
     
     def _generate_reasoning_paper(self, question: str, hop_paths: List[HopPath]) -> str:
-        """Generate LinkedIn post teaching data concepts from reasoning paths"""
+        """Generate story-driven LinkedIn post using new narrative patterns"""
         
-        # Extract rich insights from content, not just entity names
+        # Extract rich insights from content
         content_insights = self._extract_content_insights(hop_paths[:3], question)
         
-        # Create compelling hook based on the question and actual content
-        hook = self._create_linkedin_hook(question, [insight['concept'] for insight in content_insights])
-        
-        post_parts = [
-            hook,
-            "",
-            "🧠 Let me break this down with some data science insights:",
-            ""
-        ]
-        
-        # Generate educational content using actual knowledge content
-        for i, insight in enumerate(content_insights):
-            post_parts.extend([
-                f"💡 **Insight #{i+1}: {insight['title']}**"
-            ])
-            
-            # Use actual content to create meaningful explanations
-            post_parts.append(f"  → {insight['explanation']}")
-            
-            if insight.get('example'):
-                post_parts.append(f"  → Example: {insight['example']}")
-            
-            post_parts.append("")
-        
-        # Generate content-aware takeaways
-        takeaways = self._generate_content_aware_takeaways(content_insights, hop_paths)
-        if takeaways:
-            post_parts.extend([
-                "🎯 **Key Takeaways:**",
-                ""
-            ])
-            for takeaway in takeaways:
-                post_parts.append(f"✅ {takeaway}")
-        
-        # Add dynamic hashtags based on actual content
-        hashtags = self._generate_dynamic_hashtags(content_insights)
-        
-        post_parts.extend([
-            "",
-            "💬 What's your experience with these concepts?",
-            "",
-            hashtags,
-            "",
-            "---",
-            f"🔬 Generated insights from {len(hop_paths)} reasoning paths | Confidence: {hop_paths[0].confidence:.1%}" if hop_paths else "🔬 Generated insights from multi-hop reasoning"
-        ])
-        
-        return "\n".join(post_parts)
+        # Use the new story-driven generator
+        linkedin_generator = LinkedInPostGenerator()
+        return linkedin_generator.generate_post(question, hop_paths, content_insights)
     
     def _generate_reasoning_paper_streaming(self, question: str, hop_paths: List[HopPath], stream_callback=None) -> str:
-        """Generate LinkedIn post with real-time streaming updates"""
+        """Generate story-driven LinkedIn post with streaming updates"""
         
-        # Start with the hook
+        # Extract insights first
         content_insights = self._extract_content_insights(hop_paths[:3], question)
-        hook = self._create_linkedin_hook(question, [insight['concept'] for insight in content_insights])
-        
-        # Build the post incrementally
-        current_post = [
-            hook,
-            "",
-            "🧠 Let me break this down with some data science insights:",
-            ""
-        ]
         
         if stream_callback:
-            stream_callback("🎯 **LinkedIn Post Preview:**", "linkedin_header")
-            stream_callback("\n".join(current_post), "linkedin_update")
+            stream_callback("🎯 **Generating Story-Driven LinkedIn Post:**", "linkedin_header")
+            stream_callback("🎭 **Selecting narrative pattern...**", "linkedin_progress")
         
-        # Add insights one by one
-        for i, insight in enumerate(content_insights):
-            if stream_callback:
-                stream_callback(f"✍️ **Generating Insight #{i+1}:** {insight['concept']}", "linkedin_progress")
-            
-            # Add the insight
-            insight_section = [
-                f"💡 **Insight #{i+1}: {insight['title']}**",
-                f"  → {insight['explanation']}"
-            ]
-            
-            if insight.get('example'):
-                insight_section.append(f"  → Example: {insight['example']}")
-            
-            insight_section.append("")
-            current_post.extend(insight_section)
-            
-            if stream_callback:
-                stream_callback("\n".join(current_post), "linkedin_update")
-                import time
-                time.sleep(0.3)  # Small delay to show incremental building
+        # Generate the full post using new system
+        linkedin_generator = LinkedInPostGenerator()
+        final_post = linkedin_generator.generate_post(question, hop_paths, content_insights)
         
-        # Generate content-aware takeaways
+        # Show incremental building by revealing sections
+        import time
+        post_lines = final_post.split('\n')
+        
+        # Show hook first
+        hook_lines = []
+        for line in post_lines:
+            hook_lines.append(line)
+            if line.strip() == "" and len(hook_lines) > 2:  # Found first empty line after content
+                break
+                
         if stream_callback:
-            stream_callback("🎯 **Adding Key Takeaways...**", "linkedin_progress")
+            stream_callback("🎪 **Hook generated...**", "linkedin_progress")
+            stream_callback("\n".join(hook_lines), "linkedin_update")
+            time.sleep(0.5)
         
-        takeaways = self._generate_content_aware_takeaways(content_insights, hop_paths)
-        if takeaways:
-            current_post.extend([
-                "🎯 **Key Takeaways:**",
-                ""
-            ])
-            
-            # Add takeaways one by one
-            for j, takeaway in enumerate(takeaways):
-                current_post.append(f"✅ {takeaway}")
-                if stream_callback:
-                    stream_callback("\n".join(current_post), "linkedin_update")
-                    time.sleep(0.2)
-        
-        # Add final elements
+        # Show progressive reveal
+        midpoint = len(post_lines) // 2
         if stream_callback:
-            stream_callback("🏷️ **Adding hashtags and finishing touches...**", "linkedin_progress")
+            stream_callback("📝 **Building narrative...**", "linkedin_progress")
+            stream_callback("\n".join(post_lines[:midpoint]), "linkedin_update")
+            time.sleep(0.5)
         
-        hashtags = self._generate_dynamic_hashtags(content_insights)
-        
-        current_post.extend([
-            "",
-            "💬 What's your experience with these concepts?",
-            "",
-            hashtags,
-            "",
-            "---",
-            f"🔬 Generated insights from {len(hop_paths)} reasoning paths | Confidence: {hop_paths[0].confidence:.1%}" if hop_paths else "🔬 Generated insights from multi-hop reasoning"
-        ])
-        
-        # Final update
         if stream_callback:
-            stream_callback("\n".join(current_post), "linkedin_final")
+            stream_callback("🎯 **Adding conclusion...**", "linkedin_progress")
+            stream_callback(final_post, "linkedin_update")
+            time.sleep(0.3)
         
-        return "\n".join(current_post)
+        # Final reveal
+        if stream_callback:
+            stream_callback(final_post, "linkedin_final")
+        
+        return final_post
     
     def _extract_content_insights(self, hop_paths: List[HopPath], question: str) -> List[Dict[str, str]]:
         """Extract meaningful insights from actual node content"""
@@ -669,7 +591,7 @@ class HopRAGEngine:
         return unique_insights[:3]  # Top 3 unique insights
     
     def _analyze_path_content(self, path: HopPath, question_embedding: np.ndarray) -> Dict[str, str]:
-        """Analyze a single path to extract meaningful content insights"""
+        """Analyze a single path to extract meaningful content insights with story elements"""
         
         # Focus on the most important entities in the path (usually the first 2-3)
         key_entities = path.entities[:3]
@@ -690,15 +612,79 @@ class HopRAGEngine:
                 else:
                     title = f"Understanding {entity}"
                 
-                return {
+                # Extract story elements from content
+                story_elements = self._extract_story_elements_from_content(entity, content)
+                
+                result = {
                     'concept': entity,
                     'title': title,
                     'explanation': insight['explanation'],
                     'example': insight.get('example', ''),
                     'content': content
                 }
+                
+                # Add story elements
+                result.update(story_elements)
+                
+                return result
         
         return None
+    
+    def _extract_story_elements_from_content(self, entity: str, content: str) -> Dict[str, str]:
+        """Extract specific story elements from content for narrative building"""
+        elements = {}
+        
+        import re
+        
+        # Look for numbers and statistics for data-driven stories
+        numbers = re.findall(r'(\d+(?:\.\d+)?%)', content)
+        if numbers:
+            elements['percentage'] = numbers[0]
+            
+        # Look for examples that can become case studies
+        if 'example' in content.lower():
+            examples = re.findall(r'[Ee]xamples? include ([^.]+)', content)
+            if examples:
+                elements['case_study'] = examples[0]
+                
+        # Look for problems/failures mentioned
+        problem_keywords = ['fail', 'error', 'mistake', 'wrong', 'issue', 'problem', 'challenge']
+        for keyword in problem_keywords:
+            if keyword in content.lower():
+                elements['has_failure_element'] = True
+                break
+                
+        # Look for controversial or contrarian statements
+        contrarian_keywords = ['however', 'but', 'contrary', 'opposite', 'although', 'despite']
+        for keyword in contrarian_keywords:
+            if keyword in content.lower():
+                elements['has_contrarian_element'] = True
+                break
+                
+        # Extract specific domain insights for different concepts
+        if 'bias' in entity.lower():
+            elements['domain_insight'] = 'AI bias affects real hiring decisions'
+            elements['secret'] = 'Most bias comes from training data, not algorithms'
+            elements['lesson'] = 'Test on diverse groups before deploying'
+            elements['counterintuitive_point'] = 'Removing bias doesn\'t guarantee fairness'
+            
+        elif 'ethics' in entity.lower():
+            elements['domain_insight'] = 'Ethical AI is often ignored until it\'s too late'
+            elements['secret'] = 'Ethics reviews slow down projects, but prevent disasters'
+            elements['lesson'] = 'Build ethics into the process from day one'
+            
+        elif 'quality' in entity.lower():
+            elements['domain_insight'] = 'Data quality matters more than algorithm complexity'
+            elements['secret'] = 'Garbage in, garbage out - still true in 2024'
+            elements['lesson'] = 'Spend 80% of time on data, 20% on models'
+            elements['counterintuitive_point'] = 'Less data, better curated beats more data every time'
+            
+        elif 'privacy' in entity.lower():
+            elements['domain_insight'] = 'Privacy-first design actually improves model performance'
+            elements['secret'] = 'Most privacy breaches happen in data storage, not algorithms'
+            elements['lesson'] = 'Design for privacy from the start, not as an afterthought'
+            
+        return elements
     
     def _extract_key_insight_from_content(self, entity: str, content: str, question_embedding: np.ndarray) -> Dict[str, str]:
         """Extract the most relevant insight from content based on the question"""
@@ -1026,6 +1012,419 @@ class HopRAGEngine:
             ]
         
         return takeaways[:3]  # Keep it concise
+
+class NarrativePattern:
+    """Base class for LinkedIn post narrative patterns"""
+    
+    def __init__(self, pattern_name: str):
+        self.pattern_name = pattern_name
+        
+    def generate_hook(self, question: str, key_insights: List[Dict], story_elements: Dict) -> str:
+        """Generate engaging hook for this narrative pattern"""
+        raise NotImplementedError
+        
+    def generate_body(self, insights: List[Dict], story_elements: Dict) -> List[str]:
+        """Generate main content body"""
+        raise NotImplementedError
+        
+    def generate_conclusion(self, insights: List[Dict], story_elements: Dict) -> List[str]:
+        """Generate conclusion and call to action"""
+        raise NotImplementedError
+
+class ContrariianPattern(NarrativePattern):
+    """Pattern for contrarian/myth-busting posts"""
+    
+    def __init__(self):
+        super().__init__("contrarian")
+        
+    def generate_hook(self, question: str, key_insights: List[Dict], story_elements: Dict) -> str:
+        import random
+        
+        # Extract myth to bust
+        default_insight = "Most AI failures aren't technical"
+        default_view = "Your models aren't biased because of bad data"
+        default_finding = "The best models use less data, not more."
+        
+        myth_hooks = [
+            f"Everyone believes {story_elements.get('common_belief', 'data quality is just cleaning')}.\n\nThey're wrong.",
+            f"Hot take: {story_elements.get('controversial_insight', default_insight)}",
+            f"Unpopular opinion: {story_elements.get('contrarian_view', default_view)}",
+            f"I see this mistake everywhere:\n\n\"{story_elements.get('common_mistake', 'We need more data')}\"\n\nHere's why that's backwards:",
+            f"After analyzing {story_elements.get('data_point', '500+')} projects, I discovered something shocking:\n\n{story_elements.get('surprising_finding', default_finding)}"
+        ]
+        
+        return random.choice(myth_hooks)
+        
+    def generate_body(self, insights: List[Dict], story_elements: Dict) -> List[str]:
+        body_parts = []
+        
+        # Build the argument
+        if story_elements.get('evidence'):
+            body_parts.append(f"Here's the data:")
+            body_parts.append("")
+            for evidence in story_elements['evidence'][:2]:
+                body_parts.append(f"📊 {evidence}")
+            body_parts.append("")
+        
+        # Reveal the truth
+        if insights:
+            body_parts.append("The reality?")
+            body_parts.append("")
+            for i, insight in enumerate(insights[:2]):
+                if insight.get('counterintuitive_point'):
+                    body_parts.append(f"{i+1}. {insight['counterintuitive_point']}")
+                elif insight.get('explanation'):
+                    body_parts.append(f"{i+1}. {insight['explanation']}")
+            body_parts.append("")
+            
+        # Add specific example
+        if story_elements.get('specific_example'):
+            body_parts.append(f"Example: {story_elements['specific_example']}")
+            body_parts.append("")
+            
+        return body_parts
+        
+    def generate_conclusion(self, insights: List[Dict], story_elements: Dict) -> List[str]:
+        conclusion = []
+        
+        if story_elements.get('lesson_learned'):
+            conclusion.extend([
+                "The lesson?",
+                "",
+                story_elements['lesson_learned'],
+                ""
+            ])
+            
+        # Provocative question
+        questions = [
+            "What's the biggest misconception in your field?",
+            "Have you seen this mistake in your organization?",
+            "What other \"best practices\" need questioning?",
+            "Where else are we getting it backwards?"
+        ]
+        
+        import random
+        conclusion.append(random.choice(questions))
+        
+        return conclusion
+
+class FailureStoryPattern(NarrativePattern):
+    """Pattern for personal failure/learning stories"""
+    
+    def __init__(self):
+        super().__init__("failure_story")
+        
+    def generate_hook(self, question: str, key_insights: List[Dict], story_elements: Dict) -> str:
+        import random
+        
+        # Fix f-string backslash issue
+        default_belief = "more data always meant better models"
+        default_failure = "discriminated against women"
+        
+        failure_hooks = [
+            f"I made a ${story_elements.get('cost', '50k')} mistake.\n\nBecause I didn't understand {story_elements.get('key_concept', 'bias in AI')}.",
+            f"My model failed spectacularly in production.\n\nHere's what went wrong:",
+            f"3 years ago, I thought {story_elements.get('wrong_belief', default_belief)}.\n\nI was so wrong it cost us {story_elements.get('consequence', 'months of work')}.",
+            f"I used to ignore {story_elements.get('ignored_factor', 'data quality')}.\n\nBig mistake.",
+            f"This is embarrassing to admit:\n\nI once deployed a model that {story_elements.get('failure_mode', default_failure)}.\n\nHere's how it happened:"
+        ]
+        
+        return random.choice(failure_hooks)
+        
+    def generate_body(self, insights: List[Dict], story_elements: Dict) -> List[str]:
+        body_parts = []
+        
+        # Tell the story
+        if story_elements.get('what_happened'):
+            body_parts.extend([
+                "What happened:",
+                "",
+                story_elements['what_happened'],
+                ""
+            ])
+            
+        # The insight/lesson
+        body_parts.append("What I learned:")
+        body_parts.append("")
+        
+        for i, insight in enumerate(insights[:2]):
+            if insight.get('lesson'):
+                body_parts.append(f"• {insight['lesson']}")
+            elif insight.get('explanation'):
+                body_parts.append(f"• {insight['explanation']}")
+                
+        body_parts.append("")
+        
+        # How to avoid it
+        if story_elements.get('prevention'):
+            body_parts.extend([
+                "How to avoid this:",
+                "",
+                story_elements['prevention'],
+                ""
+            ])
+            
+        return body_parts
+        
+    def generate_conclusion(self, insights: List[Dict], story_elements: Dict) -> List[str]:
+        conclusion = []
+        
+        if story_elements.get('broader_lesson'):
+            conclusion.extend([
+                f"The bigger lesson: {story_elements['broader_lesson']}",
+                ""
+            ])
+            
+        conclusion.append("What's your biggest data science mistake? (I bet I can top it 😅)")
+        
+        return conclusion
+
+class InsiderSecretsPattern(NarrativePattern):
+    """Pattern for industry insider secrets"""
+    
+    def __init__(self):
+        super().__init__("insider_secrets")
+        
+    def generate_hook(self, question: str, key_insights: List[Dict], story_elements: Dict) -> str:
+        import random
+        
+        # Fix f-string backslash issues
+        default_reality = "You'll spend 80% of your time on data, not algorithms"
+        default_view = "The best data scientists aren't the ones with the fanciest models"
+        
+        secret_hooks = [
+            f"After {story_elements.get('years_experience', '5')} years in data science, here's what nobody tells you:",
+            f"Industry secret:\n\n{story_elements.get('hidden_truth', 'Most ML models in production are embarrassingly simple')}",
+            f"What they don't teach you in data science courses:\n\n{story_elements.get('reality_check', default_reality)}",
+            f"Behind the scenes at {story_elements.get('company_type', 'tech companies')}:\n\n{story_elements.get('insider_view', default_view)}",
+            f"Recruiter told me this would never work in an interview.\n\nNow it's how we solve {story_elements.get('solved_problem', 'bias detection')} at scale."
+        ]
+        
+        return random.choice(secret_hooks)
+        
+    def generate_body(self, insights: List[Dict], story_elements: Dict) -> List[str]:
+        body_parts = []
+        
+        # Reveal the secrets
+        body_parts.append("Here's what's really happening:")
+        body_parts.append("")
+        
+        for i, insight in enumerate(insights[:3]):
+            if insight.get('secret'):
+                body_parts.append(f"{i+1}. {insight['secret']}")
+            elif insight.get('explanation'):
+                body_parts.append(f"{i+1}. {insight['explanation']}")
+                
+        body_parts.append("")
+        
+        # Add context
+        if story_elements.get('why_hidden'):
+            body_parts.extend([
+                f"Why don't people talk about this? {story_elements['why_hidden']}",
+                ""
+            ])
+            
+        return body_parts
+        
+    def generate_conclusion(self, insights: List[Dict], story_elements: Dict) -> List[str]:
+        conclusion = [
+            "What other industry secrets should we be sharing?",
+            "",
+            "(Follow for more behind-the-scenes insights)"
+        ]
+        
+        return conclusion
+
+class RevealingQuestionPattern(NarrativePattern):
+    """Pattern for provocative questions that reveal insights"""
+    
+    def __init__(self):
+        super().__init__("revealing_question")
+        
+    def generate_hook(self, question: str, key_insights: List[Dict], story_elements: Dict) -> str:
+        import random
+        
+        question_hooks = [
+            f"Why do {story_elements.get('percentage', '90%')} of {story_elements.get('subject', 'AI projects')} fail?\n\nIt's not what you think.",
+            f"Quick question: {story_elements.get('thought_provoking_q', 'How many of your models actually create business value?')}\n\nBe honest.",
+            f"Serious question:\n\nWhen was the last time you questioned {story_elements.get('questioned_thing', 'your training data')}?",
+            f"Pop quiz: What's the #1 reason {story_elements.get('failure_subject', 'machine learning projects')} fail?\n\n(Hint: It's not the algorithm)",
+            f"Challenge: Name one time {story_elements.get('challenge_scenario', 'more data made your model worse')}.\n\nI'll wait."
+        ]
+        
+        return random.choice(question_hooks)
+        
+    def generate_body(self, insights: List[Dict], story_elements: Dict) -> List[str]:
+        body_parts = []
+        
+        # Answer the question
+        body_parts.append("Here's the real answer:")
+        body_parts.append("")
+        
+        if story_elements.get('surprising_answer'):
+            body_parts.append(story_elements['surprising_answer'])
+            body_parts.append("")
+            
+        # Break it down
+        body_parts.append("Let me break this down:")
+        body_parts.append("")
+        
+        for i, insight in enumerate(insights[:2]):
+            if insight.get('breakdown_point'):
+                body_parts.append(f"→ {insight['breakdown_point']}")
+            elif insight.get('explanation'):
+                body_parts.append(f"→ {insight['explanation']}")
+                
+        body_parts.append("")
+        
+        return body_parts
+        
+    def generate_conclusion(self, insights: List[Dict], story_elements: Dict) -> List[str]:
+        import random
+        
+        follow_up_questions = [
+            "What question should I ask next?",
+            "What's your answer to this?",
+            "Am I missing something here?",
+            "What would you add to this?"
+        ]
+        
+        return [random.choice(follow_up_questions)]
+
+class LinkedInPostGenerator:
+    """New story-driven LinkedIn post generator"""
+    
+    def __init__(self):
+        self.patterns = [
+            ContrariianPattern(),
+            FailureStoryPattern(), 
+            InsiderSecretsPattern(),
+            RevealingQuestionPattern()
+        ]
+        
+    def generate_post(self, question: str, hop_paths: List[HopPath], content_insights: List[Dict]) -> str:
+        """Generate a story-driven LinkedIn post"""
+        
+        # Extract story elements from content
+        story_elements = self._extract_story_elements(content_insights, hop_paths)
+        
+        # Choose narrative pattern based on content
+        pattern = self._select_pattern(story_elements, content_insights)
+        
+        # Generate post sections
+        hook = pattern.generate_hook(question, content_insights, story_elements)
+        body = pattern.generate_body(content_insights, story_elements)
+        conclusion = pattern.generate_conclusion(content_insights, story_elements)
+        
+        # Assemble post
+        post_parts = [hook, ""]
+        post_parts.extend(body)
+        post_parts.extend(conclusion)
+        
+        # Add minimal hashtags
+        hashtags = self._generate_minimal_hashtags(content_insights)
+        post_parts.extend(["", hashtags])
+        
+        return "\n".join(post_parts)
+        
+    def _extract_story_elements(self, content_insights: List[Dict], hop_paths: List[HopPath]) -> Dict:
+        """Extract story elements from content for narrative building"""
+        elements = {}
+        
+        # Look for conflicting concepts for contrarian stories
+        if len(content_insights) >= 2:
+            concept1 = content_insights[0].get('concept', '')
+            concept2 = content_insights[1].get('concept', '')
+            
+            if 'bias' in concept1.lower() and 'fairness' in concept2.lower():
+                elements['common_belief'] = 'fairness just means removing bias'
+                elements['controversial_insight'] = 'Fairness and bias removal are actually different problems'
+                elements['counterintuitive_point'] = 'You can remove bias and still be unfair'
+                
+            elif 'ethics' in concept1.lower() and 'performance' in concept2.lower():
+                elements['common_belief'] = 'ethical AI means slower AI'
+                elements['controversial_insight'] = 'The most ethical models often perform better'
+                
+            elif 'quality' in concept1.lower():
+                elements['common_mistake'] = 'We need more data'
+                elements['surprising_finding'] = 'Better curation beats bigger datasets every time'
+                
+        # Extract specific numbers and examples
+        for insight in content_insights:
+            content = insight.get('content', '')
+            
+            # Look for percentages, numbers
+            import re
+            numbers = re.findall(r'(\d+(?:\.\d+)?%?)', content)
+            if numbers:
+                elements['data_point'] = numbers[0]
+                
+            # Look for specific examples
+            if 'example' in content.lower():
+                examples = re.findall(r'[Ee]xamples? include ([^.]+)', content)
+                if examples:
+                    elements['specific_example'] = examples[0]
+                    
+        # Generate failure scenarios based on concepts
+        key_concepts = [insight.get('concept', '') for insight in content_insights]
+        if 'bias' in str(key_concepts).lower():
+            elements['failure_mode'] = 'showed bias against certain groups'
+            elements['cost'] = '100k'
+            elements['what_happened'] = 'We launched without proper bias testing. The model systematically rejected qualified candidates from underrepresented groups.'
+            elements['prevention'] = 'Always test on diverse datasets and audit for fairness before deployment'
+            
+        elif 'quality' in str(key_concepts).lower():
+            elements['failure_mode'] = 'failed due to data quality issues'
+            elements['cost'] = '6 months'
+            elements['what_happened'] = 'Our model looked great in testing but failed in production because training data was cleaner than real-world data.'
+            
+        # Industry secrets based on concepts
+        if 'ethics' in str(key_concepts).lower():
+            elements['hidden_truth'] = 'Most "ethical AI" initiatives are just PR'
+            elements['years_experience'] = '7'
+            elements['why_hidden'] = 'Companies don\'t want to admit how little they actually invest in real ethics'
+            
+        return elements
+        
+    def _select_pattern(self, story_elements: Dict, content_insights: List[Dict]) -> NarrativePattern:
+        """Select the best narrative pattern for the content"""
+        import random
+        
+        # Bias toward contrarian for controversial topics
+        if story_elements.get('controversial_insight'):
+            return self.patterns[0]  # ContrariianPattern
+            
+        # Use failure stories for bias/ethics content
+        concepts = ' '.join([insight.get('concept', '') for insight in content_insights]).lower()
+        if 'bias' in concepts or 'ethics' in concepts:
+            if random.random() < 0.6:  # 60% chance
+                return self.patterns[1]  # FailureStoryPattern
+                
+        # Default to random selection
+        return random.choice(self.patterns)
+        
+    def _generate_minimal_hashtags(self, content_insights: List[Dict]) -> str:
+        """Generate minimal, relevant hashtags"""
+        concepts = [insight.get('concept', '') for insight in content_insights]
+        
+        # Keep it simple and relevant
+        hashtags = ['#DataScience']
+        
+        concept_map = {
+            'bias': '#AIBias', 
+            'ethics': '#AIEthics',
+            'fairness': '#ResponsibleAI',
+            'quality': '#DataQuality',
+            'privacy': '#DataPrivacy'
+        }
+        
+        for concept in concepts:
+            for key, tag in concept_map.items():
+                if key in concept.lower() and tag not in hashtags:
+                    hashtags.append(tag)
+                    break
+                    
+        return ' '.join(hashtags[:3])  # Max 3 hashtags
 
 class HopRAGStreamlitApp:
     """Streamlit application for HopRAG"""
