@@ -4,53 +4,100 @@ Test script for reasoning paper generation in HopRAG
 """
 
 import sys
+import os
+import networkx as nx
 sys.path.append('/Users/arthursarazin/Documents/knowledge_glossary')
 
+# Import after path setup
 from hoprag_streamlit_app import HopRAGEngine, KnowledgeGraphLoader, HopPath
-import os
 
 def test_reasoning_paper_generation():
-    """Test the reasoning paper generation functionality"""
+    """Test the enhanced path discovery and LinkedIn post generation"""
     
-    # Create some mock hop paths for testing
-    mock_hop_paths = [
-        HopPath(
-            entities=["AI Ethics", "Bias", "Fairness"],
-            relations=["RELATED_TO", "AFFECTS"],
-            evidence=[
-                "AI Ethics is a crucial field that addresses moral and ethical implications of artificial intelligence systems.",
-                "Bias in AI systems can lead to unfair treatment of certain groups and individuals.",
-                "Fairness in AI requires careful consideration of how systems impact different populations."
-            ],
-            confidence=0.85,
-            hop_count=2,
-            reasoning_chain="AI Ethics → RELATED_TO → Bias → AFFECTS → Fairness"
-        ),
-        HopPath(
-            entities=["Machine Learning", "Data Quality", "Model Performance"],
-            relations=["DEPENDS_ON", "IMPACTS"],
-            evidence=[
-                "Machine Learning algorithms require high-quality training data to perform effectively.",
-                "Data Quality is fundamental to building reliable and accurate AI systems.",
-                "Model Performance is directly correlated with the quality of input data and training processes."
-            ],
-            confidence=0.78,
-            hop_count=2,
-            reasoning_chain="Machine Learning → DEPENDS_ON → Data Quality → IMPACTS → Model Performance"
-        ),
-        HopPath(
-            entities=["Privacy", "Data Protection", "GDPR"],
-            relations=["REQUIRES", "ENFORCED_BY"],
-            evidence=[
-                "Privacy is a fundamental right that must be protected in AI systems.",
-                "Data Protection regulations establish frameworks for handling personal information.",
-                "GDPR provides comprehensive guidelines for data processing and individual rights."
-            ],
-            confidence=0.72,
-            hop_count=2,
-            reasoning_chain="Privacy → REQUIRES → Data Protection → ENFORCED_BY → GDPR"
-        )
+    # Create a more comprehensive test graph
+    
+    # Build a richer knowledge graph for testing
+    graph = nx.Graph()
+    
+    # AI/ML concepts with deeper connections
+    concepts = {
+        "AI Ethics": "AI Ethics encompasses moral principles and guidelines for developing responsible artificial intelligence systems.",
+        "Bias": "Bias in AI refers to systematic prejudices embedded in algorithmic decision-making processes.",
+        "Fairness": "Fairness in AI ensures equitable treatment across different demographic groups and use cases.",
+        "Machine Learning": "Machine Learning enables computers to learn patterns from data without explicit programming.",
+        "Data Quality": "Data Quality refers to the accuracy, completeness, and reliability of datasets used in AI systems.",
+        "Model Performance": "Model Performance measures how well an AI system achieves its intended objectives.",
+        "Privacy": "Privacy protection ensures individual data rights and confidentiality in AI applications.",
+        "Data Protection": "Data Protection involves legal and technical measures to safeguard personal information.",
+        "GDPR": "GDPR establishes comprehensive data protection regulations across the European Union.",
+        "Algorithmic Transparency": "Algorithmic Transparency requires AI systems to be explainable and interpretable.",
+        "Responsible AI": "Responsible AI integrates ethical considerations throughout the AI development lifecycle.",
+        "Data Governance": "Data Governance establishes policies and procedures for managing organizational data assets.",
+        "Model Interpretability": "Model Interpretability enables understanding of how AI systems make decisions.",
+        "Regulatory Compliance": "Regulatory Compliance ensures AI systems meet legal and industry standards."
+    }
+    
+    # Add nodes to graph
+    for concept, description in concepts.items():
+        graph.add_node(concept, content=description)
+    
+    # Add realistic edges with relations
+    edges = [
+        ("AI Ethics", "Bias", "ADDRESSES"),
+        ("AI Ethics", "Fairness", "PROMOTES"),
+        ("AI Ethics", "Responsible AI", "ENCOMPASSES"),
+        ("Bias", "Fairness", "CONFLICTS_WITH"),
+        ("Bias", "Model Performance", "DEGRADES"),
+        ("Machine Learning", "Data Quality", "DEPENDS_ON"),
+        ("Machine Learning", "Model Performance", "DETERMINES"),
+        ("Data Quality", "Model Performance", "IMPACTS"),
+        ("Privacy", "Data Protection", "REQUIRES"),
+        ("Privacy", "GDPR", "GOVERNED_BY"),
+        ("Data Protection", "GDPR", "ENFORCED_BY"),
+        ("Data Protection", "Data Governance", "PART_OF"),
+        ("Responsible AI", "Algorithmic Transparency", "REQUIRES"),
+        ("Responsible AI", "Model Interpretability", "INCLUDES"),
+        ("Algorithmic Transparency", "Model Interpretability", "ENABLES"),
+        ("Model Interpretability", "Regulatory Compliance", "SUPPORTS"),
+        ("GDPR", "Regulatory Compliance", "DEFINES"),
+        ("Data Governance", "Regulatory Compliance", "ENSURES"),
+        ("Fairness", "Responsible AI", "COMPONENT_OF"),
+        ("AI Ethics", "Data Governance", "INFLUENCES")
     ]
+    
+    for src, dst, relation in edges:
+        graph.add_edge(src, dst, relation=relation)
+    
+    # Test the enhanced engine
+    engine = HopRAGEngine(graph, concepts)
+    
+    # Test with a complex question
+    question = "How do ethical considerations impact AI system development?"
+    
+    print("="*80)
+    print("ENHANCED PATH DISCOVERY TEST")
+    print("="*80)
+    print(f"Graph: {len(graph.nodes)} nodes, {len(graph.edges)} edges")
+    print(f"Question: {question}")
+    print("="*80)
+    
+    # Test the enhanced path discovery
+    result = engine.query(question, max_hops=5, top_k=10)
+    
+    print(f"\nDiscovered {len(result.hop_paths)} high-quality reasoning paths:")
+    for i, path in enumerate(result.hop_paths):
+        print(f"\nPath {i+1} (Confidence: {path.confidence:.3f}, Hops: {path.hop_count}):")
+        print(f"  Entities: {' → '.join(path.entities)}")
+        print(f"  Relations: {' → '.join(path.relations)}")
+    
+    print("\n" + "="*80)
+    print("GENERATED LINKEDIN POST:")
+    print("="*80)
+    print(result.reasoning_paper)
+    print("="*80)
+    
+    # Create some mock hop paths for additional testing
+    mock_hop_paths = result.hop_paths
     
     # Create a mock HopRAG engine instance
     from unittest.mock import Mock

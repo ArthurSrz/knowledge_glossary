@@ -117,8 +117,8 @@ class HopRAGEngine:
         self.graph = knowledge_graph
         self.concept_content = concept_content
         self.embedding_model = SentenceTransformer('all-MiniLM-L6-v2')
-        self.max_hops = 3
-        self.top_k_paths = 10
+        self.max_hops = 5  # Increased for deeper exploration
+        self.top_k_paths = 15  # More paths for better diversity
         
     def query(self, question: str, max_hops: int = 3, top_k: int = 5) -> HopRAGResult:
         """Process query using HopRAG methodology"""
@@ -174,7 +174,7 @@ class HopRAGEngine:
         return [concept for concept, _ in similarities[:5]]
     
     def _discover_hop_paths(self, start_entities: List[str], question: str, max_hops: int) -> List[HopPath]:
-        """Discover multi-hop reasoning paths"""
+        """Discover multi-hop reasoning paths with enhanced depth and quality"""
         question_embedding = self.embedding_model.encode(question)
         all_paths = []
         
@@ -182,55 +182,179 @@ class HopRAGEngine:
             if start_entity not in self.graph.nodes:
                 continue
                 
-            # BFS to find paths up to max_hops
-            queue = deque([(start_entity, [start_entity], [], 0)])
-            visited = set()
-            
-            while queue:
-                current_node, path, relations, hop_count = queue.popleft()
-                
-                if hop_count >= max_hops:
-                    continue
-                
-                # Generate evidence for current path
-                evidence = [self.concept_content.get(node, "") for node in path]
-                
-                # Calculate path relevance
-                path_text = " ".join(path) + " " + " ".join(evidence)
-                path_embedding = self.embedding_model.encode(path_text[:1000])
-                
-                similarity = np.dot(question_embedding, path_embedding) / (
-                    np.linalg.norm(question_embedding) * np.linalg.norm(path_embedding)
-                )
-                
-                # Create reasoning chain
-                reasoning_chain = self._create_reasoning_chain(path, relations)
-                
-                hop_path = HopPath(
-                    entities=path.copy(),
-                    relations=relations.copy(),
-                    evidence=evidence,
-                    confidence=similarity,
-                    hop_count=hop_count,
-                    reasoning_chain=reasoning_chain
-                )
-                all_paths.append(hop_path)
-                
-                # Expand to neighbors
-                for neighbor in self.graph.neighbors(current_node):
-                    if neighbor not in visited or len(path) < max_hops:
-                        edge_data = self.graph.get_edge_data(current_node, neighbor)
-                        relation = edge_data.get('relation', 'RELATED_TO')
-                        
-                        new_path = path + [neighbor]
-                        new_relations = relations + [relation]
-                        
-                        queue.append((neighbor, new_path, new_relations, hop_count + 1))
-                        visited.add(neighbor)
+            # Enhanced DFS with path quality tracking
+            paths_from_entity = self._deep_path_search(
+                start_entity, question_embedding, max_hops, set(), []
+            )
+            all_paths.extend(paths_from_entity)
         
-        # Sort paths by confidence
-        all_paths.sort(key=lambda x: x.confidence, reverse=True)
-        return all_paths[:self.top_k_paths]
+        # Advanced path filtering and scoring
+        quality_paths = self._filter_and_score_paths(all_paths, question_embedding)
+        
+        # Ensure path diversity
+        diverse_paths = self._ensure_path_diversity(quality_paths)
+        
+        return diverse_paths[:self.top_k_paths]
+    
+    def _deep_path_search(self, current_node: str, question_embedding: np.ndarray, 
+                         max_hops: int, visited_in_path: set, current_path: List[str]) -> List[HopPath]:
+        """Deep recursive path search with better exploration"""
+        paths = []
+        
+        # Add current node to path
+        new_path = current_path + [current_node]
+        new_visited = visited_in_path.copy()
+        new_visited.add(current_node)
+        
+        # Generate path at current depth if meaningful (2+ hops)
+        if len(new_path) >= 2:
+            path_obj = self._create_path_object(new_path, question_embedding)
+            if path_obj.confidence > 0.1:  # Quality threshold
+                paths.append(path_obj)
+        
+        # Continue exploration if within hop limit
+        if len(new_path) < max_hops + 1:
+            # Get neighbors sorted by relevance
+            neighbors = self._get_sorted_neighbors(current_node, question_embedding)
+            
+            for neighbor, neighbor_score in neighbors[:8]:  # Top 8 neighbors per node
+                if neighbor not in new_visited:
+                    # Recursive exploration
+                    sub_paths = self._deep_path_search(
+                        neighbor, question_embedding, max_hops, new_visited, new_path
+                    )
+                    paths.extend(sub_paths)
+        
+        return paths
+    
+    def _get_sorted_neighbors(self, node: str, question_embedding: np.ndarray) -> List[tuple]:
+        """Get neighbors sorted by relevance to question"""
+        neighbors = []
+        
+        for neighbor in self.graph.neighbors(node):
+            if neighbor in self.concept_content:
+                # Calculate neighbor relevance
+                neighbor_text = neighbor + " " + self.concept_content[neighbor][:300]
+                neighbor_embedding = self.embedding_model.encode(neighbor_text)
+                
+                similarity = np.dot(question_embedding, neighbor_embedding) / (
+                    np.linalg.norm(question_embedding) * np.linalg.norm(neighbor_embedding)
+                )
+                
+                neighbors.append((neighbor, similarity))
+        
+        # Sort by relevance
+        neighbors.sort(key=lambda x: x[1], reverse=True)
+        return neighbors
+    
+    def _create_path_object(self, path: List[str], question_embedding: np.ndarray) -> HopPath:
+        """Create HopPath object with enhanced scoring"""
+        # Generate evidence
+        evidence = [self.concept_content.get(node, "") for node in path]
+        
+        # Extract relations
+        relations = []
+        for i in range(len(path) - 1):
+            if self.graph.has_edge(path[i], path[i+1]):
+                edge_data = self.graph.get_edge_data(path[i], path[i+1])
+                relation = edge_data.get('relation', 'RELATED_TO')
+            else:
+                relation = 'CONNECTED_TO'
+            relations.append(relation)
+        
+        # Enhanced confidence calculation
+        confidence = self._calculate_path_confidence(path, evidence, question_embedding)
+        
+        # Create reasoning chain
+        reasoning_chain = self._create_reasoning_chain(path, relations)
+        
+        return HopPath(
+            entities=path.copy(),
+            relations=relations,
+            evidence=evidence,
+            confidence=confidence,
+            hop_count=len(path) - 1,
+            reasoning_chain=reasoning_chain
+        )
+    
+    def _calculate_path_confidence(self, path: List[str], evidence: List[str], 
+                                  question_embedding: np.ndarray) -> float:
+        """Calculate enhanced path confidence score"""
+        # Semantic similarity component
+        path_text = " ".join(path) + " " + " ".join(evidence)
+        path_embedding = self.embedding_model.encode(path_text[:1000])
+        
+        semantic_sim = np.dot(question_embedding, path_embedding) / (
+            np.linalg.norm(question_embedding) * np.linalg.norm(path_embedding)
+        )
+        
+        # Path length bonus (longer paths can be more informative)
+        length_bonus = min(len(path) / 5.0, 1.0)  # Bonus up to 5 hops
+        
+        # Evidence quality bonus
+        evidence_quality = sum(1 for e in evidence if len(e.strip()) > 50) / len(evidence)
+        
+        # Node connectivity bonus (well-connected nodes are often important)
+        connectivity_bonus = np.mean([
+            min(self.graph.degree(node) / 10.0, 1.0) for node in path 
+            if node in self.graph.nodes
+        ])
+        
+        # Combined confidence score
+        confidence = (
+            semantic_sim * 0.5 +
+            length_bonus * 0.2 +
+            evidence_quality * 0.2 +
+            connectivity_bonus * 0.1
+        )
+        
+        return min(confidence, 1.0)
+    
+    def _filter_and_score_paths(self, paths: List[HopPath], question_embedding: np.ndarray) -> List[HopPath]:
+        """Filter and enhance scoring of paths"""
+        quality_paths = []
+        
+        for path in paths:
+            # Quality filters
+            if (path.confidence > 0.15 and  # Minimum confidence
+                len(path.entities) >= 2 and  # At least 2 entities
+                len(path.entities) <= 6 and  # Not too long
+                len(set(path.entities)) == len(path.entities)):  # No cycles
+                
+                quality_paths.append(path)
+        
+        # Sort by confidence
+        quality_paths.sort(key=lambda x: x.confidence, reverse=True)
+        
+        return quality_paths
+    
+    def _ensure_path_diversity(self, paths: List[HopPath]) -> List[HopPath]:
+        """Ensure diversity in reasoning paths"""
+        if not paths:
+            return paths
+            
+        diverse_paths = [paths[0]]  # Always include the best path
+        
+        for path in paths[1:]:
+            # Check if path is sufficiently different from existing ones
+            is_diverse = True
+            for existing_path in diverse_paths:
+                # Calculate entity overlap
+                overlap = len(set(path.entities) & set(existing_path.entities))
+                overlap_ratio = overlap / max(len(path.entities), len(existing_path.entities))
+                
+                if overlap_ratio > 0.7:  # Too similar
+                    is_diverse = False
+                    break
+            
+            if is_diverse:
+                diverse_paths.append(path)
+                
+            # Stop when we have enough diverse paths
+            if len(diverse_paths) >= self.top_k_paths * 2:
+                break
+        
+        return diverse_paths
     
     def _create_reasoning_chain(self, path: List[str], relations: List[str]) -> str:
         """Create human-readable reasoning chain"""
@@ -496,8 +620,8 @@ class HopRAGStreamlitApp:
         with st.sidebar:
             st.header("🔧 Configuration")
             
-            max_hops = st.slider("Maximum hops", 1, 5, 3)
-            top_k_paths = st.slider("Top K paths", 1, 20, 5)
+            max_hops = st.slider("Maximum hops", 1, 8, 5)
+            top_k_paths = st.slider("Top K paths", 1, 30, 10)
             show_reasoning = st.checkbox("Show reasoning paths", value=True)
             show_reasoning_paper = st.checkbox("Show LinkedIn post", value=True)
             show_graph_viz = st.checkbox("Show graph visualization", value=True)
