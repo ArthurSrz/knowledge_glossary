@@ -42,6 +42,7 @@ class HopRAGResult:
     hop_paths: List[HopPath]
     supporting_evidence: List[str]
     reasoning_explanation: str
+    research_abstract: str
     reasoning_paper: str
     query_metadata: Dict[str, Any]
 
@@ -120,26 +121,58 @@ class HopRAGEngine:
         self.max_hops = 5  # Increased for deeper exploration
         self.top_k_paths = 15  # More paths for better diversity
         
-    def query(self, question: str, max_hops: int = 3, top_k: int = 5) -> HopRAGResult:
-        """Process query using HopRAG methodology"""
+    def query(self, question: str, max_hops: int = 3, top_k: int = 5, stream_callback=None) -> HopRAGResult:
+        """Process query using HopRAG methodology with streaming updates"""
+        
+        if stream_callback:
+            stream_callback("🔍 **Step 1: Entity Recognition and Linking**", "info")
         
         # Step 1: Entity Recognition and Linking
         start_entities = self._extract_entities(question)
+        if stream_callback:
+            stream_callback(f"Found {len(start_entities)} starting entities: {', '.join(start_entities[:3])}{'...' if len(start_entities) > 3 else ''}", "success")
+        
+        if stream_callback:
+            stream_callback("🕸️ **Step 2: Multi-hop Path Discovery**", "info")
         
         # Step 2: Multi-hop Path Discovery
-        hop_paths = self._discover_hop_paths(start_entities, question, max_hops)
+        hop_paths = self._discover_hop_paths(start_entities, question, max_hops, stream_callback)
+        
+        if stream_callback:
+            stream_callback("📚 **Step 3: Evidence Aggregation**", "info")
         
         # Step 3: Evidence Aggregation
         evidence = self._aggregate_evidence(hop_paths)
+        if stream_callback:
+            stream_callback(f"Aggregated evidence from {len(evidence)} sources", "success")
+        
+        if stream_callback:
+            stream_callback("💡 **Step 4: Answer Generation**", "info")
         
         # Step 4: Answer Generation
         answer, confidence = self._generate_answer(question, hop_paths, evidence)
+        if stream_callback:
+            stream_callback(f"Generated answer with {confidence:.1%} confidence", "success")
         
-        # Step 5: Reasoning Explanation
-        reasoning = self._generate_reasoning_explanation(question, hop_paths)
+        if stream_callback:
+            stream_callback("📄 **Step 5: Research Abstract Generation**", "info")
         
-        # Step 6: Generate Reasoning Paper
+        # Step 5: Generate Research Abstract
+        abstract = self._generate_research_abstract(question, hop_paths, evidence)
+        if stream_callback:
+            stream_callback("Research abstract generated", "success")
+            stream_callback(f"**Abstract Preview:** {abstract[:150]}...", "abstract")
+        
+        if stream_callback:
+            stream_callback("📱 **Step 6: LinkedIn Post Generation**", "info")
+        
+        # Step 6: Generate Reasoning Paper (LinkedIn format)
         reasoning_paper = self._generate_reasoning_paper(question, hop_paths)
+        if stream_callback:
+            stream_callback("LinkedIn post generated successfully", "success")
+        
+        # Step 7: Reasoning Explanation
+        reasoning = self._generate_reasoning_explanation(question, hop_paths)
         
         return HopRAGResult(
             answer=answer,
@@ -147,6 +180,7 @@ class HopRAGEngine:
             hop_paths=hop_paths[:top_k],
             supporting_evidence=evidence,
             reasoning_explanation=reasoning,
+            research_abstract=abstract,
             reasoning_paper=reasoning_paper,
             query_metadata={
                 "start_entities": start_entities,
@@ -173,31 +207,46 @@ class HopRAGEngine:
         similarities.sort(key=lambda x: x[1], reverse=True)
         return [concept for concept, _ in similarities[:5]]
     
-    def _discover_hop_paths(self, start_entities: List[str], question: str, max_hops: int) -> List[HopPath]:
+    def _discover_hop_paths(self, start_entities: List[str], question: str, max_hops: int, stream_callback=None) -> List[HopPath]:
         """Discover multi-hop reasoning paths with enhanced depth and quality"""
         question_embedding = self.embedding_model.encode(question)
         all_paths = []
         
-        for start_entity in start_entities:
+        for i, start_entity in enumerate(start_entities):
             if start_entity not in self.graph.nodes:
                 continue
+            
+            if stream_callback:
+                stream_callback(f"🌱 Exploring from entity: **{start_entity}** ({i+1}/{len(start_entities)})", "path")
                 
             # Enhanced DFS with path quality tracking
             paths_from_entity = self._deep_path_search(
-                start_entity, question_embedding, max_hops, set(), []
+                start_entity, question_embedding, max_hops, set(), [], stream_callback
             )
             all_paths.extend(paths_from_entity)
+            
+            if stream_callback:
+                stream_callback(f"Found {len(paths_from_entity)} paths from {start_entity}", "path")
+        
+        if stream_callback:
+            stream_callback(f"🔍 **Path Analysis:** Discovered {len(all_paths)} total paths", "info")
         
         # Advanced path filtering and scoring
         quality_paths = self._filter_and_score_paths(all_paths, question_embedding)
         
+        if stream_callback:
+            stream_callback(f"🎯 **Quality Filter:** {len(quality_paths)} high-quality paths retained", "success")
+        
         # Ensure path diversity
         diverse_paths = self._ensure_path_diversity(quality_paths)
+        
+        if stream_callback:
+            stream_callback(f"🌟 **Final Selection:** {len(diverse_paths[:self.top_k_paths])} diverse paths selected", "success")
         
         return diverse_paths[:self.top_k_paths]
     
     def _deep_path_search(self, current_node: str, question_embedding: np.ndarray, 
-                         max_hops: int, visited_in_path: set, current_path: List[str]) -> List[HopPath]:
+                         max_hops: int, visited_in_path: set, current_path: List[str], stream_callback=None) -> List[HopPath]:
         """Deep recursive path search with better exploration"""
         paths = []
         
@@ -211,6 +260,9 @@ class HopRAGEngine:
             path_obj = self._create_path_object(new_path, question_embedding)
             if path_obj.confidence > 0.1:  # Quality threshold
                 paths.append(path_obj)
+                if stream_callback and len(new_path) >= 3:  # Report significant paths
+                    path_str = ' → '.join(new_path)
+                    stream_callback(f"🔗 **Path Found:** {path_str} (conf: {path_obj.confidence:.2f})", "path")
         
         # Continue exploration if within hop limit
         if len(new_path) < max_hops + 1:
@@ -221,7 +273,7 @@ class HopRAGEngine:
                 if neighbor not in new_visited:
                     # Recursive exploration
                     sub_paths = self._deep_path_search(
-                        neighbor, question_embedding, max_hops, new_visited, new_path
+                        neighbor, question_embedding, max_hops, new_visited, new_path, stream_callback
                     )
                     paths.extend(sub_paths)
         
@@ -424,6 +476,38 @@ class HopRAGEngine:
             explanation_parts.append("")
         
         return "\n".join(explanation_parts)
+    
+    def _generate_research_abstract(self, question: str, hop_paths: List[HopPath], evidence: List[str]) -> str:
+        """Generate research paper abstract from discovered paths and evidence"""
+        
+        # Extract key concepts and themes
+        all_entities = set()
+        all_relations = set()
+        for path in hop_paths[:5]:
+            all_entities.update(path.entities)
+            all_relations.update(path.relations)
+        
+        # Calculate research metrics
+        avg_confidence = sum(p.confidence for p in hop_paths) / len(hop_paths) if hop_paths else 0
+        max_depth = max(p.hop_count for p in hop_paths) if hop_paths else 0
+        
+        abstract_parts = [
+            f"**Abstract**",
+            "",
+            f"**Background:** This study investigates the research question: '{question}' through systematic multi-hop reasoning analysis across a knowledge graph containing interconnected concepts.",
+            "",
+            f"**Methods:** We employed a graph-based reasoning approach to discover {len(hop_paths)} distinct reasoning paths, exploring up to {max_depth} conceptual hops. Our methodology combines semantic similarity analysis with path quality assessment, achieving an average confidence score of {avg_confidence:.1%}.",
+            "",
+            f"**Key Findings:** The analysis identified {len(all_entities)} primary concepts connected through {len(all_relations)} relationship types. Major conceptual themes include: {', '.join(sorted(list(all_entities))[:8])}. Evidence synthesis reveals complex interdependencies between ethical considerations, technical implementations, and practical applications.",
+            "",
+            f"**Conclusions:** Multi-hop reasoning analysis demonstrates that {question.lower()} involves intricate relationships across {len(all_entities)} conceptual domains. The findings suggest that effective understanding requires consideration of both direct and indirect conceptual connections, with implications for practitioners and researchers in the field.",
+            "",
+            f"**Keywords:** {', '.join(sorted(list(all_entities))[:10])}",
+            "",
+            f"**Methodology Validation:** Confidence range: {min(p.confidence for p in hop_paths):.1%} - {max(p.confidence for p in hop_paths):.1%} | Evidence sources: {len(evidence)} | Graph coverage: {len(all_entities)} concepts"
+        ]
+        
+        return "\n".join(abstract_parts)
     
     def _generate_reasoning_paper(self, question: str, hop_paths: List[HopPath]) -> str:
         """Generate LinkedIn post teaching data concepts from reasoning paths"""
@@ -674,20 +758,63 @@ class HopRAGStreamlitApp:
             """)
     
     def _process_query(self, query: str, max_hops: int, top_k: int, show_reasoning: bool, show_reasoning_paper: bool, show_viz: bool):
-        """Process a HopRAG query"""
+        """Process a HopRAG query with streaming display"""
         
         start_time = time.time()
         
-        with st.spinner("🔄 Processing HopRAG query..."):
-            try:
-                result = self.hoprag_engine.query(query, max_hops=max_hops, top_k=top_k)
-                
-                processing_time = time.time() - start_time
-                
-                self._display_results(result, processing_time, show_reasoning, show_reasoning_paper, show_viz)
-                
-            except Exception as e:
-                st.error(f"❌ Error processing query: {e}")
+        # Create streaming containers
+        st.header("🔄 Real-Time Processing")
+        
+        # Main progress container
+        progress_container = st.container()
+        with progress_container:
+            st.markdown("### 🚀 Processing Steps")
+            
+        # Create placeholders for streaming updates
+        status_placeholder = st.empty()
+        progress_placeholder = st.empty()
+        path_placeholder = st.empty()
+        abstract_placeholder = st.empty()
+        
+        # Stream update function
+        def stream_update(message: str, msg_type: str = "info"):
+            if msg_type == "info":
+                status_placeholder.info(message)
+            elif msg_type == "success":
+                status_placeholder.success(message)
+            elif msg_type == "path":
+                with path_placeholder.container():
+                    st.markdown(f"**Path Discovery:** {message}")
+            elif msg_type == "abstract":
+                with abstract_placeholder.container():
+                    st.markdown(f"**Research Progress:** {message}")
+            
+            # Add small delay for visual effect
+            time.sleep(0.1)
+        
+        try:
+            # Process query with streaming
+            result = self.hoprag_engine.query(
+                query, 
+                max_hops=max_hops, 
+                top_k=top_k, 
+                stream_callback=stream_update
+            )
+            
+            processing_time = time.time() - start_time
+            
+            # Clear streaming placeholders
+            status_placeholder.empty()
+            path_placeholder.empty()
+            
+            # Show completion
+            st.success(f"✅ Processing completed in {processing_time:.2f} seconds!")
+            
+            # Display final results
+            self._display_results(result, processing_time, show_reasoning, show_reasoning_paper, show_viz)
+            
+        except Exception as e:
+            st.error(f"❌ Error processing query: {e}")
     
     def _display_results(self, result: HopRAGResult, processing_time: float, show_reasoning: bool, show_reasoning_paper: bool, show_viz: bool):
         """Display query results"""
@@ -734,15 +861,35 @@ class HopRAGStreamlitApp:
                         if evidence.strip():
                             st.markdown(f"*Entity {j+1}:* {evidence[:200]}...")
         
-        # LinkedIn post
-        if show_reasoning_paper and result.reasoning_paper:
-            st.header("📱 LinkedIn Post")
-            st.markdown(result.reasoning_paper)
+        # Research Abstract
+        if result.research_abstract:
+            st.header("📄 Research Abstract")
+            with st.expander("View Full Research Abstract", expanded=True):
+                st.markdown(result.research_abstract)
         
-        # Graph visualization
-        if show_viz and result.hop_paths:
-            st.header("🕸️ Reasoning Graph Visualization")
-            self._create_hop_visualization(result.hop_paths)
+        # Final Results Section
+        st.header("🎯 Final Results")
+        
+        col1, col2 = st.columns([1, 1])
+        
+        with col1:
+            # LinkedIn post
+            if show_reasoning_paper and result.reasoning_paper:
+                st.subheader("📱 LinkedIn Post")
+                with st.container():
+                    st.markdown("---")
+                    st.markdown(result.reasoning_paper)
+                    st.markdown("---")
+                    
+                    # Copy button simulation
+                    st.caption("💡 Copy this post to share your insights on LinkedIn!")
+        
+        with col2:
+            # Graph visualization
+            if show_viz and result.hop_paths:
+                st.subheader("🕸️ Reasoning Graph")
+                self._create_hop_visualization(result.hop_paths)
+                st.caption(f"Visualization of {len(result.hop_paths)} reasoning paths")
         
         # Reasoning explanation
         if result.reasoning_explanation:
