@@ -42,6 +42,7 @@ class HopRAGResult:
     hop_paths: List[HopPath]
     supporting_evidence: List[str]
     reasoning_explanation: str
+    reasoning_paper: str
     query_metadata: Dict[str, Any]
 
 class KnowledgeGraphLoader:
@@ -137,12 +138,16 @@ class HopRAGEngine:
         # Step 5: Reasoning Explanation
         reasoning = self._generate_reasoning_explanation(question, hop_paths)
         
+        # Step 6: Generate Reasoning Paper
+        reasoning_paper = self._generate_reasoning_paper(question, hop_paths)
+        
         return HopRAGResult(
             answer=answer,
             confidence=confidence,
             hop_paths=hop_paths[:top_k],
             supporting_evidence=evidence,
             reasoning_explanation=reasoning,
+            reasoning_paper=reasoning_paper,
             query_metadata={
                 "start_entities": start_entities,
                 "total_paths_explored": len(hop_paths),
@@ -295,6 +300,78 @@ class HopRAGEngine:
             explanation_parts.append("")
         
         return "\n".join(explanation_parts)
+    
+    def _generate_reasoning_paper(self, question: str, hop_paths: List[HopPath]) -> str:
+        """Generate reasoning paper with concatenated path narratives"""
+        paper_parts = [
+            f"# Reasoning Paper: {question}",
+            "",
+            "## Abstract",
+            f"This paper presents a multi-hop reasoning analysis to answer the question: '{question}'. "
+            f"Through systematic exploration of {len(hop_paths)} reasoning paths across our knowledge graph, "
+            f"we identify key conceptual relationships and evidence chains that inform our response.",
+            "",
+            "## Methodology",
+            "We employed a graph-based multi-hop reasoning approach, exploring paths up to 3 hops from "
+            "initial entities. Each path was scored for relevance and confidence, with evidence aggregated "
+            "from multiple reasoning chains.",
+            "",
+            "## Reasoning Paths Analysis",
+            ""
+        ]
+        
+        # Generate detailed narrative for each path
+        for i, path in enumerate(hop_paths[:5]):  # Top 5 paths for paper
+            paper_parts.extend([
+                f"### Path {i+1}: {' → '.join(path.entities)}",
+                f"**Confidence Score:** {path.confidence:.3f} | **Hop Count:** {path.hop_count}",
+                "",
+                f"**Reasoning Chain:** {path.reasoning_chain}",
+                "",
+                "**Evidence Analysis:**"
+            ])
+            
+            # Generate narrative from evidence
+            for j, evidence in enumerate(path.evidence):
+                if evidence.strip():
+                    # Extract key sentences from evidence
+                    sentences = [s.strip() for s in evidence.split('.') if len(s.strip()) > 20]
+                    if sentences:
+                        paper_parts.append(f"*{path.entities[j]}*: {sentences[0]}.")
+            
+            paper_parts.extend(["", "---", ""])
+        
+        # Synthesis section
+        paper_parts.extend([
+            "## Synthesis and Conclusion",
+            "",
+            "Based on the analysis of multiple reasoning paths, we can synthesize the following key insights:",
+            ""
+        ])
+        
+        # Extract common themes across paths
+        all_entities = set()
+        all_relations = set()
+        for path in hop_paths[:5]:
+            all_entities.update(path.entities)
+            all_relations.update(path.relations)
+        
+        paper_parts.extend([
+            f"- **Key Concepts Identified:** {', '.join(sorted(list(all_entities))[:10])}",
+            f"- **Relationship Types:** {', '.join(sorted(list(all_relations))[:8])}",
+            f"- **Confidence Range:** {min(p.confidence for p in hop_paths[:5]):.3f} - {max(p.confidence for p in hop_paths[:5]):.3f}",
+            "",
+            "The convergence of multiple reasoning paths provides strong evidence for our conclusions, "
+            "with cross-validation through independent conceptual chains strengthening our confidence in the results.",
+            "",
+            "## References",
+            "- Knowledge Graph: Local markdown-based concept repository",
+            "- Reasoning Engine: HopRAG multi-hop reasoning system",
+            f"- Query Processing Time: {len(hop_paths)} paths explored",
+            ""
+        ])
+        
+        return "\n".join(paper_parts)
 
 class HopRAGStreamlitApp:
     """Streamlit application for HopRAG"""
@@ -351,6 +428,7 @@ class HopRAGStreamlitApp:
             max_hops = st.slider("Maximum hops", 1, 5, 3)
             top_k_paths = st.slider("Top K paths", 1, 20, 5)
             show_reasoning = st.checkbox("Show reasoning paths", value=True)
+            show_reasoning_paper = st.checkbox("Show reasoning paper", value=True)
             show_graph_viz = st.checkbox("Show graph visualization", value=True)
             
             st.header("📊 System Stats")
@@ -387,7 +465,7 @@ class HopRAGStreamlitApp:
             
             if st.button("🚀 Execute HopRAG Query", type="primary"):
                 if query and self.hoprag_engine:
-                    self._process_query(query, max_hops, top_k_paths, show_reasoning, show_graph_viz)
+                    self._process_query(query, max_hops, top_k_paths, show_reasoning, show_reasoning_paper, show_graph_viz)
                 else:
                     st.warning("Please enter a query first")
         
@@ -400,7 +478,7 @@ class HopRAGStreamlitApp:
             - Try asking "how" and "why" questions
             """)
     
-    def _process_query(self, query: str, max_hops: int, top_k: int, show_reasoning: bool, show_viz: bool):
+    def _process_query(self, query: str, max_hops: int, top_k: int, show_reasoning: bool, show_reasoning_paper: bool, show_viz: bool):
         """Process a HopRAG query"""
         
         start_time = time.time()
@@ -411,12 +489,12 @@ class HopRAGStreamlitApp:
                 
                 processing_time = time.time() - start_time
                 
-                self._display_results(result, processing_time, show_reasoning, show_viz)
+                self._display_results(result, processing_time, show_reasoning, show_reasoning_paper, show_viz)
                 
             except Exception as e:
                 st.error(f"❌ Error processing query: {e}")
     
-    def _display_results(self, result: HopRAGResult, processing_time: float, show_reasoning: bool, show_viz: bool):
+    def _display_results(self, result: HopRAGResult, processing_time: float, show_reasoning: bool, show_reasoning_paper: bool, show_viz: bool):
         """Display query results"""
         
         # Main answer
@@ -460,6 +538,11 @@ class HopRAGStreamlitApp:
                     for j, evidence in enumerate(path.evidence):
                         if evidence.strip():
                             st.markdown(f"*Entity {j+1}:* {evidence[:200]}...")
+        
+        # Reasoning paper
+        if show_reasoning_paper and result.reasoning_paper:
+            st.header("📄 Reasoning Paper")
+            st.markdown(result.reasoning_paper)
         
         # Graph visualization
         if show_viz and result.hop_paths:
