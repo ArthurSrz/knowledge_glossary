@@ -166,10 +166,10 @@ class HopRAGEngine:
         if stream_callback:
             stream_callback("📱 **Step 6: LinkedIn Post Generation**", "info")
         
-        # Step 6: Generate Reasoning Paper (LinkedIn format)
-        reasoning_paper = self._generate_reasoning_paper(question, hop_paths)
+        # Step 6: Generate Reasoning Paper (LinkedIn format) with streaming
+        reasoning_paper = self._generate_reasoning_paper_streaming(question, hop_paths, stream_callback)
         if stream_callback:
-            stream_callback("LinkedIn post generated successfully", "success")
+            stream_callback("LinkedIn post completed!", "success")
         
         # Step 7: Reasoning Explanation
         reasoning = self._generate_reasoning_explanation(question, hop_paths)
@@ -563,6 +563,87 @@ class HopRAGEngine:
         ])
         
         return "\n".join(post_parts)
+    
+    def _generate_reasoning_paper_streaming(self, question: str, hop_paths: List[HopPath], stream_callback=None) -> str:
+        """Generate LinkedIn post with real-time streaming updates"""
+        
+        # Start with the hook
+        content_insights = self._extract_content_insights(hop_paths[:3], question)
+        hook = self._create_linkedin_hook(question, [insight['concept'] for insight in content_insights])
+        
+        # Build the post incrementally
+        current_post = [
+            hook,
+            "",
+            "🧠 Let me break this down with some data science insights:",
+            ""
+        ]
+        
+        if stream_callback:
+            stream_callback("🎯 **LinkedIn Post Preview:**", "linkedin_header")
+            stream_callback("\n".join(current_post), "linkedin_update")
+        
+        # Add insights one by one
+        for i, insight in enumerate(content_insights):
+            if stream_callback:
+                stream_callback(f"✍️ **Generating Insight #{i+1}:** {insight['concept']}", "linkedin_progress")
+            
+            # Add the insight
+            insight_section = [
+                f"💡 **Insight #{i+1}: {insight['title']}**",
+                f"  → {insight['explanation']}"
+            ]
+            
+            if insight.get('example'):
+                insight_section.append(f"  → Example: {insight['example']}")
+            
+            insight_section.append("")
+            current_post.extend(insight_section)
+            
+            if stream_callback:
+                stream_callback("\n".join(current_post), "linkedin_update")
+                import time
+                time.sleep(0.3)  # Small delay to show incremental building
+        
+        # Generate content-aware takeaways
+        if stream_callback:
+            stream_callback("🎯 **Adding Key Takeaways...**", "linkedin_progress")
+        
+        takeaways = self._generate_content_aware_takeaways(content_insights, hop_paths)
+        if takeaways:
+            current_post.extend([
+                "🎯 **Key Takeaways:**",
+                ""
+            ])
+            
+            # Add takeaways one by one
+            for j, takeaway in enumerate(takeaways):
+                current_post.append(f"✅ {takeaway}")
+                if stream_callback:
+                    stream_callback("\n".join(current_post), "linkedin_update")
+                    time.sleep(0.2)
+        
+        # Add final elements
+        if stream_callback:
+            stream_callback("🏷️ **Adding hashtags and finishing touches...**", "linkedin_progress")
+        
+        hashtags = self._generate_dynamic_hashtags(content_insights)
+        
+        current_post.extend([
+            "",
+            "💬 What's your experience with these concepts?",
+            "",
+            hashtags,
+            "",
+            "---",
+            f"🔬 Generated insights from {len(hop_paths)} reasoning paths | Confidence: {hop_paths[0].confidence:.1%}" if hop_paths else "🔬 Generated insights from multi-hop reasoning"
+        ])
+        
+        # Final update
+        if stream_callback:
+            stream_callback("\n".join(current_post), "linkedin_final")
+        
+        return "\n".join(current_post)
     
     def _extract_content_insights(self, hop_paths: List[HopPath], question: str) -> List[Dict[str, str]]:
         """Extract meaningful insights from actual node content"""
@@ -1004,6 +1085,9 @@ class HopRAGStreamlitApp:
         progress_placeholder = st.empty()
         path_placeholder = st.empty()
         abstract_placeholder = st.empty()
+        linkedin_header_placeholder = st.empty()
+        linkedin_post_placeholder = st.empty()
+        linkedin_progress_placeholder = st.empty()
         
         # Stream update function
         def stream_update(message: str, msg_type: str = "info"):
@@ -1017,6 +1101,23 @@ class HopRAGStreamlitApp:
             elif msg_type == "abstract":
                 with abstract_placeholder.container():
                     st.markdown(f"**Research Progress:** {message}")
+            elif msg_type == "linkedin_header":
+                with linkedin_header_placeholder.container():
+                    st.markdown(f"### {message}")
+            elif msg_type == "linkedin_update":
+                with linkedin_post_placeholder.container():
+                    st.markdown("```")
+                    st.markdown(message)
+                    st.markdown("```")
+            elif msg_type == "linkedin_progress":
+                with linkedin_progress_placeholder.container():
+                    st.markdown(f"*{message}*")
+            elif msg_type == "linkedin_final":
+                with linkedin_post_placeholder.container():
+                    st.success("📱 **Final LinkedIn Post:**")
+                    st.markdown("---")
+                    st.markdown(message)
+                    st.markdown("---")
             
             # Add small delay for visual effect
             time.sleep(0.1)
@@ -1035,6 +1136,7 @@ class HopRAGStreamlitApp:
             # Clear streaming placeholders
             status_placeholder.empty()
             path_placeholder.empty()
+            linkedin_progress_placeholder.empty()
             
             # Show completion
             st.success(f"✅ Processing completed in {processing_time:.2f} seconds!")
