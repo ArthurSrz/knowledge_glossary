@@ -302,76 +302,147 @@ class HopRAGEngine:
         return "\n".join(explanation_parts)
     
     def _generate_reasoning_paper(self, question: str, hop_paths: List[HopPath]) -> str:
-        """Generate reasoning paper with concatenated path narratives"""
-        paper_parts = [
-            f"# Reasoning Paper: {question}",
+        """Generate LinkedIn post teaching data concepts from reasoning paths"""
+        
+        # Extract key concepts and create engaging hook
+        all_entities = set()
+        key_concepts = []
+        for path in hop_paths[:3]:
+            all_entities.update(path.entities)
+            key_concepts.extend(path.entities)
+        
+        # Create compelling hook based on the question
+        hook = self._create_linkedin_hook(question, key_concepts)
+        
+        post_parts = [
+            hook,
             "",
-            "## Abstract",
-            f"This paper presents a multi-hop reasoning analysis to answer the question: '{question}'. "
-            f"Through systematic exploration of {len(hop_paths)} reasoning paths across our knowledge graph, "
-            f"we identify key conceptual relationships and evidence chains that inform our response.",
-            "",
-            "## Methodology",
-            "We employed a graph-based multi-hop reasoning approach, exploring paths up to 3 hops from "
-            "initial entities. Each path was scored for relevance and confidence, with evidence aggregated "
-            "from multiple reasoning chains.",
-            "",
-            "## Reasoning Paths Analysis",
+            "🧠 Let me break this down with some data science insights:",
             ""
         ]
         
-        # Generate detailed narrative for each path
-        for i, path in enumerate(hop_paths[:5]):  # Top 5 paths for paper
-            paper_parts.extend([
-                f"### Path {i+1}: {' → '.join(path.entities)}",
-                f"**Confidence Score:** {path.confidence:.3f} | **Hop Count:** {path.hop_count}",
-                "",
-                f"**Reasoning Chain:** {path.reasoning_chain}",
-                "",
-                "**Evidence Analysis:**"
+        # Generate educational content from each reasoning path
+        for i, path in enumerate(hop_paths[:3]):  # Top 3 paths for conciseness
+            post_parts.extend([
+                f"💡 **Insight #{i+1}: {' → '.join(path.entities[:2])}**"
             ])
             
-            # Generate narrative from evidence
+            # Create educational explanation from evidence
             for j, evidence in enumerate(path.evidence):
-                if evidence.strip():
-                    # Extract key sentences from evidence
+                if evidence.strip() and j < 2:  # Keep it concise
+                    # Extract key teaching point
                     sentences = [s.strip() for s in evidence.split('.') if len(s.strip()) > 20]
                     if sentences:
-                        paper_parts.append(f"*{path.entities[j]}*: {sentences[0]}.")
+                        teaching_point = self._make_linkedin_friendly(sentences[0])
+                        post_parts.append(f"  → {teaching_point}")
             
-            paper_parts.extend(["", "---", ""])
+            post_parts.append("")
         
-        # Synthesis section
-        paper_parts.extend([
-            "## Synthesis and Conclusion",
-            "",
-            "Based on the analysis of multiple reasoning paths, we can synthesize the following key insights:",
+        # Add practical takeaways
+        post_parts.extend([
+            "🎯 **Key Takeaways:**",
             ""
         ])
         
-        # Extract common themes across paths
-        all_entities = set()
-        all_relations = set()
-        for path in hop_paths[:5]:
-            all_entities.update(path.entities)
-            all_relations.update(path.relations)
+        # Generate actionable insights
+        takeaways = self._generate_actionable_takeaways(hop_paths[:3])
+        for takeaway in takeaways:
+            post_parts.append(f"✅ {takeaway}")
         
-        paper_parts.extend([
-            f"- **Key Concepts Identified:** {', '.join(sorted(list(all_entities))[:10])}",
-            f"- **Relationship Types:** {', '.join(sorted(list(all_relations))[:8])}",
-            f"- **Confidence Range:** {min(p.confidence for p in hop_paths[:5]):.3f} - {max(p.confidence for p in hop_paths[:5]):.3f}",
+        post_parts.extend([
             "",
-            "The convergence of multiple reasoning paths provides strong evidence for our conclusions, "
-            "with cross-validation through independent conceptual chains strengthening our confidence in the results.",
+            "💬 What's your experience with these concepts?",
             "",
-            "## References",
-            "- Knowledge Graph: Local markdown-based concept repository",
-            "- Reasoning Engine: HopRAG multi-hop reasoning system",
-            f"- Query Processing Time: {len(hop_paths)} paths explored",
-            ""
+            "#DataScience #AI #MachineLearning #Analytics #TechEducation",
+            "",
+            "---",
+            f"🔬 Generated insights from {len(hop_paths)} reasoning paths | Confidence: {hop_paths[0].confidence:.1%}" if hop_paths else "🔬 Generated insights from multi-hop reasoning"
         ])
         
-        return "\n".join(paper_parts)
+        return "\n".join(post_parts)
+    
+    def _create_linkedin_hook(self, question: str, key_concepts: List[str]) -> str:
+        """Create engaging LinkedIn hook based on question and concepts"""
+        
+        # Common hook patterns for data education
+        hooks = [
+            f"🤔 Ever wondered: {question}",
+            f"🔍 Here's what most people don't know about {key_concepts[0] if key_concepts else 'data'}:",
+            f"💭 {question.replace('?', '')} - Let me explain with real examples:",
+            f"🚀 Quick data lesson: {question}",
+            f"📊 Data myth busted: {question}"
+        ]
+        
+        # Choose hook based on question type
+        if "how" in question.lower():
+            return f"🤔 {question}\n\nThis is one of the most common questions I get about data science."
+        elif "what" in question.lower():
+            return f"🔍 {question}\n\nLet me break this down in simple terms:"
+        elif "why" in question.lower():
+            return f"💭 {question}\n\nGreat question! Here's the data science perspective:"
+        else:
+            return f"🚀 {question}\n\nLet me share some insights from the data world:"
+    
+    def _make_linkedin_friendly(self, text: str) -> str:
+        """Make text more LinkedIn-friendly and engaging"""
+        # Remove overly technical jargon and make more accessible
+        text = text.replace("artificial intelligence", "AI")
+        text = text.replace("machine learning", "ML")
+        text = text.replace("algorithms", "models")
+        
+        # Add conversational tone
+        if text.endswith('.'):
+            text = text[:-1]
+        
+        # Make it more engaging
+        if "important" in text.lower():
+            text = text.replace("important", "crucial")
+        if "requires" in text.lower():
+            text = text.replace("requires", "needs")
+        
+        return text
+    
+    def _generate_actionable_takeaways(self, hop_paths: List[HopPath]) -> List[str]:
+        """Generate actionable takeaways for LinkedIn audience"""
+        
+        takeaways = []
+        
+        # Extract key themes and create actionable advice
+        all_entities = []
+        for path in hop_paths:
+            all_entities.extend(path.entities)
+        
+        # Common data concepts and their actionable advice
+        concept_advice = {
+            "bias": "Always test your models on diverse datasets before deployment",
+            "ethics": "Build ethical review into your data science workflow",
+            "privacy": "Implement privacy-by-design in your data projects",
+            "quality": "Spend 80% of your time on data cleaning - it's worth it",
+            "fairness": "Regularly audit your models for fairness across different groups",
+            "performance": "Track model performance over time, not just at deployment",
+            "governance": "Document your data sources and transformations",
+            "machine learning": "Start with simple models before going complex",
+            "ai": "Focus on solving real problems, not just using cool tech",
+            "data": "Always question your data before trusting your results"
+        }
+        
+        # Generate relevant takeaways
+        for entity in all_entities[:5]:  # Top 5 entities
+            entity_lower = entity.lower()
+            for concept, advice in concept_advice.items():
+                if concept in entity_lower:
+                    takeaways.append(advice)
+                    break
+        
+        # Add generic valuable advice if no specific matches
+        if not takeaways:
+            takeaways = [
+                "Always validate your assumptions with data",
+                "Document your process for future reference",
+                "Question your data before trusting your results"
+            ]
+        
+        return takeaways[:3]  # Keep it concise
 
 class HopRAGStreamlitApp:
     """Streamlit application for HopRAG"""
@@ -428,7 +499,7 @@ class HopRAGStreamlitApp:
             max_hops = st.slider("Maximum hops", 1, 5, 3)
             top_k_paths = st.slider("Top K paths", 1, 20, 5)
             show_reasoning = st.checkbox("Show reasoning paths", value=True)
-            show_reasoning_paper = st.checkbox("Show reasoning paper", value=True)
+            show_reasoning_paper = st.checkbox("Show LinkedIn post", value=True)
             show_graph_viz = st.checkbox("Show graph visualization", value=True)
             
             st.header("📊 System Stats")
@@ -539,9 +610,9 @@ class HopRAGStreamlitApp:
                         if evidence.strip():
                             st.markdown(f"*Entity {j+1}:* {evidence[:200]}...")
         
-        # Reasoning paper
+        # LinkedIn post
         if show_reasoning_paper and result.reasoning_paper:
-            st.header("📄 Reasoning Paper")
+            st.header("📱 LinkedIn Post")
             st.markdown(result.reasoning_paper)
         
         # Graph visualization

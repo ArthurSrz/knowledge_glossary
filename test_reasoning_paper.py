@@ -75,33 +75,33 @@ def test_reasoning_paper_generation():
     reasoning_paper = engine._generate_reasoning_paper(question, mock_hop_paths)
     
     print("="*80)
-    print("REASONING PAPER GENERATION TEST")
+    print("LINKEDIN POST GENERATION TEST")
     print("="*80)
     print(f"Question: {question}")
     print("="*80)
     print(reasoning_paper)
     print("="*80)
     
-    # Verify the paper has the expected structure
-    assert "# Reasoning Paper:" in reasoning_paper
-    assert "## Abstract" in reasoning_paper
-    assert "## Methodology" in reasoning_paper
-    assert "## Reasoning Paths Analysis" in reasoning_paper
-    assert "## Synthesis and Conclusion" in reasoning_paper
-    assert "## References" in reasoning_paper
+    # Verify the LinkedIn post has the expected structure
+    assert "🤔" in reasoning_paper or "🔍" in reasoning_paper or "💭" in reasoning_paper or "🚀" in reasoning_paper
+    assert "🧠 Let me break this down" in reasoning_paper
+    assert "💡 **Insight #" in reasoning_paper
+    assert "🎯 **Key Takeaways:**" in reasoning_paper
+    assert "#DataScience" in reasoning_paper
+    assert "💬 What's your experience" in reasoning_paper
     
-    # Verify paths are included
-    assert "Path 1:" in reasoning_paper
-    assert "Path 2:" in reasoning_paper
-    assert "Path 3:" in reasoning_paper
+    # Verify insights are included
+    assert "Insight #1:" in reasoning_paper
+    assert "Insight #2:" in reasoning_paper
+    assert "Insight #3:" in reasoning_paper
     
-    # Verify reasoning chains are included
-    assert "AI Ethics → RELATED_TO → Bias → AFFECTS → Fairness" in reasoning_paper
-    assert "Machine Learning → DEPENDS_ON → Data Quality → IMPACTS → Model Performance" in reasoning_paper
+    # Verify it's LinkedIn-friendly
+    assert "✅" in reasoning_paper  # Checkmark for takeaways
+    assert "🔬 Generated insights" in reasoning_paper
     
-    print("\n✅ All tests passed! Reasoning paper generation is working correctly.")
+    print("\n✅ All tests passed! LinkedIn post generation is working correctly.")
     line_count = len(reasoning_paper.split('\n'))
-    print(f"📄 Generated paper has {line_count} lines")
+    print(f"📱 Generated LinkedIn post has {line_count} lines")
     print(f"📊 Contains {len(mock_hop_paths)} reasoning paths")
     
     return reasoning_paper
