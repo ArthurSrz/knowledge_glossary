@@ -512,15 +512,11 @@ class HopRAGEngine:
     def _generate_reasoning_paper(self, question: str, hop_paths: List[HopPath]) -> str:
         """Generate LinkedIn post teaching data concepts from reasoning paths"""
         
-        # Extract key concepts and create engaging hook
-        all_entities = set()
-        key_concepts = []
-        for path in hop_paths[:3]:
-            all_entities.update(path.entities)
-            key_concepts.extend(path.entities)
+        # Extract rich insights from content, not just entity names
+        content_insights = self._extract_content_insights(hop_paths[:3], question)
         
-        # Create compelling hook based on the question
-        hook = self._create_linkedin_hook(question, key_concepts)
+        # Create compelling hook based on the question and actual content
+        hook = self._create_linkedin_hook(question, [insight['concept'] for insight in content_insights])
         
         post_parts = [
             hook,
@@ -529,45 +525,278 @@ class HopRAGEngine:
             ""
         ]
         
-        # Generate educational content from each reasoning path
-        for i, path in enumerate(hop_paths[:3]):  # Top 3 paths for conciseness
+        # Generate educational content using actual knowledge content
+        for i, insight in enumerate(content_insights):
             post_parts.extend([
-                f"💡 **Insight #{i+1}: {' → '.join(path.entities[:2])}**"
+                f"💡 **Insight #{i+1}: {insight['title']}**"
             ])
             
-            # Create educational explanation from evidence
-            for j, evidence in enumerate(path.evidence):
-                if evidence.strip() and j < 2:  # Keep it concise
-                    # Extract key teaching point
-                    sentences = [s.strip() for s in evidence.split('.') if len(s.strip()) > 20]
-                    if sentences:
-                        teaching_point = self._make_linkedin_friendly(sentences[0])
-                        post_parts.append(f"  → {teaching_point}")
+            # Use actual content to create meaningful explanations
+            post_parts.append(f"  → {insight['explanation']}")
+            
+            if insight.get('example'):
+                post_parts.append(f"  → Example: {insight['example']}")
             
             post_parts.append("")
         
-        # Add practical takeaways
-        post_parts.extend([
-            "🎯 **Key Takeaways:**",
-            ""
-        ])
+        # Generate content-aware takeaways
+        takeaways = self._generate_content_aware_takeaways(content_insights, hop_paths)
+        if takeaways:
+            post_parts.extend([
+                "🎯 **Key Takeaways:**",
+                ""
+            ])
+            for takeaway in takeaways:
+                post_parts.append(f"✅ {takeaway}")
         
-        # Generate actionable insights
-        takeaways = self._generate_actionable_takeaways(hop_paths[:3])
-        for takeaway in takeaways:
-            post_parts.append(f"✅ {takeaway}")
+        # Add dynamic hashtags based on actual content
+        hashtags = self._generate_dynamic_hashtags(content_insights)
         
         post_parts.extend([
             "",
             "💬 What's your experience with these concepts?",
             "",
-            "#DataScience #AI #MachineLearning #Analytics #TechEducation",
+            hashtags,
             "",
             "---",
             f"🔬 Generated insights from {len(hop_paths)} reasoning paths | Confidence: {hop_paths[0].confidence:.1%}" if hop_paths else "🔬 Generated insights from multi-hop reasoning"
         ])
         
         return "\n".join(post_parts)
+    
+    def _extract_content_insights(self, hop_paths: List[HopPath], question: str) -> List[Dict[str, str]]:
+        """Extract meaningful insights from actual node content"""
+        insights = []
+        question_embedding = self.embedding_model.encode(question)
+        
+        for path in hop_paths:
+            # Analyze the relationship and content for this path
+            path_insight = self._analyze_path_content(path, question_embedding)
+            if path_insight:
+                insights.append(path_insight)
+        
+        # Remove duplicates and keep most relevant
+        unique_insights = []
+        seen_concepts = set()
+        
+        for insight in insights:
+            concept_key = insight['concept'].lower()
+            if concept_key not in seen_concepts:
+                unique_insights.append(insight)
+                seen_concepts.add(concept_key)
+                
+        return unique_insights[:3]  # Top 3 unique insights
+    
+    def _analyze_path_content(self, path: HopPath, question_embedding: np.ndarray) -> Dict[str, str]:
+        """Analyze a single path to extract meaningful content insights"""
+        
+        # Focus on the most important entities in the path (usually the first 2-3)
+        key_entities = path.entities[:3]
+        
+        for i, entity in enumerate(key_entities):
+            content = self.concept_content.get(entity, "")
+            if not content.strip():
+                continue
+                
+            # Extract key information from content
+            insight = self._extract_key_insight_from_content(entity, content, question_embedding)
+            if insight:
+                # Create a meaningful title based on the path relationship
+                if i < len(path.relations):
+                    relation = path.relations[i]
+                    next_entity = key_entities[i+1] if i+1 < len(key_entities) else None
+                    title = self._create_insight_title(entity, relation, next_entity)
+                else:
+                    title = f"Understanding {entity}"
+                
+                return {
+                    'concept': entity,
+                    'title': title,
+                    'explanation': insight['explanation'],
+                    'example': insight.get('example', ''),
+                    'content': content
+                }
+        
+        return None
+    
+    def _extract_key_insight_from_content(self, entity: str, content: str, question_embedding: np.ndarray) -> Dict[str, str]:
+        """Extract the most relevant insight from content based on the question"""
+        
+        # Split content into sentences and find most relevant ones
+        sentences = [s.strip() for s in content.split('.') if len(s.strip()) > 20]
+        if not sentences:
+            return None
+        
+        # Score sentences by relevance to question
+        sentence_scores = []
+        for sentence in sentences:
+            if len(sentence) > 10:
+                sentence_embedding = self.embedding_model.encode(sentence)
+                similarity = np.dot(question_embedding, sentence_embedding) / (
+                    np.linalg.norm(question_embedding) * np.linalg.norm(sentence_embedding)
+                )
+                sentence_scores.append((sentence, similarity))
+        
+        # Sort by relevance
+        sentence_scores.sort(key=lambda x: x[1], reverse=True)
+        
+        if not sentence_scores:
+            return None
+        
+        # Get the most relevant sentence as explanation
+        best_sentence = sentence_scores[0][0]
+        
+        # Look for examples or practical applications in remaining sentences
+        example = ""
+        for sentence, _ in sentence_scores[1:3]:
+            if any(keyword in sentence.lower() for keyword in ['example', 'such as', 'like', 'including', 'for instance']):
+                example = sentence
+                break
+        
+        return {
+            'explanation': self._make_content_linkedin_friendly(best_sentence),
+            'example': self._make_content_linkedin_friendly(example) if example else ""
+        }
+    
+    def _create_insight_title(self, entity: str, relation: str, next_entity: str = None) -> str:
+        """Create meaningful insight titles based on relationships"""
+        
+        relation_titles = {
+            'ADDRESSES': f"How {entity} tackles {next_entity}" if next_entity else f"Addressing {entity}",
+            'PROMOTES': f"Why {entity} drives {next_entity}" if next_entity else f"Promoting {entity}",
+            'ENCOMPASSES': f"How {entity} includes {next_entity}" if next_entity else f"Understanding {entity}",
+            'CONFLICTS_WITH': f"Why {entity} challenges {next_entity}" if next_entity else f"Challenges with {entity}",
+            'DEPENDS_ON': f"Why {entity} needs {next_entity}" if next_entity else f"Dependencies of {entity}",
+            'REQUIRES': f"What {entity} demands" if next_entity else f"Requirements for {entity}",
+            'ENFORCED_BY': f"How {next_entity} enforces {entity}" if next_entity else f"Enforcement of {entity}",
+            'ENABLES': f"How {entity} empowers {next_entity}" if next_entity else f"Enabling {entity}",
+            'IMPACTS': f"How {entity} affects {next_entity}" if next_entity else f"Impact of {entity}"
+        }
+        
+        return relation_titles.get(relation, f"Understanding {entity}")
+    
+    def _make_content_linkedin_friendly(self, text: str) -> str:
+        """Make content more LinkedIn-friendly while preserving meaning"""
+        if not text:
+            return ""
+            
+        # Clean up the text
+        text = text.strip()
+        if text.endswith('.'):
+            text = text[:-1]
+        
+        # Make it more conversational
+        replacements = {
+            'artificial intelligence': 'AI',
+            'machine learning': 'ML',
+            'deep learning': 'DL',
+            'natural language processing': 'NLP',
+            'it is important': 'it\'s crucial',
+            'it is essential': 'it\'s vital',
+            'organizations': 'companies',
+            'individuals': 'people',
+            'implementation': 'rollout',
+            'utilization': 'use',
+            'optimization': 'improvement'
+        }
+        
+        for old, new in replacements.items():
+            text = text.replace(old, new)
+        
+        return text
+    
+    def _generate_content_aware_takeaways(self, content_insights: List[Dict], hop_paths: List[HopPath]) -> List[str]:
+        """Generate takeaways based on actual content analysis"""
+        takeaways = []
+        
+        for insight in content_insights:
+            concept = insight['concept']
+            content = insight.get('content', '')
+            
+            # Extract actionable advice from content
+            actionable = self._extract_actionable_advice(concept, content)
+            if actionable:
+                takeaways.append(actionable)
+        
+        # Add generic advice if we don't have enough specific ones
+        if len(takeaways) < 2:
+            takeaways.extend([
+                "Document your reasoning process for better decision-making",
+                "Always validate your assumptions with data"
+            ])
+        
+        return takeaways[:3]
+    
+    def _extract_actionable_advice(self, concept: str, content: str) -> str:
+        """Extract actionable advice from content"""
+        
+        # Look for actionable patterns in content
+        actionable_patterns = [
+            (r'should (.+?)[\.\,]', 'Always {}'),
+            (r'must (.+?)[\.\,]', 'Make sure to {}'),
+            (r'important to (.+?)[\.\,]', 'Focus on {}'),
+            (r'ensure (.+?)[\.\,]', 'Ensure you {}'),
+            (r'avoid (.+?)[\.\,]', 'Avoid {}'),
+            (r'consider (.+?)[\.\,]', 'Consider {}'),
+            (r'implement (.+?)[\.\,]', 'Implement {}'),
+            (r'requires (.+?)[\.\,]', 'Make sure to include {}')
+        ]
+        
+        import re
+        for pattern, template in actionable_patterns:
+            match = re.search(pattern, content.lower())
+            if match:
+                advice = match.group(1).strip()
+                return template.format(advice)
+        
+        # Fallback to concept-specific advice
+        concept_advice = {
+            'bias': 'Test your models on diverse datasets before deployment',
+            'ethics': 'Build ethical review into your development process',
+            'privacy': 'Implement privacy-by-design in your projects',
+            'quality': 'Invest time in data cleaning and validation',
+            'fairness': 'Regularly audit your systems for equitable outcomes',
+            'transparency': 'Make your decision processes explainable',
+            'governance': 'Establish clear data management policies'
+        }
+        
+        for key, advice in concept_advice.items():
+            if key.lower() in concept.lower():
+                return advice
+        
+        return None
+    
+    def _generate_dynamic_hashtags(self, content_insights: List[Dict]) -> str:
+        """Generate hashtags based on actual content"""
+        
+        # Extract key terms from insights
+        all_text = " ".join([insight.get('content', '') for insight in content_insights])
+        
+        # Common data science hashtags
+        base_tags = ["#DataScience", "#AI", "#MachineLearning"]
+        
+        # Content-specific hashtags
+        content_tags = []
+        hashtag_mapping = {
+            'ethics': '#AIEthics',
+            'bias': '#ResponsibleAI',
+            'privacy': '#DataPrivacy', 
+            'governance': '#DataGovernance',
+            'fairness': '#AlgorithmicFairness',
+            'transparency': '#ExplainableAI',
+            'regulation': '#AIRegulation',
+            'compliance': '#DataCompliance',
+            'security': '#DataSecurity',
+            'quality': '#DataQuality'
+        }
+        
+        for keyword, hashtag in hashtag_mapping.items():
+            if keyword in all_text.lower():
+                content_tags.append(hashtag)
+        
+        # Combine and limit to 8 hashtags
+        all_tags = base_tags + content_tags[:5]
+        return " ".join(all_tags)
     
     def _create_linkedin_hook(self, question: str, key_concepts: List[str]) -> str:
         """Create engaging LinkedIn hook based on question and concepts"""
