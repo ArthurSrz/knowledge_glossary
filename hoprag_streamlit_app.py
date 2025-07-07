@@ -2182,10 +2182,6 @@ class HopRAGStreamlitApp:
         
         # Enhanced layout for real-time view
         fig.update_layout(
-            title=dict(
-                text=f"🔴 Live Discovery: {len(paths)} paths found",
-                font=dict(size=14, color='red')
-            ),
             showlegend=True,
             hovermode='closest',
             margin=dict(b=20, l=5, r=5, t=50),
