@@ -8,21 +8,22 @@ import os
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 import networkx as nx
-from hoprag_streamlit_app import HopRAGEngine, LucieCreativeGenerator, HopPath
+from hoprag_streamlit_app import HopRAGEngine, OllamaCreativeGenerator, HopPath
 
-def test_lucie_integration():
-    """Test the Lucie 7B creative reasoning paper generation"""
+def test_ollama_integration():
+    """Test the Ollama creative reasoning paper generation"""
     
     print("="*80)
-    print("LUCIE 7B CREATIVE REASONING PAPER TEST")
+    print("OLLAMA CREATIVE REASONING PAPER TEST")
     print("="*80)
     
-    # Test 1: LucieCreativeGenerator initialization
-    print("🧠 Test 1: Initializing Lucie 7B Creative Generator...")
+    # Test 1: OllamaCreativeGenerator initialization
+    print("🧠 Test 1: Initializing Ollama Creative Generator...")
     try:
-        lucie_gen = LucieCreativeGenerator()
-        print(f"✅ Generator initialized: {lucie_gen.model_name}")
-        print(f"   Model loaded: {lucie_gen.is_loaded}")
+        ollama_gen = OllamaCreativeGenerator()
+        print(f"✅ Generator initialized: {ollama_gen.model_name}")
+        print(f"   Ollama URL: {ollama_gen.ollama_url}")
+        print(f"   Model loaded: {ollama_gen.is_loaded}")
     except Exception as e:
         print(f"❌ Initialization failed: {e}")
         return False
@@ -58,7 +59,7 @@ def test_lucie_integration():
         
         question = "Comment les considérations éthiques influencent-elles le développement de l'IA?"
         
-        prompt = lucie_gen._create_creative_prompt(question, sample_paths, sample_evidence)
+        prompt = ollama_gen._create_creative_prompt(question, sample_paths, sample_evidence)
         
         print("✅ Prompt creation successful")
         print(f"   Question: {question}")
@@ -77,8 +78,8 @@ def test_lucie_integration():
     # Test 3: Model loading (but don't actually load to avoid memory issues)
     print("\n🔧 Test 3: Model loading capability...")
     print("⚠️  Skipping actual model loading to avoid memory issues in test")
-    print("   Model would be loaded from: OpenLLM-France/Lucie-7B")
-    print("   Configuration: torch.float16, device_map='auto'")
+    print("   Model would be used from: Ollama (local API)")
+    print("   Configuration: HTTP requests to localhost:11434")
     
     # Test 4: Creative paper generation (mock)
     print("\n🎨 Test 4: Creative paper generation logic...")
@@ -115,7 +116,7 @@ def test_lucie_integration():
         print("✅ HopRAG Engine with Lucie integration created")
         print(f"   Graph nodes: {len(graph.nodes)}")
         print(f"   Graph edges: {len(graph.edges)}")
-        print(f"   Lucie generator: {type(engine.lucie_generator).__name__}")
+        print(f"   Creative generator: {type(engine.creative_generator).__name__}")
         
     except Exception as e:
         print(f"❌ Integration test failed: {e}")
@@ -164,14 +165,14 @@ def test_lucie_integration():
     print("  ✅ Streamlit interface compatibility")
     print("")
     print("🧠 **Model Configuration:**")
-    print("  • Model: OpenLLM-France/Lucie-7B")
-    print("  • Type: French creative text generation")
+    print("  • Model: Ollama (auto-detected from available models)")
+    print("  • Type: Local API-based text generation")
     print("  • Purpose: Poetic reasoning narratives")
     print("  • Integration: Optional step in HopRAG pipeline")
     print("")
     print("💡 **Next Steps:**")
     print("  1. Run the Streamlit app: streamlit run hoprag_streamlit_app.py")
-    print("  2. Enable 'Generate Creative Reasoning Paper (Lucie 7B)' in sidebar")
+    print("  2. Enable 'Generate Creative Reasoning Paper (Ollama)' in sidebar")
     print("  3. Ask a question and see the '🎨 Papier Créatif' tab")
     print("  4. Enjoy the poetic French narrative of HopRAG's reasoning!")
     
@@ -179,9 +180,9 @@ def test_lucie_integration():
 
 if __name__ == "__main__":
     try:
-        success = test_lucie_integration()
+        success = test_ollama_integration()
         if success:
-            print("\n🎉 Lucie 7B integration ready for use!")
+            print("\n🎉 Ollama integration ready for use!")
         else:
             print("\n⚠️ Some integration tests failed.")
     except Exception as e:

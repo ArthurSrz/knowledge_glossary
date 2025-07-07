@@ -19,8 +19,7 @@ from sentence_transformers import SentenceTransformer
 import re
 from collections import defaultdict, deque
 import time
-from transformers import AutoTokenizer, AutoModelForCausalLM
-import torch
+import requests
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -49,81 +48,87 @@ class HopRAGResult:
     creative_reasoning_paper: str  # New field for Lucie 7B generated content
     query_metadata: Dict[str, Any]
 
-class LucieCreativeGenerator:
-    """Creative reasoning paper generator using Lucie 7B"""
+class OllamaCreativeGenerator:
+    """Creative reasoning paper generator using Ollama"""
     
     def __init__(self):
-        self.model_name = "OpenLLM-France/Lucie-7B"
-        self.tokenizer = None
-        self.model = None
+        self.model_name = "llama3.2:3b"  # Default to llama3.2:3b (lightweight)
+        self.ollama_url = "http://localhost:11434"
         self.is_loaded = False
         
-    def load_model(self):
-        """Load Lucie 7B model"""
+    def check_ollama_availability(self):
+        """Check if Ollama is running and model is available"""
         try:
-            st.info("🧠 Chargement de Lucie 7B pour la génération créative...")
-            
-            self.tokenizer = AutoTokenizer.from_pretrained(
-                self.model_name,
-                trust_remote_code=True
-            )
-            
-            self.model = AutoModelForCausalLM.from_pretrained(
-                self.model_name,
-                torch_dtype=torch.float16,
-                device_map="auto",
-                trust_remote_code=True,
-                low_cpu_mem_usage=True
-            )
-            
-            # Add pad token if not present
-            if self.tokenizer.pad_token is None:
-                self.tokenizer.pad_token = self.tokenizer.eos_token
+            # Check if Ollama is running
+            response = requests.get(f"{self.ollama_url}/api/tags", timeout=5)
+            if response.status_code == 200:
+                models = response.json()
+                available_models = [model['name'] for model in models.get('models', [])]
                 
-            self.is_loaded = True
-            st.success("✅ Lucie 7B chargé avec succès!")
-            
+                # Check for French-capable models (in order of preference)
+                preferred_models = ["mistral:7b", "llama3.2:3b", "llama3.1:8b", "llama2:7b", "gemma:7b"]
+                
+                for model in preferred_models:
+                    if model in available_models:
+                        self.model_name = model
+                        self.is_loaded = True
+                        return True
+                
+                # If no preferred models, use first available
+                if available_models:
+                    self.model_name = available_models[0]
+                    self.is_loaded = True
+                    return True
+                    
+            return False
         except Exception as e:
-            st.error(f"❌ Erreur lors du chargement de Lucie 7B: {e}")
-            self.is_loaded = False
+            st.warning(f"⚠️ Ollama non disponible: {e}")
+            return False
     
     def generate_creative_reasoning_paper(self, question: str, hop_paths: List[HopPath], 
                                         supporting_evidence: List[str]) -> str:
-        """Generate a creative reasoning paper in French using Lucie 7B"""
+        """Generate a creative reasoning paper in French using Ollama"""
         
         if not self.is_loaded:
-            self.load_model()
-            
-        if not self.is_loaded:
-            return "❌ Modèle Lucie 7B non disponible"
+            if not self.check_ollama_availability():
+                return "❌ Ollama non disponible. Veuillez démarrer Ollama et installer un modèle (ex: ollama pull llama3.2:3b)"
         
         try:
             # Prepare the French prompt inspired by the poetic description
             prompt = self._create_creative_prompt(question, hop_paths, supporting_evidence)
             
-            # Generate with Lucie 7B
-            inputs = self.tokenizer(prompt, return_tensors="pt", truncation=True, max_length=2048)
+            # Call Ollama API
+            st.info(f"🧠 Génération créative avec {self.model_name}...")
             
-            with torch.no_grad():
-                outputs = self.model.generate(
-                    inputs.input_ids,
-                    max_new_tokens=800,
-                    temperature=0.7,
-                    do_sample=True,
-                    top_p=0.9,
-                    top_k=50,
-                    repetition_penalty=1.1,
-                    pad_token_id=self.tokenizer.eos_token_id
-                )
+            response = requests.post(
+                f"{self.ollama_url}/api/generate",
+                json={
+                    "model": self.model_name,
+                    "prompt": prompt,
+                    "stream": False,
+                    "options": {
+                        "temperature": 0.7,
+                        "top_p": 0.9,
+                        "top_k": 50,
+                        "max_tokens": 800,
+                        "num_predict": 800
+                    }
+                },
+                timeout=60
+            )
             
-            # Decode the response
-            generated_text = self.tokenizer.decode(outputs[0], skip_special_tokens=True)
-            
-            # Extract only the generated part (after the prompt)
-            creative_paper = generated_text[len(prompt):].strip()
-            
-            return creative_paper
-            
+            if response.status_code == 200:
+                result = response.json()
+                creative_paper = result.get('response', '').strip()
+                
+                if creative_paper:
+                    st.success(f"✅ Papier créatif généré avec {self.model_name}!")
+                    return creative_paper
+                else:
+                    return "❌ Réponse vide du modèle"
+            else:
+                return f"❌ Erreur Ollama: {response.status_code} - {response.text}"
+                
         except Exception as e:
             return f"❌ Erreur lors de la génération créative: {e}"
     
@@ -240,7 +245,7 @@ class HopRAGEngine:
         self.embedding_model = SentenceTransformer('all-MiniLM-L6-v2')
         self.max_hops = 5  # Increased for deeper exploration
         self.top_k_paths = 15  # More paths for better diversity
-        self.lucie_generator = LucieCreativeGenerator()  # Add Lucie 7B generator
+        self.creative_generator = OllamaCreativeGenerator()  # Add Ollama generator
         
     def query(self, question: str, max_hops: int = 3, top_k: int = 5, stream_callback=None, generate_creative_paper: bool = True) -> HopRAGResult:
         """Process query using HopRAG methodology with streaming updates"""
@@ -292,12 +297,12 @@ class HopRAGEngine:
         if stream_callback:
             stream_callback("LinkedIn post completed!", "success")
         
-        # Step 7: Generate Creative Reasoning Paper with Lucie 7B (optional)
+        # Step 7: Generate Creative Reasoning Paper with Ollama (optional)
         if generate_creative_paper:
             if stream_callback:
-                stream_callback("🎨 **Step 7: Creative Reasoning Paper Generation (Lucie 7B)**", "info")
+                stream_callback("🎨 **Step 7: Creative Reasoning Paper Generation (Ollama)**", "info")
             
-            creative_reasoning_paper = self.lucie_generator.generate_creative_reasoning_paper(
+            creative_reasoning_paper = self.creative_generator.generate_creative_reasoning_paper(
                 question, hop_paths[:top_k], evidence
             )
             if stream_callback:
@@ -1620,8 +1625,17 @@ class HopRAGStreamlitApp:
             show_graph_viz = st.checkbox("Show graph visualization", value=True)
             
             st.header("🎨 Creative Generation")
-            show_creative_paper = st.checkbox("Generate Creative Reasoning Paper (Lucie 7B)", value=True)
-            st.caption("Generates a poetic French narrative about the reasoning process using Lucie 7B")
+            show_creative_paper = st.checkbox("Generate Creative Reasoning Paper (Ollama)", value=True)
+            st.caption("Generates a poetic French narrative about the reasoning process using Ollama")
+            
+            # Show Ollama status
+            if show_creative_paper and self.hoprag_engine:
+                ollama_gen = self.hoprag_engine.creative_generator
+                if ollama_gen.check_ollama_availability():
+                    st.success(f"✅ Ollama ready: {ollama_gen.model_name}")
+                else:
+                    st.error("❌ Ollama not available")
+                    st.caption("Run: `ollama serve` and `ollama pull llama3.2:3b`")
             
             st.header("📊 System Stats")
             if self.graph:
@@ -1817,7 +1831,7 @@ class HopRAGStreamlitApp:
         st.header("🎯 Final Results")
         
         # Create tabs for different output types
-        tab1, tab2, tab3 = st.tabs(["📱 LinkedIn Post", "🎨 Papier Créatif (Lucie 7B)", "🕸️ Graph Visualization"])
+        tab1, tab2, tab3 = st.tabs(["📱 LinkedIn Post", "🎨 Papier Créatif (Ollama)", "🕸️ Graph Visualization"])
         
         with tab1:
             # LinkedIn post
@@ -1834,10 +1848,10 @@ class HopRAGStreamlitApp:
                 st.info("Enable 'Show Reasoning Paper' in sidebar to see LinkedIn post")
         
         with tab2:
-            # Creative Reasoning Paper by Lucie 7B
+            # Creative Reasoning Paper by Ollama
             if hasattr(result, 'creative_reasoning_paper') and result.creative_reasoning_paper:
                 st.subheader("🎨 Papier de Raisonnement Créatif")
-                st.caption("Généré par Lucie 7B - Inspired by the poetic vision of HopRAG")
+                st.caption("Généré par Ollama - Inspired by the poetic vision of HopRAG")
                 
                 with st.container():
                     st.markdown("---")
