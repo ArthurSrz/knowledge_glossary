@@ -77,7 +77,7 @@ def test_lucie_integration():
     # Test 3: Model loading (but don't actually load to avoid memory issues)
     print("\n🔧 Test 3: Model loading capability...")
     print("⚠️  Skipping actual model loading to avoid memory issues in test")
-    print("   Model would be loaded from: OEvortex/Lucie-7B")
+    print("   Model would be loaded from: OpenLLM-France/Lucie-7B")
     print("   Configuration: torch.float16, device_map='auto'")
     
     # Test 4: Creative paper generation (mock)
@@ -164,7 +164,7 @@ def test_lucie_integration():
     print("  ✅ Streamlit interface compatibility")
     print("")
     print("🧠 **Model Configuration:**")
-    print("  • Model: OEvortex/Lucie-7B")
+    print("  • Model: OpenLLM-France/Lucie-7B")
     print("  • Type: French creative text generation")
     print("  • Purpose: Poetic reasoning narratives")
     print("  • Integration: Optional step in HopRAG pipeline")

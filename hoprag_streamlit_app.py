@@ -53,7 +53,7 @@ class LucieCreativeGenerator:
     """Creative reasoning paper generator using Lucie 7B"""
     
     def __init__(self):
-        self.model_name = "OEvortex/Lucie-7B"
+        self.model_name = "OpenLLM-France/Lucie-7B"
         self.tokenizer = None
         self.model = None
         self.is_loaded = False
