@@ -243,8 +243,8 @@ class HopRAGEngine:
         self.graph = knowledge_graph
         self.concept_content = concept_content
         self.embedding_model = SentenceTransformer('all-MiniLM-L6-v2')
-        self.max_hops = 5  # Increased for deeper exploration
-        self.top_k_paths = 15  # More paths for better diversity
+        self.max_hops = 3  # Reduced for focused exploration
+        self.top_k_paths = 8  # Reduced for manageable number of paths
         self.creative_generator = OllamaCreativeGenerator()  # Add Ollama generator
         
     def query(self, question: str, max_hops: int = 3, top_k: int = 5, stream_callback=None, generate_creative_paper: bool = True) -> HopRAGResult:
@@ -345,7 +345,7 @@ class HopRAGEngine:
         
         # Sort by similarity and take top entities
         similarities.sort(key=lambda x: x[1], reverse=True)
-        return [concept for concept, _ in similarities[:5]]
+        return [concept for concept, _ in similarities[:3]]  # Reduced starting entities
     
     def _discover_hop_paths(self, start_entities: List[str], question: str, max_hops: int, stream_callback=None) -> List[HopPath]:
         """Discover multi-hop reasoning paths with enhanced depth and quality"""
@@ -355,6 +355,12 @@ class HopRAGEngine:
         for i, start_entity in enumerate(start_entities):
             if start_entity not in self.graph.nodes:
                 continue
+            
+            # Early termination if we already have many paths
+            if len(all_paths) > 50:  # Limit total paths explored
+                if stream_callback:
+                    stream_callback(f"⚡ Early termination: sufficient paths found ({len(all_paths)})", "info")
+                break
             
             if stream_callback:
                 stream_callback(f"🌱 Exploring from entity: **{start_entity}** ({i+1}/{len(start_entities)})", "path")
@@ -398,7 +404,7 @@ class HopRAGEngine:
         # Generate path at current depth if meaningful (2+ hops)
         if len(new_path) >= 2:
             path_obj = self._create_path_object(new_path, question_embedding)
-            if path_obj.confidence > 0.1:  # Quality threshold
+            if path_obj.confidence > 0.2:  # Increased quality threshold
                 paths.append(path_obj)
                 if stream_callback and len(new_path) >= 3:  # Report significant paths
                     path_str = ' → '.join(new_path)
@@ -409,7 +415,7 @@ class HopRAGEngine:
             # Get neighbors sorted by relevance
             neighbors = self._get_sorted_neighbors(current_node, question_embedding)
             
-            for neighbor, neighbor_score in neighbors[:8]:  # Top 8 neighbors per node
+            for neighbor, neighbor_score in neighbors[:4]:  # Reduced to top 4 neighbors per node
                 if neighbor not in new_visited:
                     # Recursive exploration
                     sub_paths = self._deep_path_search(
@@ -508,9 +514,9 @@ class HopRAGEngine:
         
         for path in paths:
             # Quality filters
-            if (path.confidence > 0.15 and  # Minimum confidence
+            if (path.confidence > 0.25 and  # Higher minimum confidence
                 len(path.entities) >= 2 and  # At least 2 entities
-                len(path.entities) <= 6 and  # Not too long
+                len(path.entities) <= 5 and  # Shorter max length
                 len(set(path.entities)) == len(path.entities)):  # No cycles
                 
                 quality_paths.append(path)
