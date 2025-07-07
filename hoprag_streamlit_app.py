@@ -19,6 +19,8 @@ from sentence_transformers import SentenceTransformer
 import re
 from collections import defaultdict, deque
 import time
+from transformers import AutoTokenizer, AutoModelForCausalLM
+import torch
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -44,7 +46,125 @@ class HopRAGResult:
     reasoning_explanation: str
     research_abstract: str
     reasoning_paper: str
+    creative_reasoning_paper: str  # New field for Lucie 7B generated content
     query_metadata: Dict[str, Any]
+
+class LucieCreativeGenerator:
+    """Creative reasoning paper generator using Lucie 7B"""
+    
+    def __init__(self):
+        self.model_name = "OEvortex/Lucie-7B"
+        self.tokenizer = None
+        self.model = None
+        self.is_loaded = False
+        
+    def load_model(self):
+        """Load Lucie 7B model"""
+        try:
+            st.info("🧠 Chargement de Lucie 7B pour la génération créative...")
+            
+            self.tokenizer = AutoTokenizer.from_pretrained(
+                self.model_name,
+                trust_remote_code=True
+            )
+            
+            self.model = AutoModelForCausalLM.from_pretrained(
+                self.model_name,
+                torch_dtype=torch.float16,
+                device_map="auto",
+                trust_remote_code=True,
+                low_cpu_mem_usage=True
+            )
+            
+            # Add pad token if not present
+            if self.tokenizer.pad_token is None:
+                self.tokenizer.pad_token = self.tokenizer.eos_token
+                
+            self.is_loaded = True
+            st.success("✅ Lucie 7B chargé avec succès!")
+            
+        except Exception as e:
+            st.error(f"❌ Erreur lors du chargement de Lucie 7B: {e}")
+            self.is_loaded = False
+    
+    def generate_creative_reasoning_paper(self, question: str, hop_paths: List[HopPath], 
+                                        supporting_evidence: List[str]) -> str:
+        """Generate a creative reasoning paper in French using Lucie 7B"""
+        
+        if not self.is_loaded:
+            self.load_model()
+            
+        if not self.is_loaded:
+            return "❌ Modèle Lucie 7B non disponible"
+        
+        try:
+            # Prepare the French prompt inspired by the poetic description
+            prompt = self._create_creative_prompt(question, hop_paths, supporting_evidence)
+            
+            # Generate with Lucie 7B
+            inputs = self.tokenizer(prompt, return_tensors="pt", truncation=True, max_length=2048)
+            
+            with torch.no_grad():
+                outputs = self.model.generate(
+                    inputs.input_ids,
+                    max_new_tokens=800,
+                    temperature=0.7,
+                    do_sample=True,
+                    top_p=0.9,
+                    top_k=50,
+                    repetition_penalty=1.1,
+                    pad_token_id=self.tokenizer.eos_token_id
+                )
+            
+            # Decode the response
+            generated_text = self.tokenizer.decode(outputs[0], skip_special_tokens=True)
+            
+            # Extract only the generated part (after the prompt)
+            creative_paper = generated_text[len(prompt):].strip()
+            
+            return creative_paper
+            
+        except Exception as e:
+            return f"❌ Erreur lors de la génération créative: {e}"
+    
+    def _create_creative_prompt(self, question: str, hop_paths: List[HopPath], 
+                              supporting_evidence: List[str]) -> str:
+        """Create a French prompt for creative reasoning paper generation"""
+        
+        # Extract key concepts from paths
+        all_concepts = set()
+        for path in hop_paths[:5]:  # Top 5 paths
+            all_concepts.update(path.entities)
+        
+        key_concepts = list(all_concepts)[:8]  # Limit to 8 concepts
+        
+        # Build path narratives
+        path_narratives = []
+        for i, path in enumerate(hop_paths[:3]):  # Top 3 paths for narrative
+            path_story = " → ".join(path.entities)
+            path_narratives.append(f"Chemin {i+1}: {path_story} (confiance: {path.confidence:.2f})")
+        
+        # Create the French prompt
+        prompt = f"""En tant qu'expert en raisonnement logique et narrateur expérimenté, rédigez un "papier de raisonnement créatif" qui explique comment HopRAG a exploré la question suivante.
+
+**Question analysée:** {question}
+
+**Concepts découverts:** {', '.join(key_concepts)}
+
+**Chemins de raisonnement explorés:**
+{chr(10).join(path_narratives)}
+
+**Preuves rassemblées:** {len(supporting_evidence)} sources d'information
+
+Inspirez-vous de cette vision poétique de HopRAG : "un bibliothécaire particulièrement ingénieux, doté d'une intuition remarquable pour naviguer dans l'univers complexe des connaissances... tissant des liens logiques entre les informations avec la délicatesse d'un conteur expérimenté."
+
+Rédigez un texte créatif et engageant qui raconte comment HopRAG a procédé pour répondre à cette question, en utilisant des métaphores et un style narratif captivant. Décrivez l'art de la connexion logique, le mécanisme en trois temps, et la beauté du raisonnement par bonds.
+
+**Papier de raisonnement créatif:**
+
+"""
+        
+        return prompt
 
 class KnowledgeGraphLoader:
     """Loads knowledge graph from markdown files"""
@@ -120,8 +240,9 @@ class HopRAGEngine:
         self.embedding_model = SentenceTransformer('all-MiniLM-L6-v2')
         self.max_hops = 5  # Increased for deeper exploration
         self.top_k_paths = 15  # More paths for better diversity
+        self.lucie_generator = LucieCreativeGenerator()  # Add Lucie 7B generator
         
-    def query(self, question: str, max_hops: int = 3, top_k: int = 5, stream_callback=None) -> HopRAGResult:
+    def query(self, question: str, max_hops: int = 3, top_k: int = 5, stream_callback=None, generate_creative_paper: bool = True) -> HopRAGResult:
         """Process query using HopRAG methodology with streaming updates"""
         
         if stream_callback:
@@ -171,7 +292,20 @@ class HopRAGEngine:
         if stream_callback:
             stream_callback("LinkedIn post completed!", "success")
         
-        # Step 7: Reasoning Explanation
+        # Step 7: Generate Creative Reasoning Paper with Lucie 7B (optional)
+        if generate_creative_paper:
+            if stream_callback:
+                stream_callback("🎨 **Step 7: Creative Reasoning Paper Generation (Lucie 7B)**", "info")
+            
+            creative_reasoning_paper = self.lucie_generator.generate_creative_reasoning_paper(
+                question, hop_paths[:top_k], evidence
+            )
+            if stream_callback:
+                stream_callback("Papier de raisonnement créatif généré!", "success")
+        else:
+            creative_reasoning_paper = "🎨 Creative reasoning paper generation disabled"
+        
+        # Step 8: Reasoning Explanation
         reasoning = self._generate_reasoning_explanation(question, hop_paths)
         
         return HopRAGResult(
@@ -182,6 +316,7 @@ class HopRAGEngine:
             reasoning_explanation=reasoning,
             research_abstract=abstract,
             reasoning_paper=reasoning_paper,
+            creative_reasoning_paper=creative_reasoning_paper,
             query_metadata={
                 "start_entities": start_entities,
                 "total_paths_explored": len(hop_paths),
@@ -1484,6 +1619,10 @@ class HopRAGStreamlitApp:
             show_reasoning_paper = st.checkbox("Show LinkedIn post", value=True)
             show_graph_viz = st.checkbox("Show graph visualization", value=True)
             
+            st.header("🎨 Creative Generation")
+            show_creative_paper = st.checkbox("Generate Creative Reasoning Paper (Lucie 7B)", value=True)
+            st.caption("Generates a poetic French narrative about the reasoning process using Lucie 7B")
+            
             st.header("📊 System Stats")
             if self.graph:
                 st.metric("Total Concepts", len(self.graph.nodes))
@@ -1518,7 +1657,7 @@ class HopRAGStreamlitApp:
             
             if st.button("🚀 Execute HopRAG Query", type="primary"):
                 if query and self.hoprag_engine:
-                    self._process_query(query, max_hops, top_k_paths, show_reasoning, show_reasoning_paper, show_graph_viz)
+                    self._process_query(query, max_hops, top_k_paths, show_reasoning, show_reasoning_paper, show_graph_viz, show_creative_paper)
                 else:
                     st.warning("Please enter a query first")
         
@@ -1531,7 +1670,7 @@ class HopRAGStreamlitApp:
             - Try asking "how" and "why" questions
             """)
     
-    def _process_query(self, query: str, max_hops: int, top_k: int, show_reasoning: bool, show_reasoning_paper: bool, show_viz: bool):
+    def _process_query(self, query: str, max_hops: int, top_k: int, show_reasoning: bool, show_reasoning_paper: bool, show_viz: bool, show_creative_paper: bool = True):
         """Process a HopRAG query with streaming display and real-time path visualization"""
         
         start_time = time.time()
@@ -1603,7 +1742,8 @@ class HopRAGStreamlitApp:
                 query, 
                 max_hops=max_hops, 
                 top_k=top_k, 
-                stream_callback=stream_update
+                stream_callback=stream_update,
+                generate_creative_paper=show_creative_paper
             )
             
             processing_time = time.time() - start_time
@@ -1676,9 +1816,10 @@ class HopRAGStreamlitApp:
         # Final Results Section
         st.header("🎯 Final Results")
         
-        col1, col2 = st.columns([1, 1])
+        # Create tabs for different output types
+        tab1, tab2, tab3 = st.tabs(["📱 LinkedIn Post", "🎨 Papier Créatif (Lucie 7B)", "🕸️ Graph Visualization"])
         
-        with col1:
+        with tab1:
             # LinkedIn post
             if show_reasoning_paper and result.reasoning_paper:
                 st.subheader("📱 LinkedIn Post")
@@ -1689,13 +1830,36 @@ class HopRAGStreamlitApp:
                     
                     # Copy button simulation
                     st.caption("💡 Copy this post to share your insights on LinkedIn!")
+            else:
+                st.info("Enable 'Show Reasoning Paper' in sidebar to see LinkedIn post")
         
-        with col2:
+        with tab2:
+            # Creative Reasoning Paper by Lucie 7B
+            if hasattr(result, 'creative_reasoning_paper') and result.creative_reasoning_paper:
+                st.subheader("🎨 Papier de Raisonnement Créatif")
+                st.caption("Généré par Lucie 7B - Inspired by the poetic vision of HopRAG")
+                
+                with st.container():
+                    st.markdown("---")
+                    # Check if it's an error message
+                    if result.creative_reasoning_paper.startswith("❌"):
+                        st.error(result.creative_reasoning_paper)
+                    else:
+                        st.markdown(result.creative_reasoning_paper)
+                    st.markdown("---")
+                    
+                    st.caption("✨ Un récit poétique du processus de raisonnement multi-bonds de HopRAG")
+            else:
+                st.info("🧠 Le papier créatif sera généré automatiquement lors de la prochaine requête")
+        
+        with tab3:
             # Graph visualization
             if show_viz and result.hop_paths:
                 st.subheader("🕸️ Reasoning Graph")
                 self._create_hop_visualization(result.hop_paths)
                 st.caption(f"Visualization of {len(result.hop_paths)} reasoning paths")
+            else:
+                st.info("Enable 'Show Graph Visualization' in sidebar to see the reasoning graph")
         
         # Reasoning explanation
         if result.reasoning_explanation:
