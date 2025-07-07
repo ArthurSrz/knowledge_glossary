@@ -1699,18 +1699,43 @@ class HopRAGStreamlitApp:
                     st.markdown(evidence[:500] + "..." if len(evidence) > 500 else evidence)
     
     def _create_hop_visualization(self, hop_paths: List[HopPath]):
-        """Create interactive visualization of reasoning paths"""
+        """Create enhanced interactive visualization of reasoning paths"""
         
         if not hop_paths:
             st.info("No reasoning paths to visualize")
             return
         
-        # Collect all nodes and edges
-        all_nodes = set()
-        all_edges = []
+        # Show path selection controls
+        col1, col2, col3 = st.columns([2, 2, 1])
         
-        for path_idx, path in enumerate(hop_paths[:3]):  # Top 3 paths
-            all_nodes.update(path.entities)
+        with col1:
+            max_paths = st.slider("Number of paths to show", 1, min(len(hop_paths), 8), min(3, len(hop_paths)))
+        
+        with col2:
+            layout_type = st.selectbox("Graph Layout", 
+                ["Spring", "Circular", "Random", "Shell"], 
+                index=0)
+        
+        with col3:
+            show_confidence = st.checkbox("Show confidence", value=True)
+        
+        # Collect nodes and edges from selected paths
+        selected_paths = hop_paths[:max_paths]
+        all_nodes = {}  # Store node info
+        all_edges = []
+        node_frequencies = {}  # Count how many paths use each node
+        
+        for path_idx, path in enumerate(selected_paths):
+            for node in path.entities:
+                if node not in all_nodes:
+                    all_nodes[node] = {
+                        'name': node,
+                        'paths': [],
+                        'content': self.concept_content.get(node, "No content available")[:200] + "..."
+                    }
+                    node_frequencies[node] = 0
+                all_nodes[node]['paths'].append(path_idx)
+                node_frequencies[node] += 1
             
             for i in range(len(path.entities) - 1):
                 all_edges.append({
@@ -1718,28 +1743,42 @@ class HopRAGStreamlitApp:
                     'target': path.entities[i+1],
                     'relation': path.relations[i],
                     'path_idx': path_idx,
-                    'confidence': path.confidence
+                    'confidence': path.confidence,
+                    'hop_position': i
                 })
         
-        # Create network graph
-        fig = go.Figure()
-        
-        # Position nodes using NetworkX spring layout
+        # Create NetworkX graph for layout
         G = nx.Graph()
         for edge in all_edges:
             G.add_edge(edge['source'], edge['target'])
         
-        pos = nx.spring_layout(G, k=3, iterations=50)
+        # Apply selected layout
+        if layout_type == "Spring":
+            pos = nx.spring_layout(G, k=3, iterations=100, seed=42)
+        elif layout_type == "Circular":
+            pos = nx.circular_layout(G)
+        elif layout_type == "Random":
+            pos = nx.random_layout(G, seed=42)
+        else:  # Shell
+            pos = nx.shell_layout(G)
         
-        # Add edges
-        edge_traces = []
-        colors = ['red', 'blue', 'green']
+        # Create Plotly figure
+        fig = go.Figure()
         
-        for path_idx in range(3):
+        # Define colors for different paths
+        path_colors = [
+            '#FF6B6B', '#4ECDC4', '#45B7D1', '#96CEB4', 
+            '#FECA57', '#FF9FF3', '#54A0FF', '#5F27CD'
+        ]
+        
+        # Add edges with enhanced styling
+        for path_idx in range(max_paths):
             path_edges = [e for e in all_edges if e['path_idx'] == path_idx]
+            path = selected_paths[path_idx]
             
             edge_x = []
             edge_y = []
+            edge_info = []
             
             for edge in path_edges:
                 if edge['source'] in pos and edge['target'] in pos:
@@ -1747,31 +1786,67 @@ class HopRAGStreamlitApp:
                     x1, y1 = pos[edge['target']]
                     edge_x.extend([x0, x1, None])
                     edge_y.extend([y0, y1, None])
+                    edge_info.append(f"Path {path_idx + 1}: {edge['source']} → {edge['target']}<br>"
+                                   f"Relation: {edge['relation']}<br>"
+                                   f"Confidence: {edge['confidence']:.3f}")
+            
+            # Line width based on confidence
+            line_width = 2 + (path.confidence * 4)  # 2-6 pixel width
             
             edge_trace = go.Scatter(
                 x=edge_x, y=edge_y,
-                line=dict(width=2, color=colors[path_idx]),
-                hoverinfo='none',
+                line=dict(
+                    width=line_width, 
+                    color=path_colors[path_idx % len(path_colors)]
+                ),
                 mode='lines',
-                name=f'Path {path_idx + 1}',
-                showlegend=True
+                name=f'Path {path_idx + 1} (conf: {path.confidence:.3f})',
+                showlegend=True,
+                hoverinfo='skip'
             )
             
             fig.add_trace(edge_trace)
         
-        # Add nodes
+        # Add nodes with enhanced information
         node_x = []
         node_y = []
         node_text = []
         node_info = []
+        node_colors = []
+        node_sizes = []
         
-        for node in all_nodes:
-            if node in pos:
-                x, y = pos[node]
+        for node_name, node_data in all_nodes.items():
+            if node_name in pos:
+                x, y = pos[node_name]
                 node_x.append(x)
                 node_y.append(y)
-                node_text.append(node)
-                node_info.append(f"Concept: {node}")
+                
+                # Display name (truncated if too long)
+                display_name = node_name if len(node_name) <= 12 else node_name[:12] + "..."
+                node_text.append(display_name)
+                
+                # Enhanced hover information
+                paths_text = ", ".join([f"Path {i+1}" for i in node_data['paths']])
+                frequency = node_frequencies[node_name]
+                
+                hover_text = (f"<b>{node_name}</b><br>"
+                            f"Used in: {paths_text}<br>"
+                            f"Frequency: {frequency} path(s)<br>"
+                            f"Content: {node_data['content']}<br>"
+                            f"Click for more details")
+                node_info.append(hover_text)
+                
+                # Color based on frequency (more used nodes are redder)
+                if show_confidence:
+                    color_intensity = min(frequency / max_paths, 1.0)
+                    node_colors.append(f'rgba(255, {int(100 + 155 * (1-color_intensity))}, {int(100 + 155 * (1-color_intensity))}, 0.8)')
+                else:
+                    node_colors.append('rgba(135, 206, 235, 0.8)')  # Light blue
+                
+                # Size based on frequency
+                base_size = 20
+                size_bonus = frequency * 8
+                node_sizes.append(base_size + size_bonus)
         
         node_trace = go.Scatter(
             x=node_x, y=node_y,
@@ -1781,35 +1856,153 @@ class HopRAGStreamlitApp:
             textposition="middle center",
             hovertext=node_info,
             marker=dict(
-                size=20,
-                color='lightblue',
-                line=dict(width=2, color='darkblue')
+                size=node_sizes,
+                color=node_colors,
+                line=dict(width=2, color='rgba(50, 50, 50, 0.8)'),
+                sizemode='diameter'
             ),
-            textfont=dict(size=10),
-            showlegend=False
+            textfont=dict(size=10, color='black'),
+            showlegend=False,
+            name="Concepts"
         )
         
         fig.add_trace(node_trace)
         
+        # Enhanced layout
         fig.update_layout(
-            title="Multi-Hop Reasoning Paths",
+            title=dict(
+                text=f"Multi-Hop Reasoning Paths Visualization ({max_paths} paths)",
+                font=dict(size=16)
+            ),
             showlegend=True,
             hovermode='closest',
-            margin=dict(b=20, l=5, r=5, t=40),
-            annotations=[dict(
-                text="Different colors represent different reasoning paths",
-                showarrow=False,
-                xref="paper", yref="paper",
-                x=0.005, y=-0.002,
-                xanchor='left', yanchor='bottom',
-                font=dict(color='gray', size=12)
-            )],
+            margin=dict(b=20, l=5, r=5, t=60),
+            font=dict(size=12),
+            plot_bgcolor='rgba(248, 248, 255, 0.8)',
+            paper_bgcolor='white',
+            legend=dict(
+                orientation="h",
+                yanchor="bottom",
+                y=1.02,
+                xanchor="right",
+                x=1
+            ),
             xaxis=dict(showgrid=False, zeroline=False, showticklabels=False),
             yaxis=dict(showgrid=False, zeroline=False, showticklabels=False),
-            height=600
+            height=600,
+            annotations=[dict(
+                text="Hover over nodes and edges for details • Different colors represent different reasoning paths",
+                showarrow=False,
+                xref="paper", yref="paper",
+                x=0.5, y=-0.02,
+                xanchor='center',
+                yanchor='top',
+                font=dict(size=11, color='gray')
+            )]
         )
         
+        # Display the interactive plot
         st.plotly_chart(fig, use_container_width=True)
+        
+        # Add detailed path information below the graph
+        self._display_path_details(selected_paths, show_confidence)
+    
+    def _display_path_details(self, hop_paths: List[HopPath], show_confidence: bool):
+        """Display detailed information about reasoning paths"""
+        
+        st.subheader("🔍 Path Analysis")
+        
+        # Create tabs for different views
+        tab1, tab2, tab3 = st.tabs(["📊 Path Comparison", "📈 Statistics", "🔗 Path Details"])
+        
+        with tab1:
+            # Path comparison table
+            if len(hop_paths) > 1:
+                comparison_data = []
+                for i, path in enumerate(hop_paths):
+                    comparison_data.append({
+                        'Path': f'Path {i+1}',
+                        'Hops': path.hop_count,
+                        'Confidence': f'{path.confidence:.3f}',
+                        'Start': path.entities[0],
+                        'End': path.entities[-1],
+                        'Key Concepts': ' → '.join(path.entities)
+                    })
+                
+                df = pd.DataFrame(comparison_data)
+                st.dataframe(df, use_container_width=True)
+            else:
+                st.info("Add more paths to compare")
+        
+        with tab2:
+            # Statistics about the paths
+            col1, col2, col3, col4 = st.columns(4)
+            
+            with col1:
+                avg_hops = sum(p.hop_count for p in hop_paths) / len(hop_paths)
+                st.metric("Average Hops", f"{avg_hops:.1f}")
+            
+            with col2:
+                avg_confidence = sum(p.confidence for p in hop_paths) / len(hop_paths)
+                st.metric("Average Confidence", f"{avg_confidence:.3f}")
+            
+            with col3:
+                unique_concepts = len(set().union(*[p.entities for p in hop_paths]))
+                st.metric("Unique Concepts", unique_concepts)
+            
+            with col4:
+                total_connections = sum(p.hop_count for p in hop_paths)
+                st.metric("Total Connections", total_connections)
+            
+            # Confidence distribution chart
+            if show_confidence and len(hop_paths) > 1:
+                st.subheader("Confidence Distribution")
+                conf_data = pd.DataFrame({
+                    'Path': [f'Path {i+1}' for i in range(len(hop_paths))],
+                    'Confidence': [p.confidence for p in hop_paths]
+                })
+                
+                bar_fig = px.bar(conf_data, x='Path', y='Confidence', 
+                               title="Path Confidence Scores",
+                               color='Confidence',
+                               color_continuous_scale='RdYlBu_r')
+                st.plotly_chart(bar_fig, use_container_width=True)
+        
+        with tab3:
+            # Detailed path information
+            path_selector = st.selectbox(
+                "Select path for details:", 
+                options=range(len(hop_paths)),
+                format_func=lambda x: f"Path {x+1} (conf: {hop_paths[x].confidence:.3f})"
+            )
+            
+            selected_path = hop_paths[path_selector]
+            
+            st.markdown(f"### Path {path_selector + 1} Details")
+            
+            col1, col2 = st.columns([1, 1])
+            
+            with col1:
+                st.markdown("**Path Information:**")
+                st.markdown(f"- **Hops:** {selected_path.hop_count}")
+                st.markdown(f"- **Confidence:** {selected_path.confidence:.4f}")
+                st.markdown(f"- **Reasoning Chain:**")
+                st.code(selected_path.reasoning_chain, language=None)
+            
+            with col2:
+                st.markdown("**Concept Progression:**")
+                for i, (entity, relation) in enumerate(zip(selected_path.entities, selected_path.relations + ['END'])):
+                    if relation != 'END':
+                        st.markdown(f"{i+1}. **{entity}** `{relation}` →")
+                    else:
+                        st.markdown(f"{i+1}. **{entity}**")
+            
+            # Evidence details
+            st.markdown("**Supporting Evidence:**")
+            for i, evidence in enumerate(selected_path.evidence):
+                if evidence.strip():
+                    with st.expander(f"Evidence from {selected_path.entities[i]}"):
+                        st.markdown(evidence[:300] + "..." if len(evidence) > 300 else evidence)
 
 def main():
     """Main application entry point"""
