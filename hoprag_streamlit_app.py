@@ -2052,25 +2052,26 @@ class HopRAGStreamlitApp:
         with viz_placeholder.container():
             st.markdown(f"**Paths Discovered: {len(self.discovered_paths)}**")
             
-            # Show recent paths as text first (faster than full graph)
-            if len(self.discovered_paths) <= 3:
-                # For first few paths, show full graph
-                self._create_lightweight_path_graph(self.discovered_paths[-3:])
-            else:
-                # For many paths, show summary + latest paths
-                col1, col2 = st.columns([1, 2])
-                with col1:
-                    st.metric("Total Paths", len(self.discovered_paths))
-                    st.metric("Avg Confidence", f"{sum(p.confidence for p in self.discovered_paths) / len(self.discovered_paths):.2f}")
-                
-                with col2:
-                    st.markdown("**Latest Paths:**")
-                    for i, path in enumerate(self.discovered_paths[-3:]):
-                        confidence_bar = "🟢" if path.confidence > 0.7 else "🟡" if path.confidence > 0.5 else "🔴"
-                        st.markdown(f"{confidence_bar} `{' → '.join(path.entities)}` ({path.confidence:.2f})")
+            # Always show the graph visualization with all paths
+            # For performance, limit to most recent paths if too many
+            max_paths_to_show = min(len(self.discovered_paths), 12)  # Show up to 12 paths
+            paths_to_visualize = self.discovered_paths[-max_paths_to_show:]
+            
+            # Show metrics
+            col1, col2, col3 = st.columns(3)
+            with col1:
+                st.metric("Total Paths", len(self.discovered_paths))
+            with col2:
+                st.metric("Showing", len(paths_to_visualize))
+            with col3:
+                avg_conf = sum(p.confidence for p in self.discovered_paths) / len(self.discovered_paths)
+                st.metric("Avg Confidence", f"{avg_conf:.2f}")
+            
+            # Always show the graph with discovered paths
+            self._create_lightweight_path_graph(paths_to_visualize)
     
     def _create_lightweight_path_graph(self, paths: List[HopPath]):
-        """Create a lightweight graph for real-time updates"""
+        """Create a lightweight graph for real-time updates with enhanced visualization"""
         
         if not paths:
             return
@@ -2078,9 +2079,13 @@ class HopRAGStreamlitApp:
         # Create simplified NetworkX graph
         G = nx.Graph()
         all_edges = []
+        node_frequencies = {}
         
-        # Add paths to graph
+        # Add paths to graph and count node frequencies
         for path_idx, path in enumerate(paths):
+            for node in path.entities:
+                node_frequencies[node] = node_frequencies.get(node, 0) + 1
+                
             for i in range(len(path.entities) - 1):
                 G.add_edge(path.entities[i], path.entities[i+1])
                 all_edges.append({
@@ -2090,34 +2095,71 @@ class HopRAGStreamlitApp:
                     'confidence': path.confidence
                 })
         
-        # Simple spring layout
-        pos = nx.spring_layout(G, k=2, iterations=50, seed=42)
+        # Simple spring layout with better parameters
+        pos = nx.spring_layout(G, k=1.5, iterations=100, seed=42)
         
         # Create lightweight Plotly figure
         fig = go.Figure()
         
-        # Add edges
-        edge_x, edge_y = [], []
-        for edge in all_edges:
-            if edge['source'] in pos and edge['target'] in pos:
-                x0, y0 = pos[edge['source']]
-                x1, y1 = pos[edge['target']]
-                edge_x.extend([x0, x1, None])
-                edge_y.extend([y0, y1, None])
+        # Define colors for different paths
+        path_colors = [
+            '#FF6B6B', '#4ECDC4', '#45B7D1', '#96CEB4', 
+            '#FECA57', '#FF9FF3', '#54A0FF', '#5F27CD',
+            '#FD79A8', '#00B894', '#E17055', '#74B9FF'
+        ]
         
-        edge_trace = go.Scatter(
-            x=edge_x, y=edge_y,
-            line=dict(width=2, color='#888'),
-            hoverinfo='none',
-            mode='lines',
-            showlegend=False
-        )
-        fig.add_trace(edge_trace)
+        # Add edges grouped by path with different colors
+        for path_idx in range(len(paths)):
+            path_edges = [e for e in all_edges if e['path_idx'] == path_idx]
+            path_color = path_colors[path_idx % len(path_colors)]
+            
+            edge_x, edge_y = [], []
+            for edge in path_edges:
+                if edge['source'] in pos and edge['target'] in pos:
+                    x0, y0 = pos[edge['source']]
+                    x1, y1 = pos[edge['target']]
+                    edge_x.extend([x0, x1, None])
+                    edge_y.extend([y0, y1, None])
+            
+            if edge_x:  # Only add if there are edges
+                # Line width based on confidence
+                line_width = 2 + (paths[path_idx].confidence * 3)  # 2-5 pixel width
+                
+                edge_trace = go.Scatter(
+                    x=edge_x, y=edge_y,
+                    line=dict(width=line_width, color=path_color),
+                    hoverinfo='none',
+                    mode='lines',
+                    showlegend=True,
+                    name=f'Path {path_idx + 1} (conf: {paths[path_idx].confidence:.2f})',
+                    opacity=0.7
+                )
+                fig.add_trace(edge_trace)
         
-        # Add nodes
+        # Add nodes with enhanced styling
         node_x = [pos[node][0] for node in G.nodes()]
         node_y = [pos[node][1] for node in G.nodes()]
-        node_text = [node[:15] + "..." if len(node) > 15 else node for node in G.nodes()]
+        node_text = [node[:12] + "..." if len(node) > 12 else node for node in G.nodes()]
+        
+        # Node sizes based on frequency (how many paths use this node)
+        max_frequency = max(node_frequencies.values()) if node_frequencies else 1
+        node_sizes = []
+        node_colors = []
+        node_info = []
+        
+        for node in G.nodes():
+            frequency = node_frequencies.get(node, 1)
+            # Size: 15-35 pixels based on frequency
+            size = 15 + (frequency / max_frequency) * 20
+            node_sizes.append(size)
+            
+            # Color intensity based on frequency
+            intensity = frequency / max_frequency
+            node_colors.append(f'rgba(100, 150, 255, {0.6 + intensity * 0.4})')
+            
+            # Hover info
+            paths_using_node = [i+1 for i, path in enumerate(paths) if node in path.entities]
+            node_info.append(f"{node}<br>Used in {frequency} path(s)<br>Paths: {', '.join(map(str, paths_using_node))}")
         
         node_trace = go.Scatter(
             x=node_x, y=node_y,
@@ -2125,31 +2167,45 @@ class HopRAGStreamlitApp:
             hoverinfo='text',
             text=node_text,
             textposition="middle center",
+            hovertext=node_info,
             marker=dict(
-                size=20,
-                color='lightblue',
-                line=dict(width=1, color='black')
+                size=node_sizes,
+                color=node_colors,
+                line=dict(width=2, color='rgba(50, 50, 50, 0.8)'),
+                sizemode='diameter'
             ),
-            textfont=dict(size=9, color='black'),
-            showlegend=False
+            textfont=dict(size=8, color='black'),
+            showlegend=False,
+            name="Concepts"
         )
         fig.add_trace(node_trace)
         
-        # Minimal layout for speed
+        # Enhanced layout for real-time view
         fig.update_layout(
-            title=f"Live Path Discovery ({len(paths)} paths)",
-            showlegend=False,
+            title=dict(
+                text=f"🔴 Live Discovery: {len(paths)} paths found",
+                font=dict(size=14, color='red')
+            ),
+            showlegend=True,
             hovermode='closest',
-            margin=dict(b=20, l=5, r=5, t=40),
+            margin=dict(b=20, l=5, r=5, t=50),
             xaxis=dict(showgrid=False, zeroline=False, showticklabels=False),
             yaxis=dict(showgrid=False, zeroline=False, showticklabels=False),
-            height=300,  # Smaller height for real-time view
+            height=400,  # Slightly larger for better visibility
             plot_bgcolor='rgba(248, 248, 255, 0.3)',
-            paper_bgcolor='white'
+            paper_bgcolor='white',
+            legend=dict(
+                orientation="v",
+                yanchor="top",
+                y=1,
+                xanchor="left",
+                x=1.02,
+                font=dict(size=9)
+            )
         )
         
-        # Display with reduced container width for faster rendering
-        st.plotly_chart(fig, use_container_width=True, key=f"realtime_{len(paths)}")
+        # Display with unique key to force updates
+        st.plotly_chart(fig, use_container_width=True, key=f"realtime_{len(paths)}_{len(self.discovered_paths)}")
 
 def main():
     """Main application entry point"""
