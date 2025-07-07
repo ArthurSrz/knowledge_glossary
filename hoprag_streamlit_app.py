@@ -60,7 +60,7 @@ class OllamaCreativeGenerator:
         """Check if Ollama is running and model is available"""
         try:
             # Check if Ollama is running
-            response = requests.get(f"{self.ollama_url}/api/tags", timeout=5)
+            response = requests.get(f"{self.ollama_url}/api/tags", timeout=3)
             if response.status_code == 200:
                 models = response.json()
                 available_models = [model['name'] for model in models.get('models', [])]
@@ -81,9 +81,33 @@ class OllamaCreativeGenerator:
                     return True
                     
             return False
-        except Exception as e:
-            st.warning(f"⚠️ Ollama non disponible: {e}")
+        except requests.exceptions.ConnectionError:
             return False
+        except requests.exceptions.Timeout:
+            return False
+        except Exception:
+            return False
+    
+    def get_ollama_status(self):
+        """Get detailed Ollama status for display"""
+        try:
+            response = requests.get(f"{self.ollama_url}/api/tags", timeout=3)
+            if response.status_code == 200:
+                models = response.json()
+                available_models = [model['name'] for model in models.get('models', [])]
+                return {
+                    'running': True,
+                    'models': available_models,
+                    'current_model': self.model_name if self.is_loaded else None
+                }
+            else:
+                return {'running': False, 'error': f"HTTP {response.status_code}"}
+        except requests.exceptions.ConnectionError:
+            return {'running': False, 'error': 'Connection refused - Ollama not running'}
+        except requests.exceptions.Timeout:
+            return {'running': False, 'error': 'Connection timeout'}
+        except Exception as e:
+            return {'running': False, 'error': str(e)}
     
     def generate_creative_reasoning_paper(self, question: str, hop_paths: List[HopPath], 
                                         supporting_evidence: List[str]) -> str:
@@ -110,11 +134,10 @@ class OllamaCreativeGenerator:
                         "temperature": 0.7,
                         "top_p": 0.9,
                         "top_k": 50,
-                        "max_tokens": 800,
-                        "num_predict": 800
+                        "num_predict": 400  # Reduced for faster generation
                     }
                 },
-                timeout=60
+                timeout=120  # Increased timeout
             )
             
             if response.status_code == 200:
@@ -129,6 +152,12 @@ class OllamaCreativeGenerator:
             else:
                 return f"❌ Erreur Ollama: {response.status_code} - {response.text}"
                 
+        except requests.exceptions.ConnectionError:
+            return "❌ Erreur de connexion: Ollama n'est pas démarré. Lancez 'ollama serve'"
+        except requests.exceptions.Timeout:
+            return "❌ Timeout: Le modèle met trop de temps à répondre. Essayez un modèle plus petit ou augmentez la patience."
+        except requests.exceptions.RequestException as e:
+            return f"❌ Erreur réseau Ollama: {e}"
         except Exception as e:
             return f"❌ Erreur lors de la génération créative: {e}"
     
@@ -1634,14 +1663,33 @@ class HopRAGStreamlitApp:
             show_creative_paper = st.checkbox("Generate Creative Reasoning Paper (Ollama)", value=True)
             st.caption("Generates a poetic French narrative about the reasoning process using Ollama")
             
-            # Show Ollama status
-            if show_creative_paper and self.hoprag_engine:
+            # Always show Ollama status
+            st.subheader("🤖 Ollama Status")
+            if self.hoprag_engine:
                 ollama_gen = self.hoprag_engine.creative_generator
-                if ollama_gen.check_ollama_availability():
-                    st.success(f"✅ Ollama ready: {ollama_gen.model_name}")
+                status = ollama_gen.get_ollama_status()
+                
+                if status['running']:
+                    st.success(f"✅ Ollama is running")
+                    st.info(f"🧠 Current model: {status.get('current_model', 'Not selected')}")
+                    
+                    if status['models']:
+                        with st.expander("📚 Available models"):
+                            for model in status['models']:
+                                st.text(f"• {model}")
+                    else:
+                        st.warning("⚠️ No models installed")
+                        st.caption("Run: `ollama pull llama3.2:3b`")
                 else:
-                    st.error("❌ Ollama not available")
-                    st.caption("Run: `ollama serve` and `ollama pull llama3.2:3b`")
+                    st.error(f"❌ Ollama not running")
+                    st.caption(f"Error: {status.get('error', 'Unknown error')}")
+                    st.caption("Run: `ollama serve`")
+                    
+                    # Refresh button
+                    if st.button("🔄 Check Ollama Status"):
+                        st.rerun()
+            else:
+                st.warning("⚠️ HopRAG engine not initialized")
             
             st.header("📊 System Stats")
             if self.graph:
