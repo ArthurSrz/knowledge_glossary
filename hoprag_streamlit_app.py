@@ -1532,7 +1532,7 @@ class HopRAGStreamlitApp:
             """)
     
     def _process_query(self, query: str, max_hops: int, top_k: int, show_reasoning: bool, show_reasoning_paper: bool, show_viz: bool):
-        """Process a HopRAG query with streaming display"""
+        """Process a HopRAG query with streaming display and real-time path visualization"""
         
         start_time = time.time()
         
@@ -1553,6 +1553,12 @@ class HopRAGStreamlitApp:
         linkedin_post_placeholder = st.empty()
         linkedin_progress_placeholder = st.empty()
         
+        # Real-time path visualization placeholder
+        if show_viz:
+            st.markdown("### 🕸️ **Real-Time Path Discovery**")
+            realtime_viz_placeholder = st.empty()
+            self.discovered_paths = []  # Track paths as they're discovered
+        
         # Stream update function
         def stream_update(message: str, msg_type: str = "info"):
             if msg_type == "info":
@@ -1562,6 +1568,11 @@ class HopRAGStreamlitApp:
             elif msg_type == "path":
                 with path_placeholder.container():
                     st.markdown(f"**Path Discovery:** {message}")
+                    
+                # Update real-time visualization for significant paths
+                if show_viz and "Path Found:" in message:
+                    self._update_realtime_visualization(message, realtime_viz_placeholder)
+                    
             elif msg_type == "abstract":
                 with abstract_placeholder.container():
                     st.markdown(f"**Research Progress:** {message}")
@@ -2003,6 +2014,139 @@ class HopRAGStreamlitApp:
                 if evidence.strip():
                     with st.expander(f"Evidence from {selected_path.entities[i]}"):
                         st.markdown(evidence[:300] + "..." if len(evidence) > 300 else evidence)
+    
+    def _update_realtime_visualization(self, path_message: str, viz_placeholder):
+        """Update real-time visualization during path discovery"""
+        
+        # Extract path information from the message
+        # Expected format: "🔗 **Path Found:** Entity1 → Entity2 → Entity3 (conf: 0.75)"
+        import re
+        
+        # Parse the path string
+        path_match = re.search(r'Path Found:\*\* (.+?) \(conf: ([\d\.]+)\)', path_message)
+        if not path_match:
+            return
+            
+        path_str = path_match.group(1)
+        confidence = float(path_match.group(2))
+        entities = [e.strip() for e in path_str.split('→')]
+        
+        # Create a simple HopPath object for visualization
+        from dataclasses import dataclass
+        simple_path = HopPath(
+            entities=entities,
+            relations=['CONNECTED'] * (len(entities) - 1),
+            evidence=[''] * len(entities),
+            confidence=confidence,
+            hop_count=len(entities) - 1,
+            reasoning_chain=path_str
+        )
+        
+        # Add to discovered paths
+        self.discovered_paths.append(simple_path)
+        
+        # Create a simplified real-time graph visualization
+        with viz_placeholder.container():
+            st.markdown(f"**Paths Discovered: {len(self.discovered_paths)}**")
+            
+            # Show recent paths as text first (faster than full graph)
+            if len(self.discovered_paths) <= 3:
+                # For first few paths, show full graph
+                self._create_lightweight_path_graph(self.discovered_paths[-3:])
+            else:
+                # For many paths, show summary + latest paths
+                col1, col2 = st.columns([1, 2])
+                with col1:
+                    st.metric("Total Paths", len(self.discovered_paths))
+                    st.metric("Avg Confidence", f"{sum(p.confidence for p in self.discovered_paths) / len(self.discovered_paths):.2f}")
+                
+                with col2:
+                    st.markdown("**Latest Paths:**")
+                    for i, path in enumerate(self.discovered_paths[-3:]):
+                        confidence_bar = "🟢" if path.confidence > 0.7 else "🟡" if path.confidence > 0.5 else "🔴"
+                        st.markdown(f"{confidence_bar} `{' → '.join(path.entities)}` ({path.confidence:.2f})")
+    
+    def _create_lightweight_path_graph(self, paths: List[HopPath]):
+        """Create a lightweight graph for real-time updates"""
+        
+        if not paths:
+            return
+        
+        # Create simplified NetworkX graph
+        G = nx.Graph()
+        all_edges = []
+        
+        # Add paths to graph
+        for path_idx, path in enumerate(paths):
+            for i in range(len(path.entities) - 1):
+                G.add_edge(path.entities[i], path.entities[i+1])
+                all_edges.append({
+                    'source': path.entities[i],
+                    'target': path.entities[i+1],
+                    'path_idx': path_idx,
+                    'confidence': path.confidence
+                })
+        
+        # Simple spring layout
+        pos = nx.spring_layout(G, k=2, iterations=50, seed=42)
+        
+        # Create lightweight Plotly figure
+        fig = go.Figure()
+        
+        # Add edges
+        edge_x, edge_y = [], []
+        for edge in all_edges:
+            if edge['source'] in pos and edge['target'] in pos:
+                x0, y0 = pos[edge['source']]
+                x1, y1 = pos[edge['target']]
+                edge_x.extend([x0, x1, None])
+                edge_y.extend([y0, y1, None])
+        
+        edge_trace = go.Scatter(
+            x=edge_x, y=edge_y,
+            line=dict(width=2, color='#888'),
+            hoverinfo='none',
+            mode='lines',
+            showlegend=False
+        )
+        fig.add_trace(edge_trace)
+        
+        # Add nodes
+        node_x = [pos[node][0] for node in G.nodes()]
+        node_y = [pos[node][1] for node in G.nodes()]
+        node_text = [node[:15] + "..." if len(node) > 15 else node for node in G.nodes()]
+        
+        node_trace = go.Scatter(
+            x=node_x, y=node_y,
+            mode='markers+text',
+            hoverinfo='text',
+            text=node_text,
+            textposition="middle center",
+            marker=dict(
+                size=20,
+                color='lightblue',
+                line=dict(width=1, color='black')
+            ),
+            textfont=dict(size=9, color='black'),
+            showlegend=False
+        )
+        fig.add_trace(node_trace)
+        
+        # Minimal layout for speed
+        fig.update_layout(
+            title=f"Live Path Discovery ({len(paths)} paths)",
+            showlegend=False,
+            hovermode='closest',
+            margin=dict(b=20, l=5, r=5, t=40),
+            xaxis=dict(showgrid=False, zeroline=False, showticklabels=False),
+            yaxis=dict(showgrid=False, zeroline=False, showticklabels=False),
+            height=300,  # Smaller height for real-time view
+            plot_bgcolor='rgba(248, 248, 255, 0.3)',
+            paper_bgcolor='white'
+        )
+        
+        # Display with reduced container width for faster rendering
+        st.plotly_chart(fig, use_container_width=True, key=f"realtime_{len(paths)}")
 
 def main():
     """Main application entry point"""
