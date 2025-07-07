@@ -2025,7 +2025,10 @@ class HopRAGStreamlitApp:
         # Parse the path string
         path_match = re.search(r'Path Found:\*\* (.+?) \(conf: ([\d\.]+)\)', path_message)
         if not path_match:
-            return
+            # Try alternative pattern without formatting
+            path_match = re.search(r'(.+?) \(conf: ([\d\.]+)\)', path_message)
+            if not path_match:
+                return
             
         path_str = path_match.group(1)
         confidence = float(path_match.group(2))
