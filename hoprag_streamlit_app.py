@@ -163,36 +163,71 @@ class OllamaCreativeGenerator:
     
     def _create_creative_prompt(self, question: str, hop_paths: List[HopPath], 
                               supporting_evidence: List[str]) -> str:
-        """Create a French prompt for creative reasoning paper generation"""
+        """Create a French prompt for creative reasoning paper generation using rich graph information"""
         
-        # Extract key concepts from paths
-        all_concepts = set()
+        # Extract key concepts with their content
+        concepts_with_content = {}
+        all_relations = set()
+        
         for path in hop_paths[:5]:  # Top 5 paths
-            all_concepts.update(path.entities)
+            for i, entity in enumerate(path.entities):
+                # Get node content from evidence
+                if i < len(path.evidence) and path.evidence[i]:
+                    content_preview = path.evidence[i][:200] + "..." if len(path.evidence[i]) > 200 else path.evidence[i]
+                    concepts_with_content[entity] = content_preview
+            
+            # Collect unique relationships
+            all_relations.update(path.relations)
         
-        key_concepts = list(all_concepts)[:8]  # Limit to 8 concepts
-        
-        # Build path narratives
+        # Build rich path narratives with relationships
         path_narratives = []
         for i, path in enumerate(hop_paths[:3]):  # Top 3 paths for narrative
-            path_story = " → ".join(path.entities)
-            path_narratives.append(f"Chemin {i+1}: {path_story} (confiance: {path.confidence:.2f})")
+            # Create detailed path with relationships
+            path_details = []
+            for j in range(len(path.entities) - 1):
+                entity_from = path.entities[j]
+                entity_to = path.entities[j + 1]
+                relation = path.relations[j] if j < len(path.relations) else "CONNECTE_A"
+                
+                path_details.append(f"{entity_from} --[{relation}]--> {entity_to}")
+            
+            narrative = f"Chemin {i+1} (confiance: {path.confidence:.2f}):\n   " + "\n   ".join(path_details)
+            path_narratives.append(narrative)
         
-        # Create the French prompt
-        prompt = f"""En tant qu'expert en raisonnement logique et narrateur expérimenté, rédigez un "papier de raisonnement créatif" qui explique comment HopRAG a exploré la question suivante.
+        # Extract key semantic relationships
+        relation_types = list(all_relations)[:6]  # Top 6 relation types
+        
+        # Build concept descriptions
+        concept_descriptions = []
+        for concept, content in list(concepts_with_content.items())[:5]:  # Top 5 concepts
+            concept_descriptions.append(f"• {concept}: {content}")
+        
+        # Create the enhanced French prompt
+        prompt = f"""En tant qu'expert en raisonnement logique et narrateur expérimenté, rédigez un "papier de raisonnement créatif" qui explique comment HopRAG a exploré la question suivante en utilisant à la fois le contenu des nœuds et les relations sémantiques du graphe de connaissances.
 
 **Question analysée:** {question}
 
-**Concepts découverts:** {', '.join(key_concepts)}
+**Concepts clés découverts avec leur contenu:**
+{chr(10).join(concept_descriptions)}
 
-**Chemins de raisonnement explorés:**
+**Types de relations sémantiques identifiées:** {', '.join(relation_types)}
+
+**Chemins de raisonnement détaillés avec relations sémantiques:**
 {chr(10).join(path_narratives)}
 
-**Preuves rassemblées:** {len(supporting_evidence)} sources d'information
+**Sources d'évidence:** {len(supporting_evidence)} fragments de connaissances analysés
 
+**Instructions spéciales:**
 Inspirez-vous de cette vision poétique de HopRAG : "un bibliothécaire particulièrement ingénieux, doté d'une intuition remarquable pour naviguer dans l'univers complexe des connaissances... tissant des liens logiques entre les informations avec la délicatesse d'un conteur expérimenté."
 
-Rédigez un texte créatif et engageant qui raconte comment HopRAG a procédé pour répondre à cette question, en utilisant des métaphores et un style narratif captivant. Décrivez l'art de la connexion logique, le mécanisme en trois temps, et la beauté du raisonnement par bonds.
+Votre récit doit :
+1. **Décrire l'exploration des concepts** en utilisant leur contenu réel
+2. **Expliquer les relations sémantiques** et comment elles guident le raisonnement
+3. **Raconter le voyage à travers le graphe** en suivant les chemins découverts
+4. **Utiliser des métaphores créatives** pour illustrer les connexions logiques
+5. **Capturer la beauté du raisonnement multi-hop** et ses découvertes
+
+Rédigez un texte engageant de 2-3 paragraphes qui révèle l'art de la navigation dans le graphe de connaissances.
 
 **Papier de raisonnement créatif:**
 
@@ -1671,12 +1706,37 @@ class HopRAGStreamlitApp:
                 
                 if status['running']:
                     st.success(f"✅ Ollama is running")
-                    st.info(f"🧠 Current model: {status.get('current_model', 'Not selected')}")
                     
                     if status['models']:
-                        with st.expander("📚 Available models"):
+                        # Model selection dropdown
+                        current_model = status.get('current_model', ollama_gen.model_name)
+                        
+                        # Find current model index, default to 0 if not found
+                        try:
+                            current_index = status['models'].index(current_model) if current_model in status['models'] else 0
+                        except (ValueError, IndexError):
+                            current_index = 0
+                        
+                        selected_model = st.selectbox(
+                            "🧠 Select model:",
+                            options=status['models'],
+                            index=current_index,
+                            key="ollama_model_select"
+                        )
+                        
+                        # Update model if selection changed
+                        if selected_model != ollama_gen.model_name:
+                            ollama_gen.model_name = selected_model
+                            ollama_gen.is_loaded = True
+                            st.success(f"✅ Model switched to: {selected_model}")
+                            
+                        st.info(f"Current: {ollama_gen.model_name}")
+                        
+                        # Show models in expander
+                        with st.expander("📚 All available models"):
                             for model in status['models']:
-                                st.text(f"• {model}")
+                                icon = "🟢" if model == ollama_gen.model_name else "⚪"
+                                st.text(f"{icon} {model}")
                     else:
                         st.warning("⚠️ No models installed")
                         st.caption("Run: `ollama pull llama3.2:3b`")
