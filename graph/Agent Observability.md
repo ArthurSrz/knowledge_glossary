@@ -1,9 +1,23 @@
 ---
-related_to: [AgentOps, Traceable Artifacts, Observability 2.0]
-dependencies: [Tracing, Sessions, Traces, Spans]
-components: [Event Chain Tracking, System Reliability, Production Visibility]
+related_to:
+  - Observability 2.0
+  - "[[Evaluate process]]"
+  - "[[AgentOps]]"
+  - "[[Traceable Artifacts]]"
+dependencies:
+  - Tracing
+  - Sessions
+  - Traces
+  - Spans
+components:
+  - Event Chain Tracking
+  - System Reliability
+  - Production Visibility
 category: Concepts Fondamentaux
-tags: [Observabilité, Traçabilité, Surveillance]
+tags:
+  - Observabilité
+  - Traçabilité
+  - Surveillance
 ---
 
 # Agent Observability
