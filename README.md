@@ -36,38 +36,29 @@ studied in:
 
 ## Potential uses as a data ontology
 
-1. Semantic search & retrieva
+1. Semantic search & retrieval
 Use the typed relationships to build a **GraphRAG system** that navigates concepts through their semantic connections rather than just keyword matching.
 
-#### 2. Data catalog enrichment
+2. Data catalog enrichment
 Import this ontology into a data catalog to provide standardized terminology and hierarchical classification for data assets across an organization.
 
-#### 3. Onboarding & training
+3. Onboarding & training
 Serve as an interactive learning resource for data teams, with concept definitions and relationship paths showing how ideas connect.
 
-#### 4. LLM grounding
+4. LLM grounding
 Provide structured domain knowledge to LLMs for more accurate, consistent responses about data concepts—reducing hallucination through explicit relationship constraints.
 
-#### 5. Metadata schema design
+5. Metadata schema design
 Use the relationship types (`partOf`, `uses`, `subclass of`) as a blueprint for designing metadata schemas in data platforms.
 
-#### 6. Knowledge graph construction
+6. Knowledge graph construction
 Convert this vault into a formal knowledge graph (Neo4j, RDF) by:
 - Extracting nodes from file names
 - Parsing frontmatter for typed edges
 - Enriching with definitions as node properties
 
-### 7. Concept disambiguation
+7. Concept disambiguation
 Establish canonical definitions and relationships to resolve ambiguity when different teams use data terminology inconsistently.
-
-## Relationship types
-
-| Relation | Meaning | Example |
-|----------|---------|---------|
-| `partOf` | Hierarchical containment | Feature pipeline → Vanilla RAG design |
-| `uses` | Depends on / employs | Knowledge graph → Ontology |
-| `subclass of` | Type inheritance | Knowledge graph → knowledge base |
-| `studied in` | Domain association | Knowledge graph → computer science |
 
 ## Usage
 
@@ -78,6 +69,4 @@ To convert to other formats:
 - **RDF/OWL**: Map relationship types to predicates
 - **JSON-LD**: Export as linked data for web interoperability
 
-## License
 
-Personal knowledge base. Contact for usage permissions.
