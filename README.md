@@ -36,7 +36,7 @@ studied in:
 
 ## Potential uses as a data ontology
 
-#### 1. Semantic search & retrieval
+1. Semantic search & retrieva
 Use the typed relationships to build a **GraphRAG system** that navigates concepts through their semantic connections rather than just keyword matching.
 
 #### 2. Data catalog enrichment
