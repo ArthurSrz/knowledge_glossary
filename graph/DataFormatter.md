@@ -1,1 +1,0 @@
-Class to format data points into structured prompts 
