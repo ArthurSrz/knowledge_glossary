@@ -30,8 +30,7 @@ null*
 
 # Add below lines to exclude OS settings and caches
 trash/
-DS_Store
-
+.DS_Store
 # to exclude rag settings
 rag/
 
