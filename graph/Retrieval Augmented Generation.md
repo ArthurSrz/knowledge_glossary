@@ -1,5 +1,5 @@
 ---
-HasProvedStandard: "[[vanilla RAG design]]"
+HasProvedStandard: "[[Vanilla RAG design]]"
 ---
 
 Technique qui permet d'appliquer un [[Large Language Model]] sur un corpus spécifique.
@@ -9,7 +9,7 @@ Technique qui permet d'appliquer un [[Large Language Model]] sur un corpus spéc
 ## Related concepts
 
 - [[Large Language Model]] - RAG enhances LLMs
-- [[vanilla RAG design]] - Basic RAG architecture
+- [[Vanilla RAG design]] - Basic RAG architecture
 - [[Vector database]] - Storage for embeddings
 - [[Embeddings]] - Document representations
 - [[Similarity scores]] - Retrieval ranking

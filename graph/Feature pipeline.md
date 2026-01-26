@@ -1,3 +1,3 @@
 ---
-partOf: "[[vanilla RAG design]]"
+partOf: "[[Vanilla RAG design]]"
 ---

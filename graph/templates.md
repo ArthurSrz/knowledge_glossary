@@ -1,5 +1,3 @@
-# Templates
-
 ## Definition
 
 Templates are a programming language feature that enables generic programming by allowing the creation of functions and classes that can operate with generic types, introduced in C++ by Bjarne Stroustrup in 1988 as part of his generic programming vision.

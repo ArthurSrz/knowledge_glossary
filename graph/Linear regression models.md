@@ -2,7 +2,7 @@
 ml_type:
   - "[[supervised learning]]"
 learn_task:
-  - "[[regression]]"
+  - "[[Regression]]"
 pb_states:
   - fact checking
 method: trend investigation

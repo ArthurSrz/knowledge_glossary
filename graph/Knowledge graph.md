@@ -1,7 +1,7 @@
 ---
 uses:
   - "[[Ontology]]"
-  - "[[taxonomy]]"
+  - "[[Taxonomy]]"
   - "[[label]]"
 subclass of:
   - "[[knowledge base]]"

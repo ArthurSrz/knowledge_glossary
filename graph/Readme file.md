@@ -1,5 +1,3 @@
-# README File
-
 ## Definition
 
 A README file is a documentation text file containing essential information about a software project, directory, or archive, emerging as a Unix convention in the 1970s at Bell Labs to provide instructions and metadata for software distribution.
