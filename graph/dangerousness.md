@@ -1,4 +1,3 @@
-# Dangerousness
 
 ## Definition
 

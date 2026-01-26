@@ -1,5 +1,5 @@
 ---
-subclass of: "[[control flow]]"
+subclass of: "[[Control flow]]"
 facet of: "[[contingency plan]]"
 solution to: "[[semipredicate problem]]"
 Stack Exchange tag: https://stackoverflow.com/tags/exception

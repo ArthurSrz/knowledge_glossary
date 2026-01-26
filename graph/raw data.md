@@ -1,4 +1,3 @@
-# Raw Data
 
 ## Definition
 

@@ -24,7 +24,7 @@ partially coincident with: "[[authority]]"
 opposite of: "[[impotence]]"
 subclass of:
   - "[[Power]]"
-union of: "[[list of values as qualifiers]]"
+union of: "[[List of values as qualifiers]]"
 instance of:
   - "[[political concept]]"
   - "[[sociological concept]]"

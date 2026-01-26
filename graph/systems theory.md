@@ -57,5 +57,5 @@ von Bertalanffy, L. (1950). An outline of general system theory. British Journal
 von Bertalanffy, L. (1968). General System Theory: Foundations, Development, Applications. New York: George Braziller.
 
 ---
-closeTo: "[[control theory]]"
+closeTo: "[[Control theory]]"
 ---

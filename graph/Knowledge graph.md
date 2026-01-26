@@ -1,13 +1,13 @@
 ---
 uses:
-  - "[[ontology]]"
+  - "[[Ontology]]"
   - "[[taxonomy]]"
   - "[[label]]"
 subclass of:
   - "[[knowledge base]]"
   - "[[labeled directed graph]]"
 studied in:
-  - "[[ontology engineering]]"
+  - "[[Ontology engineering]]"
   - "[[computer science]]"
 CanBeConstructedWith: "[[LLM Path Extractors]]"
 ---

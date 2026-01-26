@@ -2,7 +2,7 @@
 has characteristic:
   - "[[threshold of originality]]"
 different from:
-  - "[[intellectual work]]"
+  - "[[Intellectual work]]"
 subclass of:
-  - "[[intellectual work]]"
+  - "[[Intellectual work]]"
 ---

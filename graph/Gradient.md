@@ -2,4 +2,4 @@
 usedIn: "[[Batch gradient descent]]"
 ---
 
-Derivative of the [[loss function]]
+Derivative of the [[Loss function]]

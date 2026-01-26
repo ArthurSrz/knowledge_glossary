@@ -14,5 +14,5 @@
 - [[Accountability]] - Key principle of fair AI (Adamic-Adar: 0.721)
 - [[Transparency]] - Essential for fair AI (Adamic-Adar: 0.721)
 - [[Neural network models]] - Need fair AI principles (Adamic-Adar: 0.721)
-- [[cognitive bias]] - Source of unfairness (Adamic-Adar: 0.721)
+- [[Cognitive bias]] - Source of unfairness (Adamic-Adar: 0.721)
 - [[Learning bias]] - Algorithmic unfairness (Adamic-Adar: 0.721)

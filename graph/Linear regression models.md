@@ -7,7 +7,7 @@ pb_states:
   - fact checking
 method: trend investigation
 acc_m: "[[distance]]"
-preci_m: "[[confidence interval]]"
+preci_m: "[[Confidence interval]]"
 input_data_shape:
   - list
 input_data_content:

@@ -1,5 +1,5 @@
 ---
 helpsBuilding:
-  - "[[control flow]]"
-  - "[[exception handling]]"
+  - "[[Control flow]]"
+  - "[[Exception handling]]"
 ---

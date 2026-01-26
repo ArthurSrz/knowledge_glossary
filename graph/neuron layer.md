@@ -1,4 +1,3 @@
-# Neuron Layer
 
 ## Definition
 

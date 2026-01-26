@@ -1,5 +1,3 @@
-# Optimizer
-
 ## Definition
 
 An optimizer is an algorithm that finds the best solution to an optimization problem by systematically searching for the optimal values of variables, with the foundational work established by George Dantzig's simplex method for linear programming in 1947.

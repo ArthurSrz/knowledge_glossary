@@ -1,6 +1,6 @@
 ---
 subclass of:
-  - "[[creative work]]"
+  - "[[Creative work]]"
 ---
 ![Slide show Thumbnail](https://upload.wikimedia.org/wikipedia/commons/1/15/Schulprojekt_Hilden-001.jpg)
 [Slide show](https://en.wikipedia.org/wiki/Slide_show)

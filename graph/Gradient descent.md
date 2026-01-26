@@ -1,10 +1,16 @@
 ---
 typeOf: "[[Optimization algorithm]]"
 uses: "[[Backpropagation]]"
-requires: ["[[Learning rate]]", "[[Gradient]]", "[[loss function]]"]
+requires:
+  - "[[Learning rate]]"
+  - "[[Gradient]]"
+  - "[[Loss function]]"
 minimizes: "[[Loss function]]"
 updatesBy: "[[Weight updates]]"
-variantsInclude: ["[[Batch gradient descent]]", "[[Stochastic gradient descent]]", "[[Mini-batch gradient descent]]"]
+variantsInclude:
+  - "[[Batch gradient descent]]"
+  - "[[Stochastic gradient descent]]"
+  - "[[Mini-batch gradient descent]]"
 ---
 
 # Gradient Descent

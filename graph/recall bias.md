@@ -1,6 +1,6 @@
 ---
 instance of:
-  - "[[cognitive bias]]"
+  - "[[Cognitive bias]]"
 part of: "[[psychology terminology]]"
 ---
 

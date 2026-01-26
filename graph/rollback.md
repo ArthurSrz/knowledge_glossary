@@ -1,6 +1,6 @@
 ---
 facet of:
-  - "[[exception handling]]"
+  - "[[Exception handling]]"
   - "[[database application]]"
 instance of: "[[change]]"
 wikidata entity id: Q395307

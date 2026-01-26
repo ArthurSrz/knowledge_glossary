@@ -17,7 +17,7 @@ Breaks down into 3 steps : [[Split data]], [[Determine feature set]], [[Prepare 
 - [[Unstructured data]] - Raw, unformatted data
 - [[Tidy Data]] - Organized data format
 - [[Data silos]] - Isolated data sources
-- [[raw data]] - Unprocessed data
+- [[Raw data]] - Unprocessed data
 
 
 

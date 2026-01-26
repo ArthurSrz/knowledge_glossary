@@ -1,7 +1,7 @@
 ---
 different from:
-  - "[[design]]"
-  - "[[design]]"
+  - "[[Design]]"
+  - "[[Design]]"
 instance of:
   - "[[field of work]]"
   - "[[field of study]]"
@@ -19,14 +19,14 @@ has use:
   - "[[new product development]]"
   - "[[entrepreneurship]]"
   - "[[artistic creation]]"
-said to be the same as: "[[design]]"
+said to be the same as: "[[Design]]"
 subclass of:
-  - "[[design]]"
+  - "[[Design]]"
   - "[[activity]]"
   - "[[planned process]]"
 product or material produced:
   - "[[specification]]"
-  - "[[design]]"
+  - "[[Design]]"
 has characteristic: "[[design pattern]]"
 studied by:
   - "[[design research]]"

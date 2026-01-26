@@ -1,10 +1,10 @@
 ---
 has part(s):
   - "[[Artificial neuron]]"
-  - "[[loss function]]"
-  - "[[neural processing unit]]"
-  - "[[neuron layer]]"
-  - "[[optimizer]]"
+  - "[[Loss function]]"
+  - "[[Neural processing unit]]"
+  - "[[Neuron layer]]"
+  - "[[Optimizer]]"
 instance of:
   - "[[Artificial Intelligence (AI)]]"
 different from: "[[biological neural network]]"

@@ -1,5 +1,5 @@
 ---
-"handled, mitigated, or managed by":
+handled, mitigated, or managed by:
   - "[[risk management]]"
   - "[[protective device]]"
   - "[[protective factor]]"
@@ -21,10 +21,10 @@ facet of:
   - "[[degradation]]"
 has contributing factor: "[[risk factor]]"
 opposite of: "[[opportunity]]"
-said to be the same as: "[[dangerousness]]"
+said to be the same as: "[[Dangerousness]]"
 has effect:
-  - "[[liability]]"
-  - "[[excitement]]"
+  - "[[Liability]]"
+  - "[[Excitement]]"
 has part(s):
   - "[[selection]]"
 subclass of:
@@ -33,7 +33,7 @@ instance of:
   - "[[possibility]]"
   - "[[type of problem]]"
   - "[[probability]]"
-union of: "[[list of values as qualifiers]]"
+union of: "[[List of values as qualifiers]]"
 partially coincident with: "[[harmfulness]]"
 has cause: "[[risk source]]"
 wikidata entity id: Q104493
@@ -45,4 +45,4 @@ In any data or ML projects, there is a risk that the project does not work as pl
 2. Right coordination of many expertise among the following : [[Data engineer]], [[Data scientist]], [[DevOps]], [[MLOps]]
 3. Right infrastructure (enough [[Graphics processing unit]] or [[Central processing unit]])
 
-Risk is rewarded by money (at organizational scale) and by [[excitement]]. 
+Risk is rewarded by money (at organizational scale) and by [[Excitement]]. 

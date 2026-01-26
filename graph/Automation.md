@@ -1,5 +1,5 @@
 ---
-worksWith: "[[exception handling]]"
+worksWith: "[[Exception handling]]"
 ---
 
 Replace a human. [[Narrow AI]] expands the scope of what can be automated. 

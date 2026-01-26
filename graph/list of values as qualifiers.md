@@ -1,6 +1,6 @@
 ---
 usedBy:
-  - "[[ontology engineering]]"
+  - "[[Ontology engineering]]"
 usedIn: "[[Knowledge graph]]"
 ---
 

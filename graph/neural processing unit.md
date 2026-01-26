@@ -1,4 +1,3 @@
-# Neural Processing Unit
 
 ## Definition
 
