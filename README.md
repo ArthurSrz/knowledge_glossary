@@ -1,6 +1,6 @@
 # Data knowledge graph
 
-![Knowledge Graph Illustration](knowledge-graph-illustration.webp)
+![Knowledge Graph Illustration](media/knowledge-graph-illustration.webp)
 
 
 A personal knowledge graph containing **562 interconnected concepts** in data science, machine learning, and AI. Built as an [Obsidian](https://obsidian.md/) vault with typed relationships, this graph can serve as the foundation for a **data ontology**.
