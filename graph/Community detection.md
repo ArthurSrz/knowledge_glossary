@@ -1,7 +1,8 @@
 ---
 instanceOf: "[[Graph algorithm]]"
 ---
-Algorithm that naturally answers questions like 
+Algorithm that naturally answers questions like : 
 
 > [!hint]
-> What natural groups emerge fr
+> What natural groups emerge from the data ?
+
