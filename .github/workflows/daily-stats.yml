@@ -6,6 +6,9 @@ on:
     - cron: '0 6 * * *'
   workflow_dispatch:  # Allow manual trigger for testing
 
+permissions:
+  contents: write  # Allow pushing commits
+
 jobs:
   daily-stats:
     runs-on: ubuntu-latest
