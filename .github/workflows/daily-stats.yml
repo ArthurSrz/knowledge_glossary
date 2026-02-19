@@ -39,8 +39,8 @@ jobs:
 
       - name: Commit and push stats
         run: |
-          if [[ -n $(git status -s stats/) ]]; then
-            git add stats/data.json stats/chart.png
+          if [[ -n $(git status -s stats/ README.md) ]]; then
+            git add stats/data.json stats/chart.png README.md
             git commit -m "Update knowledge graph stats [skip ci]"
             git push
           else

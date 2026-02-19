@@ -195,6 +195,32 @@ def plot_stats(data):
     plt.close()
 
 
+def update_readme(total_count):
+    """Update README with current concept count."""
+    readme_path = Path("README.md")
+    if not readme_path.exists():
+        print("README.md not found, skipping update")
+        return
+
+    with open(readme_path, 'r', encoding='utf-8') as f:
+        content = f.read()
+
+    # Replace the hardcoded count with the current count
+    # Pattern: "containing **[number] interconnected concepts**"
+    updated = re.sub(
+        r'containing \*\*\d+ interconnected concepts\*\*',
+        f'containing **{total_count} interconnected concepts**',
+        content
+    )
+
+    if updated != content:
+        with open(readme_path, 'w', encoding='utf-8') as f:
+            f.write(updated)
+        print(f"Updated README.md with concept count: {total_count}")
+    else:
+        print("README.md already up-to-date")
+
+
 def main():
     """Main workflow: analyze, store, and visualize."""
     print("Analyzing knowledge graph...")
@@ -205,6 +231,9 @@ def main():
 
     print("\nGenerating chart...")
     plot_stats(data)
+
+    print("\nUpdating README...")
+    update_readme(stats["total"])
 
     print("\nDone!")
 
