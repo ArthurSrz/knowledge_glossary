@@ -139,40 +139,34 @@ def append_stats(stats):
 
 
 def plot_stats(data):
-    """Generate dual-axis line graph from stats data."""
+    """Generate simplified dual-axis line graph: total files (left) vs wikilinks (right)."""
     if not data:
         print("No data to plot")
         return
 
     dates = [datetime.strptime(d["date"], "%Y-%m-%d") for d in data]
-    stubs = [d["stubs"] for d in data]
-    medium = [d["medium"] for d in data]
-    rich = [d["rich"] for d in data]
+    total_files = [d["total"] for d in data]
     links = [d["links"] for d in data]
-    avg_scores = [d["avg_score"] for d in data]
 
     # Create figure with dual axes
-    fig, ax1 = plt.subplots(figsize=(12, 6))
+    fig, ax1 = plt.subplots(figsize=(11, 5))
 
-    # Left axis: File counts
-    color1 = '#1f77b4'
+    # Left axis: Total files
+    color1 = '#2ca02c'
     ax1.set_xlabel('Date', fontsize=11)
-    ax1.set_ylabel('File Count', color=color1, fontsize=11)
+    ax1.set_ylabel('Total Concepts (Files)', color=color1, fontsize=11, fontweight='bold')
 
-    line1 = ax1.plot(dates, rich, color='#2ca02c', marker='o', linewidth=2, label='Rich (200+ words)')
-    line2 = ax1.plot(dates, medium, color='#ff7f0e', marker='s', linewidth=2, label='Medium (50-199 words)')
-    line3 = ax1.plot(dates, stubs, color='#d62728', marker='^', linewidth=2, label='Stubs (<50 words)')
+    line1 = ax1.plot(dates, total_files, color=color1, marker='o', linewidth=2.5, markersize=7, label='Total Concepts')
 
     ax1.tick_params(axis='y', labelcolor=color1)
-    ax1.grid(True, alpha=0.3)
+    ax1.grid(True, alpha=0.2)
 
-    # Right axis: Metrics (wikilinks + avg score)
+    # Right axis: Wikilinks
     ax2 = ax1.twinx()
-    color2 = '#9467bd'
-    ax2.set_ylabel('Knowledge Graph Metrics', color=color2, fontsize=11)
+    color2 = '#1f77b4'
+    ax2.set_ylabel('Total Wikilinks', color=color2, fontsize=11, fontweight='bold')
 
-    line4 = ax2.plot(dates, links, color='#17becf', marker='D', linewidth=2, linestyle='--', label='Total Wikilinks')
-    line5 = ax2.plot(dates, avg_scores, color='#bcbd22', marker='*', linewidth=2, linestyle='--', markersize=12, label='Avg Richness Score')
+    line2 = ax2.plot(dates, links, color=color2, marker='s', linewidth=2.5, markersize=7, label='Total Wikilinks')
 
     ax2.tick_params(axis='y', labelcolor=color2)
 
@@ -181,12 +175,12 @@ def plot_stats(data):
     fig.autofmt_xdate(rotation=45, ha='right')
 
     # Combined legend
-    lines = line1 + line2 + line3 + line4 + line5
+    lines = line1 + line2
     labels = [l.get_label() for l in lines]
     ax1.legend(lines, labels, loc='upper left', fontsize=10)
 
     # Title
-    plt.title('Knowledge Graph Growth & Richness Over Time', fontsize=13, fontweight='bold')
+    plt.title('Knowledge Graph Growth: Concepts vs Connectivity', fontsize=12, fontweight='bold')
     fig.tight_layout()
 
     # Save
