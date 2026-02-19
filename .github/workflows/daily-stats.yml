@@ -1,0 +1,48 @@
+name: Daily Knowledge Stats
+
+on:
+  schedule:
+    # Run daily at 6 AM UTC
+    - cron: '0 6 * * *'
+  workflow_dispatch:  # Allow manual trigger for testing
+
+jobs:
+  daily-stats:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install matplotlib
+
+      - name: Create stats directory
+        run: mkdir -p stats
+
+      - name: Run richness analysis
+        run: python scripts/count_richness.py
+
+      - name: Configure Git
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+
+      - name: Commit and push stats
+        run: |
+          if [[ -n $(git status -s stats/) ]]; then
+            git add stats/data.json stats/chart.png
+            git commit -m "Update knowledge graph stats [skip ci]"
+            git push
+          else
+            echo "No changes to commit"
+          fi

@@ -2,8 +2,11 @@
 
 ![Knowledge Graph Illustration](media/knowledge-graph-illustration.webp)
 
+## Daily Stats
 
-A personal knowledge graph containing **562 interconnected concepts** in data science, machine learning, and AI. Built as an [Obsidian](https://obsidian.md/) vault with typed relationships, this graph can serve as the foundation for a **data ontology**.
+![Knowledge Glossary Growth](stats/chart.png)
+
+A personal knowledge graph containing **572 interconnected concepts** in data science, machine learning, and AI. Built as an [Obsidian](https://obsidian.md/) vault with typed relationships, this graph can serve as the foundation for a **data ontology**.
 ## Structure
 
 Each concept is a markdown file with:
