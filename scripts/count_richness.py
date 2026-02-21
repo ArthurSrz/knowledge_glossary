@@ -158,6 +158,8 @@ def plot_stats(data):
 
     line1 = ax1.plot(dates, total_files, color=color1, marker='o', linewidth=2.5, markersize=7, label='Total Concepts')
 
+    ax1.set_ylim(bottom=0)
+    ax1.ticklabel_format(axis='y', useOffset=False, style='plain')
     ax1.tick_params(axis='y', labelcolor=color1)
     ax1.grid(True, alpha=0.2)
 
@@ -168,6 +170,8 @@ def plot_stats(data):
 
     line2 = ax2.plot(dates, links, color=color2, marker='s', linewidth=2.5, markersize=7, label='Total Wikilinks')
 
+    ax2.set_ylim(bottom=0)
+    ax2.ticklabel_format(axis='y', useOffset=False, style='plain')
     ax2.tick_params(axis='y', labelcolor=color2)
 
     # Format x-axis dates
