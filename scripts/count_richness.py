@@ -148,6 +148,21 @@ def plot_stats(data):
     total_files = [d["total"] for d in data]
     links = [d["links"] for d in data]
 
+    def smart_ylim(values):
+        """Compute y-axis limits that show progression clearly with round numbers."""
+        lo, hi = min(values), max(values)
+        data_range = hi - lo
+        # Use at least 10% of the mean as visible range so flat data still gets context
+        margin = max(data_range, 0.1 * ((lo + hi) / 2)) * 0.5
+        raw_lo = lo - margin
+        raw_hi = hi + margin
+        # Round to nice step size
+        span = raw_hi - raw_lo
+        step = 10 ** int(f"{span:.0e}".split("e+")[-1])  # order of magnitude
+        nice_lo = max(0, int(raw_lo / step) * step)
+        nice_hi = int(raw_hi / step + 1) * step
+        return nice_lo, nice_hi
+
     # Create figure with dual axes
     fig, ax1 = plt.subplots(figsize=(11, 5))
 
@@ -158,7 +173,7 @@ def plot_stats(data):
 
     line1 = ax1.plot(dates, total_files, color=color1, marker='o', linewidth=2.5, markersize=7, label='Total Concepts')
 
-    ax1.set_ylim(bottom=0)
+    ax1.set_ylim(smart_ylim(total_files))
     ax1.ticklabel_format(axis='y', useOffset=False, style='plain')
     ax1.tick_params(axis='y', labelcolor=color1)
     ax1.grid(True, alpha=0.2)
@@ -170,7 +185,7 @@ def plot_stats(data):
 
     line2 = ax2.plot(dates, links, color=color2, marker='s', linewidth=2.5, markersize=7, label='Total Wikilinks')
 
-    ax2.set_ylim(bottom=0)
+    ax2.set_ylim(smart_ylim(links))
     ax2.ticklabel_format(axis='y', useOffset=False, style='plain')
     ax2.tick_params(axis='y', labelcolor=color2)
 
