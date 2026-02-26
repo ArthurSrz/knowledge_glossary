@@ -1,0 +1,4 @@
+---
+TypeOf: "[[Relationship]]"
+IdenticalTo: "[[Subagent]]"
+---
