@@ -1,5 +1,6 @@
 ---
 IdenticalTo: "[[_.claude.json.mcpServers]]"
+MountedInParallel: "[[Chainrings]]"
 ---
 
 
