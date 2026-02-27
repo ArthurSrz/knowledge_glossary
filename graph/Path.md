@@ -25,9 +25,3 @@ v5[ 0  0  0  1  0 ]
 ```
 
 The pattern is clean: M[i][j] = 1 only if |i − j| = 1, i.e. the vertices are immediate neighbours in the path.
-
----
-
-## Key distinction
-
-Note that Wikidata distinguishes between a **path** (a concept — a sequence of vertices within any graph) and a **path graph** (a graph whose entire structure _is_ a path). Your book likely uses "chemin" for the former and may use "graphe chemin" or Pn for the latter.
