@@ -3,6 +3,7 @@ relatedTo: "[[Data science team]]"
 fundamentalTo: "[[Machine learning projects]]"
 enables: "[[Supervised learning]]"
 transforms: "[[Features]]"
+ParentChild: "[[Datum]]"
 ---
 
 # Data
