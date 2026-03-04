@@ -131,12 +131,12 @@
   },
   {
     "date": "2026-03-04",
-    "total": 594,
+    "total": 597,
     "empty": 124,
     "stubs": 290,
-    "medium": 85,
+    "medium": 88,
     "rich": 95,
-    "links": 1805,
-    "avg_score": 24.9
+    "links": 1816,
+    "avg_score": 25.0
   }
 ]
