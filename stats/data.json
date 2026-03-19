@@ -228,5 +228,65 @@
     "rich": 95,
     "links": 1823,
     "avg_score": 24.9
+  },
+  {
+    "date": "2026-03-14",
+    "total": 604,
+    "empty": 124,
+    "stubs": 296,
+    "medium": 89,
+    "rich": 95,
+    "links": 1827,
+    "avg_score": 24.8
+  },
+  {
+    "date": "2026-03-15",
+    "total": 604,
+    "empty": 124,
+    "stubs": 296,
+    "medium": 89,
+    "rich": 95,
+    "links": 1827,
+    "avg_score": 24.8
+  },
+  {
+    "date": "2026-03-16",
+    "total": 604,
+    "empty": 124,
+    "stubs": 296,
+    "medium": 89,
+    "rich": 95,
+    "links": 1827,
+    "avg_score": 24.8
+  },
+  {
+    "date": "2026-03-17",
+    "total": 608,
+    "empty": 125,
+    "stubs": 299,
+    "medium": 89,
+    "rich": 95,
+    "links": 1829,
+    "avg_score": 24.7
+  },
+  {
+    "date": "2026-03-18",
+    "total": 608,
+    "empty": 125,
+    "stubs": 299,
+    "medium": 89,
+    "rich": 95,
+    "links": 1829,
+    "avg_score": 24.7
+  },
+  {
+    "date": "2026-03-19",
+    "total": 608,
+    "empty": 125,
+    "stubs": 299,
+    "medium": 89,
+    "rich": 95,
+    "links": 1829,
+    "avg_score": 24.7
   }
 ]
