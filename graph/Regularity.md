@@ -1,0 +1,4 @@
+---
+subFieldOf: "[[graph/Abstract entity]]"
+---
+
