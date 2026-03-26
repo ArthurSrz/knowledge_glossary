@@ -1,8 +1,6 @@
 # Data knowledge graph
 
-![Knowledge Graph Illustration](media/knowledge-graph-illustration.webp)
-
-## Daily Stats
+### Daily Stats
 
 ![Knowledge Glossary Growth](stats/chart.png)
 
