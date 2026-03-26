@@ -1,0 +1,3 @@
+---
+TypeOf: "[[Data visualization]]"
+---
