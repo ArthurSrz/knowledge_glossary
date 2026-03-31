@@ -1,5 +1,13 @@
 ---
 originatesFrom: "[[Graph theory]]"
+facet of: "[[graph/discrete mathematics]]"
+studied by: "[[graph/Graph theory]]"
+subclass of:
+  - "[[graph/Hypergraph]]"
+  - "[[graph/Relational structure]]"
+has part(s):
+  - "[[Node]]"
+  - "[[Edges]]"
 ---
 ### Definition 1 
 

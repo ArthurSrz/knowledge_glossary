@@ -4,7 +4,7 @@ uses:
   - "[[Taxonomy]]"
   - "[[label]]"
 subclass of:
-  - "[[knowledge base]]"
+  - "[[Knowledge base]]"
   - "[[labeled directed graph]]"
 studied in:
   - "[[Ontology engineering]]"
