@@ -6,6 +6,7 @@ uses:
 subclass of:
   - "[[Knowledge base]]"
   - "[[labeled directed graph]]"
+  - "[[Graphs]]"
 studied in:
   - "[[Ontology engineering]]"
   - "[[computer science]]"
