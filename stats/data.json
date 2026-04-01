@@ -408,5 +408,15 @@
     "rich": 95,
     "links": 1891,
     "avg_score": 23.5
+  },
+  {
+    "date": "2026-04-01",
+    "total": 653,
+    "empty": 160,
+    "stubs": 309,
+    "medium": 89,
+    "rich": 95,
+    "links": 1933,
+    "avg_score": 23.3
   }
 ]
