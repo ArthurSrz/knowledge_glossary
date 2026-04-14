@@ -1,1 +1,1 @@
-A technique for collapsing multiple parallel relationships into a single weighted relationship during projection.
+A technique for collapsing multiple parallel relationships into a single weighted relationship during [[Graph projection]]
