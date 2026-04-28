@@ -1,0 +1,1 @@
+A combination of [[graph/Mistral]] [[Large Language Model]] with built-in connectors, persistent 
