@@ -1,0 +1,3 @@
+A harness is every piece of code, configuration, and execution logic that isn't the model itself.  A raw model is not an agent. But it becomes one when a harness gives it things like state, tool execution, [[feedback loops]], and enforceable [[constraint]]
+
+An agent harness refers to the software layer that surrounds an LLM with tools, APIs, sandboxes, [[memory]], validators, permission boundaries, execution loops, and feedback channels, thereby turning a [[Stateless]] model into a functional agent capable of long-running task execution
