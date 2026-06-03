@@ -9,6 +9,8 @@ commands:
   - "[[Add]]"
   - "[[Log]]"
   - "[[Merge]]"
+  - "[[Branch]]"
+  - "[[Checkout -b]]"
 ---
 
 
