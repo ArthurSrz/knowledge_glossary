@@ -3,7 +3,7 @@ toexplainWith: "[[Bayes' theorem]]"
 uses:
   - "[[Recall]]"
   - "[[Precision]]"
-  - "[[Accuracy]]"
+  - "[[Accuracy 1]]"
 ---
 Le **détecteur de contenu IA Compilatio** permet de **distinguer les textes humains des textes générés par les Intelligences Artificielles** pour ainsi vérifier l’authenticité des écrits.  
 

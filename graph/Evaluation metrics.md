@@ -6,7 +6,7 @@ partOf: "[[LLM output evaluation]]"
 ## Related concepts
 
 ### Classification Metrics
-- [[Accuracy]] - Overall correctness
+- [[Accuracy 1]] - Overall correctness
 - [[Precision]] - Positive predictive value
 - [[Recall]] - True positive rate
 - [[F1 Score]] - Harmonic mean of precision and recall

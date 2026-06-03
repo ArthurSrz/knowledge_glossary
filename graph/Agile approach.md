@@ -3,7 +3,7 @@
 ## Related concepts
 
 - [[Design thinking]] - Creative problem-solving approach
-- [[Problem definition]] - First step in ML projects
+- [[Problem definition 1]] - First step in ML projects
 - [[Problem framing]] - Structuring the solution approach
 - [[Sprint planning]] - Agile planning sessions
 - [[Daily stand-ups]] - Regular team synchronization

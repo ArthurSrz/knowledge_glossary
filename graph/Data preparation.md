@@ -1,6 +1,6 @@
 Step of the [[CRISP-DM Process]]. 
 
-Breaks down into 3 steps : [[Split data]], [[Determine feature set]], [[Prepare for modeling]]
+Breaks down into 3 steps : [[Split data 1]], [[Determine feature set 1]], [[Prepare for modeling 1]]
 
 
 

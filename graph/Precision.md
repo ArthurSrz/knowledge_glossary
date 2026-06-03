@@ -9,7 +9,7 @@ Of **all** the predicted positives, how many were actually positives. Ratio of [
 
 Optimizing precision means making sure we get the right answers even if it involves leaving out a few right answers. We minimize the number of wrong answers. 
 
-During the [[Evaluation]] phase of the [[CRISP-DM Process]], there is a tradeoff between the precision and the [[Accuracy]]
+During the [[Evaluation]] phase of the [[CRISP-DM Process]], there is a tradeoff between the precision and the [[Accuracy 1]]
 
 Statisticians prefer the term [[Variance]].
 

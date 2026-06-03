@@ -13,6 +13,6 @@ To compute the balance between [[True Positive (TP)]], [[True Negative (TN)]], [
 - [[Precision]] - Metric derived from confusion matrix
 - [[Recall]] - Metric derived from confusion matrix
 - [[F1 Score]] - Combines precision and recall
-- [[Accuracy]] - Overall classification metric
+- [[Accuracy 1]] - Overall classification metric
 - [[Multiclass Confusion Matrix]] - Extended version
 - [[Evaluation metrics]] - Family of performance measures

@@ -1,1 +1,1 @@
-We look at [[Accuracy]], [[Interpretability]], [[Computer Efficiency]] to select the algorithm. 
+We look at [[Accuracy 1]], [[Interpretability]], [[Computer Efficiency]] to select the algorithm. 

@@ -1,6 +1,6 @@
 ---
 definedBy:
-  - "[[Accuracy]]"
+  - "[[Accuracy 1]]"
   - "[[Precision]]"
   - "[[Recall]]"
 ---
