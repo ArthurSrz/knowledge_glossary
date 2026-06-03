@@ -10,3 +10,4 @@ has part(s):
   - "[[graph/implicit memory]]"
   - "[[graph/recall]]"
 ---
+Physical device used to store information for immediate use in a digital electronic device
