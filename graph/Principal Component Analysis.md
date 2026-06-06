@@ -1,10 +1,20 @@
 ---
-foundationalPaper: "On Lines and Planes of Closest Fit to Systems of Points in Space (Pearson, 1901)"
-keyPapers: ["Analysis of a Complex of Statistical Variables into Principal Components (Hotelling, 1933)", "The Varimax Criterion for Analytic Rotation in Factor Analysis (Kaiser, 1958)"]
+foundationalPaper: On Lines and Planes of Closest Fit to Systems of Points in Space (Pearson, 1901)
+keyPapers:
+  - Analysis of a Complex of Statistical Variables into Principal Components (Hotelling, 1933)
+  - The Varimax Criterion for Analytic Rotation in Factor Analysis (Kaiser, 1958)
 typeOf: "[[Dimensionality reduction]] technique"
 inventedBy: "[[Karl Pearson]]"
-mathematicalBasis: ["[[Eigenvalues]]", "[[Eigenvectors]]", "[[Covariance matrix]]", "[[Singular value decomposition]]"]
-applications: ["[[Feature extraction]]", "[[Data visualization]]", "[[Noise reduction]]", "[[Data compression]]"]
+mathematicalBasis:
+  - "[[Eigenvalues]]"
+  - "[[Eigenvectors]]"
+  - "[[Covariance matrix]]"
+  - "[[Singular value decomposition]]"
+applications:
+  - "[[Feature extraction]]"
+  - "[[data visualization]]"
+  - "[[Noise reduction]]"
+  - "[[Data compression]]"
 ---
 
 # Principal Component Analysis (PCA)

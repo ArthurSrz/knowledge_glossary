@@ -198,7 +198,7 @@ Moreno's work:
 ## Related Concepts
 - [[Graph theory]]
 - [[Social network analysis]]
-- [[Data visualization]]
+- [[data visualization]]
 - [[Complex systems]]
 - [[Network science]]
 

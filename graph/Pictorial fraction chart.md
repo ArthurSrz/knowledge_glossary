@@ -1,3 +1,3 @@
 ---
-TypeOf: "[[Data visualization]]"
+TypeOf: "[[data visualization]]"
 ---
