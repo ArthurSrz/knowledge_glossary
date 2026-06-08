@@ -127,7 +127,7 @@ The concept of raw data:
 - [[Information theory]]
 - [[Data processing]]
 - [[Data cleaning]]
-- [[Metadata]]
+- [[metadata]]
 - [[Data quality]]
 
 ## References
