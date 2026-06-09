@@ -11,6 +11,9 @@ commands:
   - "[[Merge]]"
   - "[[Checkout -b]]"
   - "[[Branch -vv]]"
+object:
+  - "[[Git worktree]]"
+  - "[[Checkout]]"
 ---
 
 
