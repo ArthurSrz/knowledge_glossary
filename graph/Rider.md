@@ -1,3 +1,3 @@
 ---
-HasRelationship: "[[ActivatesShifter]]"
+HasRelationship: "[[activatesShifter]]"
 ---

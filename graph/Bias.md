@@ -25,4 +25,4 @@ The intercept in a linear regression, the y when features are 0.
 
 - [[Fairness]] - Essential AI principle (Adamic-Adar: 0.641)
 - [[Ethical risks]] - Potential harms (Adamic-Adar: 0.641)
-- [[Accountable AI]] - Framework for responsibility (Adamic-Adar: 0.641)
+- [[accountable AI]] - Framework for responsibility (Adamic-Adar: 0.641)

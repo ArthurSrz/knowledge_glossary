@@ -7,5 +7,5 @@ said to be the same as:
   - "[[graph/attribute]]"
   - "[[graph/quality]]"
 partially coincident with: "[[graph/quality]]"
-subclass of: "[[graph/abstract entity]]"
+subclass of: "[[abstract entity]]"
 ---

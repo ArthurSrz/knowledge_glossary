@@ -13,7 +13,7 @@ tags:
   - Hiérarchie
   - Multi_Agent
 ---
-**Définition** : Classification des agents selon leur fonction et position dans la hiérarchie du système multi-agent.
+**Définition** : [[Classification]] des agents selon leur fonction et position dans la hiérarchie du système multi-[[agent]].
 
 # **Types principaux** :
 
@@ -29,7 +29,7 @@ Agents avec des rôles spécifiques comme "Researcher" ou "Writer", fonctionnant
 
 ### Coordinator/Supervisor
 
-Agents sous lesquels opèrent plusieurs agents workers, suivant les instructions du superviseur.
+Agents sous lesquels opèrent plusieurs agents workers, suivant les [[instructions]] du superviseur.
 
 **Caractéristiques** :
 - Gestion d'équipe d'agents
@@ -37,10 +37,10 @@ Agents sous lesquels opèrent plusieurs agents workers, suivant les instructions
 - Distribution des responsabilités
 - Supervision des exécutions
 
-**Architecture multi-agent** :
+**Architecture multi-[[agent]]** :
 - Hiérarchie claire des rôles
 - Communication inter-agents
-- Delegation et supervision
+- [[Delegation]] et supervision
 - Orchestration des workflows
 
 **Bénéfices** :

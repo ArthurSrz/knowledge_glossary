@@ -1,5 +1,5 @@
 ---
-facet of: "[[Communication protocol]]"
+facet of: "[[communication protocol]]"
 subclass of:
   - "[[graph/context]]"
   - "[[Process]]"

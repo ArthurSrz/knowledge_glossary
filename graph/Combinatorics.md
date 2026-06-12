@@ -1,3 +1,3 @@
 ---
-isTheStudyOf: "[[Combination]]"
+isTheStudyOf: "[[combination]]"
 ---

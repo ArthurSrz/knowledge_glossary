@@ -1,5 +1,5 @@
 ---
-listsAll: "[[Commit]]"
+listsAll: "[[commit]]"
 ---
-[[Git]] command that lets you see the [[Commit]] history of the [[Branch]] you are currently on. 
+[[Git]] command that lets you see the [[commit]] history of the [[Branch]] you are currently on. 
 

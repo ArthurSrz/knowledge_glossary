@@ -1,5 +1,5 @@
 ---
-IdenticalTo: "[[ActivatesShifter]]"
+IdenticalTo: "[[activatesShifter]]"
 TypeOf: "[[Web worker]]"
 ---
 

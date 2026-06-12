@@ -1,8 +1,14 @@
 ---
-foundationalPaper: "Corporate Accountability for Privacy (Bamberger & Mulligan, 2011)"
-relatedTo: ["[[Transparency]]", "[[Trust]]", "[[Governance]]"]
-fundamentalTo: "[[Accountable AI]]"
-concepts: ["answerability", "responsibility", "liability"]
+foundationalPaper: Corporate Accountability for Privacy (Bamberger & Mulligan, 2011)
+relatedTo:
+  - "[[Transparency]]"
+  - "[[Trust]]"
+  - "[[Governance]]"
+fundamentalTo: "[[accountable AI]]"
+concepts:
+  - answerability
+  - responsibility
+  - liability
 ---
 
 # Accountability

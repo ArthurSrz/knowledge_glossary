@@ -2,7 +2,7 @@
 related_to:
   - "[[Agentic System]]"
   - "[[AgentOps]]"
-  - "[[Agent Observability]]"
+  - "[[agent Observability]]"
 dependencies:
   - "[[Large Language Model]]"
 category: Concepts Fondamentaux

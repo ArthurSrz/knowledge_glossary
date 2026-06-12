@@ -15,6 +15,6 @@ To resolve fairness issues :
 
 - [[Bias]] - Source of unfairness (Adamic-Adar: 0.641)
 - [[Ethical risks]] - Results of unfairness (Adamic-Adar: 0.641)
-- [[Accountable AI]] - Framework for fairness (Adamic-Adar: 0.641)
+- [[accountable AI]] - Framework for fairness (Adamic-Adar: 0.641)
 - [[Fair AI]] - Implementation of fairness
 - [[Individual fairness]] - Specific fairness approach

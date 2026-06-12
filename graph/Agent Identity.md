@@ -6,14 +6,14 @@ category: Agent Creation Registry
 tags: [Identité_Agent, Versioning, Gestion_Agents]
 ---
 
-# Agent Identity
+# [[Agent]] Identity
 
-**Définition** : Ensemble des identifiants uniques permettant de caractériser et gérer un agent de manière distinctive dans le système AgentOps.
+**Définition** : Ensemble des identifiants uniques permettant de caractériser et gérer un [[agent]] de manière distinctive dans le système [[AgentOps]].
 
 **Composants** :
-- **Agent ID** : Identifiant unique de l'agent dans le système
-- **Agent Name** : Nom descriptif et lisible de l'agent
-- **Agent Version** : Version de l'agent pour le suivi des évolutions
+- **[[Agent]] ID** : Identifiant unique de l'[[agent]] dans le système
+- **[[Agent]] Name** : Nom descriptif et lisible de l'[[agent]]
+- **[[Agent]] Version** : Version de l'[[agent]] pour le suivi des évolutions
 
 **Fonctions** :
 - Identification unique dans le registre
@@ -24,10 +24,10 @@ tags: [Identité_Agent, Versioning, Gestion_Agents]
 **Importance** :
 - Base de la traçabilité
 - Gestion des déploiements
-- Rollback et versioning
+- [[Rollback]] et versioning
 - Audit et conformité
 
 **Relations** :
-- Lié à tous les artefacts de l'agent
+- Lié à tous les artefacts de l'[[agent]]
 - Référencé dans les sessions et traces
 - Base pour le monitoring et l'évaluation
