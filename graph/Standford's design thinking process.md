@@ -4,5 +4,5 @@ Equivalent to [[CRISP-DM Process]] but for the human-side. Phases :
 2. [[Define]]
 3. [[Ideate]]
 4. [[Prototyping]]
-5. [[Test]]
+5. [[graph/Test]]
 
