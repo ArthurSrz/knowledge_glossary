@@ -1,3 +1,3 @@
 ---
-TypeOf$:
+TypeOf$: "[[Large Language Model]]"
 ---
