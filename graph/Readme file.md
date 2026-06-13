@@ -207,7 +207,7 @@ README files have:
 - Influenced documentation practices
 
 ## Related Concepts
-- [[Documentation]]
+- [[documentation]]
 - [[Open source software]]
 - [[Unix conventions]]
 - [[Markdown]]

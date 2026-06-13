@@ -7,6 +7,6 @@ subclassOf:
   - "[[graph/tertiary source]]"
   - "[[Conceptual model]]"
   - "[[graph/database]]"
-  - "[[Documentation]]"
+  - "[[documentation]]"
 hasPart(s): "[[graph/knowledge]]"
 ---
