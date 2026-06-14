@@ -1,1 +1,1 @@
-Happens when [[Features]] are poor reflections of some constructs. 
+Happens when [[Feature]] are poor reflections of some constructs. 

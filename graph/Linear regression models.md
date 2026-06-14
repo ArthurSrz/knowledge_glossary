@@ -14,4 +14,4 @@ input_data_content:
   - numerical_values
 input_data_format: dataframe
 ---
-Model which assumes linear relationships between [[Features]] and [[Target]] we are trying to predicted, defined by a set of parameters. 
+Model which assumes linear relationships between [[Feature]] and [[Target]] we are trying to predicted, defined by a set of parameters. 

@@ -9,7 +9,7 @@ Data whose structure is based on pre-defined fields for each record
 
 ## Related concepts
 
-- [[Unstructured data]] - Opposite of structured data
+- [[unstructured data]] - Opposite of structured data
 - [[Tidy Data]] - Well-organized structured data
 - [[Pandas]] - Library for structured data
 - [[SQL database]] - Stores structured data

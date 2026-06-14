@@ -1,5 +1,5 @@
 ---
 differentFrom:
-  - "[[graph/unstructured data]]"
+  - "[[unstructured data]]"
   - "[[graph/structured data]]"
 ---
