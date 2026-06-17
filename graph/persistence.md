@@ -1,5 +1,5 @@
 ---
-wikidata entity id: Q403605
+wikidata entity id: Q1400808
 subclass of: "[[quality]]"
 different from:
   - "[[stability]]"
@@ -11,4 +11,8 @@ partially coincident with:
 instance of:
   - "[[philosophical concept]]"
   - "[[system characteristic]]"
+facet of:
+  - "[[graph/computer storage media]]"
+  - "[[graph/state]]"
+OmegaWiki Defined Meaning: "1705986"
 ---
