@@ -11,6 +11,7 @@ Fine-tuning is the [[process]] of taking a pre-trained [[model]] and adapting it
 ## Original Definition
 
 From Yosinski et al. (2014):
+
 "Fine-tuning works as follows: first, we train a base network on a base dataset and task, and then we repurpose the learned features, or transfer them, to a second [[target]] network to be trained on a [[target]] dataset and task. This [[process]] tends to work if the features are general, meaning suitable for both base and [[target]] tasks."
 
 From Devlin et al. (2019) on [[BERT]]:
