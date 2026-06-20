@@ -15,3 +15,7 @@ I also observe there [[clause]] present in Wikidata, which indicates they are ge
 But Wikidata is very abstract, and lawyers have their own way of doing things (of course they are "instance of" [[ontology]] items)
 
 First, Clara is more focused, questions go straight to the [[target]] (if the [[socratic]] [[dialogue]] structure is well though ahead, not sure how we guide users into creating "good" interview guides or what a good [[socratic]] [[dialogue]] structure [[output]] looks like). We know where we are going. But the general [[socratic]] [[dialogue]] feels too vague. 
+
+***
+
+Now, slide template and formatting, which are maybe the top #1 priority today, for many companies. As [[Claude]], ChatGPT and every other LLM are good but not great at following [[templates]]. It always tricky. The quick fix I've found is : [[design]] tokens expressed **in the closest way** to the one [[Claude]] would generate himself to generate slides. And that tokens are expressed with [[Java]] script code 
