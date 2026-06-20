@@ -25,3 +25,5 @@ The all idea here is to reverse-engineer the slides and reach a 500-1000 [[token
 Probably, all big companies already have slide [[templates]], that explain the rules to follow when creating slide decks. Those rules are never followed of course, as everyone has its own recipe, but slide [[generation]] feels like a time loss for so many people. The problem is that slides are cognitively very heavy, and that's a major ISSUE. 
 
 Worth spending time around understanding what makes slide so heavy and how to unravel this issue for everyone.
+
+I think it is because slides are mainly image-heavy content and [[trigger]] [[aesthetics]] 
