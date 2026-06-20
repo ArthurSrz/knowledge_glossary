@@ -37,4 +37,4 @@ It is a matter of :
 5. shape [[design]] and order (the hardest)
 6. lots of visual inspection, details and [[human-in-the-loop]] 
 
-That requires a [[test]] and an OCR analysis I think of the details.
+That requires a [[test]] and an OCR analysis I think of the visual details, that can be then be used to infer new [[Java]] [[design]] tokens. At some point I would use the [[crawl-walk-run]] [[pattern]] from Microsoft.
