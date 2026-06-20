@@ -6,7 +6,9 @@ What I have learned so far. Lawyers work at a [[contract]] level and demand [[cl
 4. Then a big set of questions on the models they use, and how much of it is to be adapted to special usecases. 
 5. Document formatting is also key here : ask them to provide an example of documents and explain how they like it to be formatted (things that can later on be turned into [[design]] [[token]]s) 
 
-Let's see how a [[knowledge]] [[layer]] reacts to a [[socratic]] [[dialogue]], starting in the own professional terms a [[lawyer]] would use, naturally. It picks up the very structure of the dialog. But here, one [[socratic]] [[dialogue]] covers all topics, when I thought there could be several [[socratic]] dialogues, one for each specific area. 
+Let's see how a [[knowledge]] [[layer]] reacts to a [[socratic]] [[dialogue]], starting in the own professional terms a [[lawyer]] would use, naturally. 
+
+It picks up the very structure of the dialog. But here, one [[socratic]] [[dialogue]] covers all topics, when I thought there could be several [[socratic]] dialogues, one for each specific area. 
 
 I also observe there [[clause]] present in Wikidata, which indicates they are general enough and can be fairly considered "[[boilerplate]]". But that might not be the case for all lawyers depending on their country. [[force majeure]], [[non-compete clause]] are two examples. 
 
