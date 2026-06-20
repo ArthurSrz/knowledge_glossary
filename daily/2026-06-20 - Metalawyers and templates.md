@@ -26,4 +26,15 @@ Probably, all big companies already have slide [[templates]], that explain the r
 
 Worth spending time around understanding what makes slide so heavy and how to unravel this issue for everyone.
 
-I think it is because slides are mainly image-heavy content and [[trigger]] [[aesthetics]] judgement, that is based on subjectivity. And certain profiles, like myself, hate the cognitive [[style]] of [[Powerpoint]] and [[slide deck]]s in general.  
+I think it is because slides are mainly image-heavy content and [[trigger]] [[aesthetics]] judgement, that is based on subjectivity. And certain profiles, like myself, hate the cognitive [[style]] of [[Powerpoint]] and [[slide deck]]s in general. 
+
+It is a matter of :
+
+1. structure (order of slides)
+2. message display
+3. message tone
+4. [[boilerplate]] slides 
+5. shape [[design]] and order (the hardest)
+6. lots of visual inspection, details and [[human-in-the-loop]] 
+
+That requires a [[test]] and an OCR analysis I think of the details.
