@@ -10,7 +10,7 @@ described by source:
   - "[[db/Small Brockhaus and Efron Encyclopedic Dictionary]]"
   - "[[db/Meyers Konversations-Lexikon, 4th edition (1885–1890)]]"
   - "[[db/Basque Literature Terms Dictionary]]"
-  - "[[db/Lean Logic]]"
+  - "[[Lean Logic]]"
   - "[[db/Armenian Soviet Encyclopedia, vol. 3]]"
   - "[[db/Red Blue Translator]]"
   - "[[db/Meyers Konversations-Lexikon, 4. Auflage (1885–1890)]]"
