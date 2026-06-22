@@ -1,1 +1,0 @@
-A physically embodied [[object]] that is endlessly divisible and reducible to [[data]] representations via the modern technologies like computer-based systems.
