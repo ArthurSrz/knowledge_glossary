@@ -110,7 +110,7 @@ Programming languages enabled:
 - [[Compiler]]
 - [[Interpreter]]
 - [[Syntax]]
-- [[Semantics]]
+- [[semantics]]
 - [[Type system]]
 
 ## References

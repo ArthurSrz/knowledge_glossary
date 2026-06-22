@@ -10,4 +10,8 @@ facet of:
 wikidata entity id: Q107154297
 EmbodiementOf: "[[latent]]"
 ---
+<<<<<<< HEAD
 [[embedding]] of [[data]] within a [[manifold]] based on a similarity function
+=======
+embedding of [[data]] within a [[manifold]] based on a similarity function
+>>>>>>> origin/main
