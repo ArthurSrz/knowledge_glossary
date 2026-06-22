@@ -17,6 +17,15 @@ Foutu [[modélisation]].
 ***
 ## Nested combined attribution graph 
 
+There is an hypothesis to [[test]], an explanation for the behavior of [[knowledge]] on LLMs [[weights]]. Marvin Minsky writes that a word acts like an [[agency]] [[trigger]]. Very simply, if you think about an apple, it [[trigger]] the [[agency]] "see red" in our head. We see the apple, right ? 
+
+But I link the fact that this agencies are not triggered randomly. He writes : 
+
+> The most useful set of [[properties]] are those whose members do not interact too much (...) That explains the universal popularity of that particular [[combination]] of [[properties]]: size, color, shape and substance. Because these attribute scarcely interact at all with one another, you can put them in any [[combination]] whatsoever, to make an [[object]] that is either large or small, red or green, wooden or glass, and having the shape of a sphere or of a cube.
+
+But the better part comes after. He asks *Why do we like non-overlapping [[properties]]* ? 
+
+> The simplest explanation is that we represent each of the [[properties]] of material, color, size and shape in separate agencies. 
 
 
 
