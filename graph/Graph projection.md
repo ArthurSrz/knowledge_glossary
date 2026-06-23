@@ -1,6 +1,6 @@
 ---
 has characteristic:
   - "[[Subset]]"
-  - "[[Idempotence]]"
+  - "[[graph/Idempotence]]"
 instance of: "[[graph/geometric concept]]"
 ---
