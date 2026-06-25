@@ -9,7 +9,7 @@ What is funny though, is that after the [[automation]] of one's task, you get a 
 
 ***
 > [!idea] 
-> “[[Context]] construction for foundation models is equivalent to [[feature engineering]] for classical [[ML models]]. ”
+> “[[context 1]] construction for foundation models is equivalent to [[feature engineering]] for classical [[ML models]]. ”
 > - Chip Huyen in *[[AI Engineering]]* (O'reilly)
 
 And features can be optimized. Like parameters inside a function. 
