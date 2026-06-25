@@ -4,9 +4,9 @@ uses:
   - "[[db/culture]]"
   - "[[Context]]"
 partially coincident with:
-  - "[[db/de facto]]"
+  - "[[de facto]]"
   - "[[inferred from attribute of entity]]"
 instance of: "[[db/property]]"
 opposite of: "[[db/explicitness]]"
 ---
-[[property]] of information that is not expressed, specified, or detailed, but must be gleaned from [[context]] and other assumptionsproperty of information that is not expressed, specified, or detailed, but must be gleaned from [[context]] and other assumptions
+[[property]] of information that is not expressed, specified, or detailed, but must be gleaned from [[context]] and other assumptionsproperty of information that is not expressed, specified, or detailed, but must be gleaned from [[context]] and other assumptions. 

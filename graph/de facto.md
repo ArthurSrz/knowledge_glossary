@@ -6,7 +6,7 @@ instance of:
   - "[[db/Wikibase reason for deprecated rank]]"
   - "[[db/Wikibase reason for preferred rank]]"
 different from:
-  - "[[db/De facto]]"
+  - "[[de facto]]"
   - "[[db/unofficial]]"
 part of:
   - "[[db/de jure_de facto]]"
@@ -20,3 +20,4 @@ subject lexeme:
   - de facto
 wikidata entity id: Q712144
 ---
+Practices that exist without recognition in law or other formal norms
