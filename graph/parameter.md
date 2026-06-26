@@ -1,1 +1,0 @@
-A value inside a machine-learning [[model]] that is updated through the training [[process]]. 

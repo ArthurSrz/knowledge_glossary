@@ -1,4 +1,0 @@
----
-subclass of: "[[graph/Regularity]]"
----
-

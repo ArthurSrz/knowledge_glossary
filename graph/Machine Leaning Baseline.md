@@ -1,2 +1,0 @@
-
-Next step of [[Heuristics]]

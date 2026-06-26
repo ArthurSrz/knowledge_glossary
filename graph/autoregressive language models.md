@@ -1,3 +1,0 @@
----
-TypeOf: "[[Large Language Model]]"
----

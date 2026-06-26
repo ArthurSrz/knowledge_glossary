@@ -1,1 +1,0 @@
-When we have a high number of data on one class but very low on another class

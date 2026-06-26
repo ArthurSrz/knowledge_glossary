@@ -1,1 +1,0 @@
-We model here a non-linear relationship btw [[Feature]] and [[Target]]. 

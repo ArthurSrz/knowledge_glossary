@@ -1,1 +1,0 @@
-App that orchestrates MCP calls 

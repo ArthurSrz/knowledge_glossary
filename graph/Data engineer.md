@@ -1,1 +1,0 @@
-Collect, clean and managing the data involved

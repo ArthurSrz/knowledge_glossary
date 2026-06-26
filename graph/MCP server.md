@@ -1,1 +1,0 @@
-Machine receiving tool calls. 

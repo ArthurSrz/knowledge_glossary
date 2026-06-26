@@ -1,5 +1,0 @@
----
-madeOf:
-  - "[[Context]]"
-  - "[[Graphs]]"
----

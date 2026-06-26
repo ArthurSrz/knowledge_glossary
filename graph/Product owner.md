@@ -1,1 +1,0 @@
-Person responsible for developing the technical requirements 

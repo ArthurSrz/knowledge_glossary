@@ -1,3 +1,0 @@
----
-isTheStudyOf: "[[combination]]"
----

@@ -1,3 +1,0 @@
----
-originatesFrom: "[[Symbolism]]"
----

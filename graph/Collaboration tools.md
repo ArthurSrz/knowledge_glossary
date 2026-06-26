@@ -1,1 +1,0 @@
-Tools for [[Roadmap sessions]], tools for project tracking [[Sprint planning]], tools for code collaboration and [[Version control]](Git/Github)

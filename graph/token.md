@@ -1,1 +1,0 @@
-On GPT4, 100 tokens are approximately 75 words

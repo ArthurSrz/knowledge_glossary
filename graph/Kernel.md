@@ -1,1 +1,0 @@
-An engine that transforms the data to improve [[Classification]] performance. In [[Support Vector Machine]], it is used to classify points that aren't linearly separable. 

@@ -1,4 +1,0 @@
----
-subFieldOf: "[[abstract entity]]"
----
-

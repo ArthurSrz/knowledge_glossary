@@ -1,3 +1,0 @@
----
-partOf: "[[Vanilla RAG design]]"
----

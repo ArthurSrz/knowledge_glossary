@@ -1,1 +1,0 @@
-[[Gilles Deleuze]]'s [[concept]] 

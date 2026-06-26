@@ -1,5 +1,0 @@
----
-commands:
-  - "[[Clone]]"
-  - "[[Pull request]]"
----

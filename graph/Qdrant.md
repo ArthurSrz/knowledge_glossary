@@ -1,3 +1,0 @@
----
-exampleOf: "[[Vector database]]"
----

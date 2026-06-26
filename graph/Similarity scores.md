@@ -1,3 +1,0 @@
----
-exampleOf: "[[LLM Metrics]]"
----

@@ -1,1 +1,0 @@
-Way to tackle [[Privacy challenge]]

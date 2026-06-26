@@ -1,3 +1,0 @@
----
-derivedFrom: "[[Socrates]]"
----

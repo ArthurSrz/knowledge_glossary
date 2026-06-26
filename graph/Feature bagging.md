@@ -1,1 +1,0 @@
-Method used to create [[Random forest]]s 

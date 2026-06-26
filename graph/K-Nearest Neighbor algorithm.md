@@ -1,1 +1,0 @@
-Algorithm used id [[K-Means Clustering]] 

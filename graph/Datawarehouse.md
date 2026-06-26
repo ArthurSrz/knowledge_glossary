@@ -1,4 +1,0 @@
----
-entity: base
-applicatif: "[[Dashboard]]"
----

@@ -1,1 +1,0 @@
-Can be evaluated through a [[LLM-as-judges]] approach where it checks if the writing style is appropriate for a blog post 

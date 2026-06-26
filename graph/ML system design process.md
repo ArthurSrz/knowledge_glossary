@@ -1,3 +1,0 @@
----
-shouldPayAttentionTo: "[[Feedback loop bias]]"
----

@@ -1,1 +1,0 @@
-Point closest to the decision boundary

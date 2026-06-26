@@ -1,1 +1,0 @@
-A technique using [[LLM Models]] to turn text into [[CYPHER]] query 

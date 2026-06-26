@@ -1,1 +1,0 @@
-[[Machine learning]] model that uses [[Transformers]] architecture to perform [[supervised learning]] and [[Regression]] analysis on [[tabular data]]

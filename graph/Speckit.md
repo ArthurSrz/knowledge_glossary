@@ -1,3 +1,0 @@
----
-instanceOf: "[[Agent harness]]"
----

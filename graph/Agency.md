@@ -1,1 +1,0 @@
-Capacity to act within the capacity to act within data processing systems.
