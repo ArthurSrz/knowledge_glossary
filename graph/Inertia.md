@@ -1,0 +1,1 @@
+In [[K-Means Clustering]], it is the sum of squared distances (SSD) of each point to its assigned cluster center against the number of clusters. 

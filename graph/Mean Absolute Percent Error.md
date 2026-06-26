@@ -1,0 +1,1 @@
+[[Mean Absolute Error]] expressed as a percentage 

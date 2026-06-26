@@ -1,0 +1,1 @@
+May degrade immediately or slowly over time. 

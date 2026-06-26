@@ -1,0 +1,1 @@
+Users generate data through interaction with an AI-enabled system, which is then used to strengthen the AI and open up further opportunities. 

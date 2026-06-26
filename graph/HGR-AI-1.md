@@ -1,0 +1,3 @@
+---
+instanceof: "[[Dedicated server]]"
+---

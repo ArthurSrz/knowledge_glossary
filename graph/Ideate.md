@@ -1,0 +1,1 @@
+Generate ideas of ways to solve the problem. 

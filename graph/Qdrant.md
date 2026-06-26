@@ -1,0 +1,3 @@
+---
+exampleOf: "[[Vector database]]"
+---
