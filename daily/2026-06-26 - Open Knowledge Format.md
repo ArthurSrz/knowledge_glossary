@@ -7,7 +7,7 @@ Avant de rentrer dans les détails techniques, prenons un peu de recul. Tout d'a
 
 Maintenant, qu'est-ce qui fait la particularité de l'OKF ? 
 
-Tout d'abord, son **minimalisme**. L'OKF dit que chaque bout de connaissance est un fichier avec des en-têtes. Et c'est tout. C'est minimaliste, et donc **extrêmement** flexible, et surtout **extrêmement** *machine* et *human readable*. On lit toutes et tous des livres avec le titre du chapitre en haut de la page, et les agents savent très bien naviguer dans ce type de présentation. 
+Tout d'abord, son **minimalisme**. L'OKF dit que chaque bout de connaissance est un fichier avec des en-têtes. Et c'est tout. C'est minimaliste, et donc **extrêmement** flexible, et surtout **extrêmement** *machine* et *human readable*. On lit toutes et tous des livres avec le titre du chapitre en haut de la page, et les agents savent très bien naviguer dans ce type de fichiers. 
 
-En
+Ensuite, Google a choisi d'attribuer un "type" à chaque bout de connaissance (en l'occurence 1 fichier .md = 1 bout)
 

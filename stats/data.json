@@ -1258,35 +1258,5 @@
     "rich": 95,
     "links": 3142,
     "avg_score": 20.7
-  },
-  {
-    "date": "2026-06-25",
-    "total": 803,
-    "empty": 258,
-    "stubs": 346,
-    "medium": 104,
-    "rich": 95,
-    "links": 3142,
-    "avg_score": 20.7
-  },
-  {
-    "date": "2026-06-26",
-    "total": 807,
-    "empty": 259,
-    "stubs": 349,
-    "medium": 104,
-    "rich": 95,
-    "links": 3180,
-    "avg_score": 20.8
-  },
-  {
-    "date": "2026-06-27",
-    "total": 812,
-    "empty": 262,
-    "stubs": 351,
-    "medium": 104,
-    "rich": 95,
-    "links": 3216,
-    "avg_score": 20.8
   }
 ]
