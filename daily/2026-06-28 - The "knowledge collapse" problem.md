@@ -2,4 +2,11 @@ Language, which we use to convey [[knowledge]], builds things in our minds. Yet 
 
 For if we want to understand how language works with LLMs, we must never forget that our thinking-in-words, and that the [[output]] of any LLMs **reveals only a fragment of the mind's activity**
 
-We often seem to think in words, and we think LLMs think if words. Yet, as we do this with no conscious sense of where and why those words originate, we don't know where and why LLMs react they way they do. Our inner monologues, and 
+We often seem to think in words, and we think LLMs think if words. Yet, as we do this with no conscious sense of where and why those words originate, we don't know where and why LLMs react they way they do. Our inner monologues, and the mechanistic thoughts inside [[transformers]] proceed without any effort, deliberation, or sense of how they're done.
+
+Now...you might argue that you do know what brings those words to mind : they express **your ideas and intentions**. But, once again, do you know where and why your intentions come and go ? 
+
+Let's take a simple example : suppose, for example, that at a certain moment you find you want to read more about "The Society of [[Knowledge]]" series of post. Then, naturally, you'd look for others article of The Society of [[Knowledge]] series. And this involves two mysteries : 
+
+1. *What made you want read more about The Society of [[Knowledge]]* ? Was it simply that you became tired of reading LLM generated posts online ? Was it because you remembered that your boss asked you about [[knowledge]] [[management]] ? Whatever reasons come to mind, you still must ask what led to them. The further back you trace your thoughts, the vaguer seem those casual chains 
+2. The other side of the mystery is that we are equally ignorant of how we *respond* to our own intentions. Gi
