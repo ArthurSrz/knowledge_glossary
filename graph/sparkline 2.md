@@ -1,0 +1,9 @@
+---
+discoverer or inventor: "[[graph/Edward Tufte]]"
+subclass of: "[[graph/statistical graphics]]"
+maintained by WikiProject: "[[graph/WikiProject Mathematics]]"
+Stack Exchange tag: https://stackoverflow.com/tags/sparklines
+Commons category: Sparkline
+wikidata entity id: Q2307841
+---
+There is no [[mapping]] between representation of a sparkline inside [[google sheet]] and inside microsoft [[excel]] 
