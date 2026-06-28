@@ -9,11 +9,22 @@ Ensuite, l'OKF est [explicitement inspiré du LLM wiki d'Andrej Karpathy](https:
 
 ## Qu'est-ce qui fait la particularité de l'OKF ? 
 
-Tout d'abord, son **minimalisme**. L'OKF dit que chaque bout de connaissance est un fichier avec des en-têtes et un *type*. Et c'est tout. C'est minimaliste, et donc **extrêmement** flexible, et surtout **extrêmement** *machine* et *human readable*. On lit toutes et tous des livres avec le titre du chapitre en haut de la page, et les agents savent très bien naviguer dans ce type de structure.
+Tout d'abord, son **minimalisme**. L'OKF dit que chaque bout de connaissance est un fichier avec des en-têtes et un *type*. 
+
+![[okf_graph.png]]
+
+
+
+Et c'est tout. C'est minimaliste, et donc **extrêmement** flexible, et surtout **extrêmement** *machine* et *human readable*. On lit toutes et tous des livres avec le titre du chapitre en haut de la page, et les agents savent très bien naviguer dans ce type de structure.
 
 Plus particulièrement à propos du *type* maintenant. A chaque bout de connaissance son type (en l'occurence 1 fichier .md = 1 bout). Cette information est, à mon avis, plus à destination des agents que des êtres humains. Typer un bout de connaissance permet à un [[agent]] de comprendre **ce qu'il peut faire** avec ce bout de connaissance. 
 
-Par exemple : s'il existe un fichier est de type `variable`, l'[[agent]] saura très certainement qu'il y a un fichier de type `dataset` à aller chercher pour avoir une compréhension globale du jeu de données en question. Encore, mettons que le fichier soit de type `procedure_reparation`, l'[[agent]] saura très certainement inférer que s'il y a une réparation documentée, c'est qu'il y a quelque chose de cassé quelque part, et donc un fichier de type `casse_mecanique` à retrouver. 
+Par exemple : s'il existe un fichier est de type `variable`, l'[[agent]] saura très certainement qu'il y a un fichier de type `dataset` à aller chercher pour avoir une compréhension globale du jeu de données en question. Encore, mettons que le fichier soit de type `procedure_reparation`, l'[[agent]] saura très certainement inférer que s'il y a une réparation documentée, c'est qu'il y a quelque chose de cassé quelque part, et donc un fichier de type `casse_mecanique` à retrouver.
+
+![[type_knowledge.png]]
+
+
+Le *type* devient un déclencheur d'inférence : il dit à l'[[agent]] quels autres bouts chercher, sans qu'aucun lien n'ait été explicitement écrit.
 
 Ensuite, ma partie préférée, et peut-être la plus intelligente de l'OKF. Elle concerne la manière de spécifier les liaisons entre les bouts de connaissance.
 
@@ -28,7 +39,25 @@ La phrase clé à retenir ici :
 
 La petite innovation (il me semble) est ici que l'OKF nous dit qu'il est préférable de ne pas *typer* les relations entre les bouts de connaissance mais plutôt de partir du principe que le texte qui entoure la relation déclarée **encapsule** la sémantique de la relation. 
 
-Jargonnerie, corrigeons. L'OKF dit : "laissez l'être humain ou l'[[agent]] comprendre par lui-même pourquoi le bout A est relié au bout B". 
+Jargonnerie, corrigeons. L'OKF dit : "laissez l'être humain ou l'[[agent]] comprendre par lui-même pourquoi le bout A est relié au bout B".
+
+```mermaid
+graph TB
+    subgraph CL["Approche classique — relations typées"]
+        direction LR
+        A1["A"] -->|"depends-on"| B1["B"]
+        A1 -->|"parent-of"| C1["C"]
+    end
+    subgraph OK["OKF — relations non typées"]
+        direction LR
+        A2["A"] --> B2["B"]
+        A2 --> C2["C"]
+        N["✏️ la <b>prose</b> autour du lien<br/>porte la sémantique"]
+    end
+    style CL fill:#fafafa,stroke:#bbb
+    style OK fill:#fffbe6,stroke:#e0b800
+    style N fill:none,stroke:none
+```
 
 ## Quelles sont les implications des choix de conception opérés par Google ? 
 
@@ -38,6 +67,16 @@ D'une certaine manière, on peut le voir comme un aveu de faiblesse ("ce standar
 
 Ainsi, on comprend la limite de l'OKF : s'il est très puissant pour documenter des choses **en train de se faire**, il est tout à fait **inefficient pour structure un domaine de connaissance**. Dans tout un tas de secteur, ça ne posera pas de problème, mais pour d'autres, ça en sera un. Dans tous les domaines qui sont dotés d'une forte tradition de structuration de leurs données (médecine, physique, finance, etc.), les relations entre bouts de connaissances sont déjà typés, définis. C'est dans ces domaines là que l'OKF est à mon sens la moins pertinent. 
 
-Mais pour tous les autres domaines, encore peu/pas structurés, l'OKF peut être une manière de mettre le pied à l'étrier et d'initier des réflexions autour de la structuration de domaines. 
+Mais pour tous les autres domaines, encore peu/pas structurés, l'OKF peut être une manière de mettre le pied à l'étrier et d'initier des réflexions autour de la structuration de domaines.
+
+```mermaid
+graph LR
+    OKF(("OKF"))
+    OKF --> F["✅ <b>flexibilité</b><br/>domaines émergents,<br/>choses en train de se faire"]
+    OKF --> L["⚠️ <b>rigueur faible</b><br/>domaines déjà structurés<br/>(médecine, physique, finance…)"]
+    style OKF fill:#fff4c2,stroke:#333,stroke-width:2px
+    style F fill:#e8f5e9,stroke:#2e7d32
+    style L fill:#ffebee,stroke:#c62828
+```
 
 A bon entendeur ! 
