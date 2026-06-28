@@ -41,24 +41,6 @@ La petite innovation (il me semble) est ici que l'OKF nous dit qu'il est préfé
 
 Jargonnerie, corrigeons. L'OKF dit : "laissez l'être humain ou l'[[agent]] comprendre par lui-même pourquoi le bout A est relié au bout B".
 
-```mermaid
-graph TB
-    subgraph CL["Approche classique — relations typées"]
-        direction LR
-        A1["A"] -->|"depends-on"| B1["B"]
-        A1 -->|"parent-of"| C1["C"]
-    end
-    subgraph OK["OKF — relations non typées"]
-        direction LR
-        A2["A"] --> B2["B"]
-        A2 --> C2["C"]
-        N["✏️ la <b>prose</b> autour du lien<br/>porte la sémantique"]
-    end
-    style CL fill:#fafafa,stroke:#bbb
-    style OK fill:#fffbe6,stroke:#e0b800
-    style N fill:none,stroke:none
-```
-
 ## Quelles sont les implications des choix de conception opérés par Google ? 
 
 A mon sens, l'implication centrale de l'OKF est que l'on laisse à l'[[agent]], au LLM ou au lecteur du bout de connaissance la liberté de se former son propre domaine de connaissance.
@@ -68,15 +50,6 @@ D'une certaine manière, on peut le voir comme un aveu de faiblesse ("ce standar
 Ainsi, on comprend la limite de l'OKF : s'il est très puissant pour documenter des choses **en train de se faire**, il est tout à fait **inefficient pour structure un domaine de connaissance**. Dans tout un tas de secteur, ça ne posera pas de problème, mais pour d'autres, ça en sera un. Dans tous les domaines qui sont dotés d'une forte tradition de structuration de leurs données (médecine, physique, finance, etc.), les relations entre bouts de connaissances sont déjà typés, définis. C'est dans ces domaines là que l'OKF est à mon sens la moins pertinent. 
 
 Mais pour tous les autres domaines, encore peu/pas structurés, l'OKF peut être une manière de mettre le pied à l'étrier et d'initier des réflexions autour de la structuration de domaines.
-
-```mermaid
-graph LR
-    OKF(("OKF"))
-    OKF --> F["✅ <b>flexibilité</b><br/>domaines émergents,<br/>choses en train de se faire"]
-    OKF --> L["⚠️ <b>rigueur faible</b><br/>domaines déjà structurés<br/>(médecine, physique, finance…)"]
-    style OKF fill:#fff4c2,stroke:#333,stroke-width:2px
-    style F fill:#e8f5e9,stroke:#2e7d32
-    style L fill:#ffebee,stroke:#c62828
-```
+![[sumup_okf.png]]
 
 A bon entendeur ! 
