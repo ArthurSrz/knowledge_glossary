@@ -13,39 +13,15 @@ Plus particulièrement à propos du *type* maintenant. A chaque bout de connaiss
 
 Par exemple : s'il existe un fichier est de type `variable`, l'[[agent]] saura très certainement qu'il y a un fichier de type `dataset` à aller chercher pour avoir une compréhension globale du jeu de données en question. Encore, mettons que le fichier soit de type `procedure_reparation`, l'[[agent]] saura très certainement inférer que s'il y a une réparation documentée, c'est qu'il y a quelque chose de cassé quelque part, et donc un fichier de type `casse_mecanique` par exemple. 
 
-Ensuite, ma partie préférée, et peut-être la plus intelligence de l'OKF concerne la manière de spécifier comme les bouts de connaissance peuvent lier entre eux. 
+Ensuite, ma partie préférée, et peut-être la plus intelligente de l'OKF concerne la manière de spécifier les liaisons entre les bouts de connaissance
 
-```
-## 5. Cross-linking
+![[linking_okf.png]]
 
-Concepts MAY link to other concepts using standard markdown links. Two forms are supported:
+La formule à retenir ici est celle-ci : 
 
-### 5.1 Absolute (bundle-relative) links
+> [!quote] 
+> A link from [[concept]] A to [[concept]] B asserts a _relationship_. The specific kind of relationship (parent/child, references, joins-with, depends-on, etc.) is conveyed by the surrounding prose, not by the link itself. Consumers that build a graph view typically treat all links as directed [[edges]] of an untyped relationship.
+> 
+> Consumers MUST tolerate broken links — a link whose [[target]] does not exist in the [[bundle]] is not malformed; it may simply represent not-yet-written [[knowledge]].
 
-[](https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md#51-absolute-bundle-relative-links)
-
-Begin with `/`, interpreted relative to the bundle root.
-
-```md
-See the [customers table](/tables/customers.md) for the join key.
-
-This is the **recommended** form because it is stable when documents are moved within their subdirectory.
-
-### 5.2 Relative links
-
-[](https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md#52-relative-links)
-
-Standard [[markdown]] relative paths.
-
-```md
-See the [neighboring concept](./other.md).
-```
-
-### 5.3 Link [[semantics]]
-
-[](https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md#53-link-semantics)
-
-A link from [[concept]] A to [[concept]] B asserts a _relationship_. The specific kind of relationship (parent/child, references, joins-with, depends-on, etc.) is conveyed by the surrounding prose, not by the link itself. Consumers that build a graph view typically treat all links as directed [[edges]] of an untyped relationship.
-
-Consumers MUST tolerate broken links — a link whose [[target]] does not exist in the [[bundle]] is not malformed; it may simply represent not-yet-written [[knowledge]].
-```
+La petite innovation (il me semble) est ici que l'OKF nous dit qu'il est préférable de ne pas *typer* les relations entre les bouts de connaissance mais plutôt de partir du principe que le texte qui entoure la relation déclarée **encapsule** la sémantique de l

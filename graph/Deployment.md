@@ -19,5 +19,5 @@ Breaks down into [[Deploy]] and [[Monitor]]
 - [[Inference pipeline]] - Production deployment
 - [[Model registry]] - Managing deployed models
 - [[Model versioning]] - Tracking model versions
-- [[Rollback capability]] - Deployment safety
+- [[rollback capability]] - Deployment safety
 - [[Shadow releasing]] - Safe deployment technique

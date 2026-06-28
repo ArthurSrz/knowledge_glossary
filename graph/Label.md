@@ -1,5 +1,5 @@
 ---
 subclass of:
-  - "[[Organizing principles]]"
+  - "[[organizing principles]]"
 upsell: "[[Taxonomy]]"
 ---

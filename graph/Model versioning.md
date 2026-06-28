@@ -6,4 +6,4 @@ Make sure we version :
 
 And the dependencies between them. 
 
-Ensures [[Rollback capability]]
+Ensures [[rollback capability]]

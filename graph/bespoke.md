@@ -3,7 +3,7 @@ wikidata entity id: Q16968978
 subclass of:
   - "[[Provenance]]"
 opposite of:
-  - "[[Boilerplate]]"
+  - "[[boilerplate]]"
 different from:
   - "[[Model contract]]"
 uses:
@@ -14,4 +14,4 @@ has characteristic:
 
 Made entirely to order for a specific transaction, without reference to a pre-existing template. Characterised by uniqueness and the exercise of genuine bargaining power between the parties.
 
-In M&A, bespoke clauses are typically those tied to deal economics: earn-out metrics, locked-box reference dates, specific carve-outs to MAC definitions, or unusual governance arrangements. Each is drafted to reflect facts unique to the target and the parties — unlike [[Boilerplate]], which is market-standard, or [[Model contract]], which starts from a template but remains negotiable.
+In M&A, bespoke clauses are typically those tied to deal economics: earn-out metrics, locked-box reference dates, specific carve-outs to MAC definitions, or unusual governance arrangements. Each is drafted to reflect facts unique to the target and the parties — unlike [[boilerplate]], which is market-standard, or [[Model contract]], which starts from a template but remains negotiable.
