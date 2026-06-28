@@ -1,0 +1,5 @@
+Language, which we use to convey [[knowledge]], builds things in our minds. Yet words themselves can't be the substance of our thoughts, and even less the substance of [[knowledge]]. They have no [[meaning]] by themselves. They need [[context]], a world to be surrounded by to gain value. In fact, we can say they're only special sorts of marks. If we're to understand how language works when used for [[knowledge]], when ingested by LLMs (!) we must discard the usual view that it denotes, represents ou designates. Rather, its function is **to control**. Each word makes various [[weights]] in LLMs' mind, and then various agents to change what others' LLMs [[weights]] or others agents do. 
+
+For if we want to understand how language works with LLMs, we must never forget that our thinking-in-words, and that the [[output]] of any LLMs **reveals only a fragment of the mind's activity**
+
+We often seem to think in words, and we think LLMs think if words. Yet, as we do this with no conscious sense of where and why those words originate, we don't know where and why LLMs react they way they do. Our inner monologues, and 
