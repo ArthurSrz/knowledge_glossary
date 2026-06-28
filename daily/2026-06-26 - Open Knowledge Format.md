@@ -24,4 +24,18 @@ La formule à retenir ici est celle-ci :
 > 
 > Consumers MUST tolerate broken links — a link whose [[target]] does not exist in the [[bundle]] is not malformed; it may simply represent not-yet-written [[knowledge]].
 
-La petite innovation (il me semble) est ici que l'OKF nous dit qu'il est préférable de ne pas *typer* les relations entre les bouts de connaissance mais plutôt de partir du principe que le texte qui entoure la relation déclarée **encapsule** la sémantique de l
+La petite innovation (il me semble) est ici que l'OKF nous dit qu'il est préférable de ne pas *typer* les relations entre les bouts de connaissance mais plutôt de partir du principe que le texte qui entoure la relation déclarée **encapsule** la sémantique de la relation. 
+
+Jargonnerie, corrigeons. L'OKF dit : "laissez l'être humain ou l'[[agent]] comprendre par lui-même pourquoi le bout A est relié au bout B". 
+
+Qu'est-ce que ce choix de conception implique ? 
+
+A mon sens, que l'on laisse à l'[[agent]], au LLM ou au lecteur du bout de connaissance la liberté de se former son propre domaine de connaissance à partir de ce qu'il comprend des relations entre eux. 
+
+D'une certaine manière, on peut le voir comme un aveu de faiblesse (ce standard n'est pas assez puissant pour structurer un domaine) ou encore simplement comme une décision de conception : ce format doit être flexible, et, à ce titre, ne s'engage pas sur la manière de lier les bouts de connaissance entre eux. 
+
+Et pourtant, en faisant ce choix, on comprend la limite de l'OKF : s'il est très puissant pour documenter des choses **en train de se faire**, il est tout à fait **inefficient pour structure un domaine de connaissance**. Dans tout un tas de secteur, c'est tout à fait pertinent, mais pour d'autres, ça ne l'est pas. Dans tous les domaines qui sont dotées d'une forte tradition de structuration de leurs données (médecine, physique, finance, etc.), les relations entre bouts de connaissances sont déjà typés, définis. C'est dans ces domaines là que l'OKF est à mon sens la moins pertinent. 
+
+Mais pour tous les autres domaines, encore peu/pas structurés, l'OKF peut être une manière de mettre le pied à l'étrier et d'initier des réflexions autour de la structuration de modèles. 
+
+A bon entendeur ! 
