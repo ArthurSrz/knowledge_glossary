@@ -9,7 +9,7 @@ subclass of:
   - "[[control]]"
 has characteristic:
   - "[[strategic management]]"
-  - "[[function]]"
+  - "[[spreadsheet]]"
   - "[[management style]]"
   - "[[management process]]"
   - "[[type of management]]"
