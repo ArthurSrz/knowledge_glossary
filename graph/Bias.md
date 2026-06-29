@@ -16,7 +16,7 @@ The intercept in a linear regression, the y when features are 0.
 - [[recall bias]] - Memory-related data bias
 - [[Fairness]] - Mitigating bias for fair outcomes
 - [[Fair AI]] - Ethical AI development
-- [[Class imbalance]] - Statistical bias issue
+- [[class imbalance]] - Statistical bias issue
 - [[Individual fairness]] - Fair treatment of individuals
 
 
