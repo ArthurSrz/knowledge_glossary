@@ -5,21 +5,18 @@ components: [Development, Evaluation, Testing, Deployment, Monitoring]
 category: Concepts Fondamentaux
 tags: [AgentOps, DevOps, MLOps, Production]
 ---
-
-# AgentOps
-
-**Définition** : Plateforme DevOps/MLOps de bout en bout englobant le développement, l'évaluation, les tests, le déploiement et la surveillance des systèmes agentiques pour la gestion opérationnelle des projets d'agents en environnement de production.
+Plateforme [[DevOps]]/MLOps de bout en bout englobant le développement, l'évaluation, les tests, le déploiement et la surveillance d'[[agentic system]] pour la gestion opérationnelle des projets d'agents en environnement de production.
 
 **Phases du cycle de vie** :
 - **Development** : Développement des agents
-- **Evaluation** : Évaluation des performances
+- **[[Evaluation]]** : Évaluation des performances
 - **Testing** : Tests et validation
-- **Deployment** : Déploiement en production
+- **[[Deployment]]** : Déploiement en production
 - **Monitoring** : Surveillance continue
 
 **Fonctionnalités principales** :
 - Gestion complète du cycle de vie des agents
-- Intégration DevOps/MLOps
+- Intégration [[DevOps]]/MLOps
 - Support de l'observabilité
 - Gestion des artefacts traçables
 

@@ -8,7 +8,7 @@ tags: [Identité_Agent, Versioning, Gestion_Agents]
 
 # [[Agent]] Identity
 
-**Définition** : Ensemble des identifiants uniques permettant de caractériser et gérer un [[agent]] de manière distinctive dans le système [[AgentOps]].
+**Définition** : Ensemble des identifiants uniques permettant de caractériser et gérer un [[agent]] de manière distinctive dans le système [[agentOps]].
 
 **Composants** :
 - **[[Agent]] ID** : Identifiant unique de l'[[agent]] dans le système

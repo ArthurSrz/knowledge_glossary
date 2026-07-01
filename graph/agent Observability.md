@@ -2,7 +2,7 @@
 related_to:
   - Observability 2.0
   - "[[Evaluate process]]"
-  - "[[AgentOps]]"
+  - "[[agentOps]]"
   - "[[Traceable Artifacts]]"
 dependencies:
   - Tracing

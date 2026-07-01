@@ -1,7 +1,7 @@
 ---
 related_to:
-  - "[[Agentic System]]"
-  - "[[AgentOps]]"
+  - "[[agentic system]]"
+  - "[[agentOps]]"
   - "[[agent Observability]]"
 dependencies:
   - "[[Large Language Model]]"
@@ -24,7 +24,7 @@ A [[concept]] that holds many definitions :
 
 #### Liens avec la taxonomie :
 - Base des systèmes agentiques
-- Élément central de la plateforme [[AgentOps]]
+- Élément central de la plateforme [[agentOps]]
 - Nécessite une observabilité complète pour la production
 
 #### Historical Development
