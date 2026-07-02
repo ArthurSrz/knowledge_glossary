@@ -1,8 +1,13 @@
 
 Today we're up to prove that [[knowledge]] drives efficiency. No, let's narrow this down : I'm up to prove that [[knowledge]] layers help reduce [[token]] consumption. Why would I want to prove that ? 
 
-First, because it is a common intuition that the more you know, the less you speak. Or, as we say in french : 
+First, because it is a common intuition that the more you know, the less you speak. Or, as we say in french about culture : 
 
 > [!quote]
-> La connaissance, c'est comme la confiture, moins tu en as, plus tu l'étales 
+> La culture, c'est comme la confiture, moins tu en as, plus tu l'étales. (*Culture is like jam: the less you have, the more you spread it.*)
+
+([[Token]] jam became quite expansive these days). Proving that [[knowledge]] layers help reduce [[token]] consumption then would confirm the popular saying and intuition. 
+
+Second, trying to prove that is a way to challenge my hypothesis that [[knowledge]] helps reduce natural semantic dispersion of [[Large Language Model]]. For it is reasonable enough to assume that t
+
 
