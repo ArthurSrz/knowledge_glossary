@@ -74,3 +74,7 @@ That's the easy part. I'll take 5 different harness (with their native LLM attac
 * [[Mistral Agents]] with Image [[Generation]] on. 
 * [[Claude]] in [[Power]] Point 
 
+There are 2 ways to [[measure]] : 
+* Number of tokens 
+* percentage of a usage [[session]] consumed 
+
