@@ -72,3 +72,9 @@ That's the easy part. I'll take 5 different harness (with their native LLM attac
 * [[Claude]] Cowork 
 * Google AI Studio
 * 
+
+***
+Cost [[management]] by collecting all usecases
+Easier to change between solution and have a reusable [[knowledge base]]
+Centralizing knwoledge in a [[model]] agnostic [[repository]], allowing you to switch and adapt quickly
+If reusable docs, we can reuse them
