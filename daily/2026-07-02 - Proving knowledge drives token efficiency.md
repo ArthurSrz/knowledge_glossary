@@ -20,6 +20,9 @@ Now, let's get down to the hard part : designing a simple and good enough experi
 
 ## Experiment [[design]] 
 
-The hardest part, is often to agree on an end state, [[meaning]] here : when do we consider it is no longer necessary to consume tokens to reach the desirable goal ? From there, we can [[test]] different solutions (some with, some others without [[knowledge]] layers, different types of [[knowledge]] layers and so on). But to get there, we must first agree on what a final solution looks like. 
+The hardest part is often to agree on an *end state*, [[meaning]] here : when do we consider it is no longer necessary to consume tokens to reach the desirable goal ? From there, we can [[test]] different solutions (some with, some others without [[knowledge]] layers, different types of [[knowledge]] layers and so on). But to get there, we must first agree on what a final solution looks like. 
 
-I'll go straight to the point : 
+Funny enough here, I advocate that a final solution is **one that looks like so much an original human-made solution that we can no longer distinguish which is which**. The idea is not mine, it is Turing's one. In other words, I advocate a final solution a solution that passes the [[Turing test]]. 
+
+S
+
