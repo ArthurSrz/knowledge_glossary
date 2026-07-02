@@ -70,5 +70,5 @@ All in all, the end state is reached once :
 
 That's the easy part. I'll take 5 different harness (with their native LLM attached) : 
 * [[Claude]] Cowork 
-* Copilot in [[Power]] Point 
+* Google AI Studio
 * 
