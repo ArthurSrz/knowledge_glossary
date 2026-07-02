@@ -1,5 +1,5 @@
 
-Today we're up to prove that [[knowledge]] drives efficiency. No, let's narrow this down : I'm up to prove that [[knowledge]] layers help reduce [[token]] consumption. Why would I want to prove that ? 
+Today we're up to prove that [[knowledge]] drives efficiency. No, let's narrow this down : I'm up to prove that [[knowledge]] layers help reduce [[token]] consumption **and saves users' time**. Why would I want to prove that ? 
 
 First, because it is a common intuition that the more you know, the less you speak. Or, as we say in french about culture : 
 
@@ -8,9 +8,9 @@ First, because it is a common intuition that the more you know, the less you spe
 
 ([[Token]] jam became quite expansive these days). Proving that [[knowledge]] layers help reduce [[token]] consumption then would confirm the popular saying and intuition. 
 
-Second, trying to prove that is a way to challenge my hypothesis that [[knowledge]] helps reduce natural semantic dispersion of [[Large Language Model]]. For it is reasonable enough to assume that the sparser the [[output]] of a [[Large Language Model]] (semantically speaking) the more iterations are required to reach a certain [[outcome]]. And the more iterations, the more tokens you consume. (I reckon here my predicate is that us, humans, are all looking for semantic [[precision]] when we prompt a LLM)
+Second, trying to prove that is a way to challenge my hypothesis that [[knowledge]] helps reduce natural semantic dispersion of [[Large Language Model]]. For it is reasonable enough to assume that the sparser the [[output]] of a [[Large Language Model]] (semantically speaking) the more iterations are required to reach a certain [[outcome]]. And the more iterations, the more tokens you consume. (I reckon here my predicate is that us, humans, are all looking for semantic [[precision]] when we prompt a LLM, to debate)
 
-Third, and most important I think, if [[knowledge]] does drive [[token]] efficiency, because it helps reach faster semantic deep and precise [[output]]s, that would confirm as [Alban Leveau-Vallier wrote](https://hyper.hypotheses.org/171) , that traveling inside a [[latent space]] is the right way to think about [[Generation]] 
+Third, and most important I think, if [[knowledge]] does drive [[token]] efficiency, because it helps reach faster semantic deep and precise [[output]]s, that would confirm as [Alban Leveau-Vallier wrote](https://hyper.hypotheses.org/171) , that traveling inside a [[latent space]] is the right way to think about [[Generation]].
 
 
 > [!summary] Interlude
@@ -59,5 +59,14 @@ In the slide above we see :
 > [!summary] Interlude
 > The chosen end state is a human-made slide, since a slide is simple yet demands both semantic and visual [[precision]]. Because the [[Turing test]] alone is too subjective, quality is measured with three metrics: a structure [[metric]] (how many structural elements match the original), a content [[metric]] (the [[distance]] between generated and original word sequences), and a visual [[metric]] (an LLM-as-judge comparing the two slides). The reference slide has 5 structure elements (1 title, 4 boxes), 10 word sequences, and a distinct visual [[design]] featuring a small title, generous spacing, and a clear color palette.
 
+All in all, the end state is reached once : 
 
+* The generated content passed the [[Turing test]] 
+* Perfect match of structure elements
+* [[Distance]] between content is near 0 
+* The LLM as a judge does not spot any visual difference
 
+### How will I [[measure]] [[token]] consumption ? 
+
+That's the easy part. I'll take 5 different harness (with their native LLM attached) : 
+* Google's No
