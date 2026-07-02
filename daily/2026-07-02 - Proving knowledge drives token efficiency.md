@@ -14,7 +14,7 @@ Third, and most important I think, if [[knowledge]] does drive [[token]] efficie
 
 
 > [!summary] Interlude
-> If we prove that [[knowledge]] drives [[token]] efficiency, it would echo the French saying that culture, like jam, gets spread thinner the less you have. The logic: semantically sparse LLM outputs need more iterations, and thus more tokens, to reach [[precision]]. Confirming this would also support Alban Leveau-Vallier's view of [[generation]] as travel through a [[latent space]] where [[knowledge]] is like a map that shows a faster [[path]] finder toward destination
+> If we prove that [[knowledge]] drives [[token]] efficiency, it would echo the French saying that culture, like jam, gets spread thinner the less you have. The logic: semantically sparse LLM outputs need more iterations, and thus more tokens, to reach [[precision]]. Confirming this would also support Alban Leveau-Vallier's view of [[generation]] as travel through a [[latent space]] where [[knowledge]] is like a map that shows a faster [[path]] toward destination
 
 Now, let's get down to the hard part : designing a simple and good enough experiment (which is the same, cf [[Occam's rasor]]). 
 
@@ -24,5 +24,13 @@ The hardest part is often to agree on an *end state*, [[meaning]] here : when do
 
 Funny enough here, I advocate that a final solution is **one that looks like so much an original human-made solution that we can no longer distinguish which is which**. The idea is not mine, it is Turing's one. In other words, I advocate a final solution a solution that passes the [[Turing test]]. 
 
-S
+So you know you should no longer consume [[token]] once the generated [[output]] looks like so much the original you can no longer distinguish which was produced and which was generated.
+
+Rephrasing the objective of the experiment to [[design]] here : 
+
+> Do [[knowledge]] layers help generated ouput pass the [[Turing test]] faster ? 
+
+
+
+
 
