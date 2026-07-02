@@ -69,12 +69,15 @@ All in all, the end state is reached once :
 ### How will I [[measure]] [[token]] consumption ? 
 
 That's the easy part. I'll take 5 different harness (with their native LLM attached) : 
-* [[Claude]] Cowork (with Sonnet 4.5)
+* [[Claude]] Cowork (with Sonnet 5)
 * Google AI Studio (with Gemini and Nano Banana 2)
 * [[Mistral Agents]] with Image [[Generation]] on. 
 * [[Claude]] in [[Power]] Point 
+* [[Clarifeye]] Tasks 
 
-There are 2 ways to [[measure]] : 
+And I'll [[measure]] 3 things : 
 * Number of tokens 
 * percentage of a usage [[session]] consumed 
+* Time spent on [[generation]] 
+
 
