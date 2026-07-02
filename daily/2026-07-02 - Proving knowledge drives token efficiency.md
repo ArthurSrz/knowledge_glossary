@@ -14,7 +14,7 @@ Third, and most important I think, if [[knowledge]] does drive [[token]] efficie
 
 
 > [!summary] Interlude
-> If we prove that [[knowledge]] drives [[token]] efficiency, it would echo the French saying that culture, like jam, gets spread thinner the less you have. The logic: semantically sparse LLM outputs need more iterations, and thus more tokens, to reach [[precision]]. Confirming this would also support Alban Leveau-Vallier's view of [[generation]] as travel through a [[latent space]] where [[knowledge]] is like a map that shows a faster [[path]] toward destination
+> If we prove that [[knowledge]] drives [[token]] efficiency, it would echo the French saying that culture, like jam, gets spread thinner the less you have. The logic: without [[knowledge]] semantically sparse LLM outputs need more iterations, and thus more tokens, to reach [[precision]]. Confirming this would also support Alban Leveau-Vallier's view of [[generation]] as travel through a [[latent space]] where [[knowledge]] is like a map that shows a faster [[path]] toward destination
 
 Now, let's get down to the hard part : designing a simple and good enough experiment (which is the same, cf [[Occam's rasor]]). 
 
@@ -30,7 +30,21 @@ Rephrasing the objective of the experiment to [[design]] here :
 
 > Do [[knowledge]] layers help generated ouput pass the [[Turing test]] faster ? 
 
+> [!summary] Interlude 
+> Designing the experiment first requires agreeing on an end state, i.e the point at which consuming more tokens is no longer necessary to reach the goal. The proposed criterion, borrowed from Turing, is indistinguishability: the [[output]] is done once it resembles a human-made original so closely that you can't tell which is which. This reframes the whole question as: do [[knowledge]] layers help generated [[output]] pass the [[Turing test]] faster?
 
+The simpler end state to agree on is a slide. Why a slide ? Because a slide is simple, and needs both semantic and visual [[precision]].
 
+So I'll take a slide crafted by humans (below) and this will be our end state. 
 
+![[good_visually.png]]
 
+### How will I [[measure]] the quality of the generated [[output]] ? 
+
+As I said, if the generated slide passes the Turing tests, then the end state was reached and we should stop consuming tokens. But Turing's [[test]] most certainly rely on subjectivity : some people will be confused, others will be wrong, others will spot AI intervention instantly. 
+
+So we need more than a [[Turing test]]. We need metrics. I propose 3 [[metric]] : 
+
+1. **Structure metric** : how many **structure elements** from the generated [[output]] match the original one ? 
+2. **Content [[metric]]** : what is the [[distance]] between the [[token]] sequence generated and the original word sequence ? 
+3. 
