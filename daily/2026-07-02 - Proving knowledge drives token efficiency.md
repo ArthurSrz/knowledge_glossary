@@ -69,4 +69,6 @@ All in all, the end state is reached once :
 ### How will I [[measure]] [[token]] consumption ? 
 
 That's the easy part. I'll take 5 different harness (with their native LLM attached) : 
-* Google's No
+* [[Claude]] Cowork 
+* Copilot in [[Power]] Point 
+* 
