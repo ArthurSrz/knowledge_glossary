@@ -69,12 +69,6 @@ All in all, the end state is reached once :
 ### How will I [[measure]] [[token]] consumption ? 
 
 That's the easy part. I'll take 5 different harness (with their native LLM attached) : 
-* [[Claude]] Cowork 
-* Google AI Studio
-* 
-
-***
-Cost [[management]] by collecting all usecases
-Easier to change between solution and have a reusable [[knowledge base]]
-Centralizing knwoledge in a [[model]] agnostic [[repository]], allowing you to switch and adapt quickly
-If reusable docs, we can reuse them
+* [[Claude]] Cowork (with Sonnet 4.5)
+* Google AI Studio (with Gemini and Nano Banana 2)
+* Mistral
