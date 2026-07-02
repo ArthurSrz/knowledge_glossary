@@ -45,6 +45,19 @@ As I said, if the generated slide passes the Turing tests, then the end state wa
 
 So we need more than a [[Turing test]]. We need metrics. I propose 3 [[metric]] : 
 
-1. **Structure metric** : how many **structure elements** from the generated [[output]] match the original one ? 
+1. **Structure [[metric]]** : how many **structure elements** from the generated [[output]] match the original one ? 
 2. **Content [[metric]]** : what is the [[distance]] between the [[token]] sequence generated and the original word sequence ? 
-3. 
+3. **Visual [[metric]]** : LLM as a judge [[metric]], where the [[model]] will say what are the [[differences]] between the generated and the original slide 
+
+([[confusion matrix]] ?)
+
+In the slide above we see : 
+* 5 structure elements (1 title and 4 boxes)
+* 10 word sequences 
+* 1 visual [[design]] with a relatively small title, lots of space inside the slide and distinguishable color palette
+
+> [!summary] Interlude
+> The chosen end state is a human-made slide, since a slide is simple yet demands both semantic and visual [[precision]]. Because the [[Turing test]] alone is too subjective, quality is measured with three metrics: a structure [[metric]] (how many structural elements match the original), a content [[metric]] (the [[distance]] between generated and original word sequences), and a visual [[metric]] (an LLM-as-judge comparing the two slides). The reference slide has 5 structure elements (1 title, 4 boxes), 10 word sequences, and a distinct visual [[design]] featuring a small title, generous spacing, and a clear color palette.
+
+
+
