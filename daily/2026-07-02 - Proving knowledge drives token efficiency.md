@@ -1,7 +1,7 @@
 
 Today we're up to prove that [[knowledge]] drives efficiency. No, let's narrow this down : I'm up to prove that [[knowledge]] layers help reduce [[token]] consumption **and saves users' time**. Why would I want to prove that ? 
 
-First, because it is a common intuition that the more you know, the less you speak. Or, as we say in french about culture : 
+First, because it is a common intuition that the more you know, the less you speak/generate. Or, as we say in french about culture : 
 
 > [!quote]
 > La culture, c'est comme la confiture, moins tu en as, plus tu l'étales. (*Culture is like jam: the less you have, the more you spread it.*)
