@@ -22,9 +22,9 @@ Now, let's get down to the hard part : designing a simple and good enough experi
 
 The hardest part is often to agree on an *end state*, [[meaning]] here : when do we consider it is no longer necessary to consume tokens to reach the desirable goal ? From there, we can [[test]] different solutions (some with, some others without [[knowledge]] layers, different types of [[knowledge]] layers and so on). But to get there, we must first agree on what a final solution looks like. 
 
-Funny enough here, I advocate that a final solution is **one that looks like so much an original human-made solution that we can no longer distinguish which is which**. The idea is not mine, it is Turing's one. In other words, I advocate a final solution a solution that passes the [[Turing test]]. 
+Funny enough here, I advocate that a final solution is **one that looks like so much an original human-made solution that we can no longer distinguish which is which**. The idea is not mine, it is Turing's. In other words, I advocate a final solution is a solution that passes the [[Turing test]]. 
 
-So you know you should no longer consume [[token]] once the generated [[output]] looks like so much the original you can no longer distinguish which was produced and which was generated.
+Said in other words, **you know you should no longer consume [[token]] once the generated [[output]] looks like so much the original you can no longer distinguish which was produced and which was generated.**
 
 Rephrasing the objective of the experiment to [[design]] here : 
 
@@ -82,3 +82,4 @@ And I'll [[measure]] 3 things :
 * Time spent on [[generation]] 
 
 
+#### 
