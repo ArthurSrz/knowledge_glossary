@@ -82,4 +82,6 @@ And I'll [[measure]] 3 things :
 * Time spent on [[generation]] 
 
 
-#### 
+##### Harness 1 : [[Claude Cowork]] 
+
+It took 64 minutes to get to a slide that might pass the [[Turing test]]. What is interesting here is that you reach a plateau after the 4th iteration, where each new prompt might get you further away from the [[target]]. Let's note that here we started by prompting, t
