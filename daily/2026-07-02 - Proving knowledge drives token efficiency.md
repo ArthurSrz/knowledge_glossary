@@ -84,7 +84,18 @@ And I'll [[measure]] 3 things :
 
 ##### Harness 1 : [[Claude Cowork]] 
 
-It took 64 minutes to get to a slide that might pass the [[Turing test]]. What is interesting here is that you [[reach]] a plateau after the 4th iteration, where each new prompt might get you further away from the [[target]]. Let's note that here we started by prompting, then adding file [[templates]] then we did some minor refinement. 
+It took 64 minutes to get to a slide that might pass the [[Turing test]]. It consumes 6% of my usage sessions.
 
-More details : 
+What is interesting here is that I [[reach]] a plateau after the 4th iteration, where each new prompt might get me further away from the [[target]]. Let's note that here I started by prompting, then adding file [[templates]] then I did some minor refinement. 
 
+More quantitative [[measure]] on what I mean by "*that might have pass the [[Turing test]]*" : 
+
+![[results-it1-convergence-experimentation.png]]
+
+* 4 identical sections out of 5 
+* content is 28% identical semantically speaking and 21,5% literally speaking
+* 2 major visual [[differences]] : title hierarchy and spacing. 
+
+
+
+##### Harness 2 : Google AI Studio
