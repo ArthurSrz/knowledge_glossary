@@ -1,0 +1,3 @@
+Exigez la noblesse, le caractère de majesté, la distinction, le caractère de pureté sévère peut-on lire dans le Larousse. Au-delà des usages routiniers de l'Intelligence Artificielle, exigez la noblesse. 
+
+Je crois profondément qu'il faut aspirer à la noblesse la plus exquise alors qu'il est aujourd'hui possible de tout produire, de tout générer d'un claquement de prompt. La noblesse, c'est à dire ici des projections fidèles et conformes à un savoir-faire, une identité et une unicité. Ne plus se contenter de ce qui a été *produit*, mais exigez que ceci ou cela ait été *créé*.  
