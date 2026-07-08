@@ -121,5 +121,15 @@ Now, about the quantitative [[measure]] :
 
 ![[clarifeye_tasks.pdf]]
 
+About the quantitative measures
+![[clarifeye_tasks.png]]
+
+Results mostly driven by the fact that the four cards were not recognized as one block, which biased the [[measure]].
 ##### [[Clarifeye]] (use mode + MCP)
+
+10 minutes and 2% of [[Claude]] usage window, 0 euros CCU. 
+
+![[clarifeye_mcp.pdf]]
+
+
 
