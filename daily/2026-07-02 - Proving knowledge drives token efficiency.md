@@ -149,3 +149,15 @@ We got an impressive core on the content driven by high semantic similarity
 > [!summary] Interlude 
 > This is the run where [[knowledge]] pays off. [[Claude]] plus [[Clarifeye]] in use mode (via MCP) reached the [[target]] in 10 minutes, on 2% of a usage window, at zero marginal cost—and the content jumped to 89% semantic similarity. Structure held, and the words finally converged on the original instead of drifting: the [[knowledge]] [[layer]], not more prompting, is what closed the gap.
 
+## What the numbers say 
+
+
+The experiment set out to [[test]] one claim: that [[knowledge]] layers help generated [[output]] pass the [[Turing test]] faster, with fewer tokens. **Across four harnesses, the [[pattern]] is clear.**
+
+Raw prompting ([[Claude Cowork]]) plateaus early : good structure, but content stalls at 28% and the run burns the most [[session]] budget for the weakest result. Adding image [[generation]] (Google AI Studio) roughly doubles content fidelity and sharpens the visuals, but overflows the [[token]] window. Throwing compute at the problem via [[Clarifeye]] build mode nails structure perfectly, yet at 2.2 million tokens and €12 it still leaves content at 15%, a proof that more tokens alone don't close the semantic gap.
+
+The [[knowledge]] [[layer]] does. [[Claude]] plus [[Clarifeye]] in use mode reached the [[target]] in 10 minutes, on 2% of a usage window, at zero marginal cost — and content fidelity jumped to 89%. Same [[model]] family, a fraction of the resources, and the one variable that changed was access to structured [[knowledge]].
+
+This is exactly what the opening hypothesis predicted: [[knowledge]] reduces the semantic dispersion of the [[model]]'s [[output]], so fewer iterations are needed to converge on a precise result  **and fewer iterations mean fewer tokens**. Culture, like jam, spreads thinner the less you have. Or in Leveau-Vallier's terms: if [[generation]] is travel through a [[latent space]], [[knowledge]] is the map that shows the shortest [[path]] to the destination. 
+
+The cheapest, fastest run wasn't the one with the most compute. In fact, it was the one that knew where it was going.
