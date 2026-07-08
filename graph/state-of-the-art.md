@@ -52,7 +52,7 @@ A true mathematical bijection requires a 1:1 mapping in both directions. In prac
 
 - **Expressiveness gaps**: features that exist in one platform but not the other
 - **Semantic gaps**: same concept, different behavior (e.g., [calculated fields in pivot tables](/pivots/calculated-fields.md))
-- **Silent coercion**: values that change without error (see [implicit type coercion](/formulas/compatibility.md))
+- **Silent coercion**: values that change without error (see [implicit type coercion](compatibility%201.md))
 - **Metadata loss**: settings that don't transfer (see [iterative calculation](/engine/differences.md))
 
 The audit's job is to **detect and report** these gaps, not eliminate them — some are fundamental to the platforms.

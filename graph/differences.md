@@ -39,7 +39,7 @@ A common [[pattern]]: an array formula where row N depends on row N-1 (e.g., cum
 
 ## Partial Column Ranges
 
-Google Sheets supports open-ended ranges like `A4:A`. See also [Formula Compatibility](/formulas/compatibility.md).
+Google Sheets supports open-ended ranges like `A4:A`. See also [Formula Compatibility](compatibility%201.md).
 
 | Expression | Google Sheets | [[Excel]] |
 |-----------|---------------|-------|

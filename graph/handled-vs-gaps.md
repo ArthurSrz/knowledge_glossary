@@ -63,7 +63,7 @@ instanceOf: "[[Excel vs. Gsheet problem]]"
 - [Sparklines](/formatting/conditional-formatting.md) (incompatible representations)
 
 ### Could be addressed (translation possible)
-- [Partial column ranges](/formulas/compatibility.md) → bounded range with heuristic max row
+- [Partial column ranges](compatibility%201.md) → bounded range with heuristic max row
 - [Iterative calculation](/engine/differences.md) → sync as workbook setting
 - [Checkboxes](/validation/rules.md) → [[data]] validation boolean
 - Icon sets → alternative conditional formatting
