@@ -98,7 +98,8 @@ More quantitative [[measure]] on what I mean by "*that might have pass the [[Tur
 * content is 28% identical semantically speaking and 21,5% literally speaking
 * 2 major visual [[differences]] : title hierarchy and spacing. 
 
-
+> [!summary] Interlude
+> Prompting alone gets you close on structure but stalls on everything else. After four iterations [[Claude Cowork]] hit a plateau—more [[prompts]] started pushing the slide away from the [[target]] rather than toward it. The result: sections mostly matched, but content overlap stayed low (28% semantic, 21.5% literal) and two visual gaps persisted in title hierarchy and spacing.
 
 ##### Harness 2 : Google AI Studio
 
@@ -114,7 +115,8 @@ Now, about the quantitative [[measure]] :
 * content is 47% identical semantically speaking and 38,5% literally speaking 
 * 1 major visual difference (letter spacing)
 
-
+> [!summary] Interlude
+> Adding image [[generation]] to the mix moved the needle. Google AI Studio got there in a third of the time, matched the structure exactly, and roughly doubled the content overlap (47% semantic, 38.5% literal), leaving just one visual gap in letter spacing. The catch: it blew past the [[token]] window mid-run and forced a [[model]] switch to finish.
 ##### [[Clarifeye]] (build mode + tasks)
 
 25 minutes and 12 euros later, consumed 2,2 million [[token]] in and 24k [[token]] out, 
@@ -123,8 +125,12 @@ Now, about the quantitative [[measure]] :
 
 About the quantitative measures
 ![[clarifeye_tasks.png]]
-All blocks match 
-##### [[Clarifeye]] (use mode + MCP)
+All blocks match.
+
+> [!summary] Interlude
+> [[Clarifeye]] in build mode nailed the structure completely (every block matched) but at a steep price: 25 minutes, 12 euros, and 2.2 million tokens in. Structure isn't the bottleneck anymore; content is. The score plateaus not because the layout is wrong, but because the words still drift from the original (15% semantic overlap), which is exactly where [[knowledge]] should start earning its keep.
+
+##### [[Claude]] + [[Clarifeye]] (use mode + MCP)
 
 10 minutes and 2% of [[Claude]] usage window, 0 euros CCU. 
 
@@ -139,3 +145,7 @@ About the quantitative measures :
 We got an impressive core on the content driven by high semantic similarity 
 
 ![[details_clarifeye_MCP.png]]
+
+> [!summary] Interlude 
+> This is the run where [[knowledge]] pays off. [[Claude]] plus [[Clarifeye]] in use mode (via MCP) reached the [[target]] in 10 minutes, on 2% of a usage window, at zero marginal cost—and the content jumped to 89% semantic similarity. Structure held, and the words finally converged on the original instead of drifting: the [[knowledge]] [[layer]], not more prompting, is what closed the gap.
+
