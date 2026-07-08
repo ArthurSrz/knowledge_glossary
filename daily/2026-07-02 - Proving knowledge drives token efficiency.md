@@ -113,3 +113,6 @@ Now, about the quantitative [[measure]] :
 * Structure is exactly the same 
 * content is 47% identical semantically speaking and 38,5% literally speaking 
 * 1 major visual difference (letter spacing)
+
+
+##### [[Clarifeye]] (build mode)
