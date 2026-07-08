@@ -119,12 +119,11 @@ Now, about the quantitative [[measure]] :
 
 25 minutes and 12 euros later, consumed 2,2 million [[token]] in and 24k [[token]] out, 
 
-![[clarifeye_tasks.pdf]]
+![[clarifeye_tasks_png.png]]
 
 About the quantitative measures
 ![[clarifeye_tasks.png]]
-
-Results mostly driven by the fact that the four cards were not recognized as one block, which biased the [[measure]].
+All blocks match 
 ##### [[Clarifeye]] (use mode + MCP)
 
 10 minutes and 2% of [[Claude]] usage window, 0 euros CCU. 
