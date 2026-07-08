@@ -99,3 +99,5 @@ More quantitative [[measure]] on what I mean by "*that might have pass the [[Tur
 
 
 ##### Harness 2 : Google AI Studio
+
+It took 20 minutes to get to a slide that might pass the Turing Tests. It consumed 21k tokens costing 0,5€
