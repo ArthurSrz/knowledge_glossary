@@ -117,4 +117,9 @@ Now, about the quantitative [[measure]] :
 
 ##### [[Clarifeye]] (build mode + tasks)
 
-25 minutes and 12 euros later, consumed 2,2
+25 minutes and 12 euros later, consumed 2,2 million [[token]] in and 24k [[token]] out, 
+
+![[clarifeye_tasks.pdf]]
+
+##### [[Clarifeye]] (use mode + MCP)
+
