@@ -115,4 +115,6 @@ Now, about the quantitative [[measure]] :
 * 1 major visual difference (letter spacing)
 
 
-##### [[Clarifeye]] (build mode)
+##### [[Clarifeye]] (build mode + tasks)
+
+25 minutes and 12 euros later, consumed 2,2
