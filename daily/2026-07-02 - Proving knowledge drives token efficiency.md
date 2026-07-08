@@ -86,6 +86,8 @@ And I'll [[measure]] 3 things :
 
 It took 64 minutes to get to a slide that might pass the [[Turing test]]. It consumes 6% of my usage sessions.
 
+![[claude-slides.pdf]]
+
 What is interesting here is that I [[reach]] a plateau after the 4th iteration, where each new prompt might get me further away from the [[target]]. Let's note that here I started by prompting, then adding file [[templates]] then I did some minor refinement. 
 
 More quantitative [[measure]] on what I mean by "*that might have pass the [[Turing test]]*" : 
@@ -101,6 +103,7 @@ More quantitative [[measure]] on what I mean by "*that might have pass the [[Tur
 ##### Harness 2 : Google AI Studio
 
 It took 20 minutes to get to a slide that might pass the Turing Tests. It consumed 21k tokens costing 0,5€ with Nano Banana 2. 
+![[slide_gemini.jpg]]
 
 Interesting : it exceed the [[token]] window and I had to switch to another [[model]]. 
 
