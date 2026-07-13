@@ -27,7 +27,7 @@ Dans le 16ème numéro de [[la Société de connaissance]], je généralise ce f
 
 Depuis le dernier numéro de [[la Société de connaissance]], j'avais posé plusieurs options pour expliquer la relation entre la réduction de la dispersion sémantique et l'activation d'autres circuits de neurones. J'avais fait ce travail en pensant que la réponse se trouverait ailleurs ; que j'aurai besoin de faire appel à d'autres compétences et connaissances, encore à acquérir. 
 
-Bien m'en a pris, j'ai préféré reprendre les numéros précédents de [[La Société de Connaissance]], avec en tête de privilégier la cohérence à la couverture et m'éloigner de la route dangereuse mais si attirante de la complétude ([[completeness]]). J'y ai trouvé plus de matière que je ne l'aurai espéré. J'avais déjà posé une hypothèse que les dernières avancées de [[la Société de Connaissance]] corrobore et qui n'est pas dans la liste établie hier. 
+Bien m'en a pris, j'ai préféré reprendre les numéros précédents de [[La Société de Connaissance]], avec en tête de privilégier la cohérence à la couverture et m'éloigner de la route dangereuse mais si attirante de la complétude ([[completeness]]). J'y ai trouvé plus de matière que je ne l'aurai espéré. En effet, j'avais déjà posé une hypothèse que les dernières avancées de [[la Société de Connaissance]] corrobore et qui n'est pas dans ma liste initiale. 
  
 D'une formule : 
 
@@ -41,38 +41,22 @@ Regardons dans la tête d'un LLM qui s'est vu injecter un [[knowledge]] [[layer]
 
 ![[KL_no_KL.png]]
 
-Pour les LLM avec un [[knowledge]] [[layer]], chaque [[token]] généré active plus de neurones liés à la connaissance que de neurones liés aux [[token]]s nouvellement générés. Pour le LLM sans [[knowledge]] [[layer]], c'est l'inverse, le modèle active plus de neurones en lien avec le [[token]] généré que de neurones en lien avec le prompt (qui fait ici office de contexte). 
+Pour les LLM avec un [[knowledge]] [[layer]] (en orange, image de droite), chaque [[token]] généré active plus de neurones liés à la connaissance que de neurones liés aux [[token]]s nouvellement générés. Pour le LLM sans [[knowledge]] [[layer]] (noir, image de gauche), c'est l'inverse, le modèle active plus de neurones en lien avec le [[token]] généré que de neurones en lien avec le prompt (qui fait ici office de contexte). 
 
-De cette observation néé cette hypothèse très séduisante : le [[knowledge]] [[layer]] laisse des traces si importantes dans la tête du modèles qu'elles sont plus sollicitées que les traces plus fraiches laissées par la prompt. On peut dire que le LLM fait de la connaissance un héritage dans lequel il puise pour générer les tokens. Or, comme Zola l'écrivait : 
+De cette observation néé cette hypothèse très séduisante : le [[knowledge]] [[layer]] laisse des traces si importantes dans la tête du modèles qu'elles sont plus sollicitées que les traces plus fraiches laissées par la prompt. On peut dire que le LLM fait de la connaissance un héritage dans lequel il puise pour générer les tokens.
+
+Zola écrivait à ce propos que : 
 
 > [!quote] 
 > "L'hérédité a ses lois, comme la pesanteur "
 
+Et si l'hérédité a ses lois, cela veut dire que mon hypothèse est testable. 
 
-***
+Deux manières simples de faire le [[test]] de l'hypothèse ici : 
+1. regarder si un héritage plus profond amène un LLM à moins dépendre du [[token]] précédent pour générer le [[token]] suivant. 
+2. Regarder si en répétant le même prompts, les réponses du LLM fin
 
 
-
-
-
-
-## La connaissance faite héritage
-
-Regardons dans la tête d'un LLM qui s'est vu injecter un [[knowledge]] [[layer]] et un prompt puis regardons dans la tête d'un LLM qui n'a vu que le [[AI prompt]] (ci-dessous)
-
-![[KL_no_KL.png]]
-
-Pour les LLM avec un [[knowledge]] [[layer]], chaque [[token]] généré active plus de neurones liés à la connaissance que de neurones liés aux [[token]]s nouvellement générés. Pour le LLM sans [[knowledge]] [[layer]], c'est l'inverse, le modèle active plus de neurones en lien avec le [[token]] généré que de neurones en lien avec le prompt (qui fait ici office de contexte).
-
-L'image donne la mesure : la _serial dominance_ (part du [[token]] précédent dans la prédiction suivante) chute de 5 à 3 avec le [[knowledge]] [[layer]], pendant que les clusters d'activation passent de 44 à 84 et les étapes de génération de 6 à 3. Avec [[layer]], le modèle s'appuie moins sur ce qu'il vient de dire et plus sur ce qu'il sait.
-
-De cette observation néé cette hypothèse très séduisante : le [[knowledge]] [[layer]] laisse des traces si importantes dans la tête du modèles qu'elles sont plus sollicitées que les traces plus fraiches laissées par la prompt. On peut dire que le LLM fait de la connaissance un héritage dans lequel il puise pour générer les tokens. « Héritage » n'est d'ailleurs pas une métaphore : la [[knowledge]] est de la [[memory]], et puiser dans des traces déposées antérieurement, c'est très exactement ce que fait une mémoire.
-
-On reconnaît Newton. Toute nouvelle connaissance s'appuie sur du déjà-déposé plus qu'elle n'invente ; un LLM doté d'un [[knowledge]] [[layer]] sollicite davantage les traces de la connaissance que celles de ses propres [[token]]s ; le [[knowledge]] [[layer]] est au modèle ce que les géants furent à Newton, c'est à dire un point d'appui d'où l'on voit plus loin. 
-
-Et comme tout héritage, il permet d'expliquer, de délimiter les bornes au sein desquelles un élément nouveau, encore non-observé, atterrira avec une quasi-certitude. Zola écrivait à ce propos, mais en parlant des sociétés humaines :
-
-> [!quote] "L'hérédité a ses lois, comme la pesanteur (et) je tâcherai de trouver et de suivre, en résolvant la double question des tempéraments et des milieux, le fil qui conduit **mathématiquement** d'un homme à un autre homme"
 
 Si l'hérédité a ses lois, elles sont testables. Plus l'héritage est profond, moins le modèle devrait dépendre du [[token]] précédent : la _serial dominance_ doit chuter à mesure que le [[knowledge]] [[layer]] s'enrichit. Si c'est bien la profondeur des traces qui compte, et non leur source, un prompt assez répété devrait finir par mimer un [[layer]] — et s'il n'y parvient jamais, c'est que la différence est de nature et non de degré, et l'hypothèse tombe. Enfin, si l'héritage délimite les bornes où atterrit le nouveau, le champ sémantique des tokens devrait pouvoir se lire _avant_ génération, dans le seul [[layer]] : le fil qui conduit mathématiquement d'un [[token]] à un autre [[token]]. Les métriques de [[2026-07-02 - Proving knowledge drives token efficiency]] en donnent déjà un premier point — 89% de similarité sémantique avec [[layer]], 28% sans : moins de dispersion, moins d'itérations, moins de [[token]]s.
 
