@@ -1,5 +1,5 @@
 ---
-sameAs: The Society of Knowledge
+sameAs: "[[The Society of Knowledge]]"
 aliases:
   - TSOW
   - LSCO
