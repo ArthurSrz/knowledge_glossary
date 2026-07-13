@@ -53,13 +53,7 @@ Zola écrivait à ce propos que :
 Et si l'hérédité a ses lois, cela veut dire que mon hypothèse est testable. 
 
 Deux manières simples de faire le [[test]] de l'hypothèse ici : 
-1. regarder si un héritage plus profond amène un LLM à moins dépendre du [[token]] précédent pour générer le [[token]] suivant. 
-2. Regarder si en répétant le même prompts, les réponses du LLM fin
+1. regarder si un héritage plus profond amène un LLM à moins dépendre du [[token]] précédent pour générer le [[token]] suivant. Si c'est le cas, l'hypothèse tient, sinon elle tombe.
+2. Regarder si en répétant le même [[AI prompt]], les réponses du LLM finissent par reconstituer l'héritage (le contexte). Si c'est le cas, l'hypothèse tient, sinon elle tombe. 
 
-
-
-Si l'hérédité a ses lois, elles sont testables. Plus l'héritage est profond, moins le modèle devrait dépendre du [[token]] précédent : la _serial dominance_ doit chuter à mesure que le [[knowledge]] [[layer]] s'enrichit. Si c'est bien la profondeur des traces qui compte, et non leur source, un prompt assez répété devrait finir par mimer un [[layer]] — et s'il n'y parvient jamais, c'est que la différence est de nature et non de degré, et l'hypothèse tombe. Enfin, si l'héritage délimite les bornes où atterrit le nouveau, le champ sémantique des tokens devrait pouvoir se lire _avant_ génération, dans le seul [[layer]] : le fil qui conduit mathématiquement d'un [[token]] à un autre [[token]]. Les métriques de [[2026-07-02 - Proving knowledge drives token efficiency]] en donnent déjà un premier point — 89% de similarité sémantique avec [[layer]], 28% sans : moins de dispersion, moins d'itérations, moins de [[token]]s.
-
-## La boucle se ferme
-
-Relisons GW150914 avec ces lunettes. La théorie d'Einstein est le [[knowledge]] [[layer]] de la physique ; le pépiement entendu par Marco Drago est le [[token]] nouveau qui atterrit exactement dans les bornes délimitées par l'héritage, cent ans plus tard, avec la quasi-certitude que prédisait Zola. La découverte n'a pas dispersé le champ sémantique de la physique — elle a confirmé qu'un héritage assez profond rend le nouveau prévisible. Sur les épaules des géants, on ne voit pas ailleurs : on voit plus loin, dans la direction que les géants regardaient déjà.
+La suite au prochain épisode ? 
