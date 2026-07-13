@@ -2,7 +2,7 @@ Si vous ouvrez Google scholar, moteur de recherche scientifique du géant améri
 
 Pourquoi le géant américain a-t-il choisi un tel slogan ? Quelle est son origine et que nous dit-il de la connaissance ? 
 
-Plusieurs origines de cette expression sont reconnues mais je m'intéresserai ici à la plus célèbre. La scène a lieu en 1675, au cours d'un échange épistolaire entre deux scientifiques dont l'un porte un nom familier : Sir Isaac Newton. Par lettre interposée, les deux érudits s'échaudent à propos de leur contribution à la découverte et compréhension de l'*ether*, matière que l'on pensait être constitutive de la plupart des milieux, et notamment à l'origine du mouvement de la lumière. L'un et l'autre pointe leurs imprécisions respectives, note les incohérences dans les écrits, revandique la primeur d'une idée, etc.. Un débat somme toute très scientifique ! 
+Plusieurs origines de cette expression sont reconnues mais je m'intéresserai ici à la plus célèbre. d'entre elles. La scène a lieu en 1675, au cours d'un échange épistolaire entre deux scientifiques dont l'un porte un nom familier : Sir Isaac Newton. Par lettre interposée, les deux érudits s'échaudent à propos de leur contribution à la découverte et compréhension de l'*ether*, matière que l'on pensait être constitutive de la plupart des milieux, et notamment à l'origine du mouvement de la lumière. L'un et l'autre pointe leurs imprécisions respectives, note les incohérences dans les écrits, revandique la primeur d'une idée, etc.. Un débat somme toute très scientifique ! 
 
 Puis Sir Isaac Newton a cette formule, restée célèbre (dans la langue originale) : 
 
@@ -15,10 +15,13 @@ Puis Sir Isaac Newton a cette formule, restée célèbre (dans la langue origina
 Il a voulu dire que toute découverte ou avancée scientifique ou plus généralement de la connaissance n'a jamais lieu dans un sens unique. Qu'une connaissance se construit vers l'avant tout en regardant en arrière. Que chaque nouvelle connaissance révèle du déjà connu, du déjà dit ou déjà écrit. 
 
 Le chercheur Marco Drago vous en parlerait mieux que moi. Ce chercheur italien était assis devant son écran du LIGO (un observateur d'onde gravitationnelle), quand il entendit un "pépiement" d'à peine 0,2 secondes, un tout petit bruit qui
-signifiait que la première onde gravitationnelle venait d'être intercepté, et avec lui l'existence de ce "bruit de fond" de l'univers était confirmée. 
+signifiait que la première onde gravitationnelle venait d'être intercepté, et avec lui, que l'existence de ce "bruit de fond" de l'univers était confirmée. 
 
-Seulement confirmée ? Oui, car cette observation (au doux nom de GW150914) était en fait un super-*flashback*. Retour presque 100 ans en arrière vers les travaux d'une prédiction de 1916 d'un certain Albert Einstein, 
+Seulement confirmée ? Oui, car cette observation (au doux nom de GW150914) était en fait un super-*flashback*. Retour presque 100 ans en arrière vers les travaux d'un certain Albert Einstein qui avait conclu à l'existence des ondes gravitationnelles en suivant sa théorie de la relativité générale. 
 
+GW150914 est un exemple de grande avancée qui est en même temps un grand retour en arrière. Qu'on le veuille ou non, ce sont sur les épaules des géants que se font les plus belles découvertes. 
+
+Dans le 16ème numéro de [[la Société de connaissance]], je généralise 
 
 Suite des notes prises hier ([[2026-07-12]]). J'avais posé plusieurs options pour expliquer la relation entre la réduction de la dispersion sémantique et l'activation d'autres circuits de neurones. J'avais fait ce choix en pensant que la réponse se trouverait ailleurs ; que j'aurai besoin de faire appel à d'autres compétences et connaissances, encore à acquérir. 
 
