@@ -10,6 +10,7 @@ tags:
   - AI_Agents
   - Autonomie
   - LLM
+type: skos:Concept
 ---
 A [[concept]] that holds many definitions : 
 
