@@ -4,7 +4,7 @@ connector: "[[SSH Key]]"
 commands:
   - "[[Stash]]"
   - "[[alias]]"
-  - "[[Commit amend]]"
+  - "[[commit amend]]"
   - "[[commit]]"
   - "[[add]]"
   - "[[Log]]"

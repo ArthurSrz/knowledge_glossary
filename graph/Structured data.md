@@ -16,7 +16,7 @@ oppositeOf:
 - [[Pandas]] - Library for structured [[data]]
 - [[SQL database]] - Stores structured [[data]]
 - [[DataFormatter]] - Formats structured [[data]]
-- [[Cross-tabulation]] - Analyzes structured [[data]]
+- [[cross-tabulation]] - Analyzes structured [[data]]
 - [[Label encoding]] - Encoding categorical [[data]]
 - [[One-hot encoding]] - Alternative encoding method
 - [[Data preparation]] - Preparing structured [[data]]
