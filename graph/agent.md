@@ -5,13 +5,13 @@ related_to:
   - "[[agent Observability]]"
 dependencies:
   - "[[Large Language Model]]"
-category: Concepts Fondamentaux
 tags:
   - AI_Agents
   - Autonomie
   - LLM
 type: skos:Concept
-skos:narrower:
+skos:narrower: "[[agent harness]]"
+skob:broader:
 ---
 A [[concept]] that holds many definitions : 
 
