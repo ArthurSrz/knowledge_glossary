@@ -11,6 +11,7 @@ tags:
   - Autonomie
   - LLM
 type: skos:Concept
+skos:narrower:
 ---
 A [[concept]] that holds many definitions : 
 
