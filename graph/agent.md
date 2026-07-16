@@ -11,7 +11,7 @@ tags:
   - LLM
 type: skos:Concept
 skos:narrower: "[[agent harness]]"
-skob:broader:
+skos:broader:
 ---
 A [[concept]] that holds many definitions : 
 

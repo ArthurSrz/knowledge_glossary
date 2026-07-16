@@ -1,1 +1,6 @@
-For machine learning we need both historical and real-time data on which we can apply our predictions. 
+---
+skos:narrower:
+skos:broader: "[[Data]]"
+---
+
+For [[machine learning]] we need both historical and real-time [[data]] on which we can apply our predictions. 

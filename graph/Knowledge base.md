@@ -9,4 +9,5 @@ subclassOf:
   - "[[graph/database]]"
   - "[[documentation]]"
 hasPart(s): "[[graph/knowledge]]"
+skos:broader: "[[knowledge]]"
 ---
