@@ -11,6 +11,11 @@ Je ne m’étendrai pas ici sur les moyens de développer ces chaînes d’activ
 
 Conduire un modèle de langage se distingue de toute technique de [[Retrieval Augmented Generation]] ou d'ingénierie de contexte. Il s'agit de littéralement influer sur ce qui se trouve **à l'intérieur du modèle** pour le mener avec une quasi-certitude d'un point A à un point B. Un RAG ou toute ingénierie de contexte influe sur ce qui se passe **à l'extérieur du modèle**, c'est-à-dire au niveau de la complétion. 
 
-Alors, comment est-ce qu'on conduit un LLM ? 
+Alors, comment est-ce qu'on conduit un LLM ?
 
-Je vais prendre ici comme cadre de démonstration un prompt très simple, choisi parce qu'il va permettre de vérifier facilement si quand "je tourne les roues du modèle", il change bien de "direction" (beauco)
+Je vais prendre ici comme cadre de démonstration un prompt très simple, choisi parce qu'il va permettre de vérifier facilement si quand "je tourne les roues du modèle", il change bien de "direction" (le langage choisi ici est bien évidemment illustratif) : 
+
+> [!example] Prompt 
+> A round square is made of
+
+Le prompt comporte deux éléments contradictoires : un carré et un rond. Si mes hypothèses ont du sens, je vais pouvoir trouver dans la chaine d'activation du langage des neurones relatifs au rond et des neurones relatifs au carré. Et si je peux effectivement conduire le modèle, je devrai pouvoir stimuler ou inhiber les parties relatives au carré ou au cercle
