@@ -1,3 +1,3 @@
 ---
-featureOf: "[[comet]]"
+featureOf: "[[Comet]]"
 ---
