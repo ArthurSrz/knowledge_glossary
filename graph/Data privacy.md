@@ -19,7 +19,7 @@ governedBy: "[[Data governance]]"
 Right of users to have control over how their information is collected, used and shares. 
 
 There are several ways to ensure privacy in [[ML system]] : 
-* [[Compliant privacy policy]]
+* [[compliant privacy policy]]
 * [[Privacy by design]]
 * [[Technological privacy]]
 
@@ -35,6 +35,6 @@ There are several ways to ensure privacy in [[ML system]] :
 - [[Sensitive Information]] - Types of protected data
 - [[Rights of Individuals]] - Data subject rights
 - [[Management of PII]] - Handling personally identifiable information
-- [[Compliant privacy policy]] - Creating compliant policies
+- [[compliant privacy policy]] - Creating compliant policies
 
 
