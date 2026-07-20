@@ -18,11 +18,12 @@ tags:
   - Observabilité
   - Traçabilité
   - Surveillance
+skos:broader: "[[agent]]"
 ---
 
-# Agent Observability
+# [[Agent]] Observability
 
-**Définition** : Visibilité complète dans l'ensemble du processus de production en traçant chaque étape de la chaîne d'événements. Doit être intégrée dans la plateforme AgentOps dès le début pour supporter la fiabilité du système d'agents.
+**Définition** : Visibilité complète dans l'ensemble du processus de production en traçant chaque étape de la chaîne d'événements. Doit être intégrée dans la plateforme [[AgentOps]] dès le début pour supporter la fiabilité du système d'agents.
 
 **Principes clés** :
 - **Visibilité complète** : Transparence sur tous les processus
@@ -42,7 +43,7 @@ tags:
 - Détection proactive des problèmes
 - Amélioration continue du système
 
-**Relation avec AgentOps** :
+**Relation avec [[AgentOps]]** :
 - Composant fondamental de la plateforme
 - Enabler de la production fiable
 - Base pour le monitoring et l'amélioration
