@@ -22,4 +22,5 @@ has characteristic: "[[metadata scheme]]"
 part of: "[[metainformation system]]"
 image: http://commons.wikimedia.org/wiki/Special:FilePath/Libopus%201.5.2%20screenshot.webp
 wikidata entity id: Q180160
+broader: "[[data]]"
 ---

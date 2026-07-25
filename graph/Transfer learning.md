@@ -14,6 +14,7 @@ usedIn:
 benefitFrom: "[[Pre-trained models]]"
 reducesNeedFor: "[[Large datasets]]"
 accelerates: "[[Model training]]"
+broader: "[[Deep learning]]"
 ---
 
 # Transfer Learning

@@ -85,7 +85,7 @@ And I'll [[measure]] 3 things :
 * Time spent on [[generation]] 
 
 
-##### Harness 1 : [[Claude Cowork]] 
+##### Harness 1 : [[claude cowork]] 
 
 It took 64 minutes to get to a slide that might pass the [[turing test]]. It consumes 6% of my usage sessions.
 
@@ -102,7 +102,7 @@ More quantitative [[measure]] on what I mean by "*that might have pass the [[tur
 * 2 major visual [[differences]] : title hierarchy and spacing. 
 
 > [!summary] Interlude
-> Prompting alone gets you close on structure but stalls on everything else. After four iterations [[Claude Cowork]] hit a plateau—more [[prompts]] started pushing the slide away from the [[target]] rather than toward it. The result: sections mostly matched, but content overlap stayed low (28% semantic, 21.5% literal) and two visual gaps persisted in title hierarchy and spacing.
+> Prompting alone gets you close on structure but stalls on everything else. After four iterations [[claude cowork]] hit a plateau—more [[prompts]] started pushing the slide away from the [[target]] rather than toward it. The result: sections mostly matched, but content overlap stayed low (28% semantic, 21.5% literal) and two visual gaps persisted in title hierarchy and spacing.
 
 ##### Harness 2 : Google AI Studio
 
@@ -157,7 +157,7 @@ We got an impressive core on the content driven by high semantic similarity
 
 The experiment set out to [[test]] one claim: that [[knowledge]] layers help generated [[output]] pass the [[turing test]] faster, with fewer tokens. **Across four harnesses, the [[pattern]] is clear.**
 
-Raw prompting ([[Claude Cowork]]) plateaus early : good structure, but content stalls at 28% and the run burns the most [[session]] budget for the weakest result. Adding image [[generation]] (Google AI Studio) roughly doubles content fidelity and sharpens the visuals, but overflows the [[token]] window. Throwing compute at the problem via [[clarifeye]] build mode nails structure perfectly, yet at 2.2 million tokens and €12 it still leaves content at 15%, a proof that more tokens alone don't close the semantic gap.
+Raw prompting ([[claude cowork]]) plateaus early : good structure, but content stalls at 28% and the run burns the most [[session]] budget for the weakest result. Adding image [[generation]] (Google AI Studio) roughly doubles content fidelity and sharpens the visuals, but overflows the [[token]] window. Throwing compute at the problem via [[clarifeye]] build mode nails structure perfectly, yet at 2.2 million tokens and €12 it still leaves content at 15%, a proof that more tokens alone don't close the semantic gap.
 
 The [[knowledge]] [[layer]] does. [[Claude]] plus [[clarifeye]] in use mode reached the [[target]] in 10 minutes, on 2% of a usage window, at zero marginal cost — and content fidelity jumped to 89%. Same [[model]] family, a fraction of the resources, and the one variable that changed was access to structured [[knowledge]].
 

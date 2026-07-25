@@ -1,1 +1,1 @@
-[[Claude code]] file in charge of your [[Terminal]] settings 
+[[claude code]] file in charge of your [[Terminal]] settings 

@@ -1,5 +1,6 @@
 ---
 TypeOf: "[[Mark-up language]]"
+broader: "[[Mark-up language]]"
 ---
 A mark-up language, described as follows by its creator : 
 

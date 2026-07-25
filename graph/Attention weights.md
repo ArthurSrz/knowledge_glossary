@@ -5,6 +5,7 @@ goesOnInside: "[[Large Language Model]]"
 usedIn: ["[[Transformers]]", "[[Self-attention]]", "[[Multi-head attention]]"]
 computedBy: "[[Softmax function]]"
 relatedTo: ["[[Query-Key-Value]]", "[[Scaled dot-product attention]]"]
+broader: "[[Transformers]]"
 ---
 
 # Attention Weights

@@ -1,3 +1,6 @@
+---
+broader: "[[Graph theory]]"
+---
 # Network Graph
 
 ## Definition

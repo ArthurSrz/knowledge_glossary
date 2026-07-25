@@ -15,6 +15,7 @@ applications:
   - "[[data visualization]]"
   - "[[Noise reduction]]"
   - "[[Data compression]]"
+broader: "[[feature selection]]"
 ---
 
 # Principal Component Analysis (PCA)

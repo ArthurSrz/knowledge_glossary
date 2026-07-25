@@ -35,7 +35,7 @@ A [[concept]] that holds many definitions :
 2. **Minsky's Society of Mind (1986)**: Agents as fundamental cognitive building blocks
 3. **Russell & Norvig Formalization (1995)**: "Artificial Intelligence: A Modern Approach" established modern agent definition
 
-#### Minsky's Original [[Concept]]
+#### Minsky's Original [[concept]]
 
 According to Minsky (1986):
 - The mind consists of many small processes called "agents"

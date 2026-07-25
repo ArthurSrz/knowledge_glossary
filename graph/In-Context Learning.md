@@ -4,6 +4,7 @@ dependencies: [Task Description, Context Example, Prompt]
 components: [Task Description, Context Example, Prompt]
 category: Input Data Enhancement
 tags: [Apprentissage_Contextuel, Adaptation_Dynamique, No_Training]
+broader: "[[Large Language Model]]"
 ---
 
 # In-Context Learning

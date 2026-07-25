@@ -23,6 +23,7 @@ tools:
   - "[[Git]]"
   - "[[Ansible]]"
 evolution: "[[MLOps]]"
+broader: "[[Application development]]"
 ---
 
 # DevOps

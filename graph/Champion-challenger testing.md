@@ -1,3 +1,6 @@
+---
+broader: "[[Model selection]]"
+---
 One way to do machine learning model [[Evaluation]]. 
 
 It involves testing a new version of a machine learning model (the challenger) against an existing, high performing model (the champion). 

@@ -14,4 +14,5 @@ instance of:
 subclass of: "[[type]]"
 has use: "[[computer science]]"
 wikidata entity id: Q190087
+broader: "[[data]]"
 ---

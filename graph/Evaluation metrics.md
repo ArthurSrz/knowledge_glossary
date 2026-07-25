@@ -1,5 +1,6 @@
 ---
 partOf: "[[LLM output evaluation]]"
+broader: "[[Evaluation]]"
 ---
 
 
@@ -18,7 +19,7 @@ partOf: "[[LLM output evaluation]]"
 ### Regression Metrics
 - [[Mean Absolute Error]] - Average absolute difference
 - [[Mean Absolute Percent Error]] - Percentage error
-- [[Coefficient of determination]] - R-squared
+- [[coefficient of determination]] - R-squared
 - [[Sum of Squared Error (SSE)]] - Cumulative error
 - [[Regression Error Metrics]] - Family of regression measures
 

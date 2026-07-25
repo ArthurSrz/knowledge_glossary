@@ -11,6 +11,7 @@ consists_of:
   - "[[Activation function]]"
   - "[[Bias addition]]"
 produces: "[[output]]"
+broader: "[[artificial neural network]]"
 ---
 
 # Forward Propagation

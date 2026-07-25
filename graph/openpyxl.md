@@ -10,6 +10,7 @@ tags:
   - limitations
 timestamp: 2026-06-28T00:00:00Z
 instanceOf: "[[Excel vs. Gsheet problem]]"
+broader: "[[Python]]"
 ---
 
 ## Features Lost on Round-Trip Through openpyxl

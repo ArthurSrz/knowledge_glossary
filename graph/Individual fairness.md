@@ -1,1 +1,4 @@
+---
+broader: "[[Fairness]]"
+---
 People who are similar should receive similar outcomes. One of [[Fair AI]] principle. 

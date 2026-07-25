@@ -1,3 +1,6 @@
+---
+broader: "[[Transparency]]"
+---
 
 
 ## Related concepts

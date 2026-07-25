@@ -1,3 +1,6 @@
+---
+broader: "[[Interpretability]]"
+---
 Le mode de fonctionnement de SHAP est de **décomposer le résultat d’un modèle par les sommes de l’impact de chaque caractéristique**. SHAP calcule une valeur qui représente la contribution de chaque caractéristique au résultat du modèle. Ces valeurs peuvent être utilisées pour comprendre l’importance de chaque caractéristique et expliquer le résultat du modèle à un humain. Ceci apporte notamment une valeur ajoutée aux agences et aux équipes qui rendent des comptes à leurs clients ou leurs managers.
 
 SHAP possède plusieurs propriétés intéressantes, comme sa **neutralité** vis-à-vis des modèles. **Cela lui permet d’être utilisé sur n’importe quel modèle d’apprentissage**, de produire des explications cohérentes et de gérer les comportements complexes des modèles (lorsque les caractéristiques interagissent entre elles, par exemple).

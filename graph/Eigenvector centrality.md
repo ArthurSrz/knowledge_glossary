@@ -1,3 +1,6 @@
+---
+broader: "[[Centrality]]"
+---
 # Eigenvector Centrality
 
 ## Definition

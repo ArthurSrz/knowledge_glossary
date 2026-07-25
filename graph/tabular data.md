@@ -4,4 +4,5 @@ main Wikidata property:
   - tabular software version
   - based on tabular data
 wikidata entity id: Q108855315
+broader: "[[Structured data]]"
 ---

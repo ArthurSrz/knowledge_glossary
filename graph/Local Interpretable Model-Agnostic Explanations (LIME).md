@@ -1,3 +1,4 @@
 ---
-safeGuardFor: "[[Concept drift]]"
+safeGuardFor: "[[concept drift]]"
+broader: "[[Interpretability]]"
 ---

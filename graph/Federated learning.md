@@ -5,6 +5,7 @@ protects: "[[Data privacy]]"
 enables: ["[[Decentralized learning]]", "[[Privacy-preserving ML]]", "[[Edge computing]]"]
 challenges: ["[[Communication efficiency]]", "[[System heterogeneity]]", "[[Statistical heterogeneity]]"]
 algorithms: ["[[FedAvg]]", "[[FedProx]]", "[[FedSGD]]"]
+broader: "[[machine learning]]"
 ---
 
 # Federated Learning

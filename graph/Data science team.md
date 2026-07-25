@@ -11,7 +11,7 @@ Made of [[Data scientist]]
 - [[Product owner]] - Product direction
 - [[Engineering team]] - Technical implementation
 - [[DevOps]] - Operations and deployment
-- [[Collaboration tools]] - Team coordination
+- [[collaboration tools]] - Team coordination
 - [[version control]] - Code management
 - [[Agile approach]] - Team methodology
 - [[Daily stand-ups]] - Team communication

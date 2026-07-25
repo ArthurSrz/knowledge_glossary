@@ -1,1 +1,4 @@
+---
+broader: "[[Evaluation metrics]]"
+---
 Measure used to communicate how much of the variability in your target variable (y) is explained by your model. 

@@ -4,6 +4,7 @@ dependencies: [LLM, Tools, Planning, Memory]
 components: [LLM Modules, Control Flow, External Tools, Multi-step Execution]
 category: Concepts Fondamentaux
 tags: [Systemes_Agentiques, GenAI, Workflow]
+broader: "[[Artificial Intelligence (AI)]]"
 ---
 Système GenAI qui sert les objectifs d'un utilisateur en effectuant des actions qui interagissent avec des systèmes externes au LLM. Incorpore des LLM comme modules dans un flux de contrôle conçu pour résoudre des tâches via l'utilisation d'outils externes, la planification, la mémoire et l'exécution d'étapes multiples.
 

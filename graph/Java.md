@@ -119,4 +119,5 @@ pronunciation audio:
   - http://commons.wikimedia.org/wiki/Special:FilePath/LL-Q150%20%28fra%29-Beno%C3%AEt%20Prieur-Java.wav
   - http://commons.wikimedia.org/wiki/Special:FilePath/LL-Q1860%20%28eng%29-Vealhurl-Java.wav
 wikidata entity id: Q251
+broader: "[[Programming language]]"
 ---

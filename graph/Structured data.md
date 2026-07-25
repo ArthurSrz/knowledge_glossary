@@ -3,6 +3,7 @@ partOf:
   - "[[data]]"
 oppositeOf:
   - "[[Unstructured data]]"
+broader: "[[data type]]"
 ---
 
 [[data]] whose structure is based on pre-defined fields for each record

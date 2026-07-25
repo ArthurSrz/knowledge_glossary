@@ -21,6 +21,7 @@ algorithms:
   - "[[SARSA]]"
   - "[[Policy gradient]]"
   - "[[Actor-critic methods]]"
+broader: "[[machine learning]]"
 ---
 
 # Reinforcement Learning

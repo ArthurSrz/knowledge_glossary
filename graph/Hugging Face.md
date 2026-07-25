@@ -1,3 +1,6 @@
+---
+broader: "[[Python]]"
+---
 
 
 ## Related concepts
@@ -7,6 +10,6 @@
 - [[Transformers]] - Main library for transformer models
 - [[BERT]] - Available through Hugging Face
 - [[GPT2]] - Available through Hugging Face
-- [[CamemBERT]] - French language model on HF
+- [[camemBERT]] - French language model on HF
 - [[Large Language Model]] - Many LLMs hosted on HF
 - [[Fine-tuning]] - Common task using HF tools

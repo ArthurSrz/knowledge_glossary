@@ -1,6 +1,6 @@
 ---
 has part(s):
-  - "[[graph/concept]]"
+  - "[[concept]]"
   - "[[graph/rule]]"
   - "[[graph/classification scheme]]"
 based on: "[[graph/mental model]]"

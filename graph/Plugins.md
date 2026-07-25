@@ -1,7 +1,7 @@
 ---
 partOf:
-  - "[[Claude code]]"
-  - "[[Claude cowork]]"
+  - "[[claude code]]"
+  - "[[claude cowork]]"
 madeOf:
   - "[[graph/Knowledge base]]"
   - "[[Workflow automation]]"

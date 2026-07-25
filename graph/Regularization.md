@@ -6,6 +6,7 @@ prevents: "[[Overfitting]]"
 reduces: "[[Model complexity]]"
 types: ["[[L1 regularization]]", "[[L2 regularization]]", "[[Elastic net]]", "[[Dropout]]"]
 usedIn: ["[[Linear regression]]", "[[Neural networks]]", "[[Support Vector Machines]]"]
+broader: "[[machine learning]]"
 ---
 
 # Regularization

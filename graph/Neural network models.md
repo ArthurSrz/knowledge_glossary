@@ -4,6 +4,7 @@ composed_of: "[[Artificial neuron]]"
 uses: "[[Weights]]"
 includes: "[[bias]]"
 enables: "[[Deep learning]]"
+broader: "[[ML models]]"
 ---
 
 # Neural Network Models

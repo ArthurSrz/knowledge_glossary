@@ -1,7 +1,7 @@
 ---
 TypeOf: "[[Relationship]]"
 IdenticalTo: "[[Subagent]]"
-Changes: "[[Chainrings]]"
+Changes: "[[chainrings]]"
 takesFrom: "[[Rider]]"
 sendsTo: "[[Shifter]]"
 ---

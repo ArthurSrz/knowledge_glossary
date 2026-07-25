@@ -8,4 +8,4 @@ User input is a specific consideration to take into account when designing [[ML 
 
 Data should be an integrated part of the user's workflow and it should ideally provide the user some benefit. 
 
-Faces [[Cold start problem]]. 
+Faces [[cold start problem]]. 

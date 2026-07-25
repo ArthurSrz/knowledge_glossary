@@ -1,3 +1,6 @@
+---
+broader: "[[Fairness]]"
+---
 ## Related concepts
 
 - [[Fairness]] - Core principle of equitable AI systems

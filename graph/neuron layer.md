@@ -1,3 +1,6 @@
+---
+broader: "[[artificial neural network]]"
+---
 
 ## Definition
 

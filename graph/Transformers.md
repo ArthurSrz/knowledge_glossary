@@ -1,9 +1,13 @@
 ---
 introducedin: "[[Attention Is All You Need]]"
 enablesArchitecture: "[[Large Language Model]]"
-uses: "[[Attention weights]]"
+uses: "[[attention weights]]"
 processes: "[[Word embeddings]]"
-foundationFor: ["[[BERT]]", "[[GPT2]]", "[[Natural Language Processing]]"]
+foundationFor:
+  - "[[BERT]]"
+  - "[[GPT2]]"
+  - "[[Natural Language Processing]]"
+broader: "[[Deep learning]]"
 ---
 
 # Transformers
@@ -82,7 +86,7 @@ Transformers can work using:
 
 ## Related concepts
 
-- [[Attention weights]] - Core mechanism of transformers
+- [[attention weights]] - Core mechanism of transformers
 - [[Hidden states]] - Internal representations in transformers
 - [[Encoder-only]] - Architecture type (e.g., BERT)
 - [[Decoder-only]] - Architecture type (e.g., GPT)

@@ -14,6 +14,7 @@ relatedTo:
   - "[[Ensemble methods]]"
   - "[[classification]]"
   - "[[Regression]]"
+broader: "[[Decision tree]]"
 ---
 
 # Random Forest

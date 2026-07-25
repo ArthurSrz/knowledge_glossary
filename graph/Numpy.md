@@ -1,3 +1,6 @@
+---
+broader: "[[Python]]"
+---
 # NumPy
 
 ## Definition

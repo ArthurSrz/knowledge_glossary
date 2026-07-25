@@ -1,3 +1,6 @@
+---
+broader: "[[CRISP-DM Process]]"
+---
 Part of the [[CRISP-DM Process]]. 
 
 Breaks down into [[Deploy]] and [[monitor]]
@@ -8,8 +11,8 @@ Breaks down into [[Deploy]] and [[monitor]]
 
 - [[Deploy]] - Action of deployment
 - [[Docker]] - Containerization for deployment
-- [[Container]] - Deployment package
-- [[Cloud computing]] - Deployment platform
+- [[container]] - Deployment package
+- [[cloud computing]] - Deployment platform
 - [[Edge ML]] - Edge deployment
 - [[Horizontal scaling]] - Scaling deployed systems
 - [[DevOps]] - Deployment practices

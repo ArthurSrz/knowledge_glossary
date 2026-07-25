@@ -32,7 +32,7 @@ Data is the fundamental building block of all [[machine learning systems]]. It r
 
 1. **[[Accuracy]]**: How closely data values match the true values
 2. **[[Completeness]]**: Presence of all required data elements
-3. **[[Consistency]]**: Uniformity across different [[datasets]]
+3. **[[consistency]]**: Uniformity across different [[datasets]]
 4. **Timeliness**: Data is current and up-to-date
 5. **Validity**: Data conforms to defined business [[rules]]
 6. **Uniqueness**: No unwanted duplicates

@@ -5,6 +5,7 @@ minimizedBy: ["[[Gradient descent]]", "[[Backpropagation]]"]
 examples: ["[[Mean squared error]]", "[[Cross-entropy]]", "[[Hinge loss]]", "[[Kullback-Leibler divergence]]"]
 properties: ["[[Convexity]]", "[[Differentiability]]", "[[Continuity]]"]
 usedIn: ["[[Supervised learning]]", "[[Optimization]]", "[[Neural network training]]"]
+broader: "[[machine learning]]"
 ---
 
 # Loss Function

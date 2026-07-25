@@ -16,6 +16,7 @@ usedIn:
   - "[[Neural network models]]"
   - "[[Perceptron]]"
   - "[[multilayer perceptron]]"
+broader: "[[artificial neural network]]"
 ---
 
 # Artificial Neuron

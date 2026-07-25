@@ -1,5 +1,5 @@
 ---
-studied by: "[[graph/Combinatorics]]"
+studied by: "[[combinatorics]]"
 different from:
   - "[[graph/Permutation]]"
   - "[[graph/Connection]]"

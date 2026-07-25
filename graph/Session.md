@@ -1,7 +1,7 @@
 ---
 facet of: "[[communication protocol]]"
 subclass of:
-  - "[[graph/context]]"
+  - "[[context]]"
   - "[[Process]]"
 has characteristic:
   - "[[Impermanence]]"

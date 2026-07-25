@@ -2,7 +2,7 @@
 wikidata entity id: Q67151813
 uses:
   - "[[db/culture]]"
-  - "[[Context]]"
+  - "[[context]]"
 partially coincident with:
   - "[[de facto]]"
   - "[[inferred from attribute of entity]]"

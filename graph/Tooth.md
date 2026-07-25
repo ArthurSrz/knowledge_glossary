@@ -1,5 +1,5 @@
 ---
-InterlockWith: "[[Chainrings]]"
+InterlockWith: "[[chainrings]]"
 ---
 A **tooth** is one of the **individual pointed projections** that protrude radially around the edge of a sprocket (toothed wheel). On a bicycle, these teeth serve a single critical purpose: **interlocking with the chain links** to transmit the pedaling force.
 

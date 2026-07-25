@@ -9,11 +9,12 @@ commands:
   - "[[add]]"
   - "[[Log]]"
   - "[[Merge]]"
-  - "[[Checkout -b]]"
+  - "[[checkout -b]]"
   - "[[branch -vv]]"
 object:
   - "[[Git worktree]]"
-  - "[[Checkout]]"
+  - "[[checkout]]"
+broader: "[[version control]]"
 ---
 
 

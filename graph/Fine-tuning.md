@@ -5,6 +5,7 @@ implementationOf: "[[Transfer learning]]"
 appliesTo: ["[[Pre-trained models]]", "[[Large Language Model]]", "[[Neural network models]]"]
 techniques: ["[[Full fine-tuning]]", "[[Layer freezing]]", "[[Adapter modules]]", "[[LoRA]]"]
 benefits: ["[[Reduced training time]]", "[[Less data required]]", "[[Better performance]]"]
+broader: "[[Model tuning]]"
 ---
 Fine-tuning is the [[process]] of taking a pre-trained [[model]] and adapting it to a specific task by continuing training on task-specific [[data]].
 

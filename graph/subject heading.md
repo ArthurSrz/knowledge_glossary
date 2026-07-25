@@ -1,5 +1,5 @@
 ---
-represents: "[[graph/concept]]"
+represents: "[[concept]]"
 different from:
   - "[[graph/keyword]]"
   - "[[graph/reserved word]]"

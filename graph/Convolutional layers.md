@@ -5,6 +5,7 @@ partOf: "[[Convolutional neural networks]]"
 inspiredBy: ["[[Visual cortex]]", "[[Receptive fields]]"]
 properties: ["[[Local connectivity]]", "[[Weight sharing]]", "[[Translation invariance]]"]
 operations: ["[[Convolution operation]]", "[[Feature extraction]]", "[[Spatial hierarchy]]"]
+broader: "[[Convolutional neural networks]]"
 ---
 
 # Convolutional Layers

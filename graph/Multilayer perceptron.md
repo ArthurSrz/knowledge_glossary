@@ -5,6 +5,7 @@ typeOf: "[[Neural network models]]"
 composedOf: ["[[Layer]]", "[[Artificial neuron]]", "[[Activation function]]"]
 enables: ["[[Universal approximation]]", "[[Non-linear classification]]", "[[Feature learning]]"]
 trainedBy: "[[Backpropagation]]"
+broader: "[[artificial neural network]]"
 ---
 The Multilayer Perceptron resolved the limitations of single-[[layer]] perceptrons identified by Minsky and Papert, becoming the foundation of modern neural networks.
 
@@ -13,11 +14,11 @@ The Multilayer Perceptron resolved the limitations of single-[[layer]] perceptro
 From Rumelhart, Hinton & Williams (1986):
 "We describe a new learning procedure, back-propagation, for networks of neuron-like units. The procedure repeatedly adjusts the [[weights]] of the connections in the network so as to minimize a [[measure]] of the difference between the actual [[output]] [[vector]] of the net and the desired [[output]] [[vector]]."
 
-## Historical [[Context]]
+## Historical [[context]]
 
 The MLP emerged from a crisis in neural network research:
 1. **Perceptron Limitations (1969)**: Minsky & Papert showed single layers couldn't solve XOR
-2. **Solution [[Concept]] (1970s)**: Multiple layers could overcome limitations
+2. **Solution [[concept]] (1970s)**: Multiple layers could overcome limitations
 3. **Training Breakthrough (1986)**: [[Backpropagation]] made training feasible
 
 ## Architecture

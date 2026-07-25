@@ -4,6 +4,7 @@ dependencies: [Traceable Artifacts, Sessions, Traces, Spans]
 components: [Development, Evaluation, Testing, Deployment, Monitoring]
 category: Concepts Fondamentaux
 tags: [AgentOps, DevOps, MLOps, Production]
+broader: "[[agent observability]]"
 ---
 Plateforme [[DevOps]]/MLOps de bout en bout englobant le développement, l'évaluation, les tests, le déploiement et la surveillance d'[[agentic system]] pour la gestion opérationnelle des projets d'agents en environnement de production.
 

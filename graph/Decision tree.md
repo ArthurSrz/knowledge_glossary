@@ -21,6 +21,7 @@ algorithms:
 extendedBy:
   - "[[Random forest]]"
   - "[[Gradient boosting trees]]"
+broader: "[[supervised learning]]"
 ---
 
 # Decision Tree

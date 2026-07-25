@@ -1,4 +1,7 @@
-To avoid [[Data drift]] or [[Concept drift]]. 
+---
+broader: "[[Model maintenance]]"
+---
+To avoid [[Data drift]] or [[concept drift]]. 
 
 We want to look at the Input data that goes into the data pipeline : 
 
@@ -24,7 +27,7 @@ We also want to make sure we still understand what the model is doing :
 ## Related concepts
 
 - [[monitor]] - The action of monitoring
-- [[Concept drift]] - Monitoring changes in data
+- [[concept drift]] - Monitoring changes in data
 - [[Data drift]] - Data distribution shifts
 - [[Model decay]] - Performance degradation over time
 - [[Detection tool performance]] - Tracking tool efficiency

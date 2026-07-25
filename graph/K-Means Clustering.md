@@ -5,6 +5,7 @@ typeOf: "[[Clustering algorithm]]"
 usedIn: ["[[Unsupervised learning]]", "[[Data mining]]", "[[Pattern recognition]]"]
 optimizes: "[[Sum of squared distances]]"
 relatedTo: ["[[Centroid]]", "[[Euclidean distance]]", "[[Voronoi diagram]]"]
+broader: "[[Clustering]]"
 ---
 
 # K-Means Clustering

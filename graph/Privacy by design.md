@@ -1,3 +1,6 @@
+---
+broader: "[[Data privacy]]"
+---
 Way to tacke [[Privacy challenge]]
 
 Consider privacy right from the start. Principles : 

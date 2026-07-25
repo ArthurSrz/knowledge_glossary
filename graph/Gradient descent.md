@@ -11,6 +11,7 @@ variantsInclude:
   - "[[Batch gradient descent]]"
   - "[[Stochastic gradient descent]]"
   - "[[Mini-batch gradient descent]]"
+broader: "[[Optimizer algorithm]]"
 ---
 
 # Gradient Descent

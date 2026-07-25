@@ -13,6 +13,7 @@ relatedTo:
   - "[[Hyperplane]]"
   - "[[Support vectors]]"
 inspiredBy: "[[Statistical learning theory]]"
+broader: "[[supervised learning]]"
 ---
 
 # Support Vector Machine (SVM)

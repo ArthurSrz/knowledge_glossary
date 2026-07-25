@@ -7,6 +7,7 @@ facet of:
 foundationalPaper: "Reducing the Dimensionality of Data with Neural Networks (Hinton & Salakhutdinov, 2006)"
 keyPapers: ["Learning Internal Representations by Error Propagation (Rumelhart, Hinton & Williams, 1986)", "Auto-Association by Multilayer Perceptrons (Bourlard & Kamp, 1988)"]
 relatedTo: ["[[Dimensionality reduction]]", "[[Feature learning]]", "[[Representation learning]]"]
+broader: "[[artificial neural network]]"
 ---
 
 ![Autoencoder Thumbnail](https://upload.wikimedia.org/wikipedia/commons/3/37/Autoencoder_schema.png)

@@ -5,6 +5,7 @@ detectedBy: "[[Cross validation]]"
 preventedBy: "[[Regularization]]"
 oppositeOf: "[[Underfitting]]"
 resultsIn: "Poor [[Generalization]]"
+broader: "[[Model fit]]"
 ---
 
 Phenomen that happens when you rely too heavily on your training data. In [[K-Means Clustering]], it happens when you don't consider enough neighbors.

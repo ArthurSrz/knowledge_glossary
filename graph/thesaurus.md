@@ -1,7 +1,7 @@
 ---
 part of: "[[graph/information system]]"
 has part(s):
-  - "[[graph/concept]]"
+  - "[[concept]]"
   - "[[graph/relation]]"
   - "[[graph/quasi-synonym]]"
   - "[[graph/related term]]"

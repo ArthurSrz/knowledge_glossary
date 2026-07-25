@@ -45,7 +45,7 @@ From Bengio et al. (2003):
 ## Mathematical [[Properties]]
 
 From Mikolov et al. (2013):
-"The word representations are learned using a simple neural network [[model]] that tries to predict a word based on its [[Context]]."
+"The word representations are learned using a simple neural network [[model]] that tries to predict a word based on its [[context]]."
 
 Key [[properties]]:
 1. **Dimensionality**: Typically 50-1000 dimensions
@@ -84,9 +84,9 @@ This demonstrates:
 ## Learning Methods
 
 ### Predictive Methods (Word2Vec)
-Predict [[Context]] from word or word from [[Context]]:
-- Skip-gram: P([[Context]]|word)
-- CBOW: P(word|[[Context]])
+Predict [[context]] from word or word from [[context]]:
+- Skip-gram: P([[context]]|word)
+- CBOW: P(word|[[context]])
 
 ### Count-based Methods (GloVe)
 Factorize co-occurrence matrices:

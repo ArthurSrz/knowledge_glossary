@@ -1,3 +1,6 @@
+---
+broader: "[[Fairness]]"
+---
 Way to mitigate [[Ethical risks]]. List of questions about : 
 * modeling
 * implementation 

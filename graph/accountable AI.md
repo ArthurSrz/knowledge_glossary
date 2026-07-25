@@ -1,3 +1,6 @@
+---
+broader: "[[Fairness]]"
+---
 Clear responsibility for outcomes. Users have recourse.
 
 

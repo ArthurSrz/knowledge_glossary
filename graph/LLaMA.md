@@ -23,4 +23,5 @@ subreddit: LocalLLaMA
 publication date: 2023-02-01T00:00:00Z
 source code repository URL: https://github.com/meta-llama/llama
 wikidata entity id: Q116894231
+broader: "[[Large Language Model]]"
 ---

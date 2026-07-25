@@ -1,3 +1,6 @@
+---
+broader: "[[Graph theory]]"
+---
 
 Given a graph G = (X, E) with n vertices, its **adjacency matrix** M is an **n × n square matrix** where each entry M[i][j] is defined as:
 

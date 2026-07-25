@@ -1,6 +1,6 @@
 ---
 instance of:
-  - "[[graph/concept]]"
+  - "[[concept]]"
 different from:
   - "[[graph/physical object]]"
   - "[[graph/Thing]]"

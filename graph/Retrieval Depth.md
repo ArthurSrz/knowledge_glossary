@@ -3,6 +3,7 @@ partOf: "[[Retrieval Augmented Generation]]"
 relatedTo:
   - "[[Retriever Orchestration]]"
   - "[[Filtered vector search]]"
+broader: "[[RAG (Retrieval-Augmented Generation)]]"
 ---
 
 # Retrieval Depth

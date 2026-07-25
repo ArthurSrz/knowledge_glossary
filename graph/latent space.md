@@ -9,6 +9,7 @@ facet of:
   - "[[graph/statistics]]"
 wikidata entity id: Q107154297
 EmbodiementOf: "[[latent]]"
+broader: "[[Embeddings]]"
 ---
 
 [[Embedding]] of [[data]] within a [[manifold]] based on a similarity function

@@ -4,6 +4,7 @@ dependencies: [Query, Knowledge Base, Text Vectors]
 components: [Query, Retrieval Context, Knowledge Base, Text Vectors, Keyword, Source Doc]
 category: Input Data Enhancement
 tags: [RAG, Récupération_Information, Knowledge_Base, Vectorisation]
+broader: "[[Large Language Model]]"
 ---
 
 # RAG (Retrieval-Augmented Generation)

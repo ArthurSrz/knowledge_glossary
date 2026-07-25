@@ -5,6 +5,7 @@ typeOf: "[[Activation function]]"
 advantages: ["[[Computational efficiency]]", "[[Sparse activation]]", "[[Gradient propagation]]"]
 variants: ["[[Leaky ReLU]]", "[[Parametric ReLU]]", "[[ELU]]", "[[GELU]]"]
 usedIn: ["[[Deep neural networks]]", "[[Convolutional neural networks]]"]
+broader: "[[artificial neural network]]"
 ---
 
 # ReLU (Rectified Linear Unit)

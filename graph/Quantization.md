@@ -4,6 +4,7 @@ keyPapers: ["BinaryConnect: Training Deep Neural Networks with Binary Weights (C
 applies_to: ["[[Neural network models]]", "[[Deep learning]]", "[[Edge AI]]"]
 enables: ["[[Model compression]]", "[[Efficient inference]]", "[[Mobile deployment]]"]
 techniques: ["[[Post-training quantization]]", "[[Quantization-aware training]]", "[[Mixed precision]]"]
+broader: "[[Model tuning]]"
 ---
 
 # Quantization

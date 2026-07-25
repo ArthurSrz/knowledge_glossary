@@ -43,6 +43,6 @@ In any data or ML projects, there is a risk that the project does not work as pl
 
 1. Right skills
 2. Right coordination of many expertise among the following : [[Data engineer]], [[Data scientist]], [[DevOps]], [[MLOps]]
-3. Right infrastructure (enough [[Graphics processing unit]] or [[Central processing unit]])
+3. Right infrastructure (enough [[Graphics processing unit]] or [[central processing unit]])
 
 Risk is rewarded by money (at organizational scale) and by [[Excitement]]. 

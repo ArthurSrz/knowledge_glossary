@@ -11,6 +11,7 @@ techniques:
   - "[[Convolutional layers]]"
   - "[[Pooling]]"
   - "[[Transfer learning]]"
+broader: "[[Artificial Intelligence (AI)]]"
 ---
 
 Tasks implying image and video : image classification, object detection, semantic segmentation, image generation 

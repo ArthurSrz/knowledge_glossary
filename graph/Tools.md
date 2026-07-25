@@ -1,3 +1,6 @@
+---
+broader: "[[Agentic System]]"
+---
 # Tools
 
 ## Definition

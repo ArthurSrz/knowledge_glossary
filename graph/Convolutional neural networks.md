@@ -15,6 +15,7 @@ consistsOf:
 inspiredBy:
   - "[[Visual cortex]]"
   - "[[Receptive fields]]"
+broader: "[[artificial neural network]]"
 ---
 
 # Convolutional Neural Networks (CNNs)

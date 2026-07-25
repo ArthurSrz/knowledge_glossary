@@ -1,3 +1,6 @@
+---
+broader: "[[Fairness]]"
+---
 Aside from [[Don Norman's principles of Interaction Design]], this is a specific consideration when designing [[ML system]]. Key considerations : 
 
 * where does AI exists ? 

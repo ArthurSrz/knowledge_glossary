@@ -14,6 +14,7 @@ techniquesInclude:
   - "[[Homomorphic encryption]]"
   - "[[Secure multi-party computation]]"
 governedBy: "[[Data governance]]"
+broader: "[[Fairness]]"
 ---
 
 Right of users to have control over how their information is collected, used and shares. 

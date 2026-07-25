@@ -5,6 +5,7 @@ computesWith: "[[Chain rule]]"
 trainsBy: "[[Loss function]]"
 implements: "[[Error propagation]]"
 updates: "[[Weights]]"
+broader: "[[artificial neural network]]"
 ---
 
 # Backpropagation

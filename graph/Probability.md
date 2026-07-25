@@ -1,3 +1,6 @@
+---
+broader: "[[Combinatorics]]"
+---
 Probability is a mathematical framework for quantifying uncertainty, formally axiomatized by Andrey Kolmogorov in 1933 as a [[measure]] on a σ-algebra of events.
 
 ## Historical Development

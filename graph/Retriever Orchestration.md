@@ -3,6 +3,7 @@ partOf: "[[Retrieval Augmented Generation]]"
 relatedTo:
   - "[[Filtered vector search]]"
   - "[[Tool Assignment Gate]]"
+broader: "[[RAG (Retrieval-Augmented Generation)]]"
 ---
 
 # Retriever Orchestration

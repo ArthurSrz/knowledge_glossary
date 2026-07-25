@@ -4,6 +4,7 @@ keyPapers: ["Practical Bayesian Optimization of Machine Learning Algorithms (Sno
 tunes: "[[Algorithm]]"
 optimizedBy: ["[[Grid search]]", "[[Random search]]", "[[Bayesian optimization]]", "[[Hyperband]]"]
 affects: ["[[Model performance]]", "[[Training time]]", "[[Generalization]]"]
+broader: "[[machine learning]]"
 ---
 
 # Hyperparameters

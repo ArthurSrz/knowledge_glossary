@@ -5,6 +5,7 @@ examples: ["[[Gradient descent]]", "[[Stochastic gradient descent]]", "[[Adam]]"
 optimizes: "[[Loss function]]"
 updates: "[[Model parameters]]"
 uses: ["[[Gradient]]", "[[Learning rate]]", "[[Momentum]]"]
+broader: "[[machine learning]]"
 ---
 
 # Optimizer Algorithm

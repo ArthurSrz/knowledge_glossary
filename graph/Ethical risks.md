@@ -1,3 +1,6 @@
+---
+broader: "[[Fairness]]"
+---
 
 
 ## Related concepts (Adamic-Adar connections)

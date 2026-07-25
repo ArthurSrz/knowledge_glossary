@@ -1,5 +1,6 @@
 ---
 builtIn: "[[Llama index]]"
-exampleOf: "[[Chat modes]]"
+exampleOf: "[[chat modes]]"
+broader: "[[RAG (Retrieval-Augmented Generation)]]"
 ---
 It look at the chat history, rewrite user message as a query for the [[index]]

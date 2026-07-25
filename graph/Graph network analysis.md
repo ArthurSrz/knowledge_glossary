@@ -1,3 +1,6 @@
+---
+broader: "[[Graph theory]]"
+---
 # Graph Network Analysis
 
 ## Definition

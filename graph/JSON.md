@@ -39,4 +39,5 @@ Wolfram Language entity code: Entity["FileFormat", "JSON-1"]
 Commons category: JavaScript Object Notation
 inception: 2001-01-01T00:00:00Z
 time of discovery or invention: 2001-01-01T00:00:00Z
+broader: "[[data type]]"
 ---

@@ -2,7 +2,7 @@
 author:
   - "[[graph/Judea Pearl]]"
   - "[[graph/Dana Mackenzie]]"
-main subject: "[[Causality]]"
+main subject: "[[causality]]"
 instance of: "[[graph/literary work]]"
 title: The Book of Why
 publication date: 2019-01-01T00:00:00Z

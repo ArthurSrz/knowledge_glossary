@@ -5,7 +5,7 @@ partOf:
 uses: "[[graph/heuristic]]"
 subclassOf:
   - "[[graph/tertiary source]]"
-  - "[[Conceptual model]]"
+  - "[[conceptual model]]"
   - "[[graph/database]]"
   - "[[documentation]]"
 hasPart(s): "[[graph/knowledge]]"

@@ -1,4 +1,4 @@
 ---
-partOf: "[[Claude code]]"
+partOf: "[[claude code]]"
 ---
-Reusable [[Markdown]] files that teach [[Claude code]] how to handle specific tasks automatically 
+Reusable [[Markdown]] files that teach [[claude code]] how to handle specific tasks automatically 

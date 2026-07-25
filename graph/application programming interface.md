@@ -31,4 +31,5 @@ Stack Exchange tag:
 Commons category: Application programming interfaces
 name: Application Programming Interface
 wikidata entity id: Q165194
+broader: "[[Application development]]"
 ---

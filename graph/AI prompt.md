@@ -15,4 +15,5 @@ used by:
 has part(s): "[[graph/negative prompt]]"
 main Wikidata property: AI-generation prompt
 wikidata entity id: Q117217619
+broader: "[[Large Language Model]]"
 ---

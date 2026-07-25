@@ -3,6 +3,7 @@ improvesAccuracyOf: "[[Retrieval Augmented Generation]]"
 same:
   - "[[Hybrid search]]"
 failureMode: "[[Tag Filter Vocabulary Mismatch]]"
+broader: "[[Search]]"
 ---
 
 # Filtered Vector Search

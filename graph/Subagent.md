@@ -1,6 +1,7 @@
 ---
 IdenticalTo: "[[activatesShifter]]"
 TypeOf: "[[Web worker]]"
+broader: "[[Agentic System]]"
 ---
 
-Isolated workers that run separately from [[Claude code]]'s main conversation 
+Isolated workers that run separately from [[claude code]]'s main conversation 

@@ -20,7 +20,7 @@ skos:broader: "[[model]]"
    - Examples: [[Linear regression models]], [[Decision tree]], [[Support Vector Machine]]
 
 1. **[[Unsupervised Learning]] Models**
-   - [[Clustering]] models (group similar [[data]])
+   - [[clustering]] models (group similar [[data]])
    - Dimensionality reduction models (reduce [[feature]] space)
    - Examples: [[K-Means Clustering]], [[Principal Component Analysis]]
 
@@ -62,7 +62,7 @@ skos:broader: "[[model]]"
 
 - **[[Overfitting]]**: Models memorizing rather than generalizing
 - **[[Underfitting]]**: Models too simple to capture patterns
-- **[[Concept drift]]**: Changing [[data]] distributions over time
+- **[[concept drift]]**: Changing [[data]] distributions over time
 - **[[Model]] [[bias]]**: Systemic errors in predictions
 - **Scalability**: Handling increasing [[data]] volumes
 

@@ -1,3 +1,6 @@
+---
+broader: "[[Data privacy]]"
+---
 # Sensitive Information
 
 ## Definition

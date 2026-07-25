@@ -1,5 +1,6 @@
 ---
 partOf: "[[Neural network models]]"
+broader: "[[artificial neural network]]"
 ---
 Parameters of [[Large Language Model]] that can be expressed as : 
 

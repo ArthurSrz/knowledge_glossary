@@ -1,3 +1,3 @@
 ---
-partOf: "[[Continuum data]]"
+partOf: "[[continuum data]]"
 ---
