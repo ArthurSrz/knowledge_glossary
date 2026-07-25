@@ -1,4 +1,4 @@
 ---
 TypeOf: "[[Relationship]]"
 ---
-Relationship point outward some [[Node]]
+Relationship point outward some [[node]]

@@ -16,6 +16,6 @@ Technique qui permet d'appliquer un [[Large Language Model]] sur un corpus spéc
 - [[Query engine]] - Processes user queries
 - [[Prompt templates]] - Formats retrieval context
 - [[Hallucination]] - Problem RAG helps solve
-- [[Knowledge graph]] - Alternative to vector retrieval
+- [[knowledge graph]] - Alternative to vector retrieval
 - [[Parametric knowledge]] - LLM internal knowledge
 - [[Non-parametric knowledge]] - External knowledge source

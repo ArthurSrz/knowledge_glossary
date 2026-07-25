@@ -10,7 +10,7 @@ commands:
   - "[[Log]]"
   - "[[Merge]]"
   - "[[Checkout -b]]"
-  - "[[Branch -vv]]"
+  - "[[branch -vv]]"
 object:
   - "[[Git worktree]]"
   - "[[Checkout]]"

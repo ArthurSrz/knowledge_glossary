@@ -7,7 +7,7 @@ partially coincident with:
   - "[[chain of custody]]"
 facet of:
   - "[[ontology engineering]]"
-  - "[[Knowledge graph]]"
+  - "[[knowledge graph]]"
 has characteristic:
   - "[[truth value]]"
 ---

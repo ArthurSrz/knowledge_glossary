@@ -6,7 +6,7 @@ subclass of:
   - "[[graph/Hypergraph]]"
   - "[[graph/Relational structure]]"
 has part(s):
-  - "[[Node]]"
+  - "[[node]]"
   - "[[Edges]]"
 ---
 ### Definition 1 
