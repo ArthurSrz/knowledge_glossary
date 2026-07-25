@@ -2,6 +2,7 @@
 combinationOf:
   - "[[Recall]]"
   - "[[Precision]]"
+broader: "[[Evaluation metrics]]"
 ---
 
 Measure in the same category than [[Precision]], [[Recall]] and [[F1 Score]].

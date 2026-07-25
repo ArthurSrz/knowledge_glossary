@@ -1,4 +1,5 @@
 ---
 same:
+broader: "[[Data preparation]]"
 ---
 Techniques used to maps categories ([[categorical data]]) to numbers ([[numerical data]]) directly. 

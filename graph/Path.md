@@ -1,5 +1,6 @@
 ---
 partOf: "[[graphs]]"
+broader: "[[Graph theory]]"
 ---
 A sequence of edges connecting a sequence of **distinct** vertices in a graph, with no repeating vertices
 

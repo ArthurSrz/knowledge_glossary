@@ -5,6 +5,7 @@ typeOf: "[[Distributed representation]]"
 usedIn: ["[[Natural Language Processing]]", "[[Deep learning]]"]
 techniques: ["[[Word2Vec]]", "[[GloVe]]", "[[FastText]]"]
 properties: ["[[Semantic similarity]]", "[[Analogy completion]]", "[[Vector arithmetic]]"]
+broader: "[[Embeddings]]"
 ---
 
 # Word Embeddings

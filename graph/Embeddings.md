@@ -20,6 +20,7 @@ types:
   - "[[Sentence embeddings]]"
   - "[[Document embeddings]]"
   - "[[Graph embeddings]]"
+broader: "[[Natural Language Processing]]"
 ---
 
 A vector representation of a [[token]] 

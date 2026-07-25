@@ -1,5 +1,6 @@
 ---
 shouldTakeIntoAccount: "[[Bayes' theorem]]"
+broader: "[[Confusion Matrix]]"
 ---
 
 Example : 

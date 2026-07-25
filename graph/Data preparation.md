@@ -1,3 +1,6 @@
+---
+broader: "[[CRISP-DM Process]]"
+---
 Step of the [[CRISP-DM Process]]. 
 
 Breaks down into 3 steps : [[Split data 1]], [[Determine feature set 1]], [[Prepare for modeling 1]]
@@ -12,7 +15,7 @@ Breaks down into 3 steps : [[Split data 1]], [[Determine feature set 1]], [[Prep
 - [[Data mapping]] - Transforming data structure
 - [[Data lineage]] - Tracking data origins
 - [[Data catalog]] - Documenting data assets
-- [[Data understanding]] - Analyzing data characteristics
+- [[data understanding]] - Analyzing data characteristics
 - [[Structured data]] - Formatted data
 - [[unstructured data]] - Raw, unformatted data
 - [[Tidy Data]] - Organized data format

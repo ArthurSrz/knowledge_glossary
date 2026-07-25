@@ -1,5 +1,6 @@
 ---
 instanceOf: "[[Graph algorithm]]"
+broader: "[[Graph algorithm]]"
 ---
 Algorithm that naturally answers questions like : 
 

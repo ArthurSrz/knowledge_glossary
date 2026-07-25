@@ -4,6 +4,7 @@ keyPapers: ["Adaptive Subgradient Methods for Online Learning (Duchi et al., 201
 usedIn: ["[[Gradient descent]]", "[[Stochastic gradient descent]]", "[[Adam optimizer]]"]
 affects: ["[[Convergence rate]]", "[[Training stability]]", "[[Model performance]]"]
 schedulingMethods: ["[[Learning rate decay]]", "[[Cyclical learning rates]]", "[[Warm-up]]", "[[Cosine annealing]]"]
+broader: "[[Hyperparameters]]"
 ---
 
 # Learning Rate
