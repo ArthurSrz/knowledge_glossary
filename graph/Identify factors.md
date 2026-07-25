@@ -1,4 +1,4 @@
 ---
-partOf: "[[Business understanding]]"
+partOf: "[[business understanding]]"
 importPartOf: "[[Gouvernance]]"
 ---

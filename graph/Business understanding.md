@@ -1,3 +1,6 @@
+---
+skos:broader: "[[CRISP-DM Process]]"
+---
 Step of the [[CRISP-DM Process]]. 
 
 Can write down the problem statement to have a common understanding. 

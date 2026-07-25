@@ -1,5 +1,5 @@
 ---
-partOf: "[[Business understanding]]"
+partOf: "[[business understanding]]"
 ---
 
 Example of target : Electric utility Director of Operations 

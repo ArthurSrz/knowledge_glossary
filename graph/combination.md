@@ -6,5 +6,5 @@ different from:
   - "[[graph/Union]]"
 instance of:
   - "[[graph/Binary function]]"
-subclass of: "[[graph/Selection]]"
+subclass of: "[[selection]]"
 ---

@@ -26,4 +26,8 @@ Wolfram Language entity code: Entity["Concept", "StochasticProcess::c4479"]
 Commons category: Stochastic processes
 Dewey Decimal Classification: "519.23"
 wikidata entity id: Q176737
+aliases:
+  - random process
+skos:broader: "[[probability]]"
 ---
+A stochastic or random [[process]] can be defined as a collection of random variables that is indexed by some mathematical set

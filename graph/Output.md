@@ -1,2 +1,5 @@
+---
+skos:broader: "[[define success]]"
+---
 
-Metric we need to achieve that translates into [[Outcome]] for the customer. 
+[[Metric]] we need to achieve that translates into [[outcome]] for the customer. 

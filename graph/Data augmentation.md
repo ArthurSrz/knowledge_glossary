@@ -21,7 +21,7 @@ uses:
 skos:broader: "[[data]]"
 ---
 
-# [[data]] [[Augmentation]]
+# [[data]] [[augmentation]]
 
 [[data]] [[augmentation]] is a technique to artificially increase the size and diversity of training [[data]] by applying various transformations to existing [[data]] points while preserving their labels.
 
@@ -38,23 +38,23 @@ From LeCun et al. (1998):
 1. **Early Recognition Systems (1990s)**: Simple transformations
 2. **Visual Document Analysis (2003)**: Systematic approach
 3. **AlexNet Era (2012)**: Standard practice in [[deep learning]]
-4. **[[AutoML]] [[Augmentation]] (2019)**: Learned [[augmentation]] policies
+4. **[[AutoML]] [[augmentation]] (2019)**: Learned [[augmentation]] policies
 
 ## Common Transformations
 
-### Image [[Augmentation]]
+### Image [[augmentation]]
 From Krizhevsky et al. (2012):
 1. **Geometric**: Rotation, translation, scaling, flipping
 2. **Photometric**: Brightness, contrast, saturation adjustments
 3. **Noise**: Gaussian noise, dropout
 4. **Advanced**: Cutout, Mixup, CutMix
 
-### Text [[Augmentation]]
+### Text [[augmentation]]
 1. **Word-level**: Synonym replacement, random insertion/deletion
 2. **Sentence-level**: Back-translation, paraphrasing
 3. **Character-level**: Typos simulation, case changes
 
-### Time Series [[Augmentation]]
+### Time Series [[augmentation]]
 1. **Magnitude**: Scaling, jittering
 2. **Time**: Warping, slicing
 3. **Frequency**: Filtering, spectral [[augmentation]]
@@ -134,9 +134,9 @@ As Simard noted: "[[data]] [[augmentation]] is the single most important approac
 
 ## Modern Developments
 
-1. **GAN-based [[Augmentation]]**: Generating realistic samples
-2. **Adversarial [[Augmentation]]**: Improving robustness
-3. **Curriculum [[Augmentation]]**: Progressive difficulty
-4. **[[Test]]-time [[Augmentation]]**: Ensemble predictions
+1. **GAN-based [[augmentation]]**: Generating realistic samples
+2. **Adversarial [[augmentation]]**: Improving robustness
+3. **Curriculum [[augmentation]]**: Progressive difficulty
+4. **[[Test]]-time [[augmentation]]**: Ensemble predictions
 
 The field continues to evolve toward more sophisticated, automated, and task-specific [[augmentation]] strategies.

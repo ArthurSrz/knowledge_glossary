@@ -1,3 +1,3 @@
 ---
-partOf: "[[Modeling]]"
+partOf: "[[modeling]]"
 ---

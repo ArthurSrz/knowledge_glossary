@@ -121,7 +121,7 @@ Cardano's work:
    - Sequential updating
 
 ## Related Concepts
-- [[Probability]]
+- [[probability]]
 - [[Risk]]
 - [[Statistics]]
 - [[Decision theory]]

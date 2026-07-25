@@ -42,7 +42,7 @@ Data is the fundamental building block of all [[machine learning systems]]. It r
 1. Collection/[[Generation]]
 2. Storage/[[Management]]
 3. Processing/Transformation
-4. Analysis/[[Modeling]]
+4. Analysis/[[modeling]]
 5. Visualization/Reporting
 6. Archival/Disposal
 

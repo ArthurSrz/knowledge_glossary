@@ -153,7 +153,7 @@ The concept emerges from:
    - Temporal dependencies
 
 ## Related Concepts
-- [[Training data set]]
+- [[training data set]]
 - [[Validation data set]]
 - [[Cross-validation]]
 - [[Model evaluation]]

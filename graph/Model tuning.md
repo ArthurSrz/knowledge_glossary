@@ -1,10 +1,22 @@
 ---
-foundationalPaper: "A Simplex Method for Function Minimization (Nelder & Mead, 1965)"
-keyPapers: ["Random Search for Hyper-Parameter Optimization (Bergstra & Bengio, 2012)", "Practical Bayesian Optimization of Machine Learning Algorithms (Snoek et al., 2012)", "Population Based Training of Neural Networks (Jaderberg et al., 2017)"]
-partOf: "[[Modeling]]"
-techniques: ["[[Grid search]]", "[[Random search]]", "[[Bayesian optimization]]", "[[Genetic algorithms]]"]
-optimizes: ["[[Hyperparameters]]", "[[Model architecture]]", "[[Learning rate]]"]
-validatedBy: ["[[Cross validation]]", "[[Validation set]]"]
+foundationalPaper: A Simplex Method for Function Minimization (Nelder & Mead, 1965)
+keyPapers:
+  - Random Search for Hyper-Parameter Optimization (Bergstra & Bengio, 2012)
+  - Practical Bayesian Optimization of Machine Learning Algorithms (Snoek et al., 2012)
+  - Population Based Training of Neural Networks (Jaderberg et al., 2017)
+partOf: "[[modeling]]"
+techniques:
+  - "[[Grid search]]"
+  - "[[Random search]]"
+  - "[[Bayesian optimization]]"
+  - "[[Genetic algorithms]]"
+optimizes:
+  - "[[Hyperparameters]]"
+  - "[[Model architecture]]"
+  - "[[Learning rate]]"
+validatedBy:
+  - "[[Cross validation]]"
+  - "[[Validation set]]"
 ---
 
 # Model Tuning

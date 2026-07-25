@@ -2,7 +2,7 @@
 subclassOf: "[[Neural network models]]"
 usedIn: "[[Natural Language Processing]]"
 implements: "[[Deep learning]]"
-trainedOn: "[[Training data set]]"
+trainedOn: "[[training data set]]"
 ---
 
 # Large Language Model (LLM)

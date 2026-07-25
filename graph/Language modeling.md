@@ -1,1 +1,1 @@
-[[Probability]] distribution over sequences of [[token]]. 
+[[probability]] distribution over sequences of [[token]]. 

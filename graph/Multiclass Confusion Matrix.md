@@ -1,1 +1,5 @@
-[[Confusion Matrix]] but for classification among multiples classes 
+---
+skos:broader: "[[classification]]"
+---
+
+[[Confusion Matrix]] but for [[classification]] among multiples classes 

@@ -1,7 +1,7 @@
 ---
 includes: "[[Neural network models]]"
 uses: "[[Algorithm]]"
-trainedWith: "[[Training data set]]"
+trainedWith: "[[training data set]]"
 evaluatedBy: "[[Evaluation metrics]]"
 deployedIn: "[[ML system]]"
 ---

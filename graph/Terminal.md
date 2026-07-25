@@ -1,1 +1,1 @@
-A set of primary [[Inputs]] and [[Output]] devices for a computer
+A set of primary [[Inputs]] and [[output]] devices for a computer
