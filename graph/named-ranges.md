@@ -29,7 +29,7 @@ When a sheet tab is deleted (via `deleteSheet` in a `batchUpdate`), any named ra
 - Cannot be deleted via the API because their `namedRangeId` is unavailable.
 - Still occupy the name in the [[spreadsheet]]'s internal namespace: a subsequent `addNamedRange` with the same name returns [[HTTP]] 400 `"already exists"`.
 
-This is a Sheets API bug / undocumented behaviour. The only user-facing fix is manual removal via the Sheets UI under **[[Data]] → Named ranges**.
+This is a Sheets API bug / undocumented behaviour. The only user-facing fix is manual removal via the Sheets UI under **[[data]] → Named ranges**.
 
 ## Formula-Only Named Ranges
 

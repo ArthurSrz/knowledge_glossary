@@ -20,7 +20,7 @@ instanceOf: "[[Excel vs. Gsheet problem]]"
 |---------|-------|---------------|-----------|
 | Highlight cell [[rules]] | ✓ | ✓ | Partially — formula references may shift |
 | Top/Bottom [[rules]] | ✓ | ✓ | Partially |
-| [[Data]] bars | ✓ | ✗ | No — silently dropped |
+| [[data]] bars | ✓ | ✗ | No — silently dropped |
 | Icon sets | ✓ | ✗ | No — silently dropped |
 | Color scales | ✓ | ✓ | Partially — theme colors shift |
 | Custom formula [[rules]] | ✓ | ✓ | Partially — cell references don't always remap correctly |

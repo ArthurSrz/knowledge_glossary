@@ -18,12 +18,12 @@ uses:
   - "[[Transformation invariance]]"
   - "[[Domain knowledge]]"
   - "[[Noise injection]]"
-skos:broader: "[[Data]]"
+skos:broader: "[[data]]"
 ---
 
-# [[Data]] [[Augmentation]]
+# [[data]] [[Augmentation]]
 
-[[Data]] [[augmentation]] is a technique to artificially increase the size and diversity of training [[data]] by applying various transformations to existing [[data]] points while preserving their labels.
+[[data]] [[augmentation]] is a technique to artificially increase the size and diversity of training [[data]] by applying various transformations to existing [[data]] points while preserving their labels.
 
 ## Original Definition
 
@@ -61,7 +61,7 @@ From Krizhevsky et al. (2012):
 
 ## Mathematical Framework
 
-[[Data]] [[augmentation]] as a transformation:
+[[data]] [[augmentation]] as a transformation:
 D_aug = {(T(x), y) | (x, y) ∈ D, T ∈ T}
 
 Where:
@@ -95,7 +95,7 @@ Combines regions from different training images.
 From empirical studies:
 1. **Improved Generalization**: Reduces [[overfitting]]
 2. **Robustness**: Better handling of variations
-3. **[[Data]] Efficiency**: Better performance with limited [[data]]
+3. **[[data]] Efficiency**: Better performance with limited [[data]]
 4. **[[Regularization]] Effect**: Acts as implicit regularizer
 
 ## Challenges
@@ -124,13 +124,13 @@ From empirical studies:
 
 ## Historical Significance
 
-[[Data]] [[augmentation]]:
+[[data]] [[augmentation]]:
 - Enabled training deep networks on small [[datasets]]
 - Became standard practice in [[computer vision]]
 - Inspired research into invariances and symmetries
 - Led to automated [[augmentation]] techniques
 
-As Simard noted: "[[Data]] [[augmentation]] is the single most important approach to improving performance when the training set is small."
+As Simard noted: "[[data]] [[augmentation]] is the single most important approach to improving performance when the training set is small."
 
 ## Modern Developments
 

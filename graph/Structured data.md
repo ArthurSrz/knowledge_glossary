@@ -1,11 +1,11 @@
 ---
 partOf:
-  - "[[Data]]"
+  - "[[data]]"
 oppositeOf:
   - "[[Unstructured data]]"
 ---
 
-[[Data]] whose structure is based on pre-defined fields for each record
+[[data]] whose structure is based on pre-defined fields for each record
 
 
 

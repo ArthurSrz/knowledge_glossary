@@ -27,9 +27,9 @@ instanceOf: "[[Excel vs. Gsheet problem]]"
 | Light font suppression | `xlsx_to_gsheet.py:790-800` | Suppresses light fonts when no dark background |
 | Named range formula fallback | `xlsx_to_gsheet.py:306-316` | Falls back to cached values for formula-only names |
 | Merged cell sync | `xlsx_to_gsheet.py:1075-1102` | Unmerge-all then reapply from source |
-| [[Data]] validation type [[mapping]] | `gsheet_to_xlsx.py:248-271` | Guesses whole vs decimal from values |
+| [[data]] validation type [[mapping]] | `gsheet_to_xlsx.py:248-271` | Guesses whole vs decimal from values |
 | Named ranges | `xlsx_to_gsheet.py` | Syncs to Sheets; cached fallback for formulas |
-| [[Data]] validation | Both sync files | Forward and reverse sync with type [[mapping]] |
+| [[data]] validation | Both sync files | Forward and reverse sync with type [[mapping]] |
 | Frozen panes | Both sync files | Synced bidirectionally |
 | Comments | Both sync files | Synced bidirectionally |
 

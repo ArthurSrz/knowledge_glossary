@@ -11,7 +11,7 @@ has part(s):
 ---
 ### Definition 1 
 
-A graph can be defined by the [[Data]] of a set on which a binary, anti-reflexive and symmetric relation has been defined.
+A graph can be defined by the [[data]] of a set on which a binary, anti-reflexive and symmetric relation has been defined.
 
 ### Definition 2 
 

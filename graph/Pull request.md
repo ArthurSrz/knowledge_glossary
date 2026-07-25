@@ -1,1 +1,1 @@
-A dedicated form for discussing proposed changes in a soon to be merged [[Branch]]. 
+A dedicated form for discussing proposed changes in a soon to be merged [[branch]]. 

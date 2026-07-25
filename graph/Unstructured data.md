@@ -1,6 +1,6 @@
 ---
 partOf:
-  - "[[Data]]"
+  - "[[data]]"
 ---
 
 Data that does not follow a defined format of fields 

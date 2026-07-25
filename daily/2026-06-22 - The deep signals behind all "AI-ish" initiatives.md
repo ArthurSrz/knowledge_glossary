@@ -6,7 +6,7 @@
 * automatic [[Unstructured data]] extraction (to [[Java]] Script Notion [[Object]] / [[JSON]])
 * No [[data]] standard between accounting system causing reconciliation issues 
 * Formatting documents to convey [[meaning]] 
-* [[Data]] cartography 
+* [[data]] cartography 
 
 
 ***
