@@ -1,6 +1,6 @@
 ---
 studied by:
-  - "[[graph/Graph theory]]"
+  - "[[graph theory]]"
   - "[[graph/Social network analysis]]"
 subclass of:
   - "[[Metric]]"

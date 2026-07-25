@@ -196,7 +196,7 @@ Moreno's work:
    - Ensure readability
 
 ## Related Concepts
-- [[Graph theory]]
+- [[graph theory]]
 - [[Social network analysis]]
 - [[data visualization]]
 - [[Complex systems]]

@@ -1,6 +1,6 @@
 ---
-studied by: "[[graph/Graph theory]]"
+studied by: "[[graph theory]]"
 has characteristic:
-  - "[[graph/Degree]]"
+  - "[[degree]]"
   - "[[graph/Graph eccentricity]]"
 ---

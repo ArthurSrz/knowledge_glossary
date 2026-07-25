@@ -11,9 +11,9 @@ Missing data, dirty data
 - [[Data drift]] - Quality degradation over time
 - [[Data quantity]] - Balance with quality
 - [[Validate data]] - Quality verification
-- [[Missing at Random]] - Type of missing data
-- [[Missing Completely at Random]] - Type of missing data
-- [[Missing not at random]] - Type of missing data
+- [[missing at random]] - Type of missing data
+- [[missing completely at random]] - Type of missing data
+- [[missing not at random]] - Type of missing data
 - [[Outliers]] - Quality consideration
 
 

@@ -84,7 +84,7 @@ Euler's work:
 5. **Multilayer Networks**: Interconnected systems
 
 ## Related Concepts
-- [[Graph theory]]
+- [[graph theory]]
 - [[Network science]]
 - [[Topology]]
 - [[Complex systems]]

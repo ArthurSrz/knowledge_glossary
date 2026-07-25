@@ -1,1 +1,1 @@
-Number of positives that our model correctly classified, computed through a [[Confusion Matrix]]
+Number of positives that our model correctly classified, computed through a [[confusion matrix]]

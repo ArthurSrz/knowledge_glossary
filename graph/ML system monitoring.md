@@ -23,7 +23,7 @@ We also want to make sure we still understand what the model is doing :
 
 ## Related concepts
 
-- [[Monitor]] - The action of monitoring
+- [[monitor]] - The action of monitoring
 - [[Concept drift]] - Monitoring changes in data
 - [[Data drift]] - Data distribution shifts
 - [[Model decay]] - Performance degradation over time

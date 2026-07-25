@@ -6,4 +6,4 @@ We collect past [[Observations]], and associate [[feature]], and define a [[Targ
 
 We start by selecting [[feature]]. Then we choose a template, the [[Algorithm]]. We tune the template with [[Hyperparameters]]. And we use the [[Loss function]] to evaluate the performance or our model. 
 
-Breaks down into 2 steps : [[Model selection]] and [[Model tuning]]
+Breaks down into 2 steps : [[Model selection]] and [[model tuning]]

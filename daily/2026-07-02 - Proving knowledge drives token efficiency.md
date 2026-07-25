@@ -74,7 +74,7 @@ All in all, the end state is reached once :
 That's the easy part. I'll take 5 different harness (with their native LLM attached) : 
 * [[Claude]] Cowork (with Sonnet 5)
 * Google AI Studio (with Gemini and Nano Banana 2)
-* [[Mistral Agents]] with Image [[Generation]] on. 
+* [[mistral agents]] with Image [[Generation]] on. 
 * Mistral CLI with Mistral medium 
 * [[Claude]] in [[Power]] Point 
 * [[clarifeye]] Tasks 

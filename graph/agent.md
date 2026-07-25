@@ -47,7 +47,7 @@ According to Minsky (1986):
 #### Types of Agents
 
 1. **Simple Reflex Agents**: React to current perceptions
-2. **[[Model]]-Based Reflex Agents**: Maintain internal state
+2. **[[model]]-Based Reflex Agents**: Maintain internal state
 3. **Goal-Based Agents**: Act to achieve objectives
 4. **Utility-Based Agents**: Maximize expected utility
 5. **Learning Agents**: Improve performance over time
@@ -111,8 +111,8 @@ The agent [[concept]]:
 
 1. **Bounded Rationality** (Simon): Limited computational resources
 2. **Intentional Stance** (Dennett): Treating systems as rational agents
-3. **BDI [[Model]]** (Bratman): Beliefs, Desires, Intentions
-4. **Actor [[Model]]** (Hewitt): Concurrent computation
+3. **BDI [[model]]** (Bratman): Beliefs, Desires, Intentions
+4. **Actor [[model]]** (Hewitt): Concurrent computation
 
 #### Related Concepts
 - [[Society of Mind]]

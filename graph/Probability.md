@@ -40,7 +40,7 @@ Derived from the axioms:
 
 1. **Classical**: Equally likely outcomes
 2. **Frequentist**: Long-run frequency of events
-3. **Subjective/Bayesian**: [[Degree]] of belief
+3. **Subjective/Bayesian**: [[degree]] of belief
 4. **Propensity**: Physical tendency to produce outcomes
 
 ## Applications

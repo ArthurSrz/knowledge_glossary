@@ -15,7 +15,7 @@ components:
 usedIn:
   - "[[Neural network models]]"
   - "[[Perceptron]]"
-  - "[[Multilayer perceptron]]"
+  - "[[multilayer perceptron]]"
 ---
 
 # Artificial Neuron
@@ -89,7 +89,7 @@ As McCulloch noted: "What we thought we were doing... was treating the brain as 
 
 - [[Layer]] - Neurons are organized into layers
 - [[Neuron layer]] - Collection of artificial neurons
-- [[Multilayer perceptron]] - Network with multiple neuron layers
+- [[multilayer perceptron]] - Network with multiple neuron layers
 - [[ReLU activation function]] - Common activation function
 - [[Sigmoid function]] - Another activation function
 - [[biological neural network]] - Inspiration for artificial neurons

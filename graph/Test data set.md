@@ -156,7 +156,7 @@ The concept emerges from:
 - [[training data set]]
 - [[Validation data set]]
 - [[Cross-validation]]
-- [[Model evaluation]]
+- [[model evaluation]]
 - [[Generalization error]]
 
 ## References

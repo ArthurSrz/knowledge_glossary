@@ -19,6 +19,6 @@ Statisticians prefer the term [[variance]].
 
 - [[Recall]] - Complementary metric (Adamic-Adar: 1.072)
 - [[F1 Score]] - Harmonic mean of precision and recall (Adamic-Adar: 1.072)
-- [[Confusion Matrix]] - Source of precision calculation
+- [[confusion matrix]] - Source of precision calculation
 - [[True Positive (TP)]] - Used in precision formula
 - [[False Positive (FP)]] - Used in precision formula

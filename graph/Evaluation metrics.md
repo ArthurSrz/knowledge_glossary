@@ -10,7 +10,7 @@ partOf: "[[LLM output evaluation]]"
 - [[Precision]] - Positive predictive value
 - [[Recall]] - True positive rate
 - [[F1 Score]] - Harmonic mean of precision and recall
-- [[Confusion Matrix]] - Foundation for classification metrics
+- [[confusion matrix]] - Foundation for classification metrics
 - [[False Positive Rate]] - Type I error rate
 - [[True Positive Rate (Recall)]] - Sensitivity
 - [[Receiver Operating Characteristic curve]] - ROC curve

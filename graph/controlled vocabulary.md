@@ -20,4 +20,4 @@ wikidata entity id: Q1469824
 > A curated, finite list of approved terms, each with one intended [[meaning]] and a few [[rules]] for how these terms appear. 
 
 > [!quote ]
-> For every [[concept]] you keep a preferred [[label]]-say "[[Model]]"- and capture the everyday variants that should map to it. A short scope note to pin down [[meaning]], give the term a stable identifier so systems can reference it even if the wording changes, and define light usage guidance like capitalization or singular/plural 
+> For every [[concept]] you keep a preferred [[label]]-say "[[model]]"- and capture the everyday variants that should map to it. A short scope note to pin down [[meaning]], give the term a stable identifier so systems can reference it even if the wording changes, and define light usage guidance like capitalization or singular/plural 

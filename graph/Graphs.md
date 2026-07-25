@@ -1,7 +1,7 @@
 ---
-originatesFrom: "[[Graph theory]]"
+originatesFrom: "[[graph theory]]"
 facet of: "[[graph/discrete mathematics]]"
-studied by: "[[graph/Graph theory]]"
+studied by: "[[graph theory]]"
 subclass of:
   - "[[graph/Hypergraph]]"
   - "[[graph/Relational structure]]"

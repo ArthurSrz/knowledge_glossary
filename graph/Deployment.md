@@ -1,6 +1,6 @@
 Part of the [[CRISP-DM Process]]. 
 
-Breaks down into [[Deploy]] and [[Monitor]]
+Breaks down into [[Deploy]] and [[monitor]]
 
 
 
@@ -18,6 +18,6 @@ Breaks down into [[Deploy]] and [[Monitor]]
 - [[ML system]] - Deployed ML components
 - [[Inference pipeline]] - Production deployment
 - [[Model registry]] - Managing deployed models
-- [[Model versioning]] - Tracking model versions
+- [[model versioning]] - Tracking model versions
 - [[rollback capability]] - Deployment safety
 - [[Shadow releasing]] - Safe deployment technique

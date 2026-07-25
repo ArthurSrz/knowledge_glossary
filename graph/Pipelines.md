@@ -13,7 +13,7 @@ components:
   - "[[Data preprocessing]]"
   - "[[feature engineering]]"
   - "[[Model training]]"
-  - "[[Model evaluation]]"
+  - "[[model evaluation]]"
 implementations:
   - "[[Scikit-learn Pipeline]]"
   - "[[Apache Beam]]"

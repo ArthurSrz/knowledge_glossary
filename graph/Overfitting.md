@@ -19,7 +19,7 @@ Phenomen that happens when you rely too heavily on your training data. In [[K-Me
 - [[Learning curve]] - Training progress visualization
 - [[Regularization]] - Preventing overfitting
 - [[Cross validation]] - Detecting overfitting
-- [[Model fit]] - Balance between over/underfitting
+- [[model fit]] - Balance between over/underfitting
 - [[training data set]] - Data leading to overfitting
 - [[Validation data]] - Detecting overfitting
 - [[Pruning]] - Reducing overfitting in trees

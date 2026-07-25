@@ -61,7 +61,7 @@ Where:
 - [[Centrality measures]]
 - [[PageRank]]
 - [[Katz centrality]]
-- [[Graph theory]]
+- [[graph theory]]
 - [[Network analysis]]
 
 ## References
