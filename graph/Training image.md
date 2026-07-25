@@ -213,7 +213,7 @@ Rosenblatt's work:
    - Cost optimization
 
 ## Related Concepts
-- [[Computer vision]]
+- [[computer vision]]
 - [[Pattern recognition]]
 - [[Neural networks]]
 - [[Data augmentation]]

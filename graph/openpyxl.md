@@ -14,7 +14,7 @@ instanceOf: "[[Excel vs. Gsheet problem]]"
 
 ## Features Lost on Round-Trip Through openpyxl
 
-| [[Feature]] | Status |
+| [[feature]] | Status |
 |---------|--------|
 | Shapes (images, drawings) | Dropped on open/save |
 | Slicers | Stripped |

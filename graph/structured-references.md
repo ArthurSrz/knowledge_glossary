@@ -16,7 +16,7 @@ instanceOf: "[[Excel vs. Gsheet problem]]"
 
 Google Sheets added table/structured reference support in **late 2023**, but with significant gaps:
 
-| [[Feature]] | [[Excel]] | Google Sheets |
+| [[feature]] | [[Excel]] | Google Sheets |
 |---------|-------|---------------|
 | `Table1[Column]` | ✓ | ✓ |
 | `Table1[@Column]` (`#This Row`) | ✓ | ✗ **Not supported** |

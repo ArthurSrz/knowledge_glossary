@@ -77,7 +77,7 @@ That's the easy part. I'll take 5 different harness (with their native LLM attac
 * [[Mistral Agents]] with Image [[Generation]] on. 
 * Mistral CLI with Mistral medium 
 * [[Claude]] in [[Power]] Point 
-* [[Clarifeye]] Tasks 
+* [[clarifeye]] Tasks 
 
 And I'll [[measure]] 3 things : 
 * Number of tokens 
@@ -120,7 +120,7 @@ Now, about the quantitative [[measure]] :
 
 > [!summary] Interlude
 > Adding image [[generation]] to the mix moved the needle. Google AI Studio got there in a third of the time, matched the structure exactly, and roughly doubled the content overlap (47% semantic, 38.5% literal), leaving just one visual gap in letter spacing. The catch: it blew past the [[token]] window mid-run and forced a [[model]] switch to finish.
-##### [[Clarifeye]] (build mode + tasks)
+##### [[clarifeye]] (build mode + tasks)
 
 25 minutes and 12 euros later, consumed 2,2 million [[token]] in and 24k [[token]] out, 
 
@@ -131,9 +131,9 @@ About the quantitative measures
 All blocks match.
 
 > [!summary] Interlude
-> [[Clarifeye]] in build mode nailed the structure completely (every block matched) but at a steep price: 25 minutes, 12 euros, and 2.2 million tokens in. Structure isn't the bottleneck anymore; content is. The score plateaus not because the layout is wrong, but because the words still drift from the original (15% semantic overlap), which is exactly where [[knowledge]] should start earning its keep.
+> [[clarifeye]] in build mode nailed the structure completely (every block matched) but at a steep price: 25 minutes, 12 euros, and 2.2 million tokens in. Structure isn't the bottleneck anymore; content is. The score plateaus not because the layout is wrong, but because the words still drift from the original (15% semantic overlap), which is exactly where [[knowledge]] should start earning its keep.
 
-##### [[Claude]] + [[Clarifeye]] (use mode + MCP)
+##### [[Claude]] + [[clarifeye]] (use mode + MCP)
 
 10 minutes and 2% of [[Claude]] usage window, 0 euros CCU. 
 
@@ -150,16 +150,16 @@ We got an impressive core on the content driven by high semantic similarity
 ![[details_clarifeye_MCP.png]]
 
 > [!summary] Interlude 
-> This is the run where [[knowledge]] pays off. [[Claude]] plus [[Clarifeye]] in use mode (via MCP) reached the [[target]] in 10 minutes, on 2% of a usage window, at zero marginal cost—and the content jumped to 89% semantic similarity. Structure held, and the words finally converged on the original instead of drifting: the [[knowledge]] [[layer]], not more prompting, is what closed the gap.
+> This is the run where [[knowledge]] pays off. [[Claude]] plus [[clarifeye]] in use mode (via MCP) reached the [[target]] in 10 minutes, on 2% of a usage window, at zero marginal cost—and the content jumped to 89% semantic similarity. Structure held, and the words finally converged on the original instead of drifting: the [[knowledge]] [[layer]], not more prompting, is what closed the gap.
 
 ## What the numbers say 
 
 
 The experiment set out to [[test]] one claim: that [[knowledge]] layers help generated [[output]] pass the [[Turing test]] faster, with fewer tokens. **Across four harnesses, the [[pattern]] is clear.**
 
-Raw prompting ([[Claude Cowork]]) plateaus early : good structure, but content stalls at 28% and the run burns the most [[session]] budget for the weakest result. Adding image [[generation]] (Google AI Studio) roughly doubles content fidelity and sharpens the visuals, but overflows the [[token]] window. Throwing compute at the problem via [[Clarifeye]] build mode nails structure perfectly, yet at 2.2 million tokens and €12 it still leaves content at 15%, a proof that more tokens alone don't close the semantic gap.
+Raw prompting ([[Claude Cowork]]) plateaus early : good structure, but content stalls at 28% and the run burns the most [[session]] budget for the weakest result. Adding image [[generation]] (Google AI Studio) roughly doubles content fidelity and sharpens the visuals, but overflows the [[token]] window. Throwing compute at the problem via [[clarifeye]] build mode nails structure perfectly, yet at 2.2 million tokens and €12 it still leaves content at 15%, a proof that more tokens alone don't close the semantic gap.
 
-The [[knowledge]] [[layer]] does. [[Claude]] plus [[Clarifeye]] in use mode reached the [[target]] in 10 minutes, on 2% of a usage window, at zero marginal cost — and content fidelity jumped to 89%. Same [[model]] family, a fraction of the resources, and the one variable that changed was access to structured [[knowledge]].
+The [[knowledge]] [[layer]] does. [[Claude]] plus [[clarifeye]] in use mode reached the [[target]] in 10 minutes, on 2% of a usage window, at zero marginal cost — and content fidelity jumped to 89%. Same [[model]] family, a fraction of the resources, and the one variable that changed was access to structured [[knowledge]].
 
 This is exactly what the opening hypothesis predicted: [[knowledge]] reduces the semantic dispersion of the [[model]]'s [[output]], so fewer iterations are needed to converge on a precise result  **and fewer iterations mean fewer tokens**. Culture, like jam, spreads thinner the less you have. Or in Leveau-Vallier's terms: if [[generation]] is travel through a [[latent space]], [[knowledge]] is the map that shows the shortest [[path]] to the destination. 
 

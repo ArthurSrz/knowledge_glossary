@@ -1,11 +1,26 @@
 ---
-foundationalPaper: "Induction of Decision Trees (Quinlan, 1986)"
-keyPapers: ["C4.5: Programs for Machine Learning (Quinlan, 1993)", "Classification and Regression Trees (Breiman et al., 1984)", "Experiments in Induction (Hunt, Marin & Stone, 1966)"]
+foundationalPaper: Induction of Decision Trees (Quinlan, 1986)
+keyPapers:
+  - "C4.5: Programs for Machine Learning (Quinlan, 1993)"
+  - Classification and Regression Trees (Breiman et al., 1984)
+  - Experiments in Induction (Hunt, Marin & Stone, 1966)
 typeOf: "[[Supervised learning]] algorithm"
-usedFor: ["[[Classification]]", "[[Regression]]"]
-components: ["[[Root node]]", "[[Internal nodes]]", "[[Leaf nodes]]", "[[Branches]]"]
-algorithms: ["[[ID3]]", "[[C4.5]]", "[[CART]]", "[[CHAID]]"]
-extendedBy: ["[[Random forest]]", "[[Gradient boosting trees]]"]
+usedFor:
+  - "[[classification]]"
+  - "[[Regression]]"
+components:
+  - "[[Root node]]"
+  - "[[Internal nodes]]"
+  - "[[Leaf nodes]]"
+  - "[[Branches]]"
+algorithms:
+  - "[[ID3]]"
+  - "[[C4.5]]"
+  - "[[CART]]"
+  - "[[CHAID]]"
+extendedBy:
+  - "[[Random forest]]"
+  - "[[Gradient boosting trees]]"
 ---
 
 # Decision Tree

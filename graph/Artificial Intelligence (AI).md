@@ -1,6 +1,10 @@
 ---
 originatesFrom: "[[Intelligence]]"
-performs: "[[Computer vision]]"
+performs: "[[computer vision]]"
+skos:narrower:
+  - "[[computer vision]]"
+  - "[[classification]]"
+  - "[[prediction]]"
 ---
 
 

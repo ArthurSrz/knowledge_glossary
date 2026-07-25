@@ -11,5 +11,5 @@ Enables developers with limited ML expertise to quickly build models with little
 - [[Algorithm selection]] - AutoML choice process
 - [[Feature selection]] - Automated feature engineering
 - [[Automation framework]] - Foundation for AutoML
-- [[Machine learning projects]] - Simplified by AutoML
+- [[machine learning projects]] - Simplified by AutoML
 - [[ML system design process]] - Streamlined by AutoML

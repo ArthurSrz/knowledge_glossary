@@ -1,5 +1,5 @@
 ---
 instanceOf:
   - "[[Message-oriented middleware]]"
-partOf: "[[Clarifeye]]"
+partOf: "[[clarifeye]]"
 ---

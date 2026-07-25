@@ -1,8 +1,8 @@
 ---
 relatedTo: "[[Data science team]]"
-fundamentalTo: "[[Machine learning projects]]"
+fundamentalTo: "[[machine learning projects]]"
 enables: "[[Supervised learning]]"
-transforms: "[[Feature]]"
+transforms: "[[feature]]"
 ParentChild: "[[Datum]]"
 skos:narrower: "[[data object]]"
 ---
@@ -49,7 +49,7 @@ Data is the fundamental building block of all [[machine learning systems]]. It r
 ## Challenges
 
 - **[[Data Drift]]**: Changes in data distribution over time
-- **Data [[Bias]]**: Systematic distortions in data collection
+- **Data [[bias]]**: Systematic distortions in data collection
 - **[[Data Privacy]]**: Protecting [[sensitive information]]
 - **Data Volume**: Managing large-scale [[datasets]]
 

@@ -1,1 +1,1 @@
-One of [[ML System failures]]. Model performance degrades on the edges of [[Feature]] space. 
+One of [[ML System failures]]. Model performance degrades on the edges of [[feature]] space. 

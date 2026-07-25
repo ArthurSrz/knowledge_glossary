@@ -1,9 +1,17 @@
 ---
-foundationalPaper: "A Training Algorithm for Optimal Margin Classifiers (Boser, Guyon & Vapnik, 1992)"
-keyPapers: ["Support-Vector Networks (Cortes & Vapnik, 1995)", "The Nature of Statistical Learning Theory (Vapnik, 1995)"]
+foundationalPaper: A Training Algorithm for Optimal Margin Classifiers (Boser, Guyon & Vapnik, 1992)
+keyPapers:
+  - Support-Vector Networks (Cortes & Vapnik, 1995)
+  - The Nature of Statistical Learning Theory (Vapnik, 1995)
 typeOf: "[[Supervised learning algorithm]]"
-usedFor: ["[[Classification]]", "[[Regression]]"]
-relatedTo: ["[[Kernel methods]]", "[[Margin]]", "[[Hyperplane]]", "[[Support vectors]]"]
+usedFor:
+  - "[[classification]]"
+  - "[[Regression]]"
+relatedTo:
+  - "[[Kernel methods]]"
+  - "[[Margin]]"
+  - "[[Hyperplane]]"
+  - "[[Support vectors]]"
 inspiredBy: "[[Statistical learning theory]]"
 ---
 

@@ -2,7 +2,7 @@ Aside from [[Don Norman's principles of Interaction Design]], this is a specific
 
 Whether you display a deterministic or probabilistic [[Output]] depends on the value of the probabilistic information for the decision-making or the user. 
 
-## Uncertainty in [[Classification]]
+## Uncertainty in [[classification]]
 
 **Seeing probabilities may cause different decision-making**. We can also provide the **basis for [[prediction]]** to explain why the [[model]] chose which [[class]]. 
 

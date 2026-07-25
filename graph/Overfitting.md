@@ -15,7 +15,7 @@ Phenomen that happens when you rely too heavily on your training data. In [[K-Me
 
 - [[Underfitting]] - Model too simple
 - [[Variance]] - Model sensitivity to training data
-- [[Bias]] - Model systematic errors
+- [[bias]] - Model systematic errors
 - [[Learning curve]] - Training progress visualization
 - [[Regularization]] - Preventing overfitting
 - [[Cross validation]] - Detecting overfitting

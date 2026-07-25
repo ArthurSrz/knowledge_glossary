@@ -31,7 +31,7 @@ These are mathematically different operations. A pivot table that shows "Average
 
 ## Features Lost: [[Excel]] → Sheets
 
-| [[Feature]] | Status in Sheets |
+| [[feature]] | Status in Sheets |
 |---------|-----------------|
 | Calculated items | ✗ Not supported |
 | Grouping by custom date periods | Limited |

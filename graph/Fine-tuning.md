@@ -19,7 +19,7 @@ From Devlin et al. (2019) on [[BERT]]:
 
 ## Historical Development
 
-1. **[[Computer Vision]] (2012+)**: Fine-tuning CNN features
+1. **[[computer vision]] (2012+)**: Fine-tuning CNN features
 2. **[[Word Embeddings]] (2013+)**: Fine-tuning word [[vectors]]
 3. **ULMFiT (2018)**: Systematic approach for NLP
 4. **[[BERT]] Era (2019+)**: Standard practice for [[transformers]]
@@ -90,7 +90,7 @@ From ULMFiT (Howard & Ruder):
 
 ## Applications
 
-1. **[[Computer Vision]]**: [[Object]] detection, segmentation
+1. **[[computer vision]]**: [[Object]] detection, segmentation
 2. **[[Natural Language Processing]]**: Text [[classification]], QA
 3. **Speech Recognition**: Accent adaptation
 4. **[[Reinforcement Learning]]**: Policy transfer

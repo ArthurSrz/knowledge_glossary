@@ -1,10 +1,21 @@
 ---
-foundationalPaper: "A Logical Calculus of Ideas Immanent in Nervous Activity (McCulloch & Pitts, 1943)"
-keyPapers: ["The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain (Rosenblatt, 1958)", "Perceptrons: An Introduction to Computational Geometry (Minsky & Papert, 1969)"]
-inventedBy: ["[[Warren McCulloch]]", "[[Walter Pitts]]"]
+foundationalPaper: A Logical Calculus of Ideas Immanent in Nervous Activity (McCulloch & Pitts, 1943)
+keyPapers:
+  - "The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain (Rosenblatt, 1958)"
+  - "Perceptrons: An Introduction to Computational Geometry (Minsky & Papert, 1969)"
+inventedBy:
+  - "[[Warren McCulloch]]"
+  - "[[Walter Pitts]]"
 inspiredBy: "[[Biological neuron]]"
-components: ["[[Weights]]", "[[Bias]]", "[[Activation function]]", "[[Summation function]]"]
-usedIn: ["[[Neural network models]]", "[[Perceptron]]", "[[Multilayer perceptron]]"]
+components:
+  - "[[Weights]]"
+  - "[[bias]]"
+  - "[[Activation function]]"
+  - "[[Summation function]]"
+usedIn:
+  - "[[Neural network models]]"
+  - "[[Perceptron]]"
+  - "[[Multilayer perceptron]]"
 ---
 
 # Artificial Neuron

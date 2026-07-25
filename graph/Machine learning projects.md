@@ -1,7 +1,9 @@
 ---
 NecessarilyImplies: "[[Risk]]"
+skos:narrower:
+  - "[["
 ---
 
-Require a broader set of skills and are harder to show progress than [[Software projects]]. 
+Require a broader set of [[skills]] and are harder to show progress than [[Software projects]]. 
 
-A Machine learning project is probabilistic
+A [[Machine learning]] project is probabilistic

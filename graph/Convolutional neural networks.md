@@ -1,10 +1,20 @@
 ---
-foundationalPaper: "Gradient-Based Learning Applied to Document Recognition (LeCun et al., 1998)"
-keyPapers: ["Neocognitron: A Self-organizing Neural Network Model (Fukushima, 1980)", "Backpropagation Applied to Handwritten Zip Code Recognition (LeCun et al., 1989)"]
+foundationalPaper: Gradient-Based Learning Applied to Document Recognition (LeCun et al., 1998)
+keyPapers:
+  - "Neocognitron: A Self-organizing Neural Network Model (Fukushima, 1980)"
+  - Backpropagation Applied to Handwritten Zip Code Recognition (LeCun et al., 1989)
 typeOf: "[[Neural network models]]"
-usedIn: ["[[Computer vision]]", "[[Image classification]]", "[[Object detection]]"]
-consistsOf: ["[[Convolutional layers]]", "[[Pooling layers]]", "[[Fully connected layers]]"]
-inspiredBy: ["[[Visual cortex]]", "[[Receptive fields]]"]
+usedIn:
+  - "[[computer vision]]"
+  - "[[Image classification]]"
+  - "[[Object detection]]"
+consistsOf:
+  - "[[Convolutional layers]]"
+  - "[[Pooling layers]]"
+  - "[[Fully connected layers]]"
+inspiredBy:
+  - "[[Visual cortex]]"
+  - "[[Receptive fields]]"
 ---
 
 # Convolutional Neural Networks (CNNs)

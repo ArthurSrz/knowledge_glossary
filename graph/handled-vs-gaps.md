@@ -54,7 +54,7 @@ instanceOf: "[[Excel vs. Gsheet problem]]"
 | Print areas / page breaks | Formatting | Low | Not currently synced |
 | Threaded comments | Structure | Medium | [[openpyxl]] doesn't support |
 
-## [[Classification]]
+## [[classification]]
 
 ### Out of scope (no possible [[mapping]])
 - [VBA / Apps Script](/scripting/macros.md)

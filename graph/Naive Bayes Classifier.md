@@ -1,1 +1,1 @@
-[[Classification]] algorithm, part of [[supervised learning]]
+[[classification]] algorithm, part of [[supervised learning]]

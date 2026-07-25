@@ -49,7 +49,7 @@ Joelle Forest a étendu cette définition pour en extraire la richesse :
 
 Une organisation est donc représentée par *n* artefacts, qui évoluent. Les 150 slide decks que vous avez rédigés depuis que vous êtes dans cette entreprise pour présenter sa raison d'être **sont en ce sens des artefacts**. 
 
-J'ai pu observer chez [[Clarifeye]] une 50aine d'exemples d'ensembles d'artefacts représentant une organisation, et j'ai acquis la conviction profonde que la liste d'artefacts aujourd'hui implémentés dans la plateforme est la meilleure dans la mesure où  : 
+J'ai pu observer chez [[clarifeye]] une 50aine d'exemples d'ensembles d'artefacts représentant une organisation, et j'ai acquis la conviction profonde que la liste d'artefacts aujourd'hui implémentés dans la plateforme est la meilleure dans la mesure où  : 
 
 1. elle répond aux besoins de structuration de l'organisation 
 2. elle peut être construite facilement par les membres de l'organisations

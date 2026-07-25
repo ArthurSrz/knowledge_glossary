@@ -82,7 +82,7 @@ J = Σᵢⱼ f(Xᵢⱼ)(wᵢᵀw̃ⱼ + bᵢ + b̃ⱼ - [[log]] Xᵢⱼ)²
 1. **Information Retrieval**: Semantic [[search]]
 2. **Recommendation Systems**: Item similarity
 3. **[[Natural Language Processing]]**: Text [[classification]], translation
-4. **[[Computer Vision]]**: Image retrieval
+4. **[[computer vision]]**: Image retrieval
 5. **Bioinformatics**: Protein function [[prediction]]
 
 ## Historical Significance

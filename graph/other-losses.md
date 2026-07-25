@@ -14,7 +14,7 @@ timestamp: 2026-06-28T00:00:00Z
 instanceOf: "[[Excel vs. Gsheet problem]]"
 ---
 
-## [[Feature]] Losses
+## [[feature]] Losses
 
 - **Checkboxes**: Sheets checkboxes → `TRUE`/`FALSE` text in [[Excel]]
 - **Threaded comments**: May convert to static notes or disappear entirely

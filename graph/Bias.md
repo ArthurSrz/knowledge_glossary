@@ -9,7 +9,7 @@ The intercept in a linear regression, the y when features are 0.
 ## Related concepts
 
 - [[Cognitive bias]] - Human biases reflected in data
-- [[Learning bias]] - Algorithmic learning biases
+- [[learning bias]] - Algorithmic learning biases
 - [[Feedback loop bias]] - Self-reinforcing biases
 - [[Historical bias]] - Biases from past data
 - [[Measurement bias]] - Biases in data collection

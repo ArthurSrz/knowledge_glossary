@@ -1,10 +1,19 @@
 ---
-foundationalPaper: "Random Forests (Breiman, 2001)"
-keyPapers: ["Bagging Predictors (Breiman, 1996)", "Random Decision Forests (Ho, 1995)", "Shape Quantization and Recognition with Randomized Trees (Amit & Geman, 1997)"]
+foundationalPaper: Random Forests (Breiman, 2001)
+keyPapers:
+  - Bagging Predictors (Breiman, 1996)
+  - Random Decision Forests (Ho, 1995)
+  - Shape Quantization and Recognition with Randomized Trees (Amit & Geman, 1997)
 typeOf: "[[Ensemble learning method]]"
 composedOf: "[[Decision trees]]"
-uses: ["[[Bootstrap aggregating (bagging)]]", "[[Feature bagging]]"]
-relatedTo: ["[[Bagging]]", "[[Ensemble methods]]", "[[Classification]]", "[[Regression]]"]
+uses:
+  - "[[Bootstrap aggregating (bagging)]]"
+  - "[[Feature bagging]]"
+relatedTo:
+  - "[[Bagging]]"
+  - "[[Ensemble methods]]"
+  - "[[classification]]"
+  - "[[Regression]]"
 ---
 
 # Random Forest

@@ -13,7 +13,7 @@ tags:
   - Hiérarchie
   - Multi_Agent
 ---
-**Définition** : [[Classification]] des agents selon leur fonction et position dans la hiérarchie du système multi-[[agent]].
+**Définition** : [[classification]] des agents selon leur fonction et position dans la hiérarchie du système multi-[[agent]].
 
 # **Types principaux** :
 

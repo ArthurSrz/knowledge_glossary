@@ -1,1 +1,4 @@
-Happens when [[Feature]] are poor reflections of some constructs. 
+---
+skos:broader: "[[bias]]"
+---
+Happens when [[feature]] are poor reflections of some constructs. 

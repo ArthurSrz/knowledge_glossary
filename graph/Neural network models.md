@@ -2,7 +2,7 @@
 subclassOf: "[[ML models]]"
 composed_of: "[[Artificial neuron]]"
 uses: "[[Weights]]"
-includes: "[[Bias]]"
+includes: "[[bias]]"
 enables: "[[Deep learning]]"
 ---
 
@@ -18,7 +18,7 @@ Neural networks are computational models inspired by the structure and function 
 3. **Output Layer**: Produces final predictions
 4. **[[Artificial neuron]]**: Basic computational unit
 5. **[[Weights]]**: Connection strengths between neurons
-6. **[[Bias]]**: Offset terms for each neuron
+6. **[[bias]]**: Offset terms for each neuron
 
 ### Key Concepts
 - **Activation Functions**: Non-linear transformations (ReLU, Sigmoid, Tanh)

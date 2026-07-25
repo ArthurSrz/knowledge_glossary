@@ -2,7 +2,7 @@
 
 ## Related concepts (Adamic-Adar connections)
 
-- [[Bias]] - Source of ethical risks (Adamic-Adar: 0.641)
+- [[bias]] - Source of ethical risks (Adamic-Adar: 0.641)
 - [[Fairness]] - Mitigating ethical risks (Adamic-Adar: 0.641)
 - [[accountable AI]] - Framework for addressing risks (Adamic-Adar: 0.641)
 - [[Fair AI]] - Preventing ethical harms

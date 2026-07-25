@@ -16,7 +16,7 @@ instanceOf: "[[Excel vs. Gsheet problem]]"
 
 ## Conditional Formatting
 
-| [[Feature]] | [[Excel]] | Google Sheets | Converts? |
+| [[feature]] | [[Excel]] | Google Sheets | Converts? |
 |---------|-------|---------------|-----------|
 | Highlight cell [[rules]] | ✓ | ✓ | Partially — formula references may shift |
 | Top/Bottom [[rules]] | ✓ | ✓ | Partially |
@@ -43,7 +43,7 @@ Rule execution order and precedence differ between platforms. The "stop if true"
 
 ## Charts
 
-| [[Feature]] | Converts? |
+| [[feature]] | Converts? |
 |---------|-----------|
 | Basic charts (bar, line, pie) | Mostly yes |
 | 3D effects, shadows | Lost |

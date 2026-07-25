@@ -5,19 +5,19 @@ has part(s):
 studied by:
   - "[[graph/library science]]"
   - "[[graph/informatics]]"
-has part(s) of the class: "[[graph/class]]"
+has part(s) of the class: "[[class]]"
 described by source:
   - "[[graph/Brockhaus and Efron Encyclopedic Dictionary]]"
   - "[[graph/Granat Encyclopedic Dictionary]]"
 different from:
-  - "[[graph/Classification]]"
-  - "[[graph/classification]]"
+  - "[[classification]]"
+  - "[[classification]]"
 subclass of:
   - "[[graph/knowledge organization system]]"
   - "[[graph/scheme]]"
-has cause: "[[graph/classification]]"
+has cause: "[[classification]]"
 facet of:
-  - "[[graph/classification]]"
+  - "[[classification]]"
   - "[[graph/typology]]"
 instance of: "[[graph/variable-order class]]"
 has characteristic: "[[graph/type of classification]]"

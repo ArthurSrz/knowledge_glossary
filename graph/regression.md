@@ -65,7 +65,7 @@ Galton's work:
 - [[Correlation]]
 - [[Least squares]]
 - [[Linear models]]
-- [[Prediction]]
+- [[prediction]]
 - [[Statistical inference]]
 
 ## References
