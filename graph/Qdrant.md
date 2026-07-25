@@ -1,3 +1,3 @@
 ---
-exampleOf: "[[Vector database]]"
+exampleOf: "[[vector database]]"
 ---

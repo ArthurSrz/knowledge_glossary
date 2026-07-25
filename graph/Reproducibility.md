@@ -4,4 +4,4 @@ Best practices are :
 
 * [[Glossary/Documentation|Documentation]]
 * [[Data lineage]]
-* [[Version control]]
+* [[version control]]

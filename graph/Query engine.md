@@ -1,3 +1,3 @@
 ---
-builtOnTopOf: "[[Index]]"
+builtOnTopOf: "[[index]]"
 ---

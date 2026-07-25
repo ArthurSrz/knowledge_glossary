@@ -10,7 +10,7 @@ Technique qui permet d'appliquer un [[Large Language Model]] sur un corpus spéc
 
 - [[Large Language Model]] - RAG enhances LLMs
 - [[Vanilla RAG design]] - Basic RAG architecture
-- [[Vector database]] - Storage for embeddings
+- [[vector database]] - Storage for embeddings
 - [[Embeddings]] - Document representations
 - [[Similarity scores]] - Retrieval ranking
 - [[Query engine]] - Processes user queries

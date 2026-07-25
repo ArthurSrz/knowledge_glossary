@@ -1,0 +1,3 @@
+---
+skos:broader: "[[graphs]]"
+---

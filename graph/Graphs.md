@@ -15,7 +15,7 @@ A graph can be defined by the [[data]] of a set on which a binary, anti-reflexiv
 
 ### Definition 2 
 
-A graph is a pair G = (X, E) consisting of a non-empty finite set X, and a set E of pairs of elements of X. The elements of X are the [[Vertices]] of graph G, and those of E are the [[Edges]] of graph G. 
+A graph is a pair G = (X, E) consisting of a non-empty finite set X, and a set E of pairs of elements of X. The elements of X are the [[vertices]] of graph G, and those of E are the [[Edges]] of graph G. 
 
 ### Definition 3 
 

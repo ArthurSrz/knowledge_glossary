@@ -1,7 +1,7 @@
 ---
 NecessarilyImplies: "[[Risk]]"
 skos:narrower:
-  - "[["
+  - "[[feature engineering]]"
 ---
 
 Require a broader set of [[skills]] and are harder to show progress than [[Software projects]]. 

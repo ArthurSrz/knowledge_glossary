@@ -8,6 +8,6 @@
 - [[Transparency]] - Model decision clarity
 - [[accountability]] - Responsible AI requirement
 - [[accountable AI]] - Ethical AI framework
-- [[Trust]] - Built through interpretability
+- [[trust]] - Built through interpretability
 - [[Decision support]] - Requires interpretable models
 - [[Visualizations]] - Interpretation through graphics

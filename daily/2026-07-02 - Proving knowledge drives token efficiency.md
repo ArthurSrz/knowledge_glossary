@@ -25,16 +25,16 @@ Now, let's get down to the hard part : designing a simple and good enough experi
 
 The hardest part is often to agree on an *end state*, [[meaning]] here : when do we consider it is no longer necessary to consume tokens to [[reach]] the desirable goal ? From there, we can [[test]] different solutions (some with, some others without [[knowledge]] layers, different types of [[knowledge]] layers and so on). But to get there, we must first agree on what a final solution looks like. 
 
-Funny enough here, I advocate that a final solution is **one that looks like so much an original human-made solution that we can no longer distinguish which is which**. The idea is not mine, it is Turing's. In other words, I advocate a final solution is a solution that passes the [[Turing test]]. 
+Funny enough here, I advocate that a final solution is **one that looks like so much an original human-made solution that we can no longer distinguish which is which**. The idea is not mine, it is Turing's. In other words, I advocate a final solution is a solution that passes the [[turing test]]. 
 
 Said in other words, **you know you should no longer consume [[token]] once the generated [[output]] looks like so much the original you can no longer distinguish which was produced and which was generated.**
 
 Rephrasing the objective of the experiment to [[design]] here : 
 
-> Do [[knowledge]] layers help generated ouput pass the [[Turing test]] faster ? 
+> Do [[knowledge]] layers help generated ouput pass the [[turing test]] faster ? 
 
 > [!summary] Interlude 
-> Designing the experiment first requires agreeing on an end state, i.e the point at which consuming more tokens is no longer necessary to [[reach]] the goal. The proposed criterion, borrowed from Turing, is indistinguishability: the [[output]] is done once it resembles a human-made original so closely that you can't tell which is which. This reframes the whole question as: do [[knowledge]] layers help generated [[output]] pass the [[Turing test]] faster?
+> Designing the experiment first requires agreeing on an end state, i.e the point at which consuming more tokens is no longer necessary to [[reach]] the goal. The proposed criterion, borrowed from Turing, is indistinguishability: the [[output]] is done once it resembles a human-made original so closely that you can't tell which is which. This reframes the whole question as: do [[knowledge]] layers help generated [[output]] pass the [[turing test]] faster?
 
 The simpler end state to agree on is a slide. Why a slide ? Because a slide is simple, and needs both semantic and visual [[precision]].
 
@@ -46,7 +46,7 @@ So I'll take a slide crafted by humans (below) and this will be our end state.
 
 As I said, if the generated slide passes the Turing tests, then the end state was reached and we should stop consuming tokens. But Turing's [[test]] most certainly rely on subjectivity : some people will be confused, others will be wrong, others will spot AI intervention instantly. 
 
-So we need more than a [[Turing test]]. We need metrics. I propose 3 [[metric]] : 
+So we need more than a [[turing test]]. We need metrics. I propose 3 [[metric]] : 
 
 1. **Structure [[metric]]** : how many **structure elements** from the generated [[output]] match the original one ? 
 2. **Content [[metric]]** : what is the [[distance]] between the [[token]] sequence generated and the original word sequence ? 
@@ -60,11 +60,11 @@ In the slide above we see :
 * 1 visual [[design]] with a relatively small title, lots of space inside the slide and distinguishable color palette
 
 > [!summary] Interlude
-> The chosen end state is a human-made slide, since a slide is simple yet demands both semantic and visual [[precision]]. Because the [[Turing test]] alone is too subjective, quality is measured with three metrics: a structure [[metric]] (how many structural elements match the original), a content [[metric]] (the [[distance]] between generated and original word sequences), and a visual [[metric]] (an LLM-as-judge comparing the two slides). The reference slide has 5 structure elements (1 title, 4 boxes), 10 word sequences, and a distinct visual [[design]] featuring a small title, generous spacing, and a clear color palette.
+> The chosen end state is a human-made slide, since a slide is simple yet demands both semantic and visual [[precision]]. Because the [[turing test]] alone is too subjective, quality is measured with three metrics: a structure [[metric]] (how many structural elements match the original), a content [[metric]] (the [[distance]] between generated and original word sequences), and a visual [[metric]] (an LLM-as-judge comparing the two slides). The reference slide has 5 structure elements (1 title, 4 boxes), 10 word sequences, and a distinct visual [[design]] featuring a small title, generous spacing, and a clear color palette.
 
 All in all, the end state is reached once : 
 
-* The generated content passed the [[Turing test]] 
+* The generated content passed the [[turing test]] 
 * Perfect match of structure elements
 * [[Distance]] between content is near 0 
 * The LLM as a judge does not spot any visual difference
@@ -87,13 +87,13 @@ And I'll [[measure]] 3 things :
 
 ##### Harness 1 : [[Claude Cowork]] 
 
-It took 64 minutes to get to a slide that might pass the [[Turing test]]. It consumes 6% of my usage sessions.
+It took 64 minutes to get to a slide that might pass the [[turing test]]. It consumes 6% of my usage sessions.
 
 ![[claude-slides.pdf]]
 
 What is interesting here is that I [[reach]] a plateau after the 4th iteration, where each new prompt might get me further away from the [[target]]. Let's note that here I started by prompting, then adding file [[templates]] then I did some minor refinement. 
 
-More quantitative [[measure]] on what I mean by "*that might have pass the [[Turing test]]*" : 
+More quantitative [[measure]] on what I mean by "*that might have pass the [[turing test]]*" : 
 
 ![[results-it1-convergence-experimentation.png]]
 
@@ -155,7 +155,7 @@ We got an impressive core on the content driven by high semantic similarity
 ## What the numbers say 
 
 
-The experiment set out to [[test]] one claim: that [[knowledge]] layers help generated [[output]] pass the [[Turing test]] faster, with fewer tokens. **Across four harnesses, the [[pattern]] is clear.**
+The experiment set out to [[test]] one claim: that [[knowledge]] layers help generated [[output]] pass the [[turing test]] faster, with fewer tokens. **Across four harnesses, the [[pattern]] is clear.**
 
 Raw prompting ([[Claude Cowork]]) plateaus early : good structure, but content stalls at 28% and the run burns the most [[session]] budget for the weakest result. Adding image [[generation]] (Google AI Studio) roughly doubles content fidelity and sharpens the visuals, but overflows the [[token]] window. Throwing compute at the problem via [[clarifeye]] build mode nails structure perfectly, yet at 2.2 million tokens and €12 it still leaves content at 15%, a proof that more tokens alone don't close the semantic gap.
 

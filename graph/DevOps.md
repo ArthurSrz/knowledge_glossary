@@ -1,10 +1,27 @@
 ---
-foundationalPaper: "The DevOps Handbook (Kim, Humble, Debois & Willis, 2016)"
-keyPapers: ["Continuous Delivery: Reliable Software Releases (Humble & Farley, 2010)", "Site Reliability Engineering (Beyer et al., 2016)", "The Phoenix Project (Kim et al., 2013)"]
-combines: ["[[Development]]", "[[Operations]]"]
-enables: ["[[Continuous Integration]]", "[[Continuous Deployment]]", "[[Infrastructure as Code]]"]
-practices: ["[[Automation]]", "[[Monitoring]]", "[[Version control]]", "[[Collaboration]]"]
-tools: ["[[Docker]]", "[[Kubernetes]]", "[[Jenkins]]", "[[Git]]", "[[Ansible]]"]
+foundationalPaper: The DevOps Handbook (Kim, Humble, Debois & Willis, 2016)
+keyPapers:
+  - "Continuous Delivery: Reliable Software Releases (Humble & Farley, 2010)"
+  - Site Reliability Engineering (Beyer et al., 2016)
+  - The Phoenix Project (Kim et al., 2013)
+combines:
+  - "[[Development]]"
+  - "[[Operations]]"
+enables:
+  - "[[Continuous Integration]]"
+  - "[[Continuous Deployment]]"
+  - "[[Infrastructure as Code]]"
+practices:
+  - "[[Automation]]"
+  - "[[Monitoring]]"
+  - "[[version control]]"
+  - "[[Collaboration]]"
+tools:
+  - "[[Docker]]"
+  - "[[Kubernetes]]"
+  - "[[Jenkins]]"
+  - "[[Git]]"
+  - "[[Ansible]]"
 evolution: "[[MLOps]]"
 ---
 

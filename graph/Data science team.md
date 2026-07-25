@@ -12,6 +12,6 @@ Made of [[Data scientist]]
 - [[Engineering team]] - Technical implementation
 - [[DevOps]] - Operations and deployment
 - [[Collaboration tools]] - Team coordination
-- [[Version control]] - Code management
+- [[version control]] - Code management
 - [[Agile approach]] - Team methodology
 - [[Daily stand-ups]] - Team communication

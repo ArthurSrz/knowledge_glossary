@@ -1,1 +1,1 @@
-Method for [[Features selection]]
+Method for [[graph/feature selection]]

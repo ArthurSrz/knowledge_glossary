@@ -1,11 +1,25 @@
 ---
-foundationalPaper: "Distributed Representations (Hinton, 1984)"
-keyPapers: ["A Neural Probabilistic Language Model (Bengio et al., 2003)", "Efficient Estimation of Word Representations in Vector Space (Mikolov et al., 2013)", "Distributed Representations of Words and Phrases (Mikolov et al., 2013)"]
+foundationalPaper: Distributed Representations (Hinton, 1984)
+keyPapers:
+  - A Neural Probabilistic Language Model (Bengio et al., 2003)
+  - Efficient Estimation of Word Representations in Vector Space (Mikolov et al., 2013)
+  - Distributed Representations of Words and Phrases (Mikolov et al., 2013)
 entity: "[[data structure]]"
-storedInto: "[[Vector database]]"
-represents: ["[[Words]]", "[[Entities]]", "[[Concepts]]", "[[Documents]]"]
-properties: ["[[Semantic similarity]]", "[[Dense representation]]", "[[Continuous space]]"]
-types: ["[[Word embeddings]]", "[[Sentence embeddings]]", "[[Document embeddings]]", "[[Graph embeddings]]"]
+storedInto: "[[vector database]]"
+represents:
+  - "[[Words]]"
+  - "[[Entities]]"
+  - "[[Concepts]]"
+  - "[[Documents]]"
+properties:
+  - "[[Semantic similarity]]"
+  - "[[Dense representation]]"
+  - "[[Continuous space]]"
+types:
+  - "[[Word embeddings]]"
+  - "[[Sentence embeddings]]"
+  - "[[Document embeddings]]"
+  - "[[Graph embeddings]]"
 ---
 
 A vector representation of a [[token]] 

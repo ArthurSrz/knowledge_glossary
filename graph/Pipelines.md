@@ -1,10 +1,29 @@
 ---
 foundationalPaper: "Pipeline Decomposition: A Machine Learning Approach (Nilsson, 1970)"
-keyPapers: ["MLlib: Machine Learning in Apache Spark (Meng et al., 2016)", "Scikit-learn: Machine Learning in Python (Pedregosa et al., 2011)", "Data Science Pipelines (Smith & Johnson, 2015)"]
-enables: ["[[Workflow automation]]", "[[Reproducibility]]", "[[Modular design]]"]
-components: ["[[Data ingestion]]", "[[Data preprocessing]]", "[[Feature engineering]]", "[[Model training]]", "[[Model evaluation]]"]
-implementations: ["[[Scikit-learn Pipeline]]", "[[Apache Beam]]", "[[Kubeflow]]", "[[MLflow]]"]
-types: ["[[Training pipeline]]", "[[Inference pipeline]]", "[[Data pipeline]]", "[[ML pipeline]]"]
+keyPapers:
+  - "MLlib: Machine Learning in Apache Spark (Meng et al., 2016)"
+  - "Scikit-learn: Machine Learning in Python (Pedregosa et al., 2011)"
+  - Data Science Pipelines (Smith & Johnson, 2015)
+enables:
+  - "[[Workflow automation]]"
+  - "[[Reproducibility]]"
+  - "[[Modular design]]"
+components:
+  - "[[Data ingestion]]"
+  - "[[Data preprocessing]]"
+  - "[[feature engineering]]"
+  - "[[Model training]]"
+  - "[[Model evaluation]]"
+implementations:
+  - "[[Scikit-learn Pipeline]]"
+  - "[[Apache Beam]]"
+  - "[[Kubeflow]]"
+  - "[[MLflow]]"
+types:
+  - "[[Training pipeline]]"
+  - "[[Inference pipeline]]"
+  - "[[Data pipeline]]"
+  - "[[ML pipeline]]"
 ---
 
 # Pipelines

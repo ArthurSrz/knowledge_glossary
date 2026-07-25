@@ -2,7 +2,7 @@
 foundationalPaper: Corporate Accountability for Privacy (Bamberger & Mulligan, 2011)
 relatedTo:
   - "[[Transparency]]"
-  - "[[Trust]]"
+  - "[[trust]]"
   - "[[Governance]]"
 fundamentalTo: "[[accountable AI]]"
 concepts:

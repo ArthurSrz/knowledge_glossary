@@ -1,1 +1,1 @@
-One way to inspire [[Trust]]. Particularly important when releasing AI product. 
+One way to inspire [[trust]]. Particularly important when releasing AI product. 

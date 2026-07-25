@@ -1,4 +1,4 @@
-One way to inspire [[Trust]]. 
+One way to inspire [[trust]]. 
 
 Example : 
 > Show interval of confidence for each class in a classification problem. 

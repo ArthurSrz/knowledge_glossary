@@ -1,15 +1,16 @@
 ---
-TypeOf: "[[Index]]"
+TypeOf: "[[index]]"
 has part(s):
   - "[[graph/direction]]"
   - "[[graph/vector length]]"
-subclass of: "[[graph/vector]]"
+subclass of: "[[vector]]"
 instance of: "[[Geometric concept]]"
 part of: "[[graph/Euclidean space]]"
+skos:broader: "[[index]]"
 ---
-An index made of [[Vectors]]. Can be queried in [[CYPHER]] language.
+An [[index]] made of [[Vectors]]. Can be queried in [[CYPHER]] language.
 
-### Vanilla query to create index 
+### Vanilla [[query]] to create [[index]] 
 
 ```
 CREATE VECTOR INDEX chunkEmbedding IF NOT EXISTS

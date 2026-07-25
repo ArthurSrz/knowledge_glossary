@@ -2,7 +2,7 @@
 leadsTo:
   - "[[Ground truth]]"
 same:
-  - "[[Variance]]"
+  - "[[variance]]"
 meanTo: "[[communicate uncertainty]]"
 ---
 Of **all** the predicted positives, how many were actually positives. Ratio of [[True Positive (TP)]] divided by the sum of [[True Positive (TP)]] and [[False positives]]. 
@@ -11,7 +11,7 @@ Optimizing precision means making sure we get the right answers even if it invol
 
 During the [[Evaluation]] phase of the [[CRISP-DM Process]], there is a tradeoff between the precision and the [[Accuracy 1]]
 
-Statisticians prefer the term [[Variance]].
+Statisticians prefer the term [[variance]].
 
 
 
