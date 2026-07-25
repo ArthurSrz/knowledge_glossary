@@ -6,6 +6,7 @@ subclass of:
   - "[[graph/Mathematical operation]]"
 maintained by WikiProject: "[[graph/WikiProject Mathematics]]"
 uses: "[[graph/unary operator]]"
+broader: "[[combinatorics]]"
 ---
 
 Mathematical operation with only one operand. 

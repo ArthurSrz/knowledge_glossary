@@ -12,6 +12,7 @@ tags:
   - Rôles_Agent
   - Hiérarchie
   - Multi_Agent
+broader: "[[Agentic System]]"
 ---
 **Définition** : [[classification]] des agents selon leur fonction et position dans la hiérarchie du système multi-[[agent]].
 

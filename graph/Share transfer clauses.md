@@ -2,6 +2,7 @@
 uses:
   - "[[Shareholders agreement]]"
 subclass of: []
+broader: "[[Shareholders agreement]]"
 ---
 
 [Share transfer clauses](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000020148461)

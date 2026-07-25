@@ -14,4 +14,5 @@ has characteristic:
 image: http://commons.wikimedia.org/wiki/Special:FilePath/Bijection.svg
 Commons category: Bijectivity
 wikidata entity id: Q180907
+broader: "[[Mapping]]"
 ---

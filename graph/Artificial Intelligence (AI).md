@@ -5,6 +5,7 @@ skos:narrower:
   - "[[computer vision]]"
   - "[[classification]]"
   - "[[prediction]]"
+broader: "[[AI]]"
 ---
 
 

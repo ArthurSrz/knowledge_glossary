@@ -1,3 +1,6 @@
+---
+broader: "[[AI]]"
+---
 1. [[collecting data]]
 2. Move/Store ([[best]] to avoid [[Data silos]])
 3. [[Explore the data]]

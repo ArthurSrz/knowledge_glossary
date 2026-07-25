@@ -39,4 +39,5 @@ name:
   - information retrieval thesaurus
   - IR thesaurus
 wikidata entity id: Q17152639
+broader: "[[knowledge organization system]]"
 ---

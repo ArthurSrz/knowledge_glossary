@@ -63,4 +63,5 @@ Mozilla Developer Network article:
 described at URL: https://www.w3schools.com/whatis/whatis_http.asp
 logo image: http://commons.wikimedia.org/wiki/Special:FilePath/HTTP%20logo.svg
 wikidata entity id: Q8777
+broader: "[[Infrastructure]]"
 ---

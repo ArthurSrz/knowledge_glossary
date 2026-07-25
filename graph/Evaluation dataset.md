@@ -1,4 +1,4 @@
 ---
 partOf: "[[LLM output evaluation]]"
-broader: "[[Evaluation]]"
+broader: "[[evaluation]]"
 ---

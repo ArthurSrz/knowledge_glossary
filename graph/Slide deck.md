@@ -10,4 +10,5 @@ instance of: "[[db/type of document]]"
 nickname: PowerPoint
 Commons category: Presentation slides
 wikidata entity id: Q110611535
+broader: "[[Product]]"
 ---

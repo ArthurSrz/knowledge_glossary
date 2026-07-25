@@ -64,4 +64,5 @@ UMLS CUI: C1519795
 Krugosvet article (archived): nauka_i_tehnika/fizika/EDINITSI_IZMERENIYA_FIZICHESKIH_VELICHIN.html
 Commons category: Units of measure
 wikidata entity id: Q47574
+broader: "[[Metric]]"
 ---

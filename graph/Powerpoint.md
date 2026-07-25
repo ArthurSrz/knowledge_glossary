@@ -71,4 +71,5 @@ Commons category: Microsoft PowerPoint
 logo image: http://commons.wikimedia.org/wiki/Special:FilePath/Microsoft%20Office%20PowerPoint%20%282025%E2%80%93present%29.svg
 software version identifier: 2604 (Build 19929.20136)
 wikidata entity id: Q11266
+broader: "[[Product]]"
 ---

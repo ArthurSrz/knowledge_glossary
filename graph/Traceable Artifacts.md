@@ -4,6 +4,7 @@ dependencies: [Trace ID, Span ID, Structured Events]
 components: [Development Artifacts, Production Artifacts, Trace Events, Span Events]
 category: Concepts Fondamentaux
 tags: [Artefacts_Traçables, Observability_2.0, Logging]
+broader: "[[version control]]"
 ---
 
 # Traceable Artifacts

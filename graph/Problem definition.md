@@ -1,5 +1,6 @@
 ---
 partOf: "[[business understanding]]"
+broader: "[[CRISP-DM Process]]"
 ---
 
 Example of target : Electric utility Director of Operations 

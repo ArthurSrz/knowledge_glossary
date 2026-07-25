@@ -10,4 +10,5 @@ different from: "[[graph/De facto]]"
 opposite of: "[[graph/de jure standard]]"
 OmegaWiki Defined Meaning: "855310"
 wikidata entity id: Q385853
+broader: "[[de facto]]"
 ---

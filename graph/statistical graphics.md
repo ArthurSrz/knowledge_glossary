@@ -8,4 +8,5 @@ topic's main category: "[[graph/Q32097279]]"
 ACM Classification Code (2012): "10003698"
 Commons category: Statistical charts
 wikidata entity id: Q3427422
+broader: "[[data visualization]]"
 ---

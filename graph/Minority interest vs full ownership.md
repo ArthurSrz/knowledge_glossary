@@ -3,6 +3,7 @@ uses:
   - "[[Control (L.233-3)]]"
   - "[[Capital participation]]"
 subclass of: []
+broader: "[[Shareholders agreement]]"
 ---
 
 [Minority interest vs full ownership](https://www.wikidata.org/wiki/Q1415886)

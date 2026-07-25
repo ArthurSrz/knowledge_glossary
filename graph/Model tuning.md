@@ -65,7 +65,7 @@ From Snoek et al. (2012):
    - Discrete vs continuous variables
    - Conditional parameters
 
-1. **[[Evaluation]] Strategy**:
+1. **[[evaluation]] Strategy**:
    - Cross-validation
    - Holdout validation
    - Time series validation

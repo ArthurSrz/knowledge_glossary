@@ -49,7 +49,7 @@ Google Sheets supports open-ended ranges like `A4:A`. See also [Formula Compatib
 
 `=SUM(B4:B)` automatically includes new rows added below B4. [[Excel]] has no equivalent — `B:B` includes rows 1–3 (which may contain headers or other [[data]]), and `B4:B1048576` is a fixed range to the theoretical max row.
 
-## [[Evaluation]] Order
+## [[evaluation]] Order
 
 Both platforms evaluate formulas in dependency order, but edge cases differ:
 

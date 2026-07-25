@@ -12,4 +12,4 @@ The most widely used data science project methodology. It was developed as a fle
 - [[data understanding]] - CRISP-DM phase (Adamic-Adar: 0.721)
 - [[business understanding]] - Initial phase (Adamic-Adar: 0.721)
 - [[modeling]] - Core phase of CRISP-DM
-- [[Evaluation]] - Verification phase
+- [[evaluation]] - Verification phase

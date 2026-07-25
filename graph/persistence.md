@@ -15,4 +15,5 @@ facet of:
   - "[[graph/computer storage media]]"
   - "[[graph/state]]"
 OmegaWiki Defined Meaning: "1705986"
+broader: "[[Infrastructure]]"
 ---

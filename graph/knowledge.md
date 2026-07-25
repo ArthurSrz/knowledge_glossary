@@ -48,4 +48,5 @@ UMLS CUI: C0376553
 MeSH tree code: K01.468
 schematic: http://commons.wikimedia.org/wiki/Special:FilePath/Classical%20definition%20of%20Kno%20uk.svg
 wikidata entity id: Q9081
+broader: "[[Process]]"
 ---

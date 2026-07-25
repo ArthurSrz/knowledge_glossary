@@ -1,3 +1,6 @@
+---
+broader: "[[knowledge]]"
+---
 
 [Knowledge worker](https://en.wikipedia.org/wiki/Knowledge_worker)
 

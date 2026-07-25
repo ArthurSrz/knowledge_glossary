@@ -9,5 +9,6 @@ has part(s):
   - "[[graph/explicit memory]]"
   - "[[graph/implicit memory]]"
   - "[[graph/recall]]"
+broader: "[[Infrastructure]]"
 ---
 Physical device used to store information for immediate use in a digital electronic device

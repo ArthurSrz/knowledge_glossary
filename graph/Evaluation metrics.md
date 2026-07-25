@@ -1,6 +1,6 @@
 ---
 partOf: "[[LLM output evaluation]]"
-broader: "[[Evaluation]]"
+broader: "[[evaluation]]"
 ---
 
 
@@ -24,7 +24,7 @@ broader: "[[Evaluation]]"
 - [[Regression Error Metrics]] - Family of regression measures
 
 ### General Evaluation
-- [[Evaluation]] - Overall evaluation process
+- [[evaluation]] - Overall evaluation process
 - [[Evaluation dataset]] - Data for testing
 - [[Evaluation task]] - Specific evaluation goals
 - [[Cross validation]] - Robust evaluation technique

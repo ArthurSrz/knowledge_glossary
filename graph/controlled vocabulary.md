@@ -14,6 +14,7 @@ UMLS CUI: C0282503
 MeSH tree code: L01.462.750.245.945
 Dewey Decimal Classification: "025.49"
 wikidata entity id: Q1469824
+broader: "[[knowledge organization system]]"
 ---
 
 > [!quote]

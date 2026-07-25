@@ -1,1 +1,4 @@
+---
+broader: "[[Pipelines]]"
+---
 Data format used by [[Data engineer]]s to implement data [[Pipelines]]. 

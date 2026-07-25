@@ -39,4 +39,5 @@ Library of Congress Classification:
   - JC330
   - HM1256
 wikidata entity id: Q25107
+broader: "[[negotiation]]"
 ---

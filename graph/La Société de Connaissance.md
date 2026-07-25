@@ -5,6 +5,7 @@ aliases:
   - LSCO
 partOf:
   - "[[Le Bateau Ivre des données]]"
+broader: "[[knowledge]]"
 ---
 Série d'articles cherchant à comprendre à une seule et unique problématique : 
 

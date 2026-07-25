@@ -29,4 +29,5 @@ sitemap URL: https://www.google.com/sheets/sitemaps.xml
 source code repository URL: https://github.com/googleworkspace
 logo image: http://commons.wikimedia.org/wiki/Special:FilePath/Google%20Sheets%20icon%20%282026%29.svg
 wikidata entity id: Q46261310
+broader: "[[spreadsheet]]"
 ---

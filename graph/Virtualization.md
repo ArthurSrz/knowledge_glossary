@@ -1,6 +1,7 @@
 ---
 allows_dividingOf: "[[Dedicated server]]"
 allows_remoteAccess_of: "[[Dedicated server]]"
+broader: "[[Infrastructure]]"
 ---
 
 

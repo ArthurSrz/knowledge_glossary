@@ -1,3 +1,4 @@
 ---
 derivedFrom: "[[Socrates]]"
+broader: "[[elicitation]]"
 ---

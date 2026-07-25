@@ -1,3 +1,6 @@
+---
+broader: "[[Product]]"
+---
 # Product Packaging
 
 ## Definition

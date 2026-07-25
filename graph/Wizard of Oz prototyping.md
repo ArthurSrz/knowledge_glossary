@@ -1,3 +1,6 @@
+---
+broader: "[[Prototyping]]"
+---
 # Wizard of Oz Prototyping
 
 ## Definition

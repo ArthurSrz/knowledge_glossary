@@ -6,4 +6,4 @@ instance of:
   - "[[scientific method]]"
 ---
 
-Base for [[Evaluation]]
+Base for [[evaluation]]

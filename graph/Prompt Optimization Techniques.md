@@ -4,6 +4,7 @@ dependencies: [Prompt Templates]
 components: [Chain-of-Thought, Few-Shot Learning, Zero-Shot Learning, Tree-of-Thought, Self-Consistency, Plan-and-Solve, Iterative Prompting]
 category: Prompt Management
 tags: [Optimisation_Prompts, Techniques_Prompting, Raisonnement, CoT]
+broader: "[[AI prompt]]"
 ---
 
 # Prompt Optimization Techniques

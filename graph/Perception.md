@@ -10,4 +10,5 @@ part of:
   - "[[awareness]]"
   - "[[recognition]]"
   - "[[psychological terminology]]"
+broader: "[[Design thinking]]"
 ---

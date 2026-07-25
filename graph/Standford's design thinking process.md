@@ -1,3 +1,6 @@
+---
+broader: "[[Design thinking]]"
+---
 Equivalent to [[CRISP-DM Process]] but for the human-side. Phases : 
 
 1. [[Empathy]]

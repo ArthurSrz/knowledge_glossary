@@ -1,3 +1,6 @@
+---
+broader: "[[systems theory]]"
+---
 Aside from [[Don Norman's principles of Interaction Design]], this is a specific consideration to take into account when designing [[ML system]]. 
 
 Mechanisms where [[User inputs]] influence the [[output]] they see over time. 

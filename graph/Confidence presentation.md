@@ -1,3 +1,6 @@
+---
+broader: "[[communicate uncertainty]]"
+---
 One way to inspire [[trust]]. 
 
 Example : 

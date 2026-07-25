@@ -8,4 +8,5 @@ said to be the same as:
   - "[[graph/quality]]"
 partially coincident with: "[[graph/quality]]"
 subclass of: "[[abstract entity]]"
+broader: "[[knowledge graph]]"
 ---

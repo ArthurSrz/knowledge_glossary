@@ -119,4 +119,5 @@ signature: http://commons.wikimedia.org/wiki/Special:FilePath/Gilles%20Deleuze%2
 Stack Exchange tag: https://philosophy.stackexchange.com/tags/deleuze
 ISNI: 000000012277323X
 wikidata entity id: Q184226
+broader: "[[Dividual]]"
 ---

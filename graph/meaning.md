@@ -18,4 +18,5 @@ Dewey Decimal Classification:
   - "121.68"
   - "401.43"
 Commons category: Meaning (philosophy of language)
+broader: "[[semantics]]"
 ---

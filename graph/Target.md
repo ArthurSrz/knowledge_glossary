@@ -1,5 +1,6 @@
 ---
 representedBy: "[[Y]]"
+broader: "[[ML models]]"
 ---
 
 Synonyms : annotations, response, Y variable, Dependent Variable. 

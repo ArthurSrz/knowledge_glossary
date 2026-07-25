@@ -4,6 +4,7 @@ dependencies: []
 components: [Chat-style prompts, Instruct-style prompts]
 category: Prompt Management
 tags: [Types_Prompts, Templates, Conversation, Instructions]
+broader: "[[AI prompt]]"
 ---
 
 # Prompt Template Types

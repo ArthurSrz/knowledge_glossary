@@ -7,4 +7,5 @@ different from:
 instance of:
   - "[[graph/Binary function]]"
 subclass of: "[[selection]]"
+broader: "[[combinatorics]]"
 ---

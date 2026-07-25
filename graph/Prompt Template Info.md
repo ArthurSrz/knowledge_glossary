@@ -4,6 +4,7 @@ dependencies: [User Goal, Tools, Chat History]
 components: [User Goal, Instruction, Input Query, Context Doc, Few-shot Example, Output Format, Tools, Chat History]
 category: Prompt Management
 tags: [Templates_Prompt, Contexte, Exemples, Format_Sortie]
+broader: "[[AI prompt]]"
 ---
 
 # Prompt Template Info

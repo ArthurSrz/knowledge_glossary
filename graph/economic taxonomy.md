@@ -5,4 +5,5 @@ subclass of: "[[graph/specialised classification scheme]]"
 has part(s): "[[graph/economics terminology]]"
 instance of: "[[graph/type of classification]]"
 items classified: "[[graph/economics]]"
+broader: "[[taxonomy]]"
 ---

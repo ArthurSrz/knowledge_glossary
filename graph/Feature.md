@@ -6,6 +6,7 @@ aliases:
   - independent variables
   - attributes
   - dimensions
+broader: "[[ML models]]"
 ---
 
 Synonyms : factors, predictors, X variables, independent variables, attributes, dimensions 

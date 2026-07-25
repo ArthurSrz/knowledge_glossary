@@ -2,6 +2,7 @@
 partOf: "[[Retriever Orchestration]]"
 failureMode: "[[Tool Assignment Gate]]"
 relatedTo: "[[Filtered vector search]]"
+broader: "[[Agentic System]]"
 ---
 
 # Tool Assignment Gate

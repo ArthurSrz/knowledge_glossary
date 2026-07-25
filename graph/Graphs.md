@@ -8,6 +8,7 @@ subclass of:
 has part(s):
   - "[[node]]"
   - "[[Edges]]"
+broader: "[[knowledge graph]]"
 ---
 ### Definition 1 
 

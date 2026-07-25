@@ -1,3 +1,6 @@
+---
+broader: "[[Empathy]]"
+---
 
 ## Definition
 

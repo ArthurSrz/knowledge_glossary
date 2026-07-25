@@ -12,5 +12,6 @@ language of work or name: "[[graph/English]]"
 publication date: 2026-01-01T00:00:00Z
 work available at URL: https://andreasehstandlicenseofclarityloc.github.io/neomanitai-terms/pages/class-imbalance-invisibility.html
 wikidata entity id: Q138967784
+broader: "[[Data quality]]"
 ---
 When we have a high number of [[data]] on one [[class]] but very low on another class

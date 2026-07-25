@@ -4,6 +4,7 @@ dependencies: [User Requirements]
 components: []
 category: Agent Creation Registry
 tags: [Objectifs_Agent, Planification, Comportement]
+broader: "[[Process]]"
 ---
 
 # Goals

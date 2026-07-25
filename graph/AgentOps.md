@@ -10,7 +10,7 @@ Plateforme [[DevOps]]/MLOps de bout en bout englobant le développement, l'éval
 
 **Phases du cycle de vie** :
 - **Development** : Développement des agents
-- **[[Evaluation]]** : Évaluation des performances
+- **[[evaluation]]** : Évaluation des performances
 - **Testing** : Tests et validation
 - **[[Deployment]]** : Déploiement en production
 - **Monitoring** : Surveillance continue

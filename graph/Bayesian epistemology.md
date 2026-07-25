@@ -2,6 +2,7 @@
 uses:
   - "[[Bayesian inference]]"
 subclass of: []
+broader: "[[Bayesian inference]]"
 ---
 
 [Bayesian epistemology](https://en.wikipedia.org/wiki/Bayesian_epistemology)

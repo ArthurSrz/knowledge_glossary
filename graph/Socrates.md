@@ -106,4 +106,5 @@ Krugosvet article (archived): gumanitarnye_nauki/filosofiya/SOKRAT.html
 Swedish Open Cultural Heritage URI: LSH/agents/64698
 Colon Classification: R851w529
 wikidata entity id: Q913
+broader: "[[Socratic]]"
 ---

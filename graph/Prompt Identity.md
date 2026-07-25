@@ -4,6 +4,7 @@ dependencies: []
 components: [Prompt ID, Prompt Name, Prompt Version]
 category: Prompt Management
 tags: [Identité_Prompt, Versioning_Prompt, Gestion_Prompts]
+broader: "[[AI prompt]]"
 ---
 
 # Prompt Identity

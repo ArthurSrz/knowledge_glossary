@@ -18,4 +18,5 @@ different from: "[[db/Q56343715]]"
 Commons category: Connotation
 Krugosvet article (archived): lingvistika/konnotaciya
 wikidata entity id: Q661062
+broader: "[[semiotics]]"
 ---

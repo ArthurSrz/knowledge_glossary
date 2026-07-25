@@ -5,4 +5,5 @@ used by:
 part of: "[[graph/table]]"
 subclass of: "[[graph/software resource]]"
 wikidata entity id: Q7673190
+broader: "[[spreadsheet]]"
 ---

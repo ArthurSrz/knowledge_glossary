@@ -1,3 +1,6 @@
+---
+broader: "[[User research]]"
+---
 Synonym : point of view. 
 
 It should be : 

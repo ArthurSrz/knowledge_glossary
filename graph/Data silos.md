@@ -1,3 +1,6 @@
+---
+broader: "[[data]]"
+---
 To break data silos, it requires : 
 
 1. Cultural change : 

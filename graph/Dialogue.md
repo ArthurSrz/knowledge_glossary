@@ -34,4 +34,5 @@ Commons category: Dialogue
 Krugosvet article (archived): gumanitarnye_nauki/lingvistika/DIALOG.html
 Library of Congress Classification: PN1551
 Gujarati Vishwakosh entry: વાક્-3-નાટ્યશાસ્ત્ર
+broader: "[[elicitation]]"
 ---

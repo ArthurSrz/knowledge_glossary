@@ -1,3 +1,6 @@
+---
+broader: "[[Agentic System]]"
+---
 > A harness is every piece of code, configuration, and execution logic that isn't the model itself.  A raw model is not an agent. But it becomes one when a harness gives it things like state, tool execution, [[Feedback loops]], and enforceable [[constraint]]
 > - Langchain
 

@@ -5,6 +5,7 @@ enables: "[[Supervised learning]]"
 transforms: "[[feature]]"
 ParentChild: "[[Datum]]"
 skos:narrower: "[[data object]]"
+broader: "[[Process]]"
 ---
 
 # Data

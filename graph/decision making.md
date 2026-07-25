@@ -1,3 +1,6 @@
+---
+broader: "[[Decision support]]"
+---
 # Decision Making
 
 ## Definition

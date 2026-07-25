@@ -1,3 +1,6 @@
+---
+broader: "[[Product]]"
+---
 # Personalization
 
 ## Definition

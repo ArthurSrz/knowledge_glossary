@@ -96,4 +96,5 @@ Stack Exchange tag: https://stackoverflow.com/tags/excel
 subreddit: excel
 GitHub topic: excel
 wikidata entity id: Q11272
+broader: "[[spreadsheet]]"
 ---

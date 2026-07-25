@@ -16,4 +16,5 @@ studied by:
   - "[[graph/anthropology]]"
   - "[[graph/semiotics]]"
 facet of: "[[graph/communication]]"
+broader: "[[Process]]"
 ---

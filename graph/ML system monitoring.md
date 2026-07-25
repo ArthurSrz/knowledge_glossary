@@ -30,7 +30,7 @@ We also want to make sure we still understand what the model is doing :
 - [[concept drift]] - Monitoring changes in data
 - [[Data drift]] - Data distribution shifts
 - [[Model decay]] - Performance degradation over time
-- [[Detection tool performance]] - Tracking tool efficiency
+- [[detection tool performance]] - Tracking tool efficiency
 - [[Dashboard]] - Visualization of monitoring data
 - [[ML System failures]] - Problems to detect
 - [[Excessive latency]] - Performance issue to monitor

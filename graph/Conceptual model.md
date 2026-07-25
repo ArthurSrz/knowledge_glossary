@@ -5,5 +5,6 @@ partially coincident with: "[[model]]"
 subclass of: "[[graph/Knowledge organization system]]"
 opposite of: "[[graph/Physical model]]"
 different from: "[[graph/Theoretical framework]]"
+broader: "[[Modeling]]"
 ---
 Representation of a system, made of the composition of concepts 

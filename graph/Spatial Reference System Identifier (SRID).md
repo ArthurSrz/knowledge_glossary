@@ -1,3 +1,6 @@
+---
+broader: "[[data type]]"
+---
 # Spatial Reference System Identifier (SRID)
 
 ## Definition

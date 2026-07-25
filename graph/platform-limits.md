@@ -4,6 +4,7 @@ title: Limits & Performance
 description: Cell counts, column limits, file sizes, and performance cliffs for Excel vs Google Sheets.
 tags: [limits, performance, scalability, excel, google-sheets]
 timestamp: 2026-06-28T00:00:00Z
+broader: "[[spreadsheet]]"
 ---
 
 ## Platform Limits Comparison

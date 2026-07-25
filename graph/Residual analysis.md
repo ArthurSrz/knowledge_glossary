@@ -1,1 +1,4 @@
+---
+broader: "[[regression]]"
+---
 Tells you if the model learned the coefficients correctly

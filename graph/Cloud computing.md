@@ -1,6 +1,7 @@
 ---
 differentFrom: "[[Dedicated server]]"
 sameAs: "[[Shared computing resources]]"
+broader: "[[Infrastructure]]"
 ---
 
 ![Cloud computing Thumbnail](https://upload.wikimedia.org/wikipedia/commons/b/b5/Cloud_computing.svg)

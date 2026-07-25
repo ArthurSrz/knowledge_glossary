@@ -1,6 +1,7 @@
 ---
 uses: []
 subclass of: []
+broader: "[[Shareholders agreement]]"
 ---
 
 [Blocking minority (art. L.225-96 Code de commerce)](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000042339458)

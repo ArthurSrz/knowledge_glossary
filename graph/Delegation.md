@@ -7,6 +7,7 @@ has effect:
   - "[[Iron law of oligarchy]]"
 subclass of:
   - "[[legal act]]"
+broader: "[[Management]]"
 ---
 ## Frein 
 

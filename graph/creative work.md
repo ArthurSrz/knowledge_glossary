@@ -5,4 +5,5 @@ different from:
   - "[[Intellectual work]]"
 subclass of:
   - "[[Intellectual work]]"
+broader: "[[intellectual work]]"
 ---

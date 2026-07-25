@@ -1,0 +1,3 @@
+---
+broader: "[[artificial neural network]]"
+---

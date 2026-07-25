@@ -4,6 +4,7 @@ uses:
   - "[[Recall]]"
   - "[[Precision]]"
   - "[[Accuracy 1]]"
+broader: "[[AI]]"
 ---
 Le **détecteur de contenu IA Compilatio** permet de **distinguer les textes humains des textes générés par les Intelligences Artificielles** pour ainsi vérifier l’authenticité des écrits.  
 

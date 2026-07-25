@@ -1,5 +1,6 @@
 ---
 sameAs: "[[Personal computing resources]]"
+broader: "[[Infrastructure]]"
 ---
 
 ![Server (computing) Thumbnail](https://upload.wikimedia.org/wikipedia/commons/c/c9/Client-server-model.svg)

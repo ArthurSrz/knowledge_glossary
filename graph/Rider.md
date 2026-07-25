@@ -1,3 +1,4 @@
 ---
 HasRelationship: "[[activatesShifter]]"
+broader: "[[contract]]"
 ---

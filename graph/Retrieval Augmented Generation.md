@@ -1,5 +1,6 @@
 ---
 HasProvedStandard: "[[Vanilla RAG design]]"
+broader: "[[Large Language Model]]"
 ---
 
 Technique qui permet d'appliquer un [[Large Language Model]] sur un corpus spécifique.

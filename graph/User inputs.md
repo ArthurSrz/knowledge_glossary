@@ -1,5 +1,6 @@
 ---
 influence: "[[User outputs]]"
+broader: "[[User research]]"
 ---
 
 Aside from [[Don Norman's principles of Interaction Design]], 

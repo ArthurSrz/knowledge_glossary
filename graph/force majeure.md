@@ -10,4 +10,5 @@ described by source:
   - "[[db/Great Soviet Encyclopedia (1926–1947)]]"
 OmegaWiki Defined Meaning: "834835"
 Dewey Decimal Classification: "346.02"
+broader: "[[clause]]"
 ---

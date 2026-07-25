@@ -1,3 +1,6 @@
+---
+broader: "[[Infrastructure]]"
+---
 # NoSQL Database
 
 ## Definition

@@ -1,0 +1,3 @@
+---
+broader: "[[control theory]]"
+---

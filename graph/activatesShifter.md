@@ -4,4 +4,5 @@ IdenticalTo: "[[Subagent]]"
 Changes: "[[chainrings]]"
 takesFrom: "[[Rider]]"
 sendsTo: "[[Shifter]]"
+broader: "[[trigger]]"
 ---

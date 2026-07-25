@@ -10,4 +10,5 @@ has characteristic:
   - "[[graph/type of object]]"
 part of: "[[graph/subject and object]]"
 said to be the same as: "[[graph/entity]]"
+broader: "[[knowledge graph]]"
 ---

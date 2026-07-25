@@ -14,4 +14,5 @@ said to be the same as:
   - "[[graph/firmness]]"
   - "[[graph/permanence]]"
 wikidata entity id: Q21075800
+broader: "[[Stochastic processes]]"
 ---

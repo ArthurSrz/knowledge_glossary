@@ -1,3 +1,6 @@
+---
+broader: "[[CRISP-DM Process]]"
+---
 # Test Solution
 
 ## Definition

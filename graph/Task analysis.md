@@ -1,3 +1,6 @@
+---
+broader: "[[User research]]"
+---
 [[ML system]] only helps accomplishing some task. 
 
 Analysis of the step-by-step details of a user's task flow. It includes observation : 

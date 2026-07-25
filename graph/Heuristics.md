@@ -1,3 +1,6 @@
+---
+broader: "[[heuristic]]"
+---
 A simple and quickly implemented solution to a problem. Methods of solving problems using a simplified set of rules based on past experience. 
 
 After applying heuristic, two questions we might ask : 

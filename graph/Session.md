@@ -9,4 +9,5 @@ has characteristic:
 different from: "[[graph/session]]"
 appliesTo:
   - "[[Model Context Protocol (MCP)]]"
+broader: "[[Application development]]"
 ---

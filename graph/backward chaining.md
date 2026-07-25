@@ -6,4 +6,5 @@ literal translation:
   - incatenamento a ritroso
   - ragionamento a ritroso
 wikidata entity id: Q1141183
+broader: "[[Inference]]"
 ---

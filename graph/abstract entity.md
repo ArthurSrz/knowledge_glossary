@@ -5,4 +5,5 @@ has characteristic:
 opposite of: "[[graph/Concrete object]]"
 said to be the same as: "[[graph/Mental object]]"
 subclass of: "[[graph/Entity]]"
+broader: "[[Ontology]]"
 ---

@@ -5,5 +5,6 @@ maintained by WikiProject: "[[graph/WikiProject Mathematics]]"
 Stack Exchange tag: https://stackoverflow.com/tags/sparklines
 Commons category: Sparkline
 wikidata entity id: Q2307841
+broader: "[[spreadsheet]]"
 ---
 There is no [[mapping]] between representation of a sparkline inside [[google sheet]] and inside microsoft [[excel]] 

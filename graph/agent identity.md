@@ -4,6 +4,7 @@ dependencies: []
 components: [Agent ID, Agent Name, Agent Version]
 category: Agent Creation Registry
 tags: [Identité_Agent, Versioning, Gestion_Agents]
+broader: "[[Agentic System]]"
 ---
 
 # [[Agent]] Identity

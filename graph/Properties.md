@@ -1,3 +1,6 @@
+---
+broader: "[[knowledge graph]]"
+---
 # Properties
 
 ## Definition

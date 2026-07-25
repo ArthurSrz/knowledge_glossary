@@ -1,5 +1,5 @@
 ---
-usedBy: "[[Evaluation]]"
+usedBy: "[[evaluation]]"
 broader: "[[Python]]"
 ---
 

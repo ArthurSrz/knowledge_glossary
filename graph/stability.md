@@ -15,4 +15,5 @@ instance of:
   - "[[type of property]]"
   - "[[system characteristic]]"
 wikidata entity id: Q2325497
+broader: "[[Process]]"
 ---

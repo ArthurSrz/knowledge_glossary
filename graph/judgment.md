@@ -15,4 +15,5 @@ Commons category: Judgment
 UMLS CUI: C0022423
 MeSH tree code: F02.463.785.626
 wikidata entity id: Q12621536
+broader: "[[Decision support]]"
 ---

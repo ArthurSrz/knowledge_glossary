@@ -1,3 +1,6 @@
+---
+broader: "[[Process]]"
+---
 One of [[Don Norman's principles of Interaction Design]] : 
 
 > Clear relationships between controls and effect 

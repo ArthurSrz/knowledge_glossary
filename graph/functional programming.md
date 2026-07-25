@@ -9,4 +9,5 @@ instance of:
 subclass of: "[[graph/programming language]]"
 short name: функциональный
 wikidata entity id: Q3839507
+broader: "[[Programming language]]"
 ---

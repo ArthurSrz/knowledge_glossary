@@ -4,6 +4,7 @@ dependencies: []
 components: [Coding, Email, File, Github, Specialized Tools]
 category: Agent Creation Registry
 tags: [Outils, Capacités_Agent, Intégrations]
+broader: "[[Agentic System]]"
 ---
 
 # Toolkits
