@@ -42,7 +42,7 @@ So I'll take the human-slide below, and that will be our end state.
 
 ![[good_visually.png]]
 
-### Scoring the generated slide against the original ? 
+### Scoring the generated slide against the original
 
 As I said, if the generated slide passes the Turing tests, the end state has been reached and we should stop spending tokens. But the [[Turing test]] is unavoidably subjective : some people will be unsure, others will guess wrong, others will spot the AI instantly. 
 
@@ -69,34 +69,29 @@ All in all, the end state is reached once :
 
 ### How will I [[measure]] [[token]] consumption ? 
 
-That's the easy part. I'll take 5 different harness (with their native LLM attached) : 
+That's the easy part. I ran 4 different harness, each with its native LLM attached: 
 * [[Claude]] Cowork (with Sonnet 5)
 * Google AI Studio (with Gemini and Nano Banana 2)
-* [[mistral agents]] with Image [[Generation]] on. 
-* Mistral CLI with Mistral medium 
-* [[Claude]] in [[Power]] Point 
-* [[clarifeye]] Tasks 
+* [[clarifeye]] tasks
+* [[Claude]] Cowork + [[clarifeye]]
 
-And I'll [[measure]] 3 things : 
-* Number of tokens 
-* percentage of a usage [[session]] consumed 
-* Time spent on [[generation]] 
+And for each one I measured three things: the number of tokens consumed, the percentage of a usage [[session]] it burned, and the time spent generating
 
 
 ##### Harness 1 : [[claude cowork]] 
 
-It took 64 minutes to get to a slide that might pass the [[turing test]]. It consumes 6% of my usage sessions.
+It took **64 minutes** to [[reach]] a slide that might pass the [[turing test]], and consumed 6% of my [[session]] allowance. Here is the [[output]]:
 
 ![[claude-slides.pdf]]
 
-What is interesting here is that I [[reach]] a plateau after the 4th iteration, where each new prompt might get me further away from the [[target]]. Let's note that here I started by prompting, then adding file [[templates]] then I did some minor refinement. 
+The interesting part: I hit a plateau after the fourth iteration, past which each new prompt risked taking me further from the [[target]] rather than closer. Note the sequence: I started with prompting alone, then supplied template files, then made minor refinements.
 
-More quantitative [[measure]] on what I mean by "*that might have pass the [[turing test]]*" : 
+To put numbers on what I mean by "might pass the [[Turing test]]" : 
 
 ![[results-it1-convergence-experimentation.png]]
 
 * 4 identical sections out of 5 
-* content is 28% identical semantically speaking and 21,5% literally speaking
+* Content is 28% identical semantically, 21,5% literally
 * 2 major visual [[differences]] : title hierarchy and spacing. 
 
 > [!summary] Interlude
@@ -104,10 +99,10 @@ More quantitative [[measure]] on what I mean by "*that might have pass the [[tur
 
 ##### Harness 2 : Google AI Studio
 
-It took 20 minutes to get to a slide that might pass the Turing Tests. It consumed 21k tokens costing 0,5€ with Nano Banana 2. 
+It took 20 minutes to [[reach]] a slide that might pass the Turing Tests, and consumed 21k tokens at a cost 0,5€ with Nano Banana 2. 
 ![[slide_gemini.jpg]]
 
-Interesting : it exceed the [[token]] window and I had to switch to another [[model]]. 
+Woth noting: it exceed the [[token]] window and I had to switch to another [[model]]. 
 
 Now, about the quantitative [[measure]] : 
 
