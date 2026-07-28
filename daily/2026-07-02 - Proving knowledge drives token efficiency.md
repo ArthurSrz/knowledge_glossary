@@ -21,30 +21,30 @@ Third, and most important , if [[knowledge]] does drive [[token]] efficiency, be
 
 Now, let's get down to the hard part : designing an experiment simple enough and good enough to prove it.
 
-## Experiment [[design]] 
+## Designing a [[token]]-efficiency experiment
 
 The hardest part is usually agreeing on an *end state*, by which I mean here : at chat point do we decde it is no longer necessary to consume tokens to [[reach]] the goal ? Once that's settled, we can [[test]] different solutions (some with [[knowledge]] layers, some without, some with different types of [[knowledge]] layers and so on). 
 
-Funnily enough, I'd argue that a finished solution is **one that resembles an original human-made solution so closely that we can no longer distinguish which is which**. The idea isn't mine, it is Turing's: a finished solution In other words, I advocate a final solution is a solution that passes the [[turing test]]. 
+Funnily enough, I'd argue that a finished solution is **one that resembles an original human-made solution so closely that we can no longer distinguish which is which**. The idea isn't mine, it is Turing's: a finished solution is one that passes the [[Turing test]]. Turing held that intelligence itself can be measured this way, by whether the imitation holds up. 
 
-Said in other words, **you know you should no longer consume [[token]] once the generated [[output]] looks like so much the original you can no longer distinguish which was produced and which was generated.**
+In other words, you know you should stop spending tokens once you can no longer distinguish the generated [[output]] from the human original.
 
-Rephrasing the objective of the experiment to [[design]] here : 
+So here is the objective, restated : 
 
 > Do [[knowledge]] layers help generated ouput pass the [[turing test]] faster ? 
 
 > [!summary] Interlude 
 > Designing the experiment first requires agreeing on an end state, i.e the point at which consuming more tokens is no longer necessary to [[reach]] the goal. The proposed criterion, borrowed from Turing, is indistinguishability: the [[output]] is done once it resembles a human-made original so closely that you can't tell which is which. This reframes the whole question as: do [[knowledge]] layers help generated [[output]] pass the [[turing test]] faster?
 
-The simpler end state to agree on is a slide. Why a slide ? Because a slide is simple, and needs both semantic and visual [[precision]].
+The simplest end state to agree on is a slide. Why a slide ? Because a slide is simple, and it demands both semantic and visual [[precision]].
 
-So I'll take a slide crafted by humans (below) and this will be our end state. 
+So I'll take the human-slide below, and that will be our end state. 
 
 ![[good_visually.png]]
 
 ### How will I [[measure]] the quality of the generated [[output]] ? 
 
-As I said, if the generated slide passes the Turing tests, then the end state was reached and we should stop consuming tokens. But Turing's [[test]] most certainly rely on subjectivity : some people will be confused, others will be wrong, others will spot AI intervention instantly. 
+As I said, if the generated slide passes the Turing tests, the end state has been reached and we should stop spending tokens. But the [[Turing test]] is unavoidably subjective : some people will be unsure, others will gue wrong, others will spot AI intervention instantly. 
 
 So we need more than a [[turing test]]. We need metrics. I propose 3 [[metric]] : 
 
