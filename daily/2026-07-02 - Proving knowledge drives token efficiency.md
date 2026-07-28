@@ -42,32 +42,30 @@ So I'll take the human-slide below, and that will be our end state.
 
 ![[good_visually.png]]
 
-### How will I [[measure]] the quality of the generated [[output]] ? 
+### Scoring the generated slide against the original ? 
 
-As I said, if the generated slide passes the Turing tests, the end state has been reached and we should stop spending tokens. But the [[Turing test]] is unavoidably subjective : some people will be unsure, others will gue wrong, others will spot AI intervention instantly. 
+As I said, if the generated slide passes the Turing tests, the end state has been reached and we should stop spending tokens. But the [[Turing test]] is unavoidably subjective : some people will be unsure, others will guess wrong, others will spot the AI instantly. 
 
-So we need more than a [[turing test]]. We need metrics. I propose 3 [[metric]] : 
+So we need more than a [[turing test]]. We need metrics. I propose three: 
 
-1. **Structure [[metric]]** : how many **structure elements** from the generated [[output]] match the original one ? 
-2. **Content [[metric]]** : what is the [[distance]] between the [[token]] sequence generated and the original word sequence ? 
-3. **Visual [[metric]]** : LLM as a judge [[metric]], where the [[model]] will say what are the [[differences]] between the generated and the original slide 
+1. **Structure [[metric]]** : how many **structural elements** in the generated [[output]] match the original ? 
+2. **Content [[metric]]** : what is the [[distance]] between the generated word sequences and the original ones ? 
+3. **Visual [[metric]]** : LLM-as-a judge: the [[model]] reports which [[differences]] it finds between the generated slide and the original.
 
-([[confusion matrix]] ?)
 
 In the slide above we see : 
 * 5 structure elements (1 title and 4 boxes)
 * 10 word sequences 
-* 1 visual [[design]] with a relatively small title, lots of space inside the slide and distinguishable color palette
+* 1 visual [[design]]: relatively small title, generous white space and a distinctive color palette
 
 > [!summary] Interlude
 > The chosen end state is a human-made slide, since a slide is simple yet demands both semantic and visual [[precision]]. Because the [[turing test]] alone is too subjective, quality is measured with three metrics: a structure [[metric]] (how many structural elements match the original), a content [[metric]] (the [[distance]] between generated and original word sequences), and a visual [[metric]] (an LLM-as-judge comparing the two slides). The reference slide has 5 structure elements (1 title, 4 boxes), 10 word sequences, and a distinct visual [[design]] featuring a small title, generous spacing, and a clear color palette.
 
 All in all, the end state is reached once : 
 
-* The generated content passed the [[turing test]] 
-* Perfect match of structure elements
-* [[Distance]] between content is near 0 
-* The LLM as a judge does not spot any visual difference
+* The structure matches perfectly
+* The content [[distance]] is near zero
+* The LLM judge spots no visual difference
 
 ### How will I [[measure]] [[token]] consumption ? 
 
