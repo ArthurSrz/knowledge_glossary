@@ -67,7 +67,7 @@ All in all, the end state is reached once :
 * The content [[distance]] is near zero
 * The LLM judge spots no visual difference
 
-### How will I [[measure]] [[token]] consumption ? 
+### Counting what each harness consumes
 
 That's the easy part. I ran 4 different harness, each with its native LLM attached: 
 * [[Claude]] Cowork (with Sonnet 5)
@@ -99,42 +99,43 @@ To put numbers on what I mean by "might pass the [[Turing test]]" :
 
 ##### Harness 2 : Google AI Studio
 
-It took 20 minutes to [[reach]] a slide that might pass the Turing Tests, and consumed 21k tokens at a cost 0,5€ with Nano Banana 2. 
+It took 20 minutes to [[reach]] a slide that might pass the Turing Tests, and consumed 21k tokens at a cost 0,5€ with Nano Banana 2. Here is the [[output]]: 
 ![[slide_gemini.jpg]]
 
-Woth noting: it exceed the [[token]] window and I had to switch to another [[model]]. 
+Worth noting: it exceeded the [[token]] window mid-run and I had to switch to another [[model]] to finish.
 
-Now, about the quantitative [[measure]] : 
+The numbers
 
 ![[score_gemini.png]]
-* Structure is exactly the same 
+
+* Structure matches exactly
 * content is 47% identical semantically speaking and 38,5% literally speaking 
 * 1 major visual difference (letter spacing)
 
 > [!summary] Interlude
 > Adding image [[generation]] to the mix moved the needle. Google AI Studio got there in a third of the time, matched the structure exactly, and roughly doubled the content overlap (47% semantic, 38.5% literal), leaving just one visual gap in letter spacing. The catch: it blew past the [[token]] window mid-run and forced a [[model]] switch to finish.
-##### [[clarifeye]] (build mode + tasks)
+##### Harness 3: [[Clarifeye]] tasks
 
-25 minutes and 12 euros later, consumed 2,2 million [[token]] in and 24k [[token]] out, 
+25 minutes and €12 later, consumed 2,2 million [[token]] in and 24k [[output]] tokens. Here is the [[output]]:
 
 ![[clarifeye_tasks_png.png]]
 
-About the quantitative measures
+The numbers: 
 ![[clarifeye_tasks.png]]
-All blocks match.
+Every block matches, but content overlap sits at 15% semantically.
 
 > [!summary] Interlude
 > [[clarifeye]] in build mode nailed the structure completely (every block matched) but at a steep price: 25 minutes, 12 euros, and 2.2 million tokens in. Structure isn't the bottleneck anymore; content is. The score plateaus not because the layout is wrong, but because the words still drift from the original (15% semantic overlap), which is exactly where [[knowledge]] should start earning its keep.
 
-##### [[Claude]] + [[clarifeye]] (use mode + MCP)
+##### Harness 4: [[Claude]] + [[clarifeye]] (use mode + MCP)
 
-10 minutes and 2% of [[Claude]] usage window, 0 euros CCU. 
+10 minutes, 2% of [[Claude]] usage window, 0 euros CCU. 
 
 ![[clarifeye_mcp.pdf]]
 
 
 
-About the quantitative measures :
+The numbers: 
 
 ![[full_results_mcp.png]]
 
@@ -147,13 +148,14 @@ We got an impressive core on the content driven by high semantic similarity
 
 ## What the numbers say 
 
+I set out to [[test]] one claim: that [[knowledge]] layers help generated [[output]] pass the [[Turing test]] faster, and with fewer tokens. **Across four harnesses, the [[pattern]] is clear.**
 
-The experiment set out to [[test]] one claim: that [[knowledge]] layers help generated [[output]] pass the [[turing test]] faster, with fewer tokens. **Across four harnesses, the [[pattern]] is clear.**
+Raw prompting ([[Claude Cowork]]) plateaus early: good structure, but content stalls at 28%, and the run burns through the most [[session]] budget for the weakest result. Adding image [[generation]] (Google AI Studio) roughly doubles content fidelity and sharpens the visuals, but overflows the [[token]] window. Throwing compute at the problem through [[Clarifeye]] build mode nails structure perfectly, yet at 2.2 million tokens and €12 it still leaves content at 15%. An evidence that more tokens alone don't close the semantic gap.
 
-Raw prompting ([[claude cowork]]) plateaus early : good structure, but content stalls at 28% and the run burns the most [[session]] budget for the weakest result. Adding image [[generation]] (Google AI Studio) roughly doubles content fidelity and sharpens the visuals, but overflows the [[token]] window. Throwing compute at the problem via [[clarifeye]] build mode nails structure perfectly, yet at 2.2 million tokens and €12 it still leaves content at 15%, a proof that more tokens alone don't close the semantic gap.
+But the [[knowledge]] [[layer]] does ! [[Claude]] plus [[Clarifeye]] in use mode reached the [[target]] in 10 minutes, on 2% of a usage window, at zero marginal cost **and content fidelity jumped to 89%.** Same [[model]] family, a fraction of the resources, and the variable that changed was access to structured [[knowledge]].
 
-The [[knowledge]] [[layer]] does. [[Claude]] plus [[clarifeye]] in use mode reached the [[target]] in 10 minutes, on 2% of a usage window, at zero marginal cost — and content fidelity jumped to 89%. Same [[model]] family, a fraction of the resources, and the one variable that changed was access to structured [[knowledge]].
+This is what the opening hypothesis predicted: [[knowledge]] reduces the semantic dispersion of the [[model]]'s [[output]], so fewer iterations are needed to converge on a precise result. **And fewer iterations mean fewer tokens.** 
 
-This is exactly what the opening hypothesis predicted: [[knowledge]] reduces the semantic dispersion of the [[model]]'s [[output]], so fewer iterations are needed to converge on a precise result  **and fewer iterations mean fewer tokens**. Culture, like jam, spreads thinner the less you have. Or in Leveau-Vallier's terms: if [[generation]] is travel through a [[latent space]], [[knowledge]] is the map that shows the shortest [[path]] to the destination. 
+Culture, like jam, spreads thinner the less you have. Or, in Leveau-Vallier's terms: if [[generation]] is travel through a [[latent space]], [[knowledge]] is the map that shows the shortest [[path]] to the destination.
 
-The cheapest, fastest run wasn't the one with the most compute. In fact, it was the one that knew where it was going.
+The cheapest, fastest run wasn't the one with the most compute. It was the one that knew where it was going.
