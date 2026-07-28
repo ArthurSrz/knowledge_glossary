@@ -11,21 +11,21 @@ First, because it is a common intuition that the more you know, the less you spe
 
 And [[token]] jam became quite expansive these days ! So proving that [[knowledge]] layers help reduce [[token]] consumption would confirm both the saying and the intuition. 
 
-Second, because trying to prove that is a way to stress-[[test]] the hypothesis that [[knowledge]] helps reduce natural semantic dispersion of [[Large Language Model]]. For it is reasonable enough to assume that the sparser the [[output]] of a [[Large Language Model]] (semantically speaking) the more iterations are required to [[reach]] a certain [[outcome]]. And the more iterations, the more tokens you consume. (I reckon here my predicate is that us, humans, are all looking for semantic [[precision]] when we prompt a LLM and that's open for debate)
+Second, because trying to prove that is a way to stress-[[test]] the hypothesis that [[knowledge]] reduces the natural semantic dispersion of [[Large Language Model]]. For it is reasonable enough to assume that the sparser a [[model]]'s [[output]], semantically speaking, the more iterations are required to [[reach]] a given [[outcome]]. And the more iterations, the more tokens you consume. 
 
-Third, and most important , if [[knowledge]] does drive [[token]] efficiency, because it helps [[reach]] faster semantic deep and precise [[output]]s, that would confirm (as [Alban Leveau-Vallier wrote](https://hyper.hypotheses.org/171)) , that traveling inside a [[latent space]] is the right way to think about [[Generation]].
+Third, and most important , if [[knowledge]] does drive [[token]] efficiency, because it gets you semantically deep and precise [[output]] faster, that would confirm (as [Alban Leveau-Vallier has argued](https://hyper.hypotheses.org/171)) , that traveling through a [[latent space]] is the right way to think about [[Generation]].
 
 
 > [!summary] Interlude
-> If we prove that [[knowledge]] drives [[token]] efficiency, it would echo the French saying that culture, like jam, gets spread thinner the less you have. The logic: without [[knowledge]] semantically sparse LLM outputs need more iterations, and thus more tokens, to [[reach]] [[precision]]. Confirming this would also support Alban Leveau-Vallier's view of [[generation]] as travel through a [[latent space]] where [[knowledge]] is like a map that shows a faster [[path]] toward destination
+> If we prove that [[knowledge]] drives [[token]] efficiency, it would echo the French saying that culture, like jam, gets spread thinner the less you have. The logic: without [[knowledge]] LLM outputs are semantically sparse, so you need more iterations and more tokens to [[reach]] [[precision]]. Confirming this would also support Alban Leveau-Vallier's view of [[generation]] as travel through a [[latent space]] where [[knowledge]] is like a map that shows a faster [[path]] toward destination
 
-Now, let's get down to the hard part : designing a simple and good enough experiment (which is the same, cf [[Occam's rasor]]) to prove that.
+Now, let's get down to the hard part : designing an experiment simple enough and good enough to prove it.
 
 ## Experiment [[design]] 
 
-The hardest part is often to agree on an *end state*, [[meaning]] here : when do we consider it is no longer necessary to consume tokens to [[reach]] the desirable goal ? From there, we can [[test]] different solutions (some with, some without [[knowledge]] layers or with different types of [[knowledge]] layers and so on). But to get there, we must first agree on what a final solution looks like. 
+The hardest part is usually agreeing on an *end state*, by which I mean here : at chat point do we decde it is no longer necessary to consume tokens to [[reach]] the goal ? Once that's settled, we can [[test]] different solutions (some with [[knowledge]] layers, some without, some with different types of [[knowledge]] layers and so on). 
 
-Funny enough here, I advocate that a final solution is **one that looks like so much an original human-made solution that we can no longer distinguish which is which**. The idea is not mine, it is Turing's. In other words, I advocate a final solution is a solution that passes the [[turing test]]. 
+Funnily enough, I'd argue that a finished solution is **one that resembles an original human-made solution so closely that we can no longer distinguish which is which**. The idea isn't mine, it is Turing's: a finished solution In other words, I advocate a final solution is a solution that passes the [[turing test]]. 
 
 Said in other words, **you know you should no longer consume [[token]] once the generated [[output]] looks like so much the original you can no longer distinguish which was produced and which was generated.**
 
