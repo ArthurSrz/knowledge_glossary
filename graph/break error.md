@@ -1,5 +1,5 @@
 ---
-instanceof: "[[Automation framework]]"
+instanceof: "[[automation framework]]"
 broader: "[[exception handling]]"
 inferred:skos:ancestor:
   - "[[Application development]]"

@@ -1,7 +1,9 @@
 ---
-subclass of: "[[graph/automation]]"
+subclass of: "[[automation]]"
 topic's main category: "[[graph/Q8917913]]"
 wikidata entity id: Q2734036
-broader: "[[Automation]]"
-inferred:skos:ancestor: "[[Automation]]"
+broader: "[[automation]]"
+inferred:skos:ancestor:
+  - "[[Process]]"
+  - "[[automation]]"
 ---

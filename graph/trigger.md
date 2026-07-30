@@ -1,5 +1,5 @@
 ---
-partOf: "[[Automation framework]]"
+partOf: "[[automation framework]]"
 inferred:skos:narrower: "[[activatesShifter]]"
 ---
-First action that launches [[Automation]]
+First action that launches [[automation]]

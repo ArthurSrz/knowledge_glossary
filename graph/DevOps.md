@@ -12,7 +12,7 @@ enables:
   - "[[Continuous Deployment]]"
   - "[[Infrastructure as Code]]"
 practices:
-  - "[[Automation]]"
+  - "[[automation]]"
   - "[[Monitoring]]"
   - "[[version control]]"
   - "[[Collaboration]]"

@@ -56,6 +56,7 @@ inferred:skos:narrower:
   - "[[Stretch pants approach]]"
   - "[[Updating]]"
   - "[[Visibility]]"
+  - "[[automation]]"
   - "[[cadence]]"
   - "[[change management]]"
   - "[[collaborators]]"

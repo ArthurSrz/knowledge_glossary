@@ -1,5 +1,5 @@
 ---
-partOf: "[[Automation framework]]"
+partOf: "[[automation framework]]"
 facet of: "[[requirements analysis]]"
 subclass of: "[[possibility]]"
 wikidata entity id: Q7430721

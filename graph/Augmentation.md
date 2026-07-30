@@ -6,6 +6,6 @@ inferred:skos:ancestor:
   - "[[data]]"
 inferred:skos:narrower: "[[triage]]"
 ---
-Give human additional, helpful resource, differs from [[Automation]]. 
+Give human additional, helpful resource, differs from [[automation]]. 
 
 Cyborg chess is a great example of augmentation. 

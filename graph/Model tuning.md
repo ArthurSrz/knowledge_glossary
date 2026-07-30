@@ -44,7 +44,7 @@ From modern ML [[context]] (Bergstra & Bengio, 2012):
 2. **Grid [[Search]] (1990s)**: Systematic exploration
 3. **Random [[Search]] (2012)**: More efficient exploration
 4. **Bayesian Optimization (2012+)**: Intelligent [[search]]
-5. **[[AutoML]]/NAS (2015+)**: Automated architecture [[search]]
+5. **[[autoML]]/NAS (2015+)**: Automated architecture [[search]]
 
 ## Tuning Methods
 
@@ -141,7 +141,7 @@ As noted by Bergstra & Bengio:
 
 ## Modern Developments
 
-1. **[[AutoML]] Platforms**: H2O, Auto-sklearn, Google [[AutoML]]
+1. **[[autoML]] Platforms**: H2O, Auto-sklearn, Google [[autoML]]
 2. **Hyperparameter Optimization Services**: SigOpt, Amazon SageMaker
 3. **[[Transfer Learning]]**: Leveraging pre-tuned models
 4. **Meta-learning**: Learning to tune

@@ -4,7 +4,6 @@ inferred:skos:ancestor:
   - "[[AI]]"
   - "[[Artificial Intelligence (AI)]]"
 inferred:skos:narrower:
-  - "[[AutoML]]"
   - "[[Deep learning]]"
   - "[[Edge ML]]"
   - "[[Federated learning]]"
@@ -14,6 +13,7 @@ inferred:skos:narrower:
   - "[[Regularization]]"
   - "[[Reinforcement Learning]]"
   - "[[Unsupervised Learning]]"
+  - "[[autoML]]"
   - "[[loss function]]"
   - "[[supervised learning]]"
   - "[[training algorithm]]"

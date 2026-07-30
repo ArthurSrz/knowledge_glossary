@@ -1,5 +1,5 @@
 ---
-partOf: "[[Automation framework]]"
+partOf: "[[automation framework]]"
 broader: "[[agentic System]]"
 inferred:skos:ancestor:
   - "[[AI]]"

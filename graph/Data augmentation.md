@@ -42,7 +42,7 @@ From LeCun et al. (1998):
 1. **Early Recognition Systems (1990s)**: Simple transformations
 2. **Visual Document Analysis (2003)**: Systematic approach
 3. **AlexNet Era (2012)**: Standard practice in [[deep learning]]
-4. **[[AutoML]] [[augmentation]] (2019)**: Learned [[augmentation]] policies
+4. **[[autoML]] [[augmentation]] (2019)**: Learned [[augmentation]] policies
 
 ## Common Transformations
 

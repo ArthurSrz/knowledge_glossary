@@ -2,6 +2,8 @@
 helpsBuilding:
   - "[[Control flow]]"
   - "[[Exception handling]]"
-broader: "[[Automation]]"
-inferred:skos:ancestor: "[[Automation]]"
+broader: "[[automation]]"
+inferred:skos:ancestor:
+  - "[[Process]]"
+  - "[[automation]]"
 ---
