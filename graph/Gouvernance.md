@@ -7,4 +7,5 @@ broader: "[[Management]]"
 inferred:skos:ancestor:
   - "[[Management]]"
   - "[[Process]]"
+  - "[[control]]"
 ---

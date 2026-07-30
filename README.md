@@ -795,7 +795,7 @@ The `broader:` property means "this concept is a subtype/subclass/instance of th
   - [conditional-formatting](graph/conditional-formatting.md)
   - [cross-sheet source references](graph/cross-sheet%20source%20references.md)
   - [excel](graph/excel.md)
-  - [Excel vs. Gsheet problem](graph/Excel%20vs.%20Gsheet%20problem.md)
+  - [excel vs. gsheet problem](excel%20vs.%20gsheet%20problem.md)
   - [google sheet](graph/google%20sheet.md)
   - [handled-vs-gaps](graph/handled-vs-gaps.md)
   - [named-ranges](graph/named-ranges.md)

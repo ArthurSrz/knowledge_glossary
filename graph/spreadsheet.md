@@ -19,12 +19,12 @@ image: http://commons.wikimedia.org/wiki/Special:FilePath/OpenOffice.org%20Calc.
 Commons category: Spreadsheet software
 wikidata entity id: Q183197
 inferred:skos:narrower:
-  - "[[Excel vs. Gsheet problem]]"
   - "[[active cell]]"
   - "[[calculated-fields]]"
   - "[[conditional-formatting]]"
   - "[[cross-sheet source references]]"
   - "[[excel]]"
+  - "[[excel vs. gsheet problem]]"
   - "[[google sheet]]"
   - "[[handled-vs-gaps]]"
   - "[[named-ranges]]"

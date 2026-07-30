@@ -43,7 +43,9 @@ image: http://commons.wikimedia.org/wiki/Special:FilePath/New%20Board%20Room%20a
 WordLift URL: http://data.thenextweb.com/tnw/entity/management
 involves: "[[Feedback]]"
 broader: "[[Process]]"
-inferred:skos:ancestor: "[[Process]]"
+inferred:skos:ancestor:
+  - "[[Process]]"
+  - "[[control]]"
 inferred:skos:narrower:
   - "[[Delegation]]"
   - "[[Gouvernance]]"

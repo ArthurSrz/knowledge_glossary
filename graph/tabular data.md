@@ -10,4 +10,5 @@ inferred:skos:ancestor:
   - "[[Structured data]]"
   - "[[data]]"
   - "[[data type]]"
+inferred:skos:related: "[[excel]]"
 ---

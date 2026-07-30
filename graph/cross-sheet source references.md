@@ -1,5 +1,5 @@
 ---
-instanceOf: "[[Excel vs. Gsheet problem]]"
+instanceOf: "[[excel vs. gsheet problem]]"
 broader: "[[spreadsheet]]"
 inferred:skos:ancestor: "[[spreadsheet]]"
 ---
