@@ -9,8 +9,6 @@ Commons category: Patterns
 image: http://commons.wikimedia.org/wiki/Special:FilePath/Tile%20panel%20flowers%20Louvre%20OA3919-2-297.jpg
 Commons gallery: Pattern
 wikidata entity id: Q2083958
-inferred:skos:ancestor:
-  - "[[Regularity]]"
-  - "[[pattern]]"
+inferred:skos:ancestor: "[[Regularity]]"
 inferred:skos:broader: "[[Regularity]]"
 ---

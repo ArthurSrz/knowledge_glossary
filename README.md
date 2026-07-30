@@ -372,7 +372,7 @@ The `broader:` property means "this concept is a subtype/subclass/instance of th
   - [Multipartite graph](graph/Multipartite%20graph.md)
   - [Network graph](graph/Network%20graph.md)
   - [node](graph/node.md)
-  - [Path](graph/Path.md)
+  - [path](path.md)
   - [Property graph model](graph/Property%20graph%20model.md)
 - [heuristic](graph/heuristic.md)
   - [Heuristics](graph/Heuristics.md)
