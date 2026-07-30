@@ -17,4 +17,5 @@ GitHub topic: newsletter
 Commons category: Newsletters
 wikidata entity id: Q264238
 broader: "[[Product]]"
+inferred:skos:ancestor: "[[Product]]"
 ---

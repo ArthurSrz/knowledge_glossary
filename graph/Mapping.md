@@ -1,5 +1,7 @@
 ---
 broader: "[[Process]]"
+inferred:skos:ancestor: "[[Process]]"
+inferred:skos:narrower: "[[bijectivity]]"
 ---
 One of [[Don Norman's principles of Interaction Design]] : 
 

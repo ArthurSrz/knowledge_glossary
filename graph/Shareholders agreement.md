@@ -4,6 +4,15 @@ uses:
   - "[[Control (L.233-3)]]"
 subclass of:
   - "[[Contract]]"
+inferred:skos:ancestor:
+  - "[[contract]]"
+  - "[[intellectual work]]"
+inferred:skos:broader: "[[contract]]"
+inferred:skos:narrower:
+  - "[[Blocking minority]]"
+  - "[[Share transfer clauses]]"
+  - "[[abuse of majority]]"
+  - "[[minority interest vs full ownership]]"
 ---
 
 [Shareholders' agreement](https://www.wikidata.org/wiki/Q3360276)

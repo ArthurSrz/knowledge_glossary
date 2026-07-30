@@ -25,4 +25,5 @@ Wikimedia import URL: https://en.wikipedia.org/wiki/Semiotics
 Provenio UUID: 116a111b-bdb2-471e-8c7f-62ef198e5286
 Krugosvet article (archived): gumanitarnye_nauki/lingvistika/SEMIOTIKA.html
 Commons category: Semiotics
+inferred:skos:narrower: "[[connotation]]"
 ---

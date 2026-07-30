@@ -4,6 +4,7 @@ powers:
   - "[[Neural network models]]"
 differentFrom: "[[central processing unit]]"
 broader: "[[Infrastructure]]"
+inferred:skos:ancestor: "[[Infrastructure]]"
 ---
 ![Graphics processing unit Thumbnail](https://upload.wikimedia.org/wikipedia/commons/c/cd/Generic_block_diagram_of_a_GPU.svg)
 [Graphics processing unit](https://en.wikipedia.org/wiki/Graphics_processing_unit)

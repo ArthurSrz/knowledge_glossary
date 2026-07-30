@@ -10,4 +10,9 @@ GitHub topic: bayesian-network
 Dewey Decimal Classification: "519.542"
 wikidata entity id: Q812540
 broader: "[[Bayesian inference]]"
+inferred:skos:ancestor:
+  - "[[Bayes' theorem]]"
+  - "[[Bayesian inference]]"
+  - "[[combinatorics]]"
+  - "[[probability]]"
 ---

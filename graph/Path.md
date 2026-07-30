@@ -1,6 +1,10 @@
 ---
 partOf: "[[graphs]]"
 broader: "[[Graph theory]]"
+inferred:skos:ancestor:
+  - "[[combinatorics]]"
+  - "[[graph theory]]"
+inferred:skos:broader: "[[graph theory]]"
 ---
 A sequence of edges connecting a sequence of **distinct** vertices in a graph, with no repeating vertices
 

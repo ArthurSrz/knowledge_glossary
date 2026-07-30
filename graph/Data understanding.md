@@ -5,4 +5,8 @@ skos:narrower:
   - "[[Gather data]]"
   - "[[Explore the data]]"
   - "[[Validate data]]"
+inferred:skos:ancestor:
+  - "[[CRISP-DM Process]]"
+  - "[[machine learning projects]]"
+inferred:skos:narrower: "[[Exploratory Data Analysis]]"
 ---

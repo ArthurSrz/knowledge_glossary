@@ -1,3 +1,4 @@
 semantica==0.6.0
 pyyaml
 matplotlib
+watchdog

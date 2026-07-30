@@ -5,6 +5,20 @@ components: [Query, Retrieval Context, Knowledge Base, Text Vectors, Keyword, So
 category: Input Data Enhancement
 tags: [RAG, Récupération_Information, Knowledge_Base, Vectorisation]
 broader: "[[Large Language Model]]"
+inferred:skos:ancestor:
+  - "[[AI]]"
+  - "[[Artificial Intelligence (AI)]]"
+  - "[[Language modeling]]"
+  - "[[Large Language Model]]"
+  - "[[Natural Language Processing]]"
+inferred:skos:narrower:
+  - "[[Hypothetical Document Embeddings (HyDE)]]"
+  - "[[Retrieval Depth]]"
+  - "[[Retriever]]"
+  - "[[Retriever Orchestration]]"
+  - "[[condense_plus_context]]"
+  - "[[condense_question]]"
+  - "[[vanilla RAG design]]"
 ---
 
 # RAG (Retrieval-Augmented Generation)

@@ -1,5 +1,6 @@
 ---
 broader: "[[Model maintenance]]"
+inferred:skos:ancestor: "[[Model maintenance]]"
 ---
 Use data collected since previous training to re-train model weights. 
 

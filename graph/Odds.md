@@ -1,5 +1,10 @@
 ---
 broader: "[[Probability]]"
+inferred:skos:ancestor:
+  - "[[combinatorics]]"
+  - "[[probability]]"
+inferred:skos:broader: "[[probability]]"
+inferred:skos:narrower: "[[Logit link function]]"
 ---
 # Odds
 

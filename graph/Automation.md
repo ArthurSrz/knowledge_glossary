@@ -1,5 +1,9 @@
 ---
 worksWith: "[[Exception handling]]"
+inferred:skos:narrower:
+  - "[[Automation framework]]"
+  - "[[office automation]]"
+  - "[[parsing]]"
 ---
 
 Replace a human. [[Narrow AI]] expands the scope of what can be automated. 

@@ -19,4 +19,5 @@ Commons category: Connotation
 Krugosvet article (archived): lingvistika/konnotaciya
 wikidata entity id: Q661062
 broader: "[[semiotics]]"
+inferred:skos:ancestor: "[[semiotics]]"
 ---

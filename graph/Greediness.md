@@ -1,4 +1,5 @@
 ---
 broader: "[[Algorithm]]"
+inferred:skos:ancestor: "[[Algorithm]]"
 ---
 Problem of [[Decision tree]] building. We want the best [[Information Gain (IG)]] we splitting branches, but we do not consider a better [[Information Gain (IG)]] later on. 

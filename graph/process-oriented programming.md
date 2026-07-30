@@ -4,4 +4,10 @@ manifestation of: "[[graph/process-oriented programming]]"
 subclass of: "[[graph/programming language]]"
 wikidata entity id: Q28923015
 broader: "[[functional programming]]"
+inferred:skos:ancestor:
+  - "[[Application development]]"
+  - "[[Process]]"
+  - "[[Programming language]]"
+  - "[[functional programming]]"
+inferred:skos:broader: "[[Programming language]]"
 ---

@@ -1,5 +1,6 @@
 ---
 broader: "[[Fairness]]"
+inferred:skos:ancestor: "[[Fairness]]"
 ---
 Way to mitigate [[Ethical risks]]. List of questions about : 
 * modeling

@@ -1,5 +1,6 @@
 ---
 broader: "[[communicate uncertainty]]"
+inferred:skos:ancestor: "[[communicate uncertainty]]"
 ---
 One way to inspire [[trust]]. 
 

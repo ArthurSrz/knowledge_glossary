@@ -38,6 +38,7 @@ partially coincident with: "[[harmfulness]]"
 has cause: "[[risk source]]"
 wikidata entity id: Q104493
 ITinstances: "[[Excessive latency]]"
+inferred:skos:narrower: "[[dangerousness]]"
 ---
 In any data or ML projects, there is a risk that the project does not work as plan, because of the multi factor implied and that need to work together : 
 

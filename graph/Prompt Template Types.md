@@ -5,6 +5,13 @@ components: [Chat-style prompts, Instruct-style prompts]
 category: Prompt Management
 tags: [Types_Prompts, Templates, Conversation, Instructions]
 broader: "[[AI prompt]]"
+inferred:skos:ancestor:
+  - "[[AI]]"
+  - "[[AI prompt]]"
+  - "[[Artificial Intelligence (AI)]]"
+  - "[[Language modeling]]"
+  - "[[Large Language Model]]"
+  - "[[Natural Language Processing]]"
 ---
 
 # Prompt Template Types

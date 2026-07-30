@@ -3,5 +3,18 @@ subclass of: "[[object]]"
 facet of: "[[digital record]]"
 wikidata entity id: Q117360079
 skos:broader:
+inferred:skos:ancestor:
+  - "[[Infrastructure]]"
+  - "[[Knowledge base]]"
+  - "[[Memory]]"
+  - "[[Object]]"
+  - "[[Process]]"
+  - "[[data]]"
+  - "[[graphs]]"
+  - "[[knowledge]]"
+  - "[[knowledge graph]]"
+inferred:skos:broader:
+  - "[[Object]]"
+  - "[[data]]"
 ---
 collection of electronic information treated as a single logical entity

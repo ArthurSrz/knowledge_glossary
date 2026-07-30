@@ -1,4 +1,5 @@
 ---
 broader: "[[Kernel]]"
+inferred:skos:ancestor: "[[Kernel]]"
 ---
 Default [[Kernel]] used in [[Support Vector Machine]] that transforms data into an infinite number of dimensions so to improve [[Support Vector Machine]]'s performance. 

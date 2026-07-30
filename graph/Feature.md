@@ -7,6 +7,9 @@ aliases:
   - attributes
   - dimensions
 broader: "[[ML models]]"
+inferred:skos:ancestor:
+  - "[[ML models]]"
+  - "[[model]]"
 ---
 
 Synonyms : factors, predictors, X variables, independent variables, attributes, dimensions 

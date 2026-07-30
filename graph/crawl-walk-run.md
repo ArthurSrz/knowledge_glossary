@@ -1,5 +1,6 @@
 ---
 broader: "[[Process]]"
+inferred:skos:ancestor: "[[Process]]"
 ---
 Microsoft framework for gradually increasing AI [[automation]] : 
 * crawl : human involvment mandatory 

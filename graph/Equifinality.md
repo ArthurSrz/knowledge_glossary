@@ -1,6 +1,7 @@
 ---
 instance of: "[[graph/Principle]]"
 broader: "[[systems theory]]"
+inferred:skos:ancestor: "[[systems theory]]"
 ---
 The principle that in open systems a given end can be reached by many potential means. This concept is at the core of every [[graph/Tool arena]] aiming at comparing [[tools]] two-by-two. It is because two tools are *equifinal* that we can compare them : they were designed to reach the same goal. 
 

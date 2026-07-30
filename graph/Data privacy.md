@@ -15,6 +15,17 @@ techniquesInclude:
   - "[[Secure multi-party computation]]"
 governedBy: "[[Data governance]]"
 broader: "[[Fairness]]"
+inferred:skos:ancestor: "[[Fairness]]"
+inferred:skos:narrower:
+  - "[[Data privacy laws]]"
+  - "[[Fair Information Practices]]"
+  - "[[Financial Privacy]]"
+  - "[[Management of PII]]"
+  - "[[Medical Data Privacy]]"
+  - "[[Privacy by design]]"
+  - "[[Rights of Individuals]]"
+  - "[[Sensitive Information]]"
+  - "[[Technological privacy]]"
 ---
 
 Right of users to have control over how their information is collected, used and shares. 

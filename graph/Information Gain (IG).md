@@ -1,5 +1,6 @@
 ---
 broader: "[[Metric]]"
+inferred:skos:ancestor: "[[Metric]]"
 ---
 The element we are trying to maximize at each split inside a [[Decision tree]]. 
 

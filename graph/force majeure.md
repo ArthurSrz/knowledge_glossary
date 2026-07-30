@@ -11,4 +11,5 @@ described by source:
 OmegaWiki Defined Meaning: "834835"
 Dewey Decimal Classification: "346.02"
 broader: "[[clause]]"
+inferred:skos:ancestor: "[[clause]]"
 ---

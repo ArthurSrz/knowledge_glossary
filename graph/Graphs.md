@@ -9,6 +9,19 @@ has part(s):
   - "[[node]]"
   - "[[Edges]]"
 broader: "[[knowledge graph]]"
+inferred:skos:ancestor:
+  - "[[Infrastructure]]"
+  - "[[Knowledge base]]"
+  - "[[Memory]]"
+  - "[[Process]]"
+  - "[[graphs]]"
+  - "[[knowledge]]"
+  - "[[knowledge graph]]"
+inferred:skos:narrower:
+  - "[[bipartite graph]]"
+  - "[[knowledge graph]]"
+  - "[[monopartite graph]]"
+  - "[[vertices]]"
 ---
 ### Definition 1 
 

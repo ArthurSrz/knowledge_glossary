@@ -1,5 +1,9 @@
 ---
 broader: "[[User research]]"
+inferred:skos:ancestor:
+  - "[[Design thinking]]"
+  - "[[Process]]"
+  - "[[User research]]"
 ---
 # Task Flow Diagram
 

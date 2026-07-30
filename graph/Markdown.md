@@ -1,6 +1,11 @@
 ---
 TypeOf: "[[Mark-up language]]"
 broader: "[[Mark-up language]]"
+inferred:skos:ancestor:
+  - "[[Application development]]"
+  - "[[Mark-up language]]"
+  - "[[Process]]"
+  - "[[Programming language]]"
 ---
 A mark-up language, described as follows by its creator : 
 

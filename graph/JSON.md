@@ -40,4 +40,8 @@ Commons category: JavaScript Object Notation
 inception: 2001-01-01T00:00:00Z
 time of discovery or invention: 2001-01-01T00:00:00Z
 broader: "[[data type]]"
+inferred:skos:ancestor:
+  - "[[Process]]"
+  - "[[data]]"
+  - "[[data type]]"
 ---

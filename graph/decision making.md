@@ -1,5 +1,6 @@
 ---
 broader: "[[Decision support]]"
+inferred:skos:ancestor: "[[Decision support]]"
 ---
 # Decision Making
 

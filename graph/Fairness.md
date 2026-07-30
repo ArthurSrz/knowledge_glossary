@@ -1,3 +1,14 @@
+---
+inferred:skos:narrower:
+  - "[[Data privacy]]"
+  - "[[Ethical checklist]]"
+  - "[[Ethical risks]]"
+  - "[[Fair AI]]"
+  - "[[Individual fairness]]"
+  - "[[Transparency]]"
+  - "[[accountable AI]]"
+  - "[[bias]]"
+---
 Reaching fairness means having a system where user groups would receive similar levels of [[True Positive (TP)]] or have the same [[Inherent error]]. 
 
 For that we determine significant groups then we define fairness : 

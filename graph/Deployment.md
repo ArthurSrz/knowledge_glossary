@@ -1,5 +1,9 @@
 ---
 broader: "[[CRISP-DM Process]]"
+inferred:skos:ancestor:
+  - "[[CRISP-DM Process]]"
+  - "[[machine learning projects]]"
+inferred:skos:narrower: "[[Inference]]"
 ---
 Part of the [[CRISP-DM Process]]. 
 

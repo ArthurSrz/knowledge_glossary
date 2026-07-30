@@ -18,5 +18,10 @@ Wolfram Language entity code: Entity["PhysicalEffect", "OccamsRazor"]
 Commons category: Occam's razor
 wikidata entity id: Q131012
 broader: "[[heuristic]]"
+inferred:skos:ancestor:
+  - "[[Algorithm]]"
+  - "[[Dialogue]]"
+  - "[[elicitation]]"
+  - "[[heuristic]]"
 ---
 Philosophical [[principle]] used to judge credibility of statements. Also known as a [problem-solving](https://en.wikipedia.org/wiki/Problem-solving "Problem-solving") [[principle]] that recommends searching for explanations constructed with the smallest possible set of elements.

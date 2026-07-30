@@ -15,4 +15,15 @@ subclass of: "[[type]]"
 has use: "[[computer science]]"
 wikidata entity id: Q190087
 broader: "[[data]]"
+inferred:skos:ancestor:
+  - "[[Process]]"
+  - "[[data]]"
+inferred:skos:narrower:
+  - "[[JSON]]"
+  - "[[Semi-structured data]]"
+  - "[[Spatial Reference System Identifier (SRID)]]"
+  - "[[Structured data]]"
+  - "[[Unstructured data]]"
+  - "[[continuum data]]"
+  - "[[tabular data]]"
 ---

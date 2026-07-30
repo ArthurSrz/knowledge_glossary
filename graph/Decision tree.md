@@ -22,6 +22,16 @@ extendedBy:
   - "[[Random forest]]"
   - "[[Gradient boosting trees]]"
 broader: "[[supervised learning]]"
+inferred:skos:ancestor:
+  - "[[AI]]"
+  - "[[Artificial Intelligence (AI)]]"
+  - "[[machine learning]]"
+  - "[[supervised learning]]"
+inferred:skos:narrower:
+  - "[[Random forest]]"
+  - "[[Recursive tree building]]"
+  - "[[Regression trees]]"
+  - "[[Tree depth]]"
 ---
 
 # Decision Tree

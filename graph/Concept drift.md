@@ -1,5 +1,8 @@
 ---
 broader: "[[ML system monitoring]]"
+inferred:skos:ancestor:
+  - "[[ML system monitoring]]"
+  - "[[Model maintenance]]"
 ---
 One of [[ML System failures]]. Happens when the patterns that the model learned no longer apply. 
 

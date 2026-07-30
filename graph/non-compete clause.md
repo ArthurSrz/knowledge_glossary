@@ -6,4 +6,5 @@ Dewey Decimal Classification:
   - "344.012596"
   - "343.0721"
 broader: "[[clause]]"
+inferred:skos:ancestor: "[[clause]]"
 ---

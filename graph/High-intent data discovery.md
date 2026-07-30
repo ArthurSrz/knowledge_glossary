@@ -1,5 +1,10 @@
 ---
 broader: "[[Exploratory Data Analysis]]"
+inferred:skos:ancestor:
+  - "[[CRISP-DM Process]]"
+  - "[[Exploratory Data Analysis]]"
+  - "[[data understanding]]"
+  - "[[machine learning projects]]"
 ---
 
 Problem tackled in [[Spotify story]]

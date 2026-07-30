@@ -1,6 +1,9 @@
 ---
 First step of: "[[Gouvernance]]"
 skos:broader: "[[data]]"
+inferred:skos:ancestor:
+  - "[[Process]]"
+  - "[[data]]"
 ---
 
 A [[data]] catalog uses [[metadata]]—[[data]] that describes or summarizes [[data]]—to create an informative and searchable inventory of all [[data]] assets in an organization. These assets can include (but are not limited to) these things:

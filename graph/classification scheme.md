@@ -36,4 +36,5 @@ described at URL: https://stats.oecd.org/glossary/detail.asp?ID=358
 Library of Congress Classification: BD239.2-BD265
 Wolfram Language entity code: Entity["Concept", "ClassificationSystem::352c5"]
 wikidata entity id: Q5962346
+inferred:skos:ancestor: "[[knowledge organization system]]"
 ---

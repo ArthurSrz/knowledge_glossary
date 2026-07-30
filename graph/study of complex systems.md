@@ -8,4 +8,5 @@ topic's main template:
 Commons category: Complex systems
 wikidata entity id: Q2995634
 broader: "[[systems theory]]"
+inferred:skos:ancestor: "[[systems theory]]"
 ---

@@ -40,4 +40,7 @@ name:
   - IR thesaurus
 wikidata entity id: Q17152639
 broader: "[[knowledge organization system]]"
+inferred:skos:ancestor:
+  - "[[controlled vocabulary]]"
+  - "[[knowledge organization system]]"
 ---

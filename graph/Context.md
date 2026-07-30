@@ -17,4 +17,10 @@ studied by:
   - "[[graph/semiotics]]"
 facet of: "[[graph/communication]]"
 broader: "[[Process]]"
+inferred:skos:ancestor:
+  - "[[Process]]"
+  - "[[Situation]]"
+inferred:skos:narrower:
+  - "[[Session]]"
+  - "[[agents.md]]"
 ---

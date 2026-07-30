@@ -24,6 +24,9 @@ tools:
   - "[[Ansible]]"
 evolution: "[[MLOps]]"
 broader: "[[Application development]]"
+inferred:skos:ancestor:
+  - "[[Application development]]"
+  - "[[Process]]"
 ---
 
 # DevOps

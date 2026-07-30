@@ -21,5 +21,7 @@ named after: "[[graph/Alan Turing]]"
 PhilPapers topic: the-turing-test
 image: http://commons.wikimedia.org/wiki/Special:FilePath/Turing%20Test%20version%203.png
 Commons category: Turing test
+inferred:skos:ancestor: "[[Test]]"
+inferred:skos:broader: "[[Test]]"
 ---
 [[Test]] of a machine's ability to exhibit intelligent behaviour equivalent to, or indistinguishable from, that of a human

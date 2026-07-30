@@ -6,4 +6,6 @@ different from:
 subclass of:
   - "[[Intellectual work]]"
 broader: "[[intellectual work]]"
+inferred:skos:ancestor: "[[intellectual work]]"
+inferred:skos:narrower: "[[slide show]]"
 ---

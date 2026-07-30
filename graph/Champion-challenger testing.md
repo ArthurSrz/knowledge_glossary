@@ -1,5 +1,10 @@
 ---
 broader: "[[Model selection]]"
+inferred:skos:ancestor:
+  - "[[CRISP-DM Process]]"
+  - "[[Model selection]]"
+  - "[[machine learning projects]]"
+  - "[[modeling]]"
 ---
 One way to do machine learning model [[evaluation]]. 
 

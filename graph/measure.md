@@ -65,4 +65,5 @@ Krugosvet article (archived): nauka_i_tehnika/fizika/EDINITSI_IZMERENIYA_FIZICHE
 Commons category: Units of measure
 wikidata entity id: Q47574
 broader: "[[Metric]]"
+inferred:skos:ancestor: "[[Metric]]"
 ---

@@ -4,4 +4,5 @@ definedBy:
   - "[[Precision]]"
   - "[[Recall]]"
 broader: "[[evaluation]]"
+inferred:skos:ancestor: "[[evaluation]]"
 ---

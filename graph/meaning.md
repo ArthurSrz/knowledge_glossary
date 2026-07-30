@@ -19,4 +19,5 @@ Dewey Decimal Classification:
   - "401.43"
 Commons category: Meaning (philosophy of language)
 broader: "[[semantics]]"
+inferred:skos:ancestor: "[[semantics]]"
 ---

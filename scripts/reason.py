@@ -4,6 +4,7 @@
 import argparse
 import re
 import sys
+import time
 import unicodedata
 from pathlib import Path
 
@@ -29,21 +30,15 @@ RELATION_MAP = {
     "has use": "has_use",
 }
 
-# ── SKOS rule set ─────────────────────────────────────────────────────
-# TODO: Write your Datalog rules here (~9 lines).
-#
-# Each rule is a string in Datalog syntax: "head(X,Y) :- body1(X,Z), body2(Z,Y)"
-# Variables are uppercase (X, Y, Z). Constants are lowercase atoms.
-#
-# Intended semantics to encode:
-#   1-2. ancestor(X,Y) = transitive closure of broader (base case + recursive)
-#   3-4. broader and narrower are inverses (derive each from the other)
-#   5-6. related_s(X,Y) = symmetric closure of related
-#   7.   in_cycle(X) = X is its own ancestor (consistency violation)
-#   8.   conflict(X,Y) = related_s AND opposite_of between X,Y (consistency)
-#   9.   s27_violation(X,Y) = related_s AND ancestor between X,Y (SKOS S27:
-#        skos:related is disjoint with the hierarchical relation)
-#
+INFERRED_PREFIX = "inferred:skos:"
+
+INFERRED_PREDICATES = {
+    "ancestor": "ancestor",
+    "broader": "broader",
+    "narrower": "narrower",
+    "related_s": "related",
+}
+
 SKOS_RULES = [
     "ancestor(X, Y) :- broader(X, Y)",
     "ancestor(X, Y) :- broader(X, Z), ancestor(Z, Y)",
@@ -55,7 +50,6 @@ SKOS_RULES = [
     "conflict(X, Y) :- related_s(X, Y), opposite_of(X, Y)",
     "s27_violation(X, Y) :- related_s(X, Y), ancestor(X, Y)",
 ]
-# ──────────────────────────────────────────────────────────────────────
 
 
 def slugify(name):
@@ -114,6 +108,8 @@ def load_notes(graph_dir):
             continue
         rels = {}
         for key, value in fm.items():
+            if key.startswith(INFERRED_PREFIX):
+                continue
             canon = RELATION_MAP.get(key)
             if canon is None:
                 unmapped_keys.add(key)
@@ -220,6 +216,98 @@ def find_orphans(notes):
     return sorted(set(notes.keys()) - has_edges)
 
 
+def compute_inferred_facts(engine, notes, filenames, name_of):
+    """Return {concept_name: {skos_rel_name: [target_names]}} for write-back."""
+    note_names = set(notes.keys())
+    inferred = {}
+
+    for pred, skos_name in INFERRED_PREDICATES.items():
+        results = engine.query(f"{pred}(?X, ?Y)")
+        if not results:
+            continue
+        for row in results:
+            src_name = name_of.get(row["X"])
+            tgt_name = name_of.get(row["Y"])
+            if not src_name or not tgt_name:
+                continue
+            if src_name not in note_names:
+                continue
+            if tgt_name not in note_names:
+                continue
+            asserted = notes.get(src_name, {})
+            if skos_name in asserted and tgt_name in asserted[skos_name]:
+                continue
+            if pred == "broader" and "broader" in asserted and tgt_name in asserted["broader"]:
+                continue
+            if pred == "narrower" and "narrower" in asserted and tgt_name in asserted["narrower"]:
+                continue
+            if pred == "related_s" and "related" in asserted and tgt_name in asserted["related"]:
+                continue
+            entry = inferred.setdefault(src_name, {})
+            entry.setdefault(skos_name, []).append(tgt_name)
+
+    for concept in inferred:
+        for rel in inferred[concept]:
+            inferred[concept][rel] = sorted(set(inferred[concept][rel]))
+
+    return inferred
+
+
+def write_inferred_to_notes(inferred, graph_dir):
+    """Write inferred facts into note frontmatter as inferred:skos:* keys."""
+    written = 0
+    for concept, rels in sorted(inferred.items()):
+        path = graph_dir / f"{concept}.md"
+        if not path.exists():
+            continue
+
+        text = path.read_text(encoding="utf-8")
+        fm_match = re.match(r"^---\n(.*?)\n---", text, re.DOTALL)
+
+        if fm_match:
+            fm_text = fm_match.group(1)
+            body = text[fm_match.end():]
+            clean_lines = []
+            skip_list = False
+            for line in fm_text.split("\n"):
+                if line.startswith(INFERRED_PREFIX):
+                    skip_list = True
+                    continue
+                if skip_list and line.startswith("  - "):
+                    continue
+                skip_list = False
+                clean_lines.append(line)
+
+            for rel_name, targets in sorted(rels.items()):
+                key = f"{INFERRED_PREFIX}{rel_name}"
+                if len(targets) == 1:
+                    clean_lines.append(f'{key}: "[[{targets[0]}]]"')
+                else:
+                    clean_lines.append(f"{key}:")
+                    for t in targets:
+                        clean_lines.append(f'  - "[[{t}]]"')
+
+            new_text = "---\n" + "\n".join(clean_lines) + "\n---" + body
+        else:
+            # No frontmatter yet — create one
+            fm_lines = []
+            for rel_name, targets in sorted(rels.items()):
+                key = f"{INFERRED_PREFIX}{rel_name}"
+                if len(targets) == 1:
+                    fm_lines.append(f'{key}: "[[{targets[0]}]]"')
+                else:
+                    fm_lines.append(f"{key}:")
+                    for t in targets:
+                        fm_lines.append(f'  - "[[{t}]]"')
+            new_text = "---\n" + "\n".join(fm_lines) + "\n---\n" + text
+
+        if new_text != text:
+            path.write_text(new_text, encoding="utf-8")
+            written += 1
+
+    return written
+
+
 def run_query(engine, query_str, atom_of, name_of, raw=False):
     if not raw:
         m = re.match(r"(\w+)\((.+)\)", query_str)
@@ -247,6 +335,28 @@ def run_query(engine, query_str, atom_of, name_of, raw=False):
                 if v in name_of:
                     row[k] = name_of[v]
     return results
+
+
+def run_reasoning_and_write(quiet=False):
+    """Full cycle: load, reason, write inferred facts back. Returns stats."""
+    notes, filenames, parse_errors, unmapped = load_notes(GRAPH_DIR)
+    atom_of, name_of = build_atom_maps(notes, filenames)
+    engine, self_loops, broken_links = load_reasoner(notes, filenames, atom_of)
+
+    inferred = compute_inferred_facts(engine, notes, filenames, name_of)
+    written = write_inferred_to_notes(inferred, GRAPH_DIR)
+
+    total_inferred = sum(len(ts) for rels in inferred.values() for ts in rels.values())
+    concepts_touched = len(inferred)
+
+    if not quiet:
+        print(f"  {total_inferred} inferred facts across {concepts_touched} concepts, {written} files updated")
+
+    return {
+        "total_inferred": total_inferred,
+        "concepts_touched": concepts_touched,
+        "files_written": written,
+    }
 
 
 def cmd_infer(args):
@@ -430,6 +540,58 @@ def cmd_report(args):
     print(f"Report written to {REPORT_FILE}")
 
 
+def cmd_write(args):
+    """One-shot: run reasoning and write inferred facts into notes."""
+    print("Running reasoning...")
+    stats = run_reasoning_and_write()
+    print(f"Done. {stats['total_inferred']} inferred facts, {stats['files_written']} files updated.")
+
+
+def cmd_watch(args):
+    """Watch graph/ for changes and continuously re-run reasoning + write-back."""
+    from watchdog.observers import Observer
+    from watchdog.events import FileSystemEventHandler
+
+    debounce_seconds = args.debounce
+
+    class Handler(FileSystemEventHandler):
+        def __init__(self):
+            self._last_run = 0
+
+        def on_any_event(self, event):
+            if not event.src_path.endswith(".md"):
+                return
+            # Skip events triggered by our own writes (inferred:skos: changes)
+            now = time.time()
+            if now - self._last_run < debounce_seconds:
+                return
+            self._last_run = now
+            time.sleep(debounce_seconds)
+            self._last_run = time.time()
+            ts = time.strftime("%H:%M:%S")
+            print(f"\n[{ts}] Change detected, re-running reasoning...")
+            try:
+                run_reasoning_and_write()
+            except Exception as e:
+                print(f"  Error: {e}")
+
+    print(f"Watching {GRAPH_DIR}/ for changes (debounce {debounce_seconds}s). Ctrl+C to stop.")
+    print("Running initial pass...")
+    run_reasoning_and_write()
+
+    handler = Handler()
+    observer = Observer()
+    observer.schedule(handler, str(GRAPH_DIR), recursive=False)
+    observer.start()
+    try:
+        while True:
+            time.sleep(1)
+    except KeyboardInterrupt:
+        print("\nStopping watcher.")
+        observer.stop()
+    observer.join()
+
+
 def main():
     parser = argparse.ArgumentParser(description="Formal reasoning over the knowledge glossary")
     sub = parser.add_subparsers(dest="command")
@@ -445,12 +607,21 @@ def main():
 
     sub.add_parser("report", help="Generate stats/reasoning_report.md")
 
+    sub.add_parser("write", help="One-shot: write inferred facts into notes")
+
+    p_watch = sub.add_parser("watch", help="Watch graph/ and continuously write inferred facts")
+    p_watch.add_argument("--debounce", type=float, default=2.0, help="Seconds to wait after a change")
+
     args = parser.parse_args()
     if args.command is None:
         parser.print_help()
         return
 
-    {"infer": cmd_infer, "check": cmd_check, "query": cmd_query, "report": cmd_report}[args.command](args)
+    cmds = {
+        "infer": cmd_infer, "check": cmd_check, "query": cmd_query,
+        "report": cmd_report, "write": cmd_write, "watch": cmd_watch,
+    }
+    cmds[args.command](args)
 
 
 if __name__ == "__main__":

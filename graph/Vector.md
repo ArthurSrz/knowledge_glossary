@@ -13,4 +13,8 @@ Dewey Decimal Classification: "515.63"
 image: http://commons.wikimedia.org/wiki/Special:FilePath/Vector%20from%20A%20to%20B.svg
 wikidata entity id: Q44528
 broader: "[[Vector space]]"
+inferred:skos:ancestor: "[[Vector space]]"
+inferred:skos:narrower:
+  - "[[vector index]]"
+  - "[[vector length]]"
 ---

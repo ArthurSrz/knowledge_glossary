@@ -49,4 +49,14 @@ MeSH tree code: K01.468
 schematic: http://commons.wikimedia.org/wiki/Special:FilePath/Classical%20definition%20of%20Kno%20uk.svg
 wikidata entity id: Q9081
 broader: "[[Process]]"
+inferred:skos:ancestor:
+  - "[[Infrastructure]]"
+  - "[[Memory]]"
+  - "[[Process]]"
+inferred:skos:broader: "[[Memory]]"
+inferred:skos:narrower:
+  - "[[Knowledge base]]"
+  - "[[La Société de Connaissance]]"
+  - "[[field of study (education)]]"
+  - "[[knowledge worker]]"
 ---

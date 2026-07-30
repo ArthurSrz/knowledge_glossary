@@ -1,5 +1,11 @@
 ---
 broader: "[[Centrality]]"
+inferred:skos:ancestor:
+  - "[[Algorithm]]"
+  - "[[Graph algorithm]]"
+  - "[[Metric]]"
+  - "[[centrality]]"
+inferred:skos:broader: "[[centrality]]"
 ---
 # Eigenvector Centrality
 

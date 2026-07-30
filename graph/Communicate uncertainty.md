@@ -1,3 +1,6 @@
+---
+inferred:skos:narrower: "[[confidence presentation]]"
+---
 Aside from [[Don Norman's principles of Interaction Design]], this is a specific consideration to take into account when designing [[ML system]]. 
 
 Whether you display a deterministic or probabilistic [[output]] depends on the value of the probabilistic information for the decision-making or the user. 

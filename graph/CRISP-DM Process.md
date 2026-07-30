@@ -1,5 +1,19 @@
 ---
 broader: "[[machine learning projects]]"
+inferred:skos:ancestor: "[[machine learning projects]]"
+inferred:skos:narrower:
+  - "[[Data preparation]]"
+  - "[[Deployment]]"
+  - "[[Evaluate results]]"
+  - "[[Explore the data]]"
+  - "[[Gather data]]"
+  - "[[Identify factors]]"
+  - "[[Prepare for modeling]]"
+  - "[[Problem definition]]"
+  - "[[Test solution]]"
+  - "[[business understanding]]"
+  - "[[data understanding]]"
+  - "[[modeling]]"
 ---
 The most widely used data science project methodology. It was developed as a flexible, industry-agnostic approach to data mining projects.
 

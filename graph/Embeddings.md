@@ -21,6 +21,16 @@ types:
   - "[[Document embeddings]]"
   - "[[Graph embeddings]]"
 broader: "[[Natural Language Processing]]"
+inferred:skos:ancestor:
+  - "[[AI]]"
+  - "[[Artificial Intelligence (AI)]]"
+  - "[[Natural Language Processing]]"
+inferred:skos:narrower:
+  - "[[Embeddings models]]"
+  - "[[Word embeddings]]"
+  - "[[embedding]]"
+  - "[[latent space]]"
+  - "[[vectorization]]"
 ---
 
 A vector representation of a [[token]] 

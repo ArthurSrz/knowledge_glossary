@@ -6,6 +6,12 @@ composedOf: ["[[Layer]]", "[[Artificial neuron]]", "[[Activation function]]"]
 enables: ["[[Universal approximation]]", "[[Non-linear classification]]", "[[Feature learning]]"]
 trainedBy: "[[Backpropagation]]"
 broader: "[[artificial neural network]]"
+inferred:skos:ancestor:
+  - "[[AI]]"
+  - "[[Artificial Intelligence (AI)]]"
+  - "[[Deep learning]]"
+  - "[[artificial neural network]]"
+  - "[[machine learning]]"
 ---
 The Multilayer Perceptron resolved the limitations of single-[[layer]] perceptrons identified by Minsky and Papert, becoming the foundation of modern neural networks.
 

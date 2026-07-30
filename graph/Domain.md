@@ -1,3 +1,6 @@
+---
+inferred:skos:narrower: "[[Subdomain]]"
+---
 A domain defines a company’s main area of activity. Generally speaking, it’s the service the company provides to its clients. 
 
 > [!example] Example of domains

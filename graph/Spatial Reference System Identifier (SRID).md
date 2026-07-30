@@ -1,5 +1,10 @@
 ---
 broader: "[[data type]]"
+inferred:skos:ancestor:
+  - "[[Process]]"
+  - "[[data]]"
+  - "[[data type]]"
+inferred:skos:narrower: "[[Well-known text]]"
 ---
 # Spatial Reference System Identifier (SRID)
 

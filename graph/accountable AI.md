@@ -1,5 +1,6 @@
 ---
 broader: "[[Fairness]]"
+inferred:skos:ancestor: "[[Fairness]]"
 ---
 Clear responsibility for outcomes. Users have recourse.
 

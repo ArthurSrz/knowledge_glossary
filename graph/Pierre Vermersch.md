@@ -15,4 +15,5 @@ ISNI: "0000000038395926"
 date of death: 2020-07-06T00:00:00Z
 wikidata entity id: Q3387261
 broader: "[[elicitation]]"
+inferred:skos:ancestor: "[[elicitation]]"
 ---

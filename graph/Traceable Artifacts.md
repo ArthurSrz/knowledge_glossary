@@ -5,6 +5,8 @@ components: [Development Artifacts, Production Artifacts, Trace Events, Span Eve
 category: Concepts Fondamentaux
 tags: [Artefacts_Traçables, Observability_2.0, Logging]
 broader: "[[version control]]"
+inferred:skos:ancestor: "[[version control]]"
+inferred:skos:related: "[[agent observability]]"
 ---
 
 # Traceable Artifacts

@@ -12,6 +12,31 @@ studied in:
   - "[[computer science]]"
 CanBeConstructedWith: "[[LLM Path Extractors]]"
 skos:broader: "[[graphs]]"
+inferred:skos:ancestor:
+  - "[[Infrastructure]]"
+  - "[[Knowledge base]]"
+  - "[[Memory]]"
+  - "[[Process]]"
+  - "[[graphs]]"
+  - "[[knowledge]]"
+  - "[[knowledge graph]]"
+inferred:skos:narrower:
+  - "[[CYPHER]]"
+  - "[[Ingoing relationships]]"
+  - "[[Object]]"
+  - "[[Outgoing relationships]]"
+  - "[[Properties]]"
+  - "[[Property]]"
+  - "[[Relationship aggregation]]"
+  - "[[Relationship quality]]"
+  - "[[Text2Cypher]]"
+  - "[[adar-Adamic index]]"
+  - "[[alias]]"
+  - "[[context graph]]"
+  - "[[graph hop]]"
+  - "[[graphs]]"
+  - "[[inferred from attribute of entity]]"
+  - "[[list of values as qualifiers]]"
 ---
 
 ![Knowledge graph Thumbnail](https://upload.wikimedia.org/wikipedia/commons/5/52/Conceptual_Diagram_-_Example.svg)

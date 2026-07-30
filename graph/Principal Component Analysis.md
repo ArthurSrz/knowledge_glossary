@@ -16,6 +16,12 @@ applications:
   - "[[Noise reduction]]"
   - "[[Data compression]]"
 broader: "[[feature selection]]"
+inferred:skos:ancestor:
+  - "[[CRISP-DM Process]]"
+  - "[[Data preparation]]"
+  - "[[feature engineering]]"
+  - "[[feature selection]]"
+  - "[[machine learning projects]]"
 ---
 
 # Principal Component Analysis (PCA)

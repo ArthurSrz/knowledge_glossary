@@ -1,5 +1,12 @@
 ---
 broader: "[[Clustering]]"
+inferred:skos:ancestor:
+  - "[[AI]]"
+  - "[[Artificial Intelligence (AI)]]"
+  - "[[Unsupervised Learning]]"
+  - "[[clustering]]"
+  - "[[machine learning]]"
+inferred:skos:broader: "[[clustering]]"
 ---
 he Elbow Method is a [[Heuristics]] used to determine the optimal number of clusters in [[K-Means Clustering]]. It involves plotting the sum of squared distances (SSD) of each point to its assigned cluster center against the number of clusters (i.e, the model [[Inertia]]). The goal is to find the point at which the curve begins to level off, forming an "elbow," as this indicates that adding more clusters will not significantly improve the accuracy of the clustering. The optimal number of clusters is typically chosen based on this point.
 

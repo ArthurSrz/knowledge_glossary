@@ -1,5 +1,9 @@
 ---
 broader: "[[machine learning]]"
+inferred:skos:ancestor:
+  - "[[AI]]"
+  - "[[Artificial Intelligence (AI)]]"
+  - "[[machine learning]]"
 ---
 Enables developers with limited ML expertise to quickly build models with little/no code.
 

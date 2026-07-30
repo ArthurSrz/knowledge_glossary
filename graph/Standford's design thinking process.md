@@ -1,5 +1,8 @@
 ---
 broader: "[[Design thinking]]"
+inferred:skos:ancestor:
+  - "[[Design thinking]]"
+  - "[[Process]]"
 ---
 Equivalent to [[CRISP-DM Process]] but for the human-side. Phases : 
 

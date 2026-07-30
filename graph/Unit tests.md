@@ -1,5 +1,6 @@
 ---
 broader: "[[Test]]"
+inferred:skos:ancestor: "[[Test]]"
 ---
 Another way to do machine learning model [[evaluation]]. 
 

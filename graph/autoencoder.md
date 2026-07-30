@@ -8,6 +8,12 @@ foundationalPaper: "Reducing the Dimensionality of Data with Neural Networks (Hi
 keyPapers: ["Learning Internal Representations by Error Propagation (Rumelhart, Hinton & Williams, 1986)", "Auto-Association by Multilayer Perceptrons (Bourlard & Kamp, 1988)"]
 relatedTo: ["[[Dimensionality reduction]]", "[[Feature learning]]", "[[Representation learning]]"]
 broader: "[[artificial neural network]]"
+inferred:skos:ancestor:
+  - "[[AI]]"
+  - "[[Artificial Intelligence (AI)]]"
+  - "[[Deep learning]]"
+  - "[[artificial neural network]]"
+  - "[[machine learning]]"
 ---
 
 ![Autoencoder Thumbnail](https://upload.wikimedia.org/wikipedia/commons/3/37/Autoencoder_schema.png)

@@ -10,6 +10,16 @@ facet of:
   - "[[knowledge graph]]"
 has characteristic:
   - "[[truth value]]"
+inferred:skos:ancestor:
+  - "[[Application development]]"
+  - "[[Documentation]]"
+  - "[[Process]]"
+inferred:skos:broader: "[[Documentation]]"
+inferred:skos:narrower:
+  - "[[bespoke]]"
+  - "[[boilerplate]]"
+  - "[[clause classification heuristic]]"
+  - "[[model contract]]"
 ---
 
 The chronology of the ownership, custody, or origin of an object or piece of information. In knowledge engineering, provenance tracks where a fact came from and how it was transformed on its way to the current representation.

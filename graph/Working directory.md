@@ -1,5 +1,8 @@
 ---
 broader: "[[Git]]"
+inferred:skos:ancestor:
+  - "[[Git]]"
+  - "[[version control]]"
 ---
 # Working Directory
 

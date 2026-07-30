@@ -9,5 +9,8 @@ instance of: "[[db/mathematical concept]]"
 studied by: "[[db/algebra]]"
 Stack Exchange tag: https://stackoverflow.com/tags/idempotent
 broader: "[[Application development]]"
+inferred:skos:ancestor:
+  - "[[Application development]]"
+  - "[[Process]]"
 ---
 [[property]] of certain operations in mathematics and computer science, that can be applied multiple times without changing the result beyond the initial application. 

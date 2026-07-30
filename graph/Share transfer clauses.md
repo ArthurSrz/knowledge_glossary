@@ -3,6 +3,10 @@ uses:
   - "[[Shareholders agreement]]"
 subclass of: []
 broader: "[[Shareholders agreement]]"
+inferred:skos:ancestor:
+  - "[[Shareholders agreement]]"
+  - "[[contract]]"
+  - "[[intellectual work]]"
 ---
 
 [Share transfer clauses](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000020148461)

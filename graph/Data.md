@@ -6,6 +6,23 @@ transforms: "[[feature]]"
 ParentChild: "[[Datum]]"
 skos:narrower: "[[data object]]"
 broader: "[[Process]]"
+inferred:skos:ancestor: "[[Process]]"
+inferred:skos:narrower:
+  - "[[Data augmentation]]"
+  - "[[Data catalog]]"
+  - "[[Data lineage]]"
+  - "[[Data mapping]]"
+  - "[[Data model]]"
+  - "[[Data quality]]"
+  - "[[Data quantity]]"
+  - "[[Data silos]]"
+  - "[[Datum]]"
+  - "[[collecting data]]"
+  - "[[data type]]"
+  - "[[index]]"
+  - "[[metadata]]"
+  - "[[open data]]"
+  - "[[raw data]]"
 ---
 
 # Data

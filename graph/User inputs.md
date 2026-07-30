@@ -1,6 +1,10 @@
 ---
 influence: "[[User outputs]]"
 broader: "[[User research]]"
+inferred:skos:ancestor:
+  - "[[Design thinking]]"
+  - "[[Process]]"
+  - "[[User research]]"
 ---
 
 Aside from [[Don Norman's principles of Interaction Design]], 

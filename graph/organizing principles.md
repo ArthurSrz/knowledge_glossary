@@ -1,5 +1,10 @@
 ---
 broader: "[[knowledge organization system]]"
+inferred:skos:ancestor: "[[knowledge organization system]]"
+inferred:skos:narrower:
+  - "[[Label]]"
+  - "[[Ontology]]"
+  - "[[taxonomy]]"
 ---
 The organizing principles provide a contract between the graph and its users. But here the contract does not only apply to humans, it applies to software, and large language models. 
 

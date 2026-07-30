@@ -11,4 +11,6 @@ nickname: PowerPoint
 Commons category: Presentation slides
 wikidata entity id: Q110611535
 broader: "[[Product]]"
+inferred:skos:ancestor: "[[Product]]"
+inferred:skos:narrower: "[[slide show]]"
 ---

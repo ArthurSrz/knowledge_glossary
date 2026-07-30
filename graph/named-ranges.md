@@ -11,6 +11,7 @@ tags:
 timestamp: 2026-06-28T00:00:00Z
 instanceOf: "[[Excel vs. Gsheet problem]]"
 broader: "[[spreadsheet]]"
+inferred:skos:ancestor: "[[spreadsheet]]"
 ---
 
 Named ranges are the **safest cross-platform bridge** — they translate cleanly between [[Excel]] and Google Sheets in most cases.

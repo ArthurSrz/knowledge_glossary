@@ -6,5 +6,9 @@ Stack Exchange tag: https://stackoverflow.com/tags/sparklines
 Commons category: Sparkline
 wikidata entity id: Q2307841
 broader: "[[spreadsheet]]"
+inferred:skos:ancestor:
+  - "[[data visualization]]"
+  - "[[spreadsheet]]"
+  - "[[statistical graphics]]"
 ---
 There is no [[mapping]] between representation of a sparkline inside [[google sheet]] and inside microsoft [[excel]] 

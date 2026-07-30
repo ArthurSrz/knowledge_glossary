@@ -29,5 +29,15 @@ wikidata entity id: Q176737
 aliases:
   - random process
 skos:broader: "[[probability]]"
+inferred:skos:ancestor:
+  - "[[combinatorics]]"
+  - "[[probability]]"
+inferred:skos:narrower:
+  - "[[Impermanence]]"
+  - "[[Independent Cascade Model]]"
+  - "[[Smoothing]]"
+  - "[[constancy]]"
+  - "[[continuity]]"
+  - "[[permanence]]"
 ---
 A stochastic or random [[process]] can be defined as a collection of random variables that is indexed by some mathematical set

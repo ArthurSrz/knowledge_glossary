@@ -1,5 +1,10 @@
 ---
 broader: "[[Graph theory]]"
+inferred:skos:ancestor:
+  - "[[combinatorics]]"
+  - "[[graph theory]]"
+inferred:skos:broader: "[[graph theory]]"
+inferred:skos:narrower: "[[Social network analysis]]"
 ---
 # Graph Network Analysis
 

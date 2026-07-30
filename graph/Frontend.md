@@ -9,5 +9,8 @@ facet of: "[[user interface]]"
 has effect: "[[user interface]]"
 wikidata entity id: Q70507976
 broader: "[[Application development]]"
+inferred:skos:ancestor:
+  - "[[Application development]]"
+  - "[[Process]]"
 ---
 The front end communicates with the [[Backend]] through an [[Application Programming Interface]] (API). In the case of web and mobile frontend, the API is often based on HTTP request and responses

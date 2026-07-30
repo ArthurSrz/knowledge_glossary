@@ -1,5 +1,9 @@
 ---
 broader: "[[Agentic System]]"
+inferred:skos:ancestor:
+  - "[[AI]]"
+  - "[[Agentic System]]"
+  - "[[Artificial Intelligence (AI)]]"
 ---
 Tools are physical objects modified or created to extend human capabilities and accomplish specific tasks, a [[concept]] formalized in anthropology by Kenneth Oakley in "Man the Tool-Maker" (1949), building on Benjamin Franklin's earlier philosophical observation (1778).
 

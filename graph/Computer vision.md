@@ -12,6 +12,10 @@ techniques:
   - "[[Pooling]]"
   - "[[Transfer learning]]"
 broader: "[[Artificial Intelligence (AI)]]"
+inferred:skos:ancestor:
+  - "[[AI]]"
+  - "[[Artificial Intelligence (AI)]]"
+inferred:skos:narrower: "[[Facial recognition]]"
 ---
 
 Tasks implying image and video : image classification, object detection, semantic segmentation, image generation 

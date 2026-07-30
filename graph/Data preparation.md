@@ -1,5 +1,18 @@
 ---
 broader: "[[CRISP-DM Process]]"
+inferred:skos:ancestor:
+  - "[[CRISP-DM Process]]"
+  - "[[machine learning projects]]"
+inferred:skos:narrower:
+  - "[[Label encoding]]"
+  - "[[Min-max normalization]]"
+  - "[[One-hot encoding]]"
+  - "[[Split data]]"
+  - "[[Tidy Data]]"
+  - "[[Validate data]]"
+  - "[[Z-Score normalization]]"
+  - "[[feature engineering]]"
+  - "[[truncation]]"
 ---
 Step of the [[CRISP-DM Process]]. 
 

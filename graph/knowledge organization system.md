@@ -14,4 +14,16 @@ exact match:
   - http://www.w3.org/2004/02/skos/core#ConceptScheme
   - http://purl.org/spar/fabio/ControlledVocabulary
 wikidata entity id: Q6423319
+inferred:skos:narrower:
+  - "[[Ontology]]"
+  - "[[clarifeye]]"
+  - "[[classification scheme]]"
+  - "[[concept]]"
+  - "[[conceptual model]]"
+  - "[[controlled vocabulary]]"
+  - "[[model vocabulary]]"
+  - "[[organizing principles]]"
+  - "[[subject heading]]"
+  - "[[taxonomy]]"
+  - "[[thesaurus]]"
 ---

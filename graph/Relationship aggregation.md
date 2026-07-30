@@ -1,4 +1,12 @@
 ---
 broader: "[[knowledge graph]]"
+inferred:skos:ancestor:
+  - "[[Infrastructure]]"
+  - "[[Knowledge base]]"
+  - "[[Memory]]"
+  - "[[Process]]"
+  - "[[graphs]]"
+  - "[[knowledge]]"
+  - "[[knowledge graph]]"
 ---
 A technique for collapsing multiple parallel relationships into a single weighted relationship during [[Graph projection]]

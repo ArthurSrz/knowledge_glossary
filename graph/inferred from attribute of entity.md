@@ -6,5 +6,13 @@ subclass of:
   - "[[db/source of statements in Wikidata]]"
 instance of: "[[db/source type]]"
 broader: "[[knowledge graph]]"
+inferred:skos:ancestor:
+  - "[[Infrastructure]]"
+  - "[[Knowledge base]]"
+  - "[[Memory]]"
+  - "[[Process]]"
+  - "[[graphs]]"
+  - "[[knowledge]]"
+  - "[[knowledge graph]]"
 ---
 estimating information about an entity based on its observed attributes

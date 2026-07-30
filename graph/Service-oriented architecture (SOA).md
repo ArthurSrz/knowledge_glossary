@@ -1,5 +1,6 @@
 ---
 broader: "[[Infrastructure]]"
+inferred:skos:ancestor: "[[Infrastructure]]"
 ---
 An architecture where services for one component of a system is provided by another component through a communication protocol. 
 

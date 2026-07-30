@@ -24,6 +24,11 @@ types:
   - "[[Inference pipeline]]"
   - "[[Data pipeline]]"
   - "[[ML pipeline]]"
+inferred:skos:narrower:
+  - "[[Delta live tables]]"
+  - "[[Feature pipeline]]"
+  - "[[Ingestion]]"
+  - "[[Training pipeline]]"
 ---
 
 # Pipelines

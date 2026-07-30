@@ -1,5 +1,10 @@
 ---
 broader: "[[Split data]]"
+inferred:skos:ancestor:
+  - "[[CRISP-DM Process]]"
+  - "[[Data preparation]]"
+  - "[[Split data]]"
+  - "[[machine learning projects]]"
 ---
 # Test Data Set
 

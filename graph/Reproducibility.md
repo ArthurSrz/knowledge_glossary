@@ -1,5 +1,10 @@
 ---
 broader: "[[ML system]]"
+inferred:skos:ancestor:
+  - "[[AI]]"
+  - "[[Artificial Intelligence (AI)]]"
+  - "[[ML system]]"
+  - "[[machine learning]]"
 ---
 It helps debug futur issues. And **peer reviews establish credibility**. 
 

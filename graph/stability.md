@@ -16,4 +16,5 @@ instance of:
   - "[[system characteristic]]"
 wikidata entity id: Q2325497
 broader: "[[Process]]"
+inferred:skos:ancestor: "[[Process]]"
 ---

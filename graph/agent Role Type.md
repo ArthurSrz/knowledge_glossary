@@ -13,6 +13,10 @@ tags:
   - Hiérarchie
   - Multi_Agent
 broader: "[[Agentic System]]"
+inferred:skos:ancestor:
+  - "[[AI]]"
+  - "[[Agentic System]]"
+  - "[[Artificial Intelligence (AI)]]"
 ---
 **Définition** : [[classification]] des agents selon leur fonction et position dans la hiérarchie du système multi-[[agent]].
 

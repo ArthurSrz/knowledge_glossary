@@ -4,6 +4,7 @@ same:
   - "[[Hybrid search]]"
 failureMode: "[[Tag Filter Vocabulary Mismatch]]"
 broader: "[[Search]]"
+inferred:skos:ancestor: "[[Search]]"
 ---
 
 # Filtered Vector Search

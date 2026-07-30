@@ -5,6 +5,11 @@ tunes: "[[Algorithm]]"
 optimizedBy: ["[[Grid search]]", "[[Random search]]", "[[Bayesian optimization]]", "[[Hyperband]]"]
 affects: ["[[Model performance]]", "[[Training time]]", "[[Generalization]]"]
 broader: "[[machine learning]]"
+inferred:skos:ancestor:
+  - "[[AI]]"
+  - "[[Artificial Intelligence (AI)]]"
+  - "[[machine learning]]"
+inferred:skos:narrower: "[[Learning rate]]"
 ---
 
 # Hyperparameters

@@ -19,6 +19,13 @@ tags:
   - Traçabilité
   - Surveillance
 skos:broader: "[[agent]]"
+inferred:skos:ancestor: "[[agent]]"
+inferred:skos:narrower:
+  - "[[AgentOps]]"
+  - "[[LLM Observability]]"
+inferred:skos:related:
+  - "[[AgentOps]]"
+  - "[[agent]]"
 ---
 
 # [[Agent]] Observability

@@ -4,6 +4,7 @@ works_with: "[[Data scientist]]"
 develops: "[[ML system]]"
 implements: "[[ML models]]"
 broader: "[[Data science team]]"
+inferred:skos:ancestor: "[[Data science team]]"
 ---
 
 # Machine Learning Engineer

@@ -1,5 +1,11 @@
 ---
 broader: "[[Containerization (computing)]]"
+inferred:skos:ancestor:
+  - "[[Infrastructure]]"
+  - "[[Virtualization]]"
+  - "[[containerization (computing)]]"
+inferred:skos:broader: "[[containerization (computing)]]"
+inferred:skos:narrower: "[[Docker images]]"
 ---
 
 

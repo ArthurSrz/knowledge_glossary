@@ -1,5 +1,6 @@
 ---
 broader: "[[risk]]"
+inferred:skos:ancestor: "[[risk]]"
 ---
 
 ## Definition

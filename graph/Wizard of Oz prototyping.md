@@ -1,5 +1,6 @@
 ---
 broader: "[[Prototyping]]"
+inferred:skos:ancestor: "[[Prototyping]]"
 ---
 # Wizard of Oz Prototyping
 

@@ -72,4 +72,5 @@ logo image: http://commons.wikimedia.org/wiki/Special:FilePath/Microsoft%20Offic
 software version identifier: 2604 (Build 19929.20136)
 wikidata entity id: Q11266
 broader: "[[Product]]"
+inferred:skos:ancestor: "[[Product]]"
 ---

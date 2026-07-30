@@ -1,3 +1,11 @@
+---
+inferred:skos:narrower:
+  - "[[Data engineer]]"
+  - "[[Data scientist]]"
+  - "[[Engineering team]]"
+  - "[[Machine learning engineer]]"
+  - "[[Software engineer]]"
+---
 Made of [[Data scientist]]
 
 

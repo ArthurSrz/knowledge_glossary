@@ -6,4 +6,5 @@ described by source: "[[Lean Logic]]"
 Stack Exchange tag: https://stackoverflow.com/tags/modularity
 image: http://commons.wikimedia.org/wiki/Special:FilePath/Figurebulge2.svg
 broader: "[[Infrastructure]]"
+inferred:skos:ancestor: "[[Infrastructure]]"
 ---

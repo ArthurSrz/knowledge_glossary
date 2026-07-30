@@ -6,5 +6,13 @@ subclass of: "[[graph/Knowledge organization system]]"
 opposite of: "[[graph/Physical model]]"
 different from: "[[graph/Theoretical framework]]"
 broader: "[[Modeling]]"
+inferred:skos:ancestor:
+  - "[[CRISP-DM Process]]"
+  - "[[knowledge organization system]]"
+  - "[[machine learning projects]]"
+  - "[[modeling]]"
+inferred:skos:broader:
+  - "[[knowledge organization system]]"
+  - "[[modeling]]"
 ---
 Representation of a system, made of the composition of concepts 

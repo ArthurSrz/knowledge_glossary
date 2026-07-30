@@ -1,3 +1,11 @@
+---
+inferred:skos:narrower:
+  - "[[Distance]]"
+  - "[[Geometric concept]]"
+  - "[[Tensors]]"
+  - "[[manifold]]"
+  - "[[vector]]"
+---
 Transformation of nodes inside vectors that capture their structural properties. 
 
 > [!example]

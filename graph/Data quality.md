@@ -1,5 +1,15 @@
 ---
 broader: "[[data]]"
+inferred:skos:ancestor:
+  - "[[Process]]"
+  - "[[data]]"
+inferred:skos:narrower:
+  - "[[Outliers]]"
+  - "[[class imbalance]]"
+  - "[[completeness]]"
+  - "[[missing at random]]"
+  - "[[missing completely at random]]"
+  - "[[missing not at random]]"
 ---
 Missing data, dirty data
 

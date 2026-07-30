@@ -2,6 +2,12 @@
 subclass of:
   - "[[Creative work]]"
 broader: "[[Slide deck]]"
+inferred:skos:ancestor:
+  - "[[Product]]"
+  - "[[Slide deck]]"
+  - "[[creative work]]"
+  - "[[intellectual work]]"
+inferred:skos:broader: "[[creative work]]"
 ---
 ![Slide show Thumbnail](https://upload.wikimedia.org/wikipedia/commons/1/15/Schulprojekt_Hilden-001.jpg)
 [Slide show](https://en.wikipedia.org/wiki/Slide_show)

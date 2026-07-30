@@ -1,5 +1,6 @@
 ---
 broader: "[[Schema design]]"
+inferred:skos:ancestor: "[[Schema design]]"
 ---
 
 Feature developed in [[Spotify story]] to help data scientist cold start using the data

@@ -1,5 +1,17 @@
 ---
 broader: "[[Python]]"
+inferred:skos:ancestor:
+  - "[[Application development]]"
+  - "[[Process]]"
+  - "[[Programming language]]"
+  - "[[Python]]"
+inferred:skos:narrower:
+  - "[[AutoModel]]"
+  - "[[Autotokenizer]]"
+  - "[[DatasetDict]]"
+  - "[[Datasets]]"
+  - "[[Trainer]]"
+  - "[[TrainingAguments]]"
 ---
 
 

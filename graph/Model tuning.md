@@ -18,6 +18,14 @@ validatedBy:
   - "[[Cross validation]]"
   - "[[Validation set]]"
 skos:broader: "[[modeling]]"
+inferred:skos:ancestor:
+  - "[[CRISP-DM Process]]"
+  - "[[machine learning projects]]"
+  - "[[modeling]]"
+inferred:skos:narrower:
+  - "[[Fine-tuning]]"
+  - "[[Pruning]]"
+  - "[[Quantization]]"
 ---
 [[model]] tuning is the [[process]] of optimizing [[model]] performance by adjusting [[hyperparameters]] and architecture choices to find the [[best]] configuration for a given task.
 

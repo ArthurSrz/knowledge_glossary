@@ -1,6 +1,9 @@
 ---
 TypeOf: "[[Graph algorithm]]"
 skos:broader: "[[Graph algorithm]]"
+inferred:skos:ancestor:
+  - "[[Algorithm]]"
+  - "[[Graph algorithm]]"
 ---
 Algorithm that detects what nodes are more related to each other. 
 

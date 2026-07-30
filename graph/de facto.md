@@ -19,5 +19,6 @@ subject lexeme:
   - L478462
   - de facto
 wikidata entity id: Q712144
+inferred:skos:narrower: "[[de facto standard]]"
 ---
 Practices that exist without recognition in law or other formal norms

@@ -1,5 +1,14 @@
 ---
 broader: "[[Evaluation metrics]]"
+inferred:skos:ancestor:
+  - "[[Evaluation metrics]]"
+  - "[[evaluation]]"
+inferred:skos:narrower:
+  - "[[False Negative (FN)]]"
+  - "[[False Positive (FP)]]"
+  - "[[True Negative (TN)]]"
+  - "[[True Positive (TP)]]"
+  - "[[multiclass confusion matrix]]"
 ---
 A way to avoid [[class imbalance]]. A tool to monitor [[Logistic regression]] performance. 
 

@@ -1,5 +1,23 @@
 ---
 broader: "[[Programming language]]"
+inferred:skos:ancestor:
+  - "[[Application development]]"
+  - "[[Process]]"
+  - "[[Programming language]]"
+inferred:skos:narrower:
+  - "[[CountVectorizer]]"
+  - "[[Hugging Face]]"
+  - "[[Jupyter notebooks]]"
+  - "[[Matplotlib]]"
+  - "[[Numpy]]"
+  - "[[Pandas]]"
+  - "[[PyTorch]]"
+  - "[[Pydantic]]"
+  - "[[Pypi]]"
+  - "[[Sci-kit Learn]]"
+  - "[[SpaCy]]"
+  - "[[Virtual Environment]]"
+  - "[[openpyxl]]"
 ---
 ![Python (programming language)](https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg)
 

@@ -1,5 +1,8 @@
 ---
 skos:broader: "[[bias]]"
+inferred:skos:ancestor:
+  - "[[Fairness]]"
+  - "[[bias]]"
 ---
 Cognitive [[bias]] refers to systematic patterns of deviation from norm and/or rationality in [[judgment]], introduced as a formal [[concept]] by Amos Tversky and Daniel Kahneman in their seminal works.
 

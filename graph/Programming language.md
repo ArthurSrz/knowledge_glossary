@@ -1,5 +1,17 @@
 ---
 broader: "[[Application development]]"
+inferred:skos:ancestor:
+  - "[[Application development]]"
+  - "[[Process]]"
+inferred:skos:narrower:
+  - "[[App script]]"
+  - "[[Elixir]]"
+  - "[[Java]]"
+  - "[[Mark-up language]]"
+  - "[[Python]]"
+  - "[[Visual Basic Application]]"
+  - "[[functional programming]]"
+  - "[[process-oriented programming]]"
 ---
 # Programming Language
 

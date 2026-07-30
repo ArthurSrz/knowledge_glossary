@@ -1,6 +1,12 @@
 ---
 ensures_interoperability_of: "[[ML system]]"
 broader: "[[Virtualization]]"
+inferred:skos:ancestor:
+  - "[[Infrastructure]]"
+  - "[[Virtualization]]"
+inferred:skos:narrower:
+  - "[[Docker]]"
+  - "[[container]]"
 ---
 
 

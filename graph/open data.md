@@ -37,4 +37,7 @@ hashtag: opendata
 Dewey Decimal Classification: "005.7"
 wikidata entity id: Q309901
 broader: "[[data]]"
+inferred:skos:ancestor:
+  - "[[Process]]"
+  - "[[data]]"
 ---

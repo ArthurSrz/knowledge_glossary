@@ -1,5 +1,9 @@
 ---
 broader: "[[Model maintenance]]"
+inferred:skos:ancestor: "[[Model maintenance]]"
+inferred:skos:narrower:
+  - "[[Data drift]]"
+  - "[[concept drift]]"
 ---
 To avoid [[Data drift]] or [[concept drift]]. 
 

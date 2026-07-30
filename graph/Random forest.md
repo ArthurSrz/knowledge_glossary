@@ -15,6 +15,13 @@ relatedTo:
   - "[[classification]]"
   - "[[Regression]]"
 broader: "[[Decision tree]]"
+inferred:skos:ancestor:
+  - "[[AI]]"
+  - "[[Artificial Intelligence (AI)]]"
+  - "[[Decision tree]]"
+  - "[[machine learning]]"
+  - "[[supervised learning]]"
+inferred:skos:narrower: "[[Bootstrap aggregating (bagging)]]"
 ---
 
 # Random Forest

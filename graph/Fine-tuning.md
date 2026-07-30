@@ -6,6 +6,17 @@ appliesTo: ["[[Pre-trained models]]", "[[Large Language Model]]", "[[Neural netw
 techniques: ["[[Full fine-tuning]]", "[[Layer freezing]]", "[[Adapter modules]]", "[[LoRA]]"]
 benefits: ["[[Reduced training time]]", "[[Less data required]]", "[[Better performance]]"]
 broader: "[[Model tuning]]"
+inferred:skos:ancestor:
+  - "[[CRISP-DM Process]]"
+  - "[[machine learning projects]]"
+  - "[[model tuning]]"
+  - "[[modeling]]"
+inferred:skos:broader: "[[model tuning]]"
+inferred:skos:narrower:
+  - "[[Instruction dataset]]"
+  - "[[Low-Rank Adaptation]]"
+  - "[[Unsloth]]"
+  - "[[supervised finetuning]]"
 ---
 Fine-tuning is the [[process]] of taking a pre-trained [[model]] and adapting it to a specific task by continuing training on task-specific [[data]].
 

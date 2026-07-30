@@ -6,6 +6,12 @@ usedIn: ["[[Transformers]]", "[[Self-attention]]", "[[Multi-head attention]]"]
 computedBy: "[[Softmax function]]"
 relatedTo: ["[[Query-Key-Value]]", "[[Scaled dot-product attention]]"]
 broader: "[[Transformers]]"
+inferred:skos:ancestor:
+  - "[[AI]]"
+  - "[[Artificial Intelligence (AI)]]"
+  - "[[Deep learning]]"
+  - "[[Transformers]]"
+  - "[[machine learning]]"
 ---
 
 # Attention Weights

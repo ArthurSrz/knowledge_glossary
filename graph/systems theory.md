@@ -1,3 +1,10 @@
+---
+inferred:skos:narrower:
+  - "[[Equifinality]]"
+  - "[[Feedback loops]]"
+  - "[[Flywheel effect]]"
+  - "[[study of complex systems]]"
+---
 ## Definition
 
 Systems theory is the transdisciplinary study of systems as cohesive groups of interrelated, interdependent components that can be natural or artificial, first formalized by Ludwig von Bertalanffy in his General System Theory.

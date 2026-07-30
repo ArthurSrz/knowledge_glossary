@@ -97,4 +97,6 @@ subreddit: excel
 GitHub topic: excel
 wikidata entity id: Q11272
 broader: "[[spreadsheet]]"
+inferred:skos:ancestor: "[[spreadsheet]]"
+skos:related: "[[tabular data]]"
 ---

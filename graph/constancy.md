@@ -15,4 +15,8 @@ said to be the same as:
   - "[[graph/permanence]]"
 wikidata entity id: Q21075800
 broader: "[[Stochastic processes]]"
+inferred:skos:ancestor:
+  - "[[Stochastic processes]]"
+  - "[[combinatorics]]"
+  - "[[probability]]"
 ---

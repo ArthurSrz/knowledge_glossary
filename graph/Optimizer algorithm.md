@@ -6,6 +6,11 @@ optimizes: "[[Loss function]]"
 updates: "[[Model parameters]]"
 uses: ["[[Gradient]]", "[[Learning rate]]", "[[Momentum]]"]
 broader: "[[machine learning]]"
+inferred:skos:ancestor:
+  - "[[AI]]"
+  - "[[Artificial Intelligence (AI)]]"
+  - "[[machine learning]]"
+inferred:skos:narrower: "[[Gradient descent]]"
 ---
 
 # Optimizer Algorithm

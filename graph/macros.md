@@ -12,6 +12,9 @@ tags:
 timestamp: 2026-06-28T00:00:00Z
 instanceOf: "[[Excel vs. Gsheet problem]]"
 broader: "[[Application development]]"
+inferred:skos:ancestor:
+  - "[[Application development]]"
+  - "[[Process]]"
 ---
 
 ## The Core Problem

@@ -10,6 +10,12 @@ facet of:
 wikidata entity id: Q107154297
 EmbodiementOf: "[[latent]]"
 broader: "[[Embeddings]]"
+inferred:skos:ancestor:
+  - "[[AI]]"
+  - "[[Artificial Intelligence (AI)]]"
+  - "[[Embeddings]]"
+  - "[[Natural Language Processing]]"
+  - "[[embedding]]"
 ---
 
 [[Embedding]] of [[data]] within a [[manifold]] based on a similarity function

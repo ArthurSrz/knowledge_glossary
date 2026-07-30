@@ -1,5 +1,18 @@
 ---
 broader: "[[machine learning]]"
+inferred:skos:ancestor:
+  - "[[AI]]"
+  - "[[Artificial Intelligence (AI)]]"
+  - "[[machine learning]]"
+inferred:skos:narrower:
+  - "[[Excessive latency]]"
+  - "[[ML System failures]]"
+  - "[[ML system design process]]"
+  - "[[Nano-precision detection system]]"
+  - "[[Reproducibility]]"
+  - "[[best-classification-rate AI detection system]]"
+  - "[[cold start problem]]"
+  - "[[machine learning systems]]"
 ---
 
 Important design decisions : 

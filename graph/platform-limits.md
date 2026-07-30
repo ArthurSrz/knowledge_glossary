@@ -5,6 +5,7 @@ description: Cell counts, column limits, file sizes, and performance cliffs for 
 tags: [limits, performance, scalability, excel, google-sheets]
 timestamp: 2026-06-28T00:00:00Z
 broader: "[[spreadsheet]]"
+inferred:skos:ancestor: "[[spreadsheet]]"
 ---
 
 ## Platform Limits Comparison

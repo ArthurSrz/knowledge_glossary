@@ -9,4 +9,12 @@ instance of: "[[graph/scholarly article]]"
 language of work or name: "[[graph/English]]"
 wikidata entity id: Q130977716
 broader: "[[knowledge graph]]"
+inferred:skos:ancestor:
+  - "[[Infrastructure]]"
+  - "[[Knowledge base]]"
+  - "[[Memory]]"
+  - "[[Process]]"
+  - "[[graphs]]"
+  - "[[knowledge]]"
+  - "[[knowledge graph]]"
 ---

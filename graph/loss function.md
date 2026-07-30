@@ -6,6 +6,10 @@ examples: ["[[Mean squared error]]", "[[Cross-entropy]]", "[[Hinge loss]]", "[[K
 properties: ["[[Convexity]]", "[[Differentiability]]", "[[Continuity]]"]
 usedIn: ["[[Supervised learning]]", "[[Optimization]]", "[[Neural network training]]"]
 broader: "[[machine learning]]"
+inferred:skos:ancestor:
+  - "[[AI]]"
+  - "[[Artificial Intelligence (AI)]]"
+  - "[[machine learning]]"
 ---
 
 # Loss Function

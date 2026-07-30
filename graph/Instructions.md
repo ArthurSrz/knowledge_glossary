@@ -5,6 +5,7 @@ components: []
 category: Agent Creation Registry
 tags: [Instructions, Guidelines, Decision_Making]
 broader: "[[Process]]"
+inferred:skos:ancestor: "[[Process]]"
 ---
 
 # Instructions

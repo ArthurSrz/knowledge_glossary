@@ -16,6 +16,16 @@ related to:
   - "[[term sheet]]"
   - "[[negotiation]]"
 broader: "[[clause]]"
+inferred:skos:ancestor:
+  - "[[Algorithm]]"
+  - "[[Application development]]"
+  - "[[Dialogue]]"
+  - "[[Documentation]]"
+  - "[[Process]]"
+  - "[[Provenance]]"
+  - "[[clause]]"
+  - "[[elicitation]]"
+  - "[[heuristic]]"
 ---
 The decision process a legal practitioner applies to assign a clause to a [[Provenance]] type. It is a [[heuristic]] — not an algorithm — because it relies on experience and tacit market knowledge rather than a computable rule.
 ## Two axes

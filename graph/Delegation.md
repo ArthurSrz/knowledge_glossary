@@ -8,6 +8,9 @@ has effect:
 subclass of:
   - "[[legal act]]"
 broader: "[[Management]]"
+inferred:skos:ancestor:
+  - "[[Management]]"
+  - "[[Process]]"
 ---
 ## Frein 
 

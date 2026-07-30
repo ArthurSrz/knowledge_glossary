@@ -5,5 +5,9 @@ named after: "[[Django Reinhardt]]"
 wikidata entity id: Q842014
 partOf: "[[clarifeye]]"
 broader: "[[Backend]]"
+inferred:skos:ancestor:
+  - "[[Application development]]"
+  - "[[Backend]]"
+  - "[[Process]]"
 ---
 Python web framework.

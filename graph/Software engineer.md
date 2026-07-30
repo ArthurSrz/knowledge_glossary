@@ -1,4 +1,5 @@
 ---
 broader: "[[Data science team]]"
+inferred:skos:ancestor: "[[Data science team]]"
 ---
 Quaterly or monthly, gather feedback from client and set the roadmap for the next period

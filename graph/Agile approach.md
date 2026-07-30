@@ -1,3 +1,10 @@
+---
+inferred:skos:narrower:
+  - "[[Daily stand-ups]]"
+  - "[[Demo sessions]]"
+  - "[[Product owner]]"
+  - "[[Sprint planning]]"
+---
 
 
 ## Related concepts

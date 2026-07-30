@@ -5,6 +5,10 @@ components: [Agent ID, Agent Name, Agent Version]
 category: Agent Creation Registry
 tags: [Identité_Agent, Versioning, Gestion_Agents]
 broader: "[[Agentic System]]"
+inferred:skos:ancestor:
+  - "[[AI]]"
+  - "[[Agentic System]]"
+  - "[[Artificial Intelligence (AI)]]"
 ---
 
 # [[Agent]] Identity

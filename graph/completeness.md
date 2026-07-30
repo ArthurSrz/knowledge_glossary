@@ -7,5 +7,9 @@ wikidata entity id: Q15846555
 aliases:
   - complétude
 broader: "[[Data quality]]"
+inferred:skos:ancestor:
+  - "[[Data quality]]"
+  - "[[Process]]"
+  - "[[data]]"
 ---
 

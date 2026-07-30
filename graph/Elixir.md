@@ -69,4 +69,8 @@ publication date: 2012-05-25T00:00:00Z
 wikidata entity id: Q5362035
 TypeOf: "[[Process]]"
 broader: "[[Programming language]]"
+inferred:skos:ancestor:
+  - "[[Application development]]"
+  - "[[Process]]"
+  - "[[Programming language]]"
 ---

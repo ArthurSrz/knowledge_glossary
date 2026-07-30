@@ -6,6 +6,13 @@ usedIn: ["[[Unsupervised learning]]", "[[Data mining]]", "[[Pattern recognition]
 optimizes: "[[Sum of squared distances]]"
 relatedTo: ["[[Centroid]]", "[[Euclidean distance]]", "[[Voronoi diagram]]"]
 broader: "[[Clustering]]"
+inferred:skos:ancestor:
+  - "[[AI]]"
+  - "[[Artificial Intelligence (AI)]]"
+  - "[[Unsupervised Learning]]"
+  - "[[clustering]]"
+  - "[[machine learning]]"
+inferred:skos:broader: "[[clustering]]"
 ---
 
 # K-Means Clustering

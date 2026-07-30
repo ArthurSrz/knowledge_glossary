@@ -1,5 +1,6 @@
 ---
 broader: "[[Fairness]]"
+inferred:skos:ancestor: "[[Fairness]]"
 ---
 ## Related concepts
 

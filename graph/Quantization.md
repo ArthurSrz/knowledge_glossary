@@ -5,6 +5,13 @@ applies_to: ["[[Neural network models]]", "[[Deep learning]]", "[[Edge AI]]"]
 enables: ["[[Model compression]]", "[[Efficient inference]]", "[[Mobile deployment]]"]
 techniques: ["[[Post-training quantization]]", "[[Quantization-aware training]]", "[[Mixed precision]]"]
 broader: "[[Model tuning]]"
+inferred:skos:ancestor:
+  - "[[CRISP-DM Process]]"
+  - "[[machine learning projects]]"
+  - "[[model tuning]]"
+  - "[[modeling]]"
+inferred:skos:broader: "[[model tuning]]"
+inferred:skos:narrower: "[[GGUF]]"
 ---
 
 # Quantization

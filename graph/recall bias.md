@@ -3,6 +3,9 @@ instance of:
   - "[[Cognitive bias]]"
 part of: "[[psychology terminology]]"
 broader: "[[bias]]"
+inferred:skos:ancestor:
+  - "[[Fairness]]"
+  - "[[bias]]"
 ---
 
 [Recall bias](https://en.wikipedia.org/wiki/Recall_bias)

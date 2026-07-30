@@ -5,6 +5,10 @@ components: [Coding, Email, File, Github, Specialized Tools]
 category: Agent Creation Registry
 tags: [Outils, Capacités_Agent, Intégrations]
 broader: "[[Agentic System]]"
+inferred:skos:ancestor:
+  - "[[AI]]"
+  - "[[Agentic System]]"
+  - "[[Artificial Intelligence (AI)]]"
 ---
 
 # Toolkits

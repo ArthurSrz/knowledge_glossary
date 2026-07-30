@@ -1,5 +1,9 @@
 ---
 broader: "[[Graph theory]]"
+inferred:skos:ancestor:
+  - "[[combinatorics]]"
+  - "[[graph theory]]"
+inferred:skos:broader: "[[graph theory]]"
 ---
 
 Given a graph G = (X, E) with n vertices, its **adjacency matrix** M is an **n × n square matrix** where each entry M[i][j] is defined as:

@@ -1,5 +1,7 @@
 ---
 broader: "[[Product]]"
+inferred:skos:ancestor: "[[Product]]"
+inferred:skos:narrower: "[[bundle]]"
 ---
 # Product Packaging
 

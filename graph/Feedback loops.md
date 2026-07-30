@@ -1,5 +1,6 @@
 ---
 broader: "[[systems theory]]"
+inferred:skos:ancestor: "[[systems theory]]"
 ---
 Aside from [[Don Norman's principles of Interaction Design]], this is a specific consideration to take into account when designing [[ML system]]. 
 

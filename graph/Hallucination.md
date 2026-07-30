@@ -6,6 +6,12 @@ affecte: ["[[Large Language Model]]", "[[Neural Machine Translation]]", "[[Text 
 mitigated_by: ["[[Retrieval Augmented Generation]]", "[[Factual grounding]]", "[[Unlikelihood training]]"]
 types: ["[[Intrinsic hallucination]]", "[[Extrinsic hallucination]]"]
 broader: "[[Large Language Model]]"
+inferred:skos:ancestor:
+  - "[[AI]]"
+  - "[[Artificial Intelligence (AI)]]"
+  - "[[Language modeling]]"
+  - "[[Large Language Model]]"
+  - "[[Natural Language Processing]]"
 ---
 
 # Hallucination

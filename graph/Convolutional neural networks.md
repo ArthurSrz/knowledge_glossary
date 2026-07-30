@@ -16,6 +16,13 @@ inspiredBy:
   - "[[Visual cortex]]"
   - "[[Receptive fields]]"
 broader: "[[artificial neural network]]"
+inferred:skos:ancestor:
+  - "[[AI]]"
+  - "[[Artificial Intelligence (AI)]]"
+  - "[[Deep learning]]"
+  - "[[artificial neural network]]"
+  - "[[machine learning]]"
+inferred:skos:narrower: "[[Convolutional layers]]"
 ---
 
 # Convolutional Neural Networks (CNNs)

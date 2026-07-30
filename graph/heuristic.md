@@ -21,4 +21,16 @@ MeSH tree code:
   - F02.463.785.810.500
 Library of Congress Classification: BD260
 wikidata entity id: Q201413
+inferred:skos:ancestor:
+  - "[[Algorithm]]"
+  - "[[Dialogue]]"
+  - "[[elicitation]]"
+inferred:skos:broader:
+  - "[[Algorithm]]"
+  - "[[Dialogue]]"
+inferred:skos:narrower:
+  - "[[Heuristics]]"
+  - "[[Lean Logic]]"
+  - "[[Occam's rasor]]"
+  - "[[clause classification heuristic]]"
 ---

@@ -19,6 +19,10 @@ uses:
   - "[[Domain knowledge]]"
   - "[[Noise injection]]"
 skos:broader: "[[data]]"
+inferred:skos:ancestor:
+  - "[[Process]]"
+  - "[[data]]"
+inferred:skos:narrower: "[[augmentation]]"
 ---
 
 # [[data]] [[augmentation]]

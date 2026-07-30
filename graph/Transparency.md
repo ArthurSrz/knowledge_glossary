@@ -1,5 +1,7 @@
 ---
 broader: "[[Fairness]]"
+inferred:skos:ancestor: "[[Fairness]]"
+inferred:skos:narrower: "[[Interpretability]]"
 ---
 Aside from [[Don Norman's principles of Interaction Design]], this is a specific consideration when designing [[ML system]]. Key considerations : 
 

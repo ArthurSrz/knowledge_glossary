@@ -1,6 +1,20 @@
 ---
 partOf: "[[LLM output evaluation]]"
 broader: "[[evaluation]]"
+inferred:skos:ancestor: "[[evaluation]]"
+inferred:skos:narrower:
+  - "[[F1 Score]]"
+  - "[[False Positive Rate]]"
+  - "[[LLM Metrics]]"
+  - "[[Perplexity]]"
+  - "[[Precision]]"
+  - "[[Recall]]"
+  - "[[Receiver Operating Characteristic curve]]"
+  - "[[Regression Error Metrics]]"
+  - "[[True Positive Rate (Recall)]]"
+  - "[[accuracy]]"
+  - "[[coefficient of determination]]"
+  - "[[confusion matrix]]"
 ---
 
 

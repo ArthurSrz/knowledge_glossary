@@ -1,5 +1,6 @@
 ---
 broader: "[[Model maintenance]]"
+inferred:skos:ancestor: "[[Model maintenance]]"
 ---
 Make sure we version : 
 * Data

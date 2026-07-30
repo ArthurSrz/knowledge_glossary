@@ -1,5 +1,12 @@
 ---
 broader: "[[taxonomy]]"
+inferred:skos:ancestor:
+  - "[[AI]]"
+  - "[[Artificial Intelligence (AI)]]"
+  - "[[knowledge organization system]]"
+  - "[[organizing principles]]"
+  - "[[taxonomy]]"
+inferred:skos:broader: "[[Artificial Intelligence (AI)]]"
 ---
 # Classification
 

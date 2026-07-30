@@ -4,6 +4,24 @@ usedIn: "[[Natural Language Processing]]"
 implements: "[[Deep learning]]"
 trainedOn: "[[training data set]]"
 broader: "[[Language modeling]]"
+inferred:skos:ancestor:
+  - "[[AI]]"
+  - "[[Artificial Intelligence (AI)]]"
+  - "[[Language modeling]]"
+  - "[[Natural Language Processing]]"
+inferred:skos:narrower:
+  - "[[AI prompt]]"
+  - "[[Hallucination]]"
+  - "[[In-Context Learning]]"
+  - "[[LLM Models]]"
+  - "[[LLM Path Extractors]]"
+  - "[[LLaMA]]"
+  - "[[Ollama]]"
+  - "[[RAG (Retrieval-Augmented Generation)]]"
+  - "[[Retrieval Augmented Generation]]"
+  - "[[chat engines]]"
+  - "[[chat modes]]"
+  - "[[moderation]]"
 ---
 
 # Large Language Model (LLM)

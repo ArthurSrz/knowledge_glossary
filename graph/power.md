@@ -40,4 +40,9 @@ Library of Congress Classification:
   - HM1256
 wikidata entity id: Q25107
 broader: "[[negotiation]]"
+inferred:skos:ancestor:
+  - "[[Dialogue]]"
+  - "[[elicitation]]"
+  - "[[negotiation]]"
+inferred:skos:narrower: "[[Bargaining power]]"
 ---

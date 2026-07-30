@@ -18,4 +18,22 @@ OmegaWiki Defined Meaning: "672324"
 image: http://commons.wikimedia.org/wiki/Special:FilePath/OpenOffice.org%20Calc.png
 Commons category: Spreadsheet software
 wikidata entity id: Q183197
+inferred:skos:narrower:
+  - "[[Excel vs. Gsheet problem]]"
+  - "[[active cell]]"
+  - "[[calculated-fields]]"
+  - "[[conditional-formatting]]"
+  - "[[cross-sheet source references]]"
+  - "[[excel]]"
+  - "[[google sheet]]"
+  - "[[handled-vs-gaps]]"
+  - "[[named-ranges]]"
+  - "[[partial column range]]"
+  - "[[platform-limits]]"
+  - "[[separators-and-dates]]"
+  - "[[sheets-api]]"
+  - "[[sparkline]]"
+  - "[[structured-references]]"
+  - "[[table cell]]"
+  - "[[theme color]]"
 ---

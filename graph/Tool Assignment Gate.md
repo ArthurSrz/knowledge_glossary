@@ -3,6 +3,10 @@ partOf: "[[Retriever Orchestration]]"
 failureMode: "[[Tool Assignment Gate]]"
 relatedTo: "[[Filtered vector search]]"
 broader: "[[Agentic System]]"
+inferred:skos:ancestor:
+  - "[[AI]]"
+  - "[[Agentic System]]"
+  - "[[Artificial Intelligence (AI)]]"
 ---
 
 # Tool Assignment Gate

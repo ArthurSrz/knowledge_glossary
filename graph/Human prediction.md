@@ -1,5 +1,6 @@
 ---
 broader: "[[Decision support]]"
+inferred:skos:ancestor: "[[Decision support]]"
 ---
 Limited memory and processing ability while [[Narrow AI]] has the ability to process vast amounts of data. 
 

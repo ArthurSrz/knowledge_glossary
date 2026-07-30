@@ -1,5 +1,12 @@
 ---
 broader: "[[Transparency]]"
+inferred:skos:ancestor:
+  - "[[Fairness]]"
+  - "[[Transparency]]"
+inferred:skos:narrower:
+  - "[[Counterfactual explanations]]"
+  - "[[Local Interpretable Model-Agnostic Explanations (LIME)]]"
+  - "[[Shapley Additive Explanations (SHAP)]]"
 ---
 
 

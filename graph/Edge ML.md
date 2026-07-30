@@ -1,5 +1,9 @@
 ---
 broader: "[[machine learning]]"
+inferred:skos:ancestor:
+  - "[[AI]]"
+  - "[[Artificial Intelligence (AI)]]"
+  - "[[machine learning]]"
 ---
 Computations done directly on device, contrary to [[Cloud ML]].
 

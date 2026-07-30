@@ -9,4 +9,7 @@ instance of:
   - "[[db/condition type]]"
 wikidata entity id: Q67151552
 broader: "[[Application development]]"
+inferred:skos:ancestor:
+  - "[[Application development]]"
+  - "[[Process]]"
 ---

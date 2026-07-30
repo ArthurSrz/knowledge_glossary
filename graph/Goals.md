@@ -5,6 +5,7 @@ components: []
 category: Agent Creation Registry
 tags: [Objectifs_Agent, Planification, Comportement]
 broader: "[[Process]]"
+inferred:skos:ancestor: "[[Process]]"
 ---
 
 # Goals

@@ -6,6 +6,16 @@ skos:narrower:
   - "[[classification]]"
   - "[[prediction]]"
 broader: "[[AI]]"
+inferred:skos:ancestor: "[[AI]]"
+inferred:skos:narrower:
+  - "[[Agentic System]]"
+  - "[[Expert systems]]"
+  - "[[Narrow AI]]"
+  - "[[Natural Language Processing]]"
+  - "[[Symbolism]]"
+  - "[[compound AI system]]"
+  - "[[connexionism]]"
+  - "[[machine learning]]"
 ---
 
 

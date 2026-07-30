@@ -1,6 +1,9 @@
 ---
 representedBy: "[[Y]]"
 broader: "[[ML models]]"
+inferred:skos:ancestor:
+  - "[[ML models]]"
+  - "[[model]]"
 ---
 
 Synonyms : annotations, response, Y variable, Dependent Variable. 

@@ -16,4 +16,5 @@ facet of:
   - "[[graph/state]]"
 OmegaWiki Defined Meaning: "1705986"
 broader: "[[Infrastructure]]"
+inferred:skos:ancestor: "[[Infrastructure]]"
 ---

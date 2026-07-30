@@ -1,3 +1,8 @@
+---
+inferred:skos:narrower:
+  - "[[Polynomial regression]]"
+  - "[[Residual analysis]]"
+---
 ## Definition
 
 Regression is a statistical method for estimating the relationships between a dependent variable and one or more independent variables, originally discovered by Francis Galton in studying hereditary patterns.

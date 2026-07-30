@@ -16,4 +16,20 @@ has part(s): "[[graph/negative prompt]]"
 main Wikidata property: AI-generation prompt
 wikidata entity id: Q117217619
 broader: "[[Large Language Model]]"
+inferred:skos:ancestor:
+  - "[[AI]]"
+  - "[[Artificial Intelligence (AI)]]"
+  - "[[Language modeling]]"
+  - "[[Large Language Model]]"
+  - "[[Natural Language Processing]]"
+inferred:skos:narrower:
+  - "[[Prompt Identity]]"
+  - "[[Prompt Optimization Techniques]]"
+  - "[[Prompt Template Info]]"
+  - "[[Prompt Template Types]]"
+  - "[[Prompt templates]]"
+  - "[[Prompt-based techniques]]"
+  - "[[chain-of-thought]]"
+  - "[[prompts]]"
+  - "[[system prompt]]"
 ---

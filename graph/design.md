@@ -37,6 +37,7 @@ part of: "[[built environment and design studies]]"
 Provenio UUID: 256b1caa-722e-4361-9b43-01a98bbcb920
 image: http://commons.wikimedia.org/wiki/Special:FilePath/Braun%20ABW30%20%28schwarz%29.jpg
 wikidata entity id: Q82604
+inferred:skos:narrower: "[[mockups]]"
 ---
 A **design** is the concept of or proposal for an object, process, or [system](https://en.wikipedia.org/wiki/System "System"). 
 
