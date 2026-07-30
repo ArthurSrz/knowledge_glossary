@@ -1,0 +1,111 @@
+# Competency questions for the knowledge glossary ontology.
+#
+# Each question defines what the ontology should be able to answer.
+#   question:  Natural language question
+#   category:  Domain grouping
+#   priority:  1=high, 2=medium, 3=low
+#   requires:  List of relation types or concept names needed to answer.
+#              A relation (e.g. "broader") is checked against actual edge coverage.
+#              A concept (e.g. "Machine Learning") is checked by note existence.
+#
+# Add your own questions here — run `python scripts/reason.py competency`
+# to see which ones your vault can and cannot answer.
+
+questions:
+
+  # ── Hierarchy & taxonomy ──────────────────────────────────────────
+  - question: "What is the parent domain of a given concept?"
+    category: hierarchy
+    priority: 1
+    requires: [broader]
+
+  - question: "What are all the subtypes of a given concept?"
+    category: hierarchy
+    priority: 1
+    requires: [narrower]
+
+  - question: "What is the full ancestor chain from a concept up to a root?"
+    category: hierarchy
+    priority: 1
+    requires: [broader]
+    note: "Answered via the inferred ancestor predicate (transitive broader)"
+
+  - question: "Which concepts are root concepts (no broader parent)?"
+    category: hierarchy
+    priority: 2
+    requires: [broader]
+
+  # ── Associations ──────────────────────────────────────────────────
+  - question: "What concepts are semantically related to a given concept?"
+    category: association
+    priority: 1
+    requires: [related]
+
+  - question: "What is the opposite of a given concept?"
+    category: association
+    priority: 2
+    requires: [opposite_of]
+
+  # ── Dependencies & composition ────────────────────────────────────
+  - question: "What tools or techniques does a given concept use?"
+    category: dependency
+    priority: 1
+    requires: [uses]
+
+  - question: "What are the dependencies of a given concept?"
+    category: dependency
+    priority: 1
+    requires: [depends_on]
+
+  - question: "What can a given concept be constructed with?"
+    category: dependency
+    priority: 2
+    requires: [constructed_with]
+
+  # ── Application & impact ──────────────────────────────────────────
+  - question: "What are the practical applications of a given concept?"
+    category: application
+    priority: 1
+    requires: [has_use]
+
+  - question: "What does a given concept contribute to?"
+    category: application
+    priority: 2
+    requires: [contributing_factor]
+
+  - question: "In what field is a given concept studied?"
+    category: application
+    priority: 2
+    requires: [studied_in]
+
+  # ── Cross-cutting (require multiple relations) ────────────────────
+  - question: "Given an ML technique, what tools does it use and what domain is it part of?"
+    category: cross-cutting
+    priority: 1
+    requires: [uses, broader]
+
+  - question: "What concepts share the same parent domain?"
+    category: cross-cutting
+    priority: 2
+    requires: [broader]
+
+  # ── Questions the vault probably CANNOT answer yet ────────────────
+  - question: "Who invented a given algorithm?"
+    category: provenance
+    priority: 3
+    requires: [invented_by]
+
+  - question: "When was a given concept first described?"
+    category: provenance
+    priority: 3
+    requires: [first_described]
+
+  - question: "What are real-world examples or case studies of a given concept?"
+    category: evidence
+    priority: 2
+    requires: [has_example]
+
+  - question: "What are the limitations or failure modes of a given technique?"
+    category: evaluation
+    priority: 2
+    requires: [has_limitation]
