@@ -21,7 +21,6 @@ A [[concept]] that holds many definitions :
 #### Caractéristiques principales :
 - Autonomie dans la prise de décision
 - Capacité d'interaction avec l'environnement
-- Basé sur des modèles de langage de grande taille (LLM)
 - Intervention humaine minimale requise
 
 #### Liens avec la taxonomie :
@@ -124,5 +123,4 @@ The agent [[concept]]:
 ## References
 
 Minsky, M. (1986). The Society of Mind. New York: Simon & Schuster.
-
 Russell, S., & Norvig, P. (1995). Artificial Intelligence: A Modern Approach. Prentice Hall.
