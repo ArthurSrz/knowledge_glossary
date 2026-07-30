@@ -69,6 +69,21 @@ Convert this vault into a formal knowledge graph (Neo4j, RDF) by:
 
 Establish canonical definitions and relationships to resolve ambiguity when different teams use data terminology inconsistently.
 
+## Formal reasoning
+
+`scripts/reason.py` uses [Semantica](https://github.com/semantica-agi/semantica)'s Datalog engine to derive implied relations and check SKOS consistency — no LLM, purely logical inference over frontmatter.
+
+```bash
+pip install -r requirements.txt
+
+python scripts/reason.py infer          # show derived ancestor chains, symmetric related, inverses
+python scripts/reason.py check          # cycles, broken links, S27 violations, orphans
+python scripts/reason.py query "ancestor(AI agent, ?X)"   # query with real note titles
+python scripts/reason.py report         # write stats/reasoning_report.md
+```
+
+9 Datalog rules encode SKOS semantics: transitive `broader` closure, `broader`↔`narrower` inverses, `related` symmetry, cycle detection, and [SKOS S27](https://www.w3.org/TR/skos-reference/#L2422) (associative vs hierarchical disjointness).
+
 ## Taxonomy — SKOS Broader/Narrower Hierarchy
 
 The graph uses `broader:` in YAML frontmatter to encode [SKOS](https://www.w3.org/2004/02/skos/)-style hierarchical relationships. **701 of 866 concepts** (80.9%) are classified into a `broader` parent, forming a taxonomy with 73 root concepts and up to 8 nesting levels.

@@ -1,0 +1,734 @@
+# Reasoning Report
+
+| Metric | Value |
+|--------|-------|
+| Concepts | 868 |
+| Asserted edges | 1032 |
+| Loaded facts | 1895 |
+| Rules | 9 |
+
+## Inferred relations
+
+- **ancestor**: 2674 derived facts
+- **related_s**: 22 derived facts
+- **narrower**: 914 derived facts
+- **broader**: 914 derived facts
+
+## Findings
+
+
+### Self-loops (5)
+
+- causality: broader
+- design: broader
+- measure: broader
+- power: broader
+- vector: broader
+
+### Broken wikilink targets (170)
+
+- AI agent: broader → [[artificial intelligence]]
+- AI agent: broader → [[intelligent agent]]
+- AI agent: contributing_factor → [[robotic process automation]]
+- AI agent: has_use → [[algorithmic trading]]
+- AI agent: has_use → [[business intelligence]]
+- AI agent: has_use → [[customer support]]
+- AI agent: has_use → [[cybersecurity]]
+- AI agent: has_use → [[industrial automation]]
+- AI agent: has_use → [[personalized medicine]]
+- AI agent: has_use → [[software development]]
+- AI agent: has_use → [[vehicular automation]]
+- AI prompt: broader → [[command]]
+- AI prompt: broader → [[instruction]]
+- AI prompt: broader → [[task]]
+- Control (L.233-3): broader → [[Corporate ownership]]
+- Data augmentation: uses → [[Domain knowledge]]
+- Data augmentation: uses → [[Noise injection]]
+- Data augmentation: uses → [[Transformation invariance]]
+- Delegation: broader → [[legal act]]
+- Dependency injection: broader → [[inversion of control]]
+- Dialogue: broader → [[db/interpersonal communication]]
+- Dialogue: broader → [[db/oral media]]
+- Documentation: broader → [[depicting object]]
+- Documentation: broader → [[information]]
+- Fiabilite de compilatio: uses → [[Accuracy 1]]
+- Frontend: broader → [[software component]]
+- Ground truth: broader → [[truth]]
+- HTTP: broader → [[computer network protocol]]
+- HTTP: uses → [[Transmission Control Protocol]]
+- Inference: broader → [[db/process]]
+- Infrastructure: broader → [[structure]]
+- International (Nice) Classification of Goods and Services: broader → [[agreement]]
+- JSON: has_use → [[db/data exchange]]
+- Management: broader → [[control]]
+- Management: broader → [[control]]
+- Management: broader → [[coordination]]
+- Ollama: has_use → [[chatbot]]
+- Ollama: uses → [[small language model]]
+- Optimizer algorithm: uses → [[Momentum]]
+- Perception: broader → [[cognitive process]]
+- Physics: broader → [[natural science]]
+- Physics: broader → [[physical science]]
+- Powerpoint: has_use → [[db/presentation software]]
+- Process: broader → [[occurrent]]
+- Provenance: broader → [[narrative]]
+- Shareholders agreement: uses → [[Freedom of contract]]
+- Slide deck: broader → [[db/document]]
+- Slide deck: broader → [[db/sequence]]
+- Slide deck: has_use → [[db/presentation]]
+- Stochastic processes: broader → [[indexed family]]
+- Stochastic processes: broader → [[mathematical object]]
+- Unary operation: broader → [[Mathematical operation]]
+- Unary operation: uses → [[unary operator]]
+- abstract entity: broader → [[Entity]]
+- abuse of majority: broader → [[Abuse of rights]]
+- abuse of majority: uses → [[Corporate interest]]
+- agent observability: related → [[Evaluate process]]
+- agent role type: related → [[Agent orchestration]]
+- agent role type: related → [[Multi-agent systems]]
+- application programming interface: broader → [[computing platform]]
+- application programming interface: has_use → [[encapsulation]]
+- backward chaining: broader → [[db/inference]]
+- bijectivity: broader → [[db/injection]]
+- bijectivity: broader → [[db/surjective function]]
+- blueprint: broader → [[document]]
+- blueprint: broader → [[print]]
+- bundle: broader → [[transport unit]]
+- causal inference: broader → [[causal reasoning]]
+- classification scheme: broader → [[scheme]]
+- clause: broader → [[text]]
+- clause classification heuristic: uses → [[categorization]]
+- completeness: broader → [[mathematical property]]
+- computer interface: broader → [[interface]]
+- computer interface: has_use → [[interaction]]
+- connotation: broader → [[db/association]]
+- constancy: broader → [[robustness]]
+- constraint: broader → [[condition]]
+- constraint: broader → [[limitation]]
+- contract: broader → [[agreement]]
+- contract: broader → [[legal transaction]]
+- contract: broader → [[promise]]
+- control theory: broader → [[automatic control]]
+- controlled vocabulary: broader → [[data set]]
+- controlled vocabulary: broader → [[lexicographic work]]
+- controlled vocabulary: broader → [[vocabulary]]
+- data type: broader → [[type]]
+- data type: has_use → [[computer science]]
+- data visualization: broader → [[representation of data]]
+- data visualization: broader → [[visualization]]
+- data visualization: uses → [[data visualization software]]
+- de facto standard: broader → [[technical standard]]
+- default: broader → [[db/condition]]
+- design: broader → [[activity]]
+- design: broader → [[planned process]]
+- design: has_use → [[artistic creation]]
+- design: has_use → [[entrepreneurship]]
+- design: has_use → [[new product development]]
+- design: uses → [[design method]]
+- design: uses → [[design process]]
+- design: uses → [[ideation]]
+- economic taxonomy: broader → [[specialised classification scheme]]
+- elicitation interview: broader → [[research interview]]
+- excel: has_use → [[analysis]]
+- exclusion clause: broader → [[db/clause]]
+- force majeure: broader → [[db/causality]]
+- force majeure: broader → [[db/contractual term]]
+- force majeure: broader → [[db/legal risk]]
+- google sheet: has_use → [[office suite]]
+- graphs: broader → [[Hypergraph]]
+- graphs: broader → [[Relational structure]]
+- heuristic: broader → [[method]]
+- heuristic: has_use → [[problem solving]]
+- idempotence: broader → [[db/property]]
+- implementation detail: broader → [[db/quality]]
+- implementation detail: contributing_factor → [[db/software non-portability]]
+- implicature: broader → [[db/pragmatics]]
+- implicitness: uses → [[db/culture]]
+- inferred from attribute of entity: broader → [[db/reasoning]]
+- inferred from attribute of entity: broader → [[db/source of statements in Wikidata]]
+- inferred from attribute of entity: uses → [[db/property]]
+- judgment: broader → [[cognitive process]]
+- knowledge: contributing_factor → [[competence]]
+- knowledge: contributing_factor → [[understanding]]
+- knowledge graph: broader → [[labeled directed graph]]
+- knowledge graph: studied_in → [[computer science]]
+- knowledge organization system: broader → [[conceptual system]]
+- lawyer: broader → [[jurist]]
+- liability: broader → [[debt]]
+- liability: broader → [[liabilities plus owner's equity]]
+- manifold: broader → [[db/Hausdorff space]]
+- manifold: broader → [[db/homology manifold]]
+- manifold: broader → [[db/manifold]]
+- manifold: broader → [[db/second-countable space]]
+- meaning: broader → [[db/intention]]
+- measure: broader → [[individual quantity]]
+- measure: broader → [[scalar quantity]]
+- metadata: broader → [[artificial object]]
+- metadata: broader → [[secondary information]]
+- minority interest vs full ownership: uses → [[Capital participation]]
+- modularity: broader → [[db/quality]]
+- negotiation: broader → [[academic discipline]]
+- negotiation: broader → [[activity]]
+- negotiation: uses → [[compromise]]
+- newsletter: broader → [[magazine]]
+- newsletter: broader → [[news media]]
+- newsletter: broader → [[periodical]]
+- non-compete clause: broader → [[db/clause]]
+- null morpheme: broader → [[db/morpheme]]
+- null morpheme: broader → [[db/zero]]
+- orientation: broader → [[free vector]]
+- periodic table: broader → [[table]]
+- persistence: broader → [[quality]]
+- probability measure: broader → [[finite measure]]
+- risk: broader → [[possibility]]
+- scenario: broader → [[possibility]]
+- semantics: broader → [[db/linguistics]]
+- semiotics: broader → [[db/interdisciplinary program]]
+- spreadsheet: broader → [[application software]]
+- spreadsheet: uses → [[spreadsheet function]]
+- stability: broader → [[robustness]]
+- stability: contributing_factor → [[controllability]]
+- stability: contributing_factor → [[predictability]]
+- state observer: broader → [[conceptual system]]
+- statistical graphics: broader → [[infographics]]
+- subject heading: broader → [[word or phrase]]
+- subtext: broader → [[db/text]]
+- table cell: broader → [[software resource]]
+- thesaurus: broader → [[network]]
+- thesaurus: has_use → [[document retrieval]]
+- thesaurus: has_use → [[information retrieval]]
+
+### Orphan concepts (51)
+
+- Best
+- Dimensional modeling
+- Evaluation task
+- False positives
+- False positives and false negatives
+- Fine-tunin
+- Generation
+- Infra-ordinaire
+- Inputs
+- Layer
+- Le Bateau Ivre des données
+- Model development
+- Model lineage
+- Model support
+- Non-parametric knowledge
+- Observations
+- Parametric knowledge
+- Principle
+- Privacy challenge
+- Quality Assurance
+- Queries
+- Query engine
+- Skills
+- Style
+- Subset
+- The Society of Knowledge
+- Training image
+- Y
+- accountability
+- affordance
+- audit-notes
+- branch
+- class
+- compatibility
+- computer Efficiency
+- consistency
+- contexts
+- cross-tabulation
+- differences
+- empirical evidence
+- learning capabilities
+- modeling toolset
+- modélisation
+- monolithity
+- neural processing unit
+- push_to_comet
+- readme
+- rules
+- share purchase agreement
+- state-of-the-art
+- virtue
+
+### Broader cycles (4)
+
+- graphs
+- knowledge graph
+- pattern
+- Regularity
+
+### SKOS S27 violations (3)
+
+- agent observability ↔ agent
+- AgentOps ↔ agent
+- AgentOps ↔ agent observability
+
+## Unmapped frontmatter keys
+
+- `3D model`
+- `ACM Classification Code (2012)`
+- `AUR package`
+- `Alexa rank`
+- `Arch Linux package`
+- `ArchWiki article`
+- `BHCL UUID`
+- `Baidu Tieba name`
+- `CanOriginateFrom`
+- `Changes`
+- `Colon Classification`
+- `Commons category`
+- `Commons gallery`
+- `ComplementaryWith`
+- `ComputerLanguage.com definition`
+- `DOI`
+- `DataTypeFor`
+- `Debian Wiki article`
+- `Debian stable package`
+- `Dewey Decimal Classification`
+- `Docker Hub repository`
+- `EmbodiementOf`
+- `Europeana entity`
+- `Fedora package`
+- `First step of`
+- `FreeBSD port`
+- `FutureInstances`
+- `Gentoo Wiki article`
+- `Gentoo package`
+- `GitHub account`
+- `GitHub topic`
+- `Gujarati Vishwakosh entry`
+- `Harper's tag`
+- `HasOutput`
+- `HasProvedStandard`
+- `HasRelationship`
+- `HeuristicFor`
+- `Homebrew formula name`
+- `IANA service name`
+- `IEV number`
+- `IMDb keyword`
+- `IRC channel URL`
+- `ISCO-08 occupation class`
+- `ISCO-88 occupation class`
+- `ISNI`
+- `ITinstances`
+- `Iconclass notation`
+- `IdenticalTo`
+- `In`
+- `InterlockWith`
+- `Krugosvet article (archived)`
+- `Library of Congress Classification`
+- `Libris-URI`
+- `MacPorts port`
+- `MeSH tree code`
+- `MethodInside`
+- `MountedInParallel`
+- `Mozilla Developer Network article`
+- `NecessarilyImplies`
+- `Nomenclature for Museum Cataloging`
+- `O*NET OnLine code`
+- `OSI Model layer location`
+- `OmegaWiki Defined Meaning`
+- `OpenBSD port`
+- `OpenStreetMap key`
+- `OpenStreetMap tag`
+- `ParentChild`
+- `PhilPapers topic`
+- `Provenio UUID`
+- `ROME Occupation Code`
+- `Repology project name`
+- `SOC Code (2010)`
+- `SSYK 2012 The Swedish Standard Classification of Occupations`
+- `SlackBuilds package`
+- `Stack Exchange site URL`
+- `Stack Exchange tag`
+- `Swedish Open Cultural Heritage URI`
+- `TypeOf`
+- `TypeOf$`
+- `U.S. National Archives Identifier`
+- `UMLS CUI`
+- `Ubuntu package`
+- `Unicode character`
+- `Wikidata property`
+- `Wikimedia import URL`
+- `Wikimedia outline`
+- `Wolfram Language entity code`
+- `WordLift URL`
+- `X (Twitter) username`
+- `academic degree`
+- `acc_m`
+- `accelerates`
+- `advantages`
+- `affecte`
+- `affects`
+- `algorithms`
+- `aliases`
+- `allows_dividingOf`
+- `allows_remoteAccess_of`
+- `alternative name`
+- `alternativeTo`
+- `answersDifferentQuestionFrom`
+- `applicatif`
+- `applications`
+- `appliesTo`
+- `applies_to`
+- `articulates`
+- `assessment`
+- `atWorkWithin`
+- `author`
+- `author name string`
+- `based on`
+- `basedOn`
+- `benefitFrom`
+- `benefits`
+- `builtIn`
+- `builtOnTopOf`
+- `business model`
+- `calculationUnder`
+- `category`
+- `category for eponymous categories`
+- `cause of death`
+- `causedBy`
+- `challenges`
+- `characteristic of`
+- `child`
+- `chosenAs`
+- `class of object(s) of occurrence`
+- `combinationOf`
+- `combines`
+- `commands`
+- `communicatesWith`
+- `complementedBy`
+- `components`
+- `composedOf`
+- `composed_of`
+- `computedBy`
+- `computesWith`
+- `concepts`
+- `conductedBy`
+- `connector`
+- `connectsFrom`
+- `connectsThrough`
+- `connectsTo`
+- `consistsOf`
+- `consists_of`
+- `copyright license`
+- `copyright status`
+- `copyright status as a creator`
+- `country of citizenship`
+- `country of origin`
+- `creates`
+- `creator`
+- `dangerOf`
+- `date of birth`
+- `date of death`
+- `definedBy`
+- `depends on software`
+- `depicted by`
+- `depicts`
+- `deployedIn`
+- `derivative work`
+- `derivedFrom`
+- `described at URL`
+- `described by source`
+- `description`
+- `designed by`
+- `detectedBy`
+- `developer`
+- `develops`
+- `dialect of computer language`
+- `different from`
+- `differentFrom`
+- `discoverer or inventor`
+- `disjoint union of`
+- `distributed by`
+- `doctoral student`
+- `does not have characteristic`
+- `does not have part`
+- `educated at`
+- `employer`
+- `enables`
+- `enablesArchitecture`
+- `enforcedBy`
+- `ensures_interoperability_of`
+- `entity`
+- `equivalent class`
+- `evaluatedBy`
+- `evolution`
+- `exact match`
+- `example`
+- `example in`
+- `exampleOf`
+- `examples`
+- `explains`
+- `extendedBy`
+- `fabrication method`
+- `facet of`
+- `failureMode`
+- `family name`
+- `father`
+- `featureOf`
+- `female form of label`
+- `field of this occupation`
+- `field of work`
+- `file extension`
+- `firstDescribedby`
+- `firstStepOf`
+- `followed by`
+- `follows`
+- `formsPartOf`
+- `foundationFor`
+- `foundationalPaper`
+- `fundamentalTo`
+- `given name`
+- `goesOnInside`
+- `governedBy`
+- `handled, mitigated, or managed by`
+- `has cause`
+- `has characteristic`
+- `has contributing factor`
+- `has edition or translation`
+- `has effect`
+- `has goal`
+- `has part`
+- `has part(s)`
+- `has part(s) of the class`
+- `hasPart(s)`
+- `hasUse`
+- `hashtag`
+- `helpsBuilding`
+- `history of topic`
+- `image`
+- `image of function`
+- `implementationOf`
+- `implementations`
+- `implementedIn`
+- `implements`
+- `importPartOf`
+- `improves`
+- `improvesAccuracyOf`
+- `inception`
+- `includes`
+- `incorporatedInto`
+- `influence`
+- `influenced by`
+- `input_data_content`
+- `input_data_format`
+- `input_data_shape`
+- `inspiredBy`
+- `instance of`
+- `instanceOf`
+- `instanceof`
+- `integratesWith`
+- `introducedin`
+- `inventedBy`
+- `involves`
+- `is metaclass for`
+- `is the study of`
+- `isTheStudyOf`
+- `items classified`
+- `keyComponents`
+- `keyPapers`
+- `label in sign language`
+- `language of work or name`
+- `languages spoken, written or signed`
+- `leadsTo`
+- `learn_task`
+- `listsAll`
+- `literal translation`
+- `location of creation`
+- `logo image`
+- `made from material`
+- `madeOf`
+- `main Wikidata property`
+- `main regulatory text`
+- `main subject`
+- `maintained by`
+- `maintained by WikiProject`
+- `male form of label`
+- `manifestation of`
+- `manner of death`
+- `manufacturer`
+- `mascot`
+- `mathematicalBasis`
+- `meanTo`
+- `media type`
+- `medical condition`
+- `member of`
+- `method`
+- `minimizedBy`
+- `minimizes`
+- `mitigated_by`
+- `ml_type`
+- `model item`
+- `mother`
+- `movement`
+- `même`
+- `name`
+- `name in native language`
+- `named after`
+- `native label`
+- `native language`
+- `needs`
+- `nickname`
+- `notable work`
+- `notation`
+- `number of children`
+- `object`
+- `occupation`
+- `official app`
+- `official blog URL`
+- `official website`
+- `on focus list of Wikimedia project`
+- `openSUSE package`
+- `operatesOn`
+- `operating system`
+- `operations`
+- `opposite of`
+- `optimizedBy`
+- `optimizes`
+- `originatesFrom`
+- `outputs`
+- `owned by`
+- `page(s)`
+- `part`
+- `part of`
+- `partOf`
+- `partially coincident with`
+- `participant`
+- `partner in business or sport`
+- `patron saint`
+- `pb_states`
+- `performs`
+- `permanent duplicated item`
+- `place of birth`
+- `place of burial`
+- `place of death`
+- `plaque image`
+- `platform`
+- `port`
+- `powers`
+- `practiced by`
+- `practices`
+- `preci_m`
+- `present in work`
+- `preventedBy`
+- `prevents`
+- `processes`
+- `processesDataType`
+- `produces`
+- `product or material produced`
+- `programmed in`
+- `programming paradigm`
+- `pronunciation audio`
+- `properties`
+- `properties for this type`
+- `protectedBy`
+- `protects`
+- `publication date`
+- `publicationDate`
+- `publisher`
+- `readable file format`
+- `reduces`
+- `reducesNeedFor`
+- `related Wikidata property`
+- `related image`
+- `related to`
+- `relatedTo`
+- `relative`
+- `religion or worldview`
+- `reliéA`
+- `representedBy`
+- `represents`
+- `requires`
+- `residence`
+- `resultOf`
+- `resultsIn`
+- `réalités`
+- `safeGuardFor`
+- `said to be the same as`
+- `same`
+- `sameAs`
+- `schedulingMethods`
+- `schematic`
+- `search formatter URL`
+- `sendsTo`
+- `sex or gender`
+- `short name`
+- `shouldPayAttentionTo`
+- `shouldTakeIntoAccount`
+- `signature`
+- `significant person`
+- `significant place`
+- `sitemap URL`
+- `social media followers`
+- `software engine`
+- `software version identifier`
+- `solution to`
+- `source code repository URL`
+- `specificInstanceOf`
+- `spoken text audio`
+- `spouse`
+- `standards body`
+- `storedInto`
+- `student`
+- `student of`
+- `studied by`
+- `subFieldOf`
+- `subclassOf`
+- `subject has role`
+- `subject lexeme`
+- `subreddit`
+- `supports`
+- `supports programming language`
+- `tags`
+- `tailors`
+- `takesFrom`
+- `techniques`
+- `techniquesInclude`
+- `tendsToward`
+- `time of discovery or invention`
+- `time period`
+- `timestamp`
+- `title`
+- `toexplainWith`
+- `toolFor`
+- `tools`
+- `topic has template`
+- `topic's main Wikimedia portal`
+- `topic's main category`
+- `topic's main template`
+- `trainedBy`
+- `trainedOn`
+- `trainedWith`
+- `trainingTechnique`
+- `trainsBy`
+- `transforms`
+- `tunes`
+- `type`
+- `typeOf`
+- `types`
+- `typing discipline`
+- `union of`
+- `updates`
+- `updatesBy`
+- `upsell`
+- `useModels`
+- `useTechniques`
+- `used by`
+- `usedBy`
+- `usedFor`
+- `usedIn`
+- `validatedBy`
+- `variants`
+- `variantsInclude`
+- `video`
+- `wears`
+- `wellSuitedFor`
+- `wikidata entity id`
+- `work available at URL`
+- `worksWith`
+- `works_with`
+- `writable file format`
+- `writing language`
