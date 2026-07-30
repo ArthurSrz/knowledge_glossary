@@ -1,0 +1,3767 @@
+# Detailed Competency Questions — All Concepts
+
+## broader (927 questions)
+
+- What is the parent domain of AI Hierarchy of needs? → AI
+- What is the parent domain of AI Proof detection model? → AI
+- What is the parent domain of AI agent? → artificial intelligence
+- What is the parent domain of AI agent? → intelligent agent
+- What is the parent domain of AI engineering? → AI
+- What is the parent domain of AI prompt? → Large Language Model
+- What is the parent domain of AI prompt? → command
+- What is the parent domain of AI prompt? → instruction
+- What is the parent domain of AI prompt? → task
+- What is the parent domain of AI stack? → AI
+- What is the parent domain of API toolset? → Application development
+- What is the parent domain of Algorithm selection? → Algorithm
+- What is the parent domain of App script? → Programming language
+- What is the parent domain of Application development? → Process
+- What is the parent domain of Arc? → Graph theory
+- What is the parent domain of Artifact Management? → version control
+- What is the parent domain of Artificial Intelligence (AI)? → AI
+- What is the parent domain of AutoModel? → Hugging Face
+- What is the parent domain of Autonomy? → agentic System
+- What is the parent domain of Autotokenizer? → Hugging Face
+- What is the parent domain of BERT? → masked language models
+- What is the parent domain of Backend? → Application development
+- What is the parent domain of Backpropagation? → artificial neural network
+- What is the parent domain of Bag of words? → Natural Language Processing
+- What is the parent domain of Bargaining power? → negotiation
+- What is the parent domain of Bargaining power? → power
+- What is the parent domain of Batch gradient descent? → Gradient descent
+- What is the parent domain of Batch prediction? → Inference
+- What is the parent domain of Bayes' theorem? → Probability
+- What is the parent domain of Bayesian epistemology? → Bayesian inference
+- What is the parent domain of Bayesian inference? → Bayes' theorem
+- What is the parent domain of Bayesian network? → Bayesian inference
+- What is the parent domain of Beta testing? → Test
+- What is the parent domain of Blocking minority? → Shareholders agreement
+- What is the parent domain of Bootstrap aggregating (bagging)? → Random forest
+- What is the parent domain of CRISP-DM Process? → machine learning projects
+- What is the parent domain of CYPHER? → knowledge graph
+- What is the parent domain of Control (L.233-3)? → Corporate ownership
+- What is the parent domain of Convolutional layers? → Convolutional neural networks
+- What is the parent domain of Convolutional neural networks? → artificial neural network
+- What is the parent domain of Cosine similarity? → similarity measure
+- What is the parent domain of CountVectorizer? → Python
+- What is the parent domain of Counterfactual explanations? → Interpretability
+- What is the parent domain of Cross validation? → evaluation
+- What is the parent domain of Daily stand-ups? → Agile approach
+- What is the parent domain of Damping? → control theory
+- What is the parent domain of Dashboard? → data visualization
+- What is the parent domain of Data augmentation? → data
+- What is the parent domain of Data catalog? → data
+- What is the parent domain of Data drift? → ML system monitoring
+- What is the parent domain of Data engineer? → Data science team
+- What is the parent domain of Data lineage? → Metadata management
+- What is the parent domain of Data lineage? → data
+- What is the parent domain of Data mapping? → data
+- What is the parent domain of Data model? → data
+- What is the parent domain of Data preparation? → CRISP-DM Process
+- What is the parent domain of Data privacy? → Fairness
+- What is the parent domain of Data privacy laws? → Data privacy
+- What is the parent domain of Data processing toolset? → Application development
+- What is the parent domain of Data quality? → data
+- What is the parent domain of Data quantity? → data
+- What is the parent domain of Data scientist? → Data science team
+- What is the parent domain of Data silos? → data
+- What is the parent domain of DatasetDict? → Hugging Face
+- What is the parent domain of Datasets? → Hugging Face
+- What is the parent domain of Datawarehouse? → Infrastructure
+- What is the parent domain of Datum? → data
+- What is the parent domain of Decision tree? → supervised learning
+- What is the parent domain of Decoder-only? → Transformers
+- What is the parent domain of Decoders model? → ML models
+- What is the parent domain of Dedicated server? → Infrastructure
+- What is the parent domain of Deep learning? → machine learning
+- What is the parent domain of Degree centrality? → Centrality
+- What is the parent domain of Delegation? → Management
+- What is the parent domain of Delegation? → legal act
+- What is the parent domain of Delta live tables? → Pipelines
+- What is the parent domain of Demo sessions? → Agile approach
+- What is the parent domain of Denormalized schema? → Schema design
+- What is the parent domain of Dependency injection? → Application development
+- What is the parent domain of Dependency injection? → inversion of control
+- What is the parent domain of Deploy? → Infrastructure
+- What is the parent domain of Deployment? → CRISP-DM Process
+- What is the parent domain of Design thinking? → Process
+- What is the parent domain of Determine feature set? → feature engineering
+- What is the parent domain of DevOps? → Application development
+- What is the parent domain of Dialogue? → db/interpersonal communication
+- What is the parent domain of Dialogue? → db/oral media
+- What is the parent domain of Dialogue? → elicitation
+- What is the parent domain of Dijkstra's shortest path? → Graph algorithm
+- What is the parent domain of Distance? → Vector space
+- What is the parent domain of Django? → Backend
+- What is the parent domain of Docker? → Containerization (computing)
+- What is the parent domain of Docker images? → Docker
+- What is the parent domain of Documentation? → Application development
+- What is the parent domain of Documentation? → depicting object
+- What is the parent domain of Documentation? → information
+- What is the parent domain of Don Norman's principles of Interaction Design? → Design thinking
+- What is the parent domain of Edge ML? → machine learning
+- What is the parent domain of Edges? → Graph theory
+- What is the parent domain of Eigenvector centrality? → Centrality
+- What is the parent domain of Elbow method? → Clustering
+- What is the parent domain of Elixir? → Programming language
+- What is the parent domain of Embedded methods? → feature selection
+- What is the parent domain of Embedding network? → artificial neural network
+- What is the parent domain of Embeddings? → Natural Language Processing
+- What is the parent domain of Embeddings models? → Embeddings
+- What is the parent domain of Empathy? → Design thinking
+- What is the parent domain of Encoder-only? → Transformers
+- What is the parent domain of Engineering team? → Data science team
+- What is the parent domain of Environment? → Infrastructure
+- What is the parent domain of Equifinality? → systems theory
+- What is the parent domain of Ethical checklist? → Fairness
+- What is the parent domain of Ethical risks? → Fairness
+- What is the parent domain of Evaluate results? → CRISP-DM Process
+- What is the parent domain of Evaluation dataset? → evaluation
+- What is the parent domain of Evaluation metrics? → evaluation
+- What is the parent domain of Excessive latency? → ML system
+- What is the parent domain of Experimentation? → Process
+- What is the parent domain of Expert systems? → Artificial Intelligence (AI)
+- What is the parent domain of Exploratory Data Analysis? → data understanding
+- What is the parent domain of Explore the data? → CRISP-DM Process
+- What is the parent domain of F1 Score? → Evaluation metrics
+- What is the parent domain of Facial recognition? → computer vision
+- What is the parent domain of Fair AI? → Fairness
+- What is the parent domain of Fair Information Practices? → Data privacy
+- What is the parent domain of False Negative (FN)? → Confusion Matrix
+- What is the parent domain of False Positive (FP)? → Confusion Matrix
+- What is the parent domain of False Positive Rate? → Evaluation metrics
+- What is the parent domain of Family Educational Rights and Privacy Act (FERPA)? → Data privacy laws
+- What is the parent domain of Fault tolerance? → Infrastructure
+- What is the parent domain of Feasability? → Process
+- What is the parent domain of Feature bagging? → ML models
+- What is the parent domain of Feature pipeline? → Pipelines
+- What is the parent domain of Feature-list? → Product
+- What is the parent domain of Federated learning? → machine learning
+- What is the parent domain of Feedback? → Process
+- What is the parent domain of Feedback loop bias? → bias
+- What is the parent domain of Feedback loops? → systems theory
+- What is the parent domain of Fiabilite de compilatio? → AI
+- What is the parent domain of Filter methods? → feature selection
+- What is the parent domain of Filtered vector search? → Search
+- What is the parent domain of Financial Privacy? → Data privacy
+- What is the parent domain of Fine-tuning? → Model tuning
+- What is the parent domain of Flywheel effect? → systems theory
+- What is the parent domain of Forward propagation? → artificial neural network
+- What is the parent domain of Frontend? → Application development
+- What is the parent domain of Frontend? → software component
+- What is the parent domain of GGUF? → Quantization
+- What is the parent domain of GPT2? → autoregressive language models
+- What is the parent domain of Gather data? → CRISP-DM Process
+- What is the parent domain of Geometric concept? → Vector space
+- What is the parent domain of Gilles Deleuze? → Dividual
+- What is the parent domain of Git? → version control
+- What is the parent domain of Git worktree? → Git
+- What is the parent domain of Github? → Git
+- What is the parent domain of Goals? → Process
+- What is the parent domain of Good and services classes? → International (Nice) Classification of Goods and Services
+- What is the parent domain of Gouvernance? → Management
+- What is the parent domain of Gradient? → Backpropagation
+- What is the parent domain of Gradient descent? → Optimizer algorithm
+- What is the parent domain of Gramm-Leach-Bliley Act (GLBA)? → Data privacy laws
+- What is the parent domain of Graph algorithm? → Algorithm
+- What is the parent domain of Graph network analysis? → Graph theory
+- What is the parent domain of Graph projection? → Graph theory
+- What is the parent domain of Graphics processing unit? → Infrastructure
+- What is the parent domain of Greediness? → Algorithm
+- What is the parent domain of Ground truth? → truth
+- What is the parent domain of HGR-AI-1? → AI
+- What is the parent domain of HTML? → Mark-up language
+- What is the parent domain of HTTP? → Infrastructure
+- What is the parent domain of HTTP? → computer network protocol
+- What is the parent domain of HTTP 403? → HTTP
+- What is the parent domain of Hallucination? → Large Language Model
+- What is the parent domain of Heterogeneous graph? → Graph theory
+- What is the parent domain of Heuristics? → heuristic
+- What is the parent domain of Hidden states? → artificial neural network
+- What is the parent domain of High-intent data discovery? → Exploratory Data Analysis
+- What is the parent domain of Hindsight scenario testing? → Evaluation
+- What is the parent domain of Historical bias? → bias
+- What is the parent domain of Homebrew? → Terminal
+- What is the parent domain of Hook? → Application development
+- What is the parent domain of Horizontal scaling? → Infrastructure
+- What is the parent domain of How-to-use? → Documentation
+- What is the parent domain of Hugging Face? → Python
+- What is the parent domain of Human prediction? → Decision support
+- What is the parent domain of Human-in-the-loop? → agentic System
+- What is the parent domain of Hybrid search? → Search
+- What is the parent domain of Hyperparameters? → machine learning
+- What is the parent domain of Hypothetical Document Embeddings (HyDE)? → RAG (Retrieval-Augmented Generation)
+- What is the parent domain of IAM execution role? → Infrastructure
+- What is the parent domain of Ideate? → Design thinking
+- What is the parent domain of Identify factors? → CRISP-DM Process
+- What is the parent domain of Impermanence? → Stochastic processes
+- What is the parent domain of In-Context Learning? → Large Language Model
+- What is the parent domain of Independent Cascade Model? → Stochastic processes
+- What is the parent domain of Individual fairness? → Fairness
+- What is the parent domain of Inertia? → control theory
+- What is the parent domain of Inference? → Deployment
+- What is the parent domain of Inference? → db/process
+- What is the parent domain of Inference engine? → Inference
+- What is the parent domain of Inference pipeline? → Inference
+- What is the parent domain of Information Gain (IG)? → Metric
+- What is the parent domain of Infrastructure? → structure
+- What is the parent domain of Ingestion? → Pipelines
+- What is the parent domain of Ingoing relationships? → knowledge graph
+- What is the parent domain of Inherent error? → ML models
+- What is the parent domain of Instruction dataset? → Fine-tuning
+- What is the parent domain of Instructions? → Process
+- What is the parent domain of Instructor model? → ML models
+- What is the parent domain of Integration tests? → Test
+- What is the parent domain of International (Nice) Classification of Goods and Services? → agreement
+- What is the parent domain of Interpretability? → Transparency
+- What is the parent domain of Iron law of oligarchy? → Management
+- What is the parent domain of JSON? → data type
+- What is the parent domain of James Clerk Maxwell? → control theory
+- What is the parent domain of Java? → Programming language
+- What is the parent domain of Joshua Pearl? → causal inference
+- What is the parent domain of Jupyter notebooks? → Python
+- What is the parent domain of K-Means Clustering? → Clustering
+- What is the parent domain of K-Nearest Neighbor algorithm? → supervised learning
+- What is the parent domain of K-Nearest neighbor regressor? → K-Nearest Neighbor algorithm
+- What is the parent domain of Keras? → Deep learning
+- What is the parent domain of Knowledge base? → knowledge
+- What is the parent domain of LLM Metrics? → Evaluation metrics
+- What is the parent domain of LLM Models? → Large Language Model
+- What is the parent domain of LLM Observability? → agent observability
+- What is the parent domain of LLM Path Extractors? → Large Language Model
+- What is the parent domain of LLM output evaluation? → model evaluation
+- What is the parent domain of LLM-as-judges? → LLM output evaluation
+- What is the parent domain of LLaMA? → Large Language Model
+- What is the parent domain of La Société de Connaissance? → knowledge
+- What is the parent domain of Label? → organizing principles
+- What is the parent domain of Label encoding? → Data preparation
+- What is the parent domain of Langfuse? → LLM Observability
+- What is the parent domain of Language modeling? → Natural Language Processing
+- What is the parent domain of Large Language Model? → Language modeling
+- What is the parent domain of Layered architecture? → Infrastructure
+- What is the parent domain of Lean Logic? → heuristic
+- What is the parent domain of Learning curve? → Metric
+- What is the parent domain of Learning rate? → Hyperparameters
+- What is the parent domain of Levenshtein? → similarity measure
+- What is the parent domain of License? → Application development
+- What is the parent domain of Linear models? → ML models
+- What is the parent domain of Linear regression models? → Linear models
+- What is the parent domain of Local Interpretable Model-Agnostic Explanations (LIME)? → Interpretability
+- What is the parent domain of Log? → Application development
+- What is the parent domain of Logistic regression? → Linear models
+- What is the parent domain of Logit link function? → Odds
+- What is the parent domain of Louvain algorithm? → Graph algorithm
+- What is the parent domain of Low-Rank Adaptation? → Fine-tuning
+- What is the parent domain of MCP host? → Model Context Protocol (MCP)
+- What is the parent domain of MCP server? → Model Context Protocol (MCP)
+- What is the parent domain of ML System failures? → ML system
+- What is the parent domain of ML models? → model
+- What is the parent domain of ML system? → machine learning
+- What is the parent domain of ML system design process? → ML system
+- What is the parent domain of ML system monitoring? → Model maintenance
+- What is the parent domain of Machine Leaning Baseline? → ML models
+- What is the parent domain of Machine learning engineer? → Data science team
+- What is the parent domain of Man-Computer Symbiosis? → AI
+- What is the parent domain of Management? → Process
+- What is the parent domain of Management? → control
+- What is the parent domain of Management? → control
+- What is the parent domain of Management? → coordination
+- What is the parent domain of Management of PII? → Data privacy
+- What is the parent domain of Mapping? → Process
+- What is the parent domain of Margin? → Metric
+- What is the parent domain of Mark-up language? → Programming language
+- What is the parent domain of Markdown? → Mark-up language
+- What is the parent domain of Matplotlib? → Python
+- What is the parent domain of Mean Absolute Error? → Regression Error Metrics
+- What is the parent domain of Mean Absolute Percent Error? → Regression Error Metrics
+- What is the parent domain of Measurement bias? → bias
+- What is the parent domain of Medical Data Privacy? → Data privacy
+- What is the parent domain of Memory? → Infrastructure
+- What is the parent domain of Message-oriented middleware? → Infrastructure
+- What is the parent domain of Min-max normalization? → Data preparation
+- What is the parent domain of Mini-batch gradient descent? → Gradient descent
+- What is the parent domain of Model Context Protocol (MCP)? → agentic System
+- What is the parent domain of Model decay? → Model maintenance
+- What is the parent domain of Model registry? → Model maintenance
+- What is the parent domain of Model selection? → Modeling
+- What is the parent domain of Multipartite graph? → Graph theory
+- What is the parent domain of N-Fold Cross Validation? → Cross validation
+- What is the parent domain of Naive Bayes Classifier? → supervised learning
+- What is the parent domain of Nano-precision detection system? → ML system
+- What is the parent domain of Narrow AI? → Artificial Intelligence (AI)
+- What is the parent domain of Natural Language Processing? → Artificial Intelligence (AI)
+- What is the parent domain of Nested schema? → Schema design
+- What is the parent domain of Network graph? → Graph theory
+- What is the parent domain of Neural network models? → ML models
+- What is the parent domain of NoSQL database? → Infrastructure
+- What is the parent domain of Node similarity? → Graph algorithm
+- What is the parent domain of Non-parametric algorithms? → Algorithm
+- What is the parent domain of Normalized schema? → Schema design
+- What is the parent domain of Numpy? → Python
+- What is the parent domain of OAuth? → authentication protocol
+- What is the parent domain of Object? → knowledge graph
+- What is the parent domain of Occam's rasor? → heuristic
+- What is the parent domain of Odds? → Probability
+- What is the parent domain of Offline models? → ML models
+- What is the parent domain of Ollama? → Large Language Model
+- What is the parent domain of One-hot encoding? → Data preparation
+- What is the parent domain of Online models? → ML models
+- What is the parent domain of Online prediction? → Inference
+- What is the parent domain of Ontology? → knowledge organization system
+- What is the parent domain of Ontology? → organizing principles
+- What is the parent domain of Open source software? → Application development
+- What is the parent domain of Optimizer algorithm? → machine learning
+- What is the parent domain of Outgoing relationships? → knowledge graph
+- What is the parent domain of Outliers? → Data quality
+- What is the parent domain of Overfitting? → Model fit
+- What is the parent domain of Package installer? → Application development
+- What is the parent domain of Pandas? → Python
+- What is the parent domain of Perception? → Design thinking
+- What is the parent domain of Perception? → cognitive process
+- What is the parent domain of Perception? → interpretation
+- What is the parent domain of Perplexity? → Evaluation metrics
+- What is the parent domain of Personalization? → Product
+- What is the parent domain of Physics? → natural science
+- What is the parent domain of Physics? → physical science
+- What is the parent domain of Pipe function? → Functions
+- What is the parent domain of Plugins? → Application development
+- What is the parent domain of Polynomial regression? → regression
+- What is the parent domain of Post-training? → Training algorithm
+- What is the parent domain of PostgreSQL? → Backend
+- What is the parent domain of Powerpoint? → Product
+- What is the parent domain of Precision? → Evaluation metrics
+- What is the parent domain of Prepare for modeling? → CRISP-DM Process
+- What is the parent domain of Preston curve? → data visualization
+- What is the parent domain of Pretotyping? → Prototyping
+- What is the parent domain of Pretraining? → Training algorithm
+- What is the parent domain of Principal Component Analysis? → feature selection
+- What is the parent domain of Privacy by design? → Data privacy
+- What is the parent domain of Problem definition? → CRISP-DM Process
+- What is the parent domain of Problem framing? → Business understanding
+- What is the parent domain of Process? → occurrent
+- What is the parent domain of Product owner? → Agile approach
+- What is the parent domain of Programming language? → Application development
+- What is the parent domain of Project Title? → Product
+- What is the parent domain of Project description? → Product
+- What is the parent domain of Prompt Identity? → AI prompt
+- What is the parent domain of Prompt Optimization Techniques? → AI prompt
+- What is the parent domain of Prompt Template Info? → AI prompt
+- What is the parent domain of Prompt Template Types? → AI prompt
+- What is the parent domain of Prompt templates? → AI prompt
+- What is the parent domain of Prompt-based techniques? → AI prompt
+- What is the parent domain of Properties? → knowledge graph
+- What is the parent domain of Provenance? → documentation
+- What is the parent domain of Provenance? → narrative
+- What is the parent domain of Pruning? → Model tuning
+- What is the parent domain of Pull request? → Git
+- What is the parent domain of PyTorch? → Python
+- What is the parent domain of Pydantic? → Python
+- What is the parent domain of Python? → Programming language
+- What is the parent domain of Qdrant? → vector database
+- What is the parent domain of Quantization? → Model tuning
+- What is the parent domain of RAG (Retrieval-Augmented Generation)? → Large Language Model
+- What is the parent domain of Radial Basis Function Kernel? → Kernel
+- What is the parent domain of Random forest? → Decision tree
+- What is the parent domain of ReAct data agent? → agentic System
+- What is the parent domain of ReAct mode? → agentic System
+- What is the parent domain of ReLU activation function? → artificial neural network
+- What is the parent domain of Readme file? → Application development
+- What is the parent domain of Recall? → Evaluation metrics
+- What is the parent domain of Receiver Operating Characteristic curve? → Evaluation metrics
+- What is the parent domain of Recursive tree building? → Decision tree
+- What is the parent domain of Redis? → Backend
+- What is the parent domain of Regression Error Metrics? → Evaluation metrics
+- What is the parent domain of Regression trees? → Decision tree
+- What is the parent domain of Regularization? → machine learning
+- What is the parent domain of Reinforcement Learning? → machine learning
+- What is the parent domain of Relationship aggregation? → knowledge graph
+- What is the parent domain of Relationship quality? → knowledge graph
+- What is the parent domain of Repository? → version control
+- What is the parent domain of Reproducibility? → ML system
+- What is the parent domain of Residual analysis? → regression
+- What is the parent domain of Retraining? → Model maintenance
+- What is the parent domain of Retrieval Augmented Generation? → Large Language Model
+- What is the parent domain of Retrieval Depth? → RAG (Retrieval-Augmented Generation)
+- What is the parent domain of Retriever? → RAG (Retrieval-Augmented Generation)
+- What is the parent domain of Retriever Orchestration? → RAG (Retrieval-Augmented Generation)
+- What is the parent domain of Rider? → contract
+- What is the parent domain of Rights of Individuals? → Data privacy
+- What is the parent domain of SSH Agent? → Infrastructure
+- What is the parent domain of SSH Key? → authentication protocol
+- What is the parent domain of Scenario (computing)? → Application development
+- What is the parent domain of Scheduled retraining? → Model maintenance
+- What is the parent domain of Schema-field consumption statistics? → Schema design
+- What is the parent domain of Sci-kit Learn? → Python
+- What is the parent domain of Semi-structured data? → data type
+- What is the parent domain of Sensitive Information? → Data privacy
+- What is the parent domain of Sentiment analysis? → Natural Language Processing
+- What is the parent domain of Service-oriented architecture (SOA)? → Infrastructure
+- What is the parent domain of Session? → Application development
+- What is the parent domain of Session? → Process
+- What is the parent domain of Session? → context
+- What is the parent domain of Shadow releasing? → Deploy
+- What is the parent domain of Shapley Additive Explanations (SHAP)? → Interpretability
+- What is the parent domain of Shards? → Infrastructure
+- What is the parent domain of Share transfer clauses? → Shareholders agreement
+- What is the parent domain of Shared computing resources? → Infrastructure
+- What is the parent domain of Shareholders agreement? → Contract
+- What is the parent domain of Shifter? → combination
+- What is the parent domain of Sigmoid function? → artificial neural network
+- What is the parent domain of Similarity scores? → Metric
+- What is the parent domain of Simplicity VS. Flexibility? → Design thinking
+- What is the parent domain of Situation? → Process
+- What is the parent domain of Slide deck? → Product
+- What is the parent domain of Slide deck? → db/document
+- What is the parent domain of Slide deck? → db/sequence
+- What is the parent domain of Smoothing? → Stochastic processes
+- What is the parent domain of Social network analysis? → Graph network analysis
+- What is the parent domain of Socrates? → Socratic
+- What is the parent domain of Socratic? → elicitation
+- What is the parent domain of Software Development Kit (SDK)? → Application development
+- What is the parent domain of Software engineer? → Data science team
+- What is the parent domain of SpaCy? → Python
+- What is the parent domain of Spatial Reference System Identifier (SRID)? → data type
+- What is the parent domain of Speckit? → Product
+- What is the parent domain of Split data? → Data preparation
+- What is the parent domain of Spotify story? → Product
+- What is the parent domain of Sprint planning? → Agile approach
+- What is the parent domain of Staging Area? → Git
+- What is the parent domain of Standford's design thinking process? → Design thinking
+- What is the parent domain of Stash? → Git
+- What is the parent domain of Statefulness? → Stateful
+- What is the parent domain of Stateless? → Stateful
+- What is the parent domain of Stochastic processes? → indexed family
+- What is the parent domain of Stochastic processes? → mathematical object
+- What is the parent domain of Stochastic processes? → probability
+- What is the parent domain of Stretch pants approach? → Process
+- What is the parent domain of Structured data? → data type
+- What is the parent domain of Subagent? → agentic System
+- What is the parent domain of Subdomain? → Domain
+- What is the parent domain of Sum of Squared Error (SSE)? → Regression Error Metrics
+- What is the parent domain of Support Vector Machine? → supervised learning
+- What is the parent domain of Support vector? → ML models
+- What is the parent domain of Swagger? → API toolset
+- What is the parent domain of Symbolism? → Artificial Intelligence (AI)
+- What is the parent domain of TabPFN? → tabular foundation model
+- What is the parent domain of Target? → ML models
+- What is the parent domain of Target's pregnancy prediction? → prediction
+- What is the parent domain of Task analysis? → User research
+- What is the parent domain of Task flow diagram? → User research
+- What is the parent domain of Technological privacy? → Data privacy
+- What is the parent domain of Technology-list? → Product
+- What is the parent domain of Tensors? → Vector space
+- What is the parent domain of Test data set? → Split data
+- What is the parent domain of Test solution? → CRISP-DM Process
+- What is the parent domain of Text2Cypher? → knowledge graph
+- What is the parent domain of The Book of Why? → causal inference
+- What is the parent domain of The Shift from Models to Compound AI Systems? → AI
+- What is the parent domain of Threshold value? → Metric
+- What is the parent domain of Théorie du cerveau bayésien? → Bayesian inference
+- What is the parent domain of Tidy Data? → Data preparation
+- What is the parent domain of Tokenizer? → Natural Language Processing
+- What is the parent domain of Tool Assignment Gate? → agentic System
+- What is the parent domain of Tool arena? → agentic System
+- What is the parent domain of Toolkits? → agentic System
+- What is the parent domain of Tooth? → combination
+- What is the parent domain of Traceable Artifacts? → version control
+- What is the parent domain of Train loss? → ML models
+- What is the parent domain of Trainer? → Hugging Face
+- What is the parent domain of Training pipeline? → Pipelines
+- What is the parent domain of TrainingAguments? → Hugging Face
+- What is the parent domain of Transfer learning? → Deep learning
+- What is the parent domain of Transformers? → Deep learning
+- What is the parent domain of Transparency? → Fairness
+- What is the parent domain of Tree depth? → Decision tree
+- What is the parent domain of True Negative (TN)? → Confusion Matrix
+- What is the parent domain of True Positive (TP)? → Confusion Matrix
+- What is the parent domain of True Positive Rate (Recall)? → Evaluation metrics
+- What is the parent domain of UX Problem Statement? → User research
+- What is the parent domain of Unary operation? → Mathematical operation
+- What is the parent domain of Unary operation? → combinatorics
+- What is the parent domain of Underfitting? → Model fit
+- What is the parent domain of Unit tests? → Test
+- What is the parent domain of Unsloth? → Fine-tuning
+- What is the parent domain of Unstructured data? → data type
+- What is the parent domain of Unsupervised Learning? → machine learning
+- What is the parent domain of Updating? → Process
+- What is the parent domain of User inputs? → User research
+- What is the parent domain of User outputs? → User research
+- What is the parent domain of User research? → Design thinking
+- What is the parent domain of User support? → User research
+- What is the parent domain of User tests? → User research
+- What is the parent domain of User training? → User research
+- What is the parent domain of VRAM? → Infrastructure
+- What is the parent domain of Validate data? → Data preparation
+- What is the parent domain of Virtual Environment? → Python
+- What is the parent domain of Virtualization? → Infrastructure
+- What is the parent domain of Visibility? → Process
+- What is the parent domain of Visual Basic Application? → Programming language
+- What is the parent domain of Web worker? → Application development
+- What is the parent domain of Weights? → artificial neural network
+- What is the parent domain of Well-known text? → Spatial Reference System Identifier (SRID)
+- What is the parent domain of Wizard of Oz prototyping? → Prototyping
+- What is the parent domain of Word embeddings? → Embeddings
+- What is the parent domain of Working directory? → Git
+- What is the parent domain of Wrapper methods? → feature selection
+- What is the parent domain of XHTML? → Mark-up language
+- What is the parent domain of XML? → Mark-up language
+- What is the parent domain of Z-Score normalization? → Data preparation
+- What is the parent domain of _.claude? → Application development
+- What is the parent domain of _.claude.json.mcpServers? → Application development
+- What is the parent domain of abstract entity? → Entity
+- What is the parent domain of abstract entity? → Ontology
+- What is the parent domain of abuse of majority? → Abuse of rights
+- What is the parent domain of abuse of majority? → Shareholders agreement
+- What is the parent domain of accountable AI? → Fairness
+- What is the parent domain of accuracy? → Evaluation metrics
+- What is the parent domain of action module? → agentic System
+- What is the parent domain of activatesShifter? → trigger
+- What is the parent domain of active cell? → spreadsheet
+- What is the parent domain of active cell? → table cell
+- What is the parent domain of adar-Adamic index? → knowledge graph
+- What is the parent domain of add? → Git
+- What is the parent domain of adjacency matrix? → Graph theory
+- What is the parent domain of agency? → agentic System
+- What is the parent domain of agent harness? → agentic System
+- What is the parent domain of agent identity? → agentic System
+- What is the parent domain of agent observability? → agent
+- What is the parent domain of agent role type? → agentic System
+- What is the parent domain of agentOps? → agent observability
+- What is the parent domain of agentic System? → Artificial Intelligence (AI)
+- What is the parent domain of agents.md? → context
+- What is the parent domain of alias? → knowledge graph
+- What is the parent domain of application programming interface? → Application development
+- What is the parent domain of application programming interface? → communication protocol
+- What is the parent domain of application programming interface? → computer interface
+- What is the parent domain of application programming interface? → computing platform
+- What is the parent domain of artificial neural network? → Deep learning
+- What is the parent domain of artificial neuron? → artificial neural network
+- What is the parent domain of attention weights? → Transformers
+- What is the parent domain of augmentation? → Data augmentation
+- What is the parent domain of authentication protocol? → Infrastructure
+- What is the parent domain of autoML? → machine learning
+- What is the parent domain of autoencoder? → Artificial neural network
+- What is the parent domain of autoencoder? → artificial neural network
+- What is the parent domain of automation? → ICT
+- What is the parent domain of automation? → Process
+- What is the parent domain of automation? → activity
+- What is the parent domain of automation? → information and communications technology
+- What is the parent domain of automation? → process
+- What is the parent domain of automation framework? → automation
+- What is the parent domain of autoregressive language models? → Language modeling
+- What is the parent domain of backward chaining? → Inference
+- What is the parent domain of backward chaining? → db/inference
+- What is the parent domain of bespoke? → Provenance
+- What is the parent domain of best-classification-rate AI detection system? → ML system
+- What is the parent domain of betweenness centrality? → Centrality
+- What is the parent domain of bias? → Fairness
+- What is the parent domain of bijectivity? → Mapping
+- What is the parent domain of bijectivity? → db/injection
+- What is the parent domain of bijectivity? → db/surjective function
+- What is the parent domain of biological neural network? → artificial neural network
+- What is the parent domain of bipartite graph? → graph
+- What is the parent domain of blueprint? → document
+- What is the parent domain of blueprint? → print
+- What is the parent domain of boilerplate? → Application development
+- What is the parent domain of boilerplate? → Provenance
+- What is the parent domain of branch -vv? → Git
+- What is the parent domain of break error? → exception handling
+- What is the parent domain of brief mission? → Product
+- What is the parent domain of bundle? → Application development
+- What is the parent domain of bundle? → product packaging
+- What is the parent domain of bundle? → transport unit
+- What is the parent domain of business impact? → Metric
+- What is the parent domain of business understanding? → CRISP-DM Process
+- What is the parent domain of cadence? → Process
+- What is the parent domain of calculated-fields? → spreadsheet
+- What is the parent domain of callback? → Application development
+- What is the parent domain of camemBERT? → BERT
+- What is the parent domain of causal inference? → Inference
+- What is the parent domain of causal inference? → causal reasoning
+- What is the parent domain of causality? → causality
+- What is the parent domain of celery? → Backend
+- What is the parent domain of central processing unit? → Infrastructure
+- What is the parent domain of centrality? → Graph algorithm
+- What is the parent domain of centrality? → Metric
+- What is the parent domain of chain-of-thought? → AI prompt
+- What is the parent domain of chainrings? → combination
+- What is the parent domain of champion-challenger testing? → Model selection
+- What is the parent domain of change management? → Process
+- What is the parent domain of chat engines? → Large Language Model
+- What is the parent domain of chat modes? → Large Language Model
+- What is the parent domain of checkout? → Git
+- What is the parent domain of checkout -b? → Git
+- What is the parent domain of clarifeye? → knowledge organization system
+- What is the parent domain of class imbalance? → Data quality
+- What is the parent domain of classification? → taxonomy
+- What is the parent domain of classification scheme? → knowledge organization system
+- What is the parent domain of classification scheme? → scheme
+- What is the parent domain of claude code? → agentic System
+- What is the parent domain of claude cowork? → AI
+- What is the parent domain of claude managed agents? → agentic System
+- What is the parent domain of clause? → text
+- What is the parent domain of clause classification heuristic? → Provenance
+- What is the parent domain of clause classification heuristic? → clause
+- What is the parent domain of clause classification heuristic? → heuristic
+- What is the parent domain of closeness centrality? → Centrality
+- What is the parent domain of cloud computing? → Infrastructure
+- What is the parent domain of clustering? → Unsupervised Learning
+- What is the parent domain of coefficient of determination? → Evaluation metrics
+- What is the parent domain of cognitive bias? → bias
+- What is the parent domain of cold start problem? → ML system
+- What is the parent domain of collaboration tools? → Application development
+- What is the parent domain of collaborators? → Process
+- What is the parent domain of collecting data? → data
+- What is the parent domain of combination? → combinatorics
+- What is the parent domain of combination? → selection
+- What is the parent domain of comet? → LLM output evaluation
+- What is the parent domain of commit? → Git
+- What is the parent domain of commit amend? → Git
+- What is the parent domain of communication protocol? → Infrastructure
+- What is the parent domain of community detection? → Graph algorithm
+- What is the parent domain of comparag agent? → agentic System
+- What is the parent domain of compilatio IA? → AI
+- What is the parent domain of complete graph? → Graph theory
+- What is the parent domain of completeness? → Data quality
+- What is the parent domain of completeness? → mathematical property
+- What is the parent domain of compliant privacy policy? → contract
+- What is the parent domain of compound AI system? → Artificial Intelligence (AI)
+- What is the parent domain of computer interface? → interface
+- What is the parent domain of computer vision? → Artificial Intelligence (AI)
+- What is the parent domain of concept? → knowledge organization system
+- What is the parent domain of concept drift? → ML system monitoring
+- What is the parent domain of conceptual model? → Knowledge organization system
+- What is the parent domain of conceptual model? → Modeling
+- What is the parent domain of condense_plus_context? → RAG (Retrieval-Augmented Generation)
+- What is the parent domain of condense_question? → RAG (Retrieval-Augmented Generation)
+- What is the parent domain of conditional-formatting? → spreadsheet
+- What is the parent domain of confidence interval? → Probability
+- What is the parent domain of confidence presentation? → communicate uncertainty
+- What is the parent domain of confusion matrix? → Evaluation metrics
+- What is the parent domain of connexionism? → Artificial Intelligence (AI)
+- What is the parent domain of connotation? → db/association
+- What is the parent domain of connotation? → semiotics
+- What is the parent domain of constancy? → Stochastic processes
+- What is the parent domain of constancy? → robustness
+- What is the parent domain of constraint? → condition
+- What is the parent domain of constraint? → limitation
+- What is the parent domain of container? → Containerization (computing)
+- What is the parent domain of containerization (computing)? → Virtualization
+- What is the parent domain of context? → Process
+- What is the parent domain of context? → Situation
+- What is the parent domain of context graph? → knowledge graph
+- What is the parent domain of context mode? → agentic System
+- What is the parent domain of continuity? → Stochastic processes
+- What is the parent domain of continuous learning? → Process
+- What is the parent domain of continuum data? → data type
+- What is the parent domain of contract? → agreement
+- What is the parent domain of contract? → intellectual work
+- What is the parent domain of contract? → legal transaction
+- What is the parent domain of contract? → promise
+- What is the parent domain of control flow? → Application development
+- What is the parent domain of control theory? → automatic control
+- What is the parent domain of controlled vocabulary? → data set
+- What is the parent domain of controlled vocabulary? → knowledge organization system
+- What is the parent domain of controlled vocabulary? → knowledge organization system
+- What is the parent domain of controlled vocabulary? → lexicographic work
+- What is the parent domain of controlled vocabulary? → vocabulary
+- What is the parent domain of crawl-walk-run? → Process
+- What is the parent domain of creative work? → Intellectual work
+- What is the parent domain of creative work? → intellectual work
+- What is the parent domain of cross-sheet source references? → spreadsheet
+- What is the parent domain of customization? → Product
+- What is the parent domain of dangerousness? → risk
+- What is the parent domain of data? → Process
+- What is the parent domain of data object? → object
+- What is the parent domain of data type? → data
+- What is the parent domain of data type? → type
+- What is the parent domain of data understanding? → CRISP-DM Process
+- What is the parent domain of data visualization? → representation of data
+- What is the parent domain of data visualization? → visualization
+- What is the parent domain of de facto standard? → de facto
+- What is the parent domain of de facto standard? → technical standard
+- What is the parent domain of decision making? → Decision support
+- What is the parent domain of default? → Application development
+- What is the parent domain of default? → db/condition
+- What is the parent domain of define success? → Business understanding
+- What is the parent domain of degree? → graph theory
+- What is the parent domain of design? → Design
+- What is the parent domain of design? → activity
+- What is the parent domain of design? → planned process
+- What is the parent domain of detection tool performance? → evaluation
+- What is the parent domain of discourse topic? → semantics
+- What is the parent domain of economic taxonomy? → specialised classification scheme
+- What is the parent domain of economic taxonomy? → taxonomy
+- What is the parent domain of elicitation interview? → elicitation
+- What is the parent domain of elicitation interview? → research interview
+- What is the parent domain of embedding? → Embeddings
+- What is the parent domain of excel? → spreadsheet
+- What is the parent domain of excel vs. gsheet problem? → spreadsheet
+- What is the parent domain of exception handling? → Application development
+- What is the parent domain of exception handling? → Control flow
+- What is the parent domain of excitement? → Empathy
+- What is the parent domain of exclusion clause? → clause
+- What is the parent domain of exclusion clause? → db/clause
+- What is the parent domain of feature? → ML models
+- What is the parent domain of feature engineering? → Data preparation
+- What is the parent domain of feature selection? → feature engineering
+- What is the parent domain of field of study (education)? → knowledge
+- What is the parent domain of force majeure? → clause
+- What is the parent domain of force majeure? → db/causality
+- What is the parent domain of force majeure? → db/contractual term
+- What is the parent domain of force majeure? → db/legal risk
+- What is the parent domain of foundation model? → Deep learning
+- What is the parent domain of functional programming? → Programming language
+- What is the parent domain of functional programming? → programming language
+- What is the parent domain of google sheet? → spreadsheet
+- What is the parent domain of graph? → Hypergraph
+- What is the parent domain of graph? → Relational structure
+- What is the parent domain of graph hop? → knowledge graph
+- What is the parent domain of graph theory? → Combinatorics
+- What is the parent domain of handled-vs-gaps? → spreadsheet
+- What is the parent domain of heuristic? → algorithm
+- What is the parent domain of heuristic? → dialogue
+- What is the parent domain of heuristic? → method
+- What is the parent domain of idempotence? → Application development
+- What is the parent domain of idempotence? → db/property
+- What is the parent domain of implementation detail? → Application development
+- What is the parent domain of implementation detail? → db/quality
+- What is the parent domain of implicature? → db/pragmatics
+- What is the parent domain of implicature? → semantics
+- What is the parent domain of implicitness? → semantics
+- What is the parent domain of index? → data
+- What is the parent domain of inferred from attribute of entity? → db/reasoning
+- What is the parent domain of inferred from attribute of entity? → db/source of statements in Wikidata
+- What is the parent domain of inferred from attribute of entity? → knowledge graph
+- What is the parent domain of intention? → mental state
+- What is the parent domain of intentional human activity? → human activity
+- What is the parent domain of intentional human activity? → intention
+- What is the parent domain of judgment? → Decision support
+- What is the parent domain of judgment? → cognitive process
+- What is the parent domain of knowledge? → Process
+- What is the parent domain of knowledge? → memory
+- What is the parent domain of knowledge graph? → Knowledge base
+- What is the parent domain of knowledge graph? → graph
+- What is the parent domain of knowledge graph? → graph
+- What is the parent domain of knowledge graph? → labeled directed graph
+- What is the parent domain of knowledge organization system? → conceptual system
+- What is the parent domain of knowledge worker? → knowledge
+- What is the parent domain of latent? → semantics
+- What is the parent domain of latent space? → Embeddings
+- What is the parent domain of latent space? → embedding
+- What is the parent domain of latent travel? → semantics
+- What is the parent domain of lawyer? → jurist
+- What is the parent domain of learning bias? → bias
+- What is the parent domain of liability? → contract
+- What is the parent domain of liability? → debt
+- What is the parent domain of liability? → liabilities plus owner's equity
+- What is the parent domain of list of values as qualifiers? → knowledge graph
+- What is the parent domain of loss function? → machine learning
+- What is the parent domain of machine learning? → Artificial Intelligence (AI)
+- What is the parent domain of machine learning systems? → ML system
+- What is the parent domain of macros? → Application development
+- What is the parent domain of manifold? → Vector space
+- What is the parent domain of manifold? → db/Hausdorff space
+- What is the parent domain of manifold? → db/homology manifold
+- What is the parent domain of manifold? → db/manifold
+- What is the parent domain of manifold? → db/second-countable space
+- What is the parent domain of manual operation? → intentional human activity
+- What is the parent domain of manual operation? → operation
+- What is the parent domain of masked language models? → Language modeling
+- What is the parent domain of meaning? → db/intention
+- What is the parent domain of meaning? → semantics
+- What is the parent domain of measure? → Metric
+- What is the parent domain of measure? → individual quantity
+- What is the parent domain of measure? → measure
+- What is the parent domain of measure? → scalar quantity
+- What is the parent domain of metadata? → artificial object
+- What is the parent domain of metadata? → data
+- What is the parent domain of metadata? → data
+- What is the parent domain of metadata? → secondary information
+- What is the parent domain of minority interest vs full ownership? → Shareholders agreement
+- What is the parent domain of missing at random? → Data quality
+- What is the parent domain of missing completely at random? → Data quality
+- What is the parent domain of missing not at random? → Data quality
+- What is the parent domain of mistral agents? → agent
+- What is the parent domain of mockups? → design
+- What is the parent domain of model contract? → Provenance
+- What is the parent domain of model contract? → contract
+- What is the parent domain of model evaluation? → modeling
+- What is the parent domain of model fit? → modeling
+- What is the parent domain of model tuning? → modeling
+- What is the parent domain of model versioning? → Model maintenance
+- What is the parent domain of model vocabulary? → knowledge organization system
+- What is the parent domain of modeling? → CRISP-DM Process
+- What is the parent domain of moderation? → Large Language Model
+- What is the parent domain of modularity? → Infrastructure
+- What is the parent domain of modularity? → db/quality
+- What is the parent domain of monitor? → Process
+- What is the parent domain of monopartite graph? → graph
+- What is the parent domain of multiclass confusion matrix? → confusion matrix
+- What is the parent domain of multilayer perceptron? → artificial neural network
+- What is the parent domain of multimodal model? → foundation model
+- What is the parent domain of named-ranges? → spreadsheet
+- What is the parent domain of negotiation? → academic discipline
+- What is the parent domain of negotiation? → activity
+- What is the parent domain of negotiation? → dialogue
+- What is the parent domain of neuron layer? → artificial neural network
+- What is the parent domain of newsletter? → Product
+- What is the parent domain of newsletter? → magazine
+- What is the parent domain of newsletter? → news media
+- What is the parent domain of newsletter? → periodical
+- What is the parent domain of node? → Graph theory
+- What is the parent domain of non-compete clause? → clause
+- What is the parent domain of non-compete clause? → db/clause
+- What is the parent domain of null morpheme? → db/morpheme
+- What is the parent domain of null morpheme? → db/zero
+- What is the parent domain of null morpheme? → semantics
+- What is the parent domain of office automation? → automation
+- What is the parent domain of office automation? → automation
+- What is the parent domain of ontology engineering? → Ontology
+- What is the parent domain of open data? → data
+- What is the parent domain of open data? → data
+- What is the parent domain of openpyxl? → Python
+- What is the parent domain of optimizer? → ML models
+- What is the parent domain of organizing principles? → knowledge organization system
+- What is the parent domain of orientation? → free vector
+- What is the parent domain of other-losses? → ML models
+- What is the parent domain of outcome? → define success
+- What is the parent domain of output? → define success
+- What is the parent domain of parameter? → ML models
+- What is the parent domain of parsing? → Application development
+- What is the parent domain of parsing? → automation
+- What is the parent domain of partial column range? → spreadsheet
+- What is the parent domain of path? → Graph theory
+- What is the parent domain of periodic table? → table
+- What is the parent domain of permanence? → Stochastic processes
+- What is the parent domain of persistence? → Infrastructure
+- What is the parent domain of persistence? → quality
+- What is the parent domain of personal computing resources? → Infrastructure
+- What is the parent domain of pictorial fraction chart? → data visualization
+- What is the parent domain of pierre vermersch? → elicitation
+- What is the parent domain of platform-limits? → spreadsheet
+- What is the parent domain of power? → Power
+- What is the parent domain of power? → negotiation
+- What is the parent domain of prediction? → ML models
+- What is the parent domain of probability? → Combinatorics
+- What is the parent domain of probability measure? → Probability
+- What is the parent domain of probability measure? → finite measure
+- What is the parent domain of process philosophy? → change
+- What is the parent domain of process-oriented programming? → functional programming
+- What is the parent domain of process-oriented programming? → programming language
+- What is the parent domain of product packaging? → Product
+- What is the parent domain of prompts? → AI prompt
+- What is the parent domain of property? → abstract entity
+- What is the parent domain of property? → knowledge graph
+- What is the parent domain of property graph model? → Graph theory
+- What is the parent domain of protected health information (PHI)? → Medical Data Privacy
+- What is the parent domain of pypi? → Python
+- What is the parent domain of query? → Application development
+- What is the parent domain of r2? → Metric
+- What is the parent domain of raw data? → data
+- What is the parent domain of reach? → Metric
+- What is the parent domain of recall bias? → bias
+- What is the parent domain of risk? → possibility
+- What is the parent domain of rollback? → version control
+- What is the parent domain of rollback capability? → version control
+- What is the parent domain of scenario? → Application development
+- What is the parent domain of scenario? → possibility
+- What is the parent domain of search module? → agentic System
+- What is the parent domain of selection? → Algorithm
+- What is the parent domain of selection? → Unary operation
+- What is the parent domain of self-supervision? → Pretraining
+- What is the parent domain of semantics? → db/linguistics
+- What is the parent domain of semiotics? → db/interdisciplinary program
+- What is the parent domain of separators-and-dates? → spreadsheet
+- What is the parent domain of settings.json? → Application development
+- What is the parent domain of sheets-api? → spreadsheet
+- What is the parent domain of similarity measure? → Distance
+- What is the parent domain of slide show? → Creative work
+- What is the parent domain of slide show? → Slide deck
+- What is the parent domain of sparkline? → spreadsheet
+- What is the parent domain of sparkline? → statistical graphics
+- What is the parent domain of spreadsheet? → application software
+- What is the parent domain of stability? → Process
+- What is the parent domain of stability? → robustness
+- What is the parent domain of state observer? → conceptual system
+- What is the parent domain of state observer? → control theory
+- What is the parent domain of stateless protocol? → Stateless
+- What is the parent domain of stateless protocol? → communication protocol
+- What is the parent domain of statistical graphics? → data visualization
+- What is the parent domain of statistical graphics? → infographics
+- What is the parent domain of structured-references? → spreadsheet
+- What is the parent domain of study of complex systems? → Systems theory
+- What is the parent domain of study of complex systems? → systems theory
+- What is the parent domain of subject heading? → knowledge organization system
+- What is the parent domain of subject heading? → word or phrase
+- What is the parent domain of subtext? → db/text
+- What is the parent domain of subtext? → semantics
+- What is the parent domain of supervised finetuning? → Fine-tuning
+- What is the parent domain of supervised learning? → machine learning
+- What is the parent domain of system prompt? → AI prompt
+- What is the parent domain of table cell? → software resource
+- What is the parent domain of table cell? → spreadsheet
+- What is the parent domain of tabular data? → Structured data
+- What is the parent domain of tabular data? → data type
+- What is the parent domain of tabular foundation model? → foundation model
+- What is the parent domain of taxonomy? → knowledge organization system
+- What is the parent domain of taxonomy? → organizing principles
+- What is the parent domain of templates? → regularity
+- What is the parent domain of term sheet? → contract
+- What is the parent domain of theme color? → spreadsheet
+- What is the parent domain of thesaurus? → controlled vocabulary
+- What is the parent domain of thesaurus? → knowledge organization system
+- What is the parent domain of thesaurus? → network
+- What is the parent domain of token? → Natural Language Processing
+- What is the parent domain of tools? → agentic System
+- What is the parent domain of training algorithm? → machine learning
+- What is the parent domain of training data set? → modeling
+- What is the parent domain of triage? → augmentation
+- What is the parent domain of truncation? → Data preparation
+- What is the parent domain of turing test? → test
+- What is the parent domain of type of process? → Process
+- What is the parent domain of vanilla RAG design? → RAG (Retrieval-Augmented Generation)
+- What is the parent domain of variance? → Probability
+- What is the parent domain of vector? → Vector space
+- What is the parent domain of vector? → vector
+- What is the parent domain of vector index? → index
+- What is the parent domain of vector index? → vector
+- What is the parent domain of vector length? → vector
+- What is the parent domain of vectorization? → Embeddings
+- What is the parent domain of vertices? → graph
+
+## narrower (13 questions)
+
+- What are the direct children of Artificial Intelligence (AI)? → classification
+- What are the direct children of Artificial Intelligence (AI)? → computer vision
+- What are the direct children of Artificial Intelligence (AI)? → prediction
+- What are the direct children of International (Nice) Classification of Goods and Services? → Good and services classes
+- What are the direct children of agent? → AI agent
+- What are the direct children of agent? → agent harness
+- What are the direct children of data? → data object
+- What are the direct children of data understanding? → Explore the data
+- What are the direct children of data understanding? → Gather data
+- What are the direct children of data understanding? → Validate data
+- What are the direct children of feature engineering? → feature selection
+- What are the direct children of machine learning projects? → feature engineering
+- What are the direct children of trust? → Fair Information Practices
+
+## related (11 questions)
+
+- What is semantically related to AI agent? → compound AI system
+- What is semantically related to Fair AI? → control
+- What is semantically related to agent observability? → Evaluate process
+- What is semantically related to agent observability? → Traceable Artifacts
+- What is semantically related to agent observability? → agentOps
+- What is semantically related to agent role type? → Agent orchestration
+- What is semantically related to agent role type? → Multi-agent systems
+- What is semantically related to combinatorics? → La bibliothèque de Babel
+- What is semantically related to compound AI system? → agent
+- What is semantically related to excel? → tabular data
+- What is semantically related to property graph model? → knowledge graph
+
+## uses (50 questions)
+
+- What does Bayesian epistemology use? → Bayesian inference
+- What does Data augmentation use? → Domain knowledge
+- What does Data augmentation use? → Noise injection
+- What does Data augmentation use? → Transformation invariance
+- What does Fiabilite de compilatio use? → Accuracy 1
+- What does Fiabilite de compilatio use? → Precision
+- What does Fiabilite de compilatio use? → Recall
+- What does Gradient descent use? → Backpropagation
+- What does HTTP use? → Transmission Control Protocol
+- What does Knowledge base use? → heuristic
+- What does ML models use? → Algorithm
+- What does Neural network models use? → Weights
+- What does Ollama use? → large language model
+- What does Ollama use? → small language model
+- What does Optimizer algorithm use? → Gradient
+- What does Optimizer algorithm use? → Learning rate
+- What does Optimizer algorithm use? → Momentum
+- What does Perception use? → model
+- What does Random forest use? → Bootstrap aggregating (bagging)
+- What does Random forest use? → Feature bagging
+- What does Share transfer clauses use? → Shareholders agreement
+- What does Shareholders agreement use? → Control (L.233-3)
+- What does Shareholders agreement use? → Freedom of contract
+- What does Transformers use? → attention weights
+- What does Unary operation use? → unary operator
+- What does abuse of majority use? → Corporate interest
+- What does bespoke use? → negotiation
+- What does clause classification heuristic use? → Bargaining power
+- What does clause classification heuristic use? → categorization
+- What does clause classification heuristic use? → de facto standard
+- What does data visualization use? → data visualization software
+- What does design use? → design method
+- What does design use? → design process
+- What does design use? → design thinking
+- What does design use? → ideation
+- What does implicitness use? → context
+- What does implicitness use? → db/culture
+- What does inferred from attribute of entity use? → db/property
+- What does knowledge graph use? → Ontology
+- What does knowledge graph use? → Taxonomy
+- What does knowledge graph use? → label
+- What does latent space use? → manifold
+- What does latent space use? → manifold
+- What does latent space use? → similarity measure
+- What does manual operation use? → intentional human activity
+- What does minority interest vs full ownership use? → Capital participation
+- What does minority interest vs full ownership use? → Control (L.233-3)
+- What does negotiation use? → compromise
+- What does spreadsheet use? → spreadsheet function
+- What does subject heading use? → thesaurus
+
+## has_use (26 questions)
+
+- What are the applications of AI agent? → algorithmic trading
+- What are the applications of AI agent? → business intelligence
+- What are the applications of AI agent? → customer support
+- What are the applications of AI agent? → cybersecurity
+- What are the applications of AI agent? → industrial automation
+- What are the applications of AI agent? → personalized medicine
+- What are the applications of AI agent? → software development
+- What are the applications of AI agent? → vehicular automation
+- What are the applications of JSON? → db/data exchange
+- What are the applications of Ollama? → application programming interface
+- What are the applications of Ollama? → chatbot
+- What are the applications of Powerpoint? → db/presentation software
+- What are the applications of Slide deck? → db/presentation
+- What are the applications of application programming interface? → encapsulation
+- What are the applications of computer interface? → interaction
+- What are the applications of context? → Interpretation
+- What are the applications of data type? → computer science
+- What are the applications of design? → artistic creation
+- What are the applications of design? → entrepreneurship
+- What are the applications of design? → new product development
+- What are the applications of excel? → analysis
+- What are the applications of excel? → spreadsheet
+- What are the applications of google sheet? → office suite
+- What are the applications of heuristic? → problem solving
+- What are the applications of thesaurus? → document retrieval
+- What are the applications of thesaurus? → information retrieval
+
+## opposite_of (4 questions)
+
+- What is the opposite of Overfitting? → Underfitting
+- What is the opposite of Structured data? → Unstructured data
+- What is the opposite of compound AI system? → Transformers
+- What is the opposite of compound AI system? → model
+
+## contributing_factor (6 questions)
+
+- What does AI agent contribute to? → robotic process automation
+- What does implementation detail contribute to? → db/software non-portability
+- What does knowledge contribute to? → competence
+- What does knowledge contribute to? → understanding
+- What does stability contribute to? → controllability
+- What does stability contribute to? → predictability
+
+## depends_on (1 questions)
+
+- What does agent depend on? → Large Language Model
+
+## studied_in (2 questions)
+
+- Where is knowledge graph studied? → Ontology engineering
+- Where is knowledge graph studied? → computer science
+
+## constructed_with (1 questions)
+
+- What is knowledge graph constructed with? → LLM Path Extractors
+
+## inferred:ancestor (2659 questions)
+
+- Is AI Hierarchy of needs a specialization of AI? → Yes
+- Is AI Proof detection model a specialization of AI? → Yes
+- Is AI agent a specialization of agent? → Yes
+- Is AI agent a specialization of artificial intelligence? → Yes
+- Is AI agent a specialization of intelligent agent? → Yes
+- Is AI engineering a specialization of AI? → Yes
+- Is AI prompt a specialization of AI? → Yes
+- Is AI prompt a specialization of Artificial Intelligence (AI)? → Yes
+- Is AI prompt a specialization of Language modeling? → Yes
+- Is AI prompt a specialization of Large Language Model? → Yes
+- Is AI prompt a specialization of Natural Language Processing? → Yes
+- Is AI prompt a specialization of command? → Yes
+- Is AI prompt a specialization of instruction? → Yes
+- Is AI prompt a specialization of task? → Yes
+- Is AI stack a specialization of AI? → Yes
+- Is API toolset a specialization of Application development? → Yes
+- Is API toolset a specialization of Process? → Yes
+- Is API toolset a specialization of occurrent? → Yes
+- Is Algorithm selection a specialization of Algorithm? → Yes
+- Is App script a specialization of Application development? → Yes
+- Is App script a specialization of Process? → Yes
+- Is App script a specialization of Programming language? → Yes
+- Is App script a specialization of occurrent? → Yes
+- Is Application development a specialization of Process? → Yes
+- Is Application development a specialization of occurrent? → Yes
+- Is Arc a specialization of combinatorics? → Yes
+- Is Arc a specialization of graph theory? → Yes
+- Is Artifact Management a specialization of version control? → Yes
+- Is Artificial Intelligence (AI) a specialization of AI? → Yes
+- Is AutoModel a specialization of Application development? → Yes
+- Is AutoModel a specialization of Hugging Face? → Yes
+- Is AutoModel a specialization of Process? → Yes
+- Is AutoModel a specialization of Programming language? → Yes
+- Is AutoModel a specialization of Python? → Yes
+- Is AutoModel a specialization of occurrent? → Yes
+- Is Autonomy a specialization of AI? → Yes
+- Is Autonomy a specialization of Artificial Intelligence (AI)? → Yes
+- Is Autonomy a specialization of agentic System? → Yes
+- Is Autotokenizer a specialization of Application development? → Yes
+- Is Autotokenizer a specialization of Hugging Face? → Yes
+- Is Autotokenizer a specialization of Process? → Yes
+- Is Autotokenizer a specialization of Programming language? → Yes
+- Is Autotokenizer a specialization of Python? → Yes
+- Is Autotokenizer a specialization of occurrent? → Yes
+- Is BERT a specialization of AI? → Yes
+- Is BERT a specialization of Artificial Intelligence (AI)? → Yes
+- Is BERT a specialization of Language modeling? → Yes
+- Is BERT a specialization of Natural Language Processing? → Yes
+- Is BERT a specialization of masked language models? → Yes
+- Is Backend a specialization of Application development? → Yes
+- Is Backend a specialization of Process? → Yes
+- Is Backend a specialization of occurrent? → Yes
+- Is Backpropagation a specialization of AI? → Yes
+- Is Backpropagation a specialization of Artificial Intelligence (AI)? → Yes
+- Is Backpropagation a specialization of Deep learning? → Yes
+- Is Backpropagation a specialization of artificial neural network? → Yes
+- Is Backpropagation a specialization of machine learning? → Yes
+- Is Bag of words a specialization of AI? → Yes
+- Is Bag of words a specialization of Artificial Intelligence (AI)? → Yes
+- Is Bag of words a specialization of Natural Language Processing? → Yes
+- Is Bargaining power a specialization of Dialogue? → Yes
+- Is Bargaining power a specialization of academic discipline? → Yes
+- Is Bargaining power a specialization of activity? → Yes
+- Is Bargaining power a specialization of db/interpersonal communication? → Yes
+- Is Bargaining power a specialization of db/oral media? → Yes
+- Is Bargaining power a specialization of elicitation? → Yes
+- Is Bargaining power a specialization of negotiation? → Yes
+- Is Bargaining power a specialization of power? → Yes
+- Is Batch gradient descent a specialization of AI? → Yes
+- Is Batch gradient descent a specialization of Artificial Intelligence (AI)? → Yes
+- Is Batch gradient descent a specialization of Gradient descent? → Yes
+- Is Batch gradient descent a specialization of Optimizer algorithm? → Yes
+- Is Batch gradient descent a specialization of machine learning? → Yes
+- Is Batch prediction a specialization of CRISP-DM Process? → Yes
+- Is Batch prediction a specialization of Deployment? → Yes
+- Is Batch prediction a specialization of Inference? → Yes
+- Is Batch prediction a specialization of db/process? → Yes
+- Is Batch prediction a specialization of machine learning projects? → Yes
+- Is Bayes' theorem a specialization of combinatorics? → Yes
+- Is Bayes' theorem a specialization of probability? → Yes
+- Is Bayesian epistemology a specialization of Bayes' theorem? → Yes
+- Is Bayesian epistemology a specialization of Bayesian inference? → Yes
+- Is Bayesian epistemology a specialization of combinatorics? → Yes
+- Is Bayesian epistemology a specialization of probability? → Yes
+- Is Bayesian inference a specialization of Bayes' theorem? → Yes
+- Is Bayesian inference a specialization of combinatorics? → Yes
+- Is Bayesian inference a specialization of probability? → Yes
+- Is Bayesian network a specialization of Bayes' theorem? → Yes
+- Is Bayesian network a specialization of Bayesian inference? → Yes
+- Is Bayesian network a specialization of combinatorics? → Yes
+- Is Bayesian network a specialization of probability? → Yes
+- Is Beta testing a specialization of Test? → Yes
+- Is Blocking minority a specialization of Shareholders agreement? → Yes
+- Is Blocking minority a specialization of agreement? → Yes
+- Is Blocking minority a specialization of contract? → Yes
+- Is Blocking minority a specialization of intellectual work? → Yes
+- Is Blocking minority a specialization of legal transaction? → Yes
+- Is Blocking minority a specialization of promise? → Yes
+- Is Bootstrap aggregating (bagging) a specialization of AI? → Yes
+- Is Bootstrap aggregating (bagging) a specialization of Artificial Intelligence (AI)? → Yes
+- Is Bootstrap aggregating (bagging) a specialization of Decision tree? → Yes
+- Is Bootstrap aggregating (bagging) a specialization of Random forest? → Yes
+- Is Bootstrap aggregating (bagging) a specialization of machine learning? → Yes
+- Is Bootstrap aggregating (bagging) a specialization of supervised learning? → Yes
+- Is CRISP-DM Process a specialization of machine learning projects? → Yes
+- Is CYPHER a specialization of Hypergraph? → Yes
+- Is CYPHER a specialization of Infrastructure? → Yes
+- Is CYPHER a specialization of Knowledge base? → Yes
+- Is CYPHER a specialization of Memory? → Yes
+- Is CYPHER a specialization of Process? → Yes
+- Is CYPHER a specialization of Relational structure? → Yes
+- Is CYPHER a specialization of graph? → Yes
+- Is CYPHER a specialization of knowledge? → Yes
+- Is CYPHER a specialization of knowledge graph? → Yes
+- Is CYPHER a specialization of labeled directed graph? → Yes
+- Is CYPHER a specialization of occurrent? → Yes
+- Is CYPHER a specialization of structure? → Yes
+- Is Control (L.233-3) a specialization of Corporate ownership? → Yes
+- Is Convolutional layers a specialization of AI? → Yes
+- Is Convolutional layers a specialization of Artificial Intelligence (AI)? → Yes
+- Is Convolutional layers a specialization of Convolutional neural networks? → Yes
+- Is Convolutional layers a specialization of Deep learning? → Yes
+- Is Convolutional layers a specialization of artificial neural network? → Yes
+- Is Convolutional layers a specialization of machine learning? → Yes
+- Is Convolutional neural networks a specialization of AI? → Yes
+- Is Convolutional neural networks a specialization of Artificial Intelligence (AI)? → Yes
+- Is Convolutional neural networks a specialization of Deep learning? → Yes
+- Is Convolutional neural networks a specialization of artificial neural network? → Yes
+- Is Convolutional neural networks a specialization of machine learning? → Yes
+- Is Cosine similarity a specialization of Distance? → Yes
+- Is Cosine similarity a specialization of Vector space? → Yes
+- Is Cosine similarity a specialization of similarity measure? → Yes
+- Is CountVectorizer a specialization of Application development? → Yes
+- Is CountVectorizer a specialization of Process? → Yes
+- Is CountVectorizer a specialization of Programming language? → Yes
+- Is CountVectorizer a specialization of Python? → Yes
+- Is CountVectorizer a specialization of occurrent? → Yes
+- Is Counterfactual explanations a specialization of Fairness? → Yes
+- Is Counterfactual explanations a specialization of Interpretability? → Yes
+- Is Counterfactual explanations a specialization of Transparency? → Yes
+- Is Cross validation a specialization of evaluation? → Yes
+- Is Daily stand-ups a specialization of Agile approach? → Yes
+- Is Damping a specialization of automatic control? → Yes
+- Is Damping a specialization of control theory? → Yes
+- Is Dashboard a specialization of data visualization? → Yes
+- Is Dashboard a specialization of representation of data? → Yes
+- Is Dashboard a specialization of visualization? → Yes
+- Is Data augmentation a specialization of Process? → Yes
+- Is Data augmentation a specialization of data? → Yes
+- Is Data augmentation a specialization of occurrent? → Yes
+- Is Data catalog a specialization of Process? → Yes
+- Is Data catalog a specialization of data? → Yes
+- Is Data catalog a specialization of occurrent? → Yes
+- Is Data drift a specialization of ML system monitoring? → Yes
+- Is Data drift a specialization of Model maintenance? → Yes
+- Is Data engineer a specialization of Data science team? → Yes
+- Is Data lineage a specialization of Metadata management? → Yes
+- Is Data lineage a specialization of Process? → Yes
+- Is Data lineage a specialization of data? → Yes
+- Is Data lineage a specialization of occurrent? → Yes
+- Is Data mapping a specialization of Process? → Yes
+- Is Data mapping a specialization of data? → Yes
+- Is Data mapping a specialization of occurrent? → Yes
+- Is Data model a specialization of Process? → Yes
+- Is Data model a specialization of data? → Yes
+- Is Data model a specialization of occurrent? → Yes
+- Is Data preparation a specialization of CRISP-DM Process? → Yes
+- Is Data preparation a specialization of machine learning projects? → Yes
+- Is Data privacy a specialization of Fairness? → Yes
+- Is Data privacy laws a specialization of Data privacy? → Yes
+- Is Data privacy laws a specialization of Fairness? → Yes
+- Is Data processing toolset a specialization of Application development? → Yes
+- Is Data processing toolset a specialization of Process? → Yes
+- Is Data processing toolset a specialization of occurrent? → Yes
+- Is Data quality a specialization of Process? → Yes
+- Is Data quality a specialization of data? → Yes
+- Is Data quality a specialization of occurrent? → Yes
+- Is Data quantity a specialization of Process? → Yes
+- Is Data quantity a specialization of data? → Yes
+- Is Data quantity a specialization of occurrent? → Yes
+- Is Data scientist a specialization of Data science team? → Yes
+- Is Data silos a specialization of Process? → Yes
+- Is Data silos a specialization of data? → Yes
+- Is Data silos a specialization of occurrent? → Yes
+- Is DatasetDict a specialization of Application development? → Yes
+- Is DatasetDict a specialization of Hugging Face? → Yes
+- Is DatasetDict a specialization of Process? → Yes
+- Is DatasetDict a specialization of Programming language? → Yes
+- Is DatasetDict a specialization of Python? → Yes
+- Is DatasetDict a specialization of occurrent? → Yes
+- Is Datasets a specialization of Application development? → Yes
+- Is Datasets a specialization of Hugging Face? → Yes
+- Is Datasets a specialization of Process? → Yes
+- Is Datasets a specialization of Programming language? → Yes
+- Is Datasets a specialization of Python? → Yes
+- Is Datasets a specialization of occurrent? → Yes
+- Is Datawarehouse a specialization of Infrastructure? → Yes
+- Is Datawarehouse a specialization of structure? → Yes
+- Is Datum a specialization of Process? → Yes
+- Is Datum a specialization of data? → Yes
+- Is Datum a specialization of occurrent? → Yes
+- Is Decision tree a specialization of AI? → Yes
+- Is Decision tree a specialization of Artificial Intelligence (AI)? → Yes
+- Is Decision tree a specialization of machine learning? → Yes
+- Is Decision tree a specialization of supervised learning? → Yes
+- Is Decoder-only a specialization of AI? → Yes
+- Is Decoder-only a specialization of Artificial Intelligence (AI)? → Yes
+- Is Decoder-only a specialization of Deep learning? → Yes
+- Is Decoder-only a specialization of Transformers? → Yes
+- Is Decoder-only a specialization of machine learning? → Yes
+- Is Decoders model a specialization of ML models? → Yes
+- Is Decoders model a specialization of model? → Yes
+- Is Dedicated server a specialization of Infrastructure? → Yes
+- Is Dedicated server a specialization of structure? → Yes
+- Is Deep learning a specialization of AI? → Yes
+- Is Deep learning a specialization of Artificial Intelligence (AI)? → Yes
+- Is Deep learning a specialization of machine learning? → Yes
+- Is Degree centrality a specialization of Algorithm? → Yes
+- Is Degree centrality a specialization of Graph algorithm? → Yes
+- Is Degree centrality a specialization of Metric? → Yes
+- Is Degree centrality a specialization of centrality? → Yes
+- Is Delegation a specialization of Management? → Yes
+- Is Delegation a specialization of Process? → Yes
+- Is Delegation a specialization of control? → Yes
+- Is Delegation a specialization of coordination? → Yes
+- Is Delegation a specialization of legal act? → Yes
+- Is Delegation a specialization of occurrent? → Yes
+- Is Delta live tables a specialization of Pipelines? → Yes
+- Is Demo sessions a specialization of Agile approach? → Yes
+- Is Denormalized schema a specialization of Schema design? → Yes
+- Is Dependency injection a specialization of Application development? → Yes
+- Is Dependency injection a specialization of Process? → Yes
+- Is Dependency injection a specialization of inversion of control? → Yes
+- Is Dependency injection a specialization of occurrent? → Yes
+- Is Deploy a specialization of Infrastructure? → Yes
+- Is Deploy a specialization of structure? → Yes
+- Is Deployment a specialization of CRISP-DM Process? → Yes
+- Is Deployment a specialization of machine learning projects? → Yes
+- Is Design thinking a specialization of Process? → Yes
+- Is Design thinking a specialization of occurrent? → Yes
+- Is Determine feature set a specialization of CRISP-DM Process? → Yes
+- Is Determine feature set a specialization of Data preparation? → Yes
+- Is Determine feature set a specialization of feature engineering? → Yes
+- Is Determine feature set a specialization of machine learning projects? → Yes
+- Is DevOps a specialization of Application development? → Yes
+- Is DevOps a specialization of Process? → Yes
+- Is DevOps a specialization of occurrent? → Yes
+- Is Dialogue a specialization of db/interpersonal communication? → Yes
+- Is Dialogue a specialization of db/oral media? → Yes
+- Is Dialogue a specialization of elicitation? → Yes
+- Is Dijkstra's shortest path a specialization of Algorithm? → Yes
+- Is Dijkstra's shortest path a specialization of Graph algorithm? → Yes
+- Is Distance a specialization of Vector space? → Yes
+- Is Django a specialization of Application development? → Yes
+- Is Django a specialization of Backend? → Yes
+- Is Django a specialization of Process? → Yes
+- Is Django a specialization of occurrent? → Yes
+- Is Docker a specialization of Infrastructure? → Yes
+- Is Docker a specialization of Virtualization? → Yes
+- Is Docker a specialization of containerization (computing)? → Yes
+- Is Docker a specialization of structure? → Yes
+- Is Docker images a specialization of Docker? → Yes
+- Is Docker images a specialization of Infrastructure? → Yes
+- Is Docker images a specialization of Virtualization? → Yes
+- Is Docker images a specialization of containerization (computing)? → Yes
+- Is Docker images a specialization of structure? → Yes
+- Is Documentation a specialization of Application development? → Yes
+- Is Documentation a specialization of Process? → Yes
+- Is Documentation a specialization of depicting object? → Yes
+- Is Documentation a specialization of information? → Yes
+- Is Documentation a specialization of occurrent? → Yes
+- Is Don Norman's principles of Interaction Design a specialization of Design thinking? → Yes
+- Is Don Norman's principles of Interaction Design a specialization of Process? → Yes
+- Is Don Norman's principles of Interaction Design a specialization of occurrent? → Yes
+- Is Edge ML a specialization of AI? → Yes
+- Is Edge ML a specialization of Artificial Intelligence (AI)? → Yes
+- Is Edge ML a specialization of machine learning? → Yes
+- Is Edges a specialization of combinatorics? → Yes
+- Is Edges a specialization of graph theory? → Yes
+- Is Eigenvector centrality a specialization of Algorithm? → Yes
+- Is Eigenvector centrality a specialization of Graph algorithm? → Yes
+- Is Eigenvector centrality a specialization of Metric? → Yes
+- Is Eigenvector centrality a specialization of centrality? → Yes
+- Is Elbow method a specialization of AI? → Yes
+- Is Elbow method a specialization of Artificial Intelligence (AI)? → Yes
+- Is Elbow method a specialization of Unsupervised Learning? → Yes
+- Is Elbow method a specialization of clustering? → Yes
+- Is Elbow method a specialization of machine learning? → Yes
+- Is Elixir a specialization of Application development? → Yes
+- Is Elixir a specialization of Process? → Yes
+- Is Elixir a specialization of Programming language? → Yes
+- Is Elixir a specialization of occurrent? → Yes
+- Is Embedded methods a specialization of CRISP-DM Process? → Yes
+- Is Embedded methods a specialization of Data preparation? → Yes
+- Is Embedded methods a specialization of feature engineering? → Yes
+- Is Embedded methods a specialization of feature selection? → Yes
+- Is Embedded methods a specialization of machine learning projects? → Yes
+- Is Embedding network a specialization of AI? → Yes
+- Is Embedding network a specialization of Artificial Intelligence (AI)? → Yes
+- Is Embedding network a specialization of Deep learning? → Yes
+- Is Embedding network a specialization of artificial neural network? → Yes
+- Is Embedding network a specialization of machine learning? → Yes
+- Is Embeddings a specialization of AI? → Yes
+- Is Embeddings a specialization of Artificial Intelligence (AI)? → Yes
+- Is Embeddings a specialization of Natural Language Processing? → Yes
+- Is Embeddings models a specialization of AI? → Yes
+- Is Embeddings models a specialization of Artificial Intelligence (AI)? → Yes
+- Is Embeddings models a specialization of Embeddings? → Yes
+- Is Embeddings models a specialization of Natural Language Processing? → Yes
+- Is Empathy a specialization of Design thinking? → Yes
+- Is Empathy a specialization of Process? → Yes
+- Is Empathy a specialization of occurrent? → Yes
+- Is Encoder-only a specialization of AI? → Yes
+- Is Encoder-only a specialization of Artificial Intelligence (AI)? → Yes
+- Is Encoder-only a specialization of Deep learning? → Yes
+- Is Encoder-only a specialization of Transformers? → Yes
+- Is Encoder-only a specialization of machine learning? → Yes
+- Is Engineering team a specialization of Data science team? → Yes
+- Is Environment a specialization of Infrastructure? → Yes
+- Is Environment a specialization of structure? → Yes
+- Is Equifinality a specialization of systems theory? → Yes
+- Is Ethical checklist a specialization of Fairness? → Yes
+- Is Ethical risks a specialization of Fairness? → Yes
+- Is Evaluate results a specialization of CRISP-DM Process? → Yes
+- Is Evaluate results a specialization of machine learning projects? → Yes
+- Is Evaluation dataset a specialization of evaluation? → Yes
+- Is Evaluation metrics a specialization of evaluation? → Yes
+- Is Excessive latency a specialization of AI? → Yes
+- Is Excessive latency a specialization of Artificial Intelligence (AI)? → Yes
+- Is Excessive latency a specialization of ML system? → Yes
+- Is Excessive latency a specialization of machine learning? → Yes
+- Is Experimentation a specialization of Process? → Yes
+- Is Experimentation a specialization of occurrent? → Yes
+- Is Expert systems a specialization of AI? → Yes
+- Is Expert systems a specialization of Artificial Intelligence (AI)? → Yes
+- Is Exploratory Data Analysis a specialization of CRISP-DM Process? → Yes
+- Is Exploratory Data Analysis a specialization of data understanding? → Yes
+- Is Exploratory Data Analysis a specialization of machine learning projects? → Yes
+- Is Explore the data a specialization of CRISP-DM Process? → Yes
+- Is Explore the data a specialization of data understanding? → Yes
+- Is Explore the data a specialization of machine learning projects? → Yes
+- Is F1 Score a specialization of Evaluation metrics? → Yes
+- Is F1 Score a specialization of evaluation? → Yes
+- Is Facial recognition a specialization of AI? → Yes
+- Is Facial recognition a specialization of Artificial Intelligence (AI)? → Yes
+- Is Facial recognition a specialization of computer vision? → Yes
+- Is Fair AI a specialization of Fairness? → Yes
+- Is Fair Information Practices a specialization of Data privacy? → Yes
+- Is Fair Information Practices a specialization of Fairness? → Yes
+- Is Fair Information Practices a specialization of trust? → Yes
+- Is False Negative (FN) a specialization of Evaluation metrics? → Yes
+- Is False Negative (FN) a specialization of confusion matrix? → Yes
+- Is False Negative (FN) a specialization of evaluation? → Yes
+- Is False Positive (FP) a specialization of Evaluation metrics? → Yes
+- Is False Positive (FP) a specialization of confusion matrix? → Yes
+- Is False Positive (FP) a specialization of evaluation? → Yes
+- Is False Positive Rate a specialization of Evaluation metrics? → Yes
+- Is False Positive Rate a specialization of evaluation? → Yes
+- Is Family Educational Rights and Privacy Act (FERPA) a specialization of Data privacy? → Yes
+- Is Family Educational Rights and Privacy Act (FERPA) a specialization of Data privacy laws? → Yes
+- Is Family Educational Rights and Privacy Act (FERPA) a specialization of Fairness? → Yes
+- Is Fault tolerance a specialization of Infrastructure? → Yes
+- Is Fault tolerance a specialization of structure? → Yes
+- Is Feasability a specialization of Process? → Yes
+- Is Feasability a specialization of occurrent? → Yes
+- Is Feature bagging a specialization of ML models? → Yes
+- Is Feature bagging a specialization of model? → Yes
+- Is Feature pipeline a specialization of Pipelines? → Yes
+- Is Feature-list a specialization of Product? → Yes
+- Is Federated learning a specialization of AI? → Yes
+- Is Federated learning a specialization of Artificial Intelligence (AI)? → Yes
+- Is Federated learning a specialization of machine learning? → Yes
+- Is Feedback a specialization of Process? → Yes
+- Is Feedback a specialization of occurrent? → Yes
+- Is Feedback loop bias a specialization of Fairness? → Yes
+- Is Feedback loop bias a specialization of bias? → Yes
+- Is Feedback loops a specialization of systems theory? → Yes
+- Is Fiabilite de compilatio a specialization of AI? → Yes
+- Is Filter methods a specialization of CRISP-DM Process? → Yes
+- Is Filter methods a specialization of Data preparation? → Yes
+- Is Filter methods a specialization of feature engineering? → Yes
+- Is Filter methods a specialization of feature selection? → Yes
+- Is Filter methods a specialization of machine learning projects? → Yes
+- Is Filtered vector search a specialization of Search? → Yes
+- Is Financial Privacy a specialization of Data privacy? → Yes
+- Is Financial Privacy a specialization of Fairness? → Yes
+- Is Fine-tuning a specialization of CRISP-DM Process? → Yes
+- Is Fine-tuning a specialization of machine learning projects? → Yes
+- Is Fine-tuning a specialization of model tuning? → Yes
+- Is Fine-tuning a specialization of modeling? → Yes
+- Is Flywheel effect a specialization of systems theory? → Yes
+- Is Forward propagation a specialization of AI? → Yes
+- Is Forward propagation a specialization of Artificial Intelligence (AI)? → Yes
+- Is Forward propagation a specialization of Deep learning? → Yes
+- Is Forward propagation a specialization of artificial neural network? → Yes
+- Is Forward propagation a specialization of machine learning? → Yes
+- Is Frontend a specialization of Application development? → Yes
+- Is Frontend a specialization of Process? → Yes
+- Is Frontend a specialization of occurrent? → Yes
+- Is Frontend a specialization of software component? → Yes
+- Is GGUF a specialization of CRISP-DM Process? → Yes
+- Is GGUF a specialization of Quantization? → Yes
+- Is GGUF a specialization of machine learning projects? → Yes
+- Is GGUF a specialization of model tuning? → Yes
+- Is GGUF a specialization of modeling? → Yes
+- Is GPT2 a specialization of AI? → Yes
+- Is GPT2 a specialization of Artificial Intelligence (AI)? → Yes
+- Is GPT2 a specialization of Language modeling? → Yes
+- Is GPT2 a specialization of Natural Language Processing? → Yes
+- Is GPT2 a specialization of autoregressive language models? → Yes
+- Is Gather data a specialization of CRISP-DM Process? → Yes
+- Is Gather data a specialization of data understanding? → Yes
+- Is Gather data a specialization of machine learning projects? → Yes
+- Is Geometric concept a specialization of Vector space? → Yes
+- Is Gilles Deleuze a specialization of Dividual? → Yes
+- Is Git a specialization of version control? → Yes
+- Is Git worktree a specialization of Git? → Yes
+- Is Git worktree a specialization of version control? → Yes
+- Is Github a specialization of Git? → Yes
+- Is Github a specialization of version control? → Yes
+- Is Goals a specialization of Process? → Yes
+- Is Goals a specialization of occurrent? → Yes
+- Is Good and services classes a specialization of International (Nice) Classification of Goods and Services? → Yes
+- Is Good and services classes a specialization of agreement? → Yes
+- Is Gouvernance a specialization of Management? → Yes
+- Is Gouvernance a specialization of Process? → Yes
+- Is Gouvernance a specialization of control? → Yes
+- Is Gouvernance a specialization of coordination? → Yes
+- Is Gouvernance a specialization of occurrent? → Yes
+- Is Gradient a specialization of AI? → Yes
+- Is Gradient a specialization of Artificial Intelligence (AI)? → Yes
+- Is Gradient a specialization of Backpropagation? → Yes
+- Is Gradient a specialization of Deep learning? → Yes
+- Is Gradient a specialization of artificial neural network? → Yes
+- Is Gradient a specialization of machine learning? → Yes
+- Is Gradient descent a specialization of AI? → Yes
+- Is Gradient descent a specialization of Artificial Intelligence (AI)? → Yes
+- Is Gradient descent a specialization of Optimizer algorithm? → Yes
+- Is Gradient descent a specialization of machine learning? → Yes
+- Is Gramm-Leach-Bliley Act (GLBA) a specialization of Data privacy? → Yes
+- Is Gramm-Leach-Bliley Act (GLBA) a specialization of Data privacy laws? → Yes
+- Is Gramm-Leach-Bliley Act (GLBA) a specialization of Fairness? → Yes
+- Is Graph algorithm a specialization of Algorithm? → Yes
+- Is Graph network analysis a specialization of combinatorics? → Yes
+- Is Graph network analysis a specialization of graph theory? → Yes
+- Is Graph projection a specialization of combinatorics? → Yes
+- Is Graph projection a specialization of graph theory? → Yes
+- Is Graphics processing unit a specialization of Infrastructure? → Yes
+- Is Graphics processing unit a specialization of structure? → Yes
+- Is Greediness a specialization of Algorithm? → Yes
+- Is Ground truth a specialization of truth? → Yes
+- Is HGR-AI-1 a specialization of AI? → Yes
+- Is HTML a specialization of Application development? → Yes
+- Is HTML a specialization of Mark-up language? → Yes
+- Is HTML a specialization of Process? → Yes
+- Is HTML a specialization of Programming language? → Yes
+- Is HTML a specialization of occurrent? → Yes
+- Is HTTP a specialization of Infrastructure? → Yes
+- Is HTTP a specialization of computer network protocol? → Yes
+- Is HTTP a specialization of structure? → Yes
+- Is HTTP 403 a specialization of HTTP? → Yes
+- Is HTTP 403 a specialization of Infrastructure? → Yes
+- Is HTTP 403 a specialization of computer network protocol? → Yes
+- Is HTTP 403 a specialization of structure? → Yes
+- Is Hallucination a specialization of AI? → Yes
+- Is Hallucination a specialization of Artificial Intelligence (AI)? → Yes
+- Is Hallucination a specialization of Language modeling? → Yes
+- Is Hallucination a specialization of Large Language Model? → Yes
+- Is Hallucination a specialization of Natural Language Processing? → Yes
+- Is Heterogeneous graph a specialization of combinatorics? → Yes
+- Is Heterogeneous graph a specialization of graph theory? → Yes
+- Is Heuristics a specialization of Algorithm? → Yes
+- Is Heuristics a specialization of Dialogue? → Yes
+- Is Heuristics a specialization of db/interpersonal communication? → Yes
+- Is Heuristics a specialization of db/oral media? → Yes
+- Is Heuristics a specialization of elicitation? → Yes
+- Is Heuristics a specialization of heuristic? → Yes
+- Is Heuristics a specialization of method? → Yes
+- Is Hidden states a specialization of AI? → Yes
+- Is Hidden states a specialization of Artificial Intelligence (AI)? → Yes
+- Is Hidden states a specialization of Deep learning? → Yes
+- Is Hidden states a specialization of artificial neural network? → Yes
+- Is Hidden states a specialization of machine learning? → Yes
+- Is High-intent data discovery a specialization of CRISP-DM Process? → Yes
+- Is High-intent data discovery a specialization of Exploratory Data Analysis? → Yes
+- Is High-intent data discovery a specialization of data understanding? → Yes
+- Is High-intent data discovery a specialization of machine learning projects? → Yes
+- Is Hindsight scenario testing a specialization of evaluation? → Yes
+- Is Historical bias a specialization of Fairness? → Yes
+- Is Historical bias a specialization of bias? → Yes
+- Is Homebrew a specialization of Terminal? → Yes
+- Is Hook a specialization of Application development? → Yes
+- Is Hook a specialization of Process? → Yes
+- Is Hook a specialization of occurrent? → Yes
+- Is Horizontal scaling a specialization of Infrastructure? → Yes
+- Is Horizontal scaling a specialization of structure? → Yes
+- Is How-to-use a specialization of Application development? → Yes
+- Is How-to-use a specialization of Documentation? → Yes
+- Is How-to-use a specialization of Process? → Yes
+- Is How-to-use a specialization of depicting object? → Yes
+- Is How-to-use a specialization of information? → Yes
+- Is How-to-use a specialization of occurrent? → Yes
+- Is Hugging Face a specialization of Application development? → Yes
+- Is Hugging Face a specialization of Process? → Yes
+- Is Hugging Face a specialization of Programming language? → Yes
+- Is Hugging Face a specialization of Python? → Yes
+- Is Hugging Face a specialization of occurrent? → Yes
+- Is Human prediction a specialization of Decision support? → Yes
+- Is Human-in-the-loop a specialization of AI? → Yes
+- Is Human-in-the-loop a specialization of Artificial Intelligence (AI)? → Yes
+- Is Human-in-the-loop a specialization of agentic System? → Yes
+- Is Hybrid search a specialization of Search? → Yes
+- Is Hyperparameters a specialization of AI? → Yes
+- Is Hyperparameters a specialization of Artificial Intelligence (AI)? → Yes
+- Is Hyperparameters a specialization of machine learning? → Yes
+- Is Hypothetical Document Embeddings (HyDE) a specialization of AI? → Yes
+- Is Hypothetical Document Embeddings (HyDE) a specialization of Artificial Intelligence (AI)? → Yes
+- Is Hypothetical Document Embeddings (HyDE) a specialization of Language modeling? → Yes
+- Is Hypothetical Document Embeddings (HyDE) a specialization of Large Language Model? → Yes
+- Is Hypothetical Document Embeddings (HyDE) a specialization of Natural Language Processing? → Yes
+- Is Hypothetical Document Embeddings (HyDE) a specialization of RAG (Retrieval-Augmented Generation)? → Yes
+- Is IAM execution role a specialization of Infrastructure? → Yes
+- Is IAM execution role a specialization of structure? → Yes
+- Is Ideate a specialization of Design thinking? → Yes
+- Is Ideate a specialization of Process? → Yes
+- Is Ideate a specialization of occurrent? → Yes
+- Is Identify factors a specialization of CRISP-DM Process? → Yes
+- Is Identify factors a specialization of machine learning projects? → Yes
+- Is Impermanence a specialization of Stochastic processes? → Yes
+- Is Impermanence a specialization of combinatorics? → Yes
+- Is Impermanence a specialization of indexed family? → Yes
+- Is Impermanence a specialization of mathematical object? → Yes
+- Is Impermanence a specialization of probability? → Yes
+- Is In-Context Learning a specialization of AI? → Yes
+- Is In-Context Learning a specialization of Artificial Intelligence (AI)? → Yes
+- Is In-Context Learning a specialization of Language modeling? → Yes
+- Is In-Context Learning a specialization of Large Language Model? → Yes
+- Is In-Context Learning a specialization of Natural Language Processing? → Yes
+- Is Independent Cascade Model a specialization of Stochastic processes? → Yes
+- Is Independent Cascade Model a specialization of combinatorics? → Yes
+- Is Independent Cascade Model a specialization of indexed family? → Yes
+- Is Independent Cascade Model a specialization of mathematical object? → Yes
+- Is Independent Cascade Model a specialization of probability? → Yes
+- Is Individual fairness a specialization of Fairness? → Yes
+- Is Inertia a specialization of automatic control? → Yes
+- Is Inertia a specialization of control theory? → Yes
+- Is Inference a specialization of CRISP-DM Process? → Yes
+- Is Inference a specialization of Deployment? → Yes
+- Is Inference a specialization of db/process? → Yes
+- Is Inference a specialization of machine learning projects? → Yes
+- Is Inference engine a specialization of CRISP-DM Process? → Yes
+- Is Inference engine a specialization of Deployment? → Yes
+- Is Inference engine a specialization of Inference? → Yes
+- Is Inference engine a specialization of db/process? → Yes
+- Is Inference engine a specialization of machine learning projects? → Yes
+- Is Inference pipeline a specialization of CRISP-DM Process? → Yes
+- Is Inference pipeline a specialization of Deployment? → Yes
+- Is Inference pipeline a specialization of Inference? → Yes
+- Is Inference pipeline a specialization of db/process? → Yes
+- Is Inference pipeline a specialization of machine learning projects? → Yes
+- Is Information Gain (IG) a specialization of Metric? → Yes
+- Is Infrastructure a specialization of structure? → Yes
+- Is Ingestion a specialization of Pipelines? → Yes
+- Is Ingoing relationships a specialization of Hypergraph? → Yes
+- Is Ingoing relationships a specialization of Infrastructure? → Yes
+- Is Ingoing relationships a specialization of Knowledge base? → Yes
+- Is Ingoing relationships a specialization of Memory? → Yes
+- Is Ingoing relationships a specialization of Process? → Yes
+- Is Ingoing relationships a specialization of Relational structure? → Yes
+- Is Ingoing relationships a specialization of graph? → Yes
+- Is Ingoing relationships a specialization of knowledge? → Yes
+- Is Ingoing relationships a specialization of knowledge graph? → Yes
+- Is Ingoing relationships a specialization of labeled directed graph? → Yes
+- Is Ingoing relationships a specialization of occurrent? → Yes
+- Is Ingoing relationships a specialization of structure? → Yes
+- Is Inherent error a specialization of ML models? → Yes
+- Is Inherent error a specialization of model? → Yes
+- Is Instruction dataset a specialization of CRISP-DM Process? → Yes
+- Is Instruction dataset a specialization of Fine-tuning? → Yes
+- Is Instruction dataset a specialization of machine learning projects? → Yes
+- Is Instruction dataset a specialization of model tuning? → Yes
+- Is Instruction dataset a specialization of modeling? → Yes
+- Is Instructions a specialization of Process? → Yes
+- Is Instructions a specialization of occurrent? → Yes
+- Is Instructor model a specialization of ML models? → Yes
+- Is Instructor model a specialization of model? → Yes
+- Is Integration tests a specialization of Test? → Yes
+- Is International (Nice) Classification of Goods and Services a specialization of agreement? → Yes
+- Is Interpretability a specialization of Fairness? → Yes
+- Is Interpretability a specialization of Transparency? → Yes
+- Is Iron law of oligarchy a specialization of Management? → Yes
+- Is Iron law of oligarchy a specialization of Process? → Yes
+- Is Iron law of oligarchy a specialization of control? → Yes
+- Is Iron law of oligarchy a specialization of coordination? → Yes
+- Is Iron law of oligarchy a specialization of occurrent? → Yes
+- Is JSON a specialization of Process? → Yes
+- Is JSON a specialization of data? → Yes
+- Is JSON a specialization of data type? → Yes
+- Is JSON a specialization of occurrent? → Yes
+- Is JSON a specialization of type? → Yes
+- Is James Clerk Maxwell a specialization of automatic control? → Yes
+- Is James Clerk Maxwell a specialization of control theory? → Yes
+- Is Java a specialization of Application development? → Yes
+- Is Java a specialization of Process? → Yes
+- Is Java a specialization of Programming language? → Yes
+- Is Java a specialization of occurrent? → Yes
+- Is Joshua Pearl a specialization of CRISP-DM Process? → Yes
+- Is Joshua Pearl a specialization of Deployment? → Yes
+- Is Joshua Pearl a specialization of Inference? → Yes
+- Is Joshua Pearl a specialization of causal inference? → Yes
+- Is Joshua Pearl a specialization of causal reasoning? → Yes
+- Is Joshua Pearl a specialization of db/process? → Yes
+- Is Joshua Pearl a specialization of machine learning projects? → Yes
+- Is Jupyter notebooks a specialization of Application development? → Yes
+- Is Jupyter notebooks a specialization of Process? → Yes
+- Is Jupyter notebooks a specialization of Programming language? → Yes
+- Is Jupyter notebooks a specialization of Python? → Yes
+- Is Jupyter notebooks a specialization of occurrent? → Yes
+- Is K-Means Clustering a specialization of AI? → Yes
+- Is K-Means Clustering a specialization of Artificial Intelligence (AI)? → Yes
+- Is K-Means Clustering a specialization of Unsupervised Learning? → Yes
+- Is K-Means Clustering a specialization of clustering? → Yes
+- Is K-Means Clustering a specialization of machine learning? → Yes
+- Is K-Nearest Neighbor algorithm a specialization of AI? → Yes
+- Is K-Nearest Neighbor algorithm a specialization of Artificial Intelligence (AI)? → Yes
+- Is K-Nearest Neighbor algorithm a specialization of machine learning? → Yes
+- Is K-Nearest Neighbor algorithm a specialization of supervised learning? → Yes
+- Is K-Nearest neighbor regressor a specialization of AI? → Yes
+- Is K-Nearest neighbor regressor a specialization of Artificial Intelligence (AI)? → Yes
+- Is K-Nearest neighbor regressor a specialization of K-Nearest Neighbor algorithm? → Yes
+- Is K-Nearest neighbor regressor a specialization of machine learning? → Yes
+- Is K-Nearest neighbor regressor a specialization of supervised learning? → Yes
+- Is Keras a specialization of AI? → Yes
+- Is Keras a specialization of Artificial Intelligence (AI)? → Yes
+- Is Keras a specialization of Deep learning? → Yes
+- Is Keras a specialization of machine learning? → Yes
+- Is Knowledge base a specialization of Infrastructure? → Yes
+- Is Knowledge base a specialization of Memory? → Yes
+- Is Knowledge base a specialization of Process? → Yes
+- Is Knowledge base a specialization of knowledge? → Yes
+- Is Knowledge base a specialization of occurrent? → Yes
+- Is Knowledge base a specialization of structure? → Yes
+- Is LLM Metrics a specialization of Evaluation metrics? → Yes
+- Is LLM Metrics a specialization of evaluation? → Yes
+- Is LLM Models a specialization of AI? → Yes
+- Is LLM Models a specialization of Artificial Intelligence (AI)? → Yes
+- Is LLM Models a specialization of Language modeling? → Yes
+- Is LLM Models a specialization of Large Language Model? → Yes
+- Is LLM Models a specialization of Natural Language Processing? → Yes
+- Is LLM Observability a specialization of agent? → Yes
+- Is LLM Observability a specialization of agent observability? → Yes
+- Is LLM Path Extractors a specialization of AI? → Yes
+- Is LLM Path Extractors a specialization of Artificial Intelligence (AI)? → Yes
+- Is LLM Path Extractors a specialization of Language modeling? → Yes
+- Is LLM Path Extractors a specialization of Large Language Model? → Yes
+- Is LLM Path Extractors a specialization of Natural Language Processing? → Yes
+- Is LLM output evaluation a specialization of CRISP-DM Process? → Yes
+- Is LLM output evaluation a specialization of machine learning projects? → Yes
+- Is LLM output evaluation a specialization of model evaluation? → Yes
+- Is LLM output evaluation a specialization of modeling? → Yes
+- Is LLM-as-judges a specialization of CRISP-DM Process? → Yes
+- Is LLM-as-judges a specialization of LLM output evaluation? → Yes
+- Is LLM-as-judges a specialization of machine learning projects? → Yes
+- Is LLM-as-judges a specialization of model evaluation? → Yes
+- Is LLM-as-judges a specialization of modeling? → Yes
+- Is LLaMA a specialization of AI? → Yes
+- Is LLaMA a specialization of Artificial Intelligence (AI)? → Yes
+- Is LLaMA a specialization of Language modeling? → Yes
+- Is LLaMA a specialization of Large Language Model? → Yes
+- Is LLaMA a specialization of Natural Language Processing? → Yes
+- Is La Société de Connaissance a specialization of Infrastructure? → Yes
+- Is La Société de Connaissance a specialization of Memory? → Yes
+- Is La Société de Connaissance a specialization of Process? → Yes
+- Is La Société de Connaissance a specialization of knowledge? → Yes
+- Is La Société de Connaissance a specialization of occurrent? → Yes
+- Is La Société de Connaissance a specialization of structure? → Yes
+- Is Label a specialization of conceptual system? → Yes
+- Is Label a specialization of knowledge organization system? → Yes
+- Is Label a specialization of organizing principles? → Yes
+- Is Label encoding a specialization of CRISP-DM Process? → Yes
+- Is Label encoding a specialization of Data preparation? → Yes
+- Is Label encoding a specialization of machine learning projects? → Yes
+- Is Langfuse a specialization of LLM Observability? → Yes
+- Is Langfuse a specialization of agent? → Yes
+- Is Langfuse a specialization of agent observability? → Yes
+- Is Language modeling a specialization of AI? → Yes
+- Is Language modeling a specialization of Artificial Intelligence (AI)? → Yes
+- Is Language modeling a specialization of Natural Language Processing? → Yes
+- Is Large Language Model a specialization of AI? → Yes
+- Is Large Language Model a specialization of Artificial Intelligence (AI)? → Yes
+- Is Large Language Model a specialization of Language modeling? → Yes
+- Is Large Language Model a specialization of Natural Language Processing? → Yes
+- Is Layered architecture a specialization of Infrastructure? → Yes
+- Is Layered architecture a specialization of structure? → Yes
+- Is Lean Logic a specialization of Algorithm? → Yes
+- Is Lean Logic a specialization of Dialogue? → Yes
+- Is Lean Logic a specialization of db/interpersonal communication? → Yes
+- Is Lean Logic a specialization of db/oral media? → Yes
+- Is Lean Logic a specialization of elicitation? → Yes
+- Is Lean Logic a specialization of heuristic? → Yes
+- Is Lean Logic a specialization of method? → Yes
+- Is Learning curve a specialization of Metric? → Yes
+- Is Learning rate a specialization of AI? → Yes
+- Is Learning rate a specialization of Artificial Intelligence (AI)? → Yes
+- Is Learning rate a specialization of Hyperparameters? → Yes
+- Is Learning rate a specialization of machine learning? → Yes
+- Is Levenshtein a specialization of Distance? → Yes
+- Is Levenshtein a specialization of Vector space? → Yes
+- Is Levenshtein a specialization of similarity measure? → Yes
+- Is License a specialization of Application development? → Yes
+- Is License a specialization of Process? → Yes
+- Is License a specialization of occurrent? → Yes
+- Is Linear models a specialization of ML models? → Yes
+- Is Linear models a specialization of model? → Yes
+- Is Linear regression models a specialization of Linear models? → Yes
+- Is Linear regression models a specialization of ML models? → Yes
+- Is Linear regression models a specialization of model? → Yes
+- Is Local Interpretable Model-Agnostic Explanations (LIME) a specialization of Fairness? → Yes
+- Is Local Interpretable Model-Agnostic Explanations (LIME) a specialization of Interpretability? → Yes
+- Is Local Interpretable Model-Agnostic Explanations (LIME) a specialization of Transparency? → Yes
+- Is Log a specialization of Application development? → Yes
+- Is Log a specialization of Process? → Yes
+- Is Log a specialization of occurrent? → Yes
+- Is Logistic regression a specialization of Linear models? → Yes
+- Is Logistic regression a specialization of ML models? → Yes
+- Is Logistic regression a specialization of model? → Yes
+- Is Logit link function a specialization of Odds? → Yes
+- Is Logit link function a specialization of combinatorics? → Yes
+- Is Logit link function a specialization of probability? → Yes
+- Is Louvain algorithm a specialization of Algorithm? → Yes
+- Is Louvain algorithm a specialization of Graph algorithm? → Yes
+- Is Low-Rank Adaptation a specialization of CRISP-DM Process? → Yes
+- Is Low-Rank Adaptation a specialization of Fine-tuning? → Yes
+- Is Low-Rank Adaptation a specialization of machine learning projects? → Yes
+- Is Low-Rank Adaptation a specialization of model tuning? → Yes
+- Is Low-Rank Adaptation a specialization of modeling? → Yes
+- Is MCP host a specialization of AI? → Yes
+- Is MCP host a specialization of Artificial Intelligence (AI)? → Yes
+- Is MCP host a specialization of Model Context Protocol (MCP)? → Yes
+- Is MCP host a specialization of agentic System? → Yes
+- Is MCP server a specialization of AI? → Yes
+- Is MCP server a specialization of Artificial Intelligence (AI)? → Yes
+- Is MCP server a specialization of Model Context Protocol (MCP)? → Yes
+- Is MCP server a specialization of agentic System? → Yes
+- Is ML System failures a specialization of AI? → Yes
+- Is ML System failures a specialization of Artificial Intelligence (AI)? → Yes
+- Is ML System failures a specialization of ML system? → Yes
+- Is ML System failures a specialization of machine learning? → Yes
+- Is ML models a specialization of model? → Yes
+- Is ML system a specialization of AI? → Yes
+- Is ML system a specialization of Artificial Intelligence (AI)? → Yes
+- Is ML system a specialization of machine learning? → Yes
+- Is ML system design process a specialization of AI? → Yes
+- Is ML system design process a specialization of Artificial Intelligence (AI)? → Yes
+- Is ML system design process a specialization of ML system? → Yes
+- Is ML system design process a specialization of machine learning? → Yes
+- Is ML system monitoring a specialization of Model maintenance? → Yes
+- Is Machine Leaning Baseline a specialization of ML models? → Yes
+- Is Machine Leaning Baseline a specialization of model? → Yes
+- Is Machine learning engineer a specialization of Data science team? → Yes
+- Is Man-Computer Symbiosis a specialization of AI? → Yes
+- Is Management a specialization of Process? → Yes
+- Is Management a specialization of control? → Yes
+- Is Management a specialization of coordination? → Yes
+- Is Management a specialization of occurrent? → Yes
+- Is Management of PII a specialization of Data privacy? → Yes
+- Is Management of PII a specialization of Fairness? → Yes
+- Is Mapping a specialization of Process? → Yes
+- Is Mapping a specialization of occurrent? → Yes
+- Is Margin a specialization of Metric? → Yes
+- Is Mark-up language a specialization of Application development? → Yes
+- Is Mark-up language a specialization of Process? → Yes
+- Is Mark-up language a specialization of Programming language? → Yes
+- Is Mark-up language a specialization of occurrent? → Yes
+- Is Markdown a specialization of Application development? → Yes
+- Is Markdown a specialization of Mark-up language? → Yes
+- Is Markdown a specialization of Process? → Yes
+- Is Markdown a specialization of Programming language? → Yes
+- Is Markdown a specialization of occurrent? → Yes
+- Is Matplotlib a specialization of Application development? → Yes
+- Is Matplotlib a specialization of Process? → Yes
+- Is Matplotlib a specialization of Programming language? → Yes
+- Is Matplotlib a specialization of Python? → Yes
+- Is Matplotlib a specialization of occurrent? → Yes
+- Is Mean Absolute Error a specialization of Evaluation metrics? → Yes
+- Is Mean Absolute Error a specialization of Regression Error Metrics? → Yes
+- Is Mean Absolute Error a specialization of evaluation? → Yes
+- Is Mean Absolute Percent Error a specialization of Evaluation metrics? → Yes
+- Is Mean Absolute Percent Error a specialization of Regression Error Metrics? → Yes
+- Is Mean Absolute Percent Error a specialization of evaluation? → Yes
+- Is Measurement bias a specialization of Fairness? → Yes
+- Is Measurement bias a specialization of bias? → Yes
+- Is Medical Data Privacy a specialization of Data privacy? → Yes
+- Is Medical Data Privacy a specialization of Fairness? → Yes
+- Is Memory a specialization of Infrastructure? → Yes
+- Is Memory a specialization of structure? → Yes
+- Is Message-oriented middleware a specialization of Infrastructure? → Yes
+- Is Message-oriented middleware a specialization of structure? → Yes
+- Is Min-max normalization a specialization of CRISP-DM Process? → Yes
+- Is Min-max normalization a specialization of Data preparation? → Yes
+- Is Min-max normalization a specialization of machine learning projects? → Yes
+- Is Mini-batch gradient descent a specialization of AI? → Yes
+- Is Mini-batch gradient descent a specialization of Artificial Intelligence (AI)? → Yes
+- Is Mini-batch gradient descent a specialization of Gradient descent? → Yes
+- Is Mini-batch gradient descent a specialization of Optimizer algorithm? → Yes
+- Is Mini-batch gradient descent a specialization of machine learning? → Yes
+- Is Model Context Protocol (MCP) a specialization of AI? → Yes
+- Is Model Context Protocol (MCP) a specialization of Artificial Intelligence (AI)? → Yes
+- Is Model Context Protocol (MCP) a specialization of agentic System? → Yes
+- Is Model decay a specialization of Model maintenance? → Yes
+- Is Model registry a specialization of Model maintenance? → Yes
+- Is Model selection a specialization of CRISP-DM Process? → Yes
+- Is Model selection a specialization of machine learning projects? → Yes
+- Is Model selection a specialization of modeling? → Yes
+- Is Multipartite graph a specialization of combinatorics? → Yes
+- Is Multipartite graph a specialization of graph theory? → Yes
+- Is N-Fold Cross Validation a specialization of Cross validation? → Yes
+- Is N-Fold Cross Validation a specialization of evaluation? → Yes
+- Is Naive Bayes Classifier a specialization of AI? → Yes
+- Is Naive Bayes Classifier a specialization of Artificial Intelligence (AI)? → Yes
+- Is Naive Bayes Classifier a specialization of machine learning? → Yes
+- Is Naive Bayes Classifier a specialization of supervised learning? → Yes
+- Is Nano-precision detection system a specialization of AI? → Yes
+- Is Nano-precision detection system a specialization of Artificial Intelligence (AI)? → Yes
+- Is Nano-precision detection system a specialization of ML system? → Yes
+- Is Nano-precision detection system a specialization of machine learning? → Yes
+- Is Narrow AI a specialization of AI? → Yes
+- Is Narrow AI a specialization of Artificial Intelligence (AI)? → Yes
+- Is Natural Language Processing a specialization of AI? → Yes
+- Is Natural Language Processing a specialization of Artificial Intelligence (AI)? → Yes
+- Is Nested schema a specialization of Schema design? → Yes
+- Is Network graph a specialization of combinatorics? → Yes
+- Is Network graph a specialization of graph theory? → Yes
+- Is Neural network models a specialization of ML models? → Yes
+- Is Neural network models a specialization of model? → Yes
+- Is NoSQL database a specialization of Infrastructure? → Yes
+- Is NoSQL database a specialization of structure? → Yes
+- Is Node similarity a specialization of Algorithm? → Yes
+- Is Node similarity a specialization of Graph algorithm? → Yes
+- Is Non-parametric algorithms a specialization of Algorithm? → Yes
+- Is Normalized schema a specialization of Schema design? → Yes
+- Is Numpy a specialization of Application development? → Yes
+- Is Numpy a specialization of Process? → Yes
+- Is Numpy a specialization of Programming language? → Yes
+- Is Numpy a specialization of Python? → Yes
+- Is Numpy a specialization of occurrent? → Yes
+- Is OAuth a specialization of Infrastructure? → Yes
+- Is OAuth a specialization of authentication protocol? → Yes
+- Is OAuth a specialization of structure? → Yes
+- Is Object a specialization of Hypergraph? → Yes
+- Is Object a specialization of Infrastructure? → Yes
+- Is Object a specialization of Knowledge base? → Yes
+- Is Object a specialization of Memory? → Yes
+- Is Object a specialization of Process? → Yes
+- Is Object a specialization of Relational structure? → Yes
+- Is Object a specialization of graph? → Yes
+- Is Object a specialization of knowledge? → Yes
+- Is Object a specialization of knowledge graph? → Yes
+- Is Object a specialization of labeled directed graph? → Yes
+- Is Object a specialization of occurrent? → Yes
+- Is Object a specialization of structure? → Yes
+- Is Occam's rasor a specialization of Algorithm? → Yes
+- Is Occam's rasor a specialization of Dialogue? → Yes
+- Is Occam's rasor a specialization of db/interpersonal communication? → Yes
+- Is Occam's rasor a specialization of db/oral media? → Yes
+- Is Occam's rasor a specialization of elicitation? → Yes
+- Is Occam's rasor a specialization of heuristic? → Yes
+- Is Occam's rasor a specialization of method? → Yes
+- Is Odds a specialization of combinatorics? → Yes
+- Is Odds a specialization of probability? → Yes
+- Is Offline models a specialization of ML models? → Yes
+- Is Offline models a specialization of model? → Yes
+- Is Ollama a specialization of AI? → Yes
+- Is Ollama a specialization of Artificial Intelligence (AI)? → Yes
+- Is Ollama a specialization of Language modeling? → Yes
+- Is Ollama a specialization of Large Language Model? → Yes
+- Is Ollama a specialization of Natural Language Processing? → Yes
+- Is One-hot encoding a specialization of CRISP-DM Process? → Yes
+- Is One-hot encoding a specialization of Data preparation? → Yes
+- Is One-hot encoding a specialization of machine learning projects? → Yes
+- Is Online models a specialization of ML models? → Yes
+- Is Online models a specialization of model? → Yes
+- Is Online prediction a specialization of CRISP-DM Process? → Yes
+- Is Online prediction a specialization of Deployment? → Yes
+- Is Online prediction a specialization of Inference? → Yes
+- Is Online prediction a specialization of db/process? → Yes
+- Is Online prediction a specialization of machine learning projects? → Yes
+- Is Ontology a specialization of conceptual system? → Yes
+- Is Ontology a specialization of knowledge organization system? → Yes
+- Is Ontology a specialization of organizing principles? → Yes
+- Is Open source software a specialization of Application development? → Yes
+- Is Open source software a specialization of Process? → Yes
+- Is Open source software a specialization of occurrent? → Yes
+- Is Optimizer algorithm a specialization of AI? → Yes
+- Is Optimizer algorithm a specialization of Artificial Intelligence (AI)? → Yes
+- Is Optimizer algorithm a specialization of machine learning? → Yes
+- Is Outgoing relationships a specialization of Hypergraph? → Yes
+- Is Outgoing relationships a specialization of Infrastructure? → Yes
+- Is Outgoing relationships a specialization of Knowledge base? → Yes
+- Is Outgoing relationships a specialization of Memory? → Yes
+- Is Outgoing relationships a specialization of Process? → Yes
+- Is Outgoing relationships a specialization of Relational structure? → Yes
+- Is Outgoing relationships a specialization of graph? → Yes
+- Is Outgoing relationships a specialization of knowledge? → Yes
+- Is Outgoing relationships a specialization of knowledge graph? → Yes
+- Is Outgoing relationships a specialization of labeled directed graph? → Yes
+- Is Outgoing relationships a specialization of occurrent? → Yes
+- Is Outgoing relationships a specialization of structure? → Yes
+- Is Outliers a specialization of Data quality? → Yes
+- Is Outliers a specialization of Process? → Yes
+- Is Outliers a specialization of data? → Yes
+- Is Outliers a specialization of occurrent? → Yes
+- Is Overfitting a specialization of CRISP-DM Process? → Yes
+- Is Overfitting a specialization of machine learning projects? → Yes
+- Is Overfitting a specialization of model fit? → Yes
+- Is Overfitting a specialization of modeling? → Yes
+- Is Package installer a specialization of Application development? → Yes
+- Is Package installer a specialization of Process? → Yes
+- Is Package installer a specialization of occurrent? → Yes
+- Is Pandas a specialization of Application development? → Yes
+- Is Pandas a specialization of Process? → Yes
+- Is Pandas a specialization of Programming language? → Yes
+- Is Pandas a specialization of Python? → Yes
+- Is Pandas a specialization of occurrent? → Yes
+- Is Perception a specialization of Design thinking? → Yes
+- Is Perception a specialization of Interpretation? → Yes
+- Is Perception a specialization of Process? → Yes
+- Is Perception a specialization of cognitive process? → Yes
+- Is Perception a specialization of occurrent? → Yes
+- Is Perplexity a specialization of Evaluation metrics? → Yes
+- Is Perplexity a specialization of evaluation? → Yes
+- Is Personalization a specialization of Product? → Yes
+- Is Physics a specialization of natural science? → Yes
+- Is Physics a specialization of physical science? → Yes
+- Is Pipe function a specialization of Functions? → Yes
+- Is Plugins a specialization of Application development? → Yes
+- Is Plugins a specialization of Process? → Yes
+- Is Plugins a specialization of occurrent? → Yes
+- Is Polynomial regression a specialization of regression? → Yes
+- Is Post-training a specialization of AI? → Yes
+- Is Post-training a specialization of Artificial Intelligence (AI)? → Yes
+- Is Post-training a specialization of machine learning? → Yes
+- Is Post-training a specialization of training algorithm? → Yes
+- Is PostgreSQL a specialization of Application development? → Yes
+- Is PostgreSQL a specialization of Backend? → Yes
+- Is PostgreSQL a specialization of Process? → Yes
+- Is PostgreSQL a specialization of occurrent? → Yes
+- Is Powerpoint a specialization of Product? → Yes
+- Is Precision a specialization of Evaluation metrics? → Yes
+- Is Precision a specialization of evaluation? → Yes
+- Is Prepare for modeling a specialization of CRISP-DM Process? → Yes
+- Is Prepare for modeling a specialization of machine learning projects? → Yes
+- Is Preston curve a specialization of data visualization? → Yes
+- Is Preston curve a specialization of representation of data? → Yes
+- Is Preston curve a specialization of visualization? → Yes
+- Is Pretotyping a specialization of Prototyping? → Yes
+- Is Pretraining a specialization of AI? → Yes
+- Is Pretraining a specialization of Artificial Intelligence (AI)? → Yes
+- Is Pretraining a specialization of machine learning? → Yes
+- Is Pretraining a specialization of training algorithm? → Yes
+- Is Principal Component Analysis a specialization of CRISP-DM Process? → Yes
+- Is Principal Component Analysis a specialization of Data preparation? → Yes
+- Is Principal Component Analysis a specialization of feature engineering? → Yes
+- Is Principal Component Analysis a specialization of feature selection? → Yes
+- Is Principal Component Analysis a specialization of machine learning projects? → Yes
+- Is Privacy by design a specialization of Data privacy? → Yes
+- Is Privacy by design a specialization of Fairness? → Yes
+- Is Problem definition a specialization of CRISP-DM Process? → Yes
+- Is Problem definition a specialization of machine learning projects? → Yes
+- Is Problem framing a specialization of CRISP-DM Process? → Yes
+- Is Problem framing a specialization of business understanding? → Yes
+- Is Problem framing a specialization of machine learning projects? → Yes
+- Is Process a specialization of occurrent? → Yes
+- Is Product owner a specialization of Agile approach? → Yes
+- Is Programming language a specialization of Application development? → Yes
+- Is Programming language a specialization of Process? → Yes
+- Is Programming language a specialization of occurrent? → Yes
+- Is Project Title a specialization of Product? → Yes
+- Is Project description a specialization of Product? → Yes
+- Is Prompt Identity a specialization of AI? → Yes
+- Is Prompt Identity a specialization of AI prompt? → Yes
+- Is Prompt Identity a specialization of Artificial Intelligence (AI)? → Yes
+- Is Prompt Identity a specialization of Language modeling? → Yes
+- Is Prompt Identity a specialization of Large Language Model? → Yes
+- Is Prompt Identity a specialization of Natural Language Processing? → Yes
+- Is Prompt Identity a specialization of command? → Yes
+- Is Prompt Identity a specialization of instruction? → Yes
+- Is Prompt Identity a specialization of task? → Yes
+- Is Prompt Optimization Techniques a specialization of AI? → Yes
+- Is Prompt Optimization Techniques a specialization of AI prompt? → Yes
+- Is Prompt Optimization Techniques a specialization of Artificial Intelligence (AI)? → Yes
+- Is Prompt Optimization Techniques a specialization of Language modeling? → Yes
+- Is Prompt Optimization Techniques a specialization of Large Language Model? → Yes
+- Is Prompt Optimization Techniques a specialization of Natural Language Processing? → Yes
+- Is Prompt Optimization Techniques a specialization of command? → Yes
+- Is Prompt Optimization Techniques a specialization of instruction? → Yes
+- Is Prompt Optimization Techniques a specialization of task? → Yes
+- Is Prompt Template Info a specialization of AI? → Yes
+- Is Prompt Template Info a specialization of AI prompt? → Yes
+- Is Prompt Template Info a specialization of Artificial Intelligence (AI)? → Yes
+- Is Prompt Template Info a specialization of Language modeling? → Yes
+- Is Prompt Template Info a specialization of Large Language Model? → Yes
+- Is Prompt Template Info a specialization of Natural Language Processing? → Yes
+- Is Prompt Template Info a specialization of command? → Yes
+- Is Prompt Template Info a specialization of instruction? → Yes
+- Is Prompt Template Info a specialization of task? → Yes
+- Is Prompt Template Types a specialization of AI? → Yes
+- Is Prompt Template Types a specialization of AI prompt? → Yes
+- Is Prompt Template Types a specialization of Artificial Intelligence (AI)? → Yes
+- Is Prompt Template Types a specialization of Language modeling? → Yes
+- Is Prompt Template Types a specialization of Large Language Model? → Yes
+- Is Prompt Template Types a specialization of Natural Language Processing? → Yes
+- Is Prompt Template Types a specialization of command? → Yes
+- Is Prompt Template Types a specialization of instruction? → Yes
+- Is Prompt Template Types a specialization of task? → Yes
+- Is Prompt templates a specialization of AI? → Yes
+- Is Prompt templates a specialization of AI prompt? → Yes
+- Is Prompt templates a specialization of Artificial Intelligence (AI)? → Yes
+- Is Prompt templates a specialization of Language modeling? → Yes
+- Is Prompt templates a specialization of Large Language Model? → Yes
+- Is Prompt templates a specialization of Natural Language Processing? → Yes
+- Is Prompt templates a specialization of command? → Yes
+- Is Prompt templates a specialization of instruction? → Yes
+- Is Prompt templates a specialization of task? → Yes
+- Is Prompt-based techniques a specialization of AI? → Yes
+- Is Prompt-based techniques a specialization of AI prompt? → Yes
+- Is Prompt-based techniques a specialization of Artificial Intelligence (AI)? → Yes
+- Is Prompt-based techniques a specialization of Language modeling? → Yes
+- Is Prompt-based techniques a specialization of Large Language Model? → Yes
+- Is Prompt-based techniques a specialization of Natural Language Processing? → Yes
+- Is Prompt-based techniques a specialization of command? → Yes
+- Is Prompt-based techniques a specialization of instruction? → Yes
+- Is Prompt-based techniques a specialization of task? → Yes
+- Is Properties a specialization of Hypergraph? → Yes
+- Is Properties a specialization of Infrastructure? → Yes
+- Is Properties a specialization of Knowledge base? → Yes
+- Is Properties a specialization of Memory? → Yes
+- Is Properties a specialization of Process? → Yes
+- Is Properties a specialization of Relational structure? → Yes
+- Is Properties a specialization of graph? → Yes
+- Is Properties a specialization of knowledge? → Yes
+- Is Properties a specialization of knowledge graph? → Yes
+- Is Properties a specialization of labeled directed graph? → Yes
+- Is Properties a specialization of occurrent? → Yes
+- Is Properties a specialization of structure? → Yes
+- Is Provenance a specialization of Application development? → Yes
+- Is Provenance a specialization of Documentation? → Yes
+- Is Provenance a specialization of Process? → Yes
+- Is Provenance a specialization of depicting object? → Yes
+- Is Provenance a specialization of information? → Yes
+- Is Provenance a specialization of narrative? → Yes
+- Is Provenance a specialization of occurrent? → Yes
+- Is Pruning a specialization of CRISP-DM Process? → Yes
+- Is Pruning a specialization of machine learning projects? → Yes
+- Is Pruning a specialization of model tuning? → Yes
+- Is Pruning a specialization of modeling? → Yes
+- Is Pull request a specialization of Git? → Yes
+- Is Pull request a specialization of version control? → Yes
+- Is PyTorch a specialization of Application development? → Yes
+- Is PyTorch a specialization of Process? → Yes
+- Is PyTorch a specialization of Programming language? → Yes
+- Is PyTorch a specialization of Python? → Yes
+- Is PyTorch a specialization of occurrent? → Yes
+- Is Pydantic a specialization of Application development? → Yes
+- Is Pydantic a specialization of Process? → Yes
+- Is Pydantic a specialization of Programming language? → Yes
+- Is Pydantic a specialization of Python? → Yes
+- Is Pydantic a specialization of occurrent? → Yes
+- Is Python a specialization of Application development? → Yes
+- Is Python a specialization of Process? → Yes
+- Is Python a specialization of Programming language? → Yes
+- Is Python a specialization of occurrent? → Yes
+- Is Qdrant a specialization of vector database? → Yes
+- Is Quantization a specialization of CRISP-DM Process? → Yes
+- Is Quantization a specialization of machine learning projects? → Yes
+- Is Quantization a specialization of model tuning? → Yes
+- Is Quantization a specialization of modeling? → Yes
+- Is RAG (Retrieval-Augmented Generation) a specialization of AI? → Yes
+- Is RAG (Retrieval-Augmented Generation) a specialization of Artificial Intelligence (AI)? → Yes
+- Is RAG (Retrieval-Augmented Generation) a specialization of Language modeling? → Yes
+- Is RAG (Retrieval-Augmented Generation) a specialization of Large Language Model? → Yes
+- Is RAG (Retrieval-Augmented Generation) a specialization of Natural Language Processing? → Yes
+- Is Radial Basis Function Kernel a specialization of Kernel? → Yes
+- Is Random forest a specialization of AI? → Yes
+- Is Random forest a specialization of Artificial Intelligence (AI)? → Yes
+- Is Random forest a specialization of Decision tree? → Yes
+- Is Random forest a specialization of machine learning? → Yes
+- Is Random forest a specialization of supervised learning? → Yes
+- Is ReAct data agent a specialization of AI? → Yes
+- Is ReAct data agent a specialization of Artificial Intelligence (AI)? → Yes
+- Is ReAct data agent a specialization of agentic System? → Yes
+- Is ReAct mode a specialization of AI? → Yes
+- Is ReAct mode a specialization of Artificial Intelligence (AI)? → Yes
+- Is ReAct mode a specialization of agentic System? → Yes
+- Is ReLU activation function a specialization of AI? → Yes
+- Is ReLU activation function a specialization of Artificial Intelligence (AI)? → Yes
+- Is ReLU activation function a specialization of Deep learning? → Yes
+- Is ReLU activation function a specialization of artificial neural network? → Yes
+- Is ReLU activation function a specialization of machine learning? → Yes
+- Is Readme file a specialization of Application development? → Yes
+- Is Readme file a specialization of Process? → Yes
+- Is Readme file a specialization of occurrent? → Yes
+- Is Recall a specialization of Evaluation metrics? → Yes
+- Is Recall a specialization of evaluation? → Yes
+- Is Receiver Operating Characteristic curve a specialization of Evaluation metrics? → Yes
+- Is Receiver Operating Characteristic curve a specialization of evaluation? → Yes
+- Is Recursive tree building a specialization of AI? → Yes
+- Is Recursive tree building a specialization of Artificial Intelligence (AI)? → Yes
+- Is Recursive tree building a specialization of Decision tree? → Yes
+- Is Recursive tree building a specialization of machine learning? → Yes
+- Is Recursive tree building a specialization of supervised learning? → Yes
+- Is Redis a specialization of Application development? → Yes
+- Is Redis a specialization of Backend? → Yes
+- Is Redis a specialization of Process? → Yes
+- Is Redis a specialization of occurrent? → Yes
+- Is Regression Error Metrics a specialization of Evaluation metrics? → Yes
+- Is Regression Error Metrics a specialization of evaluation? → Yes
+- Is Regression trees a specialization of AI? → Yes
+- Is Regression trees a specialization of Artificial Intelligence (AI)? → Yes
+- Is Regression trees a specialization of Decision tree? → Yes
+- Is Regression trees a specialization of machine learning? → Yes
+- Is Regression trees a specialization of supervised learning? → Yes
+- Is Regularization a specialization of AI? → Yes
+- Is Regularization a specialization of Artificial Intelligence (AI)? → Yes
+- Is Regularization a specialization of machine learning? → Yes
+- Is Reinforcement Learning a specialization of AI? → Yes
+- Is Reinforcement Learning a specialization of Artificial Intelligence (AI)? → Yes
+- Is Reinforcement Learning a specialization of machine learning? → Yes
+- Is Relationship aggregation a specialization of Hypergraph? → Yes
+- Is Relationship aggregation a specialization of Infrastructure? → Yes
+- Is Relationship aggregation a specialization of Knowledge base? → Yes
+- Is Relationship aggregation a specialization of Memory? → Yes
+- Is Relationship aggregation a specialization of Process? → Yes
+- Is Relationship aggregation a specialization of Relational structure? → Yes
+- Is Relationship aggregation a specialization of graph? → Yes
+- Is Relationship aggregation a specialization of knowledge? → Yes
+- Is Relationship aggregation a specialization of knowledge graph? → Yes
+- Is Relationship aggregation a specialization of labeled directed graph? → Yes
+- Is Relationship aggregation a specialization of occurrent? → Yes
+- Is Relationship aggregation a specialization of structure? → Yes
+- Is Relationship quality a specialization of Hypergraph? → Yes
+- Is Relationship quality a specialization of Infrastructure? → Yes
+- Is Relationship quality a specialization of Knowledge base? → Yes
+- Is Relationship quality a specialization of Memory? → Yes
+- Is Relationship quality a specialization of Process? → Yes
+- Is Relationship quality a specialization of Relational structure? → Yes
+- Is Relationship quality a specialization of graph? → Yes
+- Is Relationship quality a specialization of knowledge? → Yes
+- Is Relationship quality a specialization of knowledge graph? → Yes
+- Is Relationship quality a specialization of labeled directed graph? → Yes
+- Is Relationship quality a specialization of occurrent? → Yes
+- Is Relationship quality a specialization of structure? → Yes
+- Is Repository a specialization of version control? → Yes
+- Is Reproducibility a specialization of AI? → Yes
+- Is Reproducibility a specialization of Artificial Intelligence (AI)? → Yes
+- Is Reproducibility a specialization of ML system? → Yes
+- Is Reproducibility a specialization of machine learning? → Yes
+- Is Residual analysis a specialization of regression? → Yes
+- Is Retraining a specialization of Model maintenance? → Yes
+- Is Retrieval Augmented Generation a specialization of AI? → Yes
+- Is Retrieval Augmented Generation a specialization of Artificial Intelligence (AI)? → Yes
+- Is Retrieval Augmented Generation a specialization of Language modeling? → Yes
+- Is Retrieval Augmented Generation a specialization of Large Language Model? → Yes
+- Is Retrieval Augmented Generation a specialization of Natural Language Processing? → Yes
+- Is Retrieval Depth a specialization of AI? → Yes
+- Is Retrieval Depth a specialization of Artificial Intelligence (AI)? → Yes
+- Is Retrieval Depth a specialization of Language modeling? → Yes
+- Is Retrieval Depth a specialization of Large Language Model? → Yes
+- Is Retrieval Depth a specialization of Natural Language Processing? → Yes
+- Is Retrieval Depth a specialization of RAG (Retrieval-Augmented Generation)? → Yes
+- Is Retriever a specialization of AI? → Yes
+- Is Retriever a specialization of Artificial Intelligence (AI)? → Yes
+- Is Retriever a specialization of Language modeling? → Yes
+- Is Retriever a specialization of Large Language Model? → Yes
+- Is Retriever a specialization of Natural Language Processing? → Yes
+- Is Retriever a specialization of RAG (Retrieval-Augmented Generation)? → Yes
+- Is Retriever Orchestration a specialization of AI? → Yes
+- Is Retriever Orchestration a specialization of Artificial Intelligence (AI)? → Yes
+- Is Retriever Orchestration a specialization of Language modeling? → Yes
+- Is Retriever Orchestration a specialization of Large Language Model? → Yes
+- Is Retriever Orchestration a specialization of Natural Language Processing? → Yes
+- Is Retriever Orchestration a specialization of RAG (Retrieval-Augmented Generation)? → Yes
+- Is Rider a specialization of agreement? → Yes
+- Is Rider a specialization of contract? → Yes
+- Is Rider a specialization of intellectual work? → Yes
+- Is Rider a specialization of legal transaction? → Yes
+- Is Rider a specialization of promise? → Yes
+- Is Rights of Individuals a specialization of Data privacy? → Yes
+- Is Rights of Individuals a specialization of Fairness? → Yes
+- Is SSH Agent a specialization of Infrastructure? → Yes
+- Is SSH Agent a specialization of structure? → Yes
+- Is SSH Key a specialization of Infrastructure? → Yes
+- Is SSH Key a specialization of authentication protocol? → Yes
+- Is SSH Key a specialization of structure? → Yes
+- Is Scenario (computing) a specialization of Application development? → Yes
+- Is Scenario (computing) a specialization of Process? → Yes
+- Is Scenario (computing) a specialization of occurrent? → Yes
+- Is Scheduled retraining a specialization of Model maintenance? → Yes
+- Is Schema-field consumption statistics a specialization of Schema design? → Yes
+- Is Sci-kit Learn a specialization of Application development? → Yes
+- Is Sci-kit Learn a specialization of Process? → Yes
+- Is Sci-kit Learn a specialization of Programming language? → Yes
+- Is Sci-kit Learn a specialization of Python? → Yes
+- Is Sci-kit Learn a specialization of occurrent? → Yes
+- Is Semi-structured data a specialization of Process? → Yes
+- Is Semi-structured data a specialization of data? → Yes
+- Is Semi-structured data a specialization of data type? → Yes
+- Is Semi-structured data a specialization of occurrent? → Yes
+- Is Semi-structured data a specialization of type? → Yes
+- Is Sensitive Information a specialization of Data privacy? → Yes
+- Is Sensitive Information a specialization of Fairness? → Yes
+- Is Sentiment analysis a specialization of AI? → Yes
+- Is Sentiment analysis a specialization of Artificial Intelligence (AI)? → Yes
+- Is Sentiment analysis a specialization of Natural Language Processing? → Yes
+- Is Service-oriented architecture (SOA) a specialization of Infrastructure? → Yes
+- Is Service-oriented architecture (SOA) a specialization of structure? → Yes
+- Is Session a specialization of Application development? → Yes
+- Is Session a specialization of Process? → Yes
+- Is Session a specialization of Situation? → Yes
+- Is Session a specialization of context? → Yes
+- Is Session a specialization of occurrent? → Yes
+- Is Shadow releasing a specialization of Deploy? → Yes
+- Is Shadow releasing a specialization of Infrastructure? → Yes
+- Is Shadow releasing a specialization of structure? → Yes
+- Is Shapley Additive Explanations (SHAP) a specialization of Fairness? → Yes
+- Is Shapley Additive Explanations (SHAP) a specialization of Interpretability? → Yes
+- Is Shapley Additive Explanations (SHAP) a specialization of Transparency? → Yes
+- Is Shards a specialization of Infrastructure? → Yes
+- Is Shards a specialization of structure? → Yes
+- Is Share transfer clauses a specialization of Shareholders agreement? → Yes
+- Is Share transfer clauses a specialization of agreement? → Yes
+- Is Share transfer clauses a specialization of contract? → Yes
+- Is Share transfer clauses a specialization of intellectual work? → Yes
+- Is Share transfer clauses a specialization of legal transaction? → Yes
+- Is Share transfer clauses a specialization of promise? → Yes
+- Is Shared computing resources a specialization of Infrastructure? → Yes
+- Is Shared computing resources a specialization of structure? → Yes
+- Is Shareholders agreement a specialization of agreement? → Yes
+- Is Shareholders agreement a specialization of contract? → Yes
+- Is Shareholders agreement a specialization of intellectual work? → Yes
+- Is Shareholders agreement a specialization of legal transaction? → Yes
+- Is Shareholders agreement a specialization of promise? → Yes
+- Is Shifter a specialization of Algorithm? → Yes
+- Is Shifter a specialization of Mathematical operation? → Yes
+- Is Shifter a specialization of Unary operation? → Yes
+- Is Shifter a specialization of combination? → Yes
+- Is Shifter a specialization of combinatorics? → Yes
+- Is Shifter a specialization of selection? → Yes
+- Is Sigmoid function a specialization of AI? → Yes
+- Is Sigmoid function a specialization of Artificial Intelligence (AI)? → Yes
+- Is Sigmoid function a specialization of Deep learning? → Yes
+- Is Sigmoid function a specialization of artificial neural network? → Yes
+- Is Sigmoid function a specialization of machine learning? → Yes
+- Is Similarity scores a specialization of Metric? → Yes
+- Is Simplicity VS. Flexibility a specialization of Design thinking? → Yes
+- Is Simplicity VS. Flexibility a specialization of Process? → Yes
+- Is Simplicity VS. Flexibility a specialization of occurrent? → Yes
+- Is Situation a specialization of Process? → Yes
+- Is Situation a specialization of occurrent? → Yes
+- Is Slide deck a specialization of Product? → Yes
+- Is Slide deck a specialization of db/document? → Yes
+- Is Slide deck a specialization of db/sequence? → Yes
+- Is Smoothing a specialization of Stochastic processes? → Yes
+- Is Smoothing a specialization of combinatorics? → Yes
+- Is Smoothing a specialization of indexed family? → Yes
+- Is Smoothing a specialization of mathematical object? → Yes
+- Is Smoothing a specialization of probability? → Yes
+- Is Social network analysis a specialization of Graph network analysis? → Yes
+- Is Social network analysis a specialization of combinatorics? → Yes
+- Is Social network analysis a specialization of graph theory? → Yes
+- Is Socrates a specialization of Socratic? → Yes
+- Is Socrates a specialization of elicitation? → Yes
+- Is Socratic a specialization of elicitation? → Yes
+- Is Software Development Kit (SDK) a specialization of Application development? → Yes
+- Is Software Development Kit (SDK) a specialization of Process? → Yes
+- Is Software Development Kit (SDK) a specialization of occurrent? → Yes
+- Is Software engineer a specialization of Data science team? → Yes
+- Is SpaCy a specialization of Application development? → Yes
+- Is SpaCy a specialization of Process? → Yes
+- Is SpaCy a specialization of Programming language? → Yes
+- Is SpaCy a specialization of Python? → Yes
+- Is SpaCy a specialization of occurrent? → Yes
+- Is Spatial Reference System Identifier (SRID) a specialization of Process? → Yes
+- Is Spatial Reference System Identifier (SRID) a specialization of data? → Yes
+- Is Spatial Reference System Identifier (SRID) a specialization of data type? → Yes
+- Is Spatial Reference System Identifier (SRID) a specialization of occurrent? → Yes
+- Is Spatial Reference System Identifier (SRID) a specialization of type? → Yes
+- Is Speckit a specialization of Product? → Yes
+- Is Split data a specialization of CRISP-DM Process? → Yes
+- Is Split data a specialization of Data preparation? → Yes
+- Is Split data a specialization of machine learning projects? → Yes
+- Is Spotify story a specialization of Product? → Yes
+- Is Sprint planning a specialization of Agile approach? → Yes
+- Is Staging Area a specialization of Git? → Yes
+- Is Staging Area a specialization of version control? → Yes
+- Is Standford's design thinking process a specialization of Design thinking? → Yes
+- Is Standford's design thinking process a specialization of Process? → Yes
+- Is Standford's design thinking process a specialization of occurrent? → Yes
+- Is Stash a specialization of Git? → Yes
+- Is Stash a specialization of version control? → Yes
+- Is Statefulness a specialization of Stateful? → Yes
+- Is Stateless a specialization of Stateful? → Yes
+- Is Stochastic processes a specialization of combinatorics? → Yes
+- Is Stochastic processes a specialization of indexed family? → Yes
+- Is Stochastic processes a specialization of mathematical object? → Yes
+- Is Stochastic processes a specialization of probability? → Yes
+- Is Stretch pants approach a specialization of Process? → Yes
+- Is Stretch pants approach a specialization of occurrent? → Yes
+- Is Structured data a specialization of Process? → Yes
+- Is Structured data a specialization of data? → Yes
+- Is Structured data a specialization of data type? → Yes
+- Is Structured data a specialization of occurrent? → Yes
+- Is Structured data a specialization of type? → Yes
+- Is Subagent a specialization of AI? → Yes
+- Is Subagent a specialization of Artificial Intelligence (AI)? → Yes
+- Is Subagent a specialization of agentic System? → Yes
+- Is Subdomain a specialization of Domain? → Yes
+- Is Sum of Squared Error (SSE) a specialization of Evaluation metrics? → Yes
+- Is Sum of Squared Error (SSE) a specialization of Regression Error Metrics? → Yes
+- Is Sum of Squared Error (SSE) a specialization of evaluation? → Yes
+- Is Support Vector Machine a specialization of AI? → Yes
+- Is Support Vector Machine a specialization of Artificial Intelligence (AI)? → Yes
+- Is Support Vector Machine a specialization of machine learning? → Yes
+- Is Support Vector Machine a specialization of supervised learning? → Yes
+- Is Support vector a specialization of ML models? → Yes
+- Is Support vector a specialization of model? → Yes
+- Is Swagger a specialization of API toolset? → Yes
+- Is Swagger a specialization of Application development? → Yes
+- Is Swagger a specialization of Process? → Yes
+- Is Swagger a specialization of occurrent? → Yes
+- Is Symbolism a specialization of AI? → Yes
+- Is Symbolism a specialization of Artificial Intelligence (AI)? → Yes
+- Is TabPFN a specialization of AI? → Yes
+- Is TabPFN a specialization of Artificial Intelligence (AI)? → Yes
+- Is TabPFN a specialization of Deep learning? → Yes
+- Is TabPFN a specialization of foundation model? → Yes
+- Is TabPFN a specialization of machine learning? → Yes
+- Is TabPFN a specialization of tabular foundation model? → Yes
+- Is Target a specialization of ML models? → Yes
+- Is Target a specialization of model? → Yes
+- Is Target's pregnancy prediction a specialization of AI? → Yes
+- Is Target's pregnancy prediction a specialization of Artificial Intelligence (AI)? → Yes
+- Is Target's pregnancy prediction a specialization of ML models? → Yes
+- Is Target's pregnancy prediction a specialization of model? → Yes
+- Is Target's pregnancy prediction a specialization of prediction? → Yes
+- Is Task analysis a specialization of Design thinking? → Yes
+- Is Task analysis a specialization of Process? → Yes
+- Is Task analysis a specialization of User research? → Yes
+- Is Task analysis a specialization of occurrent? → Yes
+- Is Task flow diagram a specialization of Design thinking? → Yes
+- Is Task flow diagram a specialization of Process? → Yes
+- Is Task flow diagram a specialization of User research? → Yes
+- Is Task flow diagram a specialization of occurrent? → Yes
+- Is Technological privacy a specialization of Data privacy? → Yes
+- Is Technological privacy a specialization of Fairness? → Yes
+- Is Technology-list a specialization of Product? → Yes
+- Is Tensors a specialization of Vector space? → Yes
+- Is Test data set a specialization of CRISP-DM Process? → Yes
+- Is Test data set a specialization of Data preparation? → Yes
+- Is Test data set a specialization of Split data? → Yes
+- Is Test data set a specialization of machine learning projects? → Yes
+- Is Test solution a specialization of CRISP-DM Process? → Yes
+- Is Test solution a specialization of machine learning projects? → Yes
+- Is Text2Cypher a specialization of Hypergraph? → Yes
+- Is Text2Cypher a specialization of Infrastructure? → Yes
+- Is Text2Cypher a specialization of Knowledge base? → Yes
+- Is Text2Cypher a specialization of Memory? → Yes
+- Is Text2Cypher a specialization of Process? → Yes
+- Is Text2Cypher a specialization of Relational structure? → Yes
+- Is Text2Cypher a specialization of graph? → Yes
+- Is Text2Cypher a specialization of knowledge? → Yes
+- Is Text2Cypher a specialization of knowledge graph? → Yes
+- Is Text2Cypher a specialization of labeled directed graph? → Yes
+- Is Text2Cypher a specialization of occurrent? → Yes
+- Is Text2Cypher a specialization of structure? → Yes
+- Is The Book of Why a specialization of CRISP-DM Process? → Yes
+- Is The Book of Why a specialization of Deployment? → Yes
+- Is The Book of Why a specialization of Inference? → Yes
+- Is The Book of Why a specialization of causal inference? → Yes
+- Is The Book of Why a specialization of causal reasoning? → Yes
+- Is The Book of Why a specialization of db/process? → Yes
+- Is The Book of Why a specialization of machine learning projects? → Yes
+- Is The Shift from Models to Compound AI Systems a specialization of AI? → Yes
+- Is Threshold value a specialization of Metric? → Yes
+- Is Théorie du cerveau bayésien a specialization of Bayes' theorem? → Yes
+- Is Théorie du cerveau bayésien a specialization of Bayesian inference? → Yes
+- Is Théorie du cerveau bayésien a specialization of combinatorics? → Yes
+- Is Théorie du cerveau bayésien a specialization of probability? → Yes
+- Is Tidy Data a specialization of CRISP-DM Process? → Yes
+- Is Tidy Data a specialization of Data preparation? → Yes
+- Is Tidy Data a specialization of machine learning projects? → Yes
+- Is Tokenizer a specialization of AI? → Yes
+- Is Tokenizer a specialization of Artificial Intelligence (AI)? → Yes
+- Is Tokenizer a specialization of Natural Language Processing? → Yes
+- Is Tool Assignment Gate a specialization of AI? → Yes
+- Is Tool Assignment Gate a specialization of Artificial Intelligence (AI)? → Yes
+- Is Tool Assignment Gate a specialization of agentic System? → Yes
+- Is Tool arena a specialization of AI? → Yes
+- Is Tool arena a specialization of Artificial Intelligence (AI)? → Yes
+- Is Tool arena a specialization of agentic System? → Yes
+- Is Toolkits a specialization of AI? → Yes
+- Is Toolkits a specialization of Artificial Intelligence (AI)? → Yes
+- Is Toolkits a specialization of agentic System? → Yes
+- Is Tooth a specialization of Algorithm? → Yes
+- Is Tooth a specialization of Mathematical operation? → Yes
+- Is Tooth a specialization of Unary operation? → Yes
+- Is Tooth a specialization of combination? → Yes
+- Is Tooth a specialization of combinatorics? → Yes
+- Is Tooth a specialization of selection? → Yes
+- Is Traceable Artifacts a specialization of version control? → Yes
+- Is Train loss a specialization of ML models? → Yes
+- Is Train loss a specialization of model? → Yes
+- Is Trainer a specialization of Application development? → Yes
+- Is Trainer a specialization of Hugging Face? → Yes
+- Is Trainer a specialization of Process? → Yes
+- Is Trainer a specialization of Programming language? → Yes
+- Is Trainer a specialization of Python? → Yes
+- Is Trainer a specialization of occurrent? → Yes
+- Is Training pipeline a specialization of Pipelines? → Yes
+- Is TrainingAguments a specialization of Application development? → Yes
+- Is TrainingAguments a specialization of Hugging Face? → Yes
+- Is TrainingAguments a specialization of Process? → Yes
+- Is TrainingAguments a specialization of Programming language? → Yes
+- Is TrainingAguments a specialization of Python? → Yes
+- Is TrainingAguments a specialization of occurrent? → Yes
+- Is Transfer learning a specialization of AI? → Yes
+- Is Transfer learning a specialization of Artificial Intelligence (AI)? → Yes
+- Is Transfer learning a specialization of Deep learning? → Yes
+- Is Transfer learning a specialization of machine learning? → Yes
+- Is Transformers a specialization of AI? → Yes
+- Is Transformers a specialization of Artificial Intelligence (AI)? → Yes
+- Is Transformers a specialization of Deep learning? → Yes
+- Is Transformers a specialization of machine learning? → Yes
+- Is Transparency a specialization of Fairness? → Yes
+- Is Tree depth a specialization of AI? → Yes
+- Is Tree depth a specialization of Artificial Intelligence (AI)? → Yes
+- Is Tree depth a specialization of Decision tree? → Yes
+- Is Tree depth a specialization of machine learning? → Yes
+- Is Tree depth a specialization of supervised learning? → Yes
+- Is True Negative (TN) a specialization of Evaluation metrics? → Yes
+- Is True Negative (TN) a specialization of confusion matrix? → Yes
+- Is True Negative (TN) a specialization of evaluation? → Yes
+- Is True Positive (TP) a specialization of Evaluation metrics? → Yes
+- Is True Positive (TP) a specialization of confusion matrix? → Yes
+- Is True Positive (TP) a specialization of evaluation? → Yes
+- Is True Positive Rate (Recall) a specialization of Evaluation metrics? → Yes
+- Is True Positive Rate (Recall) a specialization of evaluation? → Yes
+- Is UX Problem Statement a specialization of Design thinking? → Yes
+- Is UX Problem Statement a specialization of Process? → Yes
+- Is UX Problem Statement a specialization of User research? → Yes
+- Is UX Problem Statement a specialization of occurrent? → Yes
+- Is Unary operation a specialization of Mathematical operation? → Yes
+- Is Unary operation a specialization of combinatorics? → Yes
+- Is Underfitting a specialization of CRISP-DM Process? → Yes
+- Is Underfitting a specialization of machine learning projects? → Yes
+- Is Underfitting a specialization of model fit? → Yes
+- Is Underfitting a specialization of modeling? → Yes
+- Is Unit tests a specialization of Test? → Yes
+- Is Unsloth a specialization of CRISP-DM Process? → Yes
+- Is Unsloth a specialization of Fine-tuning? → Yes
+- Is Unsloth a specialization of machine learning projects? → Yes
+- Is Unsloth a specialization of model tuning? → Yes
+- Is Unsloth a specialization of modeling? → Yes
+- Is Unstructured data a specialization of Process? → Yes
+- Is Unstructured data a specialization of data? → Yes
+- Is Unstructured data a specialization of data type? → Yes
+- Is Unstructured data a specialization of occurrent? → Yes
+- Is Unstructured data a specialization of type? → Yes
+- Is Unsupervised Learning a specialization of AI? → Yes
+- Is Unsupervised Learning a specialization of Artificial Intelligence (AI)? → Yes
+- Is Unsupervised Learning a specialization of machine learning? → Yes
+- Is Updating a specialization of Process? → Yes
+- Is Updating a specialization of occurrent? → Yes
+- Is User inputs a specialization of Design thinking? → Yes
+- Is User inputs a specialization of Process? → Yes
+- Is User inputs a specialization of User research? → Yes
+- Is User inputs a specialization of occurrent? → Yes
+- Is User outputs a specialization of Design thinking? → Yes
+- Is User outputs a specialization of Process? → Yes
+- Is User outputs a specialization of User research? → Yes
+- Is User outputs a specialization of occurrent? → Yes
+- Is User research a specialization of Design thinking? → Yes
+- Is User research a specialization of Process? → Yes
+- Is User research a specialization of occurrent? → Yes
+- Is User support a specialization of Design thinking? → Yes
+- Is User support a specialization of Process? → Yes
+- Is User support a specialization of User research? → Yes
+- Is User support a specialization of occurrent? → Yes
+- Is User tests a specialization of Design thinking? → Yes
+- Is User tests a specialization of Process? → Yes
+- Is User tests a specialization of User research? → Yes
+- Is User tests a specialization of occurrent? → Yes
+- Is User training a specialization of Design thinking? → Yes
+- Is User training a specialization of Process? → Yes
+- Is User training a specialization of User research? → Yes
+- Is User training a specialization of occurrent? → Yes
+- Is VRAM a specialization of Infrastructure? → Yes
+- Is VRAM a specialization of structure? → Yes
+- Is Validate data a specialization of CRISP-DM Process? → Yes
+- Is Validate data a specialization of Data preparation? → Yes
+- Is Validate data a specialization of data understanding? → Yes
+- Is Validate data a specialization of machine learning projects? → Yes
+- Is Virtual Environment a specialization of Application development? → Yes
+- Is Virtual Environment a specialization of Process? → Yes
+- Is Virtual Environment a specialization of Programming language? → Yes
+- Is Virtual Environment a specialization of Python? → Yes
+- Is Virtual Environment a specialization of occurrent? → Yes
+- Is Virtualization a specialization of Infrastructure? → Yes
+- Is Virtualization a specialization of structure? → Yes
+- Is Visibility a specialization of Process? → Yes
+- Is Visibility a specialization of occurrent? → Yes
+- Is Visual Basic Application a specialization of Application development? → Yes
+- Is Visual Basic Application a specialization of Process? → Yes
+- Is Visual Basic Application a specialization of Programming language? → Yes
+- Is Visual Basic Application a specialization of occurrent? → Yes
+- Is Web worker a specialization of Application development? → Yes
+- Is Web worker a specialization of Process? → Yes
+- Is Web worker a specialization of occurrent? → Yes
+- Is Weights a specialization of AI? → Yes
+- Is Weights a specialization of Artificial Intelligence (AI)? → Yes
+- Is Weights a specialization of Deep learning? → Yes
+- Is Weights a specialization of artificial neural network? → Yes
+- Is Weights a specialization of machine learning? → Yes
+- Is Well-known text a specialization of Process? → Yes
+- Is Well-known text a specialization of Spatial Reference System Identifier (SRID)? → Yes
+- Is Well-known text a specialization of data? → Yes
+- Is Well-known text a specialization of data type? → Yes
+- Is Well-known text a specialization of occurrent? → Yes
+- Is Well-known text a specialization of type? → Yes
+- Is Wizard of Oz prototyping a specialization of Prototyping? → Yes
+- Is Word embeddings a specialization of AI? → Yes
+- Is Word embeddings a specialization of Artificial Intelligence (AI)? → Yes
+- Is Word embeddings a specialization of Embeddings? → Yes
+- Is Word embeddings a specialization of Natural Language Processing? → Yes
+- Is Working directory a specialization of Git? → Yes
+- Is Working directory a specialization of version control? → Yes
+- Is Wrapper methods a specialization of CRISP-DM Process? → Yes
+- Is Wrapper methods a specialization of Data preparation? → Yes
+- Is Wrapper methods a specialization of feature engineering? → Yes
+- Is Wrapper methods a specialization of feature selection? → Yes
+- Is Wrapper methods a specialization of machine learning projects? → Yes
+- Is XHTML a specialization of Application development? → Yes
+- Is XHTML a specialization of Mark-up language? → Yes
+- Is XHTML a specialization of Process? → Yes
+- Is XHTML a specialization of Programming language? → Yes
+- Is XHTML a specialization of occurrent? → Yes
+- Is XML a specialization of Application development? → Yes
+- Is XML a specialization of Mark-up language? → Yes
+- Is XML a specialization of Process? → Yes
+- Is XML a specialization of Programming language? → Yes
+- Is XML a specialization of occurrent? → Yes
+- Is Z-Score normalization a specialization of CRISP-DM Process? → Yes
+- Is Z-Score normalization a specialization of Data preparation? → Yes
+- Is Z-Score normalization a specialization of machine learning projects? → Yes
+- Is _.claude a specialization of Application development? → Yes
+- Is _.claude a specialization of Process? → Yes
+- Is _.claude a specialization of occurrent? → Yes
+- Is _.claude.json.mcpServers a specialization of Application development? → Yes
+- Is _.claude.json.mcpServers a specialization of Process? → Yes
+- Is _.claude.json.mcpServers a specialization of occurrent? → Yes
+- Is abstract entity a specialization of Entity? → Yes
+- Is abstract entity a specialization of Ontology? → Yes
+- Is abstract entity a specialization of conceptual system? → Yes
+- Is abstract entity a specialization of knowledge organization system? → Yes
+- Is abstract entity a specialization of organizing principles? → Yes
+- Is abuse of majority a specialization of Abuse of rights? → Yes
+- Is abuse of majority a specialization of Shareholders agreement? → Yes
+- Is abuse of majority a specialization of agreement? → Yes
+- Is abuse of majority a specialization of contract? → Yes
+- Is abuse of majority a specialization of intellectual work? → Yes
+- Is abuse of majority a specialization of legal transaction? → Yes
+- Is abuse of majority a specialization of promise? → Yes
+- Is accountable AI a specialization of Fairness? → Yes
+- Is accuracy a specialization of Evaluation metrics? → Yes
+- Is accuracy a specialization of evaluation? → Yes
+- Is action module a specialization of AI? → Yes
+- Is action module a specialization of Artificial Intelligence (AI)? → Yes
+- Is action module a specialization of agentic System? → Yes
+- Is activatesShifter a specialization of trigger? → Yes
+- Is active cell a specialization of application software? → Yes
+- Is active cell a specialization of software resource? → Yes
+- Is active cell a specialization of spreadsheet? → Yes
+- Is active cell a specialization of table cell? → Yes
+- Is adar-Adamic index a specialization of Hypergraph? → Yes
+- Is adar-Adamic index a specialization of Infrastructure? → Yes
+- Is adar-Adamic index a specialization of Knowledge base? → Yes
+- Is adar-Adamic index a specialization of Memory? → Yes
+- Is adar-Adamic index a specialization of Process? → Yes
+- Is adar-Adamic index a specialization of Relational structure? → Yes
+- Is adar-Adamic index a specialization of graph? → Yes
+- Is adar-Adamic index a specialization of knowledge? → Yes
+- Is adar-Adamic index a specialization of knowledge graph? → Yes
+- Is adar-Adamic index a specialization of labeled directed graph? → Yes
+- Is adar-Adamic index a specialization of occurrent? → Yes
+- Is adar-Adamic index a specialization of structure? → Yes
+- Is add a specialization of Git? → Yes
+- Is add a specialization of version control? → Yes
+- Is adjacency matrix a specialization of combinatorics? → Yes
+- Is adjacency matrix a specialization of graph theory? → Yes
+- Is agency a specialization of AI? → Yes
+- Is agency a specialization of Artificial Intelligence (AI)? → Yes
+- Is agency a specialization of agentic System? → Yes
+- Is agent harness a specialization of AI? → Yes
+- Is agent harness a specialization of Artificial Intelligence (AI)? → Yes
+- Is agent harness a specialization of agent? → Yes
+- Is agent harness a specialization of agentic System? → Yes
+- Is agent identity a specialization of AI? → Yes
+- Is agent identity a specialization of Artificial Intelligence (AI)? → Yes
+- Is agent identity a specialization of agentic System? → Yes
+- Is agent observability a specialization of agent? → Yes
+- Is agent role type a specialization of AI? → Yes
+- Is agent role type a specialization of Artificial Intelligence (AI)? → Yes
+- Is agent role type a specialization of agentic System? → Yes
+- Is agentOps a specialization of agent? → Yes
+- Is agentOps a specialization of agent observability? → Yes
+- Is agentic System a specialization of AI? → Yes
+- Is agentic System a specialization of Artificial Intelligence (AI)? → Yes
+- Is agents.md a specialization of Process? → Yes
+- Is agents.md a specialization of Situation? → Yes
+- Is agents.md a specialization of context? → Yes
+- Is agents.md a specialization of occurrent? → Yes
+- Is alias a specialization of Hypergraph? → Yes
+- Is alias a specialization of Infrastructure? → Yes
+- Is alias a specialization of Knowledge base? → Yes
+- Is alias a specialization of Memory? → Yes
+- Is alias a specialization of Process? → Yes
+- Is alias a specialization of Relational structure? → Yes
+- Is alias a specialization of graph? → Yes
+- Is alias a specialization of knowledge? → Yes
+- Is alias a specialization of knowledge graph? → Yes
+- Is alias a specialization of labeled directed graph? → Yes
+- Is alias a specialization of occurrent? → Yes
+- Is alias a specialization of structure? → Yes
+- Is application programming interface a specialization of Application development? → Yes
+- Is application programming interface a specialization of Infrastructure? → Yes
+- Is application programming interface a specialization of Process? → Yes
+- Is application programming interface a specialization of communication protocol? → Yes
+- Is application programming interface a specialization of computer interface? → Yes
+- Is application programming interface a specialization of computing platform? → Yes
+- Is application programming interface a specialization of interface? → Yes
+- Is application programming interface a specialization of occurrent? → Yes
+- Is application programming interface a specialization of structure? → Yes
+- Is artificial neural network a specialization of AI? → Yes
+- Is artificial neural network a specialization of Artificial Intelligence (AI)? → Yes
+- Is artificial neural network a specialization of Deep learning? → Yes
+- Is artificial neural network a specialization of machine learning? → Yes
+- Is artificial neuron a specialization of AI? → Yes
+- Is artificial neuron a specialization of Artificial Intelligence (AI)? → Yes
+- Is artificial neuron a specialization of Deep learning? → Yes
+- Is artificial neuron a specialization of artificial neural network? → Yes
+- Is artificial neuron a specialization of machine learning? → Yes
+- Is attention weights a specialization of AI? → Yes
+- Is attention weights a specialization of Artificial Intelligence (AI)? → Yes
+- Is attention weights a specialization of Deep learning? → Yes
+- Is attention weights a specialization of Transformers? → Yes
+- Is attention weights a specialization of machine learning? → Yes
+- Is augmentation a specialization of Data augmentation? → Yes
+- Is augmentation a specialization of Process? → Yes
+- Is augmentation a specialization of data? → Yes
+- Is augmentation a specialization of occurrent? → Yes
+- Is authentication protocol a specialization of Infrastructure? → Yes
+- Is authentication protocol a specialization of structure? → Yes
+- Is autoML a specialization of AI? → Yes
+- Is autoML a specialization of Artificial Intelligence (AI)? → Yes
+- Is autoML a specialization of machine learning? → Yes
+- Is autoencoder a specialization of AI? → Yes
+- Is autoencoder a specialization of Artificial Intelligence (AI)? → Yes
+- Is autoencoder a specialization of Deep learning? → Yes
+- Is autoencoder a specialization of artificial neural network? → Yes
+- Is autoencoder a specialization of machine learning? → Yes
+- Is automation a specialization of ICT? → Yes
+- Is automation a specialization of Process? → Yes
+- Is automation a specialization of activity? → Yes
+- Is automation a specialization of information and communications technology? → Yes
+- Is automation a specialization of occurrent? → Yes
+- Is automation framework a specialization of ICT? → Yes
+- Is automation framework a specialization of Process? → Yes
+- Is automation framework a specialization of activity? → Yes
+- Is automation framework a specialization of automation? → Yes
+- Is automation framework a specialization of information and communications technology? → Yes
+- Is automation framework a specialization of occurrent? → Yes
+- Is autoregressive language models a specialization of AI? → Yes
+- Is autoregressive language models a specialization of Artificial Intelligence (AI)? → Yes
+- Is autoregressive language models a specialization of Language modeling? → Yes
+- Is autoregressive language models a specialization of Natural Language Processing? → Yes
+- Is backward chaining a specialization of CRISP-DM Process? → Yes
+- Is backward chaining a specialization of Deployment? → Yes
+- Is backward chaining a specialization of Inference? → Yes
+- Is backward chaining a specialization of db/inference? → Yes
+- Is backward chaining a specialization of db/process? → Yes
+- Is backward chaining a specialization of machine learning projects? → Yes
+- Is bespoke a specialization of Application development? → Yes
+- Is bespoke a specialization of Documentation? → Yes
+- Is bespoke a specialization of Process? → Yes
+- Is bespoke a specialization of Provenance? → Yes
+- Is bespoke a specialization of depicting object? → Yes
+- Is bespoke a specialization of information? → Yes
+- Is bespoke a specialization of narrative? → Yes
+- Is bespoke a specialization of occurrent? → Yes
+- Is best-classification-rate AI detection system a specialization of AI? → Yes
+- Is best-classification-rate AI detection system a specialization of Artificial Intelligence (AI)? → Yes
+- Is best-classification-rate AI detection system a specialization of ML system? → Yes
+- Is best-classification-rate AI detection system a specialization of machine learning? → Yes
+- Is betweenness centrality a specialization of Algorithm? → Yes
+- Is betweenness centrality a specialization of Graph algorithm? → Yes
+- Is betweenness centrality a specialization of Metric? → Yes
+- Is betweenness centrality a specialization of centrality? → Yes
+- Is bias a specialization of Fairness? → Yes
+- Is bijectivity a specialization of Mapping? → Yes
+- Is bijectivity a specialization of Process? → Yes
+- Is bijectivity a specialization of db/injection? → Yes
+- Is bijectivity a specialization of db/surjective function? → Yes
+- Is bijectivity a specialization of occurrent? → Yes
+- Is biological neural network a specialization of AI? → Yes
+- Is biological neural network a specialization of Artificial Intelligence (AI)? → Yes
+- Is biological neural network a specialization of Deep learning? → Yes
+- Is biological neural network a specialization of artificial neural network? → Yes
+- Is biological neural network a specialization of machine learning? → Yes
+- Is bipartite graph a specialization of Hypergraph? → Yes
+- Is bipartite graph a specialization of Relational structure? → Yes
+- Is bipartite graph a specialization of graph? → Yes
+- Is blueprint a specialization of document? → Yes
+- Is blueprint a specialization of print? → Yes
+- Is boilerplate a specialization of Application development? → Yes
+- Is boilerplate a specialization of Documentation? → Yes
+- Is boilerplate a specialization of Process? → Yes
+- Is boilerplate a specialization of Provenance? → Yes
+- Is boilerplate a specialization of depicting object? → Yes
+- Is boilerplate a specialization of information? → Yes
+- Is boilerplate a specialization of narrative? → Yes
+- Is boilerplate a specialization of occurrent? → Yes
+- Is branch -vv a specialization of Git? → Yes
+- Is branch -vv a specialization of version control? → Yes
+- Is break error a specialization of Application development? → Yes
+- Is break error a specialization of Process? → Yes
+- Is break error a specialization of control flow? → Yes
+- Is break error a specialization of exception handling? → Yes
+- Is break error a specialization of occurrent? → Yes
+- Is brief mission a specialization of Product? → Yes
+- Is bundle a specialization of Application development? → Yes
+- Is bundle a specialization of Process? → Yes
+- Is bundle a specialization of Product? → Yes
+- Is bundle a specialization of occurrent? → Yes
+- Is bundle a specialization of product packaging? → Yes
+- Is bundle a specialization of transport unit? → Yes
+- Is business impact a specialization of Metric? → Yes
+- Is business understanding a specialization of CRISP-DM Process? → Yes
+- Is business understanding a specialization of machine learning projects? → Yes
+- Is cadence a specialization of Process? → Yes
+- Is cadence a specialization of occurrent? → Yes
+- Is calculated-fields a specialization of application software? → Yes
+- Is calculated-fields a specialization of spreadsheet? → Yes
+- Is callback a specialization of Application development? → Yes
+- Is callback a specialization of Process? → Yes
+- Is callback a specialization of occurrent? → Yes
+- Is camemBERT a specialization of AI? → Yes
+- Is camemBERT a specialization of Artificial Intelligence (AI)? → Yes
+- Is camemBERT a specialization of BERT? → Yes
+- Is camemBERT a specialization of Language modeling? → Yes
+- Is camemBERT a specialization of Natural Language Processing? → Yes
+- Is camemBERT a specialization of masked language models? → Yes
+- Is causal inference a specialization of CRISP-DM Process? → Yes
+- Is causal inference a specialization of Deployment? → Yes
+- Is causal inference a specialization of Inference? → Yes
+- Is causal inference a specialization of causal reasoning? → Yes
+- Is causal inference a specialization of db/process? → Yes
+- Is causal inference a specialization of machine learning projects? → Yes
+- Is celery a specialization of Application development? → Yes
+- Is celery a specialization of Backend? → Yes
+- Is celery a specialization of Process? → Yes
+- Is celery a specialization of occurrent? → Yes
+- Is central processing unit a specialization of Infrastructure? → Yes
+- Is central processing unit a specialization of structure? → Yes
+- Is centrality a specialization of Algorithm? → Yes
+- Is centrality a specialization of Graph algorithm? → Yes
+- Is centrality a specialization of Metric? → Yes
+- Is chain-of-thought a specialization of AI? → Yes
+- Is chain-of-thought a specialization of AI prompt? → Yes
+- Is chain-of-thought a specialization of Artificial Intelligence (AI)? → Yes
+- Is chain-of-thought a specialization of Language modeling? → Yes
+- Is chain-of-thought a specialization of Large Language Model? → Yes
+- Is chain-of-thought a specialization of Natural Language Processing? → Yes
+- Is chain-of-thought a specialization of command? → Yes
+- Is chain-of-thought a specialization of instruction? → Yes
+- Is chain-of-thought a specialization of task? → Yes
+- Is chainrings a specialization of Algorithm? → Yes
+- Is chainrings a specialization of Mathematical operation? → Yes
+- Is chainrings a specialization of Unary operation? → Yes
+- Is chainrings a specialization of combination? → Yes
+- Is chainrings a specialization of combinatorics? → Yes
+- Is chainrings a specialization of selection? → Yes
+- Is champion-challenger testing a specialization of CRISP-DM Process? → Yes
+- Is champion-challenger testing a specialization of Model selection? → Yes
+- Is champion-challenger testing a specialization of machine learning projects? → Yes
+- Is champion-challenger testing a specialization of modeling? → Yes
+- Is change management a specialization of Process? → Yes
+- Is change management a specialization of occurrent? → Yes
+- Is chat engines a specialization of AI? → Yes
+- Is chat engines a specialization of Artificial Intelligence (AI)? → Yes
+- Is chat engines a specialization of Language modeling? → Yes
+- Is chat engines a specialization of Large Language Model? → Yes
+- Is chat engines a specialization of Natural Language Processing? → Yes
+- Is chat modes a specialization of AI? → Yes
+- Is chat modes a specialization of Artificial Intelligence (AI)? → Yes
+- Is chat modes a specialization of Language modeling? → Yes
+- Is chat modes a specialization of Large Language Model? → Yes
+- Is chat modes a specialization of Natural Language Processing? → Yes
+- Is checkout a specialization of Git? → Yes
+- Is checkout a specialization of version control? → Yes
+- Is checkout -b a specialization of Git? → Yes
+- Is checkout -b a specialization of version control? → Yes
+- Is clarifeye a specialization of conceptual system? → Yes
+- Is clarifeye a specialization of knowledge organization system? → Yes
+- Is class imbalance a specialization of Data quality? → Yes
+- Is class imbalance a specialization of Process? → Yes
+- Is class imbalance a specialization of data? → Yes
+- Is class imbalance a specialization of occurrent? → Yes
+- Is classification a specialization of AI? → Yes
+- Is classification a specialization of Artificial Intelligence (AI)? → Yes
+- Is classification a specialization of conceptual system? → Yes
+- Is classification a specialization of knowledge organization system? → Yes
+- Is classification a specialization of organizing principles? → Yes
+- Is classification a specialization of taxonomy? → Yes
+- Is classification scheme a specialization of conceptual system? → Yes
+- Is classification scheme a specialization of knowledge organization system? → Yes
+- Is classification scheme a specialization of scheme? → Yes
+- Is claude code a specialization of AI? → Yes
+- Is claude code a specialization of Artificial Intelligence (AI)? → Yes
+- Is claude code a specialization of agentic System? → Yes
+- Is claude cowork a specialization of AI? → Yes
+- Is claude managed agents a specialization of AI? → Yes
+- Is claude managed agents a specialization of Artificial Intelligence (AI)? → Yes
+- Is claude managed agents a specialization of agentic System? → Yes
+- Is clause a specialization of text? → Yes
+- Is clause classification heuristic a specialization of Algorithm? → Yes
+- Is clause classification heuristic a specialization of Application development? → Yes
+- Is clause classification heuristic a specialization of Dialogue? → Yes
+- Is clause classification heuristic a specialization of Documentation? → Yes
+- Is clause classification heuristic a specialization of Process? → Yes
+- Is clause classification heuristic a specialization of Provenance? → Yes
+- Is clause classification heuristic a specialization of clause? → Yes
+- Is clause classification heuristic a specialization of db/interpersonal communication? → Yes
+- Is clause classification heuristic a specialization of db/oral media? → Yes
+- Is clause classification heuristic a specialization of depicting object? → Yes
+- Is clause classification heuristic a specialization of elicitation? → Yes
+- Is clause classification heuristic a specialization of heuristic? → Yes
+- Is clause classification heuristic a specialization of information? → Yes
+- Is clause classification heuristic a specialization of method? → Yes
+- Is clause classification heuristic a specialization of narrative? → Yes
+- Is clause classification heuristic a specialization of occurrent? → Yes
+- Is clause classification heuristic a specialization of text? → Yes
+- Is closeness centrality a specialization of Algorithm? → Yes
+- Is closeness centrality a specialization of Graph algorithm? → Yes
+- Is closeness centrality a specialization of Metric? → Yes
+- Is closeness centrality a specialization of centrality? → Yes
+- Is cloud computing a specialization of Infrastructure? → Yes
+- Is cloud computing a specialization of structure? → Yes
+- Is clustering a specialization of AI? → Yes
+- Is clustering a specialization of Artificial Intelligence (AI)? → Yes
+- Is clustering a specialization of Unsupervised Learning? → Yes
+- Is clustering a specialization of machine learning? → Yes
+- Is coefficient of determination a specialization of Evaluation metrics? → Yes
+- Is coefficient of determination a specialization of evaluation? → Yes
+- Is cognitive bias a specialization of Fairness? → Yes
+- Is cognitive bias a specialization of bias? → Yes
+- Is cold start problem a specialization of AI? → Yes
+- Is cold start problem a specialization of Artificial Intelligence (AI)? → Yes
+- Is cold start problem a specialization of ML system? → Yes
+- Is cold start problem a specialization of machine learning? → Yes
+- Is collaboration tools a specialization of Application development? → Yes
+- Is collaboration tools a specialization of Process? → Yes
+- Is collaboration tools a specialization of occurrent? → Yes
+- Is collaborators a specialization of Process? → Yes
+- Is collaborators a specialization of occurrent? → Yes
+- Is collecting data a specialization of Process? → Yes
+- Is collecting data a specialization of data? → Yes
+- Is collecting data a specialization of occurrent? → Yes
+- Is combination a specialization of Algorithm? → Yes
+- Is combination a specialization of Mathematical operation? → Yes
+- Is combination a specialization of Unary operation? → Yes
+- Is combination a specialization of combinatorics? → Yes
+- Is combination a specialization of selection? → Yes
+- Is comet a specialization of CRISP-DM Process? → Yes
+- Is comet a specialization of LLM output evaluation? → Yes
+- Is comet a specialization of machine learning projects? → Yes
+- Is comet a specialization of model evaluation? → Yes
+- Is comet a specialization of modeling? → Yes
+- Is commit a specialization of Git? → Yes
+- Is commit a specialization of version control? → Yes
+- Is commit amend a specialization of Git? → Yes
+- Is commit amend a specialization of version control? → Yes
+- Is communication protocol a specialization of Infrastructure? → Yes
+- Is communication protocol a specialization of structure? → Yes
+- Is community detection a specialization of Algorithm? → Yes
+- Is community detection a specialization of Graph algorithm? → Yes
+- Is comparag agent a specialization of AI? → Yes
+- Is comparag agent a specialization of Artificial Intelligence (AI)? → Yes
+- Is comparag agent a specialization of agentic System? → Yes
+- Is compilatio IA a specialization of AI? → Yes
+- Is complete graph a specialization of combinatorics? → Yes
+- Is complete graph a specialization of graph theory? → Yes
+- Is completeness a specialization of Data quality? → Yes
+- Is completeness a specialization of Process? → Yes
+- Is completeness a specialization of data? → Yes
+- Is completeness a specialization of mathematical property? → Yes
+- Is completeness a specialization of occurrent? → Yes
+- Is compliant privacy policy a specialization of agreement? → Yes
+- Is compliant privacy policy a specialization of contract? → Yes
+- Is compliant privacy policy a specialization of intellectual work? → Yes
+- Is compliant privacy policy a specialization of legal transaction? → Yes
+- Is compliant privacy policy a specialization of promise? → Yes
+- Is compound AI system a specialization of AI? → Yes
+- Is compound AI system a specialization of Artificial Intelligence (AI)? → Yes
+- Is computer interface a specialization of interface? → Yes
+- Is computer vision a specialization of AI? → Yes
+- Is computer vision a specialization of Artificial Intelligence (AI)? → Yes
+- Is concept a specialization of conceptual system? → Yes
+- Is concept a specialization of knowledge organization system? → Yes
+- Is concept drift a specialization of ML system monitoring? → Yes
+- Is concept drift a specialization of Model maintenance? → Yes
+- Is conceptual model a specialization of CRISP-DM Process? → Yes
+- Is conceptual model a specialization of conceptual system? → Yes
+- Is conceptual model a specialization of knowledge organization system? → Yes
+- Is conceptual model a specialization of machine learning projects? → Yes
+- Is conceptual model a specialization of modeling? → Yes
+- Is condense_plus_context a specialization of AI? → Yes
+- Is condense_plus_context a specialization of Artificial Intelligence (AI)? → Yes
+- Is condense_plus_context a specialization of Language modeling? → Yes
+- Is condense_plus_context a specialization of Large Language Model? → Yes
+- Is condense_plus_context a specialization of Natural Language Processing? → Yes
+- Is condense_plus_context a specialization of RAG (Retrieval-Augmented Generation)? → Yes
+- Is condense_question a specialization of AI? → Yes
+- Is condense_question a specialization of Artificial Intelligence (AI)? → Yes
+- Is condense_question a specialization of Language modeling? → Yes
+- Is condense_question a specialization of Large Language Model? → Yes
+- Is condense_question a specialization of Natural Language Processing? → Yes
+- Is condense_question a specialization of RAG (Retrieval-Augmented Generation)? → Yes
+- Is conditional-formatting a specialization of application software? → Yes
+- Is conditional-formatting a specialization of spreadsheet? → Yes
+- Is confidence interval a specialization of combinatorics? → Yes
+- Is confidence interval a specialization of probability? → Yes
+- Is confidence presentation a specialization of communicate uncertainty? → Yes
+- Is confusion matrix a specialization of Evaluation metrics? → Yes
+- Is confusion matrix a specialization of evaluation? → Yes
+- Is connexionism a specialization of AI? → Yes
+- Is connexionism a specialization of Artificial Intelligence (AI)? → Yes
+- Is connotation a specialization of db/association? → Yes
+- Is connotation a specialization of db/interdisciplinary program? → Yes
+- Is connotation a specialization of semiotics? → Yes
+- Is constancy a specialization of Stochastic processes? → Yes
+- Is constancy a specialization of combinatorics? → Yes
+- Is constancy a specialization of indexed family? → Yes
+- Is constancy a specialization of mathematical object? → Yes
+- Is constancy a specialization of probability? → Yes
+- Is constancy a specialization of robustness? → Yes
+- Is constraint a specialization of condition? → Yes
+- Is constraint a specialization of limitation? → Yes
+- Is container a specialization of Infrastructure? → Yes
+- Is container a specialization of Virtualization? → Yes
+- Is container a specialization of containerization (computing)? → Yes
+- Is container a specialization of structure? → Yes
+- Is containerization (computing) a specialization of Infrastructure? → Yes
+- Is containerization (computing) a specialization of Virtualization? → Yes
+- Is containerization (computing) a specialization of structure? → Yes
+- Is context a specialization of Process? → Yes
+- Is context a specialization of Situation? → Yes
+- Is context a specialization of occurrent? → Yes
+- Is context graph a specialization of Hypergraph? → Yes
+- Is context graph a specialization of Infrastructure? → Yes
+- Is context graph a specialization of Knowledge base? → Yes
+- Is context graph a specialization of Memory? → Yes
+- Is context graph a specialization of Process? → Yes
+- Is context graph a specialization of Relational structure? → Yes
+- Is context graph a specialization of graph? → Yes
+- Is context graph a specialization of knowledge? → Yes
+- Is context graph a specialization of knowledge graph? → Yes
+- Is context graph a specialization of labeled directed graph? → Yes
+- Is context graph a specialization of occurrent? → Yes
+- Is context graph a specialization of structure? → Yes
+- Is context mode a specialization of AI? → Yes
+- Is context mode a specialization of Artificial Intelligence (AI)? → Yes
+- Is context mode a specialization of agentic System? → Yes
+- Is continuity a specialization of Stochastic processes? → Yes
+- Is continuity a specialization of combinatorics? → Yes
+- Is continuity a specialization of indexed family? → Yes
+- Is continuity a specialization of mathematical object? → Yes
+- Is continuity a specialization of probability? → Yes
+- Is continuous learning a specialization of Process? → Yes
+- Is continuous learning a specialization of occurrent? → Yes
+- Is continuum data a specialization of Process? → Yes
+- Is continuum data a specialization of data? → Yes
+- Is continuum data a specialization of data type? → Yes
+- Is continuum data a specialization of occurrent? → Yes
+- Is continuum data a specialization of type? → Yes
+- Is contract a specialization of agreement? → Yes
+- Is contract a specialization of intellectual work? → Yes
+- Is contract a specialization of legal transaction? → Yes
+- Is contract a specialization of promise? → Yes
+- Is control flow a specialization of Application development? → Yes
+- Is control flow a specialization of Process? → Yes
+- Is control flow a specialization of occurrent? → Yes
+- Is control theory a specialization of automatic control? → Yes
+- Is controlled vocabulary a specialization of conceptual system? → Yes
+- Is controlled vocabulary a specialization of data set? → Yes
+- Is controlled vocabulary a specialization of knowledge organization system? → Yes
+- Is controlled vocabulary a specialization of lexicographic work? → Yes
+- Is controlled vocabulary a specialization of vocabulary? → Yes
+- Is crawl-walk-run a specialization of Process? → Yes
+- Is crawl-walk-run a specialization of occurrent? → Yes
+- Is creative work a specialization of intellectual work? → Yes
+- Is cross-sheet source references a specialization of application software? → Yes
+- Is cross-sheet source references a specialization of spreadsheet? → Yes
+- Is customization a specialization of Product? → Yes
+- Is dangerousness a specialization of possibility? → Yes
+- Is dangerousness a specialization of risk? → Yes
+- Is data a specialization of Process? → Yes
+- Is data a specialization of occurrent? → Yes
+- Is data object a specialization of Hypergraph? → Yes
+- Is data object a specialization of Infrastructure? → Yes
+- Is data object a specialization of Knowledge base? → Yes
+- Is data object a specialization of Memory? → Yes
+- Is data object a specialization of Object? → Yes
+- Is data object a specialization of Process? → Yes
+- Is data object a specialization of Relational structure? → Yes
+- Is data object a specialization of data? → Yes
+- Is data object a specialization of graph? → Yes
+- Is data object a specialization of knowledge? → Yes
+- Is data object a specialization of knowledge graph? → Yes
+- Is data object a specialization of labeled directed graph? → Yes
+- Is data object a specialization of occurrent? → Yes
+- Is data object a specialization of structure? → Yes
+- Is data type a specialization of Process? → Yes
+- Is data type a specialization of data? → Yes
+- Is data type a specialization of occurrent? → Yes
+- Is data type a specialization of type? → Yes
+- Is data understanding a specialization of CRISP-DM Process? → Yes
+- Is data understanding a specialization of machine learning projects? → Yes
+- Is data visualization a specialization of representation of data? → Yes
+- Is data visualization a specialization of visualization? → Yes
+- Is de facto standard a specialization of de facto? → Yes
+- Is de facto standard a specialization of technical standard? → Yes
+- Is decision making a specialization of Decision support? → Yes
+- Is default a specialization of Application development? → Yes
+- Is default a specialization of Process? → Yes
+- Is default a specialization of db/condition? → Yes
+- Is default a specialization of occurrent? → Yes
+- Is define success a specialization of CRISP-DM Process? → Yes
+- Is define success a specialization of business understanding? → Yes
+- Is define success a specialization of machine learning projects? → Yes
+- Is degree a specialization of combinatorics? → Yes
+- Is degree a specialization of graph theory? → Yes
+- Is design a specialization of activity? → Yes
+- Is design a specialization of planned process? → Yes
+- Is detection tool performance a specialization of evaluation? → Yes
+- Is discourse topic a specialization of db/linguistics? → Yes
+- Is discourse topic a specialization of semantics? → Yes
+- Is economic taxonomy a specialization of conceptual system? → Yes
+- Is economic taxonomy a specialization of knowledge organization system? → Yes
+- Is economic taxonomy a specialization of organizing principles? → Yes
+- Is economic taxonomy a specialization of specialised classification scheme? → Yes
+- Is economic taxonomy a specialization of taxonomy? → Yes
+- Is elicitation interview a specialization of elicitation? → Yes
+- Is elicitation interview a specialization of research interview? → Yes
+- Is embedding a specialization of AI? → Yes
+- Is embedding a specialization of Artificial Intelligence (AI)? → Yes
+- Is embedding a specialization of Embeddings? → Yes
+- Is embedding a specialization of Natural Language Processing? → Yes
+- Is excel a specialization of application software? → Yes
+- Is excel a specialization of spreadsheet? → Yes
+- Is excel vs. gsheet problem a specialization of application software? → Yes
+- Is excel vs. gsheet problem a specialization of spreadsheet? → Yes
+- Is exception handling a specialization of Application development? → Yes
+- Is exception handling a specialization of Process? → Yes
+- Is exception handling a specialization of control flow? → Yes
+- Is exception handling a specialization of occurrent? → Yes
+- Is excitement a specialization of Design thinking? → Yes
+- Is excitement a specialization of Empathy? → Yes
+- Is excitement a specialization of Process? → Yes
+- Is excitement a specialization of occurrent? → Yes
+- Is exclusion clause a specialization of clause? → Yes
+- Is exclusion clause a specialization of db/clause? → Yes
+- Is exclusion clause a specialization of text? → Yes
+- Is feature a specialization of ML models? → Yes
+- Is feature a specialization of model? → Yes
+- Is feature engineering a specialization of CRISP-DM Process? → Yes
+- Is feature engineering a specialization of Data preparation? → Yes
+- Is feature engineering a specialization of machine learning projects? → Yes
+- Is feature selection a specialization of CRISP-DM Process? → Yes
+- Is feature selection a specialization of Data preparation? → Yes
+- Is feature selection a specialization of feature engineering? → Yes
+- Is feature selection a specialization of machine learning projects? → Yes
+- Is field of study (education) a specialization of Infrastructure? → Yes
+- Is field of study (education) a specialization of Memory? → Yes
+- Is field of study (education) a specialization of Process? → Yes
+- Is field of study (education) a specialization of knowledge? → Yes
+- Is field of study (education) a specialization of occurrent? → Yes
+- Is field of study (education) a specialization of structure? → Yes
+- Is force majeure a specialization of clause? → Yes
+- Is force majeure a specialization of db/causality? → Yes
+- Is force majeure a specialization of db/contractual term? → Yes
+- Is force majeure a specialization of db/legal risk? → Yes
+- Is force majeure a specialization of text? → Yes
+- Is foundation model a specialization of AI? → Yes
+- Is foundation model a specialization of Artificial Intelligence (AI)? → Yes
+- Is foundation model a specialization of Deep learning? → Yes
+- Is foundation model a specialization of machine learning? → Yes
+- Is functional programming a specialization of Application development? → Yes
+- Is functional programming a specialization of Process? → Yes
+- Is functional programming a specialization of Programming language? → Yes
+- Is functional programming a specialization of occurrent? → Yes
+- Is google sheet a specialization of application software? → Yes
+- Is google sheet a specialization of spreadsheet? → Yes
+- Is graph a specialization of Hypergraph? → Yes
+- Is graph a specialization of Relational structure? → Yes
+- Is graph hop a specialization of Hypergraph? → Yes
+- Is graph hop a specialization of Infrastructure? → Yes
+- Is graph hop a specialization of Knowledge base? → Yes
+- Is graph hop a specialization of Memory? → Yes
+- Is graph hop a specialization of Process? → Yes
+- Is graph hop a specialization of Relational structure? → Yes
+- Is graph hop a specialization of graph? → Yes
+- Is graph hop a specialization of knowledge? → Yes
+- Is graph hop a specialization of knowledge graph? → Yes
+- Is graph hop a specialization of labeled directed graph? → Yes
+- Is graph hop a specialization of occurrent? → Yes
+- Is graph hop a specialization of structure? → Yes
+- Is graph theory a specialization of combinatorics? → Yes
+- Is handled-vs-gaps a specialization of application software? → Yes
+- Is handled-vs-gaps a specialization of spreadsheet? → Yes
+- Is heuristic a specialization of Algorithm? → Yes
+- Is heuristic a specialization of Dialogue? → Yes
+- Is heuristic a specialization of db/interpersonal communication? → Yes
+- Is heuristic a specialization of db/oral media? → Yes
+- Is heuristic a specialization of elicitation? → Yes
+- Is heuristic a specialization of method? → Yes
+- Is idempotence a specialization of Application development? → Yes
+- Is idempotence a specialization of Process? → Yes
+- Is idempotence a specialization of db/property? → Yes
+- Is idempotence a specialization of occurrent? → Yes
+- Is implementation detail a specialization of Application development? → Yes
+- Is implementation detail a specialization of Process? → Yes
+- Is implementation detail a specialization of db/quality? → Yes
+- Is implementation detail a specialization of occurrent? → Yes
+- Is implicature a specialization of db/linguistics? → Yes
+- Is implicature a specialization of db/pragmatics? → Yes
+- Is implicature a specialization of semantics? → Yes
+- Is implicitness a specialization of db/linguistics? → Yes
+- Is implicitness a specialization of semantics? → Yes
+- Is index a specialization of Process? → Yes
+- Is index a specialization of data? → Yes
+- Is index a specialization of occurrent? → Yes
+- Is inferred from attribute of entity a specialization of Hypergraph? → Yes
+- Is inferred from attribute of entity a specialization of Infrastructure? → Yes
+- Is inferred from attribute of entity a specialization of Knowledge base? → Yes
+- Is inferred from attribute of entity a specialization of Memory? → Yes
+- Is inferred from attribute of entity a specialization of Process? → Yes
+- Is inferred from attribute of entity a specialization of Relational structure? → Yes
+- Is inferred from attribute of entity a specialization of db/reasoning? → Yes
+- Is inferred from attribute of entity a specialization of db/source of statements in Wikidata? → Yes
+- Is inferred from attribute of entity a specialization of graph? → Yes
+- Is inferred from attribute of entity a specialization of knowledge? → Yes
+- Is inferred from attribute of entity a specialization of knowledge graph? → Yes
+- Is inferred from attribute of entity a specialization of labeled directed graph? → Yes
+- Is inferred from attribute of entity a specialization of occurrent? → Yes
+- Is inferred from attribute of entity a specialization of structure? → Yes
+- Is intention a specialization of mental state? → Yes
+- Is intentional human activity a specialization of human activity? → Yes
+- Is intentional human activity a specialization of intention? → Yes
+- Is intentional human activity a specialization of mental state? → Yes
+- Is judgment a specialization of Decision support? → Yes
+- Is judgment a specialization of cognitive process? → Yes
+- Is knowledge a specialization of Infrastructure? → Yes
+- Is knowledge a specialization of Memory? → Yes
+- Is knowledge a specialization of Process? → Yes
+- Is knowledge a specialization of occurrent? → Yes
+- Is knowledge a specialization of structure? → Yes
+- Is knowledge graph a specialization of Hypergraph? → Yes
+- Is knowledge graph a specialization of Infrastructure? → Yes
+- Is knowledge graph a specialization of Knowledge base? → Yes
+- Is knowledge graph a specialization of Memory? → Yes
+- Is knowledge graph a specialization of Process? → Yes
+- Is knowledge graph a specialization of Relational structure? → Yes
+- Is knowledge graph a specialization of graph? → Yes
+- Is knowledge graph a specialization of knowledge? → Yes
+- Is knowledge graph a specialization of labeled directed graph? → Yes
+- Is knowledge graph a specialization of occurrent? → Yes
+- Is knowledge graph a specialization of structure? → Yes
+- Is knowledge organization system a specialization of conceptual system? → Yes
+- Is knowledge worker a specialization of Infrastructure? → Yes
+- Is knowledge worker a specialization of Memory? → Yes
+- Is knowledge worker a specialization of Process? → Yes
+- Is knowledge worker a specialization of knowledge? → Yes
+- Is knowledge worker a specialization of occurrent? → Yes
+- Is knowledge worker a specialization of structure? → Yes
+- Is latent a specialization of db/linguistics? → Yes
+- Is latent a specialization of semantics? → Yes
+- Is latent space a specialization of AI? → Yes
+- Is latent space a specialization of Artificial Intelligence (AI)? → Yes
+- Is latent space a specialization of Embeddings? → Yes
+- Is latent space a specialization of Natural Language Processing? → Yes
+- Is latent space a specialization of embedding? → Yes
+- Is latent travel a specialization of db/linguistics? → Yes
+- Is latent travel a specialization of semantics? → Yes
+- Is lawyer a specialization of jurist? → Yes
+- Is learning bias a specialization of Fairness? → Yes
+- Is learning bias a specialization of bias? → Yes
+- Is liability a specialization of agreement? → Yes
+- Is liability a specialization of contract? → Yes
+- Is liability a specialization of debt? → Yes
+- Is liability a specialization of intellectual work? → Yes
+- Is liability a specialization of legal transaction? → Yes
+- Is liability a specialization of liabilities plus owner's equity? → Yes
+- Is liability a specialization of promise? → Yes
+- Is list of values as qualifiers a specialization of Hypergraph? → Yes
+- Is list of values as qualifiers a specialization of Infrastructure? → Yes
+- Is list of values as qualifiers a specialization of Knowledge base? → Yes
+- Is list of values as qualifiers a specialization of Memory? → Yes
+- Is list of values as qualifiers a specialization of Process? → Yes
+- Is list of values as qualifiers a specialization of Relational structure? → Yes
+- Is list of values as qualifiers a specialization of graph? → Yes
+- Is list of values as qualifiers a specialization of knowledge? → Yes
+- Is list of values as qualifiers a specialization of knowledge graph? → Yes
+- Is list of values as qualifiers a specialization of labeled directed graph? → Yes
+- Is list of values as qualifiers a specialization of occurrent? → Yes
+- Is list of values as qualifiers a specialization of structure? → Yes
+- Is loss function a specialization of AI? → Yes
+- Is loss function a specialization of Artificial Intelligence (AI)? → Yes
+- Is loss function a specialization of machine learning? → Yes
+- Is machine learning a specialization of AI? → Yes
+- Is machine learning a specialization of Artificial Intelligence (AI)? → Yes
+- Is machine learning systems a specialization of AI? → Yes
+- Is machine learning systems a specialization of Artificial Intelligence (AI)? → Yes
+- Is machine learning systems a specialization of ML system? → Yes
+- Is machine learning systems a specialization of machine learning? → Yes
+- Is macros a specialization of Application development? → Yes
+- Is macros a specialization of Process? → Yes
+- Is macros a specialization of occurrent? → Yes
+- Is manifold a specialization of Vector space? → Yes
+- Is manifold a specialization of db/Hausdorff space? → Yes
+- Is manifold a specialization of db/homology manifold? → Yes
+- Is manifold a specialization of db/manifold? → Yes
+- Is manifold a specialization of db/second-countable space? → Yes
+- Is manual operation a specialization of human activity? → Yes
+- Is manual operation a specialization of intention? → Yes
+- Is manual operation a specialization of intentional human activity? → Yes
+- Is manual operation a specialization of mental state? → Yes
+- Is manual operation a specialization of operation? → Yes
+- Is masked language models a specialization of AI? → Yes
+- Is masked language models a specialization of Artificial Intelligence (AI)? → Yes
+- Is masked language models a specialization of Language modeling? → Yes
+- Is masked language models a specialization of Natural Language Processing? → Yes
+- Is meaning a specialization of db/intention? → Yes
+- Is meaning a specialization of db/linguistics? → Yes
+- Is meaning a specialization of semantics? → Yes
+- Is measure a specialization of Metric? → Yes
+- Is measure a specialization of individual quantity? → Yes
+- Is measure a specialization of scalar quantity? → Yes
+- Is metadata a specialization of Process? → Yes
+- Is metadata a specialization of artificial object? → Yes
+- Is metadata a specialization of data? → Yes
+- Is metadata a specialization of occurrent? → Yes
+- Is metadata a specialization of secondary information? → Yes
+- Is minority interest vs full ownership a specialization of Shareholders agreement? → Yes
+- Is minority interest vs full ownership a specialization of agreement? → Yes
+- Is minority interest vs full ownership a specialization of contract? → Yes
+- Is minority interest vs full ownership a specialization of intellectual work? → Yes
+- Is minority interest vs full ownership a specialization of legal transaction? → Yes
+- Is minority interest vs full ownership a specialization of promise? → Yes
+- Is missing at random a specialization of Data quality? → Yes
+- Is missing at random a specialization of Process? → Yes
+- Is missing at random a specialization of data? → Yes
+- Is missing at random a specialization of occurrent? → Yes
+- Is missing completely at random a specialization of Data quality? → Yes
+- Is missing completely at random a specialization of Process? → Yes
+- Is missing completely at random a specialization of data? → Yes
+- Is missing completely at random a specialization of occurrent? → Yes
+- Is missing not at random a specialization of Data quality? → Yes
+- Is missing not at random a specialization of Process? → Yes
+- Is missing not at random a specialization of data? → Yes
+- Is missing not at random a specialization of occurrent? → Yes
+- Is mistral agents a specialization of agent? → Yes
+- Is mockups a specialization of activity? → Yes
+- Is mockups a specialization of design? → Yes
+- Is mockups a specialization of planned process? → Yes
+- Is model contract a specialization of Application development? → Yes
+- Is model contract a specialization of Documentation? → Yes
+- Is model contract a specialization of Process? → Yes
+- Is model contract a specialization of Provenance? → Yes
+- Is model contract a specialization of agreement? → Yes
+- Is model contract a specialization of contract? → Yes
+- Is model contract a specialization of depicting object? → Yes
+- Is model contract a specialization of information? → Yes
+- Is model contract a specialization of intellectual work? → Yes
+- Is model contract a specialization of legal transaction? → Yes
+- Is model contract a specialization of narrative? → Yes
+- Is model contract a specialization of occurrent? → Yes
+- Is model contract a specialization of promise? → Yes
+- Is model evaluation a specialization of CRISP-DM Process? → Yes
+- Is model evaluation a specialization of machine learning projects? → Yes
+- Is model evaluation a specialization of modeling? → Yes
+- Is model fit a specialization of CRISP-DM Process? → Yes
+- Is model fit a specialization of machine learning projects? → Yes
+- Is model fit a specialization of modeling? → Yes
+- Is model tuning a specialization of CRISP-DM Process? → Yes
+- Is model tuning a specialization of machine learning projects? → Yes
+- Is model tuning a specialization of modeling? → Yes
+- Is model versioning a specialization of Model maintenance? → Yes
+- Is model vocabulary a specialization of conceptual system? → Yes
+- Is model vocabulary a specialization of knowledge organization system? → Yes
+- Is modeling a specialization of CRISP-DM Process? → Yes
+- Is modeling a specialization of machine learning projects? → Yes
+- Is moderation a specialization of AI? → Yes
+- Is moderation a specialization of Artificial Intelligence (AI)? → Yes
+- Is moderation a specialization of Language modeling? → Yes
+- Is moderation a specialization of Large Language Model? → Yes
+- Is moderation a specialization of Natural Language Processing? → Yes
+- Is modularity a specialization of Infrastructure? → Yes
+- Is modularity a specialization of db/quality? → Yes
+- Is modularity a specialization of structure? → Yes
+- Is monitor a specialization of Process? → Yes
+- Is monitor a specialization of occurrent? → Yes
+- Is monopartite graph a specialization of Hypergraph? → Yes
+- Is monopartite graph a specialization of Relational structure? → Yes
+- Is monopartite graph a specialization of graph? → Yes
+- Is multiclass confusion matrix a specialization of Evaluation metrics? → Yes
+- Is multiclass confusion matrix a specialization of confusion matrix? → Yes
+- Is multiclass confusion matrix a specialization of evaluation? → Yes
+- Is multilayer perceptron a specialization of AI? → Yes
+- Is multilayer perceptron a specialization of Artificial Intelligence (AI)? → Yes
+- Is multilayer perceptron a specialization of Deep learning? → Yes
+- Is multilayer perceptron a specialization of artificial neural network? → Yes
+- Is multilayer perceptron a specialization of machine learning? → Yes
+- Is multimodal model a specialization of AI? → Yes
+- Is multimodal model a specialization of Artificial Intelligence (AI)? → Yes
+- Is multimodal model a specialization of Deep learning? → Yes
+- Is multimodal model a specialization of foundation model? → Yes
+- Is multimodal model a specialization of machine learning? → Yes
+- Is named-ranges a specialization of application software? → Yes
+- Is named-ranges a specialization of spreadsheet? → Yes
+- Is negotiation a specialization of Dialogue? → Yes
+- Is negotiation a specialization of academic discipline? → Yes
+- Is negotiation a specialization of activity? → Yes
+- Is negotiation a specialization of db/interpersonal communication? → Yes
+- Is negotiation a specialization of db/oral media? → Yes
+- Is negotiation a specialization of elicitation? → Yes
+- Is neuron layer a specialization of AI? → Yes
+- Is neuron layer a specialization of Artificial Intelligence (AI)? → Yes
+- Is neuron layer a specialization of Deep learning? → Yes
+- Is neuron layer a specialization of artificial neural network? → Yes
+- Is neuron layer a specialization of machine learning? → Yes
+- Is newsletter a specialization of Product? → Yes
+- Is newsletter a specialization of magazine? → Yes
+- Is newsletter a specialization of news media? → Yes
+- Is newsletter a specialization of periodical? → Yes
+- Is node a specialization of combinatorics? → Yes
+- Is node a specialization of graph theory? → Yes
+- Is non-compete clause a specialization of clause? → Yes
+- Is non-compete clause a specialization of db/clause? → Yes
+- Is non-compete clause a specialization of text? → Yes
+- Is null morpheme a specialization of db/linguistics? → Yes
+- Is null morpheme a specialization of db/morpheme? → Yes
+- Is null morpheme a specialization of db/zero? → Yes
+- Is null morpheme a specialization of semantics? → Yes
+- Is office automation a specialization of ICT? → Yes
+- Is office automation a specialization of Process? → Yes
+- Is office automation a specialization of activity? → Yes
+- Is office automation a specialization of automation? → Yes
+- Is office automation a specialization of information and communications technology? → Yes
+- Is office automation a specialization of occurrent? → Yes
+- Is ontology engineering a specialization of Ontology? → Yes
+- Is ontology engineering a specialization of conceptual system? → Yes
+- Is ontology engineering a specialization of knowledge organization system? → Yes
+- Is ontology engineering a specialization of organizing principles? → Yes
+- Is open data a specialization of Process? → Yes
+- Is open data a specialization of data? → Yes
+- Is open data a specialization of occurrent? → Yes
+- Is openpyxl a specialization of Application development? → Yes
+- Is openpyxl a specialization of Process? → Yes
+- Is openpyxl a specialization of Programming language? → Yes
+- Is openpyxl a specialization of Python? → Yes
+- Is openpyxl a specialization of occurrent? → Yes
+- Is optimizer a specialization of ML models? → Yes
+- Is optimizer a specialization of model? → Yes
+- Is organizing principles a specialization of conceptual system? → Yes
+- Is organizing principles a specialization of knowledge organization system? → Yes
+- Is orientation a specialization of free vector? → Yes
+- Is other-losses a specialization of ML models? → Yes
+- Is other-losses a specialization of model? → Yes
+- Is outcome a specialization of CRISP-DM Process? → Yes
+- Is outcome a specialization of business understanding? → Yes
+- Is outcome a specialization of define success? → Yes
+- Is outcome a specialization of machine learning projects? → Yes
+- Is output a specialization of CRISP-DM Process? → Yes
+- Is output a specialization of business understanding? → Yes
+- Is output a specialization of define success? → Yes
+- Is output a specialization of machine learning projects? → Yes
+- Is parameter a specialization of ML models? → Yes
+- Is parameter a specialization of model? → Yes
+- Is parsing a specialization of Application development? → Yes
+- Is parsing a specialization of ICT? → Yes
+- Is parsing a specialization of Process? → Yes
+- Is parsing a specialization of activity? → Yes
+- Is parsing a specialization of automation? → Yes
+- Is parsing a specialization of information and communications technology? → Yes
+- Is parsing a specialization of occurrent? → Yes
+- Is partial column range a specialization of application software? → Yes
+- Is partial column range a specialization of spreadsheet? → Yes
+- Is path a specialization of combinatorics? → Yes
+- Is path a specialization of graph theory? → Yes
+- Is periodic table a specialization of table? → Yes
+- Is permanence a specialization of Stochastic processes? → Yes
+- Is permanence a specialization of combinatorics? → Yes
+- Is permanence a specialization of indexed family? → Yes
+- Is permanence a specialization of mathematical object? → Yes
+- Is permanence a specialization of probability? → Yes
+- Is persistence a specialization of Infrastructure? → Yes
+- Is persistence a specialization of quality? → Yes
+- Is persistence a specialization of structure? → Yes
+- Is personal computing resources a specialization of Infrastructure? → Yes
+- Is personal computing resources a specialization of structure? → Yes
+- Is pictorial fraction chart a specialization of data visualization? → Yes
+- Is pictorial fraction chart a specialization of representation of data? → Yes
+- Is pictorial fraction chart a specialization of visualization? → Yes
+- Is pierre vermersch a specialization of elicitation? → Yes
+- Is platform-limits a specialization of application software? → Yes
+- Is platform-limits a specialization of spreadsheet? → Yes
+- Is power a specialization of Dialogue? → Yes
+- Is power a specialization of academic discipline? → Yes
+- Is power a specialization of activity? → Yes
+- Is power a specialization of db/interpersonal communication? → Yes
+- Is power a specialization of db/oral media? → Yes
+- Is power a specialization of elicitation? → Yes
+- Is power a specialization of negotiation? → Yes
+- Is prediction a specialization of AI? → Yes
+- Is prediction a specialization of Artificial Intelligence (AI)? → Yes
+- Is prediction a specialization of ML models? → Yes
+- Is prediction a specialization of model? → Yes
+- Is probability a specialization of combinatorics? → Yes
+- Is probability measure a specialization of combinatorics? → Yes
+- Is probability measure a specialization of finite measure? → Yes
+- Is probability measure a specialization of probability? → Yes
+- Is process philosophy a specialization of change? → Yes
+- Is process-oriented programming a specialization of Application development? → Yes
+- Is process-oriented programming a specialization of Process? → Yes
+- Is process-oriented programming a specialization of Programming language? → Yes
+- Is process-oriented programming a specialization of functional programming? → Yes
+- Is process-oriented programming a specialization of occurrent? → Yes
+- Is product packaging a specialization of Product? → Yes
+- Is prompts a specialization of AI? → Yes
+- Is prompts a specialization of AI prompt? → Yes
+- Is prompts a specialization of Artificial Intelligence (AI)? → Yes
+- Is prompts a specialization of Language modeling? → Yes
+- Is prompts a specialization of Large Language Model? → Yes
+- Is prompts a specialization of Natural Language Processing? → Yes
+- Is prompts a specialization of command? → Yes
+- Is prompts a specialization of instruction? → Yes
+- Is prompts a specialization of task? → Yes
+- Is property a specialization of Entity? → Yes
+- Is property a specialization of Hypergraph? → Yes
+- Is property a specialization of Infrastructure? → Yes
+- Is property a specialization of Knowledge base? → Yes
+- Is property a specialization of Memory? → Yes
+- Is property a specialization of Ontology? → Yes
+- Is property a specialization of Process? → Yes
+- Is property a specialization of Relational structure? → Yes
+- Is property a specialization of abstract entity? → Yes
+- Is property a specialization of conceptual system? → Yes
+- Is property a specialization of graph? → Yes
+- Is property a specialization of knowledge? → Yes
+- Is property a specialization of knowledge graph? → Yes
+- Is property a specialization of knowledge organization system? → Yes
+- Is property a specialization of labeled directed graph? → Yes
+- Is property a specialization of occurrent? → Yes
+- Is property a specialization of organizing principles? → Yes
+- Is property a specialization of structure? → Yes
+- Is property graph model a specialization of combinatorics? → Yes
+- Is property graph model a specialization of graph theory? → Yes
+- Is protected health information (PHI) a specialization of Data privacy? → Yes
+- Is protected health information (PHI) a specialization of Fairness? → Yes
+- Is protected health information (PHI) a specialization of Medical Data Privacy? → Yes
+- Is pypi a specialization of Application development? → Yes
+- Is pypi a specialization of Process? → Yes
+- Is pypi a specialization of Programming language? → Yes
+- Is pypi a specialization of Python? → Yes
+- Is pypi a specialization of occurrent? → Yes
+- Is query a specialization of Application development? → Yes
+- Is query a specialization of Process? → Yes
+- Is query a specialization of occurrent? → Yes
+- Is r2 a specialization of Metric? → Yes
+- Is raw data a specialization of Process? → Yes
+- Is raw data a specialization of data? → Yes
+- Is raw data a specialization of occurrent? → Yes
+- Is reach a specialization of Metric? → Yes
+- Is recall bias a specialization of Fairness? → Yes
+- Is recall bias a specialization of bias? → Yes
+- Is risk a specialization of possibility? → Yes
+- Is rollback a specialization of version control? → Yes
+- Is rollback capability a specialization of version control? → Yes
+- Is scenario a specialization of Application development? → Yes
+- Is scenario a specialization of Process? → Yes
+- Is scenario a specialization of occurrent? → Yes
+- Is scenario a specialization of possibility? → Yes
+- Is search module a specialization of AI? → Yes
+- Is search module a specialization of Artificial Intelligence (AI)? → Yes
+- Is search module a specialization of agentic System? → Yes
+- Is selection a specialization of Algorithm? → Yes
+- Is selection a specialization of Mathematical operation? → Yes
+- Is selection a specialization of Unary operation? → Yes
+- Is selection a specialization of combinatorics? → Yes
+- Is self-supervision a specialization of AI? → Yes
+- Is self-supervision a specialization of Artificial Intelligence (AI)? → Yes
+- Is self-supervision a specialization of Pretraining? → Yes
+- Is self-supervision a specialization of machine learning? → Yes
+- Is self-supervision a specialization of training algorithm? → Yes
+- Is semantics a specialization of db/linguistics? → Yes
+- Is semiotics a specialization of db/interdisciplinary program? → Yes
+- Is separators-and-dates a specialization of application software? → Yes
+- Is separators-and-dates a specialization of spreadsheet? → Yes
+- Is settings.json a specialization of Application development? → Yes
+- Is settings.json a specialization of Process? → Yes
+- Is settings.json a specialization of occurrent? → Yes
+- Is sheets-api a specialization of application software? → Yes
+- Is sheets-api a specialization of spreadsheet? → Yes
+- Is similarity measure a specialization of Distance? → Yes
+- Is similarity measure a specialization of Vector space? → Yes
+- Is slide show a specialization of Product? → Yes
+- Is slide show a specialization of Slide deck? → Yes
+- Is slide show a specialization of creative work? → Yes
+- Is slide show a specialization of db/document? → Yes
+- Is slide show a specialization of db/sequence? → Yes
+- Is slide show a specialization of intellectual work? → Yes
+- Is sparkline a specialization of application software? → Yes
+- Is sparkline a specialization of data visualization? → Yes
+- Is sparkline a specialization of infographics? → Yes
+- Is sparkline a specialization of representation of data? → Yes
+- Is sparkline a specialization of spreadsheet? → Yes
+- Is sparkline a specialization of statistical graphics? → Yes
+- Is sparkline a specialization of visualization? → Yes
+- Is spreadsheet a specialization of application software? → Yes
+- Is stability a specialization of Process? → Yes
+- Is stability a specialization of occurrent? → Yes
+- Is stability a specialization of robustness? → Yes
+- Is state observer a specialization of automatic control? → Yes
+- Is state observer a specialization of conceptual system? → Yes
+- Is state observer a specialization of control theory? → Yes
+- Is stateless protocol a specialization of Infrastructure? → Yes
+- Is stateless protocol a specialization of Stateful? → Yes
+- Is stateless protocol a specialization of Stateless? → Yes
+- Is stateless protocol a specialization of communication protocol? → Yes
+- Is stateless protocol a specialization of structure? → Yes
+- Is statistical graphics a specialization of data visualization? → Yes
+- Is statistical graphics a specialization of infographics? → Yes
+- Is statistical graphics a specialization of representation of data? → Yes
+- Is statistical graphics a specialization of visualization? → Yes
+- Is structured-references a specialization of application software? → Yes
+- Is structured-references a specialization of spreadsheet? → Yes
+- Is study of complex systems a specialization of systems theory? → Yes
+- Is subject heading a specialization of conceptual system? → Yes
+- Is subject heading a specialization of knowledge organization system? → Yes
+- Is subject heading a specialization of word or phrase? → Yes
+- Is subtext a specialization of db/linguistics? → Yes
+- Is subtext a specialization of db/text? → Yes
+- Is subtext a specialization of semantics? → Yes
+- Is supervised finetuning a specialization of CRISP-DM Process? → Yes
+- Is supervised finetuning a specialization of Fine-tuning? → Yes
+- Is supervised finetuning a specialization of machine learning projects? → Yes
+- Is supervised finetuning a specialization of model tuning? → Yes
+- Is supervised finetuning a specialization of modeling? → Yes
+- Is supervised learning a specialization of AI? → Yes
+- Is supervised learning a specialization of Artificial Intelligence (AI)? → Yes
+- Is supervised learning a specialization of machine learning? → Yes
+- Is system prompt a specialization of AI? → Yes
+- Is system prompt a specialization of AI prompt? → Yes
+- Is system prompt a specialization of Artificial Intelligence (AI)? → Yes
+- Is system prompt a specialization of Language modeling? → Yes
+- Is system prompt a specialization of Large Language Model? → Yes
+- Is system prompt a specialization of Natural Language Processing? → Yes
+- Is system prompt a specialization of command? → Yes
+- Is system prompt a specialization of instruction? → Yes
+- Is system prompt a specialization of task? → Yes
+- Is table cell a specialization of application software? → Yes
+- Is table cell a specialization of software resource? → Yes
+- Is table cell a specialization of spreadsheet? → Yes
+- Is tabular data a specialization of Process? → Yes
+- Is tabular data a specialization of Structured data? → Yes
+- Is tabular data a specialization of data? → Yes
+- Is tabular data a specialization of data type? → Yes
+- Is tabular data a specialization of occurrent? → Yes
+- Is tabular data a specialization of type? → Yes
+- Is tabular foundation model a specialization of AI? → Yes
+- Is tabular foundation model a specialization of Artificial Intelligence (AI)? → Yes
+- Is tabular foundation model a specialization of Deep learning? → Yes
+- Is tabular foundation model a specialization of foundation model? → Yes
+- Is tabular foundation model a specialization of machine learning? → Yes
+- Is taxonomy a specialization of conceptual system? → Yes
+- Is taxonomy a specialization of knowledge organization system? → Yes
+- Is taxonomy a specialization of organizing principles? → Yes
+- Is templates a specialization of Regularity? → Yes
+- Is term sheet a specialization of agreement? → Yes
+- Is term sheet a specialization of contract? → Yes
+- Is term sheet a specialization of intellectual work? → Yes
+- Is term sheet a specialization of legal transaction? → Yes
+- Is term sheet a specialization of promise? → Yes
+- Is theme color a specialization of application software? → Yes
+- Is theme color a specialization of spreadsheet? → Yes
+- Is thesaurus a specialization of conceptual system? → Yes
+- Is thesaurus a specialization of controlled vocabulary? → Yes
+- Is thesaurus a specialization of data set? → Yes
+- Is thesaurus a specialization of knowledge organization system? → Yes
+- Is thesaurus a specialization of lexicographic work? → Yes
+- Is thesaurus a specialization of network? → Yes
+- Is thesaurus a specialization of vocabulary? → Yes
+- Is token a specialization of AI? → Yes
+- Is token a specialization of Artificial Intelligence (AI)? → Yes
+- Is token a specialization of Natural Language Processing? → Yes
+- Is tools a specialization of AI? → Yes
+- Is tools a specialization of Artificial Intelligence (AI)? → Yes
+- Is tools a specialization of agentic System? → Yes
+- Is training algorithm a specialization of AI? → Yes
+- Is training algorithm a specialization of Artificial Intelligence (AI)? → Yes
+- Is training algorithm a specialization of machine learning? → Yes
+- Is training data set a specialization of CRISP-DM Process? → Yes
+- Is training data set a specialization of machine learning projects? → Yes
+- Is training data set a specialization of modeling? → Yes
+- Is triage a specialization of Data augmentation? → Yes
+- Is triage a specialization of Process? → Yes
+- Is triage a specialization of augmentation? → Yes
+- Is triage a specialization of data? → Yes
+- Is triage a specialization of occurrent? → Yes
+- Is truncation a specialization of CRISP-DM Process? → Yes
+- Is truncation a specialization of Data preparation? → Yes
+- Is truncation a specialization of machine learning projects? → Yes
+- Is turing test a specialization of Test? → Yes
+- Is type of process a specialization of Process? → Yes
+- Is type of process a specialization of occurrent? → Yes
+- Is vanilla RAG design a specialization of AI? → Yes
+- Is vanilla RAG design a specialization of Artificial Intelligence (AI)? → Yes
+- Is vanilla RAG design a specialization of Language modeling? → Yes
+- Is vanilla RAG design a specialization of Large Language Model? → Yes
+- Is vanilla RAG design a specialization of Natural Language Processing? → Yes
+- Is vanilla RAG design a specialization of RAG (Retrieval-Augmented Generation)? → Yes
+- Is variance a specialization of combinatorics? → Yes
+- Is variance a specialization of probability? → Yes
+- Is vector a specialization of Vector space? → Yes
+- Is vector index a specialization of Process? → Yes
+- Is vector index a specialization of Vector space? → Yes
+- Is vector index a specialization of data? → Yes
+- Is vector index a specialization of index? → Yes
+- Is vector index a specialization of occurrent? → Yes
+- Is vector index a specialization of vector? → Yes
+- Is vector length a specialization of Vector space? → Yes
+- Is vector length a specialization of vector? → Yes
+- Is vectorization a specialization of AI? → Yes
+- Is vectorization a specialization of Artificial Intelligence (AI)? → Yes
+- Is vectorization a specialization of Embeddings? → Yes
+- Is vectorization a specialization of Natural Language Processing? → Yes
+- Is vertices a specialization of Hypergraph? → Yes
+- Is vertices a specialization of Relational structure? → Yes
+- Is vertices a specialization of graph? → Yes
+
+## inferred:related_s (22 questions)
+
+- Is AI agent related to compound AI system (symmetric)? → Yes
+- Is Agent orchestration related to agent role type (symmetric)? → Yes
+- Is Evaluate process related to agent observability (symmetric)? → Yes
+- Is Fair AI related to control (symmetric)? → Yes
+- Is La bibliothèque de Babel related to combinatorics (symmetric)? → Yes
+- Is Multi-agent systems related to agent role type (symmetric)? → Yes
+- Is Traceable Artifacts related to agent observability (symmetric)? → Yes
+- Is agent related to compound AI system (symmetric)? → Yes
+- Is agent observability related to Evaluate process (symmetric)? → Yes
+- Is agent observability related to Traceable Artifacts (symmetric)? → Yes
+- Is agent observability related to agentOps (symmetric)? → Yes
+- Is agent role type related to Agent orchestration (symmetric)? → Yes
+- Is agent role type related to Multi-agent systems (symmetric)? → Yes
+- Is agentOps related to agent observability (symmetric)? → Yes
+- Is combinatorics related to La bibliothèque de Babel (symmetric)? → Yes
+- Is compound AI system related to AI agent (symmetric)? → Yes
+- Is compound AI system related to agent (symmetric)? → Yes
+- Is control related to Fair AI (symmetric)? → Yes
+- Is excel related to tabular data (symmetric)? → Yes
+- Is knowledge graph related to property graph model (symmetric)? → Yes
+- Is property graph model related to knowledge graph (symmetric)? → Yes
+- Is tabular data related to excel (symmetric)? → Yes
+
+## inferred:s27_violation (1 questions)
+
+- S27 violation: agentOps is both hierarchical and related to agent observability
+
+---
+
+**Total: 3723 answerable questions**

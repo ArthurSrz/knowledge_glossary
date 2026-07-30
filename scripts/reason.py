@@ -592,6 +592,209 @@ def cmd_watch(args):
     observer.join()
 
 
+COMPETENCY_FILE = Path("competency_questions.yml")
+COMPETENCY_REPORT = STATS_DIR / "competency_report.md"
+
+MIN_COVERAGE = 5
+
+RELATION_QUESTIONS = {
+    "broader": [
+        "What is the parent domain of {X}?",
+        "What are all subtypes of {X}?",
+        "What is the full ancestor chain from {X} to the root?",
+        "Which concepts are root concepts (no broader parent)?",
+        "What concepts share the same parent domain as {X}?",
+    ],
+    "narrower": [
+        "What are the direct children of {X}?",
+    ],
+    "related": [
+        "What concepts are semantically related to {X}?",
+    ],
+    "opposite_of": [
+        "What is the opposite of {X}?",
+    ],
+    "uses": [
+        "What tools or techniques does {X} use?",
+        "Which concepts use {X}?",
+    ],
+    "has_use": [
+        "What are the practical applications of {X}?",
+    ],
+    "depends_on": [
+        "What are the dependencies of {X}?",
+    ],
+    "contributing_factor": [
+        "What does {X} contribute to?",
+    ],
+    "studied_in": [
+        "In what field is {X} studied?",
+    ],
+    "constructed_with": [
+        "What can {X} be constructed with?",
+    ],
+}
+
+INFERRED_QUESTIONS = {
+    "ancestor": [
+        "Is {X} a (transitive) specialization of {Y}?",
+        "What are all ancestors of {X} up to the root?",
+    ],
+    "related_s": [
+        "What concepts are related to {X} (including symmetric)?",
+    ],
+    "in_cycle": [
+        "Does {X} have a cycle in its broader chain?",
+    ],
+    "s27_violation": [
+        "Is {X} both hierarchically and associatively linked to {Y} (SKOS S27)?",
+    ],
+    "conflict": [
+        "Is {X} both related-to and opposite-of {Y}?",
+    ],
+}
+
+
+def get_relation_coverage(notes):
+    from collections import Counter
+    coverage = {}
+    for rel in set(r for rels in notes.values() for r in rels):
+        edges = sum(len(rels.get(rel, [])) for rels in notes.values())
+        note_count = sum(1 for rels in notes.values() if rel in rels)
+        coverage[rel] = {"edges": edges, "notes": note_count}
+    return coverage
+
+
+def cmd_competency(args):
+    STATS_DIR.mkdir(exist_ok=True)
+    notes, filenames, _, _ = load_notes(GRAPH_DIR)
+    coverage = get_relation_coverage(notes)
+
+    lines_out = []
+    lines_report = ["# Competency Report\n"]
+
+    # ── Part 1: Auto-discovered questions the graph CAN answer ──────
+    lines_out.append("═══ Questions your graph CAN answer ═══\n")
+    lines_report.append("## Questions your graph can answer\n")
+
+    can_answer_total = 0
+    for rel, questions in sorted(RELATION_QUESTIONS.items()):
+        cov = coverage.get(rel)
+        if not cov or cov["edges"] < 1:
+            continue
+        strength = "strong" if cov["notes"] >= MIN_COVERAGE else "weak"
+        lines_out.append(f"  {rel} ({cov['edges']} edges, {cov['notes']} notes) [{strength} coverage]:")
+        lines_report.append(f"\n### `{rel}` — {cov['edges']} edges across {cov['notes']} notes ({strength})\n")
+        for q in questions:
+            lines_out.append(f"    ✓ {q}")
+            lines_report.append(f"- {q}")
+            can_answer_total += 1
+        lines_out.append("")
+
+    # Inferred predicates
+    atom_of, name_of = build_atom_maps(notes, filenames)
+    engine, _, _ = load_reasoner(notes, filenames, atom_of)
+
+    lines_out.append("  Inferred (via Datalog rules):")
+    lines_report.append(f"\n### Inferred predicates (via {len(SKOS_RULES)} Datalog rules)\n")
+    for pred, questions in sorted(INFERRED_QUESTIONS.items()):
+        try:
+            if pred == "in_cycle":
+                results = engine.query(f"{pred}(?X)")
+            else:
+                results = engine.query(f"{pred}(?X, ?Y)")
+            count = len(results)
+        except Exception:
+            count = 0
+        if count > 0 or pred in ("ancestor", "related_s"):
+            lines_out.append(f"    {pred} ({count} derived facts):")
+            lines_report.append(f"\n**`{pred}`** — {count} derived facts\n")
+            for q in questions:
+                lines_out.append(f"      ✓ {q}")
+                lines_report.append(f"- {q}")
+                can_answer_total += 1
+            lines_out.append("")
+
+    # ── Part 2: User-defined competency questions ───────────────────
+    if COMPETENCY_FILE.exists():
+        cq_data = yaml.safe_load(COMPETENCY_FILE.read_text(encoding="utf-8"))
+        user_questions = cq_data.get("questions", [])
+
+        answerable = []
+        unanswerable = []
+
+        for q in user_questions:
+            requires = q.get("requires", [])
+            missing = []
+            for req in requires:
+                if req in coverage and coverage[req]["notes"] >= MIN_COVERAGE:
+                    continue
+                elif req in coverage:
+                    missing.append(f"{req} (only {coverage[req]['notes']} notes, need {MIN_COVERAGE}+)")
+                else:
+                    missing.append(f"{req} (not found)")
+            if missing:
+                unanswerable.append((q, missing))
+            else:
+                answerable.append(q)
+
+        lines_out.append(f"\n═══ User-defined competency questions ({COMPETENCY_FILE}) ═══\n")
+        lines_report.append(f"\n## User-defined competency questions\n")
+        lines_report.append(f"\n**{len(answerable)}/{len(user_questions)}** answerable\n")
+
+        if answerable:
+            lines_out.append(f"  ✓ Answerable ({len(answerable)}/{len(user_questions)}):\n")
+            lines_report.append(f"\n### Answerable ({len(answerable)})\n")
+            for q in answerable:
+                pri = "!" * q.get("priority", 1)
+                lines_out.append(f"    [{pri}] {q['question']}")
+                lines_report.append(f"- [{q.get('category', '')}] {q['question']}")
+            lines_out.append("")
+
+        if unanswerable:
+            lines_out.append(f"  ✗ NOT answerable ({len(unanswerable)}/{len(user_questions)}):\n")
+            lines_report.append(f"\n### Not answerable ({len(unanswerable)})\n")
+            for q, missing in unanswerable:
+                pri = "!" * q.get("priority", 1)
+                gaps = ", ".join(missing)
+                lines_out.append(f"    [{pri}] {q['question']}")
+                lines_out.append(f"         Missing: {gaps}")
+                lines_report.append(f"- [{q.get('category', '')}] {q['question']}")
+                lines_report.append(f"  - **Gap**: {gaps}")
+
+        lines_out.append(f"\n  Summary: {len(answerable)}/{len(user_questions)} answerable, "
+                        f"{len(unanswerable)} gaps to fill")
+    else:
+        lines_out.append(f"\nNo {COMPETENCY_FILE} found. Create one to define custom competency questions.")
+
+    # ── Part 3: Coverage gaps ───────────────────────────────────────
+    all_canonical = set(RELATION_MAP.values())
+    unused = all_canonical - set(coverage.keys())
+    thin = {r: c for r, c in coverage.items() if c["notes"] < MIN_COVERAGE and r not in unused}
+
+    if unused or thin:
+        lines_out.append(f"\n═══ Coverage gaps ═══\n")
+        lines_report.append(f"\n## Coverage gaps\n")
+        if unused:
+            lines_out.append(f"  Relation types with zero edges: {', '.join(sorted(unused))}")
+            lines_report.append(f"\n### Unused relation types\n")
+            for r in sorted(unused):
+                lines_report.append(f"- `{r}`")
+        if thin:
+            lines_out.append(f"  Thin coverage (<{MIN_COVERAGE} notes):")
+            lines_report.append(f"\n### Thin coverage (<{MIN_COVERAGE} notes)\n")
+            for r, c in sorted(thin.items(), key=lambda x: x[1]["notes"]):
+                lines_out.append(f"    {r}: {c['edges']} edges, {c['notes']} notes")
+                lines_report.append(f"- `{r}`: {c['edges']} edges across {c['notes']} notes")
+
+    for line in lines_out:
+        print(line)
+
+    report = "\n".join(lines_report) + "\n"
+    COMPETENCY_REPORT.write_text(report, encoding="utf-8")
+    print(f"\nReport written to {COMPETENCY_REPORT}")
+
+
 def main():
     parser = argparse.ArgumentParser(description="Formal reasoning over the knowledge glossary")
     sub = parser.add_subparsers(dest="command")
@@ -612,6 +815,8 @@ def main():
     p_watch = sub.add_parser("watch", help="Watch graph/ and continuously write inferred facts")
     p_watch.add_argument("--debounce", type=float, default=2.0, help="Seconds to wait after a change")
 
+    sub.add_parser("competency", help="Validate competency questions against the vault")
+
     args = parser.parse_args()
     if args.command is None:
         parser.print_help()
@@ -620,6 +825,7 @@ def main():
     cmds = {
         "infer": cmd_infer, "check": cmd_check, "query": cmd_query,
         "report": cmd_report, "write": cmd_write, "watch": cmd_watch,
+        "competency": cmd_competency,
     }
     cmds[args.command](args)
 
