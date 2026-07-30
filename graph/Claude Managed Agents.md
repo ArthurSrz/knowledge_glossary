@@ -1,10 +1,10 @@
 ---
 TypeOf: "[[Anthropic service]]"
-broader: "[[Agentic System]]"
+broader: "[[agentic System]]"
 inferred:skos:ancestor:
   - "[[AI]]"
-  - "[[Agentic System]]"
   - "[[Artificial Intelligence (AI)]]"
+  - "[[agentic System]]"
 ---
 [[agent harness]] and infrastructure for running Claude as an autonomous agent, located inside a fully managed environment. Considered a very expansive service. 
 

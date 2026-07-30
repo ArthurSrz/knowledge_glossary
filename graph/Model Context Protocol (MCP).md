@@ -4,11 +4,11 @@ improvesAccuracyOf: "[[Large Language Model]]"
 madeOf:
   - "[[MCP host]]"
   - "[[graph/MCP server]]"
-broader: "[[Agentic System]]"
+broader: "[[agentic System]]"
 inferred:skos:ancestor:
   - "[[AI]]"
-  - "[[Agentic System]]"
   - "[[Artificial Intelligence (AI)]]"
+  - "[[agentic System]]"
 inferred:skos:narrower:
   - "[[MCP host]]"
   - "[[MCP server]]"

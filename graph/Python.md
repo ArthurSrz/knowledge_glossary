@@ -13,11 +13,11 @@ inferred:skos:narrower:
   - "[[Pandas]]"
   - "[[PyTorch]]"
   - "[[Pydantic]]"
-  - "[[Pypi]]"
   - "[[Sci-kit Learn]]"
   - "[[SpaCy]]"
   - "[[Virtual Environment]]"
   - "[[openpyxl]]"
+  - "[[pypi]]"
 ---
 ![Python (programming language)](https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg)
 

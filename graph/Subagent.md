@@ -1,11 +1,11 @@
 ---
 IdenticalTo: "[[activatesShifter]]"
 TypeOf: "[[Web worker]]"
-broader: "[[Agentic System]]"
+broader: "[[agentic System]]"
 inferred:skos:ancestor:
   - "[[AI]]"
-  - "[[Agentic System]]"
   - "[[Artificial Intelligence (AI)]]"
+  - "[[agentic System]]"
 ---
 
 Isolated workers that run separately from [[claude code]]'s main conversation 

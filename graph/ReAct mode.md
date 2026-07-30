@@ -1,10 +1,10 @@
 ---
 exampleOf: "[[chat modes]]"
 builtIn: "[[Llama index]]"
-broader: "[[Agentic System]]"
+broader: "[[agentic System]]"
 inferred:skos:ancestor:
   - "[[AI]]"
-  - "[[Agentic System]]"
   - "[[Artificial Intelligence (AI)]]"
+  - "[[agentic System]]"
 ---
 Turn query engine into a tool for use with a [[ReAct data agent]]. 

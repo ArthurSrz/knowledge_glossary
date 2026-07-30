@@ -10,5 +10,5 @@ inferred:skos:ancestor:
   - "[[Ontology]]"
   - "[[knowledge organization system]]"
   - "[[organizing principles]]"
-inferred:skos:narrower: "[[Property]]"
+inferred:skos:narrower: "[[property]]"
 ---

@@ -35,7 +35,6 @@ inferred:skos:narrower:
   - "[[Memory]]"
   - "[[Message-oriented middleware]]"
   - "[[NoSQL database]]"
-  - "[[Personal computing resources]]"
   - "[[SSH Agent]]"
   - "[[Service-oriented architecture (SOA)]]"
   - "[[Shards]]"
@@ -48,4 +47,5 @@ inferred:skos:narrower:
   - "[[communication protocol]]"
   - "[[modularity]]"
   - "[[persistence]]"
+  - "[[personal computing resources]]"
 ---

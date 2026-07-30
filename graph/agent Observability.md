@@ -21,16 +21,14 @@ tags:
 skos:broader: "[[agent]]"
 inferred:skos:ancestor: "[[agent]]"
 inferred:skos:narrower:
-  - "[[AgentOps]]"
   - "[[LLM Observability]]"
-inferred:skos:related:
-  - "[[AgentOps]]"
-  - "[[agent]]"
+  - "[[agentOps]]"
+inferred:skos:related: "[[agent]]"
 ---
 
 # [[Agent]] Observability
 
-**Définition** : Visibilité complète dans l'ensemble du processus de production en traçant chaque étape de la chaîne d'événements. Doit être intégrée dans la plateforme [[AgentOps]] dès le début pour supporter la fiabilité du système d'agents.
+**Définition** : Visibilité complète dans l'ensemble du processus de production en traçant chaque étape de la chaîne d'événements. Doit être intégrée dans la plateforme [[agentOps]] dès le début pour supporter la fiabilité du système d'agents.
 
 **Principes clés** :
 - **Visibilité complète** : Transparence sur tous les processus
@@ -50,7 +48,7 @@ inferred:skos:related:
 - Détection proactive des problèmes
 - Amélioration continue du système
 
-**Relation avec [[AgentOps]]** :
+**Relation avec [[agentOps]]** :
 - Composant fondamental de la plateforme
 - Enabler de la production fiable
 - Base pour le monitoring et l'amélioration

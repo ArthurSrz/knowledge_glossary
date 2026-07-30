@@ -12,7 +12,7 @@ inferred:skos:related:
   - "[[agent]]"
   - "[[agent observability]]"
 ---
-Plateforme [[DevOps]]/MLOps de bout en bout englobant le développement, l'évaluation, les tests, le déploiement et la surveillance d'[[agentic system]] pour la gestion opérationnelle des projets d'agents en environnement de production.
+Plateforme [[DevOps]]/MLOps de bout en bout englobant le développement, l'évaluation, les tests, le déploiement et la surveillance d'[[agentic System]] pour la gestion opérationnelle des projets d'agents en environnement de production.
 
 **Phases du cycle de vie** :
 - **Development** : Développement des agents

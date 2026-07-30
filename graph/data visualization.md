@@ -19,7 +19,7 @@ partially coincident with: "[[information visualization]]"
 wikidata entity id: Q6504956
 inferred:skos:narrower:
   - "[[Dashboard]]"
-  - "[[Pictorial fraction chart]]"
   - "[[Preston curve]]"
+  - "[[pictorial fraction chart]]"
   - "[[statistical graphics]]"
 ---

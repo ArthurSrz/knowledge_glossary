@@ -1,14 +1,23 @@
 ---
-related_to: [Agent Name, Agent Version, Agent Management]
+related_to:
+  - Agent Name
+  - Agent Version
+  - Agent Management
 dependencies: []
-components: [Agent ID, Agent Name, Agent Version]
+components:
+  - Agent ID
+  - Agent Name
+  - Agent Version
 category: Agent Creation Registry
-tags: [Identité_Agent, Versioning, Gestion_Agents]
-broader: "[[Agentic System]]"
+tags:
+  - Identité_Agent
+  - Versioning
+  - Gestion_Agents
+broader: "[[agentic System]]"
 inferred:skos:ancestor:
   - "[[AI]]"
-  - "[[Agentic System]]"
   - "[[Artificial Intelligence (AI)]]"
+  - "[[agentic System]]"
 ---
 
 # [[Agent]] Identity

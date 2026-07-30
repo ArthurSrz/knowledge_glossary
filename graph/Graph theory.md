@@ -16,10 +16,10 @@ inferred:skos:narrower:
   - "[[Heterogeneous graph]]"
   - "[[Multipartite graph]]"
   - "[[Network graph]]"
-  - "[[Property graph model]]"
   - "[[adjacency matrix]]"
   - "[[complete graph]]"
   - "[[degree]]"
   - "[[node]]"
   - "[[path]]"
+  - "[[property graph model]]"
 ---

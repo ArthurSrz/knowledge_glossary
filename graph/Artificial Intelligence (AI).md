@@ -8,11 +8,11 @@ skos:narrower:
 broader: "[[AI]]"
 inferred:skos:ancestor: "[[AI]]"
 inferred:skos:narrower:
-  - "[[Agentic System]]"
   - "[[Expert systems]]"
   - "[[Narrow AI]]"
   - "[[Natural Language Processing]]"
   - "[[Symbolism]]"
+  - "[[agentic System]]"
   - "[[compound AI system]]"
   - "[[connexionism]]"
   - "[[machine learning]]"

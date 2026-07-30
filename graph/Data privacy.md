@@ -8,7 +8,7 @@ enforcedBy:
 appliesTo:
   - "[[Personal data]]"
   - "[[Sensitive Information]]"
-  - "[[Protected Health Information (PHI)]]"
+  - "[[protected health information (PHI)]]"
 techniquesInclude:
   - "[[Differential privacy]]"
   - "[[Homomorphic encryption]]"
@@ -40,7 +40,7 @@ There are several ways to ensure privacy in [[ML system]] :
 ## Related concepts
 
 - [[Data privacy laws]] - Legal frameworks for data protection
-- [[Protected Health Information (PHI)]] - Handling sensitive health data
+- [[protected health information (PHI)]] - Handling sensitive health data
 - [[Medical Data Privacy]] - Privacy in healthcare context
 - [[Financial Privacy]] - Protecting financial information
 - [[Privacy by design]] - Building privacy into systems

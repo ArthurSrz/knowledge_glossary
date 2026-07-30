@@ -1,6 +1,6 @@
 ---
 related_to:
-  - "[[agentic system]]"
+  - "[[agentic System]]"
   - "[[agentOps]]"
   - "[[agent observability]]"
 dependencies:
@@ -17,10 +17,7 @@ skos:broader:
 inferred:skos:narrower:
   - "[[agent observability]]"
   - "[[mistral agents]]"
-inferred:skos:related:
-  - "[[AgentOps]]"
-  - "[[Agentic System]]"
-  - "[[compound AI system]]"
+inferred:skos:related: "[[compound AI system]]"
 ---
 An agent is an entity that perceives its [[environment]] through sensors and acts upon that [[environment]] through effectors, as conceptualized by Marvin Minsky in "The Society of Mind" (1986)
 

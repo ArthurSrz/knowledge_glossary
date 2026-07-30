@@ -26,7 +26,6 @@ inferred:skos:narrower:
   - "[[Object]]"
   - "[[Outgoing relationships]]"
   - "[[Properties]]"
-  - "[[Property]]"
   - "[[Relationship aggregation]]"
   - "[[Relationship quality]]"
   - "[[Text2Cypher]]"
@@ -37,6 +36,8 @@ inferred:skos:narrower:
   - "[[graphs]]"
   - "[[inferred from attribute of entity]]"
   - "[[list of values as qualifiers]]"
+  - "[[property]]"
+inferred:skos:related: "[[property graph model]]"
 ---
 
 ![Knowledge graph Thumbnail](https://upload.wikimedia.org/wikipedia/commons/5/52/Conceptual_Diagram_-_Example.svg)
