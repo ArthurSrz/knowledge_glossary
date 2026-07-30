@@ -1,11 +1,7 @@
 ---
 broader: "[[Agentic System]]"
 ---
-# Tools
-
-## Definition
-
-Tools are physical objects modified or created to extend human capabilities and accomplish specific tasks, a concept formalized in anthropology by Kenneth Oakley in "Man the Tool-Maker" (1949), building on Benjamin Franklin's earlier philosophical observation (1778).
+Tools are physical objects modified or created to extend human capabilities and accomplish specific tasks, a [[concept]] formalized in anthropology by Kenneth Oakley in "Man the Tool-Maker" (1949), building on Benjamin Franklin's earlier philosophical observation (1778).
 
 ## Historical Development
 
@@ -23,10 +19,10 @@ Tools are physical objects modified or created to extend human capabilities and 
 - Tools as manifestation of reason
 
 ### Oakley's Contributions (1949)
-- Systematic classification of tools
+- Systematic [[classification]] of tools
 - Evolution of tool-making techniques
 - Relationship between tools and human evolution
-- Cultural transmission of tool knowledge
+- Cultural transmission of tool [[knowledge]]
 
 ## Types of Tools
 
@@ -43,12 +39,12 @@ Tools are physical objects modified or created to extend human capabilities and 
 3. **Complex Tools**:
    - Mechanical advantage
    - Multiple moving parts
-   - Precision instruments
+   - [[Precision]] instruments
 
-4. **Power Tools**:
+1. **[[Power]] Tools**:
    - External energy sources
    - Mechanical assistance
-   - Automated functions
+   - Automated [[functions]]
 
 ## Tool Evolution Stages
 
@@ -82,7 +78,7 @@ Tools are physical objects modified or created to extend human capabilities and 
 2. **Tool Production**:
    - Manual dexterity
    - Sequence planning
-   - Material knowledge
+   - Material [[knowledge]]
 
 3. **Tool Use**:
    - Problem-solving
@@ -120,7 +116,7 @@ Tools are physical objects modified or created to extend human capabilities and 
 
 3. **Human-Tool Interaction**:
    - Ergonomics
-   - Interface design
+   - Interface [[design]]
    - User experience
 
 ## Applications
@@ -130,9 +126,9 @@ Tools are physical objects modified or created to extend human capabilities and 
    - Cultural reconstruction
    - Migration patterns
 
-2. **Industrial Design**:
-   - Product development
-   - User-centered design
+1. **Industrial [[Design]]**:
+   - [[Product]] development
+   - User-centered [[design]]
    - Manufacturing processes
 
 3. **Education**:
@@ -162,7 +158,7 @@ Tool theory has influenced:
 
 2. **Smart Tools**:
    - AI integration
-   - Adaptive functions
+   - Adaptive [[functions]]
    - Connected devices
 
 3. **Biotechnology**:

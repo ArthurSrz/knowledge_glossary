@@ -10,23 +10,17 @@ tags:
   - Autonomie
   - LLM
 type: skos:Concept
-skos:narrower: "[[agent harness]]"
+skos:narrower:
+  - "[[agent harness]]"
+  - "[[AI agent]]"
 skos:broader:
 ---
-A [[concept]] that holds many definitions : 
-
-1. An agent is a computational entity that perceives its [[environment]] through sensors and acts upon that [[environment]] through effectors, as conceptualized by Marvin Minsky in "The Society of Mind" (1986) and formalized in artificial intelligence research.
-2. Système IA basé sur LLM qui peut agir de manière autonome, prendre des décisions et effectuer des tâches complexes avec une intervention humaine minimale.
+An agent is an entity that perceives its [[environment]] through sensors and acts upon that [[environment]] through effectors, as conceptualized by Marvin Minsky in "The Society of Mind" (1986)
 
 #### Caractéristiques principales :
 - Autonomie dans la prise de décision
 - Capacité d'interaction avec l'environnement
 - Intervention humaine minimale requise
-
-#### Liens avec la taxonomie :
-- Base des systèmes agentiques
-- Élément central de la plateforme [[agentOps]]
-- Nécessite une observabilité complète pour la production
 
 #### Historical Development
 
@@ -57,14 +51,6 @@ According to Minsky (1986):
 2. **Reactivity**: Perceive and respond to [[environment]]
 3. **Proactivity**: Exhibit goal-directed behavior
 4. **Social Ability**: Interact with other agents
-
-#### PEAS Framework (Russell & Norvig)
-
-Agents are defined by:
-- **P**erformance [[measure]]
-- **E**nvironment
-- **A**ctuators
-- **S**ensors
 
 #### Agent Architecture
 

@@ -114,7 +114,7 @@ The `broader:` property means "this concept is a subtype/subclass/instance of th
       - [Tool arena](graph/Tool%20arena.md)
       - [Tool Assignment Gate](graph/Tool%20Assignment%20Gate.md)
       - [Toolkits](graph/Toolkits.md)
-      - [Tools](graph/Tools.md)
+      - [tools](tools.md)
     - [compound AI systems](graph/compound%20AI%20systems.md)
     - [computer vision](graph/computer%20vision.md)
       - [Facial recognition](graph/Facial%20recognition.md)

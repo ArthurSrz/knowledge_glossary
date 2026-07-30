@@ -11,7 +11,7 @@ Système GenAI qui sert les objectifs d'un utilisateur en effectuant des actions
 **Composants clés** :
 - **LLM Modules** : Modèles de langage intégrés comme composants
 - **[[Control Flow]]** : Flux de contrôle orchestrant les opérations
-- **External [[Tools]]** : Outils externes pour l'interaction avec l'environnement
+- **External [[tools]]** : Outils externes pour l'interaction avec l'environnement
 - **Multi-step Execution** : Capacité d'exécution en plusieurs étapes
 
 **Fonctionnalités** :
