@@ -8,15 +8,6 @@ subclass of:
 has part(s):
   - "[[node]]"
   - "[[Edges]]"
-broader: "[[knowledge graph]]"
-inferred:skos:ancestor:
-  - "[[Infrastructure]]"
-  - "[[Knowledge base]]"
-  - "[[Memory]]"
-  - "[[Process]]"
-  - "[[graphs]]"
-  - "[[knowledge]]"
-  - "[[knowledge graph]]"
 inferred:skos:narrower:
   - "[[bipartite graph]]"
   - "[[knowledge graph]]"
@@ -33,4 +24,4 @@ A graph is a pair G = (X, E) consisting of a non-empty finite set X, and a set E
 
 ### Definition 3 
 
-For any enumeration x1, x2, ..., xn of the vertices of a graph G, one can associate a square matrix M of dimensions n × n, called the [[adjacency matrix]] of the graph, whose entries are 0 or 1
+For any enumeration x1, x2, ..., xn of the [[vertices]] of a graph G, one can associate a square matrix M of dimensions n × n, called the [[adjacency matrix]] of the graph, whose entries are 0 or 1

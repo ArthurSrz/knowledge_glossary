@@ -29,7 +29,6 @@ inferred:skos:narrower:
   - "[[context mode]]"
   - "[[search module]]"
   - "[[tools]]"
-inferred:skos:related: "[[agent]]"
 ---
 Système GenAI qui sert les objectifs d'un utilisateur en effectuant des actions qui interagissent avec des systèmes externes au LLM. Incorpore des LLM comme modules dans un flux de contrôle conçu pour résoudre des tâches via l'utilisation d'outils externes, la planification, la mémoire et l'exécution d'étapes multiples.
 

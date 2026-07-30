@@ -422,7 +422,7 @@ The `broader:` property means "this concept is a subtype/subclass/instance of th
   - [context graph](graph/context%20graph.md)
   - [CYPHER](graph/CYPHER.md)
   - [graph hop](graph/graph%20hop.md)
-  - [graphs](graph/graphs.md)
+  - [graph](graph.md)
   - [inferred from attribute of entity](graph/inferred%20from%20attribute%20of%20entity.md)
   - [Ingoing relationships](graph/Ingoing%20relationships.md)
   - [list of values as qualifiers](graph/list%20of%20values%20as%20qualifiers.md)

@@ -16,7 +16,7 @@ inferred:skos:ancestor:
   - "[[Ontology]]"
   - "[[Process]]"
   - "[[abstract entity]]"
-  - "[[graphs]]"
+  - "[[graph]]"
   - "[[knowledge]]"
   - "[[knowledge graph]]"
   - "[[knowledge organization system]]"

@@ -1,14 +1,14 @@
 ---
 madeOf:
   - "[[context]]"
-  - "[[graphs]]"
+  - "[[graph]]"
 broader: "[[knowledge graph]]"
 inferred:skos:ancestor:
   - "[[Infrastructure]]"
   - "[[Knowledge base]]"
   - "[[Memory]]"
   - "[[Process]]"
-  - "[[graphs]]"
+  - "[[graph]]"
   - "[[knowledge]]"
   - "[[knowledge graph]]"
 ---

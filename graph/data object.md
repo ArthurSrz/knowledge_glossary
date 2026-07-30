@@ -10,7 +10,7 @@ inferred:skos:ancestor:
   - "[[Object]]"
   - "[[Process]]"
   - "[[data]]"
-  - "[[graphs]]"
+  - "[[graph]]"
   - "[[knowledge]]"
   - "[[knowledge graph]]"
 inferred:skos:broader:

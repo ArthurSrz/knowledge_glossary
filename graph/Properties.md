@@ -5,7 +5,7 @@ inferred:skos:ancestor:
   - "[[Knowledge base]]"
   - "[[Memory]]"
   - "[[Process]]"
-  - "[[graphs]]"
+  - "[[graph]]"
   - "[[knowledge]]"
   - "[[knowledge graph]]"
 ---

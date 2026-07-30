@@ -1,5 +1,5 @@
 ---
-partOf: "[[graphs]]"
+partOf: "[[graph]]"
 broader: "[[Graph theory]]"
 inferred:skos:ancestor:
   - "[[combinatorics]]"

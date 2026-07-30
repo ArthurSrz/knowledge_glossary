@@ -1,16 +1,26 @@
 ---
-related_to: [Agent, Agentic System, Agent Observability, DevOps, MLOps]
-dependencies: [Traceable Artifacts, Sessions, Traces, Spans]
-components: [Development, Evaluation, Testing, Deployment, Monitoring]
+dependencies:
+  - Traceable Artifacts
+  - Sessions
+  - Traces
+  - Spans
+components:
+  - Development
+  - Evaluation
+  - Testing
+  - Deployment
+  - Monitoring
 category: Concepts Fondamentaux
-tags: [AgentOps, DevOps, MLOps, Production]
+tags:
+  - AgentOps
+  - DevOps
+  - MLOps
+  - Production
 broader: "[[agent observability]]"
 inferred:skos:ancestor:
   - "[[agent]]"
   - "[[agent observability]]"
-inferred:skos:related:
-  - "[[agent]]"
-  - "[[agent observability]]"
+inferred:skos:related: "[[agent observability]]"
 ---
 Plateforme [[DevOps]]/MLOps de bout en bout englobant le développement, l'évaluation, les tests, le déploiement et la surveillance d'[[agentic System]] pour la gestion opérationnelle des projets d'agents en environnement de production.
 

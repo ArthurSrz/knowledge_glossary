@@ -1,8 +1,4 @@
 ---
-related_to:
-  - "[[agentic System]]"
-  - "[[agentOps]]"
-  - "[[agent observability]]"
 dependencies:
   - "[[Large Language Model]]"
 tags:

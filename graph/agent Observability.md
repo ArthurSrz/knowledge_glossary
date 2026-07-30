@@ -23,7 +23,6 @@ inferred:skos:ancestor: "[[agent]]"
 inferred:skos:narrower:
   - "[[LLM Observability]]"
   - "[[agentOps]]"
-inferred:skos:related: "[[agent]]"
 ---
 
 # [[Agent]] Observability
