@@ -7,4 +7,4 @@ madeOf:
   - "[[Workflow automation]]"
 broader: "[[Application development]]"
 ---
-Claude plugins are what gives Anthropic [[compound AI systems]] domain expertise. It is 
+Claude plugins are what gives Anthropic [[compound AI system]] domain expertise. It is 

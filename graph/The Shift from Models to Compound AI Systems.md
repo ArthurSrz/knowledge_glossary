@@ -1,5 +1,5 @@
 ---
-explains: "[[compound AI systems]]"
+explains: "[[compound AI system]]"
 broader: "[[AI]]"
 ---
 
