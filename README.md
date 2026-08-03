@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🧠 Data Knowledge Graph
+# 🧠 Data knowledge graph
 
 **A living ontology of data science, ML, and AI built as an Obsidian vault with typed semantic relationships.**
 
