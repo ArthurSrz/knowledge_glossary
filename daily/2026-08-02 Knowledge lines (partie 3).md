@@ -1,4 +1,4 @@
-![[chaine.png]]Dans le numéro précédent, il a été avancé qu’à représenter la connaissance sous la forme de chaînes d’activation on développait une intelligence sur l’intelligence. Soit une intelligence au carré.
+Dans le numéro précédent, il a été avancé qu’à représenter la connaissance sous la forme de chaînes d’activation on développait une intelligence sur l’intelligence. Soit une intelligence au carré.
 
 Je ne m’étendrai pas ici sur les moyens de développer ces chaînes d’activation à grande échelle. Si vous êtes curieux, je vous renvoie plutôt vers une [chouette](clarifeye.ai) née pour remplir cette fonction. À la place, je vais plutôt m’intéresser à démontrer que l’on peut effectivement conduire (steer) un modèle de langage avec une chaîne d’activation.
   
@@ -30,9 +30,18 @@ Je retourne sur *Frontiera*. Les experts arrivent à se représenter comment les
 
 ![[chaine.png]]
 
-Un réseau dense de neurones mécaniques s'activent selon la réponse et une organisation interne complexe. A l'intérieur, ils arrivent à extraire un neurone en charge de tous les aspects relatifs aux "courbes, [[arc]] et radius", et qui, en fonction de son niveau de stimulation transforme un *Cerclea* en *Carrea* ou vice versa. 
+Un [réseau dense de neurones mécaniques](https://www.neuronpedia.org/gemma-2-2b/graph?slug=aroundsquareisma-1784237533470&pruningThreshold=0.8&densityThreshold=1&pinnedIds=E_603_4%2C8_15652_4) s'activent selon la réponse et une organisation interne complexe.  Voilà notre chaine d'activation. A l'intérieur, ils arrivent à extraire un neurone en charge de tous les aspects relatifs aux "courbes, [[arc]] et radius", et qui, en fonction de son niveau de stimulation transforme un *Cerclea* en *Carrea* ou vice versa. 
 
 Lorsqu'on rend ce neurone plus sensible et qu'il s'active plus souvent, les machines ne voit plus le monde que sous la forme de cercles 
 
 
 ![[neurone.png]]
+
+![[results_neuro.png]]
+
+A l'inverse, lorsqu'on diminue le niveau de sensibilité de ce neurone, la machine ne voit plus que des carrés : 
+
+![[neurone_moins.png]]
+![[results_neurone_moins.png]]
+
+La preuve était faite : il est bien possible de transformer un *Cerclea* en *Carrea* sur *Frontiera* ; et donc de conduire un modèle avec une chaine d'activation dans notre monde réel. 
