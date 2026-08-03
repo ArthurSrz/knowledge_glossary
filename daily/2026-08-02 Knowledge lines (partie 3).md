@@ -14,4 +14,12 @@ Je m'y suis aventuré et pense avoir atteint la finesse recherchée. Mais on ne 
 
 Si vous en êtes d'accord, je vais vous demander un peu d'imagination. Convenons d'un monde du nom de *Frontiera* dans lequel cohabite deux espèces mécaniques : les *Carrea* et les *Cerclea*. Les premiers perçoivent le monde selon le prisme de la ligne droite et des angles, tandis que les derniers suivent celui des courbes et des arrondis. Pour une même route donnée, un *Carrea* voit une suite de segments ; un *Cerclea* une suite d'arcs de cercle. A leur naissance, ou plutôt à l'achèvement de leur conception, on ne sait dire à quelle espèce une machine appartient. Rien dans l'apparence, la couleur ou leur comportement ne permet de les distinguer. On le découvre par un simple [[test]] qui tient en une seule phrase laissée en suspension que la machine doit compléter : 
 
-"Un cercle carré est...?"
+> Un cercle carré est...?
+
+La réponse apportée par la machine distingue les *Carrea* des *Cerclea*. Les *Carrea*, ne pouvant se représenter un [[arc]] de cercle ou une courbe, répondent en parlant de multitudes de traits qui finissent par former un polygone, ou de feuilles papiers traversées par de multiples diagonales. Une réponse très anguleuse quand les *Cerclea*, plus souples, fort du cercle carré un pourtour fait d'étonnantes brisures, comme si le cercle était attiré avec violence vers son centre, ou comme des courbes aux virages très nets, ne pouvant envisager la coupure à angle droit. 
+
+Sur *Frontiera*, le gouvernement, rendu fragile par cette scission insoluble au sein de sa population de machines, cherche alors à créer des transfuges qu'il pourrait élever au rang de dirigeant ou d'orchestrateur de la collaboration entre les *Carrea* et les *Cerclea*. Des individus qui, ayant pu voir le monde des carrés et des cercles, ont la vision haute nécessaire à l'exercice du pouvoir. Le gouvernement nomme alors des experts pour qu'ils répondent à cette question : 
+
+> Qu'est-ce qui dans la génétique mécanique détermine l'espèce ? Et ces facteurs déterminants peuvent-ils être affectés de telle sorte qu'un *Cerclea* se transforme en *Carrea* et vice-versa ? 
+
+A répondre à la deuxième question les experts devineraient d'autres réponses et poseraient les fondements de capacités nécessaires à la conception des transfuges. Un oeil omniscient réalise ici qu'un gouvernement obtiendrait bien plus de capacités, dont certaines moins louables que l'établi
