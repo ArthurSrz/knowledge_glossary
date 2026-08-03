@@ -26,5 +26,5 @@ A répondre à la deuxième question les experts devineraient d'autres réponses
 
 Je pose le cadre expérimental sur *Frontiera*. Ce monde fictif s'avère d'une très grande utilité car si les chercheurs arrivent effectivement à transformer comme demandé par le gouvernement, un *Cerclea* en *Carrea* et vice versa, j'apporterai *[[de facto]]* une réponse à ma question d'origine, celle qui se situe dans le monde réel, à savoir : une chaine d'activation permet-elle, oui ou non, de conduire un modèle ? 
 
-Je retourne sur *Frontiera*. Les experts arrivent à isoler un facteur décisif dans la détermination de l'espèce. 
+Je retourne sur *Frontiera*. Les experts arrivent à se représenter comment les *Carrea* et le
 
