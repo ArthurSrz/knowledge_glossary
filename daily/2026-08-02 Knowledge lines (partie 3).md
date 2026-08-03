@@ -1,4 +1,4 @@
-Dans le numéro précédent, il a été avancé qu’à représenter la connaissance sous la forme de chaînes d’activation on développait une intelligence sur l’intelligence. Soit une intelligence au carré.
+![[chaine.png]]Dans le numéro précédent, il a été avancé qu’à représenter la connaissance sous la forme de chaînes d’activation on développait une intelligence sur l’intelligence. Soit une intelligence au carré.
 
 Je ne m’étendrai pas ici sur les moyens de développer ces chaînes d’activation à grande échelle. Si vous êtes curieux, je vous renvoie plutôt vers une [chouette](clarifeye.ai) née pour remplir cette fonction. À la place, je vais plutôt m’intéresser à démontrer que l’on peut effectivement conduire (steer) un modèle de langage avec une chaîne d’activation.
   
@@ -26,5 +26,13 @@ A répondre à la deuxième question les experts devineraient d'autres réponses
 
 Je pose le cadre expérimental sur *Frontiera*. Ce monde fictif s'avère d'une très grande utilité car si les chercheurs arrivent effectivement à transformer comme demandé par le gouvernement, un *Cerclea* en *Carrea* et vice versa, j'apporterai *[[de facto]]* une réponse à ma question d'origine, celle qui se situe dans le monde réel, à savoir : une chaine d'activation permet-elle, oui ou non, de conduire un modèle ? 
 
-Je retourne sur *Frontiera*. Les experts arrivent à se représenter comment les *Carrea* et le
+Je retourne sur *Frontiera*. Les experts arrivent à se représenter comment les *Carrea* et les *Cercla* perçoivent le monde au moment de la question de [[test]] : 
 
+![[chaine.png]]
+
+Un réseau dense de neurones mécaniques s'activent selon la réponse et une organisation interne complexe. A l'intérieur, ils arrivent à extraire un neurone en charge de tous les aspects relatifs aux "courbes, [[arc]] et radius", et qui, en fonction de son niveau de stimulation transforme un *Cerclea* en *Carrea* ou vice versa. 
+
+Lorsqu'on rend ce neurone plus sensible et qu'il s'active plus souvent, les machines ne voit plus le monde que sous la forme de cercles 
+
+
+![[neurone.png]]
