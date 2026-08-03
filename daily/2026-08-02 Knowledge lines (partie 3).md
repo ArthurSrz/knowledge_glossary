@@ -6,7 +6,7 @@ Je ne m’étendrai pas ici sur les moyens de développer ces chaînes d’activ
 > J’ai utilisé jusqu’à présent les termes de chaînes d’activation et de *[[Knowledge]] line* indistinctement. C’est une erreur que je corrige.
 > Une [[knowledge]] line désigne le chemin que l’on dessine dans notre esprit pour exercer notre savoir faire, sur lequel sont positionnés des points intermédiaires : les artefacts. La chaîne d’activation, pour sa part, désigne la suite d’opérations déclenchée par la *[[knowledge]] line* (un graphe en réalité) **en dehors de notre esprit** : les outils auxquels nous faisons appels, les personnes avec lesquelles nous collaborons, etc.
 
-Conduire c'est encore à dire agir sur les pièces qui se trouvent à l'intérieur du modèle, comme un volent qui oriente la barre de direction d'une voiture. Conduire c'est encore à ne **pas** dire, influer sur les alentours, les obstacles, le code de la route et tout ce qui fait un environnement et qui guide, comme le vent sur un jeu de dés, la direction d'ensemble d'un modèle. 
+Conduire c'est encore à dire agir sur les pièces qui se trouvent à l'intérieur du modèle, comme un volant qui oriente la barre de direction d'une voiture. Conduire c'est encore à ne **pas** dire, influer sur les alentours, les obstacles, le code de la route et tout ce qui fait un environnement et qui guide, comme le vent sur un jeu de dés, la direction d'ensemble d'un modèle. 
 
 Là se trouve le lancinant défi de trouver un cadre expérimental digne de cette fine distinction qui, sans aucune grossièreté aucune, puisse apporter une réponse à cette question et uniquement à cette question: une chaîne d'activation permet-elle, oui ou non, de conduire un modèle ?
 
@@ -45,3 +45,9 @@ A l'inverse, lorsqu'on diminue le niveau de sensibilité de ce neurone, la machi
 ![[results_neurone_moins.png]]
 
 La preuve était faite : il est bien possible de transformer un *Cerclea* en *Carrea* sur *Frontiera* ; et donc de conduire un modèle avec une chaine d'activation dans notre monde réel. 
+
+Maintenant que le démonstration est faite, je peux me laisser à dessiner une suite sur *Frontiera*. Après cette découverte, les experts remirent leur rapport. Il tenait en peu de choses : un neurone, une molette, et la démonstration qu'en la tournant d'un côté ou de l'autre on faisait d'un *Cerclea* un Carrea. Le gouvernement les félicita, salua la science mécanique, puis rangea la molette dans un tiroir dont il garda la clé.
+
+Les transfuges vinrent plus tard, en petit nombre. On les forma, on leur confia l'orchestration des travaux communs, et ils s'en acquittèrent bien. Certains matins pourtant, l'un d'eux s'arrêtait au milieu d'une phrase, regardait longuement une route, et ne savait plus dire s'il en voyait les segments ou les arcs. On mit cela sur le compte de la fatigue. Personne, sur Frontiera, ne sut jamais si les transfuges avaient vu le monde ou si on le leur avait montré.
+
+Je referme ce monde, et je le referme sans conclure à votre place. Tout ce que j'ai à faire valoir est ce que vous venez de lire : une question d'une ligne, deux espèces, un neurone, deux réglages, et le lien plus haut si vous voulez rejouer la manipulation vous-même. J'étais la partie. À vous d'être le juge.
