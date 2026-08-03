@@ -139,7 +139,7 @@ def append_stats(stats):
 
 
 def plot_stats(data):
-    """Generate simplified dual-axis line graph: total files (left) vs wikilinks (right)."""
+    """Generate modern dark-themed chart with gradient fills."""
     if not data:
         print("No data to plot")
         return
@@ -149,61 +149,67 @@ def plot_stats(data):
     links = [d["links"] for d in data]
 
     def smart_ylim(values):
-        """Compute y-axis limits that show progression clearly with round numbers."""
         lo, hi = min(values), max(values)
         data_range = hi - lo
-        # Use at least 10% of the mean as visible range so flat data still gets context
         margin = max(data_range, 0.1 * ((lo + hi) / 2)) * 0.5
         raw_lo = lo - margin
         raw_hi = hi + margin
-        # Round to nice step size
         span = raw_hi - raw_lo
-        step = 10 ** int(f"{span:.0e}".split("e+")[-1])  # order of magnitude
+        step = 10 ** int(f"{span:.0e}".split("e+")[-1])
         nice_lo = max(0, int(raw_lo / step) * step)
         nice_hi = int(raw_hi / step + 1) * step
         return nice_lo, nice_hi
 
-    # Create figure with dual axes
+    BG = '#0d1117'
+    SURFACE = '#161b22'
+    BORDER = '#30363d'
+    TEXT = '#c9d1d9'
+    TEXT_DIM = '#8b949e'
+    CYAN = '#58a6ff'
+    GREEN = '#3fb950'
+
     fig, ax1 = plt.subplots(figsize=(11, 5))
+    fig.patch.set_facecolor(BG)
+    ax1.set_facecolor(SURFACE)
 
-    # Left axis: Total files
-    color1 = '#2ca02c'
-    ax1.set_xlabel('Date', fontsize=11)
-    ax1.set_ylabel('Total Concepts (Files)', color=color1, fontsize=11, fontweight='bold')
+    for spine in ax1.spines.values():
+        spine.set_color(BORDER)
 
-    line1 = ax1.plot(dates, total_files, color=color1, marker='o', linewidth=2.5, markersize=7, label='Total Concepts')
-
+    ax1.set_ylabel('Concepts', color=GREEN, fontsize=11, fontweight='bold')
+    line1 = ax1.plot(dates, total_files, color=GREEN, linewidth=2.5, label='Concepts', zorder=3)
+    ax1.fill_between(dates, total_files, alpha=0.08, color=GREEN)
     ax1.set_ylim(smart_ylim(total_files))
     ax1.ticklabel_format(axis='y', useOffset=False, style='plain')
-    ax1.tick_params(axis='y', labelcolor=color1)
-    ax1.grid(True, alpha=0.2)
+    ax1.tick_params(axis='y', labelcolor=GREEN, colors=TEXT_DIM)
+    ax1.tick_params(axis='x', colors=TEXT_DIM)
+    ax1.grid(True, alpha=0.1, color=TEXT_DIM, linestyle='--')
 
-    # Right axis: Wikilinks
     ax2 = ax1.twinx()
-    color2 = '#1f77b4'
-    ax2.set_ylabel('Total Wikilinks', color=color2, fontsize=11, fontweight='bold')
-
-    line2 = ax2.plot(dates, links, color=color2, marker='s', linewidth=2.5, markersize=7, label='Total Wikilinks')
-
+    for spine in ax2.spines.values():
+        spine.set_color(BORDER)
+    ax2.set_ylabel('Wikilinks', color=CYAN, fontsize=11, fontweight='bold')
+    line2 = ax2.plot(dates, links, color=CYAN, linewidth=2.5, label='Wikilinks', zorder=3)
+    ax2.fill_between(dates, links, alpha=0.06, color=CYAN)
     ax2.set_ylim(smart_ylim(links))
     ax2.ticklabel_format(axis='y', useOffset=False, style='plain')
-    ax2.tick_params(axis='y', labelcolor=color2)
+    ax2.tick_params(axis='y', labelcolor=CYAN, colors=TEXT_DIM)
 
-    # Format x-axis dates
-    ax1.xaxis.set_major_formatter(mdates.DateFormatter("%Y-%m-%d"))
-    fig.autofmt_xdate(rotation=45, ha='right')
+    ax1.xaxis.set_major_formatter(mdates.DateFormatter("%b %d"))
+    ax1.xaxis.set_major_locator(mdates.AutoDateLocator(minticks=5, maxticks=10))
+    fig.autofmt_xdate(rotation=0, ha='center')
 
-    # Combined legend
     lines = line1 + line2
     labels = [l.get_label() for l in lines]
-    ax1.legend(lines, labels, loc='upper left', fontsize=10)
+    legend = ax1.legend(lines, labels, loc='upper left', fontsize=10,
+                        facecolor=SURFACE, edgecolor=BORDER, labelcolor=TEXT)
 
-    # Title
-    plt.title('Knowledge Graph Growth: Concepts vs Connectivity', fontsize=12, fontweight='bold')
-    fig.tight_layout()
+    latest = data[-1]
+    summary = f"{latest['total']} concepts  ·  {latest['links']:,} links  ·  {latest['rich']} rich"
+    fig.text(0.5, 0.96, summary, ha='center', fontsize=10, color=TEXT_DIM,
+             fontstyle='italic')
 
-    # Save
-    plt.savefig(CHART_FILE, dpi=150, bbox_inches='tight')
+    fig.tight_layout(rect=[0, 0, 1, 0.94])
+    plt.savefig(CHART_FILE, dpi=150, bbox_inches='tight', facecolor=BG)
     print(f"Saved chart to {CHART_FILE}")
     plt.close()
 
@@ -218,11 +224,9 @@ def update_readme(total_count):
     with open(readme_path, 'r', encoding='utf-8') as f:
         content = f.read()
 
-    # Replace the hardcoded count with the current count
-    # Pattern: "containing **[number] interconnected concepts**"
     updated = re.sub(
-        r'containing \*\*\d+ interconnected concepts\*\*',
-        f'containing **{total_count} interconnected concepts**',
+        r'concepts-\d+-blue',
+        f'concepts-{total_count}-blue',
         content
     )
 
