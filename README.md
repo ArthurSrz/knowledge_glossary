@@ -2,7 +2,7 @@
 
 # 🧠 Data Knowledge Graph
 
-**A living ontology of data science, ML, and AI — built as an Obsidian vault with typed semantic relationships.**
+**A living ontology of data science, ML, and AI built as an Obsidian vault with typed semantic relationships.**
 
 [![Concepts](https://img.shields.io/badge/concepts-873-blue?style=flat-square)](#)
 [![Wikilinks](https://img.shields.io/badge/wikilinks-7%2C800%2B-green?style=flat-square)](#)
@@ -15,7 +15,7 @@
 
 <br>
 
-> **Not a glossary — a graph.** Each concept carries typed relationships in YAML frontmatter (`broader`, `uses`, `subclass of`, …), forming a navigable semantic network. 73 root concepts branch into 8 nesting levels, connected by 7,800+ wikilinks.
+> **Not a glossary, a graph.** Each concept carries typed relationships in YAML frontmatter (`broader`, `uses`, `subclass of`, …), forming a navigable semantic network. 73 root concepts branch into 8 nesting levels, connected by 7,800+ wikilinks.
 
 <br>
 
