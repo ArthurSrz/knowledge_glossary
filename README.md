@@ -1,8 +1,8 @@
 <div align="center">
 
-# 🧠 Data knowledge graph
+# 🧠 [[Data]] [[knowledge graph]]
 
-**A living ontology of data science, ML, and AI built as an Obsidian vault with typed semantic relationships.**
+**A living [[ontology]] of [[data]] science, ML, and AI built as an Obsidian vault with typed semantic relationships.**
 
 [![Concepts](https://img.shields.io/badge/concepts-873-blue?style=flat-square)](#)
 [![Wikilinks](https://img.shields.io/badge/wikilinks-7%2C800%2B-green?style=flat-square)](#)
@@ -282,5 +282,5 @@ The graph encodes [SKOS](https://www.w3.org/2004/02/skos/)-style hierarchical re
 ---
 
 <div align="center">
-<sub>Built with <a href="https://obsidian.md/">Obsidian</a> · Reasoned with <a href="https://github.com/semantica-agi/semantica">Semantica</a> · Stats updated daily via GitHub Actions</sub>
+<sub>Built with <a href="https://obsidian.md/">Obsidian</a> · Reasoned with <a href="https://github.com/semantica-agi/semantica">Semantica</a> · Stats updated daily via [[GitHub]] Actions</sub>
 </div>
