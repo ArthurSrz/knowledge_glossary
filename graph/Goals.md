@@ -7,14 +7,11 @@ tags: [Objectifs_Agent, Planification, Comportement]
 broader: "[[Process]]"
 inferred:skos:ancestor: "[[Process]]"
 ---
-
-# Goals
-
-**Définition** : Résultats ou objectifs souhaités définis par l'utilisateur qui guident le comportement global et les actions de l'agent.
+Résultats ou objectifs souhaités définis par l'utilisateur qui guident le comportement global et les actions de l'[[agent]].
 
 **Caractéristiques** :
 - **Définis par l'utilisateur** : Spécifiés selon les besoins métier
-- **Guidage comportemental** : Orientent toutes les actions de l'agent
+- **Guidage comportemental** : Orientent toutes les actions de l'[[agent]]
 - **Résultats mesurables** : Objectifs quantifiables ou qualifiables
 - **Évolutifs** : Peuvent être ajustés selon le contexte
 
@@ -27,11 +24,11 @@ inferred:skos:ancestor: "[[Process]]"
 **Relation avec le système** :
 - Base de la planification
 - Critère d'évaluation
-- Guide pour les instructions
+- Guide pour les [[instructions]]
 - Référence pour les guardrails
 
 **Impact** :
 - Détermine les stratégies d'action
 - Influence la sélection des outils
-- Guide les décisions de l'agent
+- Guide les décisions de l'[[agent]]
 - Base pour l'évaluation des résultats
